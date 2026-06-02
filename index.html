@@ -36,7 +36,10 @@ h2{font-family:'Archivo';font-weight:900;font-size:15px;letter-spacing:.04em;mar
 .tier{font-family:'Spline Sans Mono';font-weight:700;font-size:9.5px;padding:2px 5px;border-radius:5px}
 .tier.T1{background:#0c2e1a;color:var(--grn)}.tier.T2{background:#0c2433;color:var(--blue)}.tier.T3{background:#2c2410;color:var(--amber)}.tier.T4{background:#2a1430;color:#d98cff}
 .pod{font-family:'Spline Sans Mono';font-size:12px;color:var(--dim)}
-.hrtag{font-family:'Spline Sans Mono';font-size:10.5px;color:var(--grn);font-weight:700;white-space:nowrap}
+.hrbadge{font-family:'Spline Sans Mono';font-size:12.5px;font-weight:700;color:#04140a;background:var(--grn);padding:3px 10px;border-radius:20px;white-space:nowrap;box-shadow:0 0 12px rgba(57,224,123,.5)}
+.prow.hit{background:linear-gradient(90deg,rgba(57,224,123,.18),rgba(57,224,123,.03));border-radius:8px;border-bottom-color:transparent;animation:hrflash 1.6s ease-out}
+.pn.hit{font-size:15px;font-weight:700}
+@keyframes hrflash{0%{background:rgba(57,224,123,.55)}100%{background:linear-gradient(90deg,rgba(57,224,123,.18),rgba(57,224,123,.03))}}
 footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:var(--dim);font-size:11px;line-height:1.6;font-family:'Spline Sans Mono'}
 .err{color:var(--amber)}
 </style></head><body><div class="wrap">
@@ -118,7 +121,7 @@ function render(games,live){
   $("hrpills").innerHTML = hitters.length? hitters.map(n=>'<span class="hrpill">&#9733; '+n+(hrBy[n]>1?' x'+hrBy[n]:'')+'</span>').join('') : '<span class="note">No tracked player has homered yet.</span>';
 
   // order: live, then preview (by time), then final
-  const rank=g=>g.st==='Live'?0:(g.st==='Preview'||g.st==='Pre-Game'?1:2);
+  const rank=g=>Object.keys(g.hrs).length?0:(g.st==='Live'?1:(g.st==='Preview'||g.st==='Pre-Game'?2:3));
   games.sort((a,b)=>rank(a)-rank(b)|| new Date(a.time)-new Date(b.time));
   const playersByTeamInGame=g=>players.filter(p=>g.away.includes(p.tm)||g.home.includes(p.tm));
 
@@ -130,13 +133,13 @@ function render(games,live){
     else{cls='s-prev';badge=etTime(g.time);}
     const showScore=(g.st==='Live'||g.st==='Final');
     let rows='';
-    for(const p of playersByTeamInGame(g)){
+    for(const p of playersByTeamInGame(g).slice().sort((a,b)=>(g.hrs[b.n]?1:0)-(g.hrs[a.n]?1:0))){
       const hit=g.hrs[p.n];
-      const innTxt=hit?('HR '+hit.map(i=>ordSuffix(i)).join(', ')):'';
-      rows+='<div class="prow"><div class="mk'+(hit?' hit':'')+'">'+(hit?'&#9733;':'&middot;')+'</div>'+
+      const innTxt=hit?('&#128165; HR &middot; '+hit.map(i=>ordSuffix(i)).join(', ')):'';
+      rows+='<div class="prow'+(hit?' hit':'')+'"><div class="mk'+(hit?' hit':'')+'">'+(hit?'&#9733;':'&middot;')+'</div>'+
             '<span class="tier '+p.tier+'">'+p.tier+'</span>'+
             '<span class="pn'+(hit?' hit':'')+'">'+p.n+'</span>'+
-            (hit?'<span class="hrtag">'+innTxt+'</span>':'<span class="pod">'+p.od+'</span>')+'</div>';
+            (hit?'<span class="hrbadge">'+innTxt+'</span>':'<span class="pod">'+p.od+'</span>')+'</div>';
     }
     html+='<div class="game"><div class="g-head"><div><div class="g-match">'+g.away+' @ '+g.home+'</div>'+
           (showScore?'<div class="g-score">'+g.as+' &ndash; '+g.hs+'</div>':'')+'</div>'+
