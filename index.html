@@ -85,7 +85,7 @@ footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:v
  <button class="filterbtn" data-f="dead">Dead</button>
  <button class="filterbtn" data-f="won">Cashed</button></div>
 <div id="bets"></div>
-<footer>Auto-refreshes every 30s while open (polls statsapi.mlb.com from your browser; not a push alert; stops when the tab closes). AT BAT / ON DECK may lag the live game by a few seconds. HR/Hit matched by batter name; a bet goes DEAD when any leg's game ends without hitting. Confirm official results on FanDuel.</footer>
+<footer>Auto-refreshes every 60s while open (polls statsapi.mlb.com from your browser; not a push alert; stops when the tab closes). AT BAT / ON DECK may lag the live game by a few seconds. HR/Hit matched by batter name; a bet goes DEAD when any leg's game ends without hitting. Confirm official results on FanDuel.</footer>
 </div>
 <script>
 const DATE="2026-06-03";
@@ -190,5 +190,5 @@ function renderBets(){
 document.querySelectorAll('.sortbtn').forEach(function(b){b.addEventListener('click',function(){sortMode=b.dataset.m;document.querySelectorAll('.sortbtn').forEach(function(x){x.classList.toggle('active',x.dataset.m===sortMode);});renderBets();});});
 document.querySelectorAll('.filterbtn').forEach(function(b){b.addEventListener('click',function(){filterMode=b.dataset.f;document.querySelectorAll('.filterbtn').forEach(function(x){x.classList.toggle('active',x.dataset.f===filterMode);});renderBets();});});
 $('refresh').addEventListener('click',refresh);
-refresh();setInterval(refresh,30000);
+refresh();setInterval(refresh,60000);
 </script></body></html>
