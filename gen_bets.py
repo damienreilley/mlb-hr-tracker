@@ -16,7 +16,7 @@ players=[
  {"n":"Brandon Marsh","tm":"PHI","g":"SD@PHI","pr":["HR","FPA","TB"],"od":"+820"},
  {"n":"Fernando Tatis Jr.","tm":"SD","g":"SD@PHI","pr":["HR"],"od":"+820"},
  {"n":"J.T. Realmuto","tm":"PHI","g":"SD@PHI","pr":["HR","TB"],"od":"+710"},
- {"n":"Pete Alonso","tm":"NYM","g":"NYM@SEA","pr":["HR"],"od":"+410"},
+ {"n":"Pete Alonso","tm":"BAL","g":"BAL@BOS","pr":["HR"],"od":"+410"},
  {"n":"Wilyer Abreu","tm":"BOS","g":"BAL@BOS","pr":["HR"],"od":"+490"},
  {"n":"Carter Jensen","tm":"KC","g":"KC@CIN","pr":["HR"],"od":"+410"},
  {"n":"Rafael Devers","tm":"SF","g":"SF@MIL","pr":["HR"],"od":"+390"},
