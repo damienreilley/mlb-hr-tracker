@@ -60,9 +60,18 @@ def T(p): return {"p":p,"prop":"HIT"}
 def F(p): return {"p":p,"prop":"FPA"}
 def B(p): return {"p":p,"prop":"TB"}
 def P(p,c): return {"p":p,"prop":c}
-def TR(g,line): return {"p":g+" Total","prop":"TR","g":g,"line":line}
+def D1(p): return {"p":p,"prop":"1B"}
+def D2(p): return {"p":p,"prop":"2B"}
+def D3(p): return {"p":p,"prop":"3B"}
+def SBL(p): return {"p":p,"prop":"SB"}
+def HRX(p): return {"p":p,"prop":"HR2"}
+def TRn(g,line): return {"p":g+" Total","prop":"TR","g":g,"line":line}
+def CTB(lbl,ps,line,g): return {"p":lbl,"prop":"CTB","ps":ps,"line":line,"g":g}
 bets=[
- {"id":"#4024","kind":"4-leg parlay","odds":58805,"wager":0.10,"payout":58.91,"placed":"6:03 PM","ts":1803.1,"legs":[TR("NYM@SEA",8.5),H("J.T. Realmuto"),H("Vladimir Guerrero Jr."),H("Will Smith")]},
+ {"id":"#xqn","kind":"Same Game Parlay","odds":46312,"wager":0.10,"payout":46.41,"placed":"6:19 PM","ts":1819.1,"legs":[D2("Brandon Marsh"),D1("Brandon Marsh"),H("Brandon Marsh"),SBL("Brandon Marsh")]},
+ {"id":"#wmg","kind":"Same Game Parlay","odds":87033,"wager":0.10,"payout":87.14,"placed":"6:19 PM","ts":1819.0,"legs":[D3("Brandon Marsh"),D2("Brandon Marsh"),D1("Brandon Marsh"),H("Brandon Marsh")]},
+ {"id":"#b7a2","kind":"Same Game Parlay","odds":88524,"wager":0.10,"payout":88.62,"placed":"6:15 PM","ts":1815,"legs":[HRX("Bryce Harper"),H("Brandon Marsh"),CTB("Tatis Jr. + Machado",["Fernando Tatis Jr.","Manny Machado"],6,"SD@PHI")]},
+ {"id":"#4024","kind":"4-leg parlay","odds":58805,"wager":0.10,"payout":58.91,"placed":"6:03 PM","ts":1803.1,"legs":[TRn("NYM@SEA",8.5),H("J.T. Realmuto"),H("Vladimir Guerrero Jr."),H("Will Smith")]},
  {"id":"#r79","kind":"2-leg parlay","odds":3512,"wager":0.10,"payout":3.61,"placed":"6:03 PM","ts":1803.0,"legs":[H("Jesus Sanchez"),H("Shohei Ohtani")]},
  {"id":"#4023","kind":"6-leg parlay","odds":2788103,"wager":0.10,"payout":2788.20,"placed":"5:49 PM","ts":1749,"legs":[H("Kyle Schwarber"),H("Matt Olson"),H("Brice Turang"),H("Nick Kurtz"),H("Jo Adell"),H("Freddie Freeman")]},
  {"id":"#b8h","kind":"4-leg SGP+","odds":66286,"wager":0.10,"payout":66.39,"placed":"5:47 PM","ts":1747,"legs":[H("Max Muncy"),H("Freddie Freeman"),H("Bryce Harper"),H("Shea Langeliers")]},
@@ -142,8 +151,8 @@ TPL = r"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name=
 :root{
  --bg:#eef1ef;--panel:#ffffff;--panel2:#f7f9f8;--line:#e0e6e2;--line2:#eef2ef;
  --ink:#172019;--ink2:#36443c;--dim:#74857b;--faint:#9fb0a6;
- --live:#e23a3a;--alive:#2563eb;--dead:#d4313a;--won:#11924f;
- --c-hr:#11924f;--c-fpa:#0d8d9c;--c-tb:#7c3aed;--c-hit:#2563eb;--c-pitch:#c2700a;--c-sgp:#c0269b;--c-mix:#566472;
+ --live:#e23a3a;--alive:#2563eb;--dead:#d4313a;--won:#0f9b4e;
+ --c-hr:#11924f;--c-fpa:#0d8d9c;--c-tb:#7c3aed;--c-hit:#2563eb;--c-pitch:#c2700a;--c-mix:#566472;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'Spline Sans',sans-serif;-webkit-font-smoothing:antialiased}
@@ -159,9 +168,8 @@ h1{font-family:'Archivo';font-weight:900;font-size:clamp(22px,5.5vw,34px);line-h
 .tab{display:none}.tab.show{display:block;animation:fade .18s ease}
 @keyframes fade{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:none}}
 .muted{font-family:'Spline Sans Mono';font-size:11px;color:var(--dim)}
-h2{font-family:'Archivo';font-weight:900;font-size:16px;margin:22px 0 9px}
-h2:first-child{margin-top:2px}
-.statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:9px;margin-bottom:14px}
+h2{font-family:'Archivo';font-weight:900;font-size:16px;margin:22px 0 9px}h2:first-child{margin-top:2px}
+.statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:9px;margin-bottom:14px}
 .statcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 13px}
 .statcard .n{font-family:'Archivo';font-weight:900;font-size:26px;line-height:1}
 .statcard .l{font-family:'Spline Sans Mono';font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
@@ -170,15 +178,13 @@ h2:first-child{margin-top:2px}
 .moneycard{background:linear-gradient(135deg,var(--ink),#243a30);color:#fff;border-radius:12px;padding:13px 15px}
 .moneycard .l{font-family:'Spline Sans Mono';font-size:10.5px;opacity:.75;text-transform:uppercase;letter-spacing:.06em}
 .moneycard .n{font-family:'Archivo';font-weight:900;font-size:23px;margin-top:2px}
-.moneycard.pot{background:linear-gradient(135deg,#11924f,#0c6e3c)}
+.moneycard.pot{background:linear-gradient(135deg,#0f9b4e,#0b6f39)}
 .cattable{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .catrow{display:grid;grid-template-columns:1.4fr .6fr 1fr 1.2fr;gap:6px;padding:9px 13px;border-bottom:1px solid var(--line2);align-items:center;font-size:13px}
 .catrow:last-child{border-bottom:0}.catrow.head{background:var(--panel2);font-family:'Spline Sans Mono';font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--dim)}
 .catrow.tot{background:var(--panel2);font-weight:700}
 .catchip{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:12.5px}
-.catdot{width:9px;height:9px;border-radius:3px;flex:none}
-.mono{font-family:'Spline Sans Mono'}
-.alivelist{display:flex;flex-direction:column;gap:7px}
+.catdot{width:9px;height:9px;border-radius:3px;flex:none}.mono{font-family:'Spline Sans Mono'}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:11px}
 .game{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden}
 .g-head{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;background:var(--panel2);border-bottom:1px solid var(--line)}
@@ -202,38 +208,49 @@ h2:first-child{margin-top:2px}
 .hrbadge{font-family:'Spline Sans Mono';font-size:11px;font-weight:700;color:#fff;background:var(--c-hr);padding:2px 8px;border-radius:20px;white-space:nowrap}
 .hitbadge{font-family:'Spline Sans Mono';font-size:10.5px;font-weight:700;color:#fff;background:var(--c-hit);padding:2px 8px;border-radius:20px;white-space:nowrap}
 .tbbadge{font-family:'Spline Sans Mono';font-size:10.5px;font-weight:700;color:#fff;background:var(--c-tb);padding:2px 8px;border-radius:20px;white-space:nowrap}
-.pitchstat{display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
-.pchip{font-family:'Spline Sans Mono';font-size:10.5px;font-weight:600;padding:3px 8px;border-radius:7px;border:1px solid var(--line);background:var(--panel2);color:var(--ink2)}
-.pchip.hit{background:#e3f6ec;color:var(--won);border-color:#bfe8d0}
-.pchip.miss{background:#fbe6e7;color:var(--dead);border-color:#f2c9cc;text-decoration:line-through}
+.pitchstat{display:flex;flex-direction:column;gap:6px;margin-top:2px}
+.pchip{display:flex;justify-content:space-between;align-items:center;font-family:'Spline Sans';font-size:13.5px;font-weight:600;padding:8px 11px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);color:var(--ink)}
+.pchip .pcd{font-family:'Spline Sans Mono';font-size:12px;color:var(--dim);font-weight:600}
+.pchip.hit{background:#e3f6ec;color:var(--won);border-color:#bfe8d0}.pchip.hit .pcd{color:var(--won)}
+.pchip.miss{background:#fbe6e7;color:var(--dead);border-color:#f2c9cc}.pchip.miss .pcd{color:var(--dead)}
 .filterbar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:2px 0 14px}
 .filterbtn{font-family:'Spline Sans Mono';font-weight:700;background:var(--panel);border:1px solid var(--line);color:var(--ink2);padding:6px 11px;border-radius:9px;cursor:pointer;font-size:12px}
 .filterbtn.active{background:var(--alive);color:#fff;border-color:var(--alive)}
-.catsection{margin-bottom:18px}
-.cathead{display:flex;align-items:center;gap:9px;margin:0 0 9px;padding:7px 0;border-bottom:2px solid var(--line)}
+.filterbtn.s.active{background:var(--ink);border-color:var(--ink)}
+.catsection{margin-bottom:14px}
+.cathead{display:flex;align-items:center;gap:9px;margin:0 0 9px;padding:8px 2px;border-bottom:2px solid var(--line);cursor:pointer;user-select:none}
 .cathead .bar{width:5px;height:18px;border-radius:3px;flex:none}
 .cathead h3{font-family:'Archivo';font-weight:900;font-size:15px;margin:0}
 .cathead .cnt{font-family:'Spline Sans Mono';font-size:11px;color:var(--dim);margin-left:auto}
+.chev{font-size:12px;color:var(--dim);transition:transform .15s;width:14px;text-align:center}
+.catsection.collapsed .catbody{display:none}.catsection.collapsed .cathead .chev{transform:rotate(-90deg)}
 .bet{background:var(--panel);border:1px solid var(--line);border-left-width:5px;border-radius:11px;overflow:hidden}
 .bet.b-dead{opacity:.62}.bet.b-won{box-shadow:0 0 0 1px var(--won) inset}
-.b-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;padding:10px 12px;border-bottom:1px dashed var(--line)}
+.b-head{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;cursor:pointer;user-select:none}
+.b-left{min-width:0}
 .b-kind{font-family:'Archivo';font-weight:800;font-size:13px}.b-id{font-family:'Spline Sans Mono';font-size:10px;color:var(--faint)}
 .b-meta{font-family:'Spline Sans Mono';font-size:10.5px;color:var(--dim);margin-top:3px}
-.b-meta .pay{color:var(--ink);font-weight:700}
-.b-stat{font-family:'Spline Sans Mono';font-weight:700;font-size:10.5px;padding:3px 8px;border-radius:7px;white-space:nowrap}
-.b-stat.b-alive{background:#e8f0fb;color:var(--alive);border:1px solid #cfe0f7}
-.b-stat.b-dead{background:#fbe6e7;color:var(--dead);border:1px solid #f2c9cc}
-.b-stat.b-won{background:#e3f6ec;color:var(--won);border:1px solid #bfe8d0}
-.b-legs{padding:5px 12px 10px;display:flex;flex-direction:column;gap:1px}
-.leg{display:flex;align-items:center;gap:8px;padding:5px 2px;font-size:12.5px}
+.b-stat{font-family:'Spline Sans Mono';font-weight:700;font-size:10px;padding:2px 7px;border-radius:6px;white-space:nowrap;margin-left:7px}
+.b-stat.b-alive{background:#e8f0fb;color:var(--alive)}.b-stat.b-dead{background:#fbe6e7;color:var(--dead)}.b-stat.b-won{background:#e3f6ec;color:var(--won)}
+.b-right{display:flex;flex-direction:column;align-items:flex-end;flex:none}
+.b-pay{font-family:'Archivo';font-weight:900;font-size:19px;color:var(--won);line-height:1;white-space:nowrap}
+.bet.b-dead .b-pay{color:var(--faint)}
+.b-chev{font-size:11px;color:var(--faint);margin-top:3px}
+.b-legs{padding:2px 12px 10px;display:flex;flex-direction:column;gap:1px;border-top:1px dashed var(--line)}
+.bet.collapsed .b-legs{display:none}.bet.collapsed .b-chev{transform:rotate(-90deg)}
+.leg{display:flex;align-items:center;gap:8px;padding:5px 2px;font-size:13px}
 .lmk{width:16px;text-align:center;font-weight:900;flex:none}
 .l-hit .lmk{color:var(--c-hr)}.l-hit .lname{color:var(--c-hr);font-weight:600}
 .l-miss .lmk{color:var(--dead)}.l-miss .lname{text-decoration:line-through;color:var(--faint)}
 .l-pend .lmk{color:var(--faint)}
 .lname{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.lprop{font-family:'Spline Sans Mono';font-size:10px;color:var(--dim);white-space:nowrap}
+.lprop{font-family:'Spline Sans Mono';font-size:11px;color:var(--dim);white-space:nowrap}
 .labtag{font-family:'Spline Sans Mono';font-size:8.5px;font-weight:700;padding:1px 5px;border-radius:4px;flex:none}
 .labtag.ab{background:#fbeccb;color:#9a6800}.labtag.od{background:#e8f0fb;color:var(--alive)}
+.pspec{display:flex;justify-content:space-between;align-items:center;padding:8px 2px;font-size:15px;font-weight:600;border-top:1px dashed var(--line)}
+.pspec .psp{display:flex;align-items:center;gap:8px}.pspec .psd{font-family:'Spline Sans Mono';font-size:13px;color:var(--dim)}
+.pspec.l-hit{color:var(--won)}.pspec.l-hit .psd{color:var(--won)}
+.pspec.l-miss{color:var(--dead)}.pspec.l-miss .psp .pst{text-decoration:line-through}
 footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:var(--dim);font-size:10.5px;line-height:1.6;font-family:'Spline Sans Mono'}
 </style></head><body><div class="wrap">
 <div class="kicker">Live Bet Tracker</div>
@@ -254,11 +271,13 @@ footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:v
   <button class="filterbtn" data-f="alive">Alive</button>
   <button class="filterbtn" data-f="dead">Dead</button>
   <button class="filterbtn" data-f="won">Cashed</button>
-  <span class="muted" style="margin-left:6px">&middot; grouped by type, sorted by payout</span>
+  <span class="muted" style="margin-left:8px">Sort:</span>
+  <button class="filterbtn s active" data-s="payout">Payout</button>
+  <button class="filterbtn s" data-s="legs">Legs</button>
  </div>
  <div id="bets"></div>
 </section>
-<footer>Auto-refreshes every 60s while the tab is open (your browser polls statsapi.mlb.com; not a push alert; stops when closed). Odds are the FanDuel prices from your betslips. Pitcher specials and 4+ total bases are tracked live, best-effort &mdash; confirm final settlement on FanDuel. A bet goes DEAD when any leg can no longer hit.</footer>
+<footer>Auto-refreshes every 60s while the tab is open (your browser polls statsapi.mlb.com; not a push alert; stops when closed). Odds are the FanDuel prices from your betslips. Pitcher specials, total bases, and exotic props are tracked live, best-effort &mdash; confirm final settlement on FanDuel. A bet goes DEAD when any leg can no longer hit.</footer>
 </div>
 <script>
 const DATE="2026-06-03";
@@ -269,23 +288,24 @@ const norm=function(s){return (s||"").normalize('NFD').replace(/[\u0300-\u036f]/
 players.forEach(function(p){p.k=norm(p.n);});pitchers.forEach(function(p){p.k=norm(p.n);});
 const pByKey={};players.forEach(function(p){pByKey[p.k]=p;});
 const pitByKey={};pitchers.forEach(function(p){pitByKey[p.k]=p;});
-const CATS=[{k:'HR',label:'Home Runs',v:'--c-hr'},{k:'FPA',label:'First-PA HR',v:'--c-fpa'},{k:'TB',label:'Total Bases',v:'--c-tb'},{k:'HIT',label:'Hits',v:'--c-hit'},{k:'PITCH',label:'Pitcher Specials',v:'--c-pitch'},{k:'SGP',label:'Same Game Parlay',v:'--c-sgp'},{k:'MIX',label:'Mixed',v:'--c-mix'}];
+const CATS=[{k:'HR',label:'Home Runs',v:'--c-hr'},{k:'FPA',label:'First-PA HR',v:'--c-fpa'},{k:'TB',label:'Total Bases',v:'--c-tb'},{k:'HIT',label:'Hits',v:'--c-hit'},{k:'PITCH',label:'Pitcher Specials',v:'--c-pitch'},{k:'MIX',label:'Mixed',v:'--c-mix'}];
 const CATMAP={};CATS.forEach(function(c){CATMAP[c.k]=c;});
 const PITCHSET={NH5:1,NH7:1,K1:1,UP9:1,UP6:1};
+const BATSET={HR:1,HIT:1,FPA:1,TB:1,'1B':1,'2B':1,'3B':1,SB:1,HR2:1};
 const HITEV={single:1,double:2,triple:3,home_run:4};
-const REACH={single:1,double:1,triple:1,home_run:1,walk:1,intent_walk:1,hit_by_pitch:1,field_error:1,catcher_interf:1,fielders_choice:1};
-const PLAB={HR:'HR',HIT:'Hit',FPA:'1st-PA HR',TB:'4+ TB',NH5:'No-hit thru 5',NH7:'No-hit thru 7',K1:'3+ K in 1st',UP9:'9 up 9 down',UP6:'6 up 6 down'};
-let filterMode='all';let GS={};let activeTab='summary';
+const PLAB={HR:'HR',HIT:'Hit',FPA:'1st-PA HR',TB:'4+ TB','1B':'Single','2B':'Double','3B':'Triple','SB':'Stolen Base',HR2:'2+ HR',CTB:'Combined TB',NH5:'No-hit thru 5',NH7:'No-hit thru 7',K1:'3+ K in 1st',UP9:'9 up 9 down',UP6:'6 up 6 down'};
+let filterMode='all';let betSort='payout';let GS={};let STATS={};
 const $=function(id){return document.getElementById(id);};
-function resetStats(){players.forEach(function(p){p.hr=[];p.hit=false;p.tb=0;p.atbat=false;p.ondeck=false;p.fpaDone=false;p.fpaHR=false;p.tmLive='';});pitchers.forEach(function(p){p.h5=0;p.h7=0;p.k1=0;p.seq=[];p.tmLive='';});}
+function resetStats(){players.forEach(function(p){p.hr=[];p.atbat=false;p.ondeck=false;p.fpaDone=false;p.fpaHR=false;p.tmLive='';});pitchers.forEach(function(p){p.h5=0;p.h7=0;p.k1=0;p.seq=[];p.tmLive='';});STATS={};}
 resetStats();
 async function gj(u){const r=await fetch(u,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}
 function ordSuffix(n){if(n%10==1&&n%100!=11)return n+'st';if(n%10==2&&n%100!=12)return n+'nd';if(n%10==3&&n%100!=13)return n+'rd';return n+'th';}
 function etTime(iso){try{return new Date(iso).toLocaleTimeString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'})+' ET';}catch(e){return '';}}
 function amStr(o){return (o>0?'+':'')+o.toLocaleString();}
 function money(n){return '$'+n.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});}
+function statOf(name){return STATS[norm(name)]||{hits:0,doubles:0,triples:0,hr:0,sb:0,tb:0};}
+function teamOf(name){const s=STATS[norm(name)];if(s&&s.tm)return s.tm;const p=pByKey[norm(name)];return p?(p.tmLive||p.tm||''):'';}
 function legGame(l){if(l.g)return l.g;const p=pByKey[norm(l.p)];if(p)return p.g;const q=pitByKey[norm(l.p)];if(q)return q.g;return '?';}
-function teamOf(name){const p=pByKey[norm(name)];if(!p)return '';return p.tmLive||p.tm||'';}
 async function refresh(){
  $('updated').textContent='Updating...';
  let sched;try{sched=await gj(SCHED);}catch(e){$('updated').textContent="Can't reach MLB feed - retrying";return;}
@@ -300,14 +320,19 @@ async function refresh(){
   if(st==='Live'||st==='Final'){try{feedByPk[pk]=await gj(FEED(pk));}catch(e){feedByPk[pk]={__err:true};}}}
  for(const pk in feedByPk){const f=feedByPk[pk];if(f.__err)continue;
   const box=f.liveData&&f.liveData.boxscore&&f.liveData.boxscore.teams;
-  if(box){['away','home'].forEach(function(side){const tb=box[side];if(!tb)return;const ab=tb.team&&tb.team.abbreviation?tb.team.abbreviation:'';const pl=tb.players||{};for(const id in pl){const nm=pl[id].person&&pl[id].person.fullName?norm(pl[id].person.fullName):'';if(pByKey[nm])pByKey[nm].tmLive=ab;if(pitByKey[nm])pitByKey[nm].tmLive=ab;}});}
+  if(box){['away','home'].forEach(function(side){const tb=box[side];if(!tb)return;const ab=tb.team&&tb.team.abbreviation?tb.team.abbreviation:'';const pl=tb.players||{};
+   for(const id in pl){const per=pl[id].person;const nm=per?norm(per.fullName):'';if(!nm)continue;
+    const bt=(pl[id].stats&&pl[id].stats.batting)?pl[id].stats.batting:{};
+    const hits=bt.hits||0,d=bt.doubles||0,t=bt.triples||0,hr=bt.homeRuns||0,sb=bt.stolenBases||0;
+    STATS[nm]={hits:hits,doubles:d,triples:t,hr:hr,sb:sb,tb:hits+d+2*t+3*hr,tm:ab};
+    if(pByKey[nm])pByKey[nm].tmLive=ab;if(pitByKey[nm])pitByKey[nm].tmLive=ab;}});}
   const plays=(f.liveData&&f.liveData.plays&&f.liveData.plays.allPlays)?f.liveData.plays.allPlays:[];
   for(const pl of plays){const ev=pl.result&&pl.result.eventType;if(!ev)continue;
    const inn=(pl.about&&pl.about.inning)?pl.about.inning:99;
    const bk=norm(pl.matchup&&pl.matchup.batter?pl.matchup.batter.fullName:'');const pp=pByKey[bk];
-   if(pp){const bases=HITEV[ev]||0;if(bases>0){pp.tb+=bases;pp.hit=true;if(ev==='home_run')pp.hr.push(inn);}if(!pp.fpaDone){pp.fpaDone=true;pp.fpaHR=(ev==='home_run');}}
+   if(pp){if(ev==='home_run')pp.hr.push(inn);if(!pp.fpaDone){pp.fpaDone=true;pp.fpaHR=(ev==='home_run');}}
    const ptk=norm(pl.matchup&&pl.matchup.pitcher?pl.matchup.pitcher.fullName:'');const ptp=pitByKey[ptk];
-   if(ptp){if(HITEV[ev]){if(inn<=5)ptp.h5++;if(inn<=7)ptp.h7++;}if(ev==='strikeout'&&inn===1)ptp.k1++;ptp.seq.push(REACH[ev]?0:1);}}
+   if(ptp){if(HITEV[ev]){if(inn<=5)ptp.h5++;if(inn<=7)ptp.h7++;}if(ev==='strikeout'&&inn===1)ptp.k1++;ptp.seq.push((HITEV[ev]||ev==='walk'||ev==='intent_walk'||ev==='hit_by_pitch'||ev==='field_error'||ev==='catcher_interf'||ev==='fielders_choice')?0:1);}}
   const off=f.liveData&&f.liveData.linescore&&f.liveData.linescore.offense;
   if(off){const ab=off.batter&&off.batter.fullName?norm(off.batter.fullName):'';const od=off.onDeck&&off.onDeck.fullName?norm(off.onDeck.fullName):'';
    if(pByKey[ab])pByKey[ab].atbat=true;if(pByKey[od])pByKey[od].ondeck=true;}}
@@ -322,11 +347,17 @@ async function refresh(){
 }
 function legMet(leg){const pr=leg.prop;
  if(pr==='TR'){const gs=GS[leg.g]||{};const tot=(gs.as||0)+(gs.hs||0);if(tot>(leg.line||8.5))return 'hit';if(gs.state==='Final')return 'miss';return 'pending';}
- if(pr==='HR'||pr==='HIT'||pr==='FPA'||pr==='TB'){const p=pByKey[norm(leg.p)];if(!p)return 'pending';const gs=GS[p.g];const fin=gs&&gs.state==='Final';
-  if(pr==='HR')return p.hr.length>0?'hit':(fin?'miss':'pending');
-  if(pr==='HIT')return p.hit?'hit':(fin?'miss':'pending');
-  if(pr==='TB')return p.tb>=4?'hit':(fin?'miss':'pending');
-  if(pr==='FPA'){if(p.fpaDone)return p.fpaHR?'hit':'miss';return fin?'miss':'pending';}}
+ if(pr==='CTB'){const gs=GS[leg.g]||{};let sum=0;leg.ps.forEach(function(n){sum+=(statOf(n).tb||0);});if(sum>=(leg.line||6))return 'hit';if(gs.state==='Final')return 'miss';return 'pending';}
+ if(BATSET[pr]){const p=pByKey[norm(leg.p)];const gs=p?GS[p.g]:null;const fin=gs&&gs.state==='Final';const s=statOf(leg.p);
+  if(pr==='HR')return (s.hr>=1||(p&&p.hr.length>0))?'hit':(fin?'miss':'pending');
+  if(pr==='HIT')return (s.hits>=1)?'hit':(fin?'miss':'pending');
+  if(pr==='TB')return (s.tb>=4)?'hit':(fin?'miss':'pending');
+  if(pr==='2B')return (s.doubles>=1)?'hit':(fin?'miss':'pending');
+  if(pr==='3B')return (s.triples>=1)?'hit':(fin?'miss':'pending');
+  if(pr==='HR2')return (s.hr>=2)?'hit':(fin?'miss':'pending');
+  if(pr==='SB')return (s.sb>=1)?'hit':(fin?'miss':'pending');
+  if(pr==='1B')return ((s.hits-s.doubles-s.triples-s.hr)>=1)?'hit':(fin?'miss':'pending');
+  if(pr==='FPA'){if(p&&p.fpaDone)return p.fpaHR?'hit':'miss';return fin?'miss':'pending';}}
  const p=pitByKey[norm(leg.p)];if(!p)return 'pending';const gs=GS[p.g]||{};const inn=gs.inn||0;
  if(pr==='NH5'||pr==='NH7'){const N=pr==='NH5'?5:7;const h=pr==='NH5'?p.h5:p.h7;if(h>0)return 'miss';if(inn>N)return 'hit';return 'pending';}
  if(pr==='K1'){if(p.k1>=3)return 'hit';if(inn>1)return 'miss';return 'pending';}
@@ -335,26 +366,26 @@ function legMet(leg){const pr=leg.prop;
 function betCat(b){const props=Array.from(new Set(b.legs.map(function(l){return l.prop;})));
  if(props.every(function(p){return PITCHSET[p];}))return 'PITCH';
  if(props.length===1&&CATMAP[props[0]])return props[0];
- const games=Array.from(new Set(b.legs.map(legGame)));return games.length===1?'SGP':'MIX';}
+ return 'MIX';}
 function betStatus(b){let hit=0,miss=0;for(const lg of b.legs){const s=legMet(lg);if(s==='hit')hit++;else if(s==='miss')miss++;}const st=miss>0?'dead':(hit===b.legs.length?'won':'alive');return {st:st,hit:hit,total:b.legs.length};}
 function pitchDetail(leg){const pr=leg.prop;const p=pitByKey[norm(leg.p)];if(!p)return '';
  if(pr==='NH5')return p.h5+' H';if(pr==='NH7')return p.h7+' H';if(pr==='K1')return 'K: '+p.k1;
  if(pr==='UP9'||pr==='UP6'){let r=0;for(const x of p.seq){if(x===1)r++;else break;}return r+' retired';}return '';}
-function legNameHTML(leg){const t=(leg.prop==='TR')?'':teamOf(leg.p);return leg.p+(t?' <span class="tmtag">('+t+')</span>':'');}
-function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs';return PLAB[leg.prop]||leg.prop;}
+function legNameHTML(leg){if(leg.prop==='TR'||leg.prop==='CTB')return leg.p;const t=teamOf(leg.p);return leg.p+(t?' <span class="tmtag">('+t+')</span>':'');}
+function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs';if(leg.prop==='CTB')return (leg.line||6)+'+ Combined TB';let t=PLAB[leg.prop]||leg.prop;if(leg.prop==='TB'){const s=statOf(leg.p);t+=' &middot; now '+s.tb;}return t;}
 function betCardHTML(b){
  const cat=CATMAP[b._cat];const cvar='var('+cat.v+')';
  const cl=b._st==='dead'?'b-dead':(b._st==='won'?'b-won':'b-alive');
  const lbl=b._st==='dead'?'DEAD':(b._st==='won'?'CASHED':'ALIVE');
- let legs='';
- for(const lg of b.legs){const st=legMet(lg);const p=pByKey[norm(lg.p)];
-  const inn=(st==='hit'&&(lg.prop==='HR'||lg.prop==='FPA')&&p&&p.hr.length)?(' '+ordSuffix(p.hr[0])):'';
-  const mk=st==='hit'?'&#10003;':(st==='miss'?'&#10007;':'&middot;');
-  const lc=st==='hit'?'l-hit':(st==='miss'?'l-miss':'l-pend');
-  let lab='';if(st==='pending'&&p){if(p.atbat)lab='<span class="labtag ab">AB</span>';else if(p.ondeck)lab='<span class="labtag od">OD</span>';}
-  let detail=lpropText(lg)+inn;if(PITCHSET[lg.prop]){const d=pitchDetail(lg);if(d)detail+=' ('+d+')';}
-  legs+='<div class="leg '+lc+'"><span class="lmk">'+mk+'</span><span class="lname">'+legNameHTML(lg)+'</span>'+lab+'<span class="lprop">'+detail+'</span></div>';}
- return '<div class="bet '+cl+'" style="border-left-color:'+cvar+'"><div class="b-head"><div><span class="b-kind">'+b.kind+'</span> <span class="b-id">'+b.id+'</span><div class="b-meta">'+amStr(b.odds)+' &middot; '+money(b.wager)+' &rarr; <span class="pay">'+money(b.payout)+'</span> &middot; '+b.placed+'</div></div><span class="b-stat '+cl+'">'+lbl+' '+b._hit+'/'+b.legs.length+'</span></div><div class="b-legs">'+legs+'</div></div>';
+ let body='';
+ if(b._cat==='PITCH'){const lg=b.legs[0];const st=legMet(lg);const d=pitchDetail(lg);const lc=st==='hit'?'l-hit':(st==='miss'?'l-miss':'');
+  body='<div class="pspec '+lc+'"><span class="psp"><span class="lmk '+(st==='hit'?'hit':'')+'">'+(st==='hit'?'&#10003;':(st==='miss'?'&#10007;':'&middot;'))+'</span><span class="pst">'+lpropText(lg)+'</span></span><span class="psd">'+d+'</span></div>';
+ }else{for(const lg of b.legs){const st=legMet(lg);const p=pByKey[norm(lg.p)];
+   const inn=(st==='hit'&&(lg.prop==='HR'||lg.prop==='FPA')&&p&&p.hr.length)?(' '+ordSuffix(p.hr[0])):'';
+   const mk=st==='hit'?'&#10003;':(st==='miss'?'&#10007;':'&middot;');const lc=st==='hit'?'l-hit':(st==='miss'?'l-miss':'l-pend');
+   let lab='';if(st==='pending'&&p){if(p.atbat)lab='<span class="labtag ab">AB</span>';else if(p.ondeck)lab='<span class="labtag od">OD</span>';}
+   body+='<div class="leg '+lc+'"><span class="lmk">'+mk+'</span><span class="lname">'+legNameHTML(lg)+'</span>'+lab+'<span class="lprop">'+lpropText(lg)+inn+'</span></div>';}}
+ return '<div class="bet '+cl+'" style="border-left-color:'+cvar+'"><div class="b-head" onclick="toggleBet(this)"><div class="b-left"><span class="b-kind">'+b.kind+'</span> <span class="b-id">'+b.id+'</span><span class="b-stat '+cl+'">'+lbl+' '+b._hit+'/'+b.legs.length+'</span><div class="b-meta">'+amStr(b.odds)+' &middot; '+money(b.wager)+' wager</div></div><div class="b-right"><span class="b-pay">'+money(b.payout)+'</span><span class="b-chev">&#9660;</span></div></div><div class="b-legs">'+body+'</div></div>';
 }
 function renderSummary(live){
  let alive=0,dead=0,won=0,totW=0,totP=0;const byCat={};CATS.forEach(function(c){byCat[c.k]={n:0,w:0,p:0};});
@@ -388,36 +419,40 @@ function renderHitters(live){
   const gs=GS[key]||{};const gb=gameBadge(gs);const showScore=(gs.state==='Live'||gs.state==='Final');
   const psort=ps.slice().sort(function(a,b){return (b.hr.length>0?1:0)-(a.hr.length>0?1:0);});
   let rows='';
-  for(const p of psort){const homer=p.hr.length>0;const hasHit=p.pr.indexOf('HIT')>=0;const hasTB=p.pr.indexOf('TB')>=0;const tm=p.tmLive||p.tm;
+  for(const p of psort){const homer=p.hr.length>0;const s=statOf(p.n);const hasHit=p.pr.indexOf('HIT')>=0;const hasTB=p.pr.indexOf('TB')>=0;const tm=p.tmLive||p.tm;
    let right;
    if(homer)right='<span class="hrbadge">&#128165; HR &middot; '+p.hr.map(function(i){return ordSuffix(i);}).join(', ')+'</span>';
-   else if(hasTB&&p.tb>=4)right='<span class="tbbadge">&#10003; '+p.tb+' TB</span>';
-   else if(hasHit&&p.hit)right='<span class="hitbadge">&#10003; HIT</span>';
+   else if(hasTB&&s.tb>=4)right='<span class="tbbadge">&#10003; '+s.tb+' TB</span>';
+   else if(hasHit&&s.hits>=1)right='<span class="hitbadge">&#10003; HIT</span>';
    else right='<span class="podds">'+(p.od?p.od:'&mdash;')+'</span>';
    let abt='';if(!homer){if(p.atbat)abt='<span class="abtag ab">AT BAT</span>';else if(p.ondeck)abt='<span class="abtag od">ON DECK</span>';}
-   const hc=(homer||(hasTB&&p.tb>=4)||(hasHit&&p.hit))?' hit':'';
+   const hc=(homer||(hasTB&&s.tb>=4)||(hasHit&&s.hits>=1))?' hit':'';
    rows+='<div class="prow'+hc+'"><div class="mk'+(homer?' hit':'')+'">'+(homer?'&#9733;':'&middot;')+'</div><span class="pn'+(homer?' hit':'')+'">'+p.n+(tm?' <span class="tmtag">('+tm+')</span>':'')+'</span>'+abt+right+'</div>';}
   html+='<div class="game"><div class="g-head"><div class="g-match">'+key.replace('@',' @ ')+(showScore?'<span class="g-score"> &nbsp;'+gs.as+'-'+gs.hs+'</span>':'')+'</div><div class="g-state '+gb.cls+'">'+gb.badge+'</div></div><div class="plist">'+rows+'</div></div>';}
  html+='</div>';$('hitters').innerHTML=html;
 }
-function renderPitchers(){
- let html='<div class="grid">';
+function renderPitchers(){let html='<div class="grid">';
  pitchers.forEach(function(pt){const gs=GS[pt.g]||{};const gb=gameBadge(gs);const seen={};const chips=[];
-  bets.forEach(function(b){b.legs.forEach(function(l){if(PITCHSET[l.prop]&&norm(l.p)===pt.k&&!seen[l.prop]){seen[l.prop]=1;const st=legMet(l);const d=pitchDetail(l);chips.push('<span class="pchip '+(st==='hit'?'hit':(st==='miss'?'miss':''))+'">'+(PLAB[l.prop]||l.prop)+(d?' &middot; '+d:'')+'</span>');}});});
+  bets.forEach(function(b){b.legs.forEach(function(l){if(PITCHSET[l.prop]&&norm(l.p)===pt.k&&!seen[l.prop]){seen[l.prop]=1;const st=legMet(l);const d=pitchDetail(l);chips.push('<div class="pchip '+(st==='hit'?'hit':(st==='miss'?'miss':''))+'"><span>'+(PLAB[l.prop]||l.prop)+'</span><span class="pcd">'+(d||'')+'</span></div>');}});});
   if(!chips.length)return;const tm=pt.tmLive||pt.tm;
   html+='<div class="game"><div class="g-head"><div class="g-match">'+pt.n+(tm?' <span class="tmtag">('+tm+')</span>':'')+'</div><div class="g-state '+gb.cls+'">'+gb.badge+'</div></div><div class="plist"><div class="pitchstat">'+chips.join('')+'</div></div></div>';});
  html+='</div>';$('pitchersv').innerHTML=html||'<p class="muted">No pitcher specials.</p>';
 }
 function renderBets(){
  let pool=bets.filter(function(b){return filterMode==='all'||b._st===filterMode;});let html='';
- CATS.forEach(function(c){const grp=pool.filter(function(b){return b._cat===c.k;});if(!grp.length)return;
-  grp.sort(function(a,b){return b.payout-a.payout;});
-  html+='<div class="catsection"><div class="cathead"><span class="bar" style="background:var('+c.v+')"></span><h3>'+c.label+'</h3><span class="cnt">'+grp.length+' bet'+(grp.length>1?'s':'')+'</span></div><div class="grid">'+grp.map(betCardHTML).join('')+'</div></div>';});
+ CATS.forEach(function(c){let grp=pool.filter(function(b){return b._cat===c.k;});if(!grp.length)return;
+  if(c.k==='PITCH')grp.sort(function(a,b){return norm(a.legs[0].p).localeCompare(norm(b.legs[0].p))||(b.payout-a.payout);});
+  else if(betSort==='legs')grp.sort(function(a,b){return (b.legs.length-a.legs.length)||(b.payout-a.payout);});
+  else grp.sort(function(a,b){return b.payout-a.payout;});
+  html+='<div class="catsection"><div class="cathead" onclick="toggleCat(this)"><span class="bar" style="background:var('+c.v+')"></span><h3>'+c.label+'</h3><span class="cnt">'+grp.length+' bet'+(grp.length>1?'s':'')+'</span><span class="chev">&#9660;</span></div><div class="catbody"><div class="grid">'+grp.map(betCardHTML).join('')+'</div></div></div>';});
  $('bets').innerHTML=html||'<p class="muted">No bets match this filter.</p>';
 }
-function showTab(t){activeTab=t;document.querySelectorAll('.tabs button').forEach(function(b){b.classList.toggle('active',b.dataset.tab===t);});document.querySelectorAll('.tab').forEach(function(s){s.classList.toggle('show',s.id==='tab-'+t);});}
+function toggleBet(el){el.closest('.bet').classList.toggle('collapsed');}
+function toggleCat(el){el.closest('.catsection').classList.toggle('collapsed');}
+function showTab(t){document.querySelectorAll('.tabs button').forEach(function(b){b.classList.toggle('active',b.dataset.tab===t);});document.querySelectorAll('.tab').forEach(function(s){s.classList.toggle('show',s.id==='tab-'+t);});}
 document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){showTab(b.dataset.tab);});});
-document.querySelectorAll('.filterbtn').forEach(function(b){b.addEventListener('click',function(){filterMode=b.dataset.f;document.querySelectorAll('.filterbtn').forEach(function(x){x.classList.toggle('active',x.dataset.f===filterMode);});renderBets();});});
+document.querySelectorAll('.filterbtn[data-f]').forEach(function(b){b.addEventListener('click',function(){filterMode=b.dataset.f;document.querySelectorAll('.filterbtn[data-f]').forEach(function(x){x.classList.toggle('active',x.dataset.f===filterMode);});renderBets();});});
+document.querySelectorAll('.filterbtn[data-s]').forEach(function(b){b.addEventListener('click',function(){betSort=b.dataset.s;document.querySelectorAll('.filterbtn[data-s]').forEach(function(x){x.classList.toggle('active',x.dataset.s===betSort);});renderBets();});});
 $('refresh').addEventListener('click',refresh);
 refresh();setInterval(refresh,60000);
 </script></body></html>"""
