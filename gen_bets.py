@@ -1,4 +1,66 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+# -*- coding: utf-8 -*-
+import json
+GAMES = {
+ "NYM@SEA":["Mets","Mariners"],"CWS@MIN":["White Sox","Twins"],"SD@PHI":["Padres","Phillies"],
+ "BAL@BOS":["Orioles","Red Sox"],"KC@CIN":["Royals","Reds"],"SF@MIL":["Giants","Brewers"],
+ "TEX@STL":["Rangers","Cardinals"],"ATH@CHC":["Athletics","Cubs"],"PIT@HOU":["Pirates","Astros"],
+ "LAD@ARI":["Dodgers","Diamondbacks"],
+}
+players=[
+ {"n":"Colson Montgomery","g":"CWS@MIN","pr":["HR"]},
+ {"n":"Byron Buxton","g":"CWS@MIN","pr":["HR"]},
+ {"n":"Juan Soto","g":"NYM@SEA","pr":["HR"]},
+ {"n":"Kyle Schwarber","g":"SD@PHI","pr":["HR"]},
+ {"n":"Bryce Harper","g":"SD@PHI","pr":["HR"]},
+ {"n":"Brandon Marsh","g":"SD@PHI","pr":["HR"]},
+ {"n":"Fernando Tatis Jr.","g":"SD@PHI","pr":["HR"]},
+ {"n":"Pete Alonso","g":"BAL@BOS","pr":["HR"]},
+ {"n":"Carter Jensen","g":"KC@CIN","pr":["HR"]},
+ {"n":"Rafael Devers","g":"SF@MIL","pr":["HR"]},
+ {"n":"Ezequiel Duran","g":"TEX@STL","pr":["HR"]},
+ {"n":"Jake Burger","g":"TEX@STL","pr":["HR"]},
+ {"n":"Shea Langeliers","g":"ATH@CHC","pr":["HR"]},
+ {"n":"Christian Walker","g":"PIT@HOU","pr":["HR"]},
+ {"n":"Yordan Alvarez","g":"PIT@HOU","pr":["HR"]},
+ {"n":"Max Muncy","g":"LAD@ARI","pr":["HR"]},
+ {"n":"Kyle Tucker","g":"LAD@ARI","pr":["HR"]},
+ {"n":"Andy Pages","g":"LAD@ARI","pr":["HR","HIT"]},
+ {"n":"Mookie Betts","g":"LAD@ARI","pr":["HIT"]},
+ {"n":"Freddie Freeman","g":"LAD@ARI","pr":["HIT"]},
+]
+def H(p): return {"p":p,"prop":"HR"}
+def T(p): return {"p":p,"prop":"HIT"}
+bets=[
+ {"id":"#4007","kind":"6-leg parlay","odds":3159870,"wager":0.10,"payout":3159.97,"placed":"1:56 PM","ts":1356,
+  "legs":[H("Colson Montgomery"),H("Kyle Schwarber"),H("Pete Alonso"),H("Rafael Devers"),H("Ezequiel Duran"),H("Max Muncy")]},
+ {"id":"#4008","kind":"6-leg SGP+","odds":5597508,"wager":0.10,"payout":5597.61,"placed":"1:57 PM","ts":1357,
+  "legs":[H("Andy Pages"),H("Kyle Tucker"),H("Kyle Schwarber"),H("Pete Alonso"),H("Rafael Devers"),H("Ezequiel Duran")]},
+ {"id":"#4006","kind":"6-leg SGP+","odds":9771167,"wager":0.10,"payout":9771.27,"placed":"1:53 PM","ts":1353,
+  "legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Fernando Tatis Jr."),H("Andy Pages"),H("Kyle Tucker"),H("Christian Walker")]},
+ {"id":"#ts2w","kind":"6-leg SGP+","odds":143437,"wager":0.10,"payout":143.55,"placed":"1:52 PM","ts":1352,
+  "legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Yordan Alvarez"),H("Christian Walker"),T("Andy Pages"),T("Mookie Betts")]},
+ {"id":"#4005","kind":"9-leg SGP+","odds":377869329,"wager":0.10,"payout":377869.43,"placed":"1:46 PM","ts":1346,
+  "legs":[H("Ezequiel Duran"),H("Jake Burger"),H("Colson Montgomery"),H("Kyle Schwarber"),H("Pete Alonso"),H("Carter Jensen"),H("Rafael Devers"),H("Shea Langeliers"),H("Max Muncy")]},
+ {"id":"#4004","kind":"10-leg SGP+","odds":720108740,"wager":0.13,"payout":936141.49,"placed":"1:44 PM","ts":1344,
+  "legs":[H("Byron Buxton"),H("Colson Montgomery"),H("Juan Soto"),H("Bryce Harper"),H("Pete Alonso"),H("Carter Jensen"),H("Rafael Devers"),H("Jake Burger"),H("Shea Langeliers"),H("Max Muncy")]},
+ {"id":"#nm3","kind":"5-leg SGP+","odds":341459,"wager":0.25,"payout":853.92,"placed":"1:32 PM","ts":1332,
+  "legs":[H("Kyle Schwarber"),H("Fernando Tatis Jr."),H("Byron Buxton"),H("Carter Jensen"),H("Christian Walker")]},
+ {"id":"#cfx","kind":"4-leg parlay","odds":14497,"wager":0.25,"payout":36.49,"placed":"1:31 PM","ts":1331.1,
+  "legs":[H("Byron Buxton"),H("Bryce Harper"),H("Carter Jensen"),T("Andy Pages")]},
+ {"id":"#d09e","kind":"4-leg parlay","odds":23460,"wager":0.25,"payout":58.90,"placed":"1:31 PM","ts":1331.0,
+  "legs":[H("Byron Buxton"),H("Brandon Marsh"),H("Carter Jensen"),T("Andy Pages")]},
+ {"id":"#4003","kind":"6-leg SGP+","odds":3904708,"wager":0.10,"payout":3904.81,"placed":"1:29 PM","ts":1329,
+  "legs":[H("Bryce Harper"),H("Fernando Tatis Jr."),H("Byron Buxton"),H("Carter Jensen"),H("Christian Walker"),H("Kyle Tucker")]},
+ {"id":"#4002","kind":"7-leg SGP+","odds":32787353,"wager":0.10,"payout":32787.45,"placed":"1:28 PM","ts":1328.1,
+  "legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Fernando Tatis Jr."),H("Byron Buxton"),H("Carter Jensen"),H("Christian Walker"),H("Kyle Tucker")]},
+ {"id":"#4001","kind":"8-leg SGP+","odds":192128924,"wager":0.10,"payout":192129.02,"placed":"1:28 PM","ts":1328.0,
+  "legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Fernando Tatis Jr."),H("Andy Pages"),H("Kyle Tucker"),H("Byron Buxton"),H("Carter Jensen"),H("Christian Walker")]},
+ {"id":"#d9q","kind":"7-leg SGP+","odds":559291,"wager":0.10,"payout":559.43,"placed":"1:24 PM","ts":1324,
+  "legs":[H("Bryce Harper"),H("Brandon Marsh"),T("Andy Pages"),T("Mookie Betts"),H("Byron Buxton"),H("Carter Jensen"),H("Yordan Alvarez")]},
+ {"id":"#4000","kind":"9-leg SGP+","odds":3468177,"wager":0.10,"payout":3468.28,"placed":"1:23 PM","ts":1323,
+  "legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Yordan Alvarez"),H("Christian Walker"),T("Freddie Freeman"),T("Andy Pages"),T("Mookie Betts"),H("Byron Buxton"),H("Carter Jensen")]},
+]
+TPL = r"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HR Bet Tracker - June 3 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Spline+Sans+Mono:wght@500;700&family=Spline+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -78,9 +140,9 @@ footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:v
 const DATE="2026-06-03";
 const SCHED="https://statsapi.mlb.com/api/v1/schedule?sportId=1&date="+DATE+"&hydrate=linescore,team";
 const FEED=function(pk){return "https://statsapi.mlb.com/api/v1.1/game/"+pk+"/feed/live";};
-const GAMES={"NYM@SEA": ["Mets", "Mariners"], "CWS@MIN": ["White Sox", "Twins"], "SD@PHI": ["Padres", "Phillies"], "BAL@BOS": ["Orioles", "Red Sox"], "KC@CIN": ["Royals", "Reds"], "SF@MIL": ["Giants", "Brewers"], "TEX@STL": ["Rangers", "Cardinals"], "ATH@CHC": ["Athletics", "Cubs"], "PIT@HOU": ["Pirates", "Astros"], "LAD@ARI": ["Dodgers", "Diamondbacks"]};
-const players=[{"n": "Colson Montgomery", "g": "CWS@MIN", "pr": ["HR"]}, {"n": "Byron Buxton", "g": "CWS@MIN", "pr": ["HR"]}, {"n": "Juan Soto", "g": "NYM@SEA", "pr": ["HR"]}, {"n": "Kyle Schwarber", "g": "SD@PHI", "pr": ["HR"]}, {"n": "Bryce Harper", "g": "SD@PHI", "pr": ["HR"]}, {"n": "Brandon Marsh", "g": "SD@PHI", "pr": ["HR"]}, {"n": "Fernando Tatis Jr.", "g": "SD@PHI", "pr": ["HR"]}, {"n": "Pete Alonso", "g": "BAL@BOS", "pr": ["HR"]}, {"n": "Carter Jensen", "g": "KC@CIN", "pr": ["HR"]}, {"n": "Rafael Devers", "g": "SF@MIL", "pr": ["HR"]}, {"n": "Ezequiel Duran", "g": "TEX@STL", "pr": ["HR"]}, {"n": "Jake Burger", "g": "TEX@STL", "pr": ["HR"]}, {"n": "Shea Langeliers", "g": "ATH@CHC", "pr": ["HR"]}, {"n": "Christian Walker", "g": "PIT@HOU", "pr": ["HR"]}, {"n": "Yordan Alvarez", "g": "PIT@HOU", "pr": ["HR"]}, {"n": "Max Muncy", "g": "LAD@ARI", "pr": ["HR"]}, {"n": "Kyle Tucker", "g": "LAD@ARI", "pr": ["HR"]}, {"n": "Andy Pages", "g": "LAD@ARI", "pr": ["HR", "HIT"]}, {"n": "Mookie Betts", "g": "LAD@ARI", "pr": ["HIT"]}, {"n": "Freddie Freeman", "g": "LAD@ARI", "pr": ["HIT"]}];
-const bets=[{"id": "#4007", "kind": "6-leg parlay", "odds": 3159870, "wager": 0.1, "payout": 3159.97, "placed": "1:56 PM", "ts": 1356, "legs": [{"p": "Colson Montgomery", "prop": "HR"}, {"p": "Kyle Schwarber", "prop": "HR"}, {"p": "Pete Alonso", "prop": "HR"}, {"p": "Rafael Devers", "prop": "HR"}, {"p": "Ezequiel Duran", "prop": "HR"}, {"p": "Max Muncy", "prop": "HR"}]}, {"id": "#4008", "kind": "6-leg SGP+", "odds": 5597508, "wager": 0.1, "payout": 5597.61, "placed": "1:57 PM", "ts": 1357, "legs": [{"p": "Andy Pages", "prop": "HR"}, {"p": "Kyle Tucker", "prop": "HR"}, {"p": "Kyle Schwarber", "prop": "HR"}, {"p": "Pete Alonso", "prop": "HR"}, {"p": "Rafael Devers", "prop": "HR"}, {"p": "Ezequiel Duran", "prop": "HR"}]}, {"id": "#4006", "kind": "6-leg SGP+", "odds": 9771167, "wager": 0.1, "payout": 9771.27, "placed": "1:53 PM", "ts": 1353, "legs": [{"p": "Bryce Harper", "prop": "HR"}, {"p": "Brandon Marsh", "prop": "HR"}, {"p": "Fernando Tatis Jr.", "prop": "HR"}, {"p": "Andy Pages", "prop": "HR"}, {"p": "Kyle Tucker", "prop": "HR"}, {"p": "Christian Walker", "prop": "HR"}]}, {"id": "#ts2w", "kind": "6-leg SGP+", "odds": 143437, "wager": 0.1, "payout": 143.55, "placed": "1:52 PM", "ts": 1352, "legs": [{"p": "Bryce Harper", "prop": "HR"}, {"p": "Brandon Marsh", "prop": "HR"}, {"p": "Yordan Alvarez", "prop": "HR"}, {"p": "Christian Walker", "prop": "HR"}, {"p": "Andy Pages", "prop": "HIT"}, {"p": "Mookie Betts", "prop": "HIT"}]}, {"id": "#4005", "kind": "9-leg SGP+", "odds": 377869329, "wager": 0.1, "payout": 377869.43, "placed": "1:46 PM", "ts": 1346, "legs": [{"p": "Ezequiel Duran", "prop": "HR"}, {"p": "Jake Burger", "prop": "HR"}, {"p": "Colson Montgomery", "prop": "HR"}, {"p": "Kyle Schwarber", "prop": "HR"}, {"p": "Pete Alonso", "prop": "HR"}, {"p": "Carter Jensen", "prop": "HR"}, {"p": "Rafael Devers", "prop": "HR"}, {"p": "Shea Langeliers", "prop": "HR"}, {"p": "Max Muncy", "prop": "HR"}]}, {"id": "#4004", "kind": "10-leg SGP+", "odds": 720108740, "wager": 0.13, "payout": 936141.49, "placed": "1:44 PM", "ts": 1344, "legs": [{"p": "Byron Buxton", "prop": "HR"}, {"p": "Colson Montgomery", "prop": "HR"}, {"p": "Juan Soto", "prop": "HR"}, {"p": "Bryce Harper", "prop": "HR"}, {"p": "Pete Alonso", "prop": "HR"}, {"p": "Carter Jensen", "prop": "HR"}, {"p": "Rafael Devers", "prop": "HR"}, {"p": "Jake Burger", "prop": "HR"}, {"p": "Shea Langeliers", "prop": "HR"}, {"p": "Max Muncy", "prop": "HR"}]}, {"id": "#nm3", "kind": "5-leg SGP+", "odds": 341459, "wager": 0.25, "payout": 853.92, "placed": "1:32 PM", "ts": 1332, "legs": [{"p": "Kyle Schwarber", "prop": "HR"}, {"p": "Fernando Tatis Jr.", "prop": "HR"}, {"p": "Byron Buxton", "prop": "HR"}, {"p": "Carter Jensen", "prop": "HR"}, {"p": "Christian Walker", "prop": "HR"}]}, {"id": "#cfx", "kind": "4-leg parlay", "odds": 14497, "wager": 0.25, "payout": 36.49, "placed": "1:31 PM", "ts": 1331.1, "legs": [{"p": "Byron Buxton", "prop": "HR"}, {"p": "Bryce Harper", "prop": "HR"}, {"p": "Carter Jensen", "prop": "HR"}, {"p": "Andy Pages", "prop": "HIT"}]}, {"id": "#d09e", "kind": "4-leg parlay", "odds": 23460, "wager": 0.25, "payout": 58.9, "placed": "1:31 PM", "ts": 1331.0, "legs": [{"p": "Byron Buxton", "prop": "HR"}, {"p": "Brandon Marsh", "prop": "HR"}, {"p": "Carter Jensen", "prop": "HR"}, {"p": "Andy Pages", "prop": "HIT"}]}, {"id": "#4003", "kind": "6-leg SGP+", "odds": 3904708, "wager": 0.1, "payout": 3904.81, "placed": "1:29 PM", "ts": 1329, "legs": [{"p": "Bryce Harper", "prop": "HR"}, {"p": "Fernando Tatis Jr.", "prop": "HR"}, {"p": "Byron Buxton", "prop": "HR"}, {"p": "Carter Jensen", "prop": "HR"}, {"p": "Christian Walker", "prop": "HR"}, {"p": "Kyle Tucker", "prop": "HR"}]}, {"id": "#4002", "kind": "7-leg SGP+", "odds": 32787353, "wager": 0.1, "payout": 32787.45, "placed": "1:28 PM", "ts": 1328.1, "legs": [{"p": "Bryce Harper", "prop": "HR"}, {"p": "Brandon Marsh", "prop": "HR"}, {"p": "Fernando Tatis Jr.", "prop": "HR"}, {"p": "Byron Buxton", "prop": "HR"}, {"p": "Carter Jensen", "prop": "HR"}, {"p": "Christian Walker", "prop": "HR"}, {"p": "Kyle Tucker", "prop": "HR"}]}, {"id": "#4001", "kind": "8-leg SGP+", "odds": 192128924, "wager": 0.1, "payout": 192129.02, "placed": "1:28 PM", "ts": 1328.0, "legs": [{"p": "Bryce Harper", "prop": "HR"}, {"p": "Brandon Marsh", "prop": "HR"}, {"p": "Fernando Tatis Jr.", "prop": "HR"}, {"p": "Andy Pages", "prop": "HR"}, {"p": "Kyle Tucker", "prop": "HR"}, {"p": "Byron Buxton", "prop": "HR"}, {"p": "Carter Jensen", "prop": "HR"}, {"p": "Christian Walker", "prop": "HR"}]}, {"id": "#d9q", "kind": "7-leg SGP+", "odds": 559291, "wager": 0.1, "payout": 559.43, "placed": "1:24 PM", "ts": 1324, "legs": [{"p": "Bryce Harper", "prop": "HR"}, {"p": "Brandon Marsh", "prop": "HR"}, {"p": "Andy Pages", "prop": "HIT"}, {"p": "Mookie Betts", "prop": "HIT"}, {"p": "Byron Buxton", "prop": "HR"}, {"p": "Carter Jensen", "prop": "HR"}, {"p": "Yordan Alvarez", "prop": "HR"}]}, {"id": "#4000", "kind": "9-leg SGP+", "odds": 3468177, "wager": 0.1, "payout": 3468.28, "placed": "1:23 PM", "ts": 1323, "legs": [{"p": "Bryce Harper", "prop": "HR"}, {"p": "Brandon Marsh", "prop": "HR"}, {"p": "Yordan Alvarez", "prop": "HR"}, {"p": "Christian Walker", "prop": "HR"}, {"p": "Freddie Freeman", "prop": "HIT"}, {"p": "Andy Pages", "prop": "HIT"}, {"p": "Mookie Betts", "prop": "HIT"}, {"p": "Byron Buxton", "prop": "HR"}, {"p": "Carter Jensen", "prop": "HR"}]}];
+const GAMES=__GAMES__;
+const players=__PLAYERS__;
+const bets=__BETS__;
 const norm=function(s){return (s||"").normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z ]/g,'').replace(/\s+/g,' ').trim();};
 players.forEach(function(p){p.k=norm(p.n);p.hr=[];p.hit=false;});
 const pByKey={};players.forEach(function(p){pByKey[p.k]=p;});
@@ -167,4 +229,7 @@ function renderBets(){
 document.querySelectorAll('.sortbtn').forEach(function(b){b.addEventListener('click',function(){sortMode=b.dataset.m;document.querySelectorAll('.sortbtn').forEach(function(x){x.classList.toggle('active',x.dataset.m===sortMode);});renderBets();});});
 $('refresh').addEventListener('click',refresh);
 refresh();setInterval(refresh,45000);
-</script></body></html>
+</script></body></html>"""
+out = TPL.replace("__GAMES__", json.dumps(GAMES)).replace("__PLAYERS__", json.dumps(players)).replace("__BETS__", json.dumps(bets))
+open(r"C:\Users\damie\OneDrive\1-Sports-Fantasy-Betting\betting\Claude\mlb-hr-tracker\index.html","w",encoding="utf-8").write(out)
+print("wrote index.html bytes:", len(out), "| bets:", len(bets), "| players:", len(players))
