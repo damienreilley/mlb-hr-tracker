@@ -5,20 +5,23 @@ GAMES = {
  "BAL@BOS":["Orioles","Red Sox"],"KC@CIN":["Royals","Reds"],"SF@MIL":["Giants","Brewers"],
  "TEX@STL":["Rangers","Cardinals"],"ATH@CHC":["Athletics","Cubs"],"PIT@HOU":["Pirates","Astros"],
  "LAD@ARI":["Dodgers","Diamondbacks"],"TOR@ATL":["Blue Jays","Braves"],"CLE@NYY":["Guardians","Yankees"],
+ "COL@LAA":["Rockies","Angels"],
 }
 players=[
  {"n":"Colson Montgomery","g":"CWS@MIN","pr":["HR"],"od":"+390"},
  {"n":"Byron Buxton","g":"CWS@MIN","pr":["HR"],"od":"+270"},
  {"n":"Juan Soto","g":"NYM@SEA","pr":["HR","FPA"],"od":"+390"},
- {"n":"Kyle Schwarber","g":"SD@PHI","pr":["HR","FPA"],"od":"+285"},
- {"n":"Bryce Harper","g":"SD@PHI","pr":["HR"],"od":"+470"},
- {"n":"Brandon Marsh","g":"SD@PHI","pr":["HR","FPA"],"od":"+820"},
+ {"n":"Kyle Schwarber","g":"SD@PHI","pr":["HR","FPA","TB"],"od":"+285"},
+ {"n":"Bryce Harper","g":"SD@PHI","pr":["HR","TB"],"od":"+470"},
+ {"n":"Brandon Marsh","g":"SD@PHI","pr":["HR","FPA","TB"],"od":"+820"},
  {"n":"Fernando Tatis Jr.","g":"SD@PHI","pr":["HR"],"od":"+820"},
+ {"n":"J.T. Realmuto","g":"SD@PHI","pr":["TB"],"od":""},
  {"n":"Pete Alonso","g":"BAL@BOS","pr":["HR"],"od":"+410"},
  {"n":"Wilyer Abreu","g":"BAL@BOS","pr":["HR"],"od":"+490"},
  {"n":"Carter Jensen","g":"KC@CIN","pr":["HR"],"od":"+410"},
  {"n":"Rafael Devers","g":"SF@MIL","pr":["HR"],"od":"+390"},
  {"n":"Casey Schmitt","g":"SF@MIL","pr":["HR"],"od":"+390"},
+ {"n":"Brice Turang","g":"SF@MIL","pr":["HR"],"od":"+680"},
  {"n":"Ezequiel Duran","g":"TEX@STL","pr":["HR"],"od":"+1300"},
  {"n":"Jake Burger","g":"TEX@STL","pr":["HR"],"od":"+570"},
  {"n":"Shea Langeliers","g":"ATH@CHC","pr":["HR"],"od":"+320"},
@@ -26,81 +29,109 @@ players=[
  {"n":"Ian Happ","g":"ATH@CHC","pr":["HR"],"od":"+470"},
  {"n":"Christian Walker","g":"PIT@HOU","pr":["HR"],"od":"+490"},
  {"n":"Yordan Alvarez","g":"PIT@HOU","pr":["HR"],"od":"+270"},
- {"n":"Max Muncy","g":"LAD@ARI","pr":["HR"],"od":"+360"},
- {"n":"Kyle Tucker","g":"LAD@ARI","pr":["HR"],"od":"+590"},
- {"n":"Andy Pages","g":"LAD@ARI","pr":["HR","HIT","FPA"],"od":"+540"},
- {"n":"Mookie Betts","g":"LAD@ARI","pr":["HR","HIT"],"od":"+590"},
- {"n":"Freddie Freeman","g":"LAD@ARI","pr":["HIT","HR"],"od":"+610"},
- {"n":"Austin Riley","g":"TOR@ATL","pr":["HR","FPA"],"od":"+570"},
+ {"n":"Max Muncy","g":"LAD@ARI","pr":["HR","TB"],"od":"+360"},
+ {"n":"Kyle Tucker","g":"LAD@ARI","pr":["HR","TB"],"od":"+590"},
+ {"n":"Andy Pages","g":"LAD@ARI","pr":["HR","HIT","FPA","TB"],"od":"+540"},
+ {"n":"Mookie Betts","g":"LAD@ARI","pr":["HR","HIT","TB"],"od":"+590"},
+ {"n":"Freddie Freeman","g":"LAD@ARI","pr":["HIT","HR","TB"],"od":"+610"},
+ {"n":"Will Smith","g":"LAD@ARI","pr":["HR","TB"],"od":""},
+ {"n":"Shohei Ohtani","g":"LAD@ARI","pr":["TB"],"od":""},
+ {"n":"Austin Riley","g":"TOR@ATL","pr":["HR","FPA","TB"],"od":"+570"},
  {"n":"Ozzie Albies","g":"TOR@ATL","pr":["HR"],"od":"+760"},
  {"n":"Ha-Seong Kim","g":"TOR@ATL","pr":["HR"],"od":"+980"},
+ {"n":"Matt Olson","g":"TOR@ATL","pr":["HR","TB"],"od":"+470"},
+ {"n":"Vladimir Guerrero Jr.","g":"TOR@ATL","pr":["TB"],"od":""},
+ {"n":"Jesus Sanchez","g":"TOR@ATL","pr":["TB"],"od":""},
  {"n":"Jose Ramirez","g":"CLE@NYY","pr":["HR"],"od":"+420"},
+ {"n":"Wade Meckler","g":"COL@LAA","pr":["HR"],"od":"+710"},
+ {"n":"Jo Adell","g":"COL@LAA","pr":["HR"],"od":"+390"},
+]
+pitchers=[
+ {"n":"Shohei Ohtani","g":"LAD@ARI"},
+ {"n":"Paul Skenes","g":"PIT@HOU"},
+ {"n":"Logan Webb","g":"SF@MIL"},
+ {"n":"Chase Burns","g":"KC@CIN"},
+ {"n":"Gerrit Cole","g":"CLE@NYY"},
+ {"n":"Gavin Williams","g":"CLE@NYY"},
+ {"n":"Cristopher Sanchez","g":"SD@PHI"},
 ]
 def H(p): return {"p":p,"prop":"HR"}
 def T(p): return {"p":p,"prop":"HIT"}
 def F(p): return {"p":p,"prop":"FPA"}
+def B(p): return {"p":p,"prop":"TB"}
+def P(p,c): return {"p":p,"prop":c}
 bets=[
- {"id":"#fhz","kind":"4-leg parlay","odds":402009,"wager":0.10,"payout":402.11,"placed":"3:32 PM","ts":1532,
-  "legs":[H("Fernando Tatis Jr."),H("Ha-Seong Kim"),H("Ian Happ"),H("Freddie Freeman")]},
- {"id":"#4017","kind":"7-leg SGP+","odds":9647418,"wager":0.10,"payout":9647.52,"placed":"3:22 PM","ts":1522,
-  "legs":[H("Ian Happ"),H("Nick Kurtz"),H("Juan Soto"),H("Bryce Harper"),H("Austin Riley"),H("Rafael Devers"),H("Max Muncy")]},
- {"id":"#ewz","kind":"5-leg parlay","odds":916881,"wager":0.11,"payout":1008.68,"placed":"3:20 PM","ts":1520.1,
-  "legs":[H("Brandon Marsh"),H("Austin Riley"),H("Rafael Devers"),H("Nick Kurtz"),H("Mookie Betts")]},
- {"id":"#evw","kind":"5-leg parlay","odds":470068,"wager":0.22,"payout":1034.37,"placed":"3:20 PM","ts":1520.0,
-  "legs":[H("Kyle Schwarber"),H("Ozzie Albies"),H("Casey Schmitt"),H("Shea Langeliers"),H("Kyle Tucker")]},
- {"id":"#4016","kind":"6-leg parlay","odds":2464639,"wager":0.10,"payout":2464.74,"placed":"3:18 PM","ts":1518,
-  "legs":[H("Juan Soto"),H("Bryce Harper"),H("Austin Riley"),H("Rafael Devers"),H("Shea Langeliers"),H("Andy Pages")]},
- {"id":"#4015","kind":"6-leg SGP+","odds":34288983,"wager":0.10,"payout":34289.08,"placed":"3:16 PM","ts":1516,
-  "legs":[H("Ha-Seong Kim"),H("Ozzie Albies"),H("Brandon Marsh"),H("Jose Ramirez"),H("Rafael Devers"),H("Ezequiel Duran")]},
- {"id":"#e1t","kind":"3-leg parlay","odds":110668,"wager":0.10,"payout":110.77,"placed":"3:06 PM","ts":1506,
-  "legs":[H("Brandon Marsh"),H("Ozzie Albies"),H("Ezequiel Duran")]},
- {"id":"#4014","kind":"4-leg parlay","odds":4221320,"wager":0.10,"payout":4221.42,"placed":"3:04 PM","ts":1504,
-  "legs":[F("Juan Soto"),F("Brandon Marsh"),F("Austin Riley"),H("Kyle Tucker")]},
- {"id":"#4013","kind":"4-leg parlay","odds":4894300,"wager":0.10,"payout":4894.40,"placed":"3:03 PM","ts":1503,
-  "legs":[F("Juan Soto"),F("Kyle Schwarber"),F("Austin Riley"),F("Andy Pages")]},
- {"id":"#4012","kind":"7-leg SGP+","odds":10112348,"wager":0.10,"payout":10112.45,"placed":"3:00 PM","ts":1500,
-  "legs":[H("Bryce Harper"),H("Kyle Schwarber"),H("Juan Soto"),H("Ozzie Albies"),H("Casey Schmitt"),H("Shea Langeliers"),H("Andy Pages")]},
- {"id":"#4011","kind":"8-leg SGP+","odds":60795366,"wager":0.10,"payout":60795.47,"placed":"2:59 PM","ts":1459,
-  "legs":[H("Max Muncy"),H("Andy Pages"),H("Juan Soto"),H("Bryce Harper"),H("Wilyer Abreu"),H("Austin Riley"),H("Casey Schmitt"),H("Shea Langeliers")]},
- {"id":"#4010","kind":"10-leg SGP+","odds":966087952,"wager":0.10,"payout":966088.05,"placed":"2:57 PM","ts":1457,
-  "legs":[H("Max Muncy"),H("Andy Pages"),H("Mookie Betts"),H("Nick Kurtz"),H("Ian Happ"),H("Shea Langeliers"),H("Juan Soto"),H("Bryce Harper"),H("Wilyer Abreu"),H("Casey Schmitt")]},
- {"id":"#4009","kind":"9-leg SGP+","odds":626786633,"wager":0.10,"payout":626786.73,"placed":"2:48 PM","ts":1448,
-  "legs":[H("Kyle Schwarber"),H("Brandon Marsh"),H("Andy Pages"),H("Kyle Tucker"),H("Juan Soto"),H("Wilyer Abreu"),H("Ozzie Albies"),H("Casey Schmitt"),H("Shea Langeliers")]},
- {"id":"#4008","kind":"6-leg SGP+","odds":5597508,"wager":0.10,"payout":5597.61,"placed":"1:57 PM","ts":1357,
-  "legs":[H("Andy Pages"),H("Kyle Tucker"),H("Kyle Schwarber"),H("Pete Alonso"),H("Rafael Devers"),H("Ezequiel Duran")]},
- {"id":"#4007","kind":"6-leg parlay","odds":3159870,"wager":0.10,"payout":3159.97,"placed":"1:56 PM","ts":1356,
-  "legs":[H("Colson Montgomery"),H("Kyle Schwarber"),H("Pete Alonso"),H("Rafael Devers"),H("Ezequiel Duran"),H("Max Muncy")]},
- {"id":"#4006","kind":"6-leg SGP+","odds":9771167,"wager":0.10,"payout":9771.27,"placed":"1:53 PM","ts":1353,
-  "legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Fernando Tatis Jr."),H("Andy Pages"),H("Kyle Tucker"),H("Christian Walker")]},
- {"id":"#ts2w","kind":"6-leg SGP+","odds":143437,"wager":0.10,"payout":143.55,"placed":"1:52 PM","ts":1352,
-  "legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Yordan Alvarez"),H("Christian Walker"),T("Andy Pages"),T("Mookie Betts")]},
- {"id":"#4005","kind":"9-leg SGP+","odds":377869329,"wager":0.10,"payout":377869.43,"placed":"1:46 PM","ts":1346,
-  "legs":[H("Ezequiel Duran"),H("Jake Burger"),H("Colson Montgomery"),H("Kyle Schwarber"),H("Pete Alonso"),H("Carter Jensen"),H("Rafael Devers"),H("Shea Langeliers"),H("Max Muncy")]},
- {"id":"#4004","kind":"10-leg SGP+","odds":720108740,"wager":0.13,"payout":936141.49,"placed":"1:44 PM","ts":1344,
-  "legs":[H("Byron Buxton"),H("Colson Montgomery"),H("Juan Soto"),H("Bryce Harper"),H("Pete Alonso"),H("Carter Jensen"),H("Rafael Devers"),H("Jake Burger"),H("Shea Langeliers"),H("Max Muncy")]},
- {"id":"#nm3","kind":"5-leg SGP+","odds":341459,"wager":0.25,"payout":853.92,"placed":"1:32 PM","ts":1332,
-  "legs":[H("Kyle Schwarber"),H("Fernando Tatis Jr."),H("Byron Buxton"),H("Carter Jensen"),H("Christian Walker")]},
- {"id":"#cfx","kind":"4-leg parlay","odds":14497,"wager":0.25,"payout":36.49,"placed":"1:31 PM","ts":1331.1,
-  "legs":[H("Byron Buxton"),H("Bryce Harper"),H("Carter Jensen"),T("Andy Pages")]},
- {"id":"#d09e","kind":"4-leg parlay","odds":23460,"wager":0.25,"payout":58.90,"placed":"1:31 PM","ts":1331.0,
-  "legs":[H("Byron Buxton"),H("Brandon Marsh"),H("Carter Jensen"),T("Andy Pages")]},
- {"id":"#4003","kind":"6-leg SGP+","odds":3904708,"wager":0.10,"payout":3904.81,"placed":"1:29 PM","ts":1329,
-  "legs":[H("Bryce Harper"),H("Fernando Tatis Jr."),H("Byron Buxton"),H("Carter Jensen"),H("Christian Walker"),H("Kyle Tucker")]},
- {"id":"#4002","kind":"7-leg SGP+","odds":32787353,"wager":0.10,"payout":32787.45,"placed":"1:28 PM","ts":1328.1,
-  "legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Fernando Tatis Jr."),H("Byron Buxton"),H("Carter Jensen"),H("Christian Walker"),H("Kyle Tucker")]},
- {"id":"#4001","kind":"8-leg SGP+","odds":192128924,"wager":0.10,"payout":192129.02,"placed":"1:28 PM","ts":1328.0,
-  "legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Fernando Tatis Jr."),H("Andy Pages"),H("Kyle Tucker"),H("Byron Buxton"),H("Carter Jensen"),H("Christian Walker")]},
- {"id":"#d9q","kind":"7-leg SGP+","odds":559291,"wager":0.10,"payout":559.43,"placed":"1:24 PM","ts":1324,
-  "legs":[H("Bryce Harper"),H("Brandon Marsh"),T("Andy Pages"),T("Mookie Betts"),H("Byron Buxton"),H("Carter Jensen"),H("Yordan Alvarez")]},
- {"id":"#4000","kind":"9-leg SGP+","odds":3468177,"wager":0.10,"payout":3468.28,"placed":"1:23 PM","ts":1323,
-  "legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Yordan Alvarez"),H("Christian Walker"),T("Freddie Freeman"),T("Andy Pages"),T("Mookie Betts"),H("Byron Buxton"),H("Carter Jensen")]},
+ {"id":"#se0","kind":"2-leg parlay","odds":7352,"wager":0.20,"payout":14.90,"placed":"5:31 PM","ts":1731.3,"legs":[H("Brandon Marsh"),H("Wade Meckler")]},
+ {"id":"#n6dq","kind":"3-leg parlay","odds":104228,"wager":0.10,"payout":104.33,"placed":"5:31 PM","ts":1731.2,"legs":[H("Brandon Marsh"),H("Ezequiel Duran"),H("Wade Meckler")]},
+ {"id":"#34qc","kind":"4-leg parlay","odds":698897,"wager":0.10,"payout":699.00,"placed":"5:31 PM","ts":1731.1,"legs":[H("Brandon Marsh"),H("Ezequiel Duran"),H("Wade Meckler"),H("Andy Pages")]},
+ {"id":"#m1sh","kind":"4-leg SGP+","odds":182311,"wager":0.10,"payout":182.41,"placed":"5:30 PM","ts":1730,"legs":[H("Max Muncy"),H("Andy Pages"),H("Brandon Marsh"),H("Wade Meckler")]},
+ {"id":"#s3gbh","kind":"3-leg parlay","odds":49828,"wager":0.15,"payout":74.89,"placed":"5:28 PM","ts":1728.1,"legs":[H("Brandon Marsh"),H("Wade Meckler"),H("Andy Pages")]},
+ {"id":"#4022","kind":"5-leg SGP+","odds":1422711,"wager":0.15,"payout":2134.22,"placed":"5:28 PM","ts":1728.0,"legs":[H("Max Muncy"),H("Andy Pages"),H("Brandon Marsh"),H("Brice Turang"),H("Wade Meckler")]},
+ {"id":"#4021","kind":"7-leg SGP+","odds":13162485,"wager":0.10,"payout":13162.59,"placed":"5:27 PM","ts":1727,"legs":[H("Brice Turang"),H("Casey Schmitt"),H("Max Muncy"),H("Andy Pages"),H("Bryce Harper"),H("Shea Langeliers"),H("Wade Meckler")]},
+ {"id":"#4020","kind":"9-leg SGP+","odds":733778757,"wager":0.10,"payout":733778.86,"placed":"5:26 PM","ts":1726,"legs":[H("Shea Langeliers"),H("Nick Kurtz"),H("Bryce Harper"),H("Brandon Marsh"),H("Brice Turang"),H("Casey Schmitt"),H("Matt Olson"),H("Wade Meckler"),H("Andy Pages")]},
+ {"id":"#4019","kind":"9-leg SGP+","odds":861420094,"wager":0.10,"payout":861420.19,"placed":"5:25 PM","ts":1725,"legs":[H("Shea Langeliers"),H("Nick Kurtz"),H("Kyle Schwarber"),H("Bryce Harper"),H("Brandon Marsh"),H("Matt Olson"),H("Ozzie Albies"),H("Brice Turang"),H("Wade Meckler")]},
+ {"id":"#4018","kind":"10-leg SGP+","odds":602849758,"wager":0.16,"payout":964559.77,"placed":"4:56 PM","ts":1656,"legs":[H("Andy Pages"),H("Will Smith"),H("Kyle Schwarber"),H("Bryce Harper"),H("Matt Olson"),H("Austin Riley"),H("Casey Schmitt"),H("Rafael Devers"),H("Shea Langeliers"),H("Nick Kurtz")]},
+ {"id":"#4hxk","kind":"4+ TB SGP","odds":24431,"wager":0.10,"payout":24.53,"placed":"4:44 PM","ts":1644.3,"legs":[B("Mookie Betts"),B("Will Smith"),B("Andy Pages"),B("Freddie Freeman")]},
+ {"id":"#c9ge","kind":"4+ TB SGP","odds":15895,"wager":0.10,"payout":16.00,"placed":"4:44 PM","ts":1644.2,"legs":[B("Shohei Ohtani"),B("Mookie Betts"),B("Max Muncy"),B("Will Smith")]},
+ {"id":"#0h15","kind":"4+ TB SGP","odds":18569,"wager":0.25,"payout":46.67,"placed":"4:44 PM","ts":1644.1,"legs":[B("Kyle Tucker"),B("Max Muncy"),B("Shohei Ohtani"),B("Andy Pages")]},
+ {"id":"#p1hm","kind":"4+ TB SGP","odds":46313,"wager":0.10,"payout":46.41,"placed":"4:42 PM","ts":1642.1,"legs":[B("Vladimir Guerrero Jr."),B("Matt Olson"),B("Jesus Sanchez"),B("Austin Riley")]},
+ {"id":"#zkp9","kind":"4+ TB SGP","odds":22318,"wager":0.75,"payout":168.14,"placed":"4:42 PM","ts":1642.0,"legs":[B("Kyle Schwarber"),B("Bryce Harper"),B("J.T. Realmuto"),B("Brandon Marsh")]},
+ {"id":"#b6mx","kind":"6-leg SGP+","odds":1078227,"wager":0.10,"payout":1078.36,"placed":"4:39 PM","ts":1639,"legs":[H("Bryce Harper"),H("Kyle Schwarber"),H("Matt Olson"),H("Rafael Devers"),H("Jo Adell"),H("Max Muncy")]},
+ {"id":"#fhz","kind":"4-leg parlay","odds":402009,"wager":0.10,"payout":402.11,"placed":"3:32 PM","ts":1532,"legs":[H("Fernando Tatis Jr."),H("Ha-Seong Kim"),H("Ian Happ"),H("Freddie Freeman")]},
+ {"id":"#4017","kind":"7-leg SGP+","odds":9647418,"wager":0.10,"payout":9647.52,"placed":"3:22 PM","ts":1522,"legs":[H("Ian Happ"),H("Nick Kurtz"),H("Juan Soto"),H("Bryce Harper"),H("Austin Riley"),H("Rafael Devers"),H("Max Muncy")]},
+ {"id":"#ewz","kind":"5-leg parlay","odds":916881,"wager":0.11,"payout":1008.68,"placed":"3:20 PM","ts":1520.1,"legs":[H("Brandon Marsh"),H("Austin Riley"),H("Rafael Devers"),H("Nick Kurtz"),H("Mookie Betts")]},
+ {"id":"#evw","kind":"5-leg parlay","odds":470068,"wager":0.22,"payout":1034.37,"placed":"3:20 PM","ts":1520.0,"legs":[H("Kyle Schwarber"),H("Ozzie Albies"),H("Casey Schmitt"),H("Shea Langeliers"),H("Kyle Tucker")]},
+ {"id":"#4016","kind":"6-leg parlay","odds":2464639,"wager":0.10,"payout":2464.74,"placed":"3:18 PM","ts":1518,"legs":[H("Juan Soto"),H("Bryce Harper"),H("Austin Riley"),H("Rafael Devers"),H("Shea Langeliers"),H("Andy Pages")]},
+ {"id":"#4015","kind":"6-leg SGP+","odds":34288983,"wager":0.10,"payout":34289.08,"placed":"3:16 PM","ts":1516,"legs":[H("Ha-Seong Kim"),H("Ozzie Albies"),H("Brandon Marsh"),H("Jose Ramirez"),H("Rafael Devers"),H("Ezequiel Duran")]},
+ {"id":"#e1t","kind":"3-leg parlay","odds":110668,"wager":0.10,"payout":110.77,"placed":"3:06 PM","ts":1506,"legs":[H("Brandon Marsh"),H("Ozzie Albies"),H("Ezequiel Duran")]},
+ {"id":"#4014","kind":"4-leg parlay","odds":4221320,"wager":0.10,"payout":4221.42,"placed":"3:04 PM","ts":1504,"legs":[F("Juan Soto"),F("Brandon Marsh"),F("Austin Riley"),H("Kyle Tucker")]},
+ {"id":"#4013","kind":"4-leg parlay","odds":4894300,"wager":0.10,"payout":4894.40,"placed":"3:03 PM","ts":1503,"legs":[F("Juan Soto"),F("Kyle Schwarber"),F("Austin Riley"),F("Andy Pages")]},
+ {"id":"#4012","kind":"7-leg SGP+","odds":10112348,"wager":0.10,"payout":10112.45,"placed":"3:00 PM","ts":1500,"legs":[H("Bryce Harper"),H("Kyle Schwarber"),H("Juan Soto"),H("Ozzie Albies"),H("Casey Schmitt"),H("Shea Langeliers"),H("Andy Pages")]},
+ {"id":"#4011","kind":"8-leg SGP+","odds":60795366,"wager":0.10,"payout":60795.47,"placed":"2:59 PM","ts":1459,"legs":[H("Max Muncy"),H("Andy Pages"),H("Juan Soto"),H("Bryce Harper"),H("Wilyer Abreu"),H("Austin Riley"),H("Casey Schmitt"),H("Shea Langeliers")]},
+ {"id":"#4010","kind":"10-leg SGP+","odds":966087952,"wager":0.10,"payout":966088.05,"placed":"2:57 PM","ts":1457,"legs":[H("Max Muncy"),H("Andy Pages"),H("Mookie Betts"),H("Nick Kurtz"),H("Ian Happ"),H("Shea Langeliers"),H("Juan Soto"),H("Bryce Harper"),H("Wilyer Abreu"),H("Casey Schmitt")]},
+ {"id":"#4009","kind":"9-leg SGP+","odds":626786633,"wager":0.10,"payout":626786.73,"placed":"2:48 PM","ts":1448,"legs":[H("Kyle Schwarber"),H("Brandon Marsh"),H("Andy Pages"),H("Kyle Tucker"),H("Juan Soto"),H("Wilyer Abreu"),H("Ozzie Albies"),H("Casey Schmitt"),H("Shea Langeliers")]},
+ {"id":"#4008","kind":"6-leg SGP+","odds":5597508,"wager":0.10,"payout":5597.61,"placed":"1:57 PM","ts":1357,"legs":[H("Andy Pages"),H("Kyle Tucker"),H("Kyle Schwarber"),H("Pete Alonso"),H("Rafael Devers"),H("Ezequiel Duran")]},
+ {"id":"#4007","kind":"6-leg parlay","odds":3159870,"wager":0.10,"payout":3159.97,"placed":"1:56 PM","ts":1356,"legs":[H("Colson Montgomery"),H("Kyle Schwarber"),H("Pete Alonso"),H("Rafael Devers"),H("Ezequiel Duran"),H("Max Muncy")]},
+ {"id":"#4006","kind":"6-leg SGP+","odds":9771167,"wager":0.10,"payout":9771.27,"placed":"1:53 PM","ts":1353,"legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Fernando Tatis Jr."),H("Andy Pages"),H("Kyle Tucker"),H("Christian Walker")]},
+ {"id":"#ts2w","kind":"6-leg SGP+","odds":143437,"wager":0.10,"payout":143.55,"placed":"1:52 PM","ts":1352,"legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Yordan Alvarez"),H("Christian Walker"),T("Andy Pages"),T("Mookie Betts")]},
+ {"id":"#4005","kind":"9-leg SGP+","odds":377869329,"wager":0.10,"payout":377869.43,"placed":"1:46 PM","ts":1346,"legs":[H("Ezequiel Duran"),H("Jake Burger"),H("Colson Montgomery"),H("Kyle Schwarber"),H("Pete Alonso"),H("Carter Jensen"),H("Rafael Devers"),H("Shea Langeliers"),H("Max Muncy")]},
+ {"id":"#4004","kind":"10-leg SGP+","odds":720108740,"wager":0.13,"payout":936141.49,"placed":"1:44 PM","ts":1344,"legs":[H("Byron Buxton"),H("Colson Montgomery"),H("Juan Soto"),H("Bryce Harper"),H("Pete Alonso"),H("Carter Jensen"),H("Rafael Devers"),H("Jake Burger"),H("Shea Langeliers"),H("Max Muncy")]},
+ {"id":"#nm3","kind":"5-leg SGP+","odds":341459,"wager":0.25,"payout":853.92,"placed":"1:32 PM","ts":1332,"legs":[H("Kyle Schwarber"),H("Fernando Tatis Jr."),H("Byron Buxton"),H("Carter Jensen"),H("Christian Walker")]},
+ {"id":"#cfx","kind":"4-leg parlay","odds":14497,"wager":0.25,"payout":36.49,"placed":"1:31 PM","ts":1331.1,"legs":[H("Byron Buxton"),H("Bryce Harper"),H("Carter Jensen"),T("Andy Pages")]},
+ {"id":"#d09e","kind":"4-leg parlay","odds":23460,"wager":0.25,"payout":58.90,"placed":"1:31 PM","ts":1331.0,"legs":[H("Byron Buxton"),H("Brandon Marsh"),H("Carter Jensen"),T("Andy Pages")]},
+ {"id":"#4003","kind":"6-leg SGP+","odds":3904708,"wager":0.10,"payout":3904.81,"placed":"1:29 PM","ts":1329,"legs":[H("Bryce Harper"),H("Fernando Tatis Jr."),H("Byron Buxton"),H("Carter Jensen"),H("Christian Walker"),H("Kyle Tucker")]},
+ {"id":"#4002","kind":"7-leg SGP+","odds":32787353,"wager":0.10,"payout":32787.45,"placed":"1:28 PM","ts":1328.1,"legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Fernando Tatis Jr."),H("Byron Buxton"),H("Carter Jensen"),H("Christian Walker"),H("Kyle Tucker")]},
+ {"id":"#4001","kind":"8-leg SGP+","odds":192128924,"wager":0.10,"payout":192129.02,"placed":"1:28 PM","ts":1328.0,"legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Fernando Tatis Jr."),H("Andy Pages"),H("Kyle Tucker"),H("Byron Buxton"),H("Carter Jensen"),H("Christian Walker")]},
+ {"id":"#d9q","kind":"7-leg SGP+","odds":559291,"wager":0.10,"payout":559.43,"placed":"1:24 PM","ts":1324,"legs":[H("Bryce Harper"),H("Brandon Marsh"),T("Andy Pages"),T("Mookie Betts"),H("Byron Buxton"),H("Carter Jensen"),H("Yordan Alvarez")]},
+ {"id":"#4000","kind":"9-leg SGP+","odds":3468177,"wager":0.10,"payout":3468.28,"placed":"1:23 PM","ts":1323,"legs":[H("Bryce Harper"),H("Brandon Marsh"),H("Yordan Alvarez"),H("Christian Walker"),T("Freddie Freeman"),T("Andy Pages"),T("Mookie Betts"),H("Byron Buxton"),H("Carter Jensen")]},
+ {"id":"#oh7","kind":"Shohei Ohtani","odds":10000,"wager":0.15,"payout":15.15,"placed":"4:30 PM","ts":1630.4,"legs":[P("Shohei Ohtani","NH7")]},
+ {"id":"#oh5","kind":"Shohei Ohtani","odds":3000,"wager":0.20,"payout":6.20,"placed":"4:30 PM","ts":1630.3,"legs":[P("Shohei Ohtani","NH5")]},
+ {"id":"#oh9u","kind":"Shohei Ohtani","odds":1300,"wager":0.30,"payout":4.20,"placed":"4:30 PM","ts":1630.2,"legs":[P("Shohei Ohtani","UP9")]},
+ {"id":"#ohk","kind":"Shohei Ohtani","odds":1400,"wager":0.10,"payout":1.50,"placed":"4:30 PM","ts":1630.1,"legs":[P("Shohei Ohtani","K1")]},
+ {"id":"#sk7","kind":"Paul Skenes","odds":7500,"wager":0.10,"payout":7.60,"placed":"4:29 PM","ts":1629.4,"legs":[P("Paul Skenes","NH7")]},
+ {"id":"#skk","kind":"Paul Skenes","odds":1600,"wager":0.10,"payout":1.70,"placed":"4:29 PM","ts":1629.3,"legs":[P("Paul Skenes","K1")]},
+ {"id":"#sk5","kind":"Paul Skenes","odds":2200,"wager":0.25,"payout":5.75,"placed":"4:29 PM","ts":1629.2,"legs":[P("Paul Skenes","NH5")]},
+ {"id":"#sk9u","kind":"Paul Skenes","odds":850,"wager":0.25,"payout":2.38,"placed":"4:29 PM","ts":1629.1,"legs":[P("Paul Skenes","UP9")]},
+ {"id":"#wb5","kind":"Logan Webb","odds":4000,"wager":0.10,"payout":4.10,"placed":"4:27 PM","ts":1627.4,"legs":[P("Logan Webb","NH5")]},
+ {"id":"#wbk","kind":"Logan Webb","odds":2000,"wager":0.10,"payout":2.10,"placed":"4:27 PM","ts":1627.3,"legs":[P("Logan Webb","K1")]},
+ {"id":"#bn9u","kind":"Chase Burns","odds":850,"wager":0.25,"payout":2.38,"placed":"4:27 PM","ts":1627.2,"legs":[P("Chase Burns","UP9")]},
+ {"id":"#bnk","kind":"Chase Burns","odds":1100,"wager":0.10,"payout":1.20,"placed":"4:27 PM","ts":1627.1,"legs":[P("Chase Burns","K1")]},
+ {"id":"#bn5","kind":"Chase Burns","odds":2000,"wager":0.20,"payout":4.20,"placed":"4:27 PM","ts":1627.0,"legs":[P("Chase Burns","NH5")]},
+ {"id":"#clk","kind":"Gerrit Cole","odds":2000,"wager":0.10,"payout":2.10,"placed":"4:25 PM","ts":1625.4,"legs":[P("Gerrit Cole","K1")]},
+ {"id":"#gw5","kind":"Gavin Williams","odds":3000,"wager":0.10,"payout":3.10,"placed":"4:25 PM","ts":1625.3,"legs":[P("Gavin Williams","NH5")]},
+ {"id":"#cl5","kind":"Gerrit Cole","odds":2500,"wager":0.10,"payout":2.60,"placed":"4:25 PM","ts":1625.2,"legs":[P("Gerrit Cole","NH5")]},
+ {"id":"#gwk","kind":"Gavin Williams","odds":1200,"wager":0.10,"payout":1.30,"placed":"4:25 PM","ts":1625.1,"legs":[P("Gavin Williams","K1")]},
+ {"id":"#cs6u","kind":"Cristopher Sanchez","odds":380,"wager":0.20,"payout":0.96,"placed":"4:24 PM","ts":1624.4,"legs":[P("Cristopher Sanchez","UP6")]},
+ {"id":"#cs5","kind":"Cristopher Sanchez","odds":3000,"wager":0.15,"payout":4.65,"placed":"4:24 PM","ts":1624.3,"legs":[P("Cristopher Sanchez","NH5")]},
+ {"id":"#csk","kind":"Cristopher Sanchez","odds":1700,"wager":0.10,"payout":1.80,"placed":"4:24 PM","ts":1624.2,"legs":[P("Cristopher Sanchez","K1")]},
+ {"id":"#cs7","kind":"Cristopher Sanchez","odds":10000,"wager":0.10,"payout":10.10,"placed":"4:24 PM","ts":1624.1,"legs":[P("Cristopher Sanchez","NH7")]},
 ]
 TPL = r"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HR Bet Tracker - June 3 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Spline+Sans+Mono:wght@500;700&family=Spline+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0e0c;--panel:#111714;--panel2:#161e1a;--line:#243029;--ink:#e8efe9;--dim:#8aa093;--grn:#39e07b;--amber:#f5b342;--red:#ff5d5d;--blue:#5db0ff;--live:#ff4d4d}
+:root{--bg:#0a0e0c;--panel:#111714;--panel2:#161e1a;--line:#243029;--ink:#e8efe9;--dim:#8aa093;--grn:#39e07b;--amber:#f5b342;--red:#ff5d5d;--blue:#5db0ff;--live:#ff4d4d;--purp:#c08cff}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(1200px 600px at 50% -10%,#13201a,var(--bg) 60%);color:var(--ink);font-family:'Spline Sans',sans-serif;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1100px;margin:0 auto;padding:16px 13px 70px}
 .kicker{font-family:'Spline Sans Mono';color:var(--grn);font-weight:700;letter-spacing:.18em;font-size:11px;text-transform:uppercase}
@@ -133,6 +164,7 @@ h2{font-family:'Archivo';font-weight:900;font-size:18px;letter-spacing:.02em;mar
 .podds{font-family:'Spline Sans Mono';font-size:11.5px;color:var(--dim);white-space:nowrap}
 .hrbadge{font-family:'Spline Sans Mono';font-size:11.5px;font-weight:700;color:#04140a;background:var(--grn);padding:2px 8px;border-radius:20px;white-space:nowrap;box-shadow:0 0 10px rgba(57,224,123,.45)}
 .hitbadge{font-family:'Spline Sans Mono';font-size:11px;font-weight:700;color:#04140a;background:var(--blue);padding:2px 8px;border-radius:20px;white-space:nowrap}
+.tbbadge{font-family:'Spline Sans Mono';font-size:11px;font-weight:700;color:#04140a;background:var(--purp);padding:2px 8px;border-radius:20px;white-space:nowrap}
 .sortbar{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:6px 0 12px}
 .sortbtn,.filterbtn{font-family:'Spline Sans Mono';font-weight:700;background:var(--panel2);border:1px solid var(--line);color:var(--ink);padding:6px 11px;border-radius:9px;cursor:pointer;font-size:12px}
 .sortbtn.active{background:var(--grn);color:#04140a;border-color:var(--grn)}
@@ -182,7 +214,7 @@ footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:v
  <button class="filterbtn" data-f="dead">Dead</button>
  <button class="filterbtn" data-f="won">Cashed</button></div>
 <div id="bets"></div>
-<footer>Auto-refreshes every 60s while open (polls statsapi.mlb.com from your browser; not a push alert; stops when the tab closes). Odds shown are the FanDuel prices from your own betslips. AT BAT / ON DECK may lag a few seconds. A bet goes DEAD when any leg's game ends without hitting (1st-PA HR legs die the moment that player's first plate appearance is not a homer). Confirm official results on FanDuel.</footer>
+<footer>Auto-refreshes every 60s while open (polls statsapi.mlb.com from your browser; not a push alert; stops when the tab closes). Odds shown are the FanDuel prices from your betslips. Pitcher props (no-hitter / K / up-down) and 4+ total bases are tracked live, best-effort - always confirm final settlement on FanDuel. A bet goes DEAD when any leg can no longer hit.</footer>
 </div>
 <script>
 const DATE="2026-06-03";
@@ -190,21 +222,28 @@ const SCHED="https://statsapi.mlb.com/api/v1/schedule?sportId=1&date="+DATE+"&hy
 const FEED=function(pk){return "https://statsapi.mlb.com/api/v1.1/game/"+pk+"/feed/live";};
 const GAMES=__GAMES__;
 const players=__PLAYERS__;
+const pitchers=__PITCHERS__;
 const bets=__BETS__;
 const norm=function(s){return (s||"").normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z ]/g,'').replace(/\s+/g,' ').trim();};
-players.forEach(function(p){p.k=norm(p.n);p.hr=[];p.hit=false;p.atbat=false;p.ondeck=false;p.fpaDone=false;p.fpaHR=false;});
+players.forEach(function(p){p.k=norm(p.n);});
+pitchers.forEach(function(p){p.k=norm(p.n);});
 const pByKey={};players.forEach(function(p){pByKey[p.k]=p;});
+const pitByKey={};pitchers.forEach(function(p){pitByKey[p.k]=p;});
+function resetStats(){players.forEach(function(p){p.hr=[];p.hit=false;p.tb=0;p.atbat=false;p.ondeck=false;p.fpaDone=false;p.fpaHR=false;});pitchers.forEach(function(p){p.h5=0;p.h7=0;p.k1=0;p.seq=[];});}
+resetStats();
 let sortMode='odds';let filterMode='all';let GS={};
 const $=function(id){return document.getElementById(id);};
 async function gj(u){const r=await fetch(u,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}
 function ordSuffix(n){if(n%10==1&&n%100!=11)return n+'st';if(n%10==2&&n%100!=12)return n+'nd';if(n%10==3&&n%100!=13)return n+'rd';return n+'th';}
 function etTime(iso){try{return new Date(iso).toLocaleTimeString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'})+' ET';}catch(e){return '';}}
 function amStr(o){return (o>0?'+':'')+o.toLocaleString();}
+const HITEV={single:1,double:2,triple:3,home_run:4};
+const REACH={single:1,double:1,triple:1,home_run:1,walk:1,intent_walk:1,hit_by_pitch:1,field_error:1,catcher_interf:1,fielders_choice:1};
 async function refresh(){
  $('updated').textContent='Updating...';
  let sched;try{sched=await gj(SCHED);}catch(e){$('updated').textContent="Can't reach MLB feed - retrying";return;}
  const allGames=(sched.dates&&sched.dates[0]&&sched.dates[0].games)?sched.dates[0].games:[];
- players.forEach(function(p){p.hr=[];p.hit=false;p.atbat=false;p.ondeck=false;p.fpaDone=false;p.fpaHR=false;});GS={};
+ resetStats();GS={};
  const keyToGame={};
  for(const key in GAMES){const a=GAMES[key][0],b=GAMES[key][1];
   const g=allGames.find(function(x){const an=x.teams.away.team.name,hn=x.teams.home.team.name;return (an.includes(a)||hn.includes(a))&&(an.includes(b)||hn.includes(b));});
@@ -216,37 +255,46 @@ async function refresh(){
  for(const pk in feedByPk){const f=feedByPk[pk];if(f.__err)continue;
   const plays=(f.liveData&&f.liveData.plays&&f.liveData.plays.allPlays)?f.liveData.plays.allPlays:[];
   for(const pl of plays){const ev=pl.result&&pl.result.eventType;if(!ev)continue;
-   const bk=norm(pl.matchup&&pl.matchup.batter?pl.matchup.batter.fullName:'');const pp=pByKey[bk];if(!pp)continue;
-   if(ev==='home_run'){pp.hr.push(pl.about&&pl.about.inning?pl.about.inning:'?');}
-   if(ev==='single'||ev==='double'||ev==='triple'||ev==='home_run'){pp.hit=true;}
-   if(!pp.fpaDone){pp.fpaDone=true;pp.fpaHR=(ev==='home_run');}}
+   const inn=(pl.about&&pl.about.inning)?pl.about.inning:99;
+   const bk=norm(pl.matchup&&pl.matchup.batter?pl.matchup.batter.fullName:'');const pp=pByKey[bk];
+   if(pp){const bases=HITEV[ev]||0;if(bases>0){pp.tb+=bases;pp.hit=true;if(ev==='home_run')pp.hr.push(inn);}if(!pp.fpaDone){pp.fpaDone=true;pp.fpaHR=(ev==='home_run');}}
+   const ptk=norm(pl.matchup&&pl.matchup.pitcher?pl.matchup.pitcher.fullName:'');const ptp=pitByKey[ptk];
+   if(ptp){if(HITEV[ev]){if(inn<=5)ptp.h5++;if(inn<=7)ptp.h7++;}if(ev==='strikeout'&&inn===1)ptp.k1++;ptp.seq.push(REACH[ev]?0:1);}}
   const off=f.liveData&&f.liveData.linescore&&f.liveData.linescore.offense;
   if(off){const ab=off.batter&&off.batter.fullName?norm(off.batter.fullName):'';const od=off.onDeck&&off.onDeck.fullName?norm(off.onDeck.fullName):'';
    if(pByKey[ab])pByKey[ab].atbat=true;if(pByKey[od])pByKey[od].ondeck=true;}}
  for(const key in GAMES){const g=keyToGame[key];
   if(!g){GS[key]={state:'NA'};continue;}
   const ls=g.linescore||{};const st=g.status.abstractGameState;
-  GS[key]={state:st,detail:g.status.detailedState,inn:ls.currentInning,ord:ls.currentInningOrdinal,half:ls.inningState,
+  GS[key]={state:st,detail:g.status.detailedState,inn:ls.currentInning||0,half:ls.inningState,
    as:(ls.teams&&ls.teams.away&&ls.teams.away.runs!=null)?ls.teams.away.runs:g.teams.away.score,
    hs:(ls.teams&&ls.teams.home&&ls.teams.home.runs!=null)?ls.teams.home.runs:g.teams.home.score,
    time:g.gameDate};}
  renderPlayers(live);renderBets();
  $('updated').textContent='Updated '+new Date().toLocaleTimeString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit',second:'2-digit'})+' ET';
 }
-function legMet(leg){const p=pByKey[norm(leg.p)];if(!p)return 'pending';const gs=GS[p.g];const fin=gs&&gs.state==='Final';
- if(leg.prop==='HR'){return p.hr.length>0?'hit':(fin?'miss':'pending');}
- if(leg.prop==='HIT'){return p.hit?'hit':(fin?'miss':'pending');}
- if(leg.prop==='FPA'){if(p.fpaDone)return p.fpaHR?'hit':'miss';return fin?'miss':'pending';}
+function legMet(leg){const pr=leg.prop;
+ if(pr==='HR'||pr==='HIT'||pr==='FPA'||pr==='TB'){const p=pByKey[norm(leg.p)];if(!p)return 'pending';const gs=GS[p.g];const fin=gs&&gs.state==='Final';
+  if(pr==='HR')return p.hr.length>0?'hit':(fin?'miss':'pending');
+  if(pr==='HIT')return p.hit?'hit':(fin?'miss':'pending');
+  if(pr==='TB')return p.tb>=4?'hit':(fin?'miss':'pending');
+  if(pr==='FPA'){if(p.fpaDone)return p.fpaHR?'hit':'miss';return fin?'miss':'pending';}}
+ else{const p=pitByKey[norm(leg.p)];if(!p)return 'pending';const gs=GS[p.g]||{};const inn=gs.inn||0;
+  if(pr==='NH5'||pr==='NH7'){const N=pr==='NH5'?5:7;const h=pr==='NH5'?p.h5:p.h7;if(h>0)return 'miss';if(inn>N)return 'hit';return 'pending';}
+  if(pr==='K1'){if(p.k1>=3)return 'hit';if(inn>1)return 'miss';return 'pending';}
+  if(pr==='UP9'||pr==='UP6'){const N=pr==='UP9'?9:6;let reached=false;const m=Math.min(N,p.seq.length);for(let i=0;i<m;i++){if(p.seq[i]===0){reached=true;break;}}if(reached)return 'miss';if(p.seq.length>=N)return 'hit';if(gs.state==='Final')return 'miss';return 'pending';}}
  return 'pending';}
 function betStatus(b){let hit=0,miss=0;for(const lg of b.legs){const s=legMet(lg);if(s==='hit')hit++;else if(s==='miss')miss++;}const st=miss>0?'dead':(hit===b.legs.length?'won':'alive');return {st:st,hit:hit,total:b.legs.length};}
+const PLAB={HR:'HR',HIT:'Hit',FPA:'1st-PA HR',TB:'4+ TB',NH5:'No-hit thru 5',NH7:'No-hit thru 7',K1:'3+ K in 1st',UP9:'9 up 9 down',UP6:'6 up 6 down'};
+function legDetail(leg,st){const pr=leg.prop;const p=pitByKey[norm(leg.p)];if(!p)return '';
+ if(pr==='NH5')return ' ('+p.h5+'H)';if(pr==='NH7')return ' ('+p.h7+'H)';if(pr==='K1')return ' (K:'+p.k1+')';
+ if(pr==='UP9'||pr==='UP6'){let r=0;for(const x of p.seq){if(x===1)r++;else break;}return ' ('+r+' retired)';}return '';}
 function renderPlayers(live){
  const homered=players.filter(function(p){return p.hr.length>0;});
  $('hrcount').textContent=homered.length;$('livecount').textContent=live;
  $('hrpills').innerHTML=homered.length?homered.map(function(p){return '<span class="hrpill">&#9733; '+p.n+(p.hr.length>1?' x'+p.hr.length:'')+'</span>';}).join(''):'<span class="muted">No tracked player has homered yet.</span>';
  const order=Object.keys(GAMES);
- order.sort(function(A,B){
-  const rk=function(key){const hr=players.some(function(p){return p.g===key&&p.hr.length>0;});if(hr)return 0;const s=GS[key]?GS[key].state:'NA';return s==='Live'?1:((s==='Preview'||s==='Pre-Game')?2:(s==='Final'?3:4));};
-  return rk(A)-rk(B);});
+ order.sort(function(A,B){const rk=function(key){const hr=players.some(function(p){return p.g===key&&p.hr.length>0;});if(hr)return 0;const s=GS[key]?GS[key].state:'NA';return s==='Live'?1:((s==='Preview'||s==='Pre-Game')?2:(s==='Final'?3:4));};return rk(A)-rk(B);});
  let html='<div class="grid">';
  for(const key of order){const ps=players.filter(function(p){return p.g===key;});if(!ps.length)continue;
   const gs=GS[key]||{};let badge,cls;
@@ -257,13 +305,14 @@ function renderPlayers(live){
   const showScore=(gs.state==='Live'||gs.state==='Final');
   const psort=ps.slice().sort(function(a,b){return (b.hr.length>0?1:0)-(a.hr.length>0?1:0);});
   let rows='';
-  for(const p of psort){const homer=p.hr.length>0;const hasHit=p.pr.indexOf('HIT')>=0;
+  for(const p of psort){const homer=p.hr.length>0;const hasHit=p.pr.indexOf('HIT')>=0;const hasTB=p.pr.indexOf('TB')>=0;
    let right;
    if(homer){right='<span class="hrbadge">&#128165; HR &middot; '+p.hr.map(function(i){return ordSuffix(i);}).join(', ')+'</span>';}
+   else if(hasTB&&p.tb>=4){right='<span class="tbbadge">&#10003; '+p.tb+' TB</span>';}
    else if(hasHit&&p.hit){right='<span class="hitbadge">&#10003; HIT</span>';}
    else{right='<span class="podds">'+(p.od?p.od:'&mdash;')+'</span>';}
    let abt='';if(!homer){if(p.atbat)abt='<span class="abtag ab">AT BAT</span>';else if(p.ondeck)abt='<span class="abtag od">ON DECK</span>';}
-   const hc=(homer||(hasHit&&p.hit))?' hit':'';
+   const hc=(homer||(hasTB&&p.tb>=4)||(hasHit&&p.hit))?' hit':'';
    rows+='<div class="prow'+hc+'"><div class="mk'+(homer?' hit':'')+'">'+(homer?'&#9733;':'&middot;')+'</div><span class="pn'+(homer?' hit':'')+'">'+p.n+'</span>'+abt+right+'</div>';}
   html+='<div class="game"><div class="g-head"><div class="g-match">'+key.replace('@',' @ ')+(showScore&&gs.as!=null?'<span class="g-score"> &nbsp;'+gs.as+'-'+gs.hs+'</span>':'')+'</div><div class="g-state '+cls+'">'+badge+'</div></div><div class="plist">'+rows+'</div></div>';}
  html+='</div>';$('players').innerHTML=html;}
@@ -285,9 +334,9 @@ function renderBets(){
    const inn=(st==='hit'&&(lg.prop==='HR'||lg.prop==='FPA')&&p&&p.hr.length)?(' '+ordSuffix(p.hr[0])):'';
    const mk=st==='hit'?'&#10003;':(st==='miss'?'&#10007;':'&middot;');
    let lc=st==='hit'?'l-hit':(st==='miss'?'l-miss':'l-pend');
-   let lab='';if(st==='pending'){if(p&&p.atbat){lab='<span class="labtag ab">AB</span>';}else if(p&&p.ondeck){lab='<span class="labtag od">OD</span>';}}
-   const pl=lg.prop==='HR'?('HR'+inn):(lg.prop==='FPA'?('1st-PA HR'+inn):'Hit');
-   legs+='<div class="leg '+lc+'"><span class="lmk">'+mk+'</span><span class="lname">'+lg.p+'</span>'+lab+'<span class="lprop">'+pl+'</span></div>';}
+   let lab='';if(st==='pending'&&p){if(p.atbat){lab='<span class="labtag ab">AB</span>';}else if(p.ondeck){lab='<span class="labtag od">OD</span>';}}
+   let lp=(PLAB[lg.prop]||lg.prop)+inn;if(!p)lp+=legDetail(lg,st);
+   legs+='<div class="leg '+lc+'"><span class="lmk">'+mk+'</span><span class="lname">'+lg.p+'</span>'+lab+'<span class="lprop">'+lp+'</span></div>';}
   html+='<div class="bet '+cl+'"><div class="b-head"><div><span class="b-kind">'+b.kind+'</span> <span class="b-id">'+b.id+'</span><div class="b-meta">'+amStr(b.odds)+' &middot; $'+b.wager.toFixed(2)+' &rarr; <b>$'+b.payout.toLocaleString()+'</b> &middot; '+b.placed+'</div></div><span class="b-stat '+cl+'">'+lbl+' '+bs.hit+'/'+bs.total+'</span></div><div class="b-legs">'+legs+'</div></div>';}
  html+='</div>';if(!shown)html='<p class="muted">No bets match this filter.</p>';$('bets').innerHTML=html;}
 document.querySelectorAll('.sortbtn').forEach(function(b){b.addEventListener('click',function(){sortMode=b.dataset.m;document.querySelectorAll('.sortbtn').forEach(function(x){x.classList.toggle('active',x.dataset.m===sortMode);});renderBets();});});
@@ -295,6 +344,6 @@ document.querySelectorAll('.filterbtn').forEach(function(b){b.addEventListener('
 $('refresh').addEventListener('click',refresh);
 refresh();setInterval(refresh,60000);
 </script></body></html>"""
-out = TPL.replace("__GAMES__", json.dumps(GAMES)).replace("__PLAYERS__", json.dumps(players)).replace("__BETS__", json.dumps(bets))
+out = TPL.replace("__GAMES__", json.dumps(GAMES)).replace("__PLAYERS__", json.dumps(players)).replace("__PITCHERS__", json.dumps(pitchers)).replace("__BETS__", json.dumps(bets))
 open(r"C:\Users\damie\OneDrive\1-Sports-Fantasy-Betting\betting\Claude\mlb-hr-tracker\index.html","w",encoding="utf-8").write(out)
-print("wrote index.html bytes:", len(out), "| bets:", len(bets), "| players:", len(players))
+print("wrote index.html bytes:", len(out), "| bets:", len(bets), "| players:", len(players), "| pitchers:", len(pitchers))
