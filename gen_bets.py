@@ -174,7 +174,8 @@ h2{font-family:'Archivo';font-weight:900;font-size:16px;margin:22px 0 9px}h2:fir
 .statcard .n{font-family:'Archivo';font-weight:900;font-size:26px;line-height:1}
 .statcard .l{font-family:'Spline Sans Mono';font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
 .statcard.alive .n{color:var(--alive)}.statcard.dead .n{color:var(--dead)}.statcard.won .n{color:var(--won)}.statcard.hr .n{color:var(--c-hr)}.statcard.live .n{color:var(--live)}
-.money{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:8px}
+.money{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:9px;margin-bottom:8px}
+.moneycard.cash{background:linear-gradient(135deg,#b8860b,#8a6508)}
 .moneycard{background:linear-gradient(135deg,var(--ink),#243a30);color:#fff;border-radius:12px;padding:13px 15px}
 .moneycard .l{font-family:'Spline Sans Mono';font-size:10.5px;opacity:.75;text-transform:uppercase;letter-spacing:.06em}
 .moneycard .n{font-family:'Archivo';font-weight:900;font-size:23px;margin-top:2px}
@@ -196,6 +197,7 @@ h2{font-family:'Archivo';font-weight:900;font-size:16px;margin:22px 0 9px}h2:fir
 .g-match{font-weight:700;font-size:13px}.g-score{font-family:'Spline Sans Mono';color:var(--dim);font-weight:500}
 .g-state{font-family:'Spline Sans Mono';font-size:10.5px;padding:3px 8px;border-radius:7px;font-weight:700;white-space:nowrap}
 .s-live{background:#fde7e7;color:var(--live);border:1px solid #f6c9c9}
+.s-warm{background:#fbeccb;color:#9a6800;border:1px solid #f0d79a}
 .s-final{background:#eef2ef;color:var(--dim);border:1px solid var(--line)}
 .s-prev{background:#e8f0fb;color:var(--alive);border:1px solid #cfe0f7}
 .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--live);margin-right:5px;animation:p 1.1s infinite}@keyframes p{0%,100%{opacity:1}50%{opacity:.25}}
@@ -269,7 +271,15 @@ footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:v
 </nav>
 <section id="tab-summary" class="tab show"></section>
 <section id="tab-hitters" class="tab"><div id="hitters"><p class="muted">Connecting to MLB live feed...</p></div></section>
-<section id="tab-pitchers" class="tab"><div id="pitchersv"></div></section>
+<section id="tab-pitchers" class="tab">
+ <div class="filterbar"><span class="muted">Show:</span>
+  <button class="filterbtn active" data-pf="all">All</button>
+  <button class="filterbtn" data-pf="alive">Alive</button>
+  <button class="filterbtn" data-pf="dead">Dead</button>
+  <button class="filterbtn" data-pf="won">Cashed</button>
+ </div>
+ <div id="pitchersv"></div>
+</section>
 <section id="tab-bets" class="tab">
  <div class="filterbar"><span class="muted">Show:</span>
   <button class="filterbtn active" data-f="all">All</button>
@@ -299,7 +309,7 @@ const PITCHSET={NH5:1,NH7:1,K1:1,UP9:1,UP6:1};
 const BATSET={HR:1,HIT:1,FPA:1,TB:1,'1B':1,'2B':1,'3B':1,SB:1,HR2:1};
 const HITEV={single:1,double:2,triple:3,home_run:4};
 const PLAB={HR:'HR',HIT:'Hit',FPA:'1st-PA HR',TB:'4+ TB','1B':'Single','2B':'Double','3B':'Triple','SB':'Stolen Base',HR2:'2+ HR',CTB:'Combined TB',NH5:'No-hit thru 5',NH7:'No-hit thru 7',K1:'3+ K in 1st',UP9:'9 up 9 down',UP6:'6 up 6 down'};
-let filterMode='all';let betSort='payout';let GS={};let STATS={};
+let filterMode='all';let betSort='payout';let betSortDir='desc';let pitchFilter='all';let GS={};let STATS={};let collapsedSecs={};let collapsedBets={};
 const $=function(id){return document.getElementById(id);};
 function resetStats(){players.forEach(function(p){p.hr=[];p.atbat=false;p.ondeck=false;p.fpaDone=false;p.fpaHR=false;p.tmLive='';});pitchers.forEach(function(p){p.h5=0;p.h7=0;p.k1=0;p.seq=[];p.tmLive='';});STATS={};}
 resetStats();
@@ -390,11 +400,11 @@ function betCardHTML(b){
    const mk=st==='hit'?'&#10003;':(st==='miss'?'&#10007;':'&middot;');const lc=st==='hit'?'l-hit':(st==='miss'?'l-miss':'l-pend');
    let lab='';if(st==='pending'&&p){if(p.atbat)lab='<span class="labtag ab">AB</span>';else if(p.ondeck)lab='<span class="labtag od">OD</span>';}
    body+='<div class="leg '+lc+'"><span class="lmk">'+mk+'</span><span class="lname">'+legNameHTML(lg)+'</span>'+lab+'<span class="lprop">'+lpropText(lg)+inn+'</span></div>';}}
- return '<div class="bet '+cl+'" style="border-left-color:'+cvar+'"><div class="b-head" onclick="toggleBet(this)"><div class="b-left"><span class="b-kind">'+b.kind+'</span> <span class="b-id">'+b.id+'</span><span class="b-stat '+cl+'">'+lbl+' '+b._hit+'/'+b.legs.length+'</span><div class="b-meta">'+amStr(b.odds)+' &middot; '+money(b.wager)+' wager</div></div><div class="b-right"><span class="b-pay">'+money(b.payout)+'</span><span class="b-chev">&#9660;</span></div></div><div class="b-legs">'+body+'</div></div>';
+ return '<div class="bet '+cl+(collapsedBets[b.id]?' collapsed':'')+'" data-bid="'+b.id+'" style="border-left-color:'+cvar+'"><div class="b-head" onclick="toggleBet(this)"><div class="b-left"><span class="b-kind">'+b.kind+'</span> <span class="b-id">'+b.id+'</span><span class="b-stat '+cl+'">'+lbl+' '+b._hit+'/'+b.legs.length+'</span><div class="b-meta">'+amStr(b.odds)+' &middot; '+money(b.wager)+' wager</div></div><div class="b-right"><span class="b-pay">'+money(b.payout)+'</span><span class="b-chev">&#9660;</span></div></div><div class="b-legs">'+body+'</div></div>';
 }
 function renderSummary(live){
- let alive=0,dead=0,won=0,totW=0,totP=0;const byCat={};CATS.forEach(function(c){byCat[c.k]={n:0,w:0,p:0};});
- bets.forEach(function(b){totW+=b.wager;totP+=b.payout;const c=byCat[b._cat];c.n++;c.w+=b.wager;c.p+=b.payout;if(b._st==='dead')dead++;else if(b._st==='won')won++;else alive++;});
+ let alive=0,dead=0,won=0,wonPay=0,totW=0,totP=0;const byCat={};CATS.forEach(function(c){byCat[c.k]={n:0,w:0,p:0};});
+ bets.forEach(function(b){totW+=b.wager;totP+=b.payout;const c=byCat[b._cat];c.n++;c.w+=b.wager;c.p+=b.payout;if(b._st==='dead')dead++;else if(b._st==='won'){won++;wonPay+=b.payout;}else alive++;});
  const homered=players.filter(function(p){return p.hr.length>0;}).length;
  let h='<div class="statgrid">'+
   '<div class="statcard alive"><div class="n">'+alive+'</div><div class="l">Bets alive</div></div>'+
@@ -402,7 +412,7 @@ function renderSummary(live){
   '<div class="statcard won"><div class="n">'+won+'</div><div class="l">Cashed</div></div>'+
   '<div class="statcard hr"><div class="n">'+homered+'</div><div class="l">Homered</div></div>'+
   '<div class="statcard live"><div class="n">'+live+'</div><div class="l">Games live</div></div></div>';
- h+='<div class="money"><div class="moneycard"><div class="l">Total wagered today</div><div class="n">'+money(totW)+'</div></div><div class="moneycard pot"><div class="l">Total potential payout</div><div class="n">'+money(totP)+'</div></div></div>';
+ h+='<div class="money"><div class="moneycard"><div class="l">Total wagered today</div><div class="n">'+money(totW)+'</div></div><div class="moneycard pot"><div class="l">Total potential payout</div><div class="n">'+money(totP)+'</div></div><div class="moneycard cash"><div class="l">Cashed so far ('+won+' bet'+(won===1?'':'s')+')</div><div class="n">'+money(wonPay)+'</div></div></div>';
  h+='<div class="cattable"><div class="catrow head"><span>Bet type</span><span>Bets</span><span>Wagered</span><span>Potential</span></div>';
  CATS.forEach(function(c){const d=byCat[c.k];if(!d.n)return;h+='<div class="catrow"><span class="catchip"><span class="catdot" style="background:var('+c.v+')"></span>'+c.label+'</span><span class="mono">'+d.n+'</span><span class="mono">'+money(d.w)+'</span><span class="mono">'+money(d.p)+'</span></div>';});
  h+='<div class="catrow tot"><span>All bets</span><span class="mono">'+bets.length+'</span><span class="mono">'+money(totW)+'</span><span class="mono">'+money(totP)+'</span></div></div>';
@@ -412,7 +422,8 @@ function renderSummary(live){
  $('tab-summary').innerHTML=h;
 }
 function gameBadge(gs){let badge,cls;
- if(gs.state==='Live'){cls='s-live';badge='<span class="dot"></span>'+(gs.half?gs.half+' ':'')+(gs.inn?ordSuffix(gs.inn):'');}
+ if(gs.state==='Live'&&(gs.detail==='Warmup'||!gs.inn)){cls='s-warm';badge='<span class="dot"></span>Warmup';}
+ else if(gs.state==='Live'){cls='s-live';badge='<span class="dot"></span>'+(gs.half?gs.half+' ':'')+ordSuffix(gs.inn);}
  else if(gs.state==='Final'){cls='s-final';badge=gs.detail||'Final';}
  else if(gs.state==='Preview'||gs.state==='Pre-Game'){cls='s-prev';badge=etTime(gs.time);}
  else{cls='s-prev';badge='--';}return {badge:badge,cls:cls};}
@@ -439,30 +450,33 @@ function renderHitters(live){
  html+='</div>';$('hitters').innerHTML=html;
 }
 function renderPitchers(){
- const pbets=bets.filter(function(b){return b._cat==='PITCH';});
+ const pbets=bets.filter(function(b){return b._cat==='PITCH'&&(pitchFilter==='all'||b._st===pitchFilter);});
  const sortedP=pitchers.slice().sort(function(a,b){return a.n.localeCompare(b.n);});
  let html='';
  sortedP.forEach(function(pt){const grp=pbets.filter(function(b){return norm(b.legs[0].p)===pt.k;});if(!grp.length)return;
   grp.sort(function(a,b){return b.payout-a.payout;});
-  const gs=GS[pt.g]||{};const gb=gameBadge(gs);const tm=pt.tmLive||pt.tm;
-  html+='<div class="catsection"><div class="cathead" onclick="toggleCat(this)"><span class="bar" style="background:var(--c-pitch)"></span><h3>'+pt.n+(tm?' <span class="tmtag" style="font-size:12px">('+tm+')</span>':'')+'</h3><span class="cnt"><span class="g-state '+gb.cls+'">'+gb.badge+'</span> &nbsp;'+grp.length+' bets</span><span class="chev">&#9660;</span></div><div class="catbody"><div class="grid">'+grp.map(betCardHTML).join('')+'</div></div></div>';});
- $('pitchersv').innerHTML=html||'<p class="muted">No pitcher specials.</p>';
+  const gs=GS[pt.g]||{};const gb=gameBadge(gs);const tm=pt.tmLive||pt.tm;const ck='p:'+pt.k;
+  html+='<div class="catsection'+(collapsedSecs[ck]?' collapsed':'')+'" data-ck="'+ck+'"><div class="cathead" onclick="toggleCat(this)"><span class="bar" style="background:var(--c-pitch)"></span><h3>'+pt.n+(tm?' <span class="tmtag" style="font-size:12px">('+tm+')</span>':'')+'</h3><span class="cnt"><span class="g-state '+gb.cls+'">'+gb.badge+'</span> &nbsp;'+grp.length+' bet'+(grp.length>1?'s':'')+'</span><span class="chev">&#9660;</span></div><div class="catbody"><div class="grid">'+grp.map(betCardHTML).join('')+'</div></div></div>';});
+ $('pitchersv').innerHTML=html||'<p class="muted">No pitcher specials match this filter.</p>';
 }
 function renderBets(){
  let pool=bets.filter(function(b){return filterMode==='all'||b._st===filterMode;});let html='';
  CATS.forEach(function(c){let grp=pool.filter(function(b){return b._cat===c.k;});if(!grp.length)return;
   if(c.k==='PITCH')grp.sort(function(a,b){return norm(a.legs[0].p).localeCompare(norm(b.legs[0].p))||(b.payout-a.payout);});
-  else if(betSort==='legs')grp.sort(function(a,b){return (b.legs.length-a.legs.length)||(b.payout-a.payout);});
-  else grp.sort(function(a,b){return b.payout-a.payout;});
-  html+='<div class="catsection"><div class="cathead" onclick="toggleCat(this)"><span class="bar" style="background:var('+c.v+')"></span><h3>'+c.label+'</h3><span class="cnt">'+grp.length+' bet'+(grp.length>1?'s':'')+'</span><span class="chev">&#9660;</span></div><div class="catbody"><div class="grid">'+grp.map(betCardHTML).join('')+'</div></div></div>';});
+  else{if(betSort==='legs')grp.sort(function(a,b){return (b.legs.length-a.legs.length)||(b.payout-a.payout);});else grp.sort(function(a,b){return b.payout-a.payout;});if(betSortDir==='asc')grp.reverse();}
+  const ck='b:'+c.k;
+  html+='<div class="catsection'+(collapsedSecs[ck]?' collapsed':'')+'" data-ck="'+ck+'"><div class="cathead" onclick="toggleCat(this)"><span class="bar" style="background:var('+c.v+')"></span><h3>'+c.label+'</h3><span class="cnt">'+grp.length+' bet'+(grp.length>1?'s':'')+'</span><span class="chev">&#9660;</span></div><div class="catbody"><div class="grid">'+grp.map(betCardHTML).join('')+'</div></div></div>';});
  $('bets').innerHTML=html||'<p class="muted">No bets match this filter.</p>';
 }
-function toggleBet(el){el.closest('.bet').classList.toggle('collapsed');}
-function toggleCat(el){el.closest('.catsection').classList.toggle('collapsed');}
+function toggleBet(el){const b=el.closest('.bet');const id=b.dataset.bid;if(collapsedBets[id])delete collapsedBets[id];else collapsedBets[id]=1;b.classList.toggle('collapsed');}
+function toggleCat(el){const s=el.closest('.catsection');const k=s.dataset.ck;if(collapsedSecs[k])delete collapsedSecs[k];else collapsedSecs[k]=1;s.classList.toggle('collapsed');}
 function showTab(t){document.querySelectorAll('.tabs button').forEach(function(b){b.classList.toggle('active',b.dataset.tab===t);});document.querySelectorAll('.tab').forEach(function(s){s.classList.toggle('show',s.id==='tab-'+t);});}
 document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){showTab(b.dataset.tab);});});
 document.querySelectorAll('.filterbtn[data-f]').forEach(function(b){b.addEventListener('click',function(){filterMode=b.dataset.f;document.querySelectorAll('.filterbtn[data-f]').forEach(function(x){x.classList.toggle('active',x.dataset.f===filterMode);});renderBets();});});
-document.querySelectorAll('.filterbtn[data-s]').forEach(function(b){b.addEventListener('click',function(){betSort=b.dataset.s;document.querySelectorAll('.filterbtn[data-s]').forEach(function(x){x.classList.toggle('active',x.dataset.s===betSort);});renderBets();});});
+function updateSortBtns(){document.querySelectorAll('.filterbtn[data-s]').forEach(function(x){const base=x.dataset.s==='payout'?'Payout':'Legs';const on=x.dataset.s===betSort;x.classList.toggle('active',on);x.textContent=base+(on?(betSortDir==='desc'?' \u2193':' \u2191'):'');});}
+document.querySelectorAll('.filterbtn[data-s]').forEach(function(b){b.addEventListener('click',function(){if(betSort===b.dataset.s){betSortDir=(betSortDir==='desc'?'asc':'desc');}else{betSort=b.dataset.s;betSortDir='desc';}updateSortBtns();renderBets();});});
+document.querySelectorAll('.filterbtn[data-pf]').forEach(function(b){b.addEventListener('click',function(){pitchFilter=b.dataset.pf;document.querySelectorAll('.filterbtn[data-pf]').forEach(function(x){x.classList.toggle('active',x.dataset.pf===pitchFilter);});renderPitchers();});});
+updateSortBtns();
 $('refresh').addEventListener('click',refresh);
 refresh();setInterval(refresh,60000);
 </script></body></html>"""
