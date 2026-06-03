@@ -13,7 +13,7 @@ players=[
  {"n":"Kyle Schwarber","g":"SD@PHI","pr":["HR","FPA"],"od":"+285"},
  {"n":"Bryce Harper","g":"SD@PHI","pr":["HR"],"od":"+470"},
  {"n":"Brandon Marsh","g":"SD@PHI","pr":["HR","FPA"],"od":"+820"},
- {"n":"Fernando Tatis Jr.","g":"SD@PHI","pr":["HR"],"od":""},
+ {"n":"Fernando Tatis Jr.","g":"SD@PHI","pr":["HR"],"od":"+820"},
  {"n":"Pete Alonso","g":"BAL@BOS","pr":["HR"],"od":"+410"},
  {"n":"Wilyer Abreu","g":"BAL@BOS","pr":["HR"],"od":"+490"},
  {"n":"Carter Jensen","g":"KC@CIN","pr":["HR"],"od":"+410"},
@@ -23,23 +23,25 @@ players=[
  {"n":"Jake Burger","g":"TEX@STL","pr":["HR"],"od":"+570"},
  {"n":"Shea Langeliers","g":"ATH@CHC","pr":["HR"],"od":"+320"},
  {"n":"Nick Kurtz","g":"ATH@CHC","pr":["HR"],"od":"+340"},
- {"n":"Ian Happ","g":"ATH@CHC","pr":["HR"],"od":""},
+ {"n":"Ian Happ","g":"ATH@CHC","pr":["HR"],"od":"+470"},
  {"n":"Christian Walker","g":"PIT@HOU","pr":["HR"],"od":"+490"},
  {"n":"Yordan Alvarez","g":"PIT@HOU","pr":["HR"],"od":"+270"},
  {"n":"Max Muncy","g":"LAD@ARI","pr":["HR"],"od":"+360"},
  {"n":"Kyle Tucker","g":"LAD@ARI","pr":["HR"],"od":"+590"},
  {"n":"Andy Pages","g":"LAD@ARI","pr":["HR","HIT","FPA"],"od":"+540"},
  {"n":"Mookie Betts","g":"LAD@ARI","pr":["HR","HIT"],"od":"+590"},
- {"n":"Freddie Freeman","g":"LAD@ARI","pr":["HIT"],"od":""},
+ {"n":"Freddie Freeman","g":"LAD@ARI","pr":["HIT","HR"],"od":"+610"},
  {"n":"Austin Riley","g":"TOR@ATL","pr":["HR","FPA"],"od":"+570"},
  {"n":"Ozzie Albies","g":"TOR@ATL","pr":["HR"],"od":"+760"},
- {"n":"Ha-Seong Kim","g":"TOR@ATL","pr":["HR"],"od":""},
+ {"n":"Ha-Seong Kim","g":"TOR@ATL","pr":["HR"],"od":"+980"},
  {"n":"Jose Ramirez","g":"CLE@NYY","pr":["HR"],"od":"+420"},
 ]
 def H(p): return {"p":p,"prop":"HR"}
 def T(p): return {"p":p,"prop":"HIT"}
 def F(p): return {"p":p,"prop":"FPA"}
 bets=[
+ {"id":"#fhz","kind":"4-leg parlay","odds":402009,"wager":0.10,"payout":402.11,"placed":"3:32 PM","ts":1532,
+  "legs":[H("Fernando Tatis Jr."),H("Ha-Seong Kim"),H("Ian Happ"),H("Freddie Freeman")]},
  {"id":"#4017","kind":"7-leg SGP+","odds":9647418,"wager":0.10,"payout":9647.52,"placed":"3:22 PM","ts":1522,
   "legs":[H("Ian Happ"),H("Nick Kurtz"),H("Juan Soto"),H("Bryce Harper"),H("Austin Riley"),H("Rafael Devers"),H("Max Muncy")]},
  {"id":"#ewz","kind":"5-leg parlay","odds":916881,"wager":0.11,"payout":1008.68,"placed":"3:20 PM","ts":1520.1,
