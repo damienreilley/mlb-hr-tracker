@@ -87,18 +87,22 @@ h2{font-family:'Archivo';font-weight:900;font-size:18px;letter-spacing:.02em;mar
 .s-live{background:#2a0f0f;color:var(--live);border:1px solid #4a1d1d}.s-final{background:#1a1f1c;color:var(--dim);border:1px solid var(--line)}.s-prev{background:#10243a;color:var(--blue);border:1px solid #1d3550}
 .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--live);margin-right:5px;animation:p 1.1s infinite}@keyframes p{0%,100%{opacity:1}50%{opacity:.25}}
 .plist{padding:4px 12px 10px}
-.prow{display:flex;align-items:center;gap:9px;padding:7px 2px;border-bottom:1px solid #1a221d}.prow:last-child{border-bottom:0}
+.prow{display:flex;align-items:center;gap:8px;padding:7px 2px;border-bottom:1px solid #1a221d}.prow:last-child{border-bottom:0}
 .prow.hit{background:linear-gradient(90deg,rgba(57,224,123,.16),transparent);border-radius:8px}
 .mk{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;flex:none;border:1px solid var(--line);background:#0e1512;color:var(--dim)}
 .mk.hit{background:var(--grn);color:#04140a;border-color:var(--grn);font-weight:900}
 .pn{font-weight:600;font-size:13.5px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.pn.hit{color:var(--grn)}
+.abtag{font-family:'Spline Sans Mono';font-size:9px;font-weight:700;padding:2px 6px;border-radius:5px;white-space:nowrap;flex:none}
+.abtag.ab{background:#3a2a0a;color:var(--amber);border:1px solid #5a4310;animation:p 1.3s infinite}
+.abtag.od{background:#10243a;color:var(--blue);border:1px solid #1d3550}
 .hrbadge{font-family:'Spline Sans Mono';font-size:11.5px;font-weight:700;color:#04140a;background:var(--grn);padding:2px 8px;border-radius:20px;white-space:nowrap;box-shadow:0 0 10px rgba(57,224,123,.45)}
 .hitbadge{font-family:'Spline Sans Mono';font-size:11px;font-weight:700;color:#04140a;background:var(--blue);padding:2px 8px;border-radius:20px;white-space:nowrap}
-.sortbar{display:flex;gap:8px;align-items:center;margin:6px 0 12px}
-.sortbtn{font-family:'Spline Sans Mono';font-weight:700;background:var(--panel2);border:1px solid var(--line);color:var(--ink);padding:6px 12px;border-radius:9px;cursor:pointer;font-size:12px}
+.sortbar{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:6px 0 12px}
+.sortbtn,.filterbtn{font-family:'Spline Sans Mono';font-weight:700;background:var(--panel2);border:1px solid var(--line);color:var(--ink);padding:6px 11px;border-radius:9px;cursor:pointer;font-size:12px}
 .sortbtn.active{background:var(--grn);color:#04140a;border-color:var(--grn)}
+.filterbtn.active{background:var(--blue);color:#04140a;border-color:var(--blue)}
 .bet{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:13px;overflow:hidden}
-.bet.b-dead{opacity:.62}.bet.b-won{border-color:var(--grn)}
+.bet.b-dead{opacity:.6}.bet.b-won{border-color:var(--grn)}
 .b-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;padding:10px 12px;background:#0e1512;border-bottom:1px dashed var(--line)}
 .b-kind{font-family:'Archivo';font-weight:800;font-size:13px}.b-id{font-family:'Spline Sans Mono';font-size:10px;color:var(--dim)}
 .b-meta{font-family:'Spline Sans Mono';font-size:10.5px;color:var(--dim);margin-top:2px}.b-meta b{color:var(--ink)}
@@ -112,8 +116,11 @@ h2{font-family:'Archivo';font-weight:900;font-size:18px;letter-spacing:.02em;mar
 .l-hit .lmk{color:var(--grn)}.l-hit .lname{color:var(--grn);font-weight:600}
 .l-miss .lmk{color:var(--red)}.l-miss .lname{text-decoration:line-through;color:var(--dim)}
 .l-pend .lmk{color:var(--dim)}
+.l-pend.ab .lname{color:var(--amber)}
 .lname{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .lprop{font-family:'Spline Sans Mono';font-size:10.5px;color:var(--dim);white-space:nowrap}
+.labtag{font-family:'Spline Sans Mono';font-size:8.5px;font-weight:700;padding:1px 5px;border-radius:4px;flex:none}
+.labtag.ab{background:#3a2a0a;color:var(--amber)}.labtag.od{background:#10243a;color:var(--blue)}
 footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:var(--dim);font-size:11px;line-height:1.6;font-family:'Spline Sans Mono'}
 </style></head><body><div class="wrap">
 <div class="kicker">Live Bet Tracker</div>
@@ -131,10 +138,16 @@ footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:v
 <div id="players"><p class="muted">Connecting to MLB live feed...</p></div>
 <h2>Your Bets</h2>
 <div class="sortbar"><span class="muted">Sort:</span>
- <button class="sortbtn active" data-m="odds">Odds (payout)</button>
- <button class="sortbtn" data-m="time">Placed time</button></div>
+ <button class="sortbtn active" data-m="odds">Odds</button>
+ <button class="sortbtn" data-m="time">Placed</button>
+ <button class="sortbtn" data-m="legs">Legs</button>
+ <span class="muted" style="margin-left:8px">Show:</span>
+ <button class="filterbtn active" data-f="all">All</button>
+ <button class="filterbtn" data-f="alive">Alive</button>
+ <button class="filterbtn" data-f="dead">Dead</button>
+ <button class="filterbtn" data-f="won">Cashed</button></div>
 <div id="bets"></div>
-<footer>Auto-refreshes every 45s while open (polls statsapi.mlb.com from your browser; not a push alert; stops when the tab closes). HR/Hit matched by batter name; bet goes DEAD when any leg's game ends without hitting. Confirm official results on FanDuel.</footer>
+<footer>Auto-refreshes every 30s while open (polls statsapi.mlb.com from your browser; not a push alert; stops when the tab closes). AT BAT / ON DECK may lag the live game by a few seconds. HR/Hit matched by batter name; a bet goes DEAD when any leg's game ends without hitting. Confirm official results on FanDuel.</footer>
 </div>
 <script>
 const DATE="2026-06-03";
@@ -144,9 +157,9 @@ const GAMES=__GAMES__;
 const players=__PLAYERS__;
 const bets=__BETS__;
 const norm=function(s){return (s||"").normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z ]/g,'').replace(/\s+/g,' ').trim();};
-players.forEach(function(p){p.k=norm(p.n);p.hr=[];p.hit=false;});
+players.forEach(function(p){p.k=norm(p.n);p.hr=[];p.hit=false;p.atbat=false;p.ondeck=false;});
 const pByKey={};players.forEach(function(p){pByKey[p.k]=p;});
-let sortMode='odds';let GS={};
+let sortMode='odds';let filterMode='all';let GS={};
 const $=function(id){return document.getElementById(id);};
 async function gj(u){const r=await fetch(u,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}
 function ordSuffix(n){if(n%10==1&&n%100!=11)return n+'st';if(n%10==2&&n%100!=12)return n+'nd';if(n%10==3&&n%100!=13)return n+'rd';return n+'th';}
@@ -156,7 +169,7 @@ async function refresh(){
  $('updated').textContent='Updating...';
  let sched;try{sched=await gj(SCHED);}catch(e){$('updated').textContent="Can't reach MLB feed - retrying";return;}
  const allGames=(sched.dates&&sched.dates[0]&&sched.dates[0].games)?sched.dates[0].games:[];
- players.forEach(function(p){p.hr=[];p.hit=false;});GS={};
+ players.forEach(function(p){p.hr=[];p.hit=false;p.atbat=false;p.ondeck=false;});GS={};
  const keyToGame={};
  for(const key in GAMES){const a=GAMES[key][0],b=GAMES[key][1];
   const g=allGames.find(function(x){const an=x.teams.away.team.name,hn=x.teams.home.team.name;return (an.includes(a)||hn.includes(a))&&(an.includes(b)||hn.includes(b));});
@@ -170,7 +183,10 @@ async function refresh(){
   for(const pl of plays){const ev=pl.result&&pl.result.eventType;if(!ev)continue;
    const bk=norm(pl.matchup&&pl.matchup.batter?pl.matchup.batter.fullName:'');const pp=pByKey[bk];if(!pp)continue;
    if(ev==='home_run'){pp.hr.push(pl.about&&pl.about.inning?pl.about.inning:'?');}
-   if(ev==='single'||ev==='double'||ev==='triple'||ev==='home_run'){pp.hit=true;}}}
+   if(ev==='single'||ev==='double'||ev==='triple'||ev==='home_run'){pp.hit=true;}}
+  const off=f.liveData&&f.liveData.linescore&&f.liveData.linescore.offense;
+  if(off){const ab=off.batter&&off.batter.fullName?norm(off.batter.fullName):'';const od=off.onDeck&&off.onDeck.fullName?norm(off.onDeck.fullName):'';
+   if(pByKey[ab])pByKey[ab].atbat=true;if(pByKey[od])pByKey[od].ondeck=true;}}
  for(const key in GAMES){const g=keyToGame[key];
   if(!g){GS[key]={state:'NA'};continue;}
   const ls=g.linescore||{};const st=g.status.abstractGameState;
@@ -206,29 +222,37 @@ function renderPlayers(live){
    if(homer){right='<span class="hrbadge">&#128165; HR &middot; '+p.hr.map(function(i){return ordSuffix(i);}).join(', ')+'</span>';}
    else if(hasHit&&p.hit){right='<span class="hitbadge">&#10003; HIT</span>';}
    else{right='<span class="muted">'+(hasHit?'Hit/HR':'HR')+'</span>';}
+   let abt='';if(!homer){if(p.atbat)abt='<span class="abtag ab">AT BAT</span>';else if(p.ondeck)abt='<span class="abtag od">ON DECK</span>';}
    const hc=(homer||(hasHit&&p.hit))?' hit':'';
-   rows+='<div class="prow'+hc+'"><div class="mk'+(homer?' hit':'')+'">'+(homer?'&#9733;':'&middot;')+'</div><span class="pn'+(homer?' hit':'')+'">'+p.n+'</span>'+right+'</div>';}
+   rows+='<div class="prow'+hc+'"><div class="mk'+(homer?' hit':'')+'">'+(homer?'&#9733;':'&middot;')+'</div><span class="pn'+(homer?' hit':'')+'">'+p.n+'</span>'+abt+right+'</div>';}
   html+='<div class="game"><div class="g-head"><div class="g-match">'+key.replace('@',' @ ')+(showScore&&gs.as!=null?'<span class="g-score"> &nbsp;'+gs.as+'-'+gs.hs+'</span>':'')+'</div><div class="g-state '+cls+'">'+badge+'</div></div><div class="plist">'+rows+'</div></div>';}
  html+='</div>';$('players').innerHTML=html;}
 function renderBets(){
  let s=bets.slice();
- if(sortMode==='odds')s.sort(function(a,b){return b.odds-a.odds;});else s.sort(function(a,b){return b.ts-a.ts;});
+ if(sortMode==='odds')s.sort(function(a,b){return b.odds-a.odds;});
+ else if(sortMode==='time')s.sort(function(a,b){return b.ts-a.ts;});
+ else s.sort(function(a,b){return (b.legs.length-a.legs.length)||(b.odds-a.odds);});
  let alive=0,dead=0;
- s.forEach(function(b){const st=betStatus(b).st;if(st==='dead')dead++;else alive++;});
+ bets.forEach(function(b){const st=betStatus(b).st;if(st==='dead')dead++;else alive++;});
  $('betsalive').textContent=alive;$('betsdead').textContent=dead;
- let html='<div class="grid">';
- for(const b of s){const bs=betStatus(b);const cl=bs.st==='dead'?'b-dead':(bs.st==='won'?'b-won':'b-alive');
+ let html='<div class="grid">';let shown=0;
+ for(const b of s){const bs=betStatus(b);
+  if(filterMode!=='all'&&bs.st!==filterMode)continue;shown++;
+  const cl=bs.st==='dead'?'b-dead':(bs.st==='won'?'b-won':'b-alive');
   const lbl=bs.st==='dead'?'DEAD':(bs.st==='won'?'CASHED':'ALIVE');
   let legs='';
   for(const lg of b.legs){const st=legMet(lg);const p=pByKey[norm(lg.p)];
    const inn=(st==='hit'&&lg.prop==='HR'&&p&&p.hr.length)?(' '+ordSuffix(p.hr[0])):'';
-   const mk=st==='hit'?'&#10003;':(st==='miss'?'&#10007;':'&middot;');const lc=st==='hit'?'l-hit':(st==='miss'?'l-miss':'l-pend');
-   legs+='<div class="leg '+lc+'"><span class="lmk">'+mk+'</span><span class="lname">'+lg.p+'</span><span class="lprop">'+(lg.prop==='HR'?'HR'+inn:'Hit')+'</span></div>';}
+   const mk=st==='hit'?'&#10003;':(st==='miss'?'&#10007;':'&middot;');
+   let lc=st==='hit'?'l-hit':(st==='miss'?'l-miss':'l-pend');
+   let lab='';if(st==='pend'||st==='pending'){if(p&&p.atbat){lab='<span class="labtag ab">AB</span>';}else if(p&&p.ondeck){lab='<span class="labtag od">OD</span>';}}
+   legs+='<div class="leg '+lc+'"><span class="lmk">'+mk+'</span><span class="lname">'+lg.p+'</span>'+lab+'<span class="lprop">'+(lg.prop==='HR'?'HR'+inn:'Hit')+'</span></div>';}
   html+='<div class="bet '+cl+'"><div class="b-head"><div><span class="b-kind">'+b.kind+'</span> <span class="b-id">'+b.id+'</span><div class="b-meta">'+amStr(b.odds)+' &middot; $'+b.wager.toFixed(2)+' &rarr; <b>$'+b.payout.toLocaleString()+'</b> &middot; '+b.placed+'</div></div><span class="b-stat '+cl+'">'+lbl+' '+bs.hit+'/'+bs.total+'</span></div><div class="b-legs">'+legs+'</div></div>';}
- html+='</div>';$('bets').innerHTML=html;}
+ html+='</div>';if(!shown)html='<p class="muted">No bets match this filter.</p>';$('bets').innerHTML=html;}
 document.querySelectorAll('.sortbtn').forEach(function(b){b.addEventListener('click',function(){sortMode=b.dataset.m;document.querySelectorAll('.sortbtn').forEach(function(x){x.classList.toggle('active',x.dataset.m===sortMode);});renderBets();});});
+document.querySelectorAll('.filterbtn').forEach(function(b){b.addEventListener('click',function(){filterMode=b.dataset.f;document.querySelectorAll('.filterbtn').forEach(function(x){x.classList.toggle('active',x.dataset.f===filterMode);});renderBets();});});
 $('refresh').addEventListener('click',refresh);
-refresh();setInterval(refresh,45000);
+refresh();setInterval(refresh,30000);
 </script></body></html>"""
 out = TPL.replace("__GAMES__", json.dumps(GAMES)).replace("__PLAYERS__", json.dumps(players)).replace("__BETS__", json.dumps(bets))
 open(r"C:\Users\damie\OneDrive\1-Sports-Fantasy-Betting\betting\Claude\mlb-hr-tracker\index.html","w",encoding="utf-8").write(out)
