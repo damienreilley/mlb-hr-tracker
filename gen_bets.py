@@ -45,6 +45,8 @@ players=[
  {"n":"Jose Ramirez","tm":"CLE","g":"CLE@NYY","pr":["HR"],"od":"+420"},
  {"n":"Wade Meckler","tm":"","g":"COL@LAA","pr":["HR"],"od":"+710"},
  {"n":"Jo Adell","tm":"LAA","g":"COL@LAA","pr":["HR"],"od":"+390"},
+ {"n":"Hunter Goodman","tm":"COL","g":"COL@LAA","pr":["HR"],"od":"+390"},
+ {"n":"Seiya Suzuki","tm":"CHC","g":"ATH@CHC","pr":["HR"],"od":"+430"},
 ]
 pitchers=[
  {"n":"Shohei Ohtani","tm":"LAD","g":"LAD@ARI"},
@@ -68,6 +70,21 @@ def HRX(p): return {"p":p,"prop":"HR2"}
 def TRn(g,line): return {"p":g+" Total","prop":"TR","g":g,"line":line}
 def CTB(lbl,ps,line,g): return {"p":lbl,"prop":"CTB","ps":ps,"line":line,"g":g}
 bets=[
+ {"id":"#4042","kind":"Single","odds":500,"wager":0.25,"payout":1.50,"placed":"10:16 PM","ts":2216,"legs":[H("Max Muncy")]},
+ {"id":"#4041","kind":"Same Game Parlay","odds":8464,"wager":0.10,"payout":8.56,"placed":"10:15 PM","ts":2215,"legs":[{"p":"Andy Pages","prop":"NA","lbl":"Single (2nd PA)"},{"p":"Freddie Freeman","prop":"NA","lbl":"Walk/HBP (2nd PA)"},{"p":"Max Muncy","prop":"RBI"}]},
+ {"id":"#4040","kind":"Same Game Parlay","odds":9334,"wager":0.30,"payout":28.30,"placed":"10:14 PM","ts":2214,"legs":[{"p":"Andy Pages","prop":"NA","lbl":"XBH (2nd PA)"},{"p":"Max Muncy","prop":"NA","lbl":"XBH (2nd PA)"}]},
+ {"id":"#4039","kind":"Same Game Parlay","odds":7203,"wager":0.10,"payout":7.30,"placed":"10:13 PM","ts":2213,"legs":[{"p":"Andy Pages","prop":"TB2"},{"p":"Freddie Freeman","prop":"TB2"},{"p":"Max Muncy","prop":"TB2"},{"p":"Will Smith","prop":"TB2"},{"p":"Mookie Betts","prop":"RBI"},{"p":"Andy Pages","prop":"RUN"}]},
+ {"id":"#4038","kind":"Same Game Parlay","odds":30136,"wager":0.10,"payout":30.24,"placed":"10:12 PM","ts":2212,"legs":[{"p":"Freddie Freeman","prop":"TB2"},{"p":"Max Muncy","prop":"RBI4"},{"p":"Andy Pages","prop":"TB2"},{"p":"Will Smith","prop":"TB2"}]},
+ {"id":"#4037","kind":"Same Game Parlay","odds":6553,"wager":0.11,"payout":7.32,"placed":"9:55 PM","ts":2155,"legs":[{"p":"Will Smith","prop":"RBI"},{"p":"Freddie Freeman","prop":"RBI2"},{"p":"Max Muncy","prop":"RUN"},{"p":"Andy Pages","prop":"RUN"},{"p":"Andy Pages","prop":"TB3"}]},
+ {"id":"#4036","kind":"Same Game Parlay","odds":19631,"wager":0.10,"payout":19.73,"placed":"9:48 PM","ts":2148,"legs":[H("Max Muncy"),{"p":"Freddie Freeman","prop":"HIT2"},{"p":"Will Smith","prop":"TB2"},B("Andy Pages")]},
+ {"id":"#hptm","kind":"Same Game Parlay","odds":88519,"wager":0.10,"payout":88.62,"placed":"9:11 PM","ts":2111,"legs":[H("Shohei Ohtani"),H("Max Muncy"),H("Andy Pages"),H("Freddie Freeman"),H("Will Smith")]},
+ {"id":"#fq8q","kind":"Same Game Parlay","odds":41377,"wager":0.10,"payout":41.48,"placed":"8:55 PM","ts":2055,"legs":[HRX("Max Muncy"),{"p":"Freddie Freeman","prop":"HIT2"},{"p":"Andy Pages","prop":"TB5"}]},
+ {"id":"#4030","kind":"Same Game Parlay","odds":2922,"wager":0.15,"payout":4.53,"placed":"8:14 PM","ts":2014.3,"legs":[H("Nick Kurtz"),H("Ian Happ")]},
+ {"id":"#4029","kind":"4-leg parlay","odds":76924,"wager":0.10,"payout":77.02,"placed":"8:14 PM","ts":2014.2,"legs":[H("Nick Kurtz"),H("Ian Happ"),H("Hunter Goodman"),H("Max Muncy")]},
+ {"id":"#4028","kind":"4-leg parlay","odds":47785,"wager":0.10,"payout":47.89,"placed":"8:14 PM","ts":2014.1,"legs":[H("Shohei Ohtani"),H("Max Muncy"),H("Shea Langeliers"),H("Hunter Goodman")]},
+ {"id":"#4027","kind":"4-leg parlay","odds":46898,"wager":0.10,"payout":47.00,"placed":"8:14 PM","ts":2014.0,"legs":[H("Shohei Ohtani"),H("Max Muncy"),H("Seiya Suzuki"),H("Hunter Goodman")]},
+ {"id":"#4025","kind":"2-leg parlay","odds":7960,"wager":0.15,"payout":12.09,"placed":"7:55 PM","ts":1955,"legs":[H("Andy Pages"),H("Kyle Schwarber")]},
+ {"id":"#7m7v","kind":"3-leg parlay","odds":12172,"wager":0.10,"payout":12.27,"placed":"7:53 PM","ts":1953,"legs":[H("Max Muncy"),H("Andy Pages"),H("Shea Langeliers")]},
  {"id":"#xqn","kind":"Same Game Parlay","odds":46312,"wager":0.10,"payout":46.41,"placed":"6:19 PM","ts":1819.1,"legs":[D2("Brandon Marsh"),D1("Brandon Marsh"),H("Brandon Marsh"),SBL("Brandon Marsh")]},
  {"id":"#wmg","kind":"Same Game Parlay","odds":87033,"wager":0.10,"payout":87.14,"placed":"6:19 PM","ts":1819.0,"legs":[D3("Brandon Marsh"),D2("Brandon Marsh"),D1("Brandon Marsh"),H("Brandon Marsh")]},
  {"id":"#b7a2","kind":"Same Game Parlay","odds":88524,"wager":0.10,"payout":88.62,"placed":"6:15 PM","ts":1815,"legs":[HRX("Bryce Harper"),H("Brandon Marsh"),CTB("Tatis Jr. + Machado",["Fernando Tatis Jr.","Manny Machado"],6,"SD@PHI")]},
@@ -306,9 +323,9 @@ const pitByKey={};pitchers.forEach(function(p){pitByKey[p.k]=p;});
 const CATS=[{k:'HR',label:'Home Runs',v:'--c-hr'},{k:'FPA',label:'First-PA HR',v:'--c-fpa'},{k:'TB',label:'Total Bases',v:'--c-tb'},{k:'HIT',label:'Hits',v:'--c-hit'},{k:'PITCH',label:'Pitcher Specials',v:'--c-pitch'},{k:'MIX',label:'Mixed',v:'--c-mix'}];
 const CATMAP={};CATS.forEach(function(c){CATMAP[c.k]=c;});
 const PITCHSET={NH5:1,NH7:1,K1:1,UP9:1,UP6:1};
-const BATSET={HR:1,HIT:1,FPA:1,TB:1,'1B':1,'2B':1,'3B':1,SB:1,HR2:1};
+const BATSET={HR:1,HIT:1,FPA:1,TB:1,'1B':1,'2B':1,'3B':1,SB:1,HR2:1,HIT2:1,TB2:1,TB3:1,TB5:1,RUN:1,RBI:1,RBI2:1,RBI4:1};
 const HITEV={single:1,double:2,triple:3,home_run:4};
-const PLAB={HR:'HR',HIT:'Hit',FPA:'1st-PA HR',TB:'4+ TB','1B':'Single','2B':'Double','3B':'Triple','SB':'Stolen Base',HR2:'2+ HR',CTB:'Combined TB',NH5:'No-hit thru 5',NH7:'No-hit thru 7',K1:'3+ K in 1st',UP9:'9 up 9 down',UP6:'6 up 6 down'};
+const PLAB={HR:'HR',HIT:'Hit',FPA:'1st-PA HR',TB:'4+ TB','1B':'Single','2B':'Double','3B':'Triple','SB':'Stolen Base',HR2:'2+ HR',HIT2:'2+ Hits',TB2:'2+ TB',TB3:'3+ TB',TB5:'5+ TB',RUN:'Run',RBI:'RBI',RBI2:'2+ RBIs',RBI4:'4+ RBIs',NA:'Manual (FD)',CTB:'Combined TB',NH5:'No-hit thru 5',NH7:'No-hit thru 7',K1:'3+ K in 1st',UP9:'9 up 9 down',UP6:'6 up 6 down'};
 let filterMode='all';let betSort='payout';let betSortDir='desc';let pitchFilter='all';let GS={};let STATS={};let collapsedSecs={};let collapsedBets={};
 const $=function(id){return document.getElementById(id);};
 function resetStats(){players.forEach(function(p){p.hr=[];p.atbat=false;p.ondeck=false;p.fpaDone=false;p.fpaHR=false;p.tmLive='';});pitchers.forEach(function(p){p.h5=0;p.h7=0;p.k1=0;p.seq=[];p.tmLive='';});STATS={};}
@@ -318,7 +335,7 @@ function ordSuffix(n){if(n%10==1&&n%100!=11)return n+'st';if(n%10==2&&n%100!=12)
 function etTime(iso){try{return new Date(iso).toLocaleTimeString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'})+' ET';}catch(e){return '';}}
 function amStr(o){return (o>0?'+':'')+o.toLocaleString();}
 function money(n){return '$'+n.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});}
-function statOf(name){return STATS[norm(name)]||{hits:0,doubles:0,triples:0,hr:0,sb:0,tb:0};}
+function statOf(name){return STATS[norm(name)]||{hits:0,doubles:0,triples:0,hr:0,sb:0,tb:0,runs:0,rbi:0};}
 function teamOf(name){const s=STATS[norm(name)];if(s&&s.tm)return s.tm;const p=pByKey[norm(name)];return p?(p.tmLive||p.tm||''):'';}
 function legGame(l){if(l.g)return l.g;const p=pByKey[norm(l.p)];if(p)return p.g;const q=pitByKey[norm(l.p)];if(q)return q.g;return '?';}
 async function refresh(){
@@ -338,8 +355,8 @@ async function refresh(){
   if(box){['away','home'].forEach(function(side){const tb=box[side];if(!tb)return;const ab=tb.team&&tb.team.abbreviation?tb.team.abbreviation:'';const pl=tb.players||{};
    for(const id in pl){const per=pl[id].person;const nm=per?norm(per.fullName):'';if(!nm)continue;
     const bt=(pl[id].stats&&pl[id].stats.batting)?pl[id].stats.batting:{};
-    const hits=bt.hits||0,d=bt.doubles||0,t=bt.triples||0,hr=bt.homeRuns||0,sb=bt.stolenBases||0;
-    STATS[nm]={hits:hits,doubles:d,triples:t,hr:hr,sb:sb,tb:hits+d+2*t+3*hr,tm:ab};
+    const hits=bt.hits||0,d=bt.doubles||0,t=bt.triples||0,hr=bt.homeRuns||0,sb=bt.stolenBases||0,rns=bt.runs||0,rbiv=bt.rbi||0;
+    STATS[nm]={hits:hits,doubles:d,triples:t,hr:hr,sb:sb,tb:hits+d+2*t+3*hr,runs:rns,rbi:rbiv,tm:ab};
     if(pByKey[nm])pByKey[nm].tmLive=ab;if(pitByKey[nm])pitByKey[nm].tmLive=ab;}});}
   const plays=(f.liveData&&f.liveData.plays&&f.liveData.plays.allPlays)?f.liveData.plays.allPlays:[];
   for(const pl of plays){const ev=pl.result&&pl.result.eventType;if(!ev)continue;
@@ -370,6 +387,14 @@ function legMet(leg){const pr=leg.prop;
   if(pr==='2B')return (s.doubles>=1)?'hit':(fin?'miss':'pending');
   if(pr==='3B')return (s.triples>=1)?'hit':(fin?'miss':'pending');
   if(pr==='HR2')return (s.hr>=2)?'hit':(fin?'miss':'pending');
+  if(pr==='HIT2')return (s.hits>=2)?'hit':(fin?'miss':'pending');
+  if(pr==='TB2')return (s.tb>=2)?'hit':(fin?'miss':'pending');
+  if(pr==='TB3')return (s.tb>=3)?'hit':(fin?'miss':'pending');
+  if(pr==='TB5')return (s.tb>=5)?'hit':(fin?'miss':'pending');
+  if(pr==='RUN')return (s.runs>=1)?'hit':(fin?'miss':'pending');
+  if(pr==='RBI')return (s.rbi>=1)?'hit':(fin?'miss':'pending');
+  if(pr==='RBI2')return (s.rbi>=2)?'hit':(fin?'miss':'pending');
+  if(pr==='RBI4')return (s.rbi>=4)?'hit':(fin?'miss':'pending');
   if(pr==='SB')return (s.sb>=1)?'hit':(fin?'miss':'pending');
   if(pr==='1B')return ((s.hits-s.doubles-s.triples-s.hr)>=1)?'hit':(fin?'miss':'pending');
   if(pr==='FPA'){if(p&&p.fpaDone)return p.fpaHR?'hit':'miss';return fin?'miss':'pending';}}
@@ -387,7 +412,7 @@ function pitchDetail(leg){const pr=leg.prop;const p=pitByKey[norm(leg.p)];if(!p)
  if(pr==='NH5')return p.h5+' H';if(pr==='NH7')return p.h7+' H';if(pr==='K1')return 'K: '+p.k1;
  if(pr==='UP9'||pr==='UP6'){let r=0;for(const x of p.seq){if(x===1)r++;else break;}return r+' retired';}return '';}
 function legNameHTML(leg){if(leg.prop==='TR'||leg.prop==='CTB')return leg.p;const t=teamOf(leg.p);return leg.p+(t?' <span class="tmtag">('+t+')</span>':'');}
-function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs';if(leg.prop==='CTB')return (leg.line||6)+'+ Combined TB';let t=PLAB[leg.prop]||leg.prop;if(leg.prop==='TB'){const s=statOf(leg.p);t+=' &middot; now '+s.tb;}return t;}
+function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs';if(leg.prop==='CTB')return (leg.line||6)+'+ Combined TB';let t=PLAB[leg.prop]||leg.prop;const pp=leg.prop;if(pp==='NA')return leg.lbl||'Manual (track on FD)';if(pp==='TB'||pp==='TB2'||pp==='TB3'||pp==='TB5'){t+=' &middot; now '+statOf(leg.p).tb;}else if(pp==='HIT2'){t+=' &middot; now '+statOf(leg.p).hits;}else if(pp==='RBI'||pp==='RBI2'||pp==='RBI4'){t+=' &middot; now '+statOf(leg.p).rbi;}else if(pp==='RUN'){t+=' &middot; now '+statOf(leg.p).runs;}return t;}
 function betCardHTML(b){
  const cat=CATMAP[b._cat];const cvar='var('+cat.v+')';
  const cl=b._st==='dead'?'b-dead':(b._st==='won'?'b-won':'b-alive');
