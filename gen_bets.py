@@ -1,30 +1,52 @@
 # -*- coding: utf-8 -*-
 import json
 GAMES = {
- "TOR@ATL":["Blue Jays","Braves"],"KC@MIN":["Royals","Twins"],
- "ATH@CHC":["Athletics","Cubs"],"LAD@ARI":["Dodgers","Diamondbacks"],
+ "BOS@NYY":["Red Sox","Yankees"],"SF@CHC":["Giants","Cubs"],"CWS@PHI":["White Sox","Phillies"],
+ "BAL@TOR":["Orioles","Blue Jays"],"PIT@ATL":["Pirates","Braves"],"CIN@STL":["Reds","Cardinals"],
+ "CLE@TEX":["Guardians","Rangers"],"MIL@COL":["Brewers","Rockies"],"WSH@ARI":["Nationals","Diamondbacks"],
+ "ATH@HOU":["Athletics","Astros"],"TB@MIA":["Rays","Marlins"],"LAA@LAD":["Angels","Dodgers"],
 }
 players=[
- {"n":"George Springer","tm":"TOR","g":"TOR@ATL","pr":["HR","HIT","TB"],"od":""},
- {"n":"Vladimir Guerrero Jr.","tm":"TOR","g":"TOR@ATL","pr":["HR","HIT","TB"],"od":""},
- {"n":"Carter Jensen","tm":"KC","g":"KC@MIN","pr":["HR","HIT","TB"],"od":""},
- {"n":"Bobby Witt Jr.","tm":"KC","g":"KC@MIN","pr":["HIT","TB"],"od":""},
- {"n":"Vinnie Pasquantino","tm":"KC","g":"KC@MIN","pr":["HIT","TB"],"od":""},
- {"n":"Kody Clemens","tm":"MIN","g":"KC@MIN","pr":["HR","HIT","TB"],"od":""},
- {"n":"Luke Keaschall","tm":"MIN","g":"KC@MIN","pr":["HIT","TB"],"od":""},
- {"n":"Trevor Larnach","tm":"MIN","g":"KC@MIN","pr":["HIT","TB"],"od":""},
- {"n":"Victor Caratini","tm":"MIN","g":"KC@MIN","pr":["HIT"],"od":""},
- {"n":"Jeff McNeil","tm":"ATH","g":"ATH@CHC","pr":["HIT"],"od":""},
- {"n":"Jonah Heim","tm":"ATH","g":"ATH@CHC","pr":["HIT","TB"],"od":""},
- {"n":"Michael Busch","tm":"CHC","g":"ATH@CHC","pr":["HIT","TB"],"od":""},
- {"n":"Mookie Betts","tm":"LAD","g":"LAD@ARI","pr":["HR","HIT","TB"],"od":""},
- {"n":"Kyle Tucker","tm":"LAD","g":"LAD@ARI","pr":["HR","TB"],"od":""},
- {"n":"Freddie Freeman","tm":"LAD","g":"LAD@ARI","pr":["HIT","TB"],"od":""},
- {"n":"Andy Pages","tm":"LAD","g":"LAD@ARI","pr":["HIT","TB"],"od":""},
- {"n":"Max Muncy","tm":"LAD","g":"LAD@ARI","pr":["HR","HIT","TB"],"od":""},
+ {"n":"Jarren Duran","tm":"BOS","g":"BOS@NYY","pr":["HR","HIT"],"od":""},
+ {"n":"Trent Grisham","tm":"NYY","g":"BOS@NYY","pr":["HR","HIT"],"od":""},
+ {"n":"Willy Adames","tm":"SF","g":"SF@CHC","pr":["HR","HIT"],"od":""},
+ {"n":"Jung Hoo Lee","tm":"SF","g":"SF@CHC","pr":["HIT"],"od":""},
+ {"n":"Luis Arraez","tm":"SF","g":"SF@CHC","pr":["HIT"],"od":""},
+ {"n":"Alex Bregman","tm":"","g":"SF@CHC","pr":["HIT"],"od":""},
+ {"n":"Seiya Suzuki","tm":"CHC","g":"SF@CHC","pr":["HIT"],"od":""},
+ {"n":"Chase Meidroth","tm":"CWS","g":"CWS@PHI","pr":["HR","HIT"],"od":""},
+ {"n":"Daulton Varsho","tm":"TOR","g":"BAL@TOR","pr":["HR","HIT"],"od":""},
+ {"n":"Vladimir Guerrero Jr.","tm":"TOR","g":"BAL@TOR","pr":["HIT"],"od":""},
+ {"n":"Ernie Clement","tm":"TOR","g":"BAL@TOR","pr":["HIT"],"od":""},
+ {"n":"Jesus Sanchez","tm":"","g":"BAL@TOR","pr":["HIT"],"od":""},
+ {"n":"Taylor Ward","tm":"","g":"BAL@TOR","pr":["HIT"],"od":""},
+ {"n":"Pete Alonso","tm":"BAL","g":"BAL@TOR","pr":["HIT"],"od":""},
+ {"n":"Ronald Acuna Jr.","tm":"ATL","g":"PIT@ATL","pr":["HIT","TB"],"od":""},
+ {"n":"Spencer Steer","tm":"CIN","g":"CIN@STL","pr":["HR","HIT"],"od":""},
+ {"n":"Masyn Winn","tm":"STL","g":"CIN@STL","pr":["HIT"],"od":""},
+ {"n":"Blake Dunn","tm":"","g":"CIN@STL","pr":["HIT"],"od":""},
+ {"n":"Alec Burleson","tm":"STL","g":"CIN@STL","pr":["TB"],"od":""},
+ {"n":"Nathaniel Lowe","tm":"","g":"CIN@STL","pr":["TB"],"od":""},
+ {"n":"JJ Bleday","tm":"","g":"CIN@STL","pr":["HIT","TB"],"od":""},
+ {"n":"Jordan Walker","tm":"STL","g":"CIN@STL","pr":["TB"],"od":""},
+ {"n":"Jose Ramirez","tm":"CLE","g":"CLE@TEX","pr":["HIT"],"od":""},
+ {"n":"Jackson Chourio","tm":"MIL","g":"MIL@COL","pr":["HR","HIT","TB"],"od":""},
+ {"n":"Hunter Goodman","tm":"COL","g":"MIL@COL","pr":["TB"],"od":""},
+ {"n":"Christian Yelich","tm":"MIL","g":"MIL@COL","pr":["TB"],"od":""},
+ {"n":"Troy Johnston","tm":"","g":"MIL@COL","pr":["HIT"],"od":""},
+ {"n":"Ketel Marte","tm":"ARI","g":"WSH@ARI","pr":["HR","HIT","TB"],"od":""},
+ {"n":"James Wood","tm":"WSH","g":"WSH@ARI","pr":["TB"],"od":""},
+ {"n":"C.J. Abrams","tm":"WSH","g":"WSH@ARI","pr":["TB"],"od":""},
+ {"n":"Luis Garcia","tm":"WSH","g":"WSH@ARI","pr":["HIT","TB"],"od":""},
+ {"n":"Curtis Mead","tm":"","g":"WSH@ARI","pr":["HR"],"od":""},
+ {"n":"Christian Walker","tm":"","g":"ATH@HOU","pr":["HIT"],"od":""},
+ {"n":"Nick Kurtz","tm":"ATH","g":"ATH@HOU","pr":["HIT"],"od":""},
+ {"n":"Chandler Simpson","tm":"TB","g":"TB@MIA","pr":["HIT"],"od":""},
+ {"n":"Xavier Edwards","tm":"MIA","g":"TB@MIA","pr":["HIT"],"od":""},
+ {"n":"Will Smith","tm":"LAD","g":"LAA@LAD","pr":["HIT"],"od":""},
 ]
 pitchers=[
- {"n":"Shota Imanaga","tm":"CHC","g":"ATH@CHC"},
+ {"n":"Trey Yesavage","tm":"TOR","g":"BAL@TOR"},
 ]
 def H(p): return {"p":p,"prop":"HR"}
 def T(p): return {"p":p,"prop":"HIT"}
@@ -39,24 +61,27 @@ def HRX(p): return {"p":p,"prop":"HR2"}
 def TRn(g,line): return {"p":g+" Total","prop":"TR","g":g,"line":line}
 def CTB(lbl,ps,line,g): return {"p":lbl,"prop":"CTB","ps":ps,"line":line,"g":g}
 bets=[
- {"id":"#4056","kind":"3-leg parlay","odds":41812,"wager":0.10,"payout":41.91,"placed":"7:57 PM","ts":1957,"legs":[H("George Springer"),H("Vladimir Guerrero Jr."),B("Carter Jensen")]},
- {"id":"#4055","kind":"4-leg parlay","odds":227423,"wager":0.10,"payout":227.52,"placed":"7:56 PM","ts":1956,"legs":[H("George Springer"),H("Vladimir Guerrero Jr."),H("Carter Jensen"),H("Kody Clemens")]},
- {"id":"#4054","kind":"10-leg parlay","odds":19014,"wager":0.35,"payout":66.90,"placed":"7:55 PM","ts":1955,"legs":[T("Jeff McNeil"),{"p":"Michael Busch","prop":"TB2"},{"p":"Kody Clemens","prop":"RUN"},{"p":"Kody Clemens","prop":"RBI"},{"p":"Luke Keaschall","prop":"TB2"},T("Trevor Larnach"),T("Carter Jensen"),T("Vinnie Pasquantino"),{"p":"Kody Clemens","prop":"TB3"},{"p":"Bobby Witt Jr.","prop":"TB3"}]},
- {"id":"#4053","kind":"13-leg parlay","odds":207723,"wager":0.25,"payout":519.56,"placed":"7:51 PM","ts":1951,"legs":[T("Jeff McNeil"),{"p":"Jonah Heim","prop":"TB2"},{"p":"Michael Busch","prop":"TB2"},{"p":"Kody Clemens","prop":"RUN"},{"p":"Kody Clemens","prop":"RBI"},{"p":"Kody Clemens","prop":"HIT2"},{"p":"Luke Keaschall","prop":"TB2"},T("Trevor Larnach"),T("Carter Jensen"),T("Vinnie Pasquantino"),T("Vladimir Guerrero Jr."),{"p":"George Springer","prop":"RUN"},{"p":"George Springer","prop":"HIT2"}]},
- {"id":"#4052","kind":"9-leg parlay","odds":44039,"wager":0.15,"payout":66.21,"placed":"7:48 PM","ts":1948,"legs":[T("Jeff McNeil"),{"p":"Jonah Heim","prop":"TB2"},{"p":"Michael Busch","prop":"TB2"},{"p":"Kody Clemens","prop":"RUN"},{"p":"Kody Clemens","prop":"RBI"},{"p":"Kody Clemens","prop":"HIT2"},{"p":"Luke Keaschall","prop":"TB2"},T("Vladimir Guerrero Jr."),{"p":"George Springer","prop":"RUN"}]},
- {"id":"#0nhe7","kind":"Same Game Parlay","odds":17319,"wager":0.25,"payout":43.55,"placed":"7:15 PM","ts":1915,"legs":[B("George Springer"),{"p":"Vladimir Guerrero Jr.","prop":"HRR2"},{"p":"Vladimir Guerrero Jr.","prop":"TB2"},SBL("George Springer")]},
- {"id":"#prtp","kind":"Same Game Parlay","odds":5712,"wager":0.10,"payout":5.81,"placed":"7:13 PM","ts":1913,"legs":[B("Kody Clemens"),B("Bobby Witt Jr."),{"p":"Vinnie Pasquantino","prop":"TB2"},{"p":"Luke Keaschall","prop":"TB2"}]},
- {"id":"#0zd7","kind":"6-leg parlay","odds":42057,"wager":0.24,"payout":101.18,"placed":"7:10 PM","ts":1910,"legs":[H("George Springer"),{"p":"Vladimir Guerrero Jr.","prop":"TB2"},T("Trevor Larnach"),T("Victor Caratini"),{"p":"Luke Keaschall","prop":"TB2"},H("Kody Clemens")]},
- {"id":"#zy1k","kind":"10-leg parlay","odds":3797,"wager":0.25,"payout":9.75,"placed":"6:59 PM","ts":1859,"legs":[T("Luke Keaschall"),T("Kody Clemens"),T("Trevor Larnach"),T("Bobby Witt Jr."),T("Vinnie Pasquantino"),T("Carter Jensen"),T("Vladimir Guerrero Jr."),T("George Springer"),T("Jeff McNeil"),T("Jonah Heim")]},
- {"id":"#fgfx","kind":"Same Game Parlay","odds":52586,"wager":0.10,"payout":52.69,"placed":"6:56 PM","ts":1856,"legs":[B("Kody Clemens"),B("Carter Jensen"),B("Trevor Larnach"),B("Luke Keaschall")]},
- {"id":"#mj58","kind":"Shota Imanaga","odds":3500,"wager":0.10,"payout":3.60,"placed":"7:40 PM","ts":1940,"legs":[P("Shota Imanaga","NH5")]},
- {"id":"#krd5","kind":"Shota Imanaga","odds":750,"wager":0.40,"payout":3.40,"placed":"7:40 PM","ts":1940.1,"legs":[P("Shota Imanaga","NH3")]},
- {"id":"#h6ax","kind":"Same Game Parlay","odds":32663,"wager":0.31,"payout":101.57,"placed":"8:09 PM","ts":2009,"legs":[H("Mookie Betts"),H("Kyle Tucker"),{"p":"Freddie Freeman","prop":"HIT2"},{"p":"Andy Pages","prop":"HIT2"},T("Max Muncy")]},
- {"id":"#qk6n","kind":"Same Game Parlay","odds":19026,"wager":0.50,"payout":95.63,"placed":"8:03 PM","ts":2003,"legs":[B("Max Muncy"),B("Kyle Tucker"),B("Freddie Freeman"),B("Mookie Betts")]},
+ {"id":"#52pwz","kind":"10-leg parlay","odds":7355,"wager":0.09,"payout":6.71,"placed":"3:04 PM","ts":1504,"legs":[T("Jarren Duran"),T("Trent Grisham"),T("Willy Adames"),T("Chase Meidroth"),T("Daulton Varsho"),SBL("Ronald Acuna Jr."),T("Spencer Steer"),T("Jose Ramirez"),T("Jackson Chourio"),T("Ketel Marte")]},
+ {"id":"#4062","kind":"19-leg parlay","odds":10092765,"wager":0.19,"payout":19176.44,"placed":"2:55 PM","ts":1455,"legs":[T("Willy Adames"),T("Jung Hoo Lee"),T("Luis Arraez"),{"p":"Alec Burleson","prop":"TB2"},{"p":"Nathaniel Lowe","prop":"TB2"},{"p":"JJ Bleday","prop":"TB3"},{"p":"Jordan Walker","prop":"TB2"},{"p":"Hunter Goodman","prop":"TB2"},{"p":"Christian Yelich","prop":"TB2"},{"p":"Jackson Chourio","prop":"TB3"},T("Troy Johnston"),{"p":"James Wood","prop":"TB3"},{"p":"Ketel Marte","prop":"TB3"},{"p":"C.J. Abrams","prop":"RBI"},{"p":"C.J. Abrams","prop":"RUN"},{"p":"C.J. Abrams","prop":"TB2"},T("Vladimir Guerrero Jr."),{"p":"Ernie Clement","prop":"HIT2"},T("Chase Meidroth")]},
+ {"id":"#4061","kind":"23-leg parlay","odds":46738137,"wager":0.10,"payout":46738.24,"placed":"2:37 PM","ts":1437,"legs":[T("Willy Adames"),T("Jung Hoo Lee"),T("Luis Arraez"),T("Alex Bregman"),T("Seiya Suzuki"),T("Masyn Winn"),T("Blake Dunn"),{"p":"Alec Burleson","prop":"TB2"},{"p":"Nathaniel Lowe","prop":"TB2"},{"p":"JJ Bleday","prop":"TB3"},{"p":"Jordan Walker","prop":"TB2"},{"p":"Hunter Goodman","prop":"TB2"},{"p":"Christian Yelich","prop":"TB2"},{"p":"Jackson Chourio","prop":"TB3"},T("Troy Johnston"),{"p":"James Wood","prop":"TB3"},{"p":"Ketel Marte","prop":"TB3"},{"p":"C.J. Abrams","prop":"RBI"},{"p":"C.J. Abrams","prop":"RUN"},{"p":"C.J. Abrams","prop":"TB2"},T("Vladimir Guerrero Jr."),{"p":"Ernie Clement","prop":"HIT2"},T("Chase Meidroth")]},
+ {"id":"#4060","kind":"21-leg parlay","odds":101147330,"wager":0.10,"payout":101147.43,"placed":"2:36 PM","ts":1436,"legs":[T("Willy Adames"),T("Jung Hoo Lee"),T("Luis Arraez"),T("Alex Bregman"),T("Seiya Suzuki"),T("Masyn Winn"),T("Blake Dunn"),{"p":"Alec Burleson","prop":"TB2"},{"p":"Nathaniel Lowe","prop":"TB2"},{"p":"JJ Bleday","prop":"TB3"},{"p":"Jordan Walker","prop":"TB2"},{"p":"Hunter Goodman","prop":"TB2"},{"p":"Christian Yelich","prop":"TB2"},{"p":"Jackson Chourio","prop":"TB3"},T("Troy Johnston"),{"p":"James Wood","prop":"TB3"},{"p":"Ketel Marte","prop":"TB3"},H("Curtis Mead"),T("Vladimir Guerrero Jr."),{"p":"Ernie Clement","prop":"HIT2"},T("Chase Meidroth")]},
+ {"id":"#4059","kind":"21-leg parlay","odds":8029746,"wager":0.10,"payout":8029.85,"placed":"2:22 PM","ts":1422,"legs":[T("Willy Adames"),T("Jung Hoo Lee"),T("Luis Arraez"),T("Alex Bregman"),T("Seiya Suzuki"),T("Masyn Winn"),T("JJ Bleday"),T("Blake Dunn"),{"p":"Alec Burleson","prop":"TB2"},{"p":"Nathaniel Lowe","prop":"TB2"},{"p":"Hunter Goodman","prop":"TB2"},{"p":"Christian Yelich","prop":"TB2"},{"p":"Jackson Chourio","prop":"TB3"},T("Troy Johnston"),{"p":"James Wood","prop":"TB3"},{"p":"Ketel Marte","prop":"TB3"},{"p":"Luis Garcia","prop":"TB2"},T("Vladimir Guerrero Jr."),T("Jesus Sanchez"),{"p":"Ernie Clement","prop":"HIT2"},T("Chase Meidroth")]},
+ {"id":"#4058","kind":"19-leg parlay","odds":2767035,"wager":0.09,"payout":2490.42,"placed":"2:10 PM","ts":1410,"legs":[T("Willy Adames"),T("Jung Hoo Lee"),T("Luis Arraez"),T("Alex Bregman"),T("Seiya Suzuki"),T("Masyn Winn"),T("JJ Bleday"),T("Blake Dunn"),{"p":"Alec Burleson","prop":"TB2"},{"p":"Nathaniel Lowe","prop":"TB2"},{"p":"Hunter Goodman","prop":"TB2"},{"p":"Christian Yelich","prop":"TB2"},{"p":"Jackson Chourio","prop":"TB3"},T("Troy Johnston"),{"p":"James Wood","prop":"TB3"},{"p":"Ketel Marte","prop":"TB3"},{"p":"Luis Garcia","prop":"HIT2"},T("Chase Meidroth"),T("Jose Ramirez")]},
+ {"id":"#qtr9","kind":"14-leg parlay","odds":12826,"wager":0.09,"payout":11.64,"placed":"1:38 PM","ts":1338,"legs":[T("Willy Adames"),T("Jung Hoo Lee"),T("Luis Arraez"),T("Alex Bregman"),T("Seiya Suzuki"),T("Christian Walker"),T("Nick Kurtz"),T("Chase Meidroth"),T("Jarren Duran"),T("Daulton Varsho"),T("Jose Ramirez"),T("Jackson Chourio"),T("Ketel Marte"),T("Will Smith")]},
+ {"id":"#0gjj","kind":"12-leg parlay","odds":7393,"wager":0.12,"payout":8.99,"placed":"11:22 AM","ts":1122,"legs":[T("Jarren Duran"),T("Trent Grisham"),T("Christian Walker"),T("Nick Kurtz"),T("Willy Adames"),T("Chase Meidroth"),T("Daulton Varsho"),T("Spencer Steer"),T("Jose Ramirez"),T("Jackson Chourio"),T("Ketel Marte"),T("Will Smith")]},
+ {"id":"#k46d","kind":"12-leg parlay","odds":11086,"wager":0.12,"payout":13.43,"placed":"11:20 AM","ts":1120,"legs":[T("Jarren Duran"),T("Trent Grisham"),{"p":"ATH@HOU","prop":"NA","lbl":"Over 9.0 Runs (manual)"},{"p":"Houston Astros","prop":"NA","lbl":"Astros ML (manual)"},T("Willy Adames"),T("Chase Meidroth"),T("Daulton Varsho"),T("Spencer Steer"),T("Jose Ramirez"),T("Jackson Chourio"),T("Ketel Marte"),{"p":"Los Angeles Dodgers","prop":"NA","lbl":"Dodgers ML (manual)"}]},
+ {"id":"#04vk","kind":"12-leg parlay","odds":10409,"wager":0.12,"payout":12.61,"placed":"4:03 AM","ts":403,"legs":[T("Jarren Duran"),T("Trent Grisham"),{"p":"ATH@HOU","prop":"NA","lbl":"Over 9.0 Runs (manual)"},{"p":"Houston Astros","prop":"NA","lbl":"Astros ML (manual)"},T("Willy Adames"),T("Chase Meidroth"),T("Daulton Varsho"),T("Spencer Steer"),T("Jose Ramirez"),T("Jackson Chourio"),T("Ketel Marte"),{"p":"Los Angeles Dodgers","prop":"NA","lbl":"Dodgers ML (manual)"}]},
+ {"id":"#qv37","kind":"9-leg parlay","odds":1890,"wager":0.09,"payout":1.79,"placed":"4:02 AM","ts":402,"legs":[T("Jarren Duran"),T("Trent Grisham"),T("Willy Adames"),T("Chase Meidroth"),T("Daulton Varsho"),T("Spencer Steer"),T("Jose Ramirez"),T("Jackson Chourio"),T("Ketel Marte")]},
+ {"id":"#4057","kind":"8-leg parlay","odds":72154462,"wager":0.09,"payout":64939.11,"placed":"3:58 AM","ts":358,"legs":[H("Trent Grisham"),H("Jarren Duran"),H("Willy Adames"),H("Chase Meidroth"),H("Daulton Varsho"),H("Spencer Steer"),H("Jackson Chourio"),H("Ketel Marte")]},
+ {"id":"#5xk3","kind":"Same Game Parlay","odds":88507,"wager":0.25,"payout":221.53,"placed":"4:24 PM","ts":1624,"legs":[{"p":"Vladimir Guerrero Jr.","prop":"HIT2"},{"p":"Ernie Clement","prop":"HIT3"},T("Jesus Sanchez"),{"p":"Trey Yesavage","prop":"NA","lbl":"6+ K (manual)"},{"p":"Taylor Ward","prop":"RUN"},{"p":"Daulton Varsho","prop":"RBI2"},{"p":"Pete Alonso","prop":"RBI"}]},
+ {"id":"#aevn","kind":"Same Game Parlay","odds":65979,"wager":0.33,"payout":218.06,"placed":"4:15 PM","ts":1615,"legs":[{"p":"Vladimir Guerrero Jr.","prop":"HIT2"},{"p":"Ernie Clement","prop":"HIT4"},{"p":"Jesus Sanchez","prop":"HIT2"},{"p":"Ernie Clement","prop":"RUN2"}]},
+ {"id":"#bpgb","kind":"Same Game Parlay","odds":88521,"wager":0.25,"payout":221.55,"placed":"4:03 PM","ts":1603,"legs":[{"p":"Vladimir Guerrero Jr.","prop":"HIT2"},{"p":"Ernie Clement","prop":"HIT4"},{"p":"Jesus Sanchez","prop":"HIT3"}]},
+ {"id":"#4w82","kind":"5-leg parlay","odds":16203,"wager":0.10,"payout":16.30,"placed":"3:31 PM","ts":1531,"legs":[SBL("Chandler Simpson"),SBL("Xavier Edwards"),{"p":"Ronald Acuna Jr.","prop":"HIT2"},{"p":"Ronald Acuna Jr.","prop":"TB3"},SBL("Ronald Acuna Jr.")]},
+ {"id":"#91j5","kind":"5-leg parlay","odds":75653,"wager":0.10,"payout":75.76,"placed":"3:31 PM","ts":1531.1,"legs":[{"p":"Ronald Acuna Jr.","prop":"SB2"},{"p":"Ronald Acuna Jr.","prop":"HIT2"},{"p":"Ronald Acuna Jr.","prop":"TB3"},SBL("Chandler Simpson"),SBL("Xavier Edwards")]},
 ]
 
 TPL = r"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MLB Bet Tracker - June 4 2026</title>
+<title>MLB Bet Tracker - June 5 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Spline+Sans+Mono:wght@500;600;700&family=Spline+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -173,7 +198,7 @@ h2{font-family:'Archivo';font-weight:900;font-size:16px;margin:22px 0 9px}h2:fir
 footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:var(--dim);font-size:10.5px;line-height:1.6;font-family:'Spline Sans Mono'}
 </style></head><body><div class="wrap">
 <div class="kicker">Live Bet Tracker</div>
-<h1>Thursday, June 4 &mdash; MLB Bets</h1>
+<h1>Friday, June 5 &mdash; MLB Bets</h1>
 <div class="updbar"><span class="upd" id="updated">Loading...</span><button class="btn" id="refresh">Refresh</button></div>
 <nav class="tabs">
  <button data-tab="summary" class="active">Summary</button>
@@ -207,7 +232,7 @@ footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:v
 <footer>Auto-refreshes every 60s while the tab is open (your browser polls statsapi.mlb.com; not a push alert; stops when closed). Odds are the FanDuel prices from your betslips. Pitcher specials, total bases, and exotic props are tracked live, best-effort &mdash; confirm final settlement on FanDuel. A bet goes DEAD when any leg can no longer hit.</footer>
 </div>
 <script>
-const DATE="2026-06-04";
+const DATE="2026-06-05";
 const SCHED="https://statsapi.mlb.com/api/v1/schedule?sportId=1&date="+DATE+"&hydrate=linescore,team";
 const FEED=function(pk){return "https://statsapi.mlb.com/api/v1.1/game/"+pk+"/feed/live";};
 const GAMES=__GAMES__;const players=__PLAYERS__;const pitchers=__PITCHERS__;const bets=__BETS__;
@@ -218,9 +243,9 @@ const pitByKey={};pitchers.forEach(function(p){pitByKey[p.k]=p;});
 const CATS=[{k:'HR',label:'Home Runs',v:'--c-hr'},{k:'FPA',label:'First-PA HR',v:'--c-fpa'},{k:'TB',label:'Total Bases',v:'--c-tb'},{k:'HIT',label:'Hits',v:'--c-hit'},{k:'PITCH',label:'Pitcher Specials',v:'--c-pitch'},{k:'MIX',label:'Mixed',v:'--c-mix'}];
 const CATMAP={};CATS.forEach(function(c){CATMAP[c.k]=c;});
 const PITCHSET={NH3:1,NH5:1,NH7:1,K1:1,UP9:1,UP6:1};
-const BATSET={HR:1,HIT:1,FPA:1,TB:1,'1B':1,'2B':1,'3B':1,SB:1,HR2:1,HIT2:1,TB2:1,TB3:1,TB5:1,RUN:1,RBI:1,RBI2:1,RBI4:1,HRR2:1};
+const BATSET={HR:1,HIT:1,FPA:1,TB:1,'1B':1,'2B':1,'3B':1,SB:1,HR2:1,HIT2:1,TB2:1,TB3:1,TB5:1,RUN:1,RBI:1,RBI2:1,RBI4:1,HRR2:1,HIT3:1,HIT4:1,RUN2:1,SB2:1};
 const HITEV={single:1,double:2,triple:3,home_run:4};
-const PLAB={HR:'HR',HIT:'Hit',FPA:'1st-PA HR',TB:'4+ TB','1B':'Single','2B':'Double','3B':'Triple','SB':'Stolen Base',HR2:'2+ HR',HIT2:'2+ Hits',TB2:'2+ TB',TB3:'3+ TB',TB5:'5+ TB',RUN:'Run',RBI:'RBI',RBI2:'2+ RBIs',RBI4:'4+ RBIs',HRR2:'2+ H+R+RBI',NA:'Manual (FD)',CTB:'Combined TB',NH3:'No-hit thru 3',NH5:'No-hit thru 5',NH7:'No-hit thru 7',K1:'3+ K in 1st',UP9:'9 up 9 down',UP6:'6 up 6 down'};
+const PLAB={HR:'HR',HIT:'Hit',FPA:'1st-PA HR',TB:'4+ TB','1B':'Single','2B':'Double','3B':'Triple','SB':'Stolen Base',HR2:'2+ HR',HIT2:'2+ Hits',TB2:'2+ TB',TB3:'3+ TB',TB5:'5+ TB',RUN:'Run',RBI:'RBI',RBI2:'2+ RBIs',RBI4:'4+ RBIs',HRR2:'2+ H+R+RBI',HIT3:'3+ Hits',HIT4:'4+ Hits',RUN2:'2+ Runs',SB2:'2+ SB',NA:'Manual (FD)',CTB:'Combined TB',NH3:'No-hit thru 3',NH5:'No-hit thru 5',NH7:'No-hit thru 7',K1:'3+ K in 1st',UP9:'9 up 9 down',UP6:'6 up 6 down'};
 let filterMode='all';let betSort='payout';let betSortDir='desc';let pitchFilter='all';let GS={};let STATS={};let collapsedSecs={};let collapsedBets={};
 const $=function(id){return document.getElementById(id);};
 function resetStats(){players.forEach(function(p){p.hr=[];p.atbat=false;p.ondeck=false;p.fpaDone=false;p.fpaHR=false;p.tmLive='';});pitchers.forEach(function(p){p.h3=0;p.h5=0;p.h7=0;p.k1=0;p.seq=[];p.tmLive='';});STATS={};}
@@ -291,6 +316,10 @@ function legMet(leg){const pr=leg.prop;
   if(pr==='RBI2')return (s.rbi>=2)?'hit':(fin?'miss':'pending');
   if(pr==='RBI4')return (s.rbi>=4)?'hit':(fin?'miss':'pending');
   if(pr==='HRR2')return ((s.hits+s.runs+s.rbi)>=2)?'hit':(fin?'miss':'pending');
+  if(pr==='HIT3')return (s.hits>=3)?'hit':(fin?'miss':'pending');
+  if(pr==='HIT4')return (s.hits>=4)?'hit':(fin?'miss':'pending');
+  if(pr==='RUN2')return (s.runs>=2)?'hit':(fin?'miss':'pending');
+  if(pr==='SB2')return (s.sb>=2)?'hit':(fin?'miss':'pending');
   if(pr==='SB')return (s.sb>=1)?'hit':(fin?'miss':'pending');
   if(pr==='1B')return ((s.hits-s.doubles-s.triples-s.hr)>=1)?'hit':(fin?'miss':'pending');
   if(pr==='FPA'){if(p&&p.fpaDone)return p.fpaHR?'hit':'miss';return fin?'miss':'pending';}}
@@ -308,7 +337,7 @@ function pitchDetail(leg){const pr=leg.prop;const p=pitByKey[norm(leg.p)];if(!p)
  if(pr==='NH5')return p.h5+' H';if(pr==='NH7')return p.h7+' H';if(pr==='K1')return 'K: '+p.k1;
  if(pr==='UP9'||pr==='UP6'){let r=0;for(const x of p.seq){if(x===1)r++;else break;}return r+' retired';}return '';}
 function legNameHTML(leg){if(leg.prop==='TR'||leg.prop==='CTB')return leg.p;const t=teamOf(leg.p);return leg.p+(t?' <span class="tmtag">('+t+')</span>':'');}
-function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs';if(leg.prop==='CTB')return (leg.line||6)+'+ Combined TB';let t=PLAB[leg.prop]||leg.prop;const pp=leg.prop;if(pp==='NA')return leg.lbl||'Manual (track on FD)';if(pp==='TB'||pp==='TB2'||pp==='TB3'||pp==='TB5'){t+=' &middot; now '+statOf(leg.p).tb;}else if(pp==='HIT2'){t+=' &middot; now '+statOf(leg.p).hits;}else if(pp==='RBI'||pp==='RBI2'||pp==='RBI4'){t+=' &middot; now '+statOf(leg.p).rbi;}else if(pp==='RUN'){t+=' &middot; now '+statOf(leg.p).runs;}else if(pp==='HRR2'){const ss=statOf(leg.p);t+=' &middot; now '+(ss.hits+ss.runs+ss.rbi);}return t;}
+function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs';if(leg.prop==='CTB')return (leg.line||6)+'+ Combined TB';let t=PLAB[leg.prop]||leg.prop;const pp=leg.prop;if(pp==='NA')return leg.lbl||'Manual (track on FD)';if(pp==='TB'||pp==='TB2'||pp==='TB3'||pp==='TB5'){t+=' &middot; now '+statOf(leg.p).tb;}else if(pp==='HIT2'||pp==='HIT3'||pp==='HIT4'){t+=' &middot; now '+statOf(leg.p).hits;}else if(pp==='RBI'||pp==='RBI2'||pp==='RBI4'){t+=' &middot; now '+statOf(leg.p).rbi;}else if(pp==='RUN'||pp==='RUN2'){t+=' &middot; now '+statOf(leg.p).runs;}else if(pp==='SB2'){t+=' &middot; now '+statOf(leg.p).sb;}else if(pp==='HRR2'){const ss=statOf(leg.p);t+=' &middot; now '+(ss.hits+ss.runs+ss.rbi);}return t;}
 function betCardHTML(b){
  const cat=CATMAP[b._cat];const cvar='var('+cat.v+')';
  const cl=b._st==='dead'?'b-dead':(b._st==='won'?'b-won':'b-alive');
