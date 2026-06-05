@@ -108,6 +108,10 @@ bets=[
  {"id":"#5gvqf","kind":"Pitcher Special","odds":2500,"wager":0.10,"payout":2.60,"placed":"5:00 PM","ts":1700.4,"legs":[P("Framber Valdez","K1")]},
  {"id":"#3vhwy","kind":"Pitcher Special","odds":4000,"wager":0.20,"payout":8.20,"placed":"5:00 PM","ts":1700.5,"legs":[P("Framber Valdez","NH5")]},
  {"id":"#fz53z","kind":"Pitcher Special","odds":390,"wager":0.35,"payout":1.72,"placed":"5:00 PM","ts":1700.6,"legs":[P("Bryan Woo","UP6")]},
+ {"id":"#4066","kind":"Same Game Parlay","odds":70932,"wager":0.10,"payout":71.03,"placed":"7:14 PM","ts":1914,"legs":[{"p":"Chase Meidroth","prop":"RBI3"},{"p":"Chase Meidroth","prop":"HIT2"},{"p":"Chase Meidroth","prop":"TB3"},{"p":"Philadelphia Phillies","prop":"NA","lbl":"Phillies ML (manual)"},{"p":"Chase Meidroth","prop":"RUN"}]},
+ {"id":"#4065","kind":"Same Game Parlay","odds":11555,"wager":0.20,"payout":23.31,"placed":"7:10 PM","ts":1910,"legs":[{"p":"Chase Meidroth","prop":"RBI3"},H("Chase Meidroth"),{"p":"Chase Meidroth","prop":"HIT2"}]},
+ {"id":"#4064","kind":"Same Game Parlay","odds":11934,"wager":0.50,"payout":60.17,"placed":"7:01 PM","ts":1901,"legs":[{"p":"Chase Meidroth","prop":"RUN2"},{"p":"Chase Meidroth","prop":"RBI"},{"p":"Chase Meidroth","prop":"TB5"},{"p":"Chase Meidroth","prop":"HIT3"}]},
+ {"id":"#4063","kind":"Same Game Parlay","odds":64693,"wager":0.17,"payout":110.15,"placed":"6:51 PM","ts":1851,"legs":[{"p":"Chase Meidroth","prop":"HR2"},{"p":"Chase Meidroth","prop":"HIT3"}]},
  {"id":"#5xk3","kind":"Same Game Parlay","odds":88507,"wager":0.25,"payout":221.53,"placed":"4:24 PM","ts":1624,"legs":[{"p":"Vladimir Guerrero Jr.","prop":"HIT2"},{"p":"Ernie Clement","prop":"HIT3"},T("Jesus Sanchez"),{"p":"Trey Yesavage","prop":"NA","lbl":"6+ K (manual)"},{"p":"Taylor Ward","prop":"RUN"},{"p":"Daulton Varsho","prop":"RBI2"},{"p":"Pete Alonso","prop":"RBI"}]},
  {"id":"#aevn","kind":"Same Game Parlay","odds":65979,"wager":0.33,"payout":218.06,"placed":"4:15 PM","ts":1615,"legs":[{"p":"Vladimir Guerrero Jr.","prop":"HIT2"},{"p":"Ernie Clement","prop":"HIT4"},{"p":"Jesus Sanchez","prop":"HIT2"},{"p":"Ernie Clement","prop":"RUN2"}]},
  {"id":"#bpgb","kind":"Same Game Parlay","odds":88521,"wager":0.25,"payout":221.55,"placed":"4:03 PM","ts":1603,"legs":[{"p":"Vladimir Guerrero Jr.","prop":"HIT2"},{"p":"Ernie Clement","prop":"HIT4"},{"p":"Jesus Sanchez","prop":"HIT3"}]},
@@ -278,9 +282,9 @@ const pitByKey={};pitchers.forEach(function(p){pitByKey[p.k]=p;});
 const CATS=[{k:'HR',label:'Home Runs',v:'--c-hr'},{k:'FPA',label:'First-PA HR',v:'--c-fpa'},{k:'TB',label:'Total Bases',v:'--c-tb'},{k:'HIT',label:'Hits',v:'--c-hit'},{k:'PITCH',label:'Pitcher Specials',v:'--c-pitch'},{k:'MIX',label:'Mixed',v:'--c-mix'}];
 const CATMAP={};CATS.forEach(function(c){CATMAP[c.k]=c;});
 const PITCHSET={NH3:1,NH5:1,NH7:1,K1:1,UP9:1,UP6:1};
-const BATSET={HR:1,HIT:1,FPA:1,TB:1,'1B':1,'2B':1,'3B':1,SB:1,HR2:1,HIT2:1,TB2:1,TB3:1,TB5:1,RUN:1,RBI:1,RBI2:1,RBI4:1,HRR2:1,HIT3:1,HIT4:1,RUN2:1,SB2:1};
+const BATSET={HR:1,HIT:1,FPA:1,TB:1,'1B':1,'2B':1,'3B':1,SB:1,HR2:1,HIT2:1,TB2:1,TB3:1,TB5:1,RUN:1,RBI:1,RBI2:1,RBI3:1,RBI4:1,HRR2:1,HIT3:1,HIT4:1,RUN2:1,SB2:1};
 const HITEV={single:1,double:2,triple:3,home_run:4};
-const PLAB={HR:'HR',HIT:'Hit',FPA:'1st-PA HR',TB:'4+ TB','1B':'Single','2B':'Double','3B':'Triple','SB':'Stolen Base',HR2:'2+ HR',HIT2:'2+ Hits',TB2:'2+ TB',TB3:'3+ TB',TB5:'5+ TB',RUN:'Run',RBI:'RBI',RBI2:'2+ RBIs',RBI4:'4+ RBIs',HRR2:'2+ H+R+RBI',HIT3:'3+ Hits',HIT4:'4+ Hits',RUN2:'2+ Runs',SB2:'2+ SB',NA:'Manual (FD)',CTB:'Combined TB',NH3:'No-hit thru 3',NH5:'No-hit thru 5',NH7:'No-hit thru 7',K1:'3+ K in 1st',UP9:'9 up 9 down',UP6:'6 up 6 down'};
+const PLAB={HR:'HR',HIT:'Hit',FPA:'1st-PA HR',TB:'4+ TB','1B':'Single','2B':'Double','3B':'Triple','SB':'Stolen Base',HR2:'2+ HR',HIT2:'2+ Hits',TB2:'2+ TB',TB3:'3+ TB',TB5:'5+ TB',RUN:'Run',RBI:'RBI',RBI2:'2+ RBIs',RBI3:'3+ RBIs',RBI4:'4+ RBIs',HRR2:'2+ H+R+RBI',HIT3:'3+ Hits',HIT4:'4+ Hits',RUN2:'2+ Runs',SB2:'2+ SB',NA:'Manual (FD)',CTB:'Combined TB',NH3:'No-hit thru 3',NH5:'No-hit thru 5',NH7:'No-hit thru 7',K1:'3+ K in 1st',UP9:'9 up 9 down',UP6:'6 up 6 down'};
 let filterMode='all';let betSort='payout';let betSortDir='desc';let pitchFilter='all';let GS={};let STATS={};let collapsedSecs={};let collapsedBets={};
 const $=function(id){return document.getElementById(id);};
 function resetStats(){players.forEach(function(p){p.hr=[];p.atbat=false;p.ondeck=false;p.fpaDone=false;p.fpaHR=false;p.tmLive='';});pitchers.forEach(function(p){p.h3=0;p.h5=0;p.h7=0;p.k1=0;p.seq=[];p.tmLive='';});STATS={};}
@@ -349,6 +353,7 @@ function legMet(leg){const pr=leg.prop;
   if(pr==='RUN')return (s.runs>=1)?'hit':(fin?'miss':'pending');
   if(pr==='RBI')return (s.rbi>=1)?'hit':(fin?'miss':'pending');
   if(pr==='RBI2')return (s.rbi>=2)?'hit':(fin?'miss':'pending');
+  if(pr==='RBI3')return (s.rbi>=3)?'hit':(fin?'miss':'pending');
   if(pr==='RBI4')return (s.rbi>=4)?'hit':(fin?'miss':'pending');
   if(pr==='HRR2')return ((s.hits+s.runs+s.rbi)>=2)?'hit':(fin?'miss':'pending');
   if(pr==='HIT3')return (s.hits>=3)?'hit':(fin?'miss':'pending');
@@ -372,7 +377,7 @@ function pitchDetail(leg){const pr=leg.prop;const p=pitByKey[norm(leg.p)];if(!p)
  if(pr==='NH5')return p.h5+' H';if(pr==='NH7')return p.h7+' H';if(pr==='K1')return 'K: '+p.k1;
  if(pr==='UP9'||pr==='UP6'){let r=0;for(const x of p.seq){if(x===1)r++;else break;}return r+' retired';}return '';}
 function legNameHTML(leg){if(leg.prop==='TR'||leg.prop==='CTB')return leg.p;const t=teamOf(leg.p);return leg.p+(t?' <span class="tmtag">('+t+')</span>':'');}
-function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs';if(leg.prop==='CTB')return (leg.line||6)+'+ Combined TB';let t=PLAB[leg.prop]||leg.prop;const pp=leg.prop;if(pp==='NA')return leg.lbl||'Manual (track on FD)';if(pp==='TB'||pp==='TB2'||pp==='TB3'||pp==='TB5'){t+=' &middot; now '+statOf(leg.p).tb;}else if(pp==='HIT2'||pp==='HIT3'||pp==='HIT4'){t+=' &middot; now '+statOf(leg.p).hits;}else if(pp==='RBI'||pp==='RBI2'||pp==='RBI4'){t+=' &middot; now '+statOf(leg.p).rbi;}else if(pp==='RUN'||pp==='RUN2'){t+=' &middot; now '+statOf(leg.p).runs;}else if(pp==='SB2'){t+=' &middot; now '+statOf(leg.p).sb;}else if(pp==='HRR2'){const ss=statOf(leg.p);t+=' &middot; now '+(ss.hits+ss.runs+ss.rbi);}return t;}
+function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs';if(leg.prop==='CTB')return (leg.line||6)+'+ Combined TB';let t=PLAB[leg.prop]||leg.prop;const pp=leg.prop;if(pp==='NA')return leg.lbl||'Manual (track on FD)';if(pp==='TB'||pp==='TB2'||pp==='TB3'||pp==='TB5'){t+=' &middot; now '+statOf(leg.p).tb;}else if(pp==='HIT2'||pp==='HIT3'||pp==='HIT4'){t+=' &middot; now '+statOf(leg.p).hits;}else if(pp==='RBI'||pp==='RBI2'||pp==='RBI3'||pp==='RBI4'){t+=' &middot; now '+statOf(leg.p).rbi;}else if(pp==='RUN'||pp==='RUN2'){t+=' &middot; now '+statOf(leg.p).runs;}else if(pp==='SB2'){t+=' &middot; now '+statOf(leg.p).sb;}else if(pp==='HRR2'){const ss=statOf(leg.p);t+=' &middot; now '+(ss.hits+ss.runs+ss.rbi);}return t;}
 function betCardHTML(b){
  const cat=CATMAP[b._cat];const cvar='var('+cat.v+')';
  const cl=b._st==='dead'?'b-dead':(b._st==='won'?'b-won':'b-alive');
