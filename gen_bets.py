@@ -17,7 +17,7 @@ players=[
  {"n":"Kyle Schwarber","tm":"PHI","g":"PHI@TOR","pr":["HR"],"od":""},
  {"n":"Dominic Canzone","tm":"SEA","g":"SEA@BAL","pr":["HR"],"od":""},
  {"n":"Luke Raley","tm":"SEA","g":"SEA@BAL","pr":["HR"],"od":""},
- {"n":"Jose Caballero","tm":"","g":"NYY@CLE","pr":["HR"],"od":""},
+ {"n":"Jose Caballero","tm":"NYY","g":"NYY@CLE","pr":["HR"],"od":""},
  {"n":"Trent Grisham","tm":"NYY","g":"NYY@CLE","pr":["HR"],"od":""},
  {"n":"Ben Rice","tm":"NYY","g":"NYY@CLE","pr":["HR"],"od":""},
  {"n":"Shea Langeliers","tm":"ATH","g":"MIL@ATH","pr":["HR"],"od":""},
