@@ -252,7 +252,7 @@ const norm=function(s){return (s||"").normalize('NFD').replace(/[\u0300-\u036f]/
 players.forEach(function(p){p.k=norm(p.n);});pitchers.forEach(function(p){p.k=norm(p.n);});
 const pByKey={};players.forEach(function(p){pByKey[p.k]=p;});
 const pitByKey={};pitchers.forEach(function(p){pitByKey[p.k]=p;});
-const CATS=[{k:'HR',label:'Home Runs',v:'--c-hr'},{k:'FPA',label:'First-PA HR',v:'--c-fpa'},{k:'TB',label:'Total Bases',v:'--c-tb'},{k:'HIT',label:'Hits',v:'--c-hit'},{k:'PITCH',label:'Pitcher Specials',v:'--c-pitch'},{k:'MIX',label:'Mixed',v:'--c-mix'}];
+const CATS=[{k:'PARLAY',label:'Parlays',v:'--c-fpa'},{k:'HR',label:'Home Runs',v:'--c-hr'},{k:'FPA',label:'First-PA HR',v:'--c-fpa'},{k:'TB',label:'Total Bases',v:'--c-tb'},{k:'HIT',label:'Hits',v:'--c-hit'},{k:'PITCH',label:'Pitcher Specials',v:'--c-pitch'},{k:'MIX',label:'Mixed',v:'--c-mix'}];
 const CATMAP={};CATS.forEach(function(c){CATMAP[c.k]=c;});
 const PITCHSET={NH3:1,NH5:1,NH7:1,K1:1,UP9:1,UP6:1,ALTK:1};
 const BATSET={HR:1,HIT:1,FPA:1,TB:1,'1B':1,'2B':1,'3B':1,SB:1,HR2:1,HIT2:1,TB2:1,TB3:1,TB5:1,RUN:1,RBI:1,RBI2:1,RBI3:1,RBI4:1,HRR2:1,HIT3:1,HIT4:1,RUN2:1,SB2:1};
@@ -268,7 +268,7 @@ function etTime(iso){try{return new Date(iso).toLocaleTimeString('en-US',{timeZo
 function amStr(o){return (o>0?'+':'')+o.toLocaleString();}
 function money(n){return '$'+n.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});}
 function statOf(name){return STATS[norm(name)]||{hits:0,doubles:0,triples:0,hr:0,sb:0,tb:0,runs:0,rbi:0};}
-function teamOf(name){const s=STATS[norm(name)];if(s&&s.tm)return s.tm;const p=pByKey[norm(name)];return p?(p.tmLive||p.tm||''):'';}
+function teamOf(name){const s=STATS[norm(name)];if(s&&s.tm)return s.tm;const p=pByKey[norm(name)];if(p)return p.tmLive||p.tm||'';const q=pitByKey[norm(name)];return q?(q.tmLive||q.tm||''):'';}
 function legGame(l){if(l.g)return l.g;const p=pByKey[norm(l.p)];if(p)return p.g;const q=pitByKey[norm(l.p)];if(q)return q.g;return '?';}
 async function refresh(){
  $('updated').textContent='Updating...';
@@ -342,13 +342,13 @@ function legMet(leg){const pr=leg.prop;
  if(pr==='ALTK'){if(p.kTot>=(leg.k||0))return 'hit';if(gs.state==='Final')return 'miss';return 'pending';}
  if(pr==='UP9'||pr==='UP6'){const N=pr==='UP9'?9:6;let reached=false;const m=Math.min(N,p.seq.length);for(let i=0;i<m;i++){if(p.seq[i]===0){reached=true;break;}}if(reached)return 'miss';if(p.seq.length>=N)return 'hit';if(gs.state==='Final')return 'miss';return 'pending';}
  return 'pending';}
-function betCat(b){const props=Array.from(new Set(b.legs.map(function(l){return l.prop;})));
+function betCat(b){if(b.legs.length>1)return 'PARLAY';const props=Array.from(new Set(b.legs.map(function(l){return l.prop;})));
  if(props.every(function(p){return PITCHSET[p];}))return 'PITCH';
  if(props.length===1&&CATMAP[props[0]])return props[0];
  return 'MIX';}
 function betStatus(b){let hit=0,miss=0;for(const lg of b.legs){const s=legMet(lg);if(s==='hit')hit++;else if(s==='miss')miss++;}const st=miss>0?'dead':(hit===b.legs.length?'won':'alive');return {st:st,hit:hit,total:b.legs.length};}
 function pitchDetail(leg){const pr=leg.prop;const p=pitByKey[norm(leg.p)];if(!p)return '';
- if(pr==='NH5')return p.h5+' H';if(pr==='NH7')return p.h7+' H';if(pr==='K1')return 'K: '+p.k1;if(pr==='ALTK')return 'K: '+p.kTot;
+ if(pr==='NH3')return p.h3+' hits';if(pr==='NH5')return p.h5+' hits';if(pr==='NH7')return p.h7+' hits';if(pr==='K1')return 'now '+p.k1;if(pr==='ALTK')return 'now '+p.kTot;
  if(pr==='UP9'||pr==='UP6'){let r=0;for(const x of p.seq){if(x===1)r++;else break;}return r+' retired';}return '';}
 function legNameHTML(leg){if(leg.prop==='TR'||leg.prop==='CTB')return leg.p;const t=teamOf(leg.p);return leg.p+(t?' <span class="tmtag">('+t+')</span>':'');}
 function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs';if(leg.prop==='CTB')return (leg.line||6)+'+ Combined TB';if(leg.prop==='ALTK')return (leg.k||0)+'+ K';let t=PLAB[leg.prop]||leg.prop;const pp=leg.prop;if(pp==='NA')return leg.lbl||'Manual (track on FD)';if(pp==='TB'||pp==='TB2'||pp==='TB3'||pp==='TB5'){t+=' &middot; now '+statOf(leg.p).tb;}else if(pp==='HIT2'||pp==='HIT3'||pp==='HIT4'){t+=' &middot; now '+statOf(leg.p).hits;}else if(pp==='RBI'||pp==='RBI2'||pp==='RBI3'||pp==='RBI4'){t+=' &middot; now '+statOf(leg.p).rbi;}else if(pp==='RUN'||pp==='RUN2'){t+=' &middot; now '+statOf(leg.p).runs;}else if(pp==='SB2'){t+=' &middot; now '+statOf(leg.p).sb;}else if(pp==='HRR2'){const ss=statOf(leg.p);t+=' &middot; now '+(ss.hits+ss.runs+ss.rbi);}return t;}
@@ -356,15 +356,14 @@ function betCardHTML(b){
  const cat=CATMAP[b._cat];const cvar='var('+cat.v+')';
  const cl=b._st==='dead'?'b-dead':(b._st==='won'?'b-won':'b-alive');
  const lbl=b._st==='dead'?'DEAD':(b._st==='won'?'CASHED':'ALIVE');
- let body='';
- if(b._cat==='PITCH'){const lg=b.legs[0];const st=legMet(lg);const d=pitchDetail(lg);const lc=st==='hit'?'l-hit':(st==='miss'?'l-miss':'');
-  body='<div class="pspec '+lc+'"><span class="psp"><span class="lmk '+(st==='hit'?'hit':'')+'">'+(st==='hit'?'&#10003;':(st==='miss'?'&#10007;':'&middot;'))+'</span><span class="pst">'+lpropText(lg)+'</span></span><span class="psd">'+d+'</span></div>';
- }else{for(const lg of b.legs){const st=legMet(lg);const p=pByKey[norm(lg.p)];
-   const inn=(st==='hit'&&(lg.prop==='HR'||lg.prop==='FPA')&&p&&p.hr.length)?(' '+ordSuffix(p.hr[0])):'';
+  let body='';
+ for(const lg of b.legs){const st=legMet(lg);const isP=PITCHSET[lg.prop];const p=isP?null:pByKey[norm(lg.p)];
    const mk=st==='hit'?'&#10003;':(st==='miss'?'&#10007;':'&middot;');const lc=st==='hit'?'l-hit':(st==='miss'?'l-miss':'l-pend');
-   let lab='';if(st==='pending'&&p){if(p.atbat)lab='<span class="labtag ab">AB</span>';else if(p.ondeck)lab='<span class="labtag od">OD</span>';}
-   body+='<div class="leg '+lc+'"><span class="lmk">'+mk+'</span><span class="lname">'+legNameHTML(lg)+'</span>'+lab+'<span class="lprop">'+lpropText(lg)+inn+'</span></div>';}}
- return '<div class="bet '+cl+(collapsedBets[b.id]?' collapsed':'')+'" data-bid="'+b.id+'" style="border-left-color:'+cvar+'"><div class="b-head" onclick="toggleBet(this)"><div class="b-left"><span class="b-kind">'+b.kind+'</span> <span class="b-id">'+b.id+'</span><span class="b-stat '+cl+'">'+lbl+' '+b._hit+'/'+b.legs.length+'</span><div class="b-meta">'+amStr(b.odds)+' &middot; '+money(b.wager)+' wager</div></div><div class="b-right"><span class="b-pay">'+money(b.payout)+'</span><span class="b-chev">&#9660;</span></div></div><div class="b-legs">'+body+'</div></div>';
+   const inn=(st==='hit'&&(lg.prop==='HR'||lg.prop==='FPA')&&p&&p.hr.length)?(' '+ordSuffix(p.hr[0])):'';
+   let lab='';if(!isP&&st==='pending'&&p){if(p.atbat)lab='<span class="labtag ab">AB</span>';else if(p.ondeck)lab='<span class="labtag od">OD</span>';}
+   let propTxt=lpropText(lg);if(isP){const d=pitchDetail(lg);if(d)propTxt+=' &middot; '+d;}
+   body+='<div class="leg '+lc+'"><span class="lmk">'+mk+'</span><span class="lname">'+legNameHTML(lg)+'</span>'+lab+'<span class="lprop">'+propTxt+inn+'</span></div>';}
+ return '<div class="bet '+cl+(collapsedBets[b.id]?' collapsed':'')+'" data-bid="'+b.id+'" style="border-left-color:'+cvar+'"><div class="b-head" onclick="toggleBet(this)"><div class="b-left"><span class="b-kind">'+b.kind+'</span> <span class="b-id">'+b.id+'</span><span class="b-stat '+cl+'">'+lbl+(b.legs.length>1?(' '+b._hit+'/'+b.legs.length):'')+'</span><div class="b-meta">'+amStr(b.odds)+' &middot; '+money(b.wager)+' wager</div></div><div class="b-right"><span class="b-pay">'+money(b.payout)+'</span><span class="b-chev">&#9660;</span></div></div><div class="b-legs">'+body+'</div></div>';
 }
 function renderSummary(live){
  let alive=0,dead=0,won=0,wonPay=0,totW=0,totP=0;const byCat={};CATS.forEach(function(c){byCat[c.k]={n:0,w:0,p:0};});
