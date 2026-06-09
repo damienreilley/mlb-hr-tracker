@@ -26,3 +26,9 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
 - Goal: a search / filter box on the Bets tab - type a player or pitcher name and show only the bets containing that person.
 - Gets more useful as the bet list grows; quickly pull up every bet riding on a given guy.
 - Priority: nice-to-have, not urgent.
+
+## 6. Revise Hitters-tab result badge (the field to the right of each player's name)
+- Now: one badge per player by priority HR > 4+ TB > (has-hit-prop AND >=1 hit) > muted hit count > odds/hyphen.
+- PROBLEM (surfaced by the 6/8 settled-bet review): the green check badges fire on RAW live stats, not on the player's actual bet line. A player who needed 2+/3+/4+ hits but has 1 still shows a positive "check 1 H" even though that bet LOST - e.g. Alec Bohm went 1-of-4 hits on 6/8 and the SGP settled $0.00, but the Hitters row reads like a win. It conflates "got a hit" with "bet won."
+- Also: TB badge is hardcoded at >=4 regardless of the real line (2+/3+/5+); SB / RBI / runs / doubles / triples props are not surfaced at all; only one prop is shown even when a player rides several different bets.
+- GOAL: tie the badge to actual leg/bet status (hit/miss/pending) and/or show the player's real threshold, so the Hitters tab reflects true outcomes instead of a raw-stat heuristic. Needs a rethink of what this tab is for.
