@@ -454,7 +454,7 @@ document.querySelectorAll('.filterbtn[data-s]').forEach(function(b){b.addEventLi
 document.querySelectorAll('.filterbtn[data-pf]').forEach(function(b){b.addEventListener('click',function(){pitchFilter=b.dataset.pf;document.querySelectorAll('.filterbtn[data-pf]').forEach(function(x){x.classList.toggle('active',x.dataset.pf===pitchFilter);});renderPitchers();});});
 updateSortBtns();
 $('refresh').addEventListener('click',refresh);
-refresh();setInterval(refresh,60000);
+bets.forEach(function(b){b._cat=betCat(b);var s=betStatus(b);b._st=s.st;b._hit=s.hit;});renderSummary(0);renderHitters(0);renderPitchers();renderBets();refresh();setInterval(refresh,60000);
 </script></body></html>"""
 out = TPL.replace("__GAMES__", json.dumps(GAMES)).replace("__PLAYERS__", json.dumps(players)).replace("__PITCHERS__", json.dumps(pitchers)).replace("__BETS__", json.dumps(bets))
 open(r"C:\Users\damie\OneDrive\1-Sports-Fantasy-Betting\betting\Claude\mlb-hr-tracker\index.html","w",encoding="utf-8").write(out.replace("__BUILD__", BUILD))

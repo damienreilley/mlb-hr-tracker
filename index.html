@@ -117,7 +117,7 @@ footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:v
 .build{color:var(--faint);font-size:10px;font-family:'Spline Sans Mono';margin-left:10px;white-space:nowrap}</style></head><body><div class="wrap">
 <div class="kicker">Live Bet Tracker</div>
 <h1>Monday, June 8 &mdash; MLB Bets</h1>
-<div class="updbar"><span class="upd" id="updated">Loading...</span><span class="build">build 06/08 22:39</span><button class="btn" id="refresh">Refresh</button></div>
+<div class="updbar"><span class="upd" id="updated">Loading...</span><span class="build">build 06/08 22:56</span><button class="btn" id="refresh">Refresh</button></div>
 <nav class="tabs">
  <button data-tab="summary" class="active">Summary</button>
  <button data-tab="hitters">Hitters</button>
@@ -348,5 +348,5 @@ document.querySelectorAll('.filterbtn[data-s]').forEach(function(b){b.addEventLi
 document.querySelectorAll('.filterbtn[data-pf]').forEach(function(b){b.addEventListener('click',function(){pitchFilter=b.dataset.pf;document.querySelectorAll('.filterbtn[data-pf]').forEach(function(x){x.classList.toggle('active',x.dataset.pf===pitchFilter);});renderPitchers();});});
 updateSortBtns();
 $('refresh').addEventListener('click',refresh);
-refresh();setInterval(refresh,60000);
+bets.forEach(function(b){b._cat=betCat(b);var s=betStatus(b);b._st=s.st;b._hit=s.hit;});renderSummary(0);renderHitters(0);renderPitchers();renderBets();refresh();setInterval(refresh,60000);
 </script></body></html>
