@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 import json
+import datetime
+BUILD=datetime.datetime.now().strftime("%m/%d %H:%M")
 GAMES = {
  "NYY@CLE":["Yankees","Guardians"],"BOS@TB":["Red Sox","Rays"],"SEA@BAL":["Mariners","Orioles"],
  "PHI@TOR":["Phillies","Blue Jays"],"HOU@LAA":["Astros","Angels"],"MIL@ATH":["Brewers","Athletics"],
@@ -218,10 +220,10 @@ h2{font-family:'Archivo';font-weight:900;font-size:16px;margin:22px 0 9px}h2:fir
 .pspec.l-hit{color:var(--won)}.pspec.l-hit .psd{color:var(--won)}
 .pspec.l-miss{color:var(--dead)}.pspec.l-miss .psp .pst{text-decoration:line-through}
 footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:var(--dim);font-size:10.5px;line-height:1.6;font-family:'Spline Sans Mono'}
-</style></head><body><div class="wrap">
+.build{color:var(--faint);font-size:10px;font-family:'Spline Sans Mono';margin-left:10px;white-space:nowrap}</style></head><body><div class="wrap">
 <div class="kicker">Live Bet Tracker</div>
 <h1>Monday, June 8 &mdash; MLB Bets</h1>
-<div class="updbar"><span class="upd" id="updated">Loading...</span><button class="btn" id="refresh">Refresh</button></div>
+<div class="updbar"><span class="upd" id="updated">Loading...</span><span class="build">build __BUILD__</span><button class="btn" id="refresh">Refresh</button></div>
 <nav class="tabs">
  <button data-tab="summary" class="active">Summary</button>
  <button data-tab="hitters">Hitters</button>
@@ -455,5 +457,5 @@ $('refresh').addEventListener('click',refresh);
 refresh();setInterval(refresh,60000);
 </script></body></html>"""
 out = TPL.replace("__GAMES__", json.dumps(GAMES)).replace("__PLAYERS__", json.dumps(players)).replace("__PITCHERS__", json.dumps(pitchers)).replace("__BETS__", json.dumps(bets))
-open(r"C:\Users\damie\OneDrive\1-Sports-Fantasy-Betting\betting\Claude\mlb-hr-tracker\index.html","w",encoding="utf-8").write(out)
+open(r"C:\Users\damie\OneDrive\1-Sports-Fantasy-Betting\betting\Claude\mlb-hr-tracker\index.html","w",encoding="utf-8").write(out.replace("__BUILD__", BUILD))
 print("wrote index.html bytes:", len(out), "| bets:", len(bets), "| players:", len(players), "| pitchers:", len(pitchers))
