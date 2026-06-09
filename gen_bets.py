@@ -2,12 +2,18 @@
 import json
 import datetime
 BUILD=datetime.datetime.now().strftime("%m/%d %H:%M")
-GAMES = {
+GAMES = {"CIN@SD":["Reds","Padres"],
  "NYY@CLE":["Yankees","Guardians"],"BOS@TB":["Red Sox","Rays"],"SEA@BAL":["Mariners","Orioles"],
  "PHI@TOR":["Phillies","Blue Jays"],"HOU@LAA":["Astros","Angels"],"MIL@ATH":["Brewers","Athletics"],
  "WSH@SF":["Nationals","Giants"],
 }
 players=[
+ {"n":"Zach Neto","tm":"LAA","g":"HOU@LAA","pr":["SB","HIT","TB"],"od":""},
+ {"n":"Jeremy Pena","tm":"HOU","g":"HOU@LAA","pr":["SB","HIT"],"od":""},
+ {"n":"Fernando Tatis Jr.","tm":"SD","g":"CIN@SD","pr":["SB","HIT"],"od":""},
+ {"n":"Wade Meckler","tm":"","g":"HOU@LAA","pr":["HIT"],"od":""},
+ {"n":"Nasim Nunez","tm":"","g":"WSH@SF","pr":["SB"],"od":""},
+ {"n":"Luis Rengifo","tm":"","g":"MIL@ATH","pr":["HIT"],"od":""},
  {"n":"Alec Bohm","tm":"PHI","g":"PHI@TOR","pr":["HIT","TB"],"od":""},
  {"n":"Trea Turner","tm":"PHI","g":"PHI@TOR","pr":["HIT"],"od":""},
  {"n":"J.T. Realmuto","tm":"PHI","g":"PHI@TOR","pr":["HR","HIT","TB"],"od":""},
@@ -36,6 +42,7 @@ players=[
   {"n": "Brice Turang", "tm": "", "g": "MIL@ATH", "pr": ["SB"], "od": ""},
 ]
 pitchers=[
+ {"n":"Logan Webb","tm":"SF","g":"WSH@SF"},
  {"n":"Gavin Williams","tm":"CLE","g":"NYY@CLE"},
  {"n":"Will Warren","tm":"NYY","g":"NYY@CLE"},
  {"n":"Connelly Early","tm":"BOS","g":"BOS@TB"},
@@ -58,6 +65,21 @@ def HRX(p): return {"p":p,"prop":"HR2"}
 def TRn(g,line): return {"p":g+" Total","prop":"TR","g":g,"line":line}
 def CTB(lbl,ps,line,g): return {"p":lbl,"prop":"CTB","ps":ps,"line":line,"g":g}
 bets=[
+ {"id":"#hk0dz","kind":"3-leg parlay","odds":33360,"wager":0.09,"payout":30.11,"placed":"9:25 PM","ts":2125,"legs":[{"p":"Zach Neto","prop":"SB2"},{"p":"Jeremy Pena","prop":"SB"},{"p":"Yordan Alvarez","prop":"HR"}]},
+ {"id":"#xat94","kind":"2-leg parlay","odds":16696,"wager":0.10,"payout":16.80,"placed":"9:25 PM","ts":2125,"legs":[{"p":"Zach Neto","prop":"SB2"},{"p":"Jeremy Pena","prop":"SB"}]},
+ {"id":"#dpxvq","kind":"7-leg parlay","odds":209111,"wager":0.20,"payout":418.42,"placed":"9:18 PM","ts":2118,"legs":[{"p":"Fernando Tatis Jr.","prop":"SB"},{"p":"Fernando Tatis Jr.","prop":"HIT2"},{"p":"Zach Neto","prop":"SB"},{"p":"Jeremy Pena","prop":"HIT2"},{"p":"Jackson Chourio","prop":"HIT2"},{"p":"Christian Yelich","prop":"HR"},{"p":"Jackson Chourio","prop":"HR"}]},
+ {"id":"#yqpdq","kind":"6-leg parlay","odds":106672,"wager":0.10,"payout":106.77,"placed":"9:15 PM","ts":2115,"legs":[{"p":"Fernando Tatis Jr.","prop":"SB"},{"p":"Fernando Tatis Jr.","prop":"HIT2"},{"p":"Zach Neto","prop":"SB"},{"p":"Jeremy Pena","prop":"HIT2"},{"p":"Jackson Chourio","prop":"2B"},{"p":"Jackson Chourio","prop":"HR"}]},
+ {"id":"#4heaq","kind":"5-leg parlay","odds":137136,"wager":0.20,"payout":274.47,"placed":"8:57 PM","ts":2057,"legs":[{"p":"Jackson Chourio","prop":"HIT3"},{"p":"Christian Yelich","prop":"HIT2"},{"p":"Zach Neto","prop":"HIT2"},{"p":"Yordan Alvarez","prop":"HIT3"},{"p":"Nasim Nunez","prop":"SB"}]},
+ {"id":"#r3cdj","kind":"4-leg parlay","odds":8237,"wager":0.10,"payout":8.34,"placed":"8:37 PM","ts":2037,"legs":[{"p":"Yordan Alvarez","prop":"TB"},{"p":"Zach Neto","prop":"TB3"},{"p":"Christian Yelich","prop":"TB"},{"p":"Jackson Chourio","prop":"TB"}]},
+ {"id":"#bdh2k","kind":"5-leg parlay","odds":991,"wager":0.10,"payout":1.09,"placed":"8:04 PM","ts":2004,"legs":[{"p":"Jeremy Pena","prop":"HIT"},{"p":"Yordan Alvarez","prop":"HIT"},{"p":"Christian Walker","prop":"HIT"},{"p":"Wade Meckler","prop":"HIT"},{"p":"Zach Neto","prop":"HIT2"}]},
+ {"id":"#rhar0","kind":"2-leg parlay","odds":345,"wager":0.10,"payout":0.45,"placed":"7:47 PM","ts":1947,"legs":[{"p":"Spencer Arrighetti","prop":"ALTK","k":7},{"p":"Kyle Harrison","prop":"ALTK","k":7}]},
+ {"id":"#9b1y7","kind":"Pitcher Special","odds":950,"wager":0.20,"payout":2.10,"placed":"9:25 PM","ts":2125,"legs":[{"p":"Logan Webb","prop":"UP9"}]},
+ {"id":"#dp4vh","kind":"Pitcher Special","odds":3300,"wager":0.10,"payout":3.40,"placed":"9:25 PM","ts":2125,"legs":[{"p":"Logan Webb","prop":"NH5"}]},
+ {"id":"#f963e","kind":"Pitcher Special","odds":12500,"wager":0.10,"payout":12.60,"placed":"9:25 PM","ts":2125,"legs":[{"p":"Logan Webb","prop":"NH7"}]},
+ {"id":"#0bkc0","kind":"4-leg parlay","odds":17172,"wager":0.09,"payout":15.54,"placed":"8:48 PM","ts":2048,"legs":[{"p":"Christian Yelich","prop":"TB"},{"p":"Luis Rengifo","prop":"HIT2"},{"p":"Jackson Chourio","prop":"HIT3"},{"p":"Brice Turang","prop":"SB"}]},
+ {"id":"#hyzwh","kind":"4-leg parlay","odds":40025,"wager":0.09,"payout":36.11,"placed":"8:10 PM","ts":2010,"legs":[{"p":"Jackson Chourio","prop":"HIT4"},{"p":"Christian Yelich","prop":"HIT3"},{"p":"Andrew Vaughn","prop":"HIT2"},{"p":"Shea Langeliers","prop":"HR"}]},
+ {"id":"#wb3hm","kind":"4-leg parlay","odds":50014,"wager":0.09,"payout":45.10,"placed":"8:10 PM","ts":2010,"legs":[{"p":"Jackson Chourio","prop":"HIT4"},{"p":"Christian Yelich","prop":"HIT3"},{"p":"Andrew Vaughn","prop":"HIT2"},{"p":"Christian Yelich","prop":"HR"}]},
+ {"id":"#tn7nb","kind":"3-leg parlay","odds":1474,"wager":0.09,"payout":1.42,"placed":"8:08 PM","ts":2008,"legs":[{"p":"Jackson Chourio","prop":"HIT3"},{"p":"Christian Yelich","prop":"HIT2"},{"p":"Andrew Vaughn","prop":"HIT"}]},
  {"id":"#pynjyg","kind":"3-leg parlay","odds":9726,"wager":1.00,"payout":98.26,"placed":"5:24 PM","ts":1724,"legs":[PK("Gavin Williams",9),PK("Spencer Arrighetti",9),PK("Kyle Harrison",9)]},
  {"id":"#6q7q9","kind":"4-leg parlay","odds":43936,"wager":0.23,"payout":101.29,"placed":"5:22 PM","ts":1722,"legs":[PK("Gavin Williams",10),PK("Will Warren",5),PK("Spencer Arrighetti",9),PK("Kyle Harrison",10)]},
  {"id":"#7t9bg","kind":"5-leg parlay","odds":40584,"wager":0.25,"payout":101.71,"placed":"5:20 PM","ts":1720,"legs":[PK("Gavin Williams",9),PK("Will Warren",5),PK("Connelly Early",6),PK("Spencer Arrighetti",9),PK("Kyle Harrison",9)]},
