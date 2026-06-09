@@ -26,6 +26,12 @@ players=[
  {"n":"Christian Walker","tm":"HOU","g":"HOU@LAA","pr":["HR"],"od":""},
  {"n":"Willy Adames","tm":"SF","g":"WSH@SF","pr":["HR"],"od":""},
  {"n":"Casey Schmitt","tm":"SF","g":"WSH@SF","pr":["HR"],"od":""},
+
+  {"n": "Henry Bolte", "tm": "", "g": "MIL@ATH", "pr": ["3B"], "od": ""},
+  {"n": "Brent Rooker", "tm": "", "g": "MIL@ATH", "pr": ["TB", "HR"], "od": ""},
+  {"n": "Andrew Vaughn", "tm": "", "g": "MIL@ATH", "pr": ["HR"], "od": ""},
+  {"n": "Christian Yelich", "tm": "", "g": "MIL@ATH", "pr": ["TB", "HR"], "od": ""},
+  {"n": "Brice Turang", "tm": "", "g": "MIL@ATH", "pr": ["SB"], "od": ""},
 ]
 pitchers=[
  {"n":"Gavin Williams","tm":"CLE","g":"NYY@CLE"},
@@ -90,6 +96,10 @@ bets=[
  {"id":"#avfc1","kind":"3-leg parlay","odds":10333,"wager":0.10,"payout":10.43,"placed":"5:28 PM","ts":1728,"legs":[{"p":"Gavin Williams","prop":"NA","lbl":"AL Cy Young 2026 (futures)"},{"p":"Shohei Ohtani","prop":"NA","lbl":"NL Cy Young 2026 (futures)"},{"p":"Kevin McGonigle","prop":"NA","lbl":"AL ROY 2026 (futures)"}]},
  {"id":"#q11x4","kind":"3-leg parlay","odds":253075,"wager":0.10,"payout":253.18,"placed":"5:27 PM","ts":1727,"legs":[{"p":"Gavin Williams","prop":"NA","lbl":"AL Cy Young 2026 (futures)"},{"p":"Shohei Ohtani","prop":"NA","lbl":"NL Cy Young 2026 (futures)"},{"p":"TJ Rumfield","prop":"NA","lbl":"NL ROY 2026 (futures)"}]},
  {"id":"#az4k0","kind":"Futures","odds":10000,"wager":0.10,"payout":10.10,"placed":"5:26 PM","ts":1726,"legs":[{"p":"Kevin McGonigle","prop":"NA","lbl":"AL MVP 2026 (futures)"}]},
+
+  {"id": "#3ceee", "kind": "4-leg parlay", "odds": 54164, "wager": 0.09, "payout": 48.84, "placed": "9:42 PM", "ts": 2142, "legs": [{"p": "Henry Bolte", "prop": "3B"}, {"p": "Jackson Chourio", "prop": "TB5"}, {"p": "Brent Rooker", "prop": "TB"}, {"p": "Christian Yelich", "prop": "TB"}]},
+  {"id": "#79ppt", "kind": "4-leg parlay", "odds": 37160, "wager": 0.09, "payout": 33.53, "placed": "9:38 PM", "ts": 2138, "legs": [{"p": "Henry Bolte", "prop": "3B"}, {"p": "Jackson Chourio", "prop": "HIT2"}, {"p": "Brice Turang", "prop": "SB"}, {"p": "Shea Langeliers", "prop": "TB"}]},
+  {"id": "#sdgw1", "kind": "5-leg parlay", "odds": 66650, "wager": 0.1, "payout": 66.75, "placed": "9:33 PM", "ts": 2133, "legs": [{"p": "Shea Langeliers", "prop": "HR"}, {"p": "Brent Rooker", "prop": "HR"}, {"p": "Jackson Chourio", "prop": "HR"}, {"p": "Andrew Vaughn", "prop": "HR"}, {"p": "Christian Yelich", "prop": "HR"}]},
 ]
 
 TPL = r"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
