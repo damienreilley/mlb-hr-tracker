@@ -20,6 +20,7 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
 - Now: futures legs (Cy Young / ROY / MVP - e.g. bets #trfbj #avfc1 #q11x4 #az4k0) are flagged NA/manual; they show but never auto-settle.
 - They can't be graded by the live game engine - no per-game stat decides a season award, and they settle at season end (~late Sept).
 - Goal: design a sensible way to handle/display futures distinctly from live game bets. Options to explore: a separate Futures section/tab, no live grading, a manual settle toggle, or just a clear season-end note. Don't track them like live bets.
+- 2026-06-08: futures are now HIDDEN from the live display (filtered out at render; all 4 bets retained in the data file). Re-enable / build proper treatment when this item is picked up.
 
 ## 5. Search by player name (nice-to-have)
 - Goal: a search / filter box on the Bets tab - type a player or pitcher name and show only the bets containing that person.

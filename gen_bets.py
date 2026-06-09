@@ -257,7 +257,7 @@ footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:v
 const DATE="2026-06-08";
 const SCHED="https://statsapi.mlb.com/api/v1/schedule?sportId=1&date="+DATE+"&hydrate=linescore,team";
 const FEED=function(pk){return "https://statsapi.mlb.com/api/v1.1/game/"+pk+"/feed/live";};
-const GAMES=__GAMES__;const players=__PLAYERS__;const pitchers=__PITCHERS__;const bets=__BETS__;
+const GAMES=__GAMES__;const players=__PLAYERS__;const pitchers=__PITCHERS__;const allBets=__BETS__;const bets=allBets.filter(function(b){return !(b.legs&&b.legs.length&&b.legs.every(function(l){return l.prop==='NA';}));});
 const norm=function(s){return (s||"").normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z ]/g,'').replace(/\s+/g,' ').trim();};
 players.forEach(function(p){p.k=norm(p.n);});pitchers.forEach(function(p){p.k=norm(p.n);});
 const pByKey={};players.forEach(function(p){pByKey[p.k]=p;});
