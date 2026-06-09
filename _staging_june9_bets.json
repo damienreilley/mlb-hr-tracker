@@ -1,0 +1,1581 @@
+[
+ {
+  "full_id": "O/1924696/0004088",
+  "id": "#4088",
+  "kind": "4-leg SGP+",
+  "odds": 28799,
+  "wager": 0.1,
+  "payout": 28.9,
+  "placed": "6/9 7:00PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Yordan Alvarez",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   },
+   {
+    "p": "Christian Walker",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   },
+   {
+    "p": "Randy Arozarena",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Shea Langeliers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   }
+  ]
+ },
+ {
+  "full_id": "O/1924696/0004087",
+  "id": "#4087",
+  "kind": "3-leg parlay",
+  "odds": 39940,
+  "wager": 0.1,
+  "payout": 40.04,
+  "placed": "6/9 6:59PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Randy Arozarena",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Otto Lopez",
+    "prop": "HR",
+    "g": "ARI@MIA"
+   },
+   {
+    "p": "Christian Walker",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   }
+  ]
+ },
+ {
+  "full_id": "O/1924696/0004086",
+  "id": "#4086",
+  "kind": "3-leg SGP+",
+  "odds": 68256,
+  "wager": 0.09,
+  "payout": 61.52,
+  "placed": "6/9 6:59PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Otto Lopez",
+    "prop": "HR",
+    "g": "ARI@MIA"
+   },
+   {
+    "p": "Liam Hicks",
+    "prop": "HR",
+    "g": "ARI@MIA"
+   },
+   {
+    "p": "Randy Arozarena",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   }
+  ]
+ },
+ {
+  "full_id": "O/1924696/0004085",
+  "id": "#4085",
+  "kind": "6-leg SGP+",
+  "odds": 332933,
+  "wager": 0.09,
+  "payout": 299.73,
+  "placed": "6/9 6:52PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Christian Yelich",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Brent Rooker",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Randy Arozarena",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Coby Mayo",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Ian Happ",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Yordan Alvarez",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8znfcfm5sehrrv35edz09",
+  "id": "#edz09",
+  "kind": "Pitcher Special",
+  "odds": 1000,
+  "wager": 0.2,
+  "payout": 2.2,
+  "placed": "6/9 6:45PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Zack Wheeler",
+    "prop": "UP9",
+    "g": "PHI@TOR"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8znfcfkp9r7cqbjk9c50x",
+  "id": "#9c50x",
+  "kind": "Pitcher Special",
+  "odds": 8000,
+  "wager": 0.2,
+  "payout": 16.2,
+  "placed": "6/9 6:45PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Zack Wheeler",
+    "prop": "NH7",
+    "g": "PHI@TOR"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8znfcfdxbywn22csd0scz",
+  "id": "#d0scz",
+  "kind": "Pitcher Special",
+  "odds": 2000,
+  "wager": 0.15,
+  "payout": 3.15,
+  "placed": "6/9 6:45PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Dylan Cease",
+    "prop": "NH5",
+    "g": "PHI@TOR"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8znfcfcdspcpkb5gym4d9",
+  "id": "#ym4d9",
+  "kind": "Pitcher Special",
+  "odds": 650,
+  "wager": 0.15,
+  "payout": 1.13,
+  "placed": "6/9 6:45PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Dylan Cease",
+    "prop": "K1",
+    "g": "PHI@TOR"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8znfcfc2t37mcvjb5h8te",
+  "id": "#5h8te",
+  "kind": "Pitcher Special",
+  "odds": 2200,
+  "wager": 0.35,
+  "payout": 8.05,
+  "placed": "6/9 6:45PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Zack Wheeler",
+    "prop": "NH5",
+    "g": "PHI@TOR"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8znfcf52seq004tnk02ra",
+  "id": "#k02ra",
+  "kind": "Pitcher Special",
+  "odds": 550,
+  "wager": 0.25,
+  "payout": 1.63,
+  "placed": "6/9 6:45PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Zack Wheeler",
+    "prop": "NH3",
+    "g": "PHI@TOR"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8znfcedgbcaa9ck9stz7k",
+  "id": "#stz7k",
+  "kind": "Pitcher Special",
+  "odds": 1200,
+  "wager": 0.2,
+  "payout": 2.6,
+  "placed": "6/9 6:45PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Dylan Cease",
+    "prop": "UP9",
+    "g": "PHI@TOR"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8znfce2kr1xawp3yqvmk1",
+  "id": "#qvmk1",
+  "kind": "Pitcher Special",
+  "odds": 3500,
+  "wager": 0.2,
+  "payout": 7.2,
+  "placed": "6/9 6:45PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Zack Wheeler",
+    "prop": "K1",
+    "g": "PHI@TOR"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktqa5nrbf1v98m90a6805nd9",
+  "id": "#05nd9",
+  "kind": "6-leg SGP+",
+  "odds": 657984,
+  "wager": 0.09,
+  "payout": 592.29,
+  "placed": "6/9 7:06PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Mike Trout",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   },
+   {
+    "p": "Christian Walker",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   },
+   {
+    "p": "Matt Olson",
+    "prop": "HR",
+    "g": "ATL@CWS"
+   },
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "James Wood",
+    "prop": "HR",
+    "g": "WSH@SF"
+   },
+   {
+    "p": "Christian Yelich",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq9z83eeecteqg2gxntgcfs",
+  "id": "#tgcfs",
+  "kind": "SGP",
+  "odds": 74958,
+  "wager": 0.09,
+  "payout": 67.55,
+  "placed": "6/9 7:02PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Shea Langeliers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Brent Rooker",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Nick Kurtz",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jackson Chourio",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Zack Gelof",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Max Muncy",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Colby Thomas",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Christian Yelich",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq9ybmxea58ekbdx6mbnqyj",
+  "id": "#bnqyj",
+  "kind": "SGP",
+  "odds": 16244,
+  "wager": 0.09,
+  "payout": 14.71,
+  "placed": "6/9 7:02PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Brent Rooker",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Shea Langeliers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Nick Kurtz",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jake Bauers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Christian Yelich",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8x5p8fvyvymj8aqgkb3na",
+  "id": "#kb3na",
+  "kind": "Pitcher Special",
+  "odds": 2500,
+  "wager": 0.1,
+  "payout": 2.6,
+  "placed": "6/9 6:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Freddy Peralta",
+    "prop": "NH5",
+    "g": "STL@NYM"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8x5p8fth9qp8s125z5qhp",
+  "id": "#z5qhp",
+  "kind": "Pitcher Special",
+  "odds": 1700,
+  "wager": 0.15,
+  "payout": 2.7,
+  "placed": "6/9 6:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Walbert Urena",
+    "prop": "UP9",
+    "g": "HOU@LAA"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8x5p8ftdbhtaq33d80794",
+  "id": "#80794",
+  "kind": "Pitcher Special",
+  "odds": 2500,
+  "wager": 0.1,
+  "payout": 2.6,
+  "placed": "6/9 6:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Kai-Wei Teng",
+    "prop": "NH5",
+    "g": "HOU@LAA"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8x5p8fnjtmcthsvjhfw4q",
+  "id": "#hfw4q",
+  "kind": "Pitcher Special",
+  "odds": 1000,
+  "wager": 0.1,
+  "payout": 1.1,
+  "placed": "6/9 6:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Chase Burns",
+    "prop": "UP9",
+    "g": "CIN@SD"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8x5p8fn4t573ng39d0598",
+  "id": "#d0598",
+  "kind": "Pitcher Special",
+  "odds": 1700,
+  "wager": 0.15,
+  "payout": 2.7,
+  "placed": "6/9 6:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Chase Burns",
+    "prop": "NH5",
+    "g": "CIN@SD"
+   }
+  ]
+ },
+ {
+  "full_id": "O/1924696/0004084",
+  "id": "#4084",
+  "kind": "5-leg parlay",
+  "odds": 115788,
+  "wager": 0.09,
+  "payout": 104.3,
+  "placed": "6/9 6:36PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Pete Alonso",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Jose Ramirez",
+    "prop": "HR",
+    "g": "NYY@CLE"
+   },
+   {
+    "p": "Ian Happ",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Christian Walker",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   },
+   {
+    "p": "Brent Rooker",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8e1rhfjt8cc3ej18ah1hx",
+  "id": "#ah1hx",
+  "kind": "5-leg SGP+",
+  "odds": 162718,
+  "wager": 0.09,
+  "payout": 146.54,
+  "placed": "6/9 6:35PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Jake Bauers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Christian Yelich",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Julio Rodriguez",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Bryan Reynolds",
+    "prop": "HR",
+    "g": "LAD@PIT"
+   },
+   {
+    "p": "Hunter Goodman",
+    "prop": "HR",
+    "g": "CHC@COL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8b6s7fwhv46rjtm24ysj6",
+  "id": "#4ysj6",
+  "kind": "5-leg parlay",
+  "odds": 53087,
+  "wager": 0.2,
+  "payout": 106.38,
+  "placed": "6/9 6:34PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Patrick Wisdom",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Ben Rice",
+    "prop": "HR",
+    "g": "NYY@CLE"
+   },
+   {
+    "p": "Kyle Schwarber",
+    "prop": "HR",
+    "g": "PHI@TOR"
+   },
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Shea Langeliers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq83mkfe1r9nhgps6c7hb37",
+  "id": "#7hb37",
+  "kind": "8-leg SGP+",
+  "odds": 2015202,
+  "wager": 0.09,
+  "payout": 1813.77,
+  "placed": "6/9 6:30PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Brice Turang",
+    "prop": "SB",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Shea Langeliers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Pete Alonso",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Julio Rodriguez",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Christian Walker",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   },
+   {
+    "p": "Yordan Alvarez",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   },
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "SB",
+    "g": "CHC@COL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq7c6jnfbbb9vwgrjbp6svn",
+  "id": "#p6svn",
+  "kind": "6-leg SGP+",
+  "odds": 108064,
+  "wager": 0.09,
+  "payout": 97.35,
+  "placed": "6/9 6:17PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Hunter Goodman",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Patrick Wisdom",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Pete Alonso",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Shea Langeliers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jake Bauers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq788pvfbqsfwrmkthrw7kw",
+  "id": "#rw7kw",
+  "kind": "4-leg parlay",
+  "odds": 36983,
+  "wager": 0.09,
+  "payout": 33.37,
+  "placed": "6/9 6:15PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Patrick Wisdom",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Bryan Reynolds",
+    "prop": "HR",
+    "g": "LAD@PIT"
+   },
+   {
+    "p": "Byron Buxton",
+    "prop": "HR",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Ian Happ",
+    "prop": "HR",
+    "g": "CHC@COL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq754ksep3tjm301g6hd38w",
+  "id": "#hd38w",
+  "kind": "4-leg SGP+",
+  "odds": 50129,
+  "wager": 0.1,
+  "payout": 50.23,
+  "placed": "6/9 6:13PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Jose Ramirez",
+    "prop": "HR",
+    "g": "NYY@CLE"
+   },
+   {
+    "p": "Trent Grisham",
+    "prop": "HR",
+    "g": "NYY@CLE"
+   },
+   {
+    "p": "Julio Rodriguez",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Bryan Reynolds",
+    "prop": "HR",
+    "g": "LAD@PIT"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8x5p8fh6apzbp1cfvkc05",
+  "id": "#vkc05",
+  "kind": "Pitcher Special",
+  "odds": 1600,
+  "wager": 0.1,
+  "payout": 1.7,
+  "placed": "6/9 6:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Kai-Wei Teng",
+    "prop": "UP9",
+    "g": "HOU@LAA"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8x5p8fder10jbz3c7sf96",
+  "id": "#7sf96",
+  "kind": "Pitcher Special",
+  "odds": 1000,
+  "wager": 0.1,
+  "payout": 1.1,
+  "placed": "6/9 6:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Chase Burns",
+    "prop": "K1",
+    "g": "CIN@SD"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8x5p8f28afymnk0h6s6ne",
+  "id": "#6s6ne",
+  "kind": "Pitcher Special",
+  "odds": 5500,
+  "wager": 0.1,
+  "payout": 5.6,
+  "placed": "6/9 6:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Chase Burns",
+    "prop": "NH7",
+    "g": "CIN@SD"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8x5p8epwac2pbswfwvvn6",
+  "id": "#wvvn6",
+  "kind": "Pitcher Special",
+  "odds": 1900,
+  "wager": 0.1,
+  "payout": 2.0,
+  "placed": "6/9 6:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Freddy Peralta",
+    "prop": "K1",
+    "g": "STL@NYM"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8x5p8e4zst78actg17fmf",
+  "id": "#17fmf",
+  "kind": "Pitcher Special",
+  "odds": 3500,
+  "wager": 0.1,
+  "payout": 3.6,
+  "placed": "6/9 6:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Walbert Urena",
+    "prop": "NH5",
+    "g": "HOU@LAA"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8x5p8e3ca1gkd56rhh1y5",
+  "id": "#hh1y5",
+  "kind": "Pitcher Special",
+  "odds": 1200,
+  "wager": 0.1,
+  "payout": 1.3,
+  "placed": "6/9 6:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Freddy Peralta",
+    "prop": "UP9",
+    "g": "STL@NYM"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8shw4e3tbxcgksa3fn3c7",
+  "id": "#fn3c7",
+  "kind": "8-leg SGP+",
+  "odds": 2207541,
+  "wager": 0.09,
+  "payout": 1986.88,
+  "placed": "6/9 6:42PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Brent Rooker",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jake Bauers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Christian Yelich",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Hunter Goodman",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Ian Happ",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Yordan Alvarez",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   },
+   {
+    "p": "Christian Walker",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8qh23fgct7fnc8wdzzarc",
+  "id": "#zzarc",
+  "kind": "6-leg SGP+",
+  "odds": 68964,
+  "wager": 0.09,
+  "payout": 62.16,
+  "placed": "6/9 6:40PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Hunter Goodman",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Shea Langeliers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Brent Rooker",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jake Bauers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Yordan Alvarez",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8n9rnf4bvn60t3d2mhkqg",
+  "id": "#mhkqg",
+  "kind": "3-leg SGP+",
+  "odds": 3603,
+  "wager": 0.25,
+  "payout": 9.26,
+  "placed": "6/9 6:39PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Hunter Goodman",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Yordan Alvarez",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq8hp00fnq9p0a1fqacdzyd",
+  "id": "#cdzyd",
+  "kind": "SGP",
+  "odds": 4020,
+  "wager": 0.2,
+  "payout": 8.24,
+  "placed": "6/9 6:37PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Hunter Goodman",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Ian Happ",
+    "prop": "HR",
+    "g": "CHC@COL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq7w29qez7srpefp5zb337d",
+  "id": "#b337d",
+  "kind": "SGP",
+  "odds": 74961,
+  "wager": 0.09,
+  "payout": 67.56,
+  "placed": "6/9 6:25PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Jake Bauers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Brent Rooker",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Shea Langeliers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Christian Yelich",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "David Hamilton",
+    "prop": "SB2",
+    "g": "MIL@ATH"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq7py4ffsnrkb28kvawx65q",
+  "id": "#wx65q",
+  "kind": "SGP",
+  "odds": 25028,
+  "wager": 0.09,
+  "payout": 22.62,
+  "placed": "6/9 6:23PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Brice Turang",
+    "prop": "SB",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "David Hamilton",
+    "prop": "SB",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Brent Rooker",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Christian Yelich",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jackson Chourio",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq7m5xre1f91n36r27pdemm",
+  "id": "#pdemm",
+  "kind": "SGP",
+  "odds": 37523,
+  "wager": 0.09,
+  "payout": 33.86,
+  "placed": "6/9 6:21PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Shea Langeliers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Christian Yelich",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Brice Turang",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jake Bauers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Brent Rooker",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq5qgswepfrvwjdb82bkb1d",
+  "id": "#bkb1d",
+  "kind": "single",
+  "odds": 340,
+  "wager": 0.09,
+  "payout": 0.4,
+  "placed": "6/9 5:48PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Pete Alonso",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq5qax2e56b6we4p8x8kjbg",
+  "id": "#8kjbg",
+  "kind": "single",
+  "odds": 320,
+  "wager": 0.1,
+  "payout": 0.42,
+  "placed": "6/9 5:48PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Patrick Wisdom",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq5fbwye4zr9546v6w8d5r0",
+  "id": "#8d5r0",
+  "kind": "single",
+  "odds": 390,
+  "wager": 0.09,
+  "payout": 0.44,
+  "placed": "6/9 5:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Julio Rodriguez",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq710qkftq84mh0chtzxvbs",
+  "id": "#zxvbs",
+  "kind": "single",
+  "odds": 370,
+  "wager": 0.09,
+  "payout": 0.42,
+  "placed": "6/9 6:11PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Jose Ramirez",
+    "prop": "HR",
+    "g": "NYY@CLE"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq5s72megb88jqzg3zzcqqn",
+  "id": "#zcqqn",
+  "kind": "single",
+  "odds": 270,
+  "wager": 0.09,
+  "payout": 0.33,
+  "placed": "6/9 5:49PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Ben Rice",
+    "prop": "HR",
+    "g": "NYY@CLE"
+   }
+  ]
+ },
+ {
+  "full_id": "O/1924696/0004083",
+  "id": "#4083",
+  "kind": "14-leg SGP+",
+  "odds": 415722197,
+  "wager": 0.09,
+  "payout": 374150.07,
+  "placed": "6/9 3:38PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Hunter Goodman",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Ian Happ",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Michael Busch",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Shea Langeliers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Brent Rooker",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Nick Kurtz",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jackson Chourio",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jake Bauers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Tyler Soderstrom",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "William Contreras",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Byron Buxton",
+    "prop": "HR",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Ben Rice",
+    "prop": "HR",
+    "g": "NYY@CLE"
+   },
+   {
+    "p": "Yordan Alvarez",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq5r637fmj984vk82mtatvr",
+  "id": "#tatvr",
+  "kind": "single",
+  "odds": 285,
+  "wager": 0.09,
+  "payout": 0.35,
+  "placed": "6/9 5:48PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Byron Buxton",
+    "prop": "HR",
+    "g": "MIN@DET"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq5jvn1e1rsr543edqxevtv",
+  "id": "#xevtv",
+  "kind": "single",
+  "odds": 370,
+  "wager": 0.09,
+  "payout": 0.42,
+  "placed": "6/9 5:45PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "James Wood",
+    "prop": "HR",
+    "g": "WSH@SF"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq5gxs1ec8v4s3cqpkprdkc",
+  "id": "#prdkc",
+  "kind": "single",
+  "odds": 270,
+  "wager": 0.09,
+  "payout": 0.33,
+  "placed": "6/9 5:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Yordan Alvarez",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq5gpfyfsksk3q9m9wkvb6m",
+  "id": "#kvb6m",
+  "kind": "single",
+  "odds": 390,
+  "wager": 0.09,
+  "payout": 0.44,
+  "placed": "6/9 5:44PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Christian Walker",
+    "prop": "HR",
+    "g": "HOU@LAA"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktq5hve2fc48n6qagerkz494",
+  "id": "#kz494",
+  "kind": "single",
+  "odds": 520,
+  "wager": 0.09,
+  "payout": 0.56,
+  "placed": "6/9 5:45PM",
+  "status": "WON",
+  "legs": [
+   {
+    "p": "Bryan Reynolds",
+    "prop": "HR",
+    "g": "LAD@PIT"
+   }
+  ]
+ },
+ {
+  "full_id": "O/1924696/0004090",
+  "id": "#4090",
+  "kind": "4-leg parlay",
+  "odds": 1496150,
+  "wager": 0.11,
+  "payout": 1645.88,
+  "placed": "6/9 7:28PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Randy Arozarena",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Trent Grisham",
+    "prop": "HR",
+    "g": "NYY@CLE"
+   },
+   {
+    "p": "Isiah Kiner-Falefa",
+    "prop": "HR",
+    "g": "BOS@TB"
+   },
+   {
+    "p": "Otto Lopez",
+    "prop": "HR",
+    "g": "ARI@MIA"
+   }
+  ]
+ },
+ {
+  "full_id": "O/1924696/0004089",
+  "id": "#4089",
+  "kind": "5-leg SGP+",
+  "odds": 9835679,
+  "wager": 0.09,
+  "payout": 8852.2,
+  "placed": "6/9 7:28PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Ketel Marte",
+    "prop": "HR",
+    "g": "ARI@MIA"
+   },
+   {
+    "p": "Otto Lopez",
+    "prop": "HR",
+    "g": "ARI@MIA"
+   },
+   {
+    "p": "Randy Arozarena",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Trent Grisham",
+    "prop": "HR",
+    "g": "NYY@CLE"
+   },
+   {
+    "p": "Isiah Kiner-Falefa",
+    "prop": "HR",
+    "g": "BOS@TB"
+   }
+  ]
+ },
+ {
+  "full_id": "O/1924696/0004091",
+  "id": "#4091",
+  "kind": "3-leg parlay",
+  "odds": 61220,
+  "wager": 0.1,
+  "payout": 61.32,
+  "placed": "6/9 7:30PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Otto Lopez",
+    "prop": "HR",
+    "g": "ARI@MIA"
+   },
+   {
+    "p": "Yandy Diaz",
+    "prop": "HR",
+    "g": "BOS@TB"
+   },
+   {
+    "p": "Byron Buxton",
+    "prop": "HR",
+    "g": "MIN@DET"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktqarjjqe98anjt477jc2gdr",
+  "id": "#c2gdr",
+  "kind": "SGP",
+  "odds": 46169,
+  "wager": 0.09,
+  "payout": 41.64,
+  "placed": "6/9 7:16PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "David Hamilton",
+    "prop": "SB2",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Brice Turang",
+    "prop": "SB",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Shea Langeliers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Christian Yelich",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktqaqnvnexnsgpwkgtefqtcy",
+  "id": "#fqtcy",
+  "kind": "SGP",
+  "odds": 74947,
+  "wager": 0.09,
+  "payout": 67.55,
+  "placed": "6/9 7:15PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Nick Kurtz",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Colby Thomas",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jake Bauers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Christian Yelich",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Max Muncy",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "David Hamilton",
+    "prop": "SB",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Brice Turang",
+    "prop": "SB",
+    "g": "MIL@ATH"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktqapscgekfsnxk83bs0s2as",
+  "id": "#0s2as",
+  "kind": "SGP",
+  "odds": 46169,
+  "wager": 0.09,
+  "payout": 41.64,
+  "placed": "6/9 7:15PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Shea Langeliers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Nick Kurtz",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jackson Chourio",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jake Bauers",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Tyler Soderstrom",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Christian Yelich",
+    "prop": "HR",
+    "g": "MIL@ATH"
+   }
+  ]
+ }
+]
