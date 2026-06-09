@@ -184,7 +184,7 @@ h2{font-family:'Archivo';font-weight:900;font-size:16px;margin:22px 0 9px}h2:fir
 .bet.b-dead{opacity:.62}.bet.b-won{box-shadow:0 0 0 1px var(--won) inset}
 .b-head{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;cursor:pointer;user-select:none}
 .b-left{min-width:0}
-.b-kind{font-family:'Archivo';font-weight:800;font-size:13px}.b-id{font-family:'Spline Sans Mono';font-size:10px;color:var(--faint)}
+.b-kind{font-family:'Archivo';font-weight:800;font-size:13px}.b-kind-name{font-size:15px}.b-id{font-family:'Spline Sans Mono';font-size:10px;color:var(--faint)}
 .b-meta{font-family:'Spline Sans Mono';font-size:10.5px;color:var(--dim);margin-top:3px}
 .b-stat{font-family:'Spline Sans Mono';font-weight:700;font-size:10px;padding:2px 7px;border-radius:6px;white-space:nowrap;margin-left:7px}
 .b-stat.b-alive{background:#e8f0fb;color:var(--alive)}.b-stat.b-dead{background:#fbe6e7;color:var(--dead)}.b-stat.b-won{background:#e3f6ec;color:var(--won)}
@@ -355,15 +355,15 @@ function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs
 function betCardHTML(b){
  const cat=CATMAP[b._cat];const cvar='var('+cat.v+')';
  const cl=b._st==='dead'?'b-dead':(b._st==='won'?'b-won':'b-alive');
- const lbl=b._st==='dead'?'DEAD':(b._st==='won'?'CASHED':'ALIVE');
+ const lbl=b._st==='dead'?'DEAD':(b._st==='won'?'CASHED':'ALIVE');const isPS=b._cat==='PITCH';
   let body='';
  for(const lg of b.legs){const st=legMet(lg);const isP=PITCHSET[lg.prop];const p=isP?null:pByKey[norm(lg.p)];
    const mk=st==='hit'?'&#10003;':(st==='miss'?'&#10007;':'&middot;');const lc=st==='hit'?'l-hit':(st==='miss'?'l-miss':'l-pend');
    const inn=(st==='hit'&&(lg.prop==='HR'||lg.prop==='FPA')&&p&&p.hr.length)?(' '+ordSuffix(p.hr[0])):'';
    let lab='';if(!isP&&st==='pending'&&p){if(p.atbat)lab='<span class="labtag ab">AB</span>';else if(p.ondeck)lab='<span class="labtag od">OD</span>';}
    let propTxt=lpropText(lg);if(isP){const d=pitchDetail(lg);if(d)propTxt+=' &middot; '+d;}
-   body+='<div class="leg '+lc+'"><span class="lmk">'+mk+'</span><span class="lname">'+legNameHTML(lg)+'</span>'+lab+'<span class="lprop">'+propTxt+inn+'</span></div>';}
- return '<div class="bet '+cl+(collapsedBets[b.id]?' collapsed':'')+'" data-bid="'+b.id+'" style="border-left-color:'+cvar+'"><div class="b-head" onclick="toggleBet(this)"><div class="b-left"><span class="b-kind">'+b.kind+'</span> <span class="b-id">'+b.id+'</span><span class="b-stat '+cl+'">'+lbl+(b.legs.length>1?(' '+b._hit+'/'+b.legs.length):'')+'</span><div class="b-meta">'+amStr(b.odds)+' &middot; '+money(b.wager)+' wager</div></div><div class="b-right"><span class="b-pay">'+money(b.payout)+'</span><span class="b-chev">&#9660;</span></div></div><div class="b-legs">'+body+'</div></div>';
+   body+='<div class="leg '+lc+'"><span class="lmk">'+mk+'</span>'+(isPS?'':'<span class="lname">'+legNameHTML(lg)+'</span>')+lab+'<span class="lprop">'+propTxt+inn+'</span></div>';}
+ return '<div class="bet '+cl+(collapsedBets[b.id]?' collapsed':'')+'" data-bid="'+b.id+'" style="border-left-color:'+cvar+'"><div class="b-head" onclick="toggleBet(this)"><div class="b-left"><span class="b-kind'+(isPS?' b-kind-name':'')+'">'+(isPS?legNameHTML(b.legs[0]):b.kind)+'</span> <span class="b-id">'+b.id+'</span><span class="b-stat '+cl+'">'+lbl+(b.legs.length>1?(' '+b._hit+'/'+b.legs.length):'')+'</span><div class="b-meta">'+amStr(b.odds)+' &middot; '+money(b.wager)+' wager</div></div><div class="b-right"><span class="b-pay">'+money(b.payout)+'</span><span class="b-chev">&#9660;</span></div></div><div class="b-legs">'+body+'</div></div>';
 }
 function renderSummary(live){
  let alive=0,dead=0,won=0,wonPay=0,totW=0,totP=0;const byCat={};CATS.forEach(function(c){byCat[c.k]={n:0,w:0,p:0};});
