@@ -1728,5 +1728,116 @@
     "g": "CHC@COL"
    }
   ]
+ },
+ {
+  "full_id": "O/1924696/0004094",
+  "id": "#4094",
+  "kind": "3-leg SGP",
+  "odds": 4868,
+  "wager": 0.1,
+  "payout": 4.97,
+  "placed": "6/9 8:45PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Cole Carrigg",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Cole Carrigg",
+    "prop": "HIT3",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Cole Carrigg",
+    "prop": "2B",
+    "g": "CHC@COL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktqfmrd2evvay6e3s2h5f9sq",
+  "id": "#5f9sq",
+  "kind": "4-leg SGP",
+  "odds": 82480,
+  "wager": 0.18,
+  "payout": 148.64,
+  "placed": "6/9 8:41PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Cole Carrigg",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Cole Carrigg",
+    "prop": "3B",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Cole Carrigg",
+    "prop": "SB",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Cole Carrigg",
+    "prop": "RUN2",
+    "g": "CHC@COL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktqfb7kaej585pn315jtb5gq",
+  "id": "#tb5gq",
+  "kind": "8-leg SGP",
+  "odds": 54527,
+  "wager": 0.1,
+  "payout": 54.64,
+  "placed": "6/9 8:36PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Troy Johnston",
+    "prop": "HIT2",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HIT2",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Jake McCarthy",
+    "prop": "HIT2",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Willi Castro",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "TJ Rumfield",
+    "prop": "TB2",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Jake McCarthy",
+    "prop": "SB",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Cole Carrigg",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "RUN",
+    "g": "CHC@COL"
+   }
+  ]
  }
 ]
