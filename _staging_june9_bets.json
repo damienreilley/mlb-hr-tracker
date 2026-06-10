@@ -1594,5 +1594,139 @@
     "g": "NYY@CLE"
    }
   ]
+ },
+ {
+  "full_id": "us-pa:01ktqc0bfpfg4ah99z97v2b4he",
+  "id": "#2b4he",
+  "kind": "18-leg SGP+",
+  "odds": 9858,
+  "wager": 0.09,
+  "payout": 8.97,
+  "placed": "6/9 7:38PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Shea Langeliers",
+    "prop": "HIT",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jackson Chourio",
+    "prop": "HIT",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Brice Turang",
+    "prop": "HIT",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Christian Yelich",
+    "prop": "HIT",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Jake Bauers",
+    "prop": "HIT",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Nick Kurtz",
+    "prop": "HIT",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Michael Busch",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Hunter Goodman",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Troy Johnston",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "TJ Rumfield",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Jake McCarthy",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Ian Happ",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Yordan Alvarez",
+    "prop": "HIT",
+    "g": "HOU@LAA"
+   },
+   {
+    "p": "Christian Walker",
+    "prop": "HIT",
+    "g": "HOU@LAA"
+   },
+   {
+    "p": "Mike Trout",
+    "prop": "HIT",
+    "g": "HOU@LAA"
+   },
+   {
+    "p": "Matt Olson",
+    "prop": "HIT",
+    "g": "ATL@CWS"
+   },
+   {
+    "p": "James Wood",
+    "prop": "HIT",
+    "g": "WSH@SF"
+   }
+  ]
+ },
+ {
+  "full_id": "O/1924696/0004093",
+  "id": "#4093",
+  "kind": "4-leg SGP+",
+  "odds": 43855,
+  "wager": 0.09,
+  "payout": 39.56,
+  "placed": "6/9 8:13PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Jackson Chourio",
+    "prop": "TB",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Max P. Muncy",
+    "prop": "TB",
+    "g": "MIL@ATH"
+   },
+   {
+    "p": "Randy Arozarena",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Ian Happ",
+    "prop": "HR",
+    "g": "CHC@COL"
+   }
+  ]
  }
 ]
