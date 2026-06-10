@@ -1577,5 +1577,22 @@
     "g": "MIL@ATH"
    }
   ]
+ },
+ {
+  "full_id": "O/1924696/0004092",
+  "id": "#4092",
+  "kind": "single",
+  "odds": 650,
+  "wager": 0.09,
+  "payout": 0.67,
+  "placed": "6/9 7:57PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Jose Ramirez",
+    "prop": "HR",
+    "g": "NYY@CLE"
+   }
+  ]
  }
 ]
