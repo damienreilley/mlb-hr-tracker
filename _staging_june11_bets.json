@@ -1,0 +1,461 @@
+[
+ {
+  "full_id": "us-pa:01ktw1x3sme17ay4p9rprtb4v8",
+  "id": "#tb4v8",
+  "kind": "4-leg SGP",
+  "odds": 71359,
+  "wager": 0.21,
+  "payout": 150.06,
+  "placed": "6/11 3:17PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Ian Happ",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Cole Carrigg",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Willi Castro",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HR",
+    "g": "CHC@COL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktw1qyt6eq1bzgj20e1p8jp3",
+  "id": "#p8jp3",
+  "kind": "4-leg SGP",
+  "odds": 71357,
+  "wager": 0.23,
+  "payout": 164.36,
+  "placed": "6/11 3:15PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Hunter Goodman",
+    "prop": "TB5",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Dansby Swanson",
+    "prop": "TB5",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Willi Castro",
+    "prop": "TB5",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Cole Carrigg",
+    "prop": "HR",
+    "g": "CHC@COL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktw1kt8mf2f8nesg6btm22t2",
+  "id": "#m22t2",
+  "kind": "4-leg SGP",
+  "odds": 4565,
+  "wager": 0.22,
+  "payout": 10.26,
+  "placed": "6/11 3:12PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Willi Castro",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Hunter Goodman",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Ian Happ",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Michael Busch",
+    "prop": "HR",
+    "g": "CHC@COL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktvjchqffz6r81arhmvt7hxt",
+  "id": "#t7hxt",
+  "kind": "15-leg SGP+",
+  "odds": 1116296,
+  "wager": 0.09,
+  "payout": 1005.15,
+  "placed": "6/11 10:46AM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Willi Castro",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Michael Busch",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Troy Johnston",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Ian Happ",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Dansby Swanson",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Cole Carrigg",
+    "prop": "HIT",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Edouard Julien",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "HIT2",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Pete Crow-Armstrong",
+    "prop": "RUN",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Hunter Goodman",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Kerry Carpenter",
+    "prop": "HIT2",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Kevin McGonigle",
+    "prop": "HIT",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Kody Clemens",
+    "prop": "HIT2",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Byron Buxton",
+    "prop": "HR",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Tristan Gray",
+    "prop": "HIT",
+    "g": "MIN@DET"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktvmsxydfj3rvyy0ydec7k0p",
+  "id": "#c7k0p",
+  "kind": "Pitcher Special",
+  "odds": 1300,
+  "wager": 0.1,
+  "payout": 1.4,
+  "placed": "6/11 11:28AM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Bryan Woo",
+    "prop": "K1",
+    "g": "SEA@BAL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktvmsxydff9ahrjx5wmynkqh",
+  "id": "#ynkqh",
+  "kind": "Pitcher Special",
+  "odds": 3300,
+  "wager": 0.2,
+  "payout": 6.8,
+  "placed": "6/11 11:28AM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Bryan Woo",
+    "prop": "NH5",
+    "g": "SEA@BAL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktvmsxydfc1syycdez0r1hss",
+  "id": "#r1hss",
+  "kind": "Pitcher Special",
+  "odds": 950,
+  "wager": 0.3,
+  "payout": 3.15,
+  "placed": "6/11 11:28AM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Bryan Woo",
+    "prop": "UP9",
+    "g": "SEA@BAL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktvmsxydeqv8ftqqfc3wt9je",
+  "id": "#wt9je",
+  "kind": "Pitcher Special",
+  "odds": 440,
+  "wager": 0.4,
+  "payout": 2.16,
+  "placed": "6/11 11:28AM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Bryan Woo",
+    "prop": "UP6",
+    "g": "SEA@BAL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktvmsxydehwbwcw7ee66e5sy",
+  "id": "#6e5sy",
+  "kind": "Pitcher Special",
+  "odds": 12500,
+  "wager": 0.1,
+  "payout": 12.6,
+  "placed": "6/11 11:28AM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Bryan Woo",
+    "prop": "NH7",
+    "g": "SEA@BAL"
+   }
+  ]
+ },
+ {
+  "full_id": "us-pa:01ktv0xtypef5rk52p80xec97v",
+  "id": "#ec97v",
+  "kind": "7-leg SGP",
+  "odds": 74950,
+  "wager": 0.09,
+  "payout": 67.55,
+  "placed": "6/11 5:41AM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Royce Lewis",
+    "prop": "HR",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Kevin McGonigle",
+    "prop": "HIT2",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Kerry Carpenter",
+    "prop": "RBI",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Kevin McGonigle",
+    "prop": "RUN",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Brooks Lee",
+    "prop": "HIT2",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Kody Clemens",
+    "prop": "HR",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Byron Buxton",
+    "prop": "HR",
+    "g": "MIN@DET"
+   }
+  ]
+ },
+ {
+  "full_id": "O/1924696/0004152",
+  "id": "#4152",
+  "kind": "15-leg SGP+",
+  "odds": 8769557,
+  "wager": 0.13,
+  "payout": 11400.55,
+  "placed": "6/11 3:53PM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Wyatt Langford",
+    "prop": "HIT",
+    "g": "TEX@KC"
+   },
+   {
+    "p": "Carter Jensen",
+    "prop": "HIT",
+    "g": "TEX@KC"
+   },
+   {
+    "p": "Evan Carter",
+    "prop": "HIT",
+    "g": "TEX@KC"
+   },
+   {
+    "p": "Shohei Ohtani",
+    "prop": "HIT",
+    "g": "LAD@PIT"
+   },
+   {
+    "p": "Freddie Freeman",
+    "prop": "HIT",
+    "g": "LAD@PIT"
+   },
+   {
+    "p": "Andy Pages",
+    "prop": "HIT",
+    "g": "LAD@PIT"
+   },
+   {
+    "p": "Kyle Tucker",
+    "prop": "HIT",
+    "g": "LAD@PIT"
+   },
+   {
+    "p": "Gunnar Henderson",
+    "prop": "HIT2",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Julio Rodriguez",
+    "prop": "HIT2",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Luke Raley",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Randy Arozarena",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Randal Grichuk",
+    "prop": "HR",
+    "g": "ATL@CWS"
+   },
+   {
+    "p": "Tristan Peters",
+    "prop": "HIT",
+    "g": "ATL@CWS"
+   },
+   {
+    "p": "Austin Riley",
+    "prop": "HR",
+    "g": "ATL@CWS"
+   },
+   {
+    "p": "Ozzie Albies",
+    "prop": "HIT2",
+    "g": "ATL@CWS"
+   }
+  ]
+ },
+ {
+  "full_id": "O/1924696/0004151",
+  "id": "#4151",
+  "kind": "9-leg SGP+",
+  "odds": 902350917,
+  "wager": 0.1,
+  "payout": 902351.02,
+  "placed": "6/11 11:26AM",
+  "status": "open",
+  "legs": [
+   {
+    "p": "Randal Grichuk",
+    "prop": "HR",
+    "g": "ATL@CWS"
+   },
+   {
+    "p": "Ozzie Albies",
+    "prop": "HR",
+    "g": "ATL@CWS"
+   },
+   {
+    "p": "Patrick Wisdom",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Leody Taveras",
+    "prop": "HR",
+    "g": "SEA@BAL"
+   },
+   {
+    "p": "Otto Lopez",
+    "prop": "HR",
+    "g": "ARI@MIA"
+   },
+   {
+    "p": "Kerry Carpenter",
+    "prop": "HR",
+    "g": "MIN@DET"
+   },
+   {
+    "p": "Willi Castro",
+    "prop": "HR",
+    "g": "CHC@COL"
+   },
+   {
+    "p": "Evan Carter",
+    "prop": "HR",
+    "g": "TEX@KC"
+   },
+   {
+    "p": "Freddie Freeman",
+    "prop": "HR",
+    "g": "LAD@PIT"
+   }
+  ]
+ }
+]
