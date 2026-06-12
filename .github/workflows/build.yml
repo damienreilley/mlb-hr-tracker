@@ -1,0 +1,35 @@
+name: Build and Deploy Tracker
+on:
+  push:
+    branches: [main]
+    paths:
+      - staging.json
+      - build.py
+      - tracker_template.html
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: tracker-build
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build index.html from staging
+        run: python build.py staging.json index.html
+      - name: Commit rebuilt index.html if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain index.html)" ]; then
+            git add index.html
+            git commit -m "ci: rebuild index.html from staging [skip ci]"
+            git push
+          else
+            echo "index.html unchanged"
+          fi
