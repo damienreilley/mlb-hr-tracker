@@ -14,6 +14,9 @@ TEAM={"ARI":"Diamondbacks","ATL":"Braves","BAL":"Orioles","BOS":"Red Sox","CHC":
 "PHI":"Phillies","PIT":"Pirates","SD":"Padres","SF":"Giants","SEA":"Mariners",
 "STL":"Cardinals","TB":"Rays","TEX":"Rangers","TOR":"Blue Jays","WSH":"Nationals"}
 PSET={"NH3","NH5","NH7","UP9","UP6","K1","ALTK"}  # pitcher prop codes
+# FanDuel-disambiguated name -> MLBAM id, for collision-proof grading of duplicate names.
+# "Max P. Muncy" = Athletics (691777); the Dodgers' Max Muncy = 571970 (not in our slate).
+KNOWN_IDS={"Max P. Muncy":691777}
 
 def ts_of(p):
     m=re.search(r"(\d+):(\d+)\s*([AP]M)",p)
@@ -34,11 +37,13 @@ def build(staging_path,out_path):
     for b in stage:
         for l in b["legs"]:
             nm,pr,g=l["p"],l["prop"],l["g"]
+            mlbid=l.get("mlb") or KNOWN_IDS.get(nm,"")
             if pr in PSET: pitchers.setdefault(nm,g)
             else:
-                d=players.setdefault(nm,{"g":g,"pr":set()})
+                d=players.setdefault(nm,{"g":g,"pr":set(),"mlb":""})
+                if mlbid: d["mlb"]=mlbid
                 d["pr"].add("HR" if pr=="HR" else ("SB" if pr in ("SB","SB2") else pr))
-    players_list=[{"n":nm,"tm":"","g":d["g"],"pr":sorted(d["pr"]) or ["HR"],"od":""} for nm,d in players.items()]
+    players_list=[{"n":nm,"tm":"","g":d["g"],"pr":sorted(d["pr"]) or ["HR"],"od":"","mlb":d.get("mlb","")} for nm,d in players.items()]
     pitchers_list=[{"n":nm,"tm":"","g":g} for nm,g in pitchers.items()]
     out_bets=[]
     for b in stage:

@@ -157,6 +157,7 @@ const GAMES=__GAMES__;const players=__PLAYERS__;const pitchers=__PITCHERS__;cons
 const norm=function(s){return (s||"").normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z ]/g,'').replace(/\s+/g,' ').trim();};
 players.forEach(function(p){p.k=norm(p.n);});pitchers.forEach(function(p){p.k=norm(p.n);});
 const pByKey={};players.forEach(function(p){pByKey[p.k]=p;});
+const pById={};players.forEach(function(p){if(p.mlb)pById['#'+p.mlb]=p;});
 const pitByKey={};pitchers.forEach(function(p){pitByKey[p.k]=p;});
 const CATS=[{k:'PARLAY',label:'Parlays',v:'--c-fpa'},{k:'HR',label:'Home Runs',v:'--c-hr'},{k:'FPA',label:'First-PA HR',v:'--c-fpa'},{k:'TB',label:'Total Bases',v:'--c-tb'},{k:'HIT',label:'Hits',v:'--c-hit'},{k:'PITCH',label:'Pitcher Specials',v:'--c-pitch'},{k:'MIX',label:'Mixed',v:'--c-mix'}];
 const CATMAP={};CATS.forEach(function(c){CATMAP[c.k]=c;});
@@ -194,18 +195,19 @@ async function refresh(){
    for(const id in pl){const per=pl[id].person;const nm=per?norm(per.fullName):'';if(!nm)continue;
     const bt=(pl[id].stats&&pl[id].stats.batting)?pl[id].stats.batting:{};
     const hits=bt.hits||0,d=bt.doubles||0,t=bt.triples||0,hr=bt.homeRuns||0,sb=bt.stolenBases||0,rns=bt.runs||0,rbiv=bt.rbi||0;
-    STATS[nm]={hits:hits,doubles:d,triples:t,hr:hr,sb:sb,tb:hits+d+2*t+3*hr,runs:rns,rbi:rbiv,tm:ab};
+    STATS[nm]={hits:hits,doubles:d,triples:t,hr:hr,sb:sb,tb:hits+d+2*t+3*hr,runs:rns,rbi:rbiv,tm:ab};if(per&&per.id){STATS['#'+per.id]=STATS[nm];if(pById['#'+per.id])pById['#'+per.id].tmLive=ab;}
     if(pByKey[nm])pByKey[nm].tmLive=ab;if(pitByKey[nm])pitByKey[nm].tmLive=ab;}});}
   const plays=(f.liveData&&f.liveData.plays&&f.liveData.plays.allPlays)?f.liveData.plays.allPlays:[];
   for(const pl of plays){const ev=pl.result&&pl.result.eventType;if(!ev)continue;
    const inn=(pl.about&&pl.about.inning)?pl.about.inning:99;
-   const bk=norm(pl.matchup&&pl.matchup.batter?pl.matchup.batter.fullName:'');const pp=pByKey[bk];
+   const bk=norm(pl.matchup&&pl.matchup.batter?pl.matchup.batter.fullName:'');const _bid=(pl.matchup&&pl.matchup.batter&&pl.matchup.batter.id)?('#'+pl.matchup.batter.id):'';const pp=(_bid&&pById[_bid])?pById[_bid]:pByKey[bk];
    if(pp){if(ev==='home_run')pp.hr.push(inn);if(!pp.fpaDone){pp.fpaDone=true;pp.fpaHR=(ev==='home_run');}}
    const ptk=norm(pl.matchup&&pl.matchup.pitcher?pl.matchup.pitcher.fullName:'');const ptp=pitByKey[ptk];
    if(ptp){if(HITEV[ev]){if(inn<=3)ptp.h3++;if(inn<=5)ptp.h5++;if(inn<=7)ptp.h7++;}if(ev==='strikeout'&&inn===1)ptp.k1++;if(ev==='strikeout'||ev==='strikeout_double_play')ptp.kTot++;ptp.seq.push((HITEV[ev]||ev==='walk'||ev==='intent_walk'||ev==='hit_by_pitch'||ev==='field_error'||ev==='catcher_interf'||ev==='fielders_choice')?0:1);}}
   const off=f.liveData&&f.liveData.linescore&&f.liveData.linescore.offense;
   if(off){const ab=off.batter&&off.batter.fullName?norm(off.batter.fullName):'';const od=off.onDeck&&off.onDeck.fullName?norm(off.onDeck.fullName):'';
    if(pByKey[ab])pByKey[ab].atbat=true;if(pByKey[od])pByKey[od].ondeck=true;}}
+ players.forEach(function(p){if(p.mlb&&STATS['#'+p.mlb])STATS[p.k]=STATS['#'+p.mlb];});
  for(const key in GAMES){const g=keyToGame[key];if(!g){GS[key]={state:'NA'};continue;}
   const ls=g.linescore||{};const st=g.status.abstractGameState;
   GS[key]={state:st,detail:g.status.detailedState,inn:ls.currentInning||0,half:ls.inningState,
