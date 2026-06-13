@@ -563,6 +563,189 @@
      "g": "COL@ATH"
     }
    ]
+  },
+  {
+   "full_id": "us-pa:01kv1ke79zf7fvq5g8p7jdermr",
+   "id": "#dermr",
+   "kind": "5-leg SGP",
+   "odds": 4431,
+   "wager": 0.09,
+   "payout": 4.08,
+   "placed": "6/13 7:00PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Brice Turang",
+     "prop": "HIT",
+     "g": "PHI@MIL"
+    },
+    {
+     "p": "William Contreras",
+     "prop": "HIT",
+     "g": "PHI@MIL"
+    },
+    {
+     "p": "Christian Yelich",
+     "prop": "HIT",
+     "g": "PHI@MIL"
+    },
+    {
+     "p": "Trea Turner",
+     "prop": "SB",
+     "g": "PHI@MIL"
+    },
+    {
+     "p": "David Hamilton",
+     "prop": "SB",
+     "g": "PHI@MIL"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv1jtn0aec6v9ej1zstykyv9",
+   "id": "#ykyv9",
+   "kind": "5-leg SGP",
+   "odds": 159,
+   "wager": 0.09,
+   "payout": 0.23,
+   "placed": "6/13 6:49PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Shea Langeliers",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Jacob Wilson",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Nick Kurtz",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Tyler Soderstrom",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Zack Gelof",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv1jstapft9bc9qcwc5p8bpg",
+   "id": "#p8bpg",
+   "kind": "4-leg SGP",
+   "odds": 21458,
+   "wager": 0.09,
+   "payout": 19.4,
+   "placed": "6/13 6:49PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Willi Castro",
+     "prop": "HR",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "TJ Rumfield",
+     "prop": "HR",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Troy Johnston",
+     "prop": "HR",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Cole Carrigg",
+     "prop": "HR",
+     "g": "COL@ATH"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv1jr3xpek5bc6zgq8ccw983",
+   "id": "#cw983",
+   "kind": "13-leg SGP",
+   "odds": 1395,
+   "wager": 0.09,
+   "payout": 1.35,
+   "placed": "6/13 6:48PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Shea Langeliers",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Jacob Wilson",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Nick Kurtz",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Tyler Soderstrom",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Hunter Goodman",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Willi Castro",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Henry Bolte",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Edouard Julien",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Zack Gelof",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Cole Carrigg",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Troy Johnston",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Jonah Heim",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "TJ Rumfield",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    }
+   ]
   }
  ]
 }
