@@ -28,6 +28,17 @@ def ts_of(p):
 def game_pair(g):
     a,h=g.split("@"); return [TEAM.get(a,a),TEAM.get(h,h)]
 
+def ml_side(g,name):
+    a,h=g.split("@"); an,hn=TEAM.get(a,a),TEAM.get(h,h)
+    if hn and hn in name: return "home"
+    if an and an in name: return "away"
+    return "home" if h in name else "away"
+
+def mk_leg(l):
+    if l.get("void"): return dict(p=l["p"],prop=l["prop"],void=True)
+    if l["prop"]=="ML": return dict(p=l["p"],prop="ML",g=l["g"],side=ml_side(l["g"],l["p"]))
+    return dict(p=l["p"],prop=l["prop"])
+
 def build(staging_path,out_path):
     data=json.load(open(staging_path,encoding="utf-8"))
     date=data["date"]; stage=data["bets"]
@@ -37,7 +48,7 @@ def build(staging_path,out_path):
     for b in stage:
         for l in b["legs"]:
             nm,pr,g=l["p"],l["prop"],l["g"]
-            if l.get("void") or pr=="NA": continue  # void/manual legs are not real players/pitchers
+            if l.get("void") or pr in ("NA","ML"): continue  # void/manual/moneyline legs are not real players/pitchers
             mlbid=l.get("mlb") or KNOWN_IDS.get(nm,"")
             if pr in PSET: pitchers.setdefault(nm,g)
             else:
@@ -50,7 +61,7 @@ def build(staging_path,out_path):
     for b in stage:
         placed=b["placed"].split(" ",1)[-1]
         placed=re.sub(r"([AP]M)$",r" \1",placed)
-        legs=[(dict(p=l["p"],prop=l["prop"],void=True) if l.get("void") else dict(p=l["p"],prop=l["prop"])) for l in b["legs"]]
+        legs=[mk_leg(l) for l in b["legs"]]
         out_bets.append({"id":b["id"],"kind":b["kind"],"odds":b["odds"],"wager":b["wager"],"payout":b["payout"],"placed":placed,"ts":ts_of(b["placed"]),"legs":legs})
     dt=datetime.datetime.strptime(date,"%Y-%m-%d")
     TITLEDATE="%s %d %d"%(dt.strftime("%B"),dt.day,dt.year)

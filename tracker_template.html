@@ -220,6 +220,7 @@ async function refresh(){
 function legMet(leg){if(leg.void)return 'void';const pr=leg.prop;
  if(pr==='TR'){const gs=GS[leg.g]||{};const tot=(gs.as||0)+(gs.hs||0);if(tot>(leg.line||8.5))return 'hit';if(gs.state==='Final')return 'miss';return 'pending';}
  if(pr==='CTB'){const gs=GS[leg.g]||{};let sum=0;leg.ps.forEach(function(n){sum+=(statOf(n).tb||0);});if(sum>=(leg.line||6))return 'hit';if(gs.state==='Final')return 'miss';return 'pending';}
+ if(pr==='ML'){const gs=GS[leg.g]||{};if(gs.state!=='Final'||gs.as==null||gs.hs==null)return 'pending';if(gs.hs===gs.as)return 'pending';return ((leg.side==='home')?(gs.hs>gs.as):(gs.as>gs.hs))?'hit':'miss';}
  if(BATSET[pr]){const p=pByKey[norm(leg.p)];const gs=p?GS[p.g]:null;const fin=gs&&gs.state==='Final';const s=statOf(leg.p);
   if(pr==='HR')return (s.hr>=1||(p&&p.hr.length>0))?'hit':(fin?'miss':'pending');
   if(pr==='HIT')return (s.hits>=1)?'hit':(fin?'miss':'pending');
@@ -258,8 +259,8 @@ function betStatus(b){let hit=0,miss=0,act=0;for(const lg of b.legs){const s=leg
 function pitchDetail(leg){const pr=leg.prop;const p=pitByKey[norm(leg.p)];if(!p)return '';
  if(pr==='NH3')return p.h3+' hits';if(pr==='NH5')return p.h5+' hits';if(pr==='NH7')return p.h7+' hits';if(pr==='K1')return 'now '+p.k1;if(pr==='ALTK')return 'now '+p.kTot;
  if(pr==='UP9'||pr==='UP6'){let r=0;for(const x of p.seq){if(x===1)r++;else break;}return r+' retired';}return '';}
-function legNameHTML(leg){if(leg.prop==='TR'||leg.prop==='CTB')return leg.p;const t=teamOf(leg.p);return leg.p+(t?' <span class="tmtag">('+t+')</span>':'');}
-function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs';if(leg.prop==='CTB')return (leg.line||6)+'+ Combined TB';if(leg.prop==='ALTK')return (leg.k||0)+'+ K';let t=PLAB[leg.prop]||leg.prop;const pp=leg.prop;if(pp==='NA')return leg.lbl||'Manual (track on FD)';if(pp==='TB'||pp==='TB2'||pp==='TB3'||pp==='TB5'){t+=' &middot; now '+statOf(leg.p).tb;}else if(pp==='HIT2'||pp==='HIT3'||pp==='HIT4'){t+=' &middot; now '+statOf(leg.p).hits;}else if(pp==='RBI'||pp==='RBI2'||pp==='RBI3'||pp==='RBI4'){t+=' &middot; now '+statOf(leg.p).rbi;}else if(pp==='RUN'||pp==='RUN2'){t+=' &middot; now '+statOf(leg.p).runs;}else if(pp==='SB2'){t+=' &middot; now '+statOf(leg.p).sb;}else if(pp==='HRR2'){const ss=statOf(leg.p);t+=' &middot; now '+(ss.hits+ss.runs+ss.rbi);}return t;}
+function legNameHTML(leg){if(leg.prop==='TR'||leg.prop==='CTB'||leg.prop==='ML')return leg.p;const t=teamOf(leg.p);return leg.p+(t?' <span class="tmtag">('+t+')</span>':'');}
+function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs';if(leg.prop==='CTB')return (leg.line||6)+'+ Combined TB';if(leg.prop==='ML'){const gs=GS[leg.g]||{};if((gs.state==='Live'||gs.state==='Final')&&gs.as!=null&&gs.hs!=null){const tr=leg.side==='home'?gs.hs:gs.as,orr=leg.side==='home'?gs.as:gs.hs;return 'Moneyline &middot; '+tr+'-'+orr;}return 'Moneyline';}if(leg.prop==='ALTK')return (leg.k||0)+'+ K';let t=PLAB[leg.prop]||leg.prop;const pp=leg.prop;if(pp==='NA')return leg.lbl||'Manual (track on FD)';if(pp==='TB'||pp==='TB2'||pp==='TB3'||pp==='TB5'){t+=' &middot; now '+statOf(leg.p).tb;}else if(pp==='HIT2'||pp==='HIT3'||pp==='HIT4'){t+=' &middot; now '+statOf(leg.p).hits;}else if(pp==='RBI'||pp==='RBI2'||pp==='RBI3'||pp==='RBI4'){t+=' &middot; now '+statOf(leg.p).rbi;}else if(pp==='RUN'||pp==='RUN2'){t+=' &middot; now '+statOf(leg.p).runs;}else if(pp==='SB2'){t+=' &middot; now '+statOf(leg.p).sb;}else if(pp==='HRR2'){const ss=statOf(leg.p);t+=' &middot; now '+(ss.hits+ss.runs+ss.rbi);}return t;}
 function betCardHTML(b){
  const cat=CATMAP[b._cat];const cvar='var('+cat.v+')';
  const cl=b._st==='dead'?'b-dead':(b._st==='won'?'b-won':'b-alive');
