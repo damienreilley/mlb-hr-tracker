@@ -37,6 +37,7 @@ def build(staging_path,out_path):
     for b in stage:
         for l in b["legs"]:
             nm,pr,g=l["p"],l["prop"],l["g"]
+            if l.get("void") or pr=="NA": continue  # void/manual legs are not real players/pitchers
             mlbid=l.get("mlb") or KNOWN_IDS.get(nm,"")
             if pr in PSET: pitchers.setdefault(nm,g)
             else:

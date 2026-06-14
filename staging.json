@@ -818,6 +818,287 @@
      "g": "TB@LAA"
     }
    ]
+  },
+  {
+   "full_id": "us-pa:01kv17mx4qf3grxr757gmygf8c",
+   "id": "#ygf8c",
+   "kind": "Pitcher Special",
+   "odds": 3000,
+   "wager": 0.1,
+   "payout": 3.1,
+   "placed": "6/13 3:34PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Yoshinobu Yamamoto",
+     "prop": "NH5",
+     "g": "LAD@CWS"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv18cq42fe3s1dedra6nmswa",
+   "id": "#nmswa",
+   "kind": "Single HR",
+   "odds": 900,
+   "wager": 0.09,
+   "payout": 0.9,
+   "placed": "6/13 3:47PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Ryan McMahon",
+     "prop": "HR",
+     "g": "NYY@TOR"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv12sv5yfe9t9yfgab9fg144",
+   "id": "#fg144",
+   "kind": "7-leg SGP",
+   "odds": 6335,
+   "wager": 0.09,
+   "payout": 5.79,
+   "placed": "6/13 2:09PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Alec Burleson",
+     "prop": "HR",
+     "g": "STL@MIN"
+    },
+    {
+     "p": "Kody Clemens",
+     "prop": "HIT",
+     "g": "STL@MIN"
+    },
+    {
+     "p": "Byron Buxton",
+     "prop": "HIT",
+     "g": "STL@MIN"
+    },
+    {
+     "p": "Jordan Walker",
+     "prop": "HIT",
+     "g": "STL@MIN"
+    },
+    {
+     "p": "Brooks Lee",
+     "prop": "HIT",
+     "g": "STL@MIN"
+    },
+    {
+     "p": "Royce Lewis",
+     "prop": "HIT",
+     "g": "STL@MIN"
+    },
+    {
+     "p": "Austin Martin",
+     "prop": "SB",
+     "g": "STL@MIN"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv12ywrgfp5a1y2n9mwqxvbd",
+   "id": "#qxvbd",
+   "kind": "7-leg SGP",
+   "odds": 8246,
+   "wager": 0.09,
+   "payout": 7.51,
+   "placed": "6/13 2:12PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Kody Clemens",
+     "prop": "HIT",
+     "g": "STL@MIN"
+    },
+    {
+     "p": "Jordan Walker",
+     "prop": "HIT",
+     "g": "STL@MIN"
+    },
+    {
+     "p": "Brooks Lee",
+     "prop": "HIT",
+     "g": "STL@MIN"
+    },
+    {
+     "p": "Alec Burleson",
+     "prop": "HR",
+     "g": "STL@MIN"
+    },
+    {
+     "p": "Byron Buxton",
+     "prop": "HR",
+     "g": "STL@MIN"
+    },
+    {
+     "p": "Luke Keaschall",
+     "prop": "HIT",
+     "g": "STL@MIN"
+    },
+    {
+     "p": "Minnesota Twins",
+     "prop": "NA",
+     "g": "STL@MIN"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv17mx4qeaxb95z9gdm9e1z9",
+   "id": "#9e1z9",
+   "kind": "Pitcher Special",
+   "odds": 1000,
+   "wager": 0.1,
+   "payout": 1.1,
+   "placed": "6/13 3:34PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Jacob deGrom",
+     "prop": "UP9",
+     "g": "TEX@BOS"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv17mx4qeshtg59x7k2gzdxv",
+   "id": "#gzdxv",
+   "kind": "Pitcher Special",
+   "odds": 3500,
+   "wager": 0.1,
+   "payout": 3.6,
+   "placed": "6/13 3:34PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Ranger Suarez",
+     "prop": "NH5",
+     "g": "TEX@BOS"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv17mx4qf62rb0rezb71gvhs",
+   "id": "#1gvhs",
+   "kind": "Pitcher Special",
+   "odds": 1500,
+   "wager": 0.2,
+   "payout": 3.2,
+   "placed": "6/13 3:34PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Yoshinobu Yamamoto",
+     "prop": "K1",
+     "g": "LAD@CWS"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv17mx4qe5brzcmbz8qnapbb",
+   "id": "#napbb",
+   "kind": "Pitcher Special",
+   "odds": 650,
+   "wager": 0.15,
+   "payout": 1.12,
+   "placed": "6/13 3:34PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Tarik Skubal",
+     "prop": "NH3",
+     "g": "DET@CLE"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv17mx4qeqbvztvwcept2a60",
+   "id": "#t2a60",
+   "kind": "Pitcher Special",
+   "odds": 1600,
+   "wager": 0.1,
+   "payout": 1.7,
+   "placed": "6/13 3:34PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Tarik Skubal",
+     "prop": "K1",
+     "g": "DET@CLE"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv17mx4pfhmb0qa2rsrmme1y",
+   "id": "#mme1y",
+   "kind": "Pitcher Special",
+   "odds": 1100,
+   "wager": 0.1,
+   "payout": 1.2,
+   "placed": "6/13 3:34PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Jacob deGrom",
+     "prop": "K1",
+     "g": "TEX@BOS"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv17mx4qecx85pxsm4va8bp9",
+   "id": "#a8bp9",
+   "kind": "Pitcher Special",
+   "odds": 3500,
+   "wager": 0.1,
+   "payout": 3.6,
+   "placed": "6/13 3:34PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Jacob deGrom",
+     "prop": "NH5",
+     "g": "TEX@BOS"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv17mx4qes9rax0hvjyr431q",
+   "id": "#r431q",
+   "kind": "Pitcher Special",
+   "odds": 12500,
+   "wager": 0.1,
+   "payout": 12.6,
+   "placed": "6/13 3:34PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Jacob deGrom",
+     "prop": "NH7",
+     "g": "TEX@BOS"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv17mx4qfqwsdhye7z8788wy",
+   "id": "#788wy",
+   "kind": "Pitcher Special",
+   "odds": 2500,
+   "wager": 0.1,
+   "payout": 2.6,
+   "placed": "6/13 3:34PM",
+   "status": "settled",
+   "legs": [
+    {
+     "p": "Ranger Suarez",
+     "prop": "K1",
+     "g": "TEX@BOS"
+    }
+   ]
   }
  ]
 }
