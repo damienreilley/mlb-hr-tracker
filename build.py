@@ -37,6 +37,7 @@ def ml_side(g,name):
 def mk_leg(l):
     if l.get("void"): return dict(p=l["p"],prop=l["prop"],void=True)
     if l["prop"]=="ML": return dict(p=l["p"],prop="ML",g=l["g"],side=ml_side(l["g"],l["p"]))
+    if l["prop"]=="ALTK": return dict(p=l["p"],prop="ALTK",k=l.get("k",0))
     return dict(p=l["p"],prop=l["prop"])
 
 def build(staging_path,out_path):
