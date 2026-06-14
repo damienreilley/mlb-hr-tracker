@@ -746,6 +746,78 @@
      "g": "COL@ATH"
     }
    ]
+  },
+  {
+   "full_id": "us-pa:01kv1jkthgeng853w1w5gwdd79",
+   "id": "#wdd79",
+   "kind": "12-leg SGP+",
+   "odds": 2509,
+   "wager": 0.09,
+   "payout": 2.35,
+   "placed": "6/13 6:46PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Pete Crow-Armstrong",
+     "prop": "HIT",
+     "g": "CHC@SF"
+    },
+    {
+     "p": "Michael Busch",
+     "prop": "HIT",
+     "g": "CHC@SF"
+    },
+    {
+     "p": "Ian Happ",
+     "prop": "HIT",
+     "g": "CHC@SF"
+    },
+    {
+     "p": "Shea Langeliers",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Willi Castro",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Zack Gelof",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Nick Kurtz",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Hunter Goodman",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Edouard Julien",
+     "prop": "HIT",
+     "g": "COL@ATH"
+    },
+    {
+     "p": "Carter Jensen",
+     "prop": "HIT",
+     "g": "HOU@KC"
+    },
+    {
+     "p": "Yordan Alvarez",
+     "prop": "HIT",
+     "g": "HOU@KC"
+    },
+    {
+     "p": "Mike Trout",
+     "prop": "HIT",
+     "g": "TB@LAA"
+    }
+   ]
   }
  ]
 }
