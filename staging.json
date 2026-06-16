@@ -1,1306 +1,406 @@
 {
- "date": "2026-06-13",
+ "date": "2026-06-16",
  "bets": [
   {
-   "full_id": "O/1924696/0004155",
-   "id": "#4155",
+   "full_id": "O/1924696/0004171",
+   "id": "#4171",
    "kind": "9-leg SGP+",
-   "odds": 7680482,
-   "wager": 0.11,
-   "payout": 8448.64,
-   "placed": "6/13 3:59PM",
+   "odds": 131294863,
+   "wager": 0.09,
+   "payout": 118165.47,
+   "placed": "6/16 2:32PM",
    "status": "open",
    "legs": [
     {
-     "p": "Pete Alonso",
-     "prop": "HR",
-     "g": "SD@BAL"
+     "p": "Fernando Tatis Jr.",
+     "prop": "SB",
+     "g": "SD@STL"
     },
     {
-     "p": "Manny Machado",
-     "prop": "HR",
-     "g": "SD@BAL"
+     "p": "Samad Taylor",
+     "prop": "SB",
+     "g": "SD@STL"
     },
     {
-     "p": "Shea Langeliers",
-     "prop": "HR",
-     "g": "COL@ATH"
+     "p": "Henry Bolte",
+     "prop": "SB",
+     "g": "PIT@ATH"
     },
+    {
+     "p": "Jake Mangum",
+     "prop": "SB",
+     "g": "PIT@ATH"
+    },
+    {
+     "p": "Brice Turang",
+     "prop": "SB",
+     "g": "CLE@MIL"
+    },
+    {
+     "p": "Christian Yelich",
+     "prop": "SB",
+     "g": "CLE@MIL"
+    },
+    {
+     "p": "Jose Caballero",
+     "prop": "SB",
+     "g": "CWS@NYY"
+    },
+    {
+     "p": "A.J. Ewing",
+     "prop": "SB",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Jake McCarthy",
+     "prop": "SB",
+     "g": "COL@CHC"
+    }
+   ]
+  },
+  {
+   "full_id": "O/1924696/0004170",
+   "id": "#4170",
+   "kind": "8-leg SGP+",
+   "odds": 8940179,
+   "wager": 0.09,
+   "payout": 8046.25,
+   "placed": "6/16 2:19PM",
+   "status": "open",
+   "legs": [
     {
      "p": "Hunter Goodman",
      "prop": "HR",
-     "g": "COL@ATH"
+     "g": "COL@CHC"
     },
     {
-     "p": "Nick Kurtz",
+     "p": "Seiya Suzuki",
      "prop": "HR",
-     "g": "COL@ATH"
+     "g": "COL@CHC"
     },
     {
-     "p": "James Wood",
+     "p": "Juan Soto",
      "prop": "HR",
-     "g": "SEA@WSH"
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Jared Young",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "JJ Bleday",
+     "prop": "HR",
+     "g": "NYM@CIN"
     },
     {
      "p": "Matt Olson",
      "prop": "HR",
-     "g": "ATL@NYM"
+     "g": "SF@ATL"
     },
     {
-     "p": "Yordan Alvarez",
+     "p": "Drake Baldwin",
      "prop": "HR",
-     "g": "HOU@KC"
+     "g": "SF@ATL"
     },
     {
-     "p": "Pete Crow-Armstrong",
+     "p": "Jackson Chourio",
      "prop": "HR",
-     "g": "CHC@SF"
+     "g": "CLE@MIL"
     }
    ]
   },
   {
-   "full_id": "us-pa:01kv191vmxf42b7k9636m35k9c",
-   "id": "#35k9c",
-   "kind": "5-leg SGP+",
-   "odds": 113362,
-   "wager": 0.1,
-   "payout": 113.46,
-   "placed": "6/13 3:58PM",
+   "full_id": "us-pa:01kv8t9mt4fvma844y1b61jt6a",
+   "id": "#1jt6a",
+   "kind": "5-leg parlay",
+   "odds": 210978,
+   "wager": 0.09,
+   "payout": 189.97,
+   "placed": "6/16 2:15PM",
    "status": "open",
    "legs": [
-    {
-     "p": "Pete Alonso",
-     "prop": "HR",
-     "g": "SD@BAL"
-    },
-    {
-     "p": "Manny Machado",
-     "prop": "HR",
-     "g": "SD@BAL"
-    },
     {
      "p": "James Wood",
      "prop": "HR",
-     "g": "SEA@WSH"
+     "g": "KC@WSH"
     },
     {
-     "p": "Matt Olson",
+     "p": "Austin Riley",
      "prop": "HR",
-     "g": "ATL@NYM"
+     "g": "SF@ATL"
     },
     {
-     "p": "Yordan Alvarez",
+     "p": "Alec Burleson",
      "prop": "HR",
-     "g": "HOU@KC"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv18f0a3ee5spb3m6axnay6j",
-   "id": "#nay6j",
-   "kind": "3-leg SGP+",
-   "odds": 2698,
-   "wager": 0.09,
-   "payout": 2.52,
-   "placed": "6/13 3:48PM",
-   "status": "open",
-   "legs": [
+     "g": "SD@STL"
+    },
     {
      "p": "Nick Kurtz",
      "prop": "HR",
-     "g": "COL@ATH"
+     "g": "PIT@ATH"
     },
     {
-     "p": "Hunter Goodman",
+     "p": "Pete Alonso",
      "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Manny Machado",
-     "prop": "HR",
-     "g": "SD@BAL"
+     "g": "BAL@SEA"
     }
    ]
   },
   {
-   "full_id": "us-pa:01kv18db8tfddbg6af7qv5f520",
-   "id": "#5f520",
-   "kind": "2-leg SGP",
-   "odds": 1823,
+   "full_id": "us-pa:01kv8jb3m8e0dst5d9vmcf99aq",
+   "id": "#f99aq",
+   "kind": "3-leg SGP",
+   "odds": 22981,
    "wager": 0.09,
-   "payout": 1.73,
-   "placed": "6/13 3:47PM",
+   "payout": 20.77,
+   "placed": "6/16 11:55AM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Drake Baldwin",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Austin Riley",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Ozzie Albies",
+     "prop": "HR",
+     "g": "SF@ATL"
+    }
+   ]
+  },
+  {
+   "full_id": "O/1924696/0004169",
+   "id": "#4169",
+   "kind": "9-leg SGP+",
+   "odds": 495760542,
+   "wager": 0.09,
+   "payout": 446184.58,
+   "placed": "6/16 11:55AM",
    "status": "open",
    "legs": [
     {
      "p": "Kyle Stowers",
      "prop": "HR",
-     "g": "MIA@PIT"
+     "g": "MIA@PHI"
     },
     {
-     "p": "Brandon Lowe",
+     "p": "Brandon Marsh",
      "prop": "HR",
-     "g": "MIA@PIT"
+     "g": "MIA@PHI"
+    },
+    {
+     "p": "James Wood",
+     "prop": "HR",
+     "g": "KC@WSH"
+    },
+    {
+     "p": "Luis Garcia",
+     "prop": "HR",
+     "g": "KC@WSH"
+    },
+    {
+     "p": "JJ Bleday",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Juan Soto",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Ozzie Albies",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Austin Riley",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Willson Contreras",
+     "prop": "HR",
+     "g": "TOR@BOS"
     }
    ]
   },
   {
-   "full_id": "us-pa:01kv1db80zfjjb647zxhj9gq2t",
-   "id": "#9gq2t",
-   "kind": "3-leg SGP+",
-   "odds": 16873,
+   "full_id": "us-pa:01kv8he43cecws24rqvgdwmv3q",
+   "id": "#wmv3q",
+   "kind": "3-leg SGP",
+   "odds": 35673,
    "wager": 0.09,
-   "payout": 15.28,
-   "placed": "6/13 5:14PM",
+   "payout": 32.2,
+   "placed": "6/16 11:40AM",
    "status": "open",
    "legs": [
     {
-     "p": "Dillon Dingler",
+     "p": "Kyle Stowers",
      "prop": "HR",
-     "g": "DET@CLE"
+     "g": "MIA@PHI"
     },
     {
-     "p": "Gleyber Torres",
+     "p": "Brandon Marsh",
      "prop": "HR",
-     "g": "DET@CLE"
+     "g": "MIA@PHI"
     },
     {
-     "p": "Nick Kurtz",
+     "p": "Connor Norby",
      "prop": "HR",
-     "g": "COL@ATH"
+     "g": "MIA@PHI"
     }
    ]
   },
   {
-   "full_id": "us-pa:01kv1d6dcweb08y28mbq06vq8a",
-   "id": "#6vq8a",
-   "kind": "2-leg SGP",
-   "odds": 5940,
+   "full_id": "O/1924696/0004168",
+   "id": "#4168",
+   "kind": "10-leg SGP+",
+   "odds": 1072258066,
    "wager": 0.09,
-   "payout": 5.44,
-   "placed": "6/13 5:11PM",
+   "payout": 965032.35,
+   "placed": "6/15 11:38PM",
    "status": "open",
    "legs": [
     {
-     "p": "Dillon Dingler",
+     "p": "Austin Riley",
      "prop": "HR",
-     "g": "DET@CLE"
+     "g": "SF@ATL"
     },
     {
-     "p": "Gleyber Torres",
+     "p": "Ozzie Albies",
      "prop": "HR",
-     "g": "DET@CLE"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4qfq281rzfs4w3cnj9",
-   "id": "#3cnj9",
-   "kind": "Pitcher Special",
-   "odds": 10000,
-   "wager": 0.1,
-   "payout": 10.1,
-   "placed": "6/13 3:34PM",
-   "status": "open",
-   "legs": [
+     "g": "SF@ATL"
+    },
     {
-     "p": "Yoshinobu Yamamoto",
-     "prop": "NH7",
-     "g": "LAD@CWS"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv0z7hkce7ybxrtzebfsr5rv",
-   "id": "#sr5rv",
-   "kind": "2-leg SGP",
-   "odds": 3079,
-   "wager": 0.09,
-   "payout": 2.86,
-   "placed": "6/13 1:07PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Bo Bichette",
+     "p": "Shohei Ohtani",
      "prop": "HR",
-     "g": "ATL@NYM"
+     "g": "TB@LAD"
     },
     {
-     "p": "Marcus Semien",
+     "p": "Junior Caminero",
      "prop": "HR",
-     "g": "ATL@NYM"
-    }
-   ]
-  },
-  {
-   "full_id": "O/1924696/0004156",
-   "id": "#4156",
-   "kind": "6-leg SGP+",
-   "odds": 144555,
-   "wager": 0.23,
-   "payout": 332.71,
-   "placed": "6/13 5:46PM",
-   "status": "open",
-   "legs": [
+     "g": "TB@LAD"
+    },
     {
-     "p": "Zack Gelof",
+     "p": "Brandon Marsh",
      "prop": "HR",
-     "g": "COL@ATH"
+     "g": "MIA@PHI"
     },
     {
-     "p": "Hunter Goodman",
+     "p": "James Wood",
      "prop": "HR",
-     "g": "COL@ATH"
+     "g": "KC@WSH"
     },
     {
-     "p": "Nick Kurtz",
+     "p": "Jazz Chisholm",
      "prop": "HR",
-     "g": "COL@ATH"
+     "g": "CWS@NYY"
     },
     {
-     "p": "Shea Langeliers",
+     "p": "Juan Soto",
      "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Yordan Alvarez",
-     "prop": "HR",
-     "g": "HOU@KC"
-    },
-    {
-     "p": "Pete Crow-Armstrong",
-     "prop": "HR",
-     "g": "CHC@SF"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1f3kb7f4trggsz755y2kzm",
-   "id": "#y2kzm",
-   "kind": "4-leg SGP+",
-   "odds": 22989,
-   "wager": 0.09,
-   "payout": 20.78,
-   "placed": "6/13 5:44PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Yordan Alvarez",
-     "prop": "HR",
-     "g": "HOU@KC"
-    },
-    {
-     "p": "Carter Jensen",
-     "prop": "HR",
-     "g": "HOU@KC"
-    },
-    {
-     "p": "Zack Gelof",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Mike Trout",
-     "prop": "HR",
-     "g": "TB@LAA"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1drwxaefstpxmgncfyqtbt",
-   "id": "#yqtbt",
-   "kind": "6-leg SGP",
-   "odds": 85649,
-   "wager": 0.12,
-   "payout": 102.9,
-   "placed": "6/13 5:21PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Henry Bolte",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Edouard Julien",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Jonah Heim",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Willi Castro",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Nick Kurtz",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Shea Langeliers",
-     "prop": "HR",
-     "g": "COL@ATH"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1dqet1e7pvmxxfh0zt1z2d",
-   "id": "#t1z2d",
-   "kind": "4-leg SGP",
-   "odds": 66655,
-   "wager": 0.14,
-   "payout": 93.46,
-   "placed": "6/13 5:20PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Jacob Wilson",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Henry Bolte",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Edouard Julien",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Chad Stevens",
-     "prop": "HR",
-     "g": "COL@ATH"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1dj8nae1mapxrhfmhe80mh",
-   "id": "#e80mh",
-   "kind": "5-leg SGP",
-   "odds": 66651,
-   "wager": 0.22,
-   "payout": 146.86,
-   "placed": "6/13 5:17PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Colby Thomas",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Max P. Muncy",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Troy Johnston",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Edouard Julien",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Cole Carrigg",
-     "prop": "HR",
-     "g": "COL@ATH"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1ddazneax918jnp8v1ce0k",
-   "id": "#1ce0k",
-   "kind": "4-leg SGP",
-   "odds": 59998,
-   "wager": 0.11,
-   "payout": 66.11,
-   "placed": "6/13 5:15PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Hunter Goodman",
-     "prop": "HR2",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Nick Kurtz",
-     "prop": "HR2",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Shea Langeliers",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Tyler Soderstrom",
-     "prop": "HR",
-     "g": "COL@ATH"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1dckgcfykap28m27b1de5k",
-   "id": "#1de5k",
-   "kind": "6-leg SGP",
-   "odds": 74964,
-   "wager": 0.09,
-   "payout": 67.56,
-   "placed": "6/13 5:14PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Shea Langeliers",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Hunter Goodman",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Jonah Heim",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Henry Bolte",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Nick Kurtz",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Zack Gelof",
-     "prop": "HR",
-     "g": "COL@ATH"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4qfknbg9gfy1x0rrpm",
-   "id": "#0rrpm",
-   "kind": "Pitcher Special",
-   "odds": 1600,
-   "wager": 0.1,
-   "payout": 1.7,
-   "placed": "6/13 3:34PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Aaron Nola",
-     "prop": "UP9",
-     "g": "PHI@MIL"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4qfa5t0489zfxfq4q6",
-   "id": "#fq4q6",
-   "kind": "Pitcher Special",
-   "odds": 1700,
-   "wager": 0.1,
-   "payout": 1.8,
-   "placed": "6/13 3:34PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Aaron Nola",
-     "prop": "K1",
-     "g": "PHI@MIL"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4qedqs1gqf5dbbyvka",
-   "id": "#byvka",
-   "kind": "Pitcher Special",
-   "odds": 4000,
-   "wager": 0.1,
-   "payout": 4.1,
-   "placed": "6/13 3:34PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Aaron Nola",
-     "prop": "NH5",
-     "g": "PHI@MIL"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv0z3g5we8bb1wsmpt4p0fa1",
-   "id": "#p0fa1",
-   "kind": "2-leg SGP",
-   "odds": 1432,
-   "wager": 0.09,
-   "payout": 1.38,
-   "placed": "6/13 1:05PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Willi Castro",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Edouard Julien",
-     "prop": "HR",
-     "g": "COL@ATH"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1ke79zf7fvq5g8p7jdermr",
-   "id": "#dermr",
-   "kind": "5-leg SGP",
-   "odds": 4431,
-   "wager": 0.09,
-   "payout": 4.08,
-   "placed": "6/13 7:00PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Brice Turang",
-     "prop": "HIT",
-     "g": "PHI@MIL"
-    },
-    {
-     "p": "William Contreras",
-     "prop": "HIT",
-     "g": "PHI@MIL"
-    },
-    {
-     "p": "Christian Yelich",
-     "prop": "HIT",
-     "g": "PHI@MIL"
-    },
-    {
-     "p": "Trea Turner",
-     "prop": "SB",
-     "g": "PHI@MIL"
-    },
-    {
-     "p": "David Hamilton",
-     "prop": "SB",
-     "g": "PHI@MIL"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1jtn0aec6v9ej1zstykyv9",
-   "id": "#ykyv9",
-   "kind": "5-leg SGP",
-   "odds": 159,
-   "wager": 0.09,
-   "payout": 0.23,
-   "placed": "6/13 6:49PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Shea Langeliers",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Jacob Wilson",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Nick Kurtz",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Tyler Soderstrom",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Zack Gelof",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1jstapft9bc9qcwc5p8bpg",
-   "id": "#p8bpg",
-   "kind": "4-leg SGP",
-   "odds": 21458,
-   "wager": 0.09,
-   "payout": 19.4,
-   "placed": "6/13 6:49PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Willi Castro",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "TJ Rumfield",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Troy Johnston",
-     "prop": "HR",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Cole Carrigg",
-     "prop": "HR",
-     "g": "COL@ATH"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1jr3xpek5bc6zgq8ccw983",
-   "id": "#cw983",
-   "kind": "13-leg SGP",
-   "odds": 1395,
-   "wager": 0.09,
-   "payout": 1.35,
-   "placed": "6/13 6:48PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Shea Langeliers",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Jacob Wilson",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Nick Kurtz",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Tyler Soderstrom",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Hunter Goodman",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Willi Castro",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Henry Bolte",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Edouard Julien",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Zack Gelof",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Cole Carrigg",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Troy Johnston",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Jonah Heim",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "TJ Rumfield",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1jkthgeng853w1w5gwdd79",
-   "id": "#wdd79",
-   "kind": "12-leg SGP+",
-   "odds": 2509,
-   "wager": 0.09,
-   "payout": 2.35,
-   "placed": "6/13 6:46PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Pete Crow-Armstrong",
-     "prop": "HIT",
-     "g": "CHC@SF"
-    },
-    {
-     "p": "Michael Busch",
-     "prop": "HIT",
-     "g": "CHC@SF"
-    },
-    {
-     "p": "Ian Happ",
-     "prop": "HIT",
-     "g": "CHC@SF"
-    },
-    {
-     "p": "Shea Langeliers",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Willi Castro",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Zack Gelof",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Nick Kurtz",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Hunter Goodman",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Edouard Julien",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Carter Jensen",
-     "prop": "HIT",
-     "g": "HOU@KC"
-    },
-    {
-     "p": "Yordan Alvarez",
-     "prop": "HIT",
-     "g": "HOU@KC"
-    },
-    {
-     "p": "Mike Trout",
-     "prop": "HIT",
-     "g": "TB@LAA"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4qf3grxr757gmygf8c",
-   "id": "#ygf8c",
-   "kind": "Pitcher Special",
-   "odds": 3000,
-   "wager": 0.1,
-   "payout": 3.1,
-   "placed": "6/13 3:34PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Yoshinobu Yamamoto",
-     "prop": "NH5",
-     "g": "LAD@CWS"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv18cq42fe3s1dedra6nmswa",
-   "id": "#nmswa",
-   "kind": "Single HR",
-   "odds": 900,
-   "wager": 0.09,
-   "payout": 0.9,
-   "placed": "6/13 3:47PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Ryan McMahon",
-     "prop": "HR",
-     "g": "NYY@TOR"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv12sv5yfe9t9yfgab9fg144",
-   "id": "#fg144",
-   "kind": "7-leg SGP",
-   "odds": 6335,
-   "wager": 0.09,
-   "payout": 5.79,
-   "placed": "6/13 2:09PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Alec Burleson",
-     "prop": "HR",
-     "g": "STL@MIN"
-    },
-    {
-     "p": "Kody Clemens",
-     "prop": "HIT",
-     "g": "STL@MIN"
-    },
-    {
-     "p": "Byron Buxton",
-     "prop": "HIT",
-     "g": "STL@MIN"
-    },
-    {
-     "p": "Jordan Walker",
-     "prop": "HIT",
-     "g": "STL@MIN"
-    },
-    {
-     "p": "Brooks Lee",
-     "prop": "HIT",
-     "g": "STL@MIN"
-    },
-    {
-     "p": "Royce Lewis",
-     "prop": "HIT",
-     "g": "STL@MIN"
-    },
-    {
-     "p": "Austin Martin",
-     "prop": "SB",
-     "g": "STL@MIN"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv12ywrgfp5a1y2n9mwqxvbd",
-   "id": "#qxvbd",
-   "kind": "7-leg SGP",
-   "odds": 8246,
-   "wager": 0.09,
-   "payout": 7.51,
-   "placed": "6/13 2:12PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Kody Clemens",
-     "prop": "HIT",
-     "g": "STL@MIN"
-    },
-    {
-     "p": "Jordan Walker",
-     "prop": "HIT",
-     "g": "STL@MIN"
-    },
-    {
-     "p": "Brooks Lee",
-     "prop": "HIT",
-     "g": "STL@MIN"
+     "g": "NYM@CIN"
     },
     {
      "p": "Alec Burleson",
      "prop": "HR",
-     "g": "STL@MIN"
+     "g": "SD@STL"
     },
     {
-     "p": "Byron Buxton",
+     "p": "Colt Keith",
      "prop": "HR",
-     "g": "STL@MIN"
-    },
-    {
-     "p": "Luke Keaschall",
-     "prop": "HIT",
-     "g": "STL@MIN"
-    },
-    {
-     "p": "Minnesota Twins",
-     "prop": "ML",
-     "g": "STL@MIN"
+     "g": "DET@HOU"
     }
    ]
   },
   {
-   "full_id": "us-pa:01kv17mx4qeaxb95z9gdm9e1z9",
-   "id": "#9e1z9",
-   "kind": "Pitcher Special",
-   "odds": 1000,
-   "wager": 0.1,
-   "payout": 1.1,
-   "placed": "6/13 3:34PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Jacob deGrom",
-     "prop": "UP9",
-     "g": "TEX@BOS"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4qeshtg59x7k2gzdxv",
-   "id": "#gzdxv",
-   "kind": "Pitcher Special",
-   "odds": 3500,
-   "wager": 0.1,
-   "payout": 3.6,
-   "placed": "6/13 3:34PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Ranger Suarez",
-     "prop": "NH5",
-     "g": "TEX@BOS"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4qf62rb0rezb71gvhs",
-   "id": "#1gvhs",
-   "kind": "Pitcher Special",
-   "odds": 1500,
-   "wager": 0.2,
-   "payout": 3.2,
-   "placed": "6/13 3:34PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Yoshinobu Yamamoto",
-     "prop": "K1",
-     "g": "LAD@CWS"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4qe5brzcmbz8qnapbb",
-   "id": "#napbb",
-   "kind": "Pitcher Special",
-   "odds": 650,
-   "wager": 0.15,
-   "payout": 1.12,
-   "placed": "6/13 3:34PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Tarik Skubal",
-     "prop": "NH3",
-     "g": "DET@CLE"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4qeqbvztvwcept2a60",
-   "id": "#t2a60",
-   "kind": "Pitcher Special",
-   "odds": 1600,
-   "wager": 0.1,
-   "payout": 1.7,
-   "placed": "6/13 3:34PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Tarik Skubal",
-     "prop": "K1",
-     "g": "DET@CLE"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4pfhmb0qa2rsrmme1y",
-   "id": "#mme1y",
-   "kind": "Pitcher Special",
-   "odds": 1100,
-   "wager": 0.1,
-   "payout": 1.2,
-   "placed": "6/13 3:34PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Jacob deGrom",
-     "prop": "K1",
-     "g": "TEX@BOS"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4qecx85pxsm4va8bp9",
-   "id": "#a8bp9",
-   "kind": "Pitcher Special",
-   "odds": 3500,
-   "wager": 0.1,
-   "payout": 3.6,
-   "placed": "6/13 3:34PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Jacob deGrom",
-     "prop": "NH5",
-     "g": "TEX@BOS"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4qes9rax0hvjyr431q",
-   "id": "#r431q",
-   "kind": "Pitcher Special",
-   "odds": 12500,
-   "wager": 0.1,
-   "payout": 12.6,
-   "placed": "6/13 3:34PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Jacob deGrom",
-     "prop": "NH7",
-     "g": "TEX@BOS"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv17mx4qfqwsdhye7z8788wy",
-   "id": "#788wy",
-   "kind": "Pitcher Special",
-   "odds": 2500,
-   "wager": 0.1,
-   "payout": 2.6,
-   "placed": "6/13 3:34PM",
-   "status": "settled",
-   "legs": [
-    {
-     "p": "Ranger Suarez",
-     "prop": "K1",
-     "g": "TEX@BOS"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1xrnetec28wrqcd78bszfz",
-   "id": "#bszfz",
-   "kind": "Pitcher Special",
-   "odds": 550,
-   "wager": 0.22,
-   "payout": 1.43,
-   "placed": "6/13 10:00PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Griffin Jax",
-     "prop": "ALTK",
-     "g": "TB@LAA",
-     "k": 8
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1xpecte6bv4jn55zt2wptz",
-   "id": "#2wptz",
-   "kind": "16-leg SGP",
-   "odds": 17158,
+   "full_id": "O/1924696/0004167",
+   "id": "#4167",
+   "kind": "7-leg SGP+",
+   "odds": 19246595,
    "wager": 0.09,
-   "payout": 15.54,
-   "placed": "6/13 9:59PM",
+   "payout": 17322.03,
+   "placed": "6/15 11:35PM",
    "status": "open",
    "legs": [
     {
-     "p": "Jo Adell",
-     "prop": "HIT",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Zach Neto",
-     "prop": "HIT",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Mike Trout",
-     "prop": "HIT",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Nolan Schanuel",
-     "prop": "HIT",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Wade Meckler",
-     "prop": "HIT",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Oswald Peraza",
-     "prop": "HIT",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Logan O'Hoppe",
-     "prop": "HIT",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Denzer Guzman",
-     "prop": "HIT",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Mike Trout",
-     "prop": "RUN",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Zach Neto",
-     "prop": "RUN",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Jo Adell",
-     "prop": "RUN",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Logan O'Hoppe",
-     "prop": "RUN",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Wade Meckler",
-     "prop": "RUN",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Nolan Schanuel",
-     "prop": "RUN",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Denzer Guzman",
-     "prop": "RUN",
-     "g": "TB@LAA"
-    },
-    {
-     "p": "Oswald Peraza",
-     "prop": "RUN",
-     "g": "TB@LAA"
-    }
-   ]
-  },
-  {
-   "full_id": "us-pa:01kv1wmkphe2q8fapz9b3xa7bt",
-   "id": "#xa7bt",
-   "kind": "6-leg SGP",
-   "odds": 15816,
-   "wager": 0.09,
-   "payout": 14.33,
-   "placed": "6/13 9:41PM",
-   "status": "open",
-   "legs": [
-    {
-     "p": "Shea Langeliers",
+     "p": "Juan Soto",
      "prop": "HR",
-     "g": "COL@ATH"
+     "g": "NYM@CIN"
     },
     {
-     "p": "Willi Castro",
+     "p": "Eugenio Suarez",
      "prop": "HR",
-     "g": "COL@ATH"
+     "g": "NYM@CIN"
     },
     {
-     "p": "Troy Johnston",
-     "prop": "HIT2",
-     "g": "COL@ATH"
+     "p": "Austin Riley",
+     "prop": "HR",
+     "g": "SF@ATL"
     },
     {
-     "p": "TJ Rumfield",
-     "prop": "HIT2",
-     "g": "COL@ATH"
+     "p": "Ozzie Albies",
+     "prop": "HR",
+     "g": "SF@ATL"
     },
     {
-     "p": "Nick Kurtz",
-     "prop": "HIT",
-     "g": "COL@ATH"
+     "p": "Brandon Marsh",
+     "prop": "HR",
+     "g": "MIA@PHI"
     },
     {
-     "p": "Zack Gelof",
-     "prop": "HIT2",
-     "g": "COL@ATH"
+     "p": "Alec Burleson",
+     "prop": "HR",
+     "g": "SD@STL"
+    },
+    {
+     "p": "Colt Keith",
+     "prop": "HR",
+     "g": "DET@HOU"
     }
    ]
   },
   {
-   "full_id": "us-pa:01kv1w881yft9ajpbv8wkbgp40",
-   "id": "#bgp40",
-   "kind": "8-leg SGP",
-   "odds": 4742,
+   "full_id": "us-pa:01kv77vfqxfets6eebyrn6t2yk",
+   "id": "#6t2yk",
+   "kind": "5-leg parlay",
+   "odds": 811467,
    "wager": 0.09,
-   "payout": 4.36,
-   "placed": "6/13 9:34PM",
+   "payout": 730.41,
+   "placed": "6/15 11:33PM",
    "status": "open",
    "legs": [
     {
-     "p": "Kyle Karros",
-     "prop": "HIT",
-     "g": "COL@ATH"
+     "p": "Brandon Marsh",
+     "prop": "HR",
+     "g": "MIA@PHI"
     },
     {
-     "p": "Brett Sullivan",
-     "prop": "HIT",
-     "g": "COL@ATH"
+     "p": "Juan Soto",
+     "prop": "HR",
+     "g": "NYM@CIN"
     },
     {
-     "p": "Sterlin Thompson",
-     "prop": "HIT",
-     "g": "COL@ATH"
+     "p": "Austin Riley",
+     "prop": "HR",
+     "g": "SF@ATL"
     },
     {
-     "p": "Alika Williams",
-     "prop": "HIT",
-     "g": "COL@ATH"
+     "p": "Alec Burleson",
+     "prop": "HR",
+     "g": "SD@STL"
     },
     {
-     "p": "Max P. Muncy",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Zack Gelof",
-     "prop": "HIT",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Willi Castro",
-     "prop": "HIT2",
-     "g": "COL@ATH"
-    },
-    {
-     "p": "Willi Castro",
-     "prop": "SB",
-     "g": "COL@ATH"
+     "p": "Colt Keith",
+     "prop": "HR",
+     "g": "DET@HOU"
     }
    ]
   }
