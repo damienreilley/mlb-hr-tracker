@@ -782,6 +782,465 @@
      "g": "SD@STL"
     }
    ]
+  },
+  {
+   "full_id": "us-pa:01kv969bp4fjdb95861mztrdkg",
+   "id": "#trdkg",
+   "kind": "Pitcher Special",
+   "odds": 2500,
+   "wager": 0.1,
+   "payout": 2.6,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Framber Valdez",
+     "prop": "K1",
+     "g": "DET@HOU"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv969bp4ew4tbmtx9v0k9sn9",
+   "id": "#k9sn9",
+   "kind": "Pitcher Special",
+   "odds": 3500,
+   "wager": 0.1,
+   "payout": 3.6,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Framber Valdez",
+     "prop": "NH5",
+     "g": "DET@HOU"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5fzqr3q8h2h268jj2",
+   "id": "#68jj2",
+   "kind": "Pitcher Special",
+   "odds": 3500,
+   "wager": 0.1,
+   "payout": 3.6,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Justin Wrobleski",
+     "prop": "NH5",
+     "g": "TB@LAD"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5fqxt479fg9bfsb9j",
+   "id": "#fsb9j",
+   "kind": "Pitcher Special",
+   "odds": 1600,
+   "wager": 0.1,
+   "payout": 1.7,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Reid Detmers",
+     "prop": "K1",
+     "g": "LAA@ARI"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5fqgrpq669gby2d3s",
+   "id": "#y2d3s",
+   "kind": "Pitcher Special",
+   "odds": 2000,
+   "wager": 0.1,
+   "payout": 2.1,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Dylan Cease",
+     "prop": "NH5",
+     "g": "TOR@BOS"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5fmybssr2btkedkpr",
+   "id": "#edkpr",
+   "kind": "Pitcher Special",
+   "odds": 2500,
+   "wager": 0.1,
+   "payout": 2.6,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Framber Valdez",
+     "prop": "K1",
+     "g": "DET@HOU"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5fjb9e4g49079r8wk",
+   "id": "#9r8wk",
+   "kind": "Pitcher Special",
+   "odds": 1700,
+   "wager": 0.1,
+   "payout": 1.8,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Davis Martin",
+     "prop": "K1",
+     "g": "CWS@NYY"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5fhhs88f889785hfd",
+   "id": "#85hfd",
+   "kind": "Pitcher Special",
+   "odds": 2000,
+   "wager": 0.1,
+   "payout": 2.1,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Logan Gilbert",
+     "prop": "NH5",
+     "g": "BAL@SEA"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5fg0rryp93fncfctc",
+   "id": "#cfctc",
+   "kind": "Pitcher Special",
+   "odds": 2700,
+   "wager": 0.1,
+   "payout": 2.8,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Payton Tolle",
+     "prop": "NH5",
+     "g": "TOR@BOS"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5fg0abm5we3xs1z9y",
+   "id": "#s1z9y",
+   "kind": "Pitcher Special",
+   "odds": 3500,
+   "wager": 0.1,
+   "payout": 3.6,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Framber Valdez",
+     "prop": "NH5",
+     "g": "DET@HOU"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5fegrks0xwtmqb2mb",
+   "id": "#qb2mb",
+   "kind": "Pitcher Special",
+   "odds": 1800,
+   "wager": 0.1,
+   "payout": 1.9,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Hunter Brown",
+     "prop": "NH5",
+     "g": "DET@HOU"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5fc18vfr4r26m70wx",
+   "id": "#m70wx",
+   "kind": "Pitcher Special",
+   "odds": 700,
+   "wager": 0.1,
+   "payout": 0.8,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Dylan Cease",
+     "prop": "K1",
+     "g": "TOR@BOS"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5fajsz4g814ccacre",
+   "id": "#cacre",
+   "kind": "Pitcher Special",
+   "odds": 2700,
+   "wager": 0.1,
+   "payout": 2.8,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Drew Rasmussen",
+     "prop": "NH5",
+     "g": "TB@LAD"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5f90tf9pm8gp0ned9",
+   "id": "#0ned9",
+   "kind": "Pitcher Special",
+   "odds": 3000,
+   "wager": 0.1,
+   "payout": 3.1,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Michael Wacha",
+     "prop": "K1",
+     "g": "KC@WSH"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5f6t9b5fqwz0mvjmm",
+   "id": "#mvjmm",
+   "kind": "Pitcher Special",
+   "odds": 2200,
+   "wager": 0.1,
+   "payout": 2.3,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Gerrit Cole",
+     "prop": "NH5",
+     "g": "CWS@NYY"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5f3qbmr9y599mzje9",
+   "id": "#mzje9",
+   "kind": "Pitcher Special",
+   "odds": 1600,
+   "wager": 0.1,
+   "payout": 1.7,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Drew Rasmussen",
+     "prop": "K1",
+     "g": "TB@LAD"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5f22sd3c5v875j7tr",
+   "id": "#5j7tr",
+   "kind": "Pitcher Special",
+   "odds": 850,
+   "wager": 0.1,
+   "payout": 0.95,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Hunter Brown",
+     "prop": "UP9",
+     "g": "DET@HOU"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5f1j85d8sczmbjhxx",
+   "id": "#bjhxx",
+   "kind": "Pitcher Special",
+   "odds": 1900,
+   "wager": 0.1,
+   "payout": 2.0,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Merrill Kelly",
+     "prop": "K1",
+     "g": "LAA@ARI"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5f02bbecs1yqqcz1k",
+   "id": "#qcz1k",
+   "kind": "Pitcher Special",
+   "odds": 2500,
+   "wager": 0.1,
+   "payout": 2.6,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Foster Griffin",
+     "prop": "K1",
+     "g": "KC@WSH"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5erwvz7wsj5f3dy20",
+   "id": "#3dy20",
+   "kind": "Pitcher Special",
+   "odds": 5000,
+   "wager": 0.1,
+   "payout": 5.1,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Foster Griffin",
+     "prop": "NH5",
+     "g": "KC@WSH"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5enrbxx5enr3npmnv",
+   "id": "#npmnv",
+   "kind": "Pitcher Special",
+   "odds": 2500,
+   "wager": 0.1,
+   "payout": 2.6,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Payton Tolle",
+     "prop": "K1",
+     "g": "TOR@BOS"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5efg9amea4s6n40r2",
+   "id": "#n40r2",
+   "kind": "Pitcher Special",
+   "odds": 3300,
+   "wager": 0.1,
+   "payout": 3.4,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Merrill Kelly",
+     "prop": "NH5",
+     "g": "LAA@ARI"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5edernf2qc7artej6",
+   "id": "#rtej6",
+   "kind": "Pitcher Special",
+   "odds": 3000,
+   "wager": 0.1,
+   "payout": 3.1,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Davis Martin",
+     "prop": "NH5",
+     "g": "CWS@NYY"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5ed5rjsh6zg6bftpk",
+   "id": "#bftpk",
+   "kind": "Pitcher Special",
+   "odds": 1900,
+   "wager": 0.1,
+   "payout": 2.0,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Gerrit Cole",
+     "prop": "K1",
+     "g": "CWS@NYY"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5eaysm5y0cf9sapg3",
+   "id": "#sapg3",
+   "kind": "Pitcher Special",
+   "odds": 10000,
+   "wager": 0.1,
+   "payout": 10.1,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Gerrit Cole",
+     "prop": "NH7",
+     "g": "CWS@NYY"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5e7k81c0gksfyyxdj",
+   "id": "#yyxdj",
+   "kind": "Pitcher Special",
+   "odds": 2700,
+   "wager": 0.1,
+   "payout": 2.8,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Justin Wrobleski",
+     "prop": "K1",
+     "g": "TB@LAD"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv968kp5e2a8evwgd64m6493",
+   "id": "#m6493",
+   "kind": "Pitcher Special",
+   "odds": 4000,
+   "wager": 0.1,
+   "payout": 4.1,
+   "placed": "6/16 5:44PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Reid Detmers",
+     "prop": "NH5",
+     "g": "LAA@ARI"
+    }
+   ]
   }
  ]
 }
