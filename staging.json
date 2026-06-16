@@ -403,6 +403,385 @@
      "g": "DET@HOU"
     }
    ]
+  },
+  {
+   "full_id": "O/1924696/0004174",
+   "id": "#4174",
+   "kind": "7-leg SGP+",
+   "odds": 2078426,
+   "wager": 0.1,
+   "payout": 2078.53,
+   "placed": "6/16 5:15PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Juan Soto",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Jared Young",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Matt Olson",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Jackson Chourio",
+     "prop": "HR",
+     "g": "CLE@MIL"
+    },
+    {
+     "p": "Seiya Suzuki",
+     "prop": "HR",
+     "g": "COL@CHC"
+    },
+    {
+     "p": "Yordan Alvarez",
+     "prop": "HR",
+     "g": "DET@HOU"
+    },
+    {
+     "p": "Brandon Lowe",
+     "prop": "HR",
+     "g": "PIT@ATH"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv94ngwferfrmrjt1qsksanp",
+   "id": "#ksanp",
+   "kind": "6-leg SGP+",
+   "odds": 541643,
+   "wager": 0.1,
+   "payout": 541.74,
+   "placed": "6/16 5:16PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Juan Soto",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Jared Young",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Drake Baldwin",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Jackson Chourio",
+     "prop": "HR",
+     "g": "CLE@MIL"
+    },
+    {
+     "p": "Seiya Suzuki",
+     "prop": "HR",
+     "g": "COL@CHC"
+    },
+    {
+     "p": "Yordan Alvarez",
+     "prop": "HR",
+     "g": "DET@HOU"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv94km87eyjb13ccgpzaka0x",
+   "id": "#aka0x",
+   "kind": "6-leg SGP+",
+   "odds": 442139,
+   "wager": 0.1,
+   "payout": 442.24,
+   "placed": "6/16 5:15PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Juan Soto",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Jared Young",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Jackson Chourio",
+     "prop": "HR",
+     "g": "CLE@MIL"
+    },
+    {
+     "p": "Seiya Suzuki",
+     "prop": "HR",
+     "g": "COL@CHC"
+    },
+    {
+     "p": "Yordan Alvarez",
+     "prop": "HR",
+     "g": "DET@HOU"
+    },
+    {
+     "p": "Brandon Lowe",
+     "prop": "HR",
+     "g": "PIT@ATH"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv94pb40ff4s4wt2sw7qyk1t",
+   "id": "#qyk1t",
+   "kind": "5-leg parlay",
+   "odds": 209146,
+   "wager": 0.09,
+   "payout": 188.32,
+   "placed": "6/16 5:16PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Juan Soto",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Austin Riley",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Jackson Chourio",
+     "prop": "HR",
+     "g": "CLE@MIL"
+    },
+    {
+     "p": "Seiya Suzuki",
+     "prop": "HR",
+     "g": "COL@CHC"
+    },
+    {
+     "p": "Yordan Alvarez",
+     "prop": "HR",
+     "g": "DET@HOU"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv94p0y5ebwrvcwpznxjcz6w",
+   "id": "#jcz6w",
+   "kind": "5-leg parlay",
+   "odds": 165423,
+   "wager": 0.1,
+   "payout": 165.52,
+   "placed": "6/16 5:16PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Juan Soto",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Michael Harris II",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Jackson Chourio",
+     "prop": "HR",
+     "g": "CLE@MIL"
+    },
+    {
+     "p": "Seiya Suzuki",
+     "prop": "HR",
+     "g": "COL@CHC"
+    },
+    {
+     "p": "Yordan Alvarez",
+     "prop": "HR",
+     "g": "DET@HOU"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv94se9ffhdafaa0qzw0bqs5",
+   "id": "#0bqs5",
+   "kind": "5-leg SGP",
+   "odds": 79471,
+   "wager": 0.09,
+   "payout": 71.61,
+   "placed": "6/16 5:18PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Drake Baldwin",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Michael Harris II",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Matt Olson",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Ozzie Albies",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Austin Riley",
+     "prop": "HR",
+     "g": "SF@ATL"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv95ygt7e2tt2a1gqfd38p0r",
+   "id": "#38p0r",
+   "kind": "25-leg SGP+",
+   "odds": 482981,
+   "wager": 0.11,
+   "payout": 531.62,
+   "placed": "6/16 5:38PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Austin Riley",
+     "prop": "HIT",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Ozzie Albies",
+     "prop": "HIT",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Michael Harris II",
+     "prop": "HIT",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Drake Baldwin",
+     "prop": "HIT",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Matt Olson",
+     "prop": "HIT",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "James Wood",
+     "prop": "HIT",
+     "g": "KC@WSH"
+    },
+    {
+     "p": "Luis Garcia",
+     "prop": "HIT",
+     "g": "KC@WSH"
+    },
+    {
+     "p": "Juan Soto",
+     "prop": "HIT",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Jared Young",
+     "prop": "HIT",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "JJ Bleday",
+     "prop": "HIT",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Eugenio Suarez",
+     "prop": "HIT",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Nick Kurtz",
+     "prop": "HIT",
+     "g": "PIT@ATH"
+    },
+    {
+     "p": "Brandon Lowe",
+     "prop": "HIT",
+     "g": "PIT@ATH"
+    },
+    {
+     "p": "Junior Caminero",
+     "prop": "HIT",
+     "g": "TB@LAD"
+    },
+    {
+     "p": "Shohei Ohtani",
+     "prop": "HIT",
+     "g": "TB@LAD"
+    },
+    {
+     "p": "Colt Keith",
+     "prop": "HIT",
+     "g": "DET@HOU"
+    },
+    {
+     "p": "Yordan Alvarez",
+     "prop": "HIT",
+     "g": "DET@HOU"
+    },
+    {
+     "p": "Hunter Goodman",
+     "prop": "HIT",
+     "g": "COL@CHC"
+    },
+    {
+     "p": "Michael Busch",
+     "prop": "HIT",
+     "g": "COL@CHC"
+    },
+    {
+     "p": "Seiya Suzuki",
+     "prop": "HIT",
+     "g": "COL@CHC"
+    },
+    {
+     "p": "Brandon Marsh",
+     "prop": "HIT",
+     "g": "MIA@PHI"
+    },
+    {
+     "p": "Willson Contreras",
+     "prop": "HIT",
+     "g": "TOR@BOS"
+    },
+    {
+     "p": "Jazz Chisholm",
+     "prop": "HIT",
+     "g": "CWS@NYY"
+    },
+    {
+     "p": "Jackson Chourio",
+     "prop": "HIT",
+     "g": "CLE@MIL"
+    },
+    {
+     "p": "Alec Burleson",
+     "prop": "HIT",
+     "g": "SD@STL"
+    }
+   ]
   }
  ]
 }
