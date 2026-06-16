@@ -86,3 +86,69 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
 - SECURITY NOTE: do NOT put a GitHub token inside a web artifact (client-side JS). Token-bearing writes
   belong in Desktop Commander, an on-device iOS Shortcut, or a server-side function.
 - FOUNDATION (#7 GitHub Actions cloud build) is required by ALL remaining paths and depends on no connector.
+
+
+## LOCKED DECISIONS / CONVENTIONS (read before building)
+
+### Bet ID convention (locked 2026-06-14)
+- id = "#" + the LAST 6 characters of the FanDuel BET ID, lowercase.
+  Example: us-pa:01kv34p6b8fvm8md8sy7wbvhqq  ->  #wbvhqq
+- Legacy O/####### bets keep their existing "#<sequence>" form (e.g. #4155); do not rewrite them.
+- Why: the tail is a real substring of the FanDuel BET ID, so Damien can copy the id from the tracker and Ctrl+F it inside FanDuel to find the bet. It is deterministic, so re-reading the same bet yields the same id, which lets the dedup guard block double-posts.
+
+### Void-leg protocol (locked 2026-06-14)
+- FanDuel owns all odds/payout computation. We do NOT recompute odds on our side.
+- When a leg voids: Damien supplies FanDuel's UPDATED bet (manual is fine for now). The build/helper then:
+  1) sets the leg's void flag (engine drops it from the win condition; surviving legs decide win/loss), and
+  2) overwrites the stored bet-level odds + payout with FanDuel's recalculated numbers.
+- Why not compute per-leg math: SGP/SGP+ legs are correlated and FanDuel prices them proprietarily, so the adjusted price cannot be reconstructed from per-leg odds. Re-reading FanDuel is the only reliable source (straight parlays and SGPs alike).
+
+### Per-leg odds (decided 2026-06-14)
+- NOT stored for now; we keep only bet-level odds/payout as FanDuel gives them.
+- Capturing per-leg odds for analysis is a wanted future feature -> see FEATURE LOG #16.
+
+
+## FEATURE LOG (enhancement requests; continues the backlog numbering)
+
+## 12. Sort bets by number of legs alive
+- Goal: on the Bets tab, add a sort option that ranks bets by how many legs are still alive - surface the bets closest to cashing at the top.
+- Definition: "alive" = a leg whose legMet() is neither 'miss' nor 'void' (hit + pending). One missed leg kills the bet, so dead bets sink.
+- Open decisions for the build chat:
+  - ranking basis: raw alive-leg count vs alive ratio (alive / total) vs "closest to cashing" (hit / total, pending-aware). A 2-of-2-alive small parlay vs a 6-of-8-alive big one rank differently under each.
+  - new sort toggle alongside the current order, or replaces it.
+- Already available: betStatus(b) returns {st, hit, total}; each bet carries _st (won/dead/alive) and _hit/_tot. Alive-count is a small derivation from existing per-leg legMet() results - no new data needed.
+- Priority: nice-to-have. Source: helper chat 2026-06-16 (scoped from code, NOT prototyped; build chat confirms approach).
+
+## 13. Make pitcher-special prop text easy to read (darker + slightly bigger)
+- Now: the pitcher-special bet line (e.g. "No-hit thru 5 - 0 hits", "3+ K in 1st - now 0") renders in <span class="lprop">. Current CSS: .lprop{font-family:'Spline Sans Mono';font-size:11px;color:var(--dim);white-space:nowrap}. --dim is #74857b (muted gray-green), faint and small. On pitcher-special cards the leg row is just the marker + this text (pitcher name is in the card header), so .lprop is the main visible line.
+- Goal: darker and a little bigger.
+  - color -> var(--ink2) (#36443c) or var(--ink) (#172019)
+  - size -> 12.5px to 13px (from 11px); optional font-weight:600
+- Scope decision for the build chat: .lprop is shared by all legs (hitter legs too).
+  - (a) bump .lprop globally - simplest; affects every leg.
+  - (b) scope to pitcher specials only: in betCardHTML append a "lprop-ps" modifier class when the leg is a pitcher special, and style .lprop-ps{font-size:13px;color:var(--ink2);font-weight:600}. Recommend (b) unless all legs should match.
+- Note: a .pspec/.psd/.pst class set exists in the CSS but is DEAD - not referenced by any render code. The live class is .lprop.
+- Priority: nice-to-have; final size/weight/color needs one eyeball pass on the deployed card. Source: helper chat 2026-06-16.
+
+## 14. Display stolen bases on the Hitters tab (parity with HR) - relates to #6
+- Now: renderHitters shows a per-player badge by priority HR -> 4+ TB -> hit badge -> hit count -> odds. No SB branch; a steal never appears on the Hitters tab. HR treatment is three-fold: a HR badge on the row, a row marker, and a pill in the top "homered" track.
+- Goal: when a player records a stolen base, surface it on the Hitters tab the way a HR is.
+- Already available: statOf(name).sb is live from the box score (sb=bt.stolenBases||0) - same path HR uses, no new fetch.
+- Open decisions for the build chat:
+  - coexistence when a player both homers and steals (HR badge primary + small SB chip, not one-or-the-other).
+  - parallel SB pill in the top track (like "homered" pills) or just a row badge.
+  - badge style/threshold (SB >= 1; possibly a count if >1).
+- Context: a concrete case of #6 (revise Hitters-tab badge), which already notes SB/RBI/runs/doubles/triples are not surfaced. Could be standalone (just SB) or folded into a #6 rethink.
+- Priority: Damien asked specifically, likely higher than the rest of #6. Source: helper chat 2026-06-16 (scoped from code, NOT prototyped).
+
+## 15. Sort bets by FanDuel bet timestamp
+- Goal: on the Bets tab, add a sort option ordering bets by when they were PLACED on FanDuel (newest-first / oldest-first).
+- Already available: each bet stores "placed" (e.g. "6/14 9:21AM") and a derived "ts"; sort keys off ts.
+- Pairs with #12 - likely the same sort/order control with multiple modes.
+- Priority: requested by Damien 2026-06-16.
+
+## 16. Capture per-leg odds for analysis/tracking
+- Now: per-leg American odds (e.g. +320 / +260) are visible in the FanDuel screenshot but NOT stored; only bet-level odds/payout are kept (see LOCKED DECISIONS: per-leg odds not stored).
+- Goal: capture each leg's odds into the leg record for future analysis and tracking.
+- Note: not needed for void math (FanDuel recomputes; SGP correlation makes per-leg reconstruction unreliable); purely for analysis.
+- Priority: nice-to-have; wanted by Damien 2026-06-14.
