@@ -1347,6 +1347,85 @@
      "g": "PIT@ATH"
     }
    ]
+  },
+  {
+   "full_id": "us-pa:01kv98wtqeemaa82gan05taz26",
+   "id": "#taz26",
+   "kind": "5-leg SGP",
+   "odds": 79473,
+   "wager": 0.09,
+   "payout": 71.62,
+   "placed": "6/16 6:30PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Tyler Tolbert",
+     "prop": "SB",
+     "g": "KC@WSH"
+    },
+    {
+     "p": "Nasim Nunez",
+     "prop": "SB",
+     "g": "KC@WSH"
+    },
+    {
+     "p": "Bobby Witt Jr.",
+     "prop": "SB",
+     "g": "KC@WSH"
+    },
+    {
+     "p": "C.J. Abrams",
+     "prop": "SB",
+     "g": "KC@WSH"
+    },
+    {
+     "p": "James Wood",
+     "prop": "SB",
+     "g": "KC@WSH"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv98rggse569rm3em4cxdsjy",
+   "id": "#xdsjy",
+   "kind": "6-leg SGP",
+   "odds": 88520,
+   "wager": 0.09,
+   "payout": 79.76,
+   "placed": "6/16 6:27PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Esteury Ruiz",
+     "prop": "SB",
+     "g": "MIA@PHI"
+    },
+    {
+     "p": "Bryson Stott",
+     "prop": "SB",
+     "g": "MIA@PHI"
+    },
+    {
+     "p": "Xavier Edwards",
+     "prop": "SB",
+     "g": "MIA@PHI"
+    },
+    {
+     "p": "Jakob Marsee",
+     "prop": "SB",
+     "g": "MIA@PHI"
+    },
+    {
+     "p": "Brandon Marsh",
+     "prop": "SB",
+     "g": "MIA@PHI"
+    },
+    {
+     "p": "Otto Lopez",
+     "prop": "SB",
+     "g": "MIA@PHI"
+    }
+   ]
   }
  ]
 }
