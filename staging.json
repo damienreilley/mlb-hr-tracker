@@ -1241,6 +1241,112 @@
      "g": "LAA@ARI"
     }
    ]
+  },
+  {
+   "full_id": "us-pa:01kv97cxjbfgzvat60xenb8js1",
+   "id": "#b8js1",
+   "kind": "5-leg parlay",
+   "odds": 440543,
+   "wager": 0.11,
+   "payout": 484.71,
+   "placed": "6/16 6:03PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "JJ Bleday",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Michael Harris II",
+     "prop": "HR",
+     "g": "SF@ATL"
+    },
+    {
+     "p": "Alec Burleson",
+     "prop": "HR",
+     "g": "SD@STL"
+    },
+    {
+     "p": "Michael Busch",
+     "prop": "HR",
+     "g": "COL@CHC"
+    },
+    {
+     "p": "Henry Bolte",
+     "prop": "SB",
+     "g": "PIT@ATH"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv97a3rqfp78gn2cj9k9vzwg",
+   "id": "#9vzwg",
+   "kind": "5-leg SGP+",
+   "odds": 124771,
+   "wager": 0.11,
+   "payout": 137.36,
+   "placed": "6/16 6:02PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Henry Bolte",
+     "prop": "SB",
+     "g": "PIT@ATH"
+    },
+    {
+     "p": "Brandon Lowe",
+     "prop": "HR",
+     "g": "PIT@ATH"
+    },
+    {
+     "p": "Nick Kurtz",
+     "prop": "HR",
+     "g": "PIT@ATH"
+    },
+    {
+     "p": "James Wood",
+     "prop": "HR",
+     "g": "KC@WSH"
+    },
+    {
+     "p": "Jared Young",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    }
+   ]
+  },
+  {
+   "full_id": "us-pa:01kv96yq9ceskrjxfv61pzg7n2",
+   "id": "#zg7n2",
+   "kind": "4-leg SGP+",
+   "odds": 31659,
+   "wager": 0.11,
+   "payout": 34.93,
+   "placed": "6/16 5:56PM",
+   "status": "open",
+   "legs": [
+    {
+     "p": "Juan Soto",
+     "prop": "HR",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "A.J. Ewing",
+     "prop": "SB",
+     "g": "NYM@CIN"
+    },
+    {
+     "p": "Jackson Chourio",
+     "prop": "HR",
+     "g": "CLE@MIL"
+    },
+    {
+     "p": "Nick Kurtz",
+     "prop": "HR",
+     "g": "PIT@ATH"
+    }
+   ]
   }
  ]
 }
