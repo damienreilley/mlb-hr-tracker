@@ -16,7 +16,7 @@ TEAM={"ARI":"Diamondbacks","ATL":"Braves","BAL":"Orioles","BOS":"Red Sox","CHC":
 PSET={"NH3","NH5","NH7","UP9","UP6","K1","ALTK"}  # pitcher prop codes
 # FanDuel-disambiguated name -> MLBAM id, for collision-proof grading of duplicate names.
 # "Max P. Muncy" = Athletics (691777); the Dodgers' Max Muncy = 571970 (not in our slate).
-KNOWN_IDS={"Max P. Muncy":691777}
+KNOWN_IDS={"Max P. Muncy":691777,"Bobby Witt Jr.":677951,"C.J. Abrams":682928,"Nasim Nunez":683083}
 
 def ts_of(p):
     m=re.search(r"(\d+):(\d+)\s*([AP]M)",p)
