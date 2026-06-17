@@ -1522,6 +1522,327 @@
           "g": "TOR@BOS"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kvby83e6ep5bzany3k0g5xp2",
+      "id": "#0g5xp2",
+      "kind": "5-leg parlay",
+      "odds": 6674,
+      "wager": 0.15,
+      "payout": 10.16,
+      "placed": "6/17 7:21PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Toronto Blue Jays",
+          "prop": "ML",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Chicago White Sox",
+          "prop": "ML",
+          "g": "CWS@NYY"
+        },
+        {
+          "p": "Cleveland Guardians",
+          "prop": "ML",
+          "g": "CLE@MIL"
+        },
+        {
+          "p": "Colorado Rockies",
+          "prop": "ML",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Baltimore Orioles",
+          "prop": "ML",
+          "g": "BAL@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvbtjfchekrvfqr39398t97b",
+      "id": "#98t97b",
+      "kind": "4-leg SGP+",
+      "odds": 56950,
+      "wager": 0.1,
+      "payout": 57.05,
+      "placed": "6/17 6:17PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Brandon Lowe",
+          "prop": "HR",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Bryan Reynolds",
+          "prop": "HR",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Jarren Duran",
+          "prop": "HR",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004183",
+      "id": "#4183",
+      "kind": "8-leg SGP+",
+      "odds": 21318047,
+      "wager": 0.09,
+      "payout": 19186.33,
+      "placed": "6/17 6:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "SB",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Bryan Reynolds",
+          "prop": "HR",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Hunter Goodman",
+          "prop": "HR",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Kazuma Okamoto",
+          "prop": "HR",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Paul Goldschmidt",
+          "prop": "HR",
+          "g": "CWS@NYY"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004182",
+      "id": "#4182",
+      "kind": "7-leg parlay",
+      "odds": 2567405,
+      "wager": 0.09,
+      "payout": 2310.75,
+      "placed": "6/17 6:05PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "George Springer",
+          "prop": "HR",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Randal Grichuk",
+          "prop": "HR",
+          "g": "CWS@NYY"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HR",
+          "g": "SF@ATL"
+        },
+        {
+          "p": "Travis Bazzana",
+          "prop": "SB",
+          "g": "CLE@MIL"
+        },
+        {
+          "p": "Hunter Goodman",
+          "prop": "HR",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Nick Kurtz",
+          "prop": "HR",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004181",
+      "id": "#4181",
+      "kind": "7-leg SGP+",
+      "odds": 5219760,
+      "wager": 0.09,
+      "payout": 4697.87,
+      "placed": "6/17 5:57PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Randal Grichuk",
+          "prop": "HR",
+          "g": "CWS@NYY"
+        },
+        {
+          "p": "Jose Caballero",
+          "prop": "SB",
+          "g": "CWS@NYY"
+        },
+        {
+          "p": "Jarren Duran",
+          "prop": "HR",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "George Springer",
+          "prop": "HR",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "HR",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Nick Kurtz",
+          "prop": "HR",
+          "g": "PIT@ATH"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004184",
+      "id": "#4184",
+      "kind": "6-leg SGP+",
+      "odds": 6993084,
+      "wager": 0.1,
+      "payout": 6993.18,
+      "placed": "6/17 6:22PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryan Reynolds",
+          "prop": "HR",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Henry Bolte",
+          "prop": "SB",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Amed Rosario",
+          "prop": "HR",
+          "g": "CWS@NYY"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "SF@ATL"
+        },
+        {
+          "p": "Cole Carrigg",
+          "prop": "HR",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "SB",
+          "g": "BAL@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvby5vkvfh6tv7fndwgkbgv4",
+      "id": "#gkbgv4",
+      "kind": "4-leg SGP+",
+      "odds": 135390,
+      "wager": 0.09,
+      "payout": 121.94,
+      "placed": "6/17 7:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Zack Gelof",
+          "prop": "SB",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Tyler Soderstrom",
+          "prop": "HR",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HR",
+          "g": "SF@ATL"
+        },
+        {
+          "p": "Blaze Alexander",
+          "prop": "SB",
+          "g": "BAL@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvbtqdbme58syw7ccvcb87zm",
+      "id": "#cb87zm",
+      "kind": "4-leg SGP+",
+      "odds": 40241,
+      "wager": 0.1,
+      "payout": 40.34,
+      "placed": "6/17 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Gunnar Henderson",
+          "prop": "HR",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Dominic Canzone",
+          "prop": "HR",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Bryce Eldridge",
+          "prop": "HR",
+          "g": "SF@ATL"
+        },
+        {
+          "p": "Nick Kurtz",
+          "prop": "HR",
+          "g": "PIT@ATH"
+        }
+      ]
     }
   ]
 }

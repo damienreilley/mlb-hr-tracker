@@ -73,6 +73,14 @@ def money_before(lines,label):
             m=re.match(r"^\$([\d,]+\.\d+)$", lines[i-1])
             if m: return float(m.group(1).replace(",",""))
     return None
+def is_selection_subject(lines,i):
+    # True if this team line is a BET SELECTION subject (next meaningful line is Moneyline / a prop),
+    # not the away side of a box-score matchup (which is followed by AB:/P:/lineup).
+    j=i+1
+    if j<len(lines) and re.match(r"^\+\d+$", lines[j]): j+=1
+    if j>=len(lines): return False
+    nx=lines[j]
+    return nx=="Moneyline" or nx in PROP_MAP or nx=="First 5 Innings Result" or bool(re.match(r"^Race To \d+ Runs$", nx))
 
 def tokenize(lines):
     toks=[]; i=0; n=len(lines)
@@ -97,7 +105,7 @@ def tokenize(lines):
         m=re.match(r"^Race To (\d+) Runs$", ln)
         if m:
             toks.append(("LEG",{"p":prev_team(lines,i),"prop":"NA","txt":"Race To %s Runs"%m.group(1)})); i+=1; continue
-        if team_code(ln):
+        if team_code(ln) and not is_selection_subject(lines,i):
             hc,hidx=find_home(lines,i)
             if hc: toks.append(("MATCH",team_code(ln)+"@"+hc)); i=hidx+1; continue
         i+=1
