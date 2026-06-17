@@ -152,3 +152,26 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
 - Goal: capture each leg's odds into the leg record for future analysis and tracking.
 - Note: not needed for void math (FanDuel recomputes; SGP correlation makes per-leg reconstruction unreliable); purely for analysis.
 - Priority: nice-to-have; wanted by Damien 2026-06-14.
+
+## 17. Sort bets by number of legs that hit
+- Goal: on the Bets tab, add a sort option ranking bets by how many legs have already HIT (graded win), highest-first - a "how many cashed / how close did it come" view.
+- Distinct from #12 (legs ALIVE = hit + pending): this counts ONLY legs already graded 'hit'.
+- Already available: betStatus(b) returns {hit, total}; sort key off hit (tiebreak by hit/total, then alive).
+- Pairs with #12 and #15 - same sort/order control, just another mode (Time placed / Legs alive / Legs hit / Odds / Payout). Recommend building ONE sort dropdown rather than three separate toggles.
+- Priority: requested by Damien 2026-06-17.
+
+## 18. Wire up TR (total runs Over/Under) in build.py - grader already exists
+- Source: Damien test bet 2026-06-17 (us-pa ...g5d2rm leg "Over 9.5 Alternate Total Runs").
+- Now: engine legMet HAS a TR grader (tot = as + hs vs leg.line, default 8.5), BUT build.py mk_leg has no TR case, so a TR leg falls to the general "return dict(p,prop)" which DROPS g and line - TR can never grade (no game, line defaults).
+- Fix: add to mk_leg -> if l["prop"]=="TR": return dict(prop="TR", g=l["g"], line=l.get("line"), side=l.get("side","over")). Parser emits {prop:"TR", g, line}. Then Over/Under total-runs legs grade end-to-end.
+- Priority: small, safe, additive build.py change. Test data on hand.
+
+## 19. Grader: First 5 Innings Result (F5) - PARKED
+- Source: Damien test bet 2026-06-17 (O/1924696/0004179 leg "Baltimore Orioles First 5 Innings Result").
+- DECISION 2026-06-17: PARKED. Damien rarely bets this. Do NOT build a grader unless it becomes frequent. The parser tags it prop="NA" (recorded on the board, manual / not auto-graded); the bet's other legs grade normally and the NA leg shows un-graded.
+- If ever built: needs first-5-innings line score from the box feed (confirm the feed exposes inning-by-inning runs first); new game-prop code F5 + a build.py mk_leg case carrying side.
+
+## 20. Grader: Race To N Runs - PARKED
+- Source: Damien test bet 2026-06-17 (us-pa ...g5d2rm leg "Pittsburgh Pirates Race To 5 Runs").
+- DECISION 2026-06-17: PARKED (same handling as #19). Rarely bet. Parser tags prop="NA" (recorded, manual). Do NOT build unless frequent.
+- If ever built: needs running score by team / play-by-play to know who reached N first; new game-prop code + build.py case (team + N).

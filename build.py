@@ -38,6 +38,8 @@ def mk_leg(l):
     if l.get("void"): return dict(p=l["p"],prop=l["prop"],void=True)
     if l["prop"]=="ML": return dict(p=l["p"],prop="ML",g=l["g"],side=ml_side(l["g"],l["p"]))
     if l["prop"]=="ALTK": return dict(p=l["p"],prop="ALTK",k=l.get("k",0))
+    if l["prop"]=="TR": return dict(p=l["g"],prop="TR",g=l["g"],line=l.get("line",8.5),side=l.get("side","over"))
+    if l["prop"]=="NA": return dict(p=l["p"],prop="NA",g=l["g"],lbl=l.get("lbl",""))
     return dict(p=l["p"],prop=l["prop"])
 
 def build(staging_path,out_path):
@@ -49,7 +51,7 @@ def build(staging_path,out_path):
     for b in stage:
         for l in b["legs"]:
             nm,pr,g=l["p"],l["prop"],l["g"]
-            if l.get("void") or pr in ("NA","ML"): continue  # void/manual/moneyline legs are not real players/pitchers
+            if l.get("void") or pr in ("NA","ML","TR","CTB"): continue  # void/manual/moneyline/game-level legs are not real players/pitchers
             mlbid=l.get("mlb") or KNOWN_IDS.get(nm,"")
             if pr in PSET: pitchers.setdefault(nm,g)
             else:

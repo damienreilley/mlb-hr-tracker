@@ -1024,6 +1024,504 @@
           "g": "BAL@SEA"
         }
       ]
+    },
+    {
+      "full_id": "O/1924696/0004180",
+      "id": "#4180",
+      "kind": "10-leg SGP+",
+      "odds": 37868492,
+      "wager": 0.09,
+      "payout": 34081.73,
+      "placed": "6/17 4:32PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Taylor Ward",
+          "prop": "HRR2",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "SB",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Henry Bolte",
+          "prop": "SB",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Pittsburgh Pirates",
+          "prop": "ML",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Nick Kurtz",
+          "prop": "HR",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Kyle Manzardo",
+          "prop": "HR",
+          "g": "CLE@MIL"
+        },
+        {
+          "p": "Cleveland Guardians",
+          "prop": "ML",
+          "g": "CLE@MIL"
+        },
+        {
+          "p": "Rhys Hoskins",
+          "prop": "HR",
+          "g": "CLE@MIL"
+        },
+        {
+          "p": "David Hamilton",
+          "prop": "SB",
+          "g": "CLE@MIL"
+        },
+        {
+          "p": "Colorado Rockies",
+          "prop": "ML",
+          "g": "COL@CHC"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004179",
+      "id": "#4179",
+      "kind": "10-leg SGP+",
+      "odds": 12225488,
+      "wager": 0.09,
+      "payout": 11003.03,
+      "placed": "6/17 4:26PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Seiya Suzuki",
+          "prop": "RUN2",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Ezequiel Tovar",
+          "prop": "RUN2",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Miguel Amaya",
+          "prop": "RUN",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Ezequiel Tovar",
+          "prop": "SB",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HIT2",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Taylor Ward",
+          "prop": "HIT2",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "SB",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Baltimore Orioles",
+          "prop": "NA",
+          "g": "BAL@SEA",
+          "lbl": "First 5 Innings Result"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "TB2",
+          "g": "BAL@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvbm16a1exda0d0y19hbc21p",
+      "id": "#hbc21p",
+      "kind": "4-leg SGP",
+      "odds": 65976,
+      "wager": 0.09,
+      "payout": 59.47,
+      "placed": "6/17 4:23PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Javier Assad",
+          "prop": "ALTK",
+          "k": 7,
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Seiya Suzuki",
+          "prop": "TB",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Ezequiel Tovar",
+          "prop": "TB5",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Ezequiel Tovar",
+          "prop": "SB",
+          "g": "COL@CHC"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvbkv7d9f918zh388w4j9x1t",
+      "id": "#4j9x1t",
+      "kind": "4-leg SGP",
+      "odds": 16552,
+      "wager": 0.09,
+      "payout": 14.99,
+      "placed": "6/17 4:19PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Cole Carrigg",
+          "prop": "3B",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Ezequiel Tovar",
+          "prop": "2B",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "1B",
+          "g": "COL@CHC"
+        },
+        {
+          "p": "Hunter Goodman",
+          "prop": "HR",
+          "g": "COL@CHC"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvbkebcmeae8qacwprg5d2rm",
+      "id": "#g5d2rm",
+      "kind": "5-leg SGP",
+      "odds": 5426,
+      "wager": 0.09,
+      "payout": 4.97,
+      "placed": "6/17 4:12PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Braxton Ashcraft",
+          "prop": "ALTK",
+          "k": 7,
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Pittsburgh Pirates",
+          "prop": "NA",
+          "g": "PIT@ATH",
+          "lbl": "Race To 5 Runs"
+        },
+        {
+          "p": "",
+          "prop": "TR",
+          "line": 9.5,
+          "side": "over",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Shea Langeliers",
+          "prop": "RBI2",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Nick Gonzales",
+          "prop": "HRR2",
+          "g": "PIT@ATH"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvbk99fcfefv0pa02gh0hqv6",
+      "id": "#h0hqv6",
+      "kind": "4-leg SGP",
+      "odds": 37390,
+      "wager": 0.09,
+      "payout": 33.74,
+      "placed": "6/17 4:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nick Gonzales",
+          "prop": "HIT2",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Brandon Lowe",
+          "prop": "HR",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Shea Langeliers",
+          "prop": "TB5",
+          "g": "PIT@ATH"
+        },
+        {
+          "p": "Henry Bolte",
+          "prop": "SB",
+          "g": "PIT@ATH"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvbj7z2qfjs8992saf9nh6b9",
+      "id": "#9nh6b9",
+      "kind": "8-leg SGP+",
+      "odds": 296980,
+      "wager": 0.1,
+      "payout": 297.11,
+      "placed": "6/17 3:52PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Vladimir Guerrero Jr.",
+          "prop": "HIT2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "George Springer",
+          "prop": "HIT2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Kazuma Okamoto",
+          "prop": "RBI2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "HIT2",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "SB",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HIT2",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HIT2",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Taylor Ward",
+          "prop": "RUN",
+          "g": "BAL@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004178",
+      "id": "#4178",
+      "kind": "9-leg SGP+",
+      "odds": 7129266,
+      "wager": 0.09,
+      "payout": 6416.43,
+      "placed": "6/17 3:51PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Vladimir Guerrero Jr.",
+          "prop": "HIT2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "George Springer",
+          "prop": "HIT2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Kazuma Okamoto",
+          "prop": "RBI2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Cole Young",
+          "prop": "HIT2",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "HIT2",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "SB",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HIT2",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HIT2",
+          "g": "BAL@SEA"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@NYY"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvbhxbeveqq8aczjbx1bm3ws",
+      "id": "#1bm3ws",
+      "kind": "7-leg SGP+",
+      "odds": 1133806,
+      "wager": 0.09,
+      "payout": 1020.56,
+      "placed": "6/17 3:46PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Vladimir Guerrero Jr.",
+          "prop": "HIT2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "George Springer",
+          "prop": "HIT2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Kazuma Okamoto",
+          "prop": "RBI2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@NYY"
+        },
+        {
+          "p": "Colson Montgomery",
+          "prop": "HR",
+          "g": "CWS@NYY"
+        },
+        {
+          "p": "Randal Grichuk",
+          "prop": "HR",
+          "g": "CWS@NYY"
+        },
+        {
+          "p": "Paul Goldschmidt",
+          "prop": "HR",
+          "g": "CWS@NYY"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvbhq1abes58bt6evhmf3c64",
+      "id": "#mf3c64",
+      "kind": "7-leg SGP",
+      "odds": 56387,
+      "wager": 0.09,
+      "payout": 50.84,
+      "placed": "6/17 3:42PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jarren Duran",
+          "prop": "SB",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "George Springer",
+          "prop": "HIT2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Vladimir Guerrero Jr.",
+          "prop": "HIT2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Jarren Duran",
+          "prop": "HIT2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Vladimir Guerrero Jr.",
+          "prop": "RBI",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Kazuma Okamoto",
+          "prop": "RBI2",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Ernie Clement",
+          "prop": "RUN",
+          "g": "TOR@BOS"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvbhm2scern80j59d6tcgv57",
+      "id": "#tcgv57",
+      "kind": "4-leg SGP",
+      "odds": 65982,
+      "wager": 0.09,
+      "payout": 59.48,
+      "placed": "6/17 3:41PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Kazuma Okamoto",
+          "prop": "HR",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Vladimir Guerrero Jr.",
+          "prop": "HR",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "George Springer",
+          "prop": "HR",
+          "g": "TOR@BOS"
+        },
+        {
+          "p": "Jarren Duran",
+          "prop": "HR",
+          "g": "TOR@BOS"
+        }
+      ]
     }
   ]
 }
