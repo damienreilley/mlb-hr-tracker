@@ -27,6 +27,10 @@ PROP_MAP = {
  "To Record 4+ Total Bases":"TB","To Record 5+ Total Bases":"TB5",
  "To Record 2+ Hits + Runs + RBIs":"HRR2","Player To Record 2+ Hits + Runs + RBIs":"HRR2",
 }
+PROP_MAP_CI = {k.lower(): v for k, v in PROP_MAP.items()}
+def prop_code(ln):
+    # exact match first (paste format), then case-insensitive (screenshot ALL-CAPS display)
+    return PROP_MAP[ln] if ln in PROP_MAP else PROP_MAP_CI.get(ln.lower())
 def pitcher_prop(t):
     if "No-Hitter Through 5" in t: return "NH5"
     if "No-Hitter Through 7" in t: return "NH7"
@@ -41,7 +45,16 @@ def paren_last(s):
     return parts[-1].lower() if parts else ""
 def team_code(s):
     if " @ " in s: return None
-    return TEAM_NAME.get(strip_paren(s))
+    key=strip_paren(s)
+    c=TEAM_NAME.get(key)
+    if c: return c
+    # tolerant: FanDuel truncates team names in the expanded multi-SGP view
+    # (e.g. "Kansas City Ro...") -> resolve only if a UNIQUE team name has this prefix.
+    kc=key.rstrip(". ").strip()
+    if len(kc)>=6:
+        cands={v for name,v in TEAM_NAME.items() if name.startswith(kc)}
+        if len(cands)==1: return next(iter(cands))
+    return None
 def mkid(fid):
     if fid.startswith("O/"): return "#"+str(int(fid.split("/")[-1]))
     return "#"+fid[-6:].lower()
@@ -51,9 +64,18 @@ def reformat_placed(s):
     return ("%s/%s %s"%(m.group(1),m.group(2),m.group(3))) if m else s
 def is_header(ln):
     return bool(re.match(r"^\d+ leg ", ln)) or ln.startswith("Same Game Parlay") or pitcher_prop(ln) is not None
+def _clean_side(s):
+    # strip a trailing game-time and/or truncation ellipsis that FanDuel renders on the
+    # matchup line in screenshots (e.g. "...(A Nola)  6:41PM ET" or "Kansas City Ro...").
+    s=re.sub(r"\s+\d{1,2}:\d{2}\s*[ap]m\s*et\s*$","",s,flags=re.I)
+    s=re.sub(r"\s*(?:\.\.\.|\u2026)\s*$","",s)
+    s=re.sub(r"\s*\([^)]*$","",s)
+    return s.strip()
 def at_game(ln):
     if " @ " in ln:
-        a,b=ln.split(" @ ",1); ca,cb=team_code(a),team_code(b)
+        a,b=ln.split(" @ ",1)
+        a=_clean_side(a); b=_clean_side(b)
+        ca,cb=team_code(a),team_code(b)
         if ca and cb: return (ca+"@"+cb, paren_last(a), paren_last(b))
     return None
 def find_home(lines,i,window=5):
@@ -85,7 +107,7 @@ def is_selection_subject(lines,i):
     if j<len(lines) and re.match(r"^\+\d+$", lines[j]): j+=1
     if j>=len(lines): return False
     nx=lines[j]
-    return nx=="Moneyline" or nx in PROP_MAP or nx=="First 5 Innings Result" or bool(re.match(r"^Race To \d+ Runs$", nx))
+    return nx=="Moneyline" or prop_code(nx) is not None or nx=="First 5 Innings Result" or bool(re.match(r"^Race To \d+ Runs$", nx))
 
 def void_around(lines,lo,hi):
     # FanDuel marks a voided leg with a standalone 'Void' token where the leg odds go.
@@ -112,8 +134,9 @@ def tokenize(lines):
             d={"p":"","prop":"TR","line":float(m.group(2)),"side":m.group(1).lower()}
             if void_around(lines,i,i+1): d["void"]=True
             toks.append(("LEG",d)); i+=2; continue
-        if ln in PROP_MAP:
-            d={"p":prev_name(lines,i),"prop":PROP_MAP[ln]}
+        pc=prop_code(ln)
+        if pc is not None:
+            d={"p":prev_name(lines,i),"prop":pc}
             if void_around(lines,i,i): d["void"]=True
             toks.append(("LEG",d)); i+=1; continue
         if ln=="Moneyline":
@@ -172,7 +195,7 @@ def parse_bet(lines):
     elif pp is not None: kind="Pitcher Special"; expected=1
     else:
         kind="%d-leg SGP"%len(legs)
-        summ=next((l for l in lines[1:] if ", " in l and re.search(r"To (Hit|Record)|Strikeouts|Total Runs|Moneyline|Innings Result|Race To",l)), None)
+        summ=next((l for l in lines[1:] if ", " in l and re.search(r"To (Hit|Record)|Strikeouts|Total Runs|Moneyline|Innings Result|Race To",l,re.I)), None)
         expected=len(summ.split(", ")) if summ else None
     if expected is not None and len(legs)!=expected:
         flags.append(("LEG COUNT MISMATCH header=%s parsed=%d (possible unexpanded bet)"%(expected,len(legs)),full_id))
