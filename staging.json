@@ -878,6 +878,147 @@
           "g": "CWS@NYY"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kve96s3keh99ebe88fdks2bg",
+      "id": "#dks2bg",
+      "kind": "4-leg SGP",
+      "odds": 41376,
+      "wager": 0.09,
+      "payout": 37.33,
+      "placed": "6/18 5:11PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryce Harper",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        },
+        {
+          "p": "Alec Bohm",
+          "prop": "RBI2",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        },
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kve962xffb6brjqqz20txdfp",
+      "id": "#0txdfp",
+      "kind": "5-leg SGP",
+      "odds": 21687,
+      "wager": 0.09,
+      "payout": 19.61,
+      "placed": "6/18 5:11PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        },
+        {
+          "p": "Alec Bohm",
+          "prop": "RBI3",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HIT2",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        },
+        {
+          "p": "Bryson Stott",
+          "prop": "HIT",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        },
+        {
+          "p": "Bryce Harper",
+          "prop": "HIT",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kve946caftgtrabbydpsh44q",
+      "id": "#psh44q",
+      "kind": "6-leg SGP+",
+      "odds": 226246,
+      "wager": 0.09,
+      "payout": 203.71,
+      "placed": "6/18 5:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "RUN",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        },
+        {
+          "p": "Alec Bohm",
+          "prop": "RBI2",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "manaea",
+          "hsp": "nola"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "CWS@NYY",
+          "asp": "hudson",
+          "hsp": "weathers"
+        },
+        {
+          "p": "Bobby Witt Jr.",
+          "prop": "SB",
+          "g": "STL@KC",
+          "asp": "liberatore",
+          "hsp": "cameron"
+        }
+      ]
     }
   ]
 }
