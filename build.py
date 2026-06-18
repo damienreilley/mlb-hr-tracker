@@ -39,7 +39,7 @@ def mk_leg(l):
     if l["prop"]=="ML": d=dict(p=l["p"],prop="ML",g=l["g"],side=ml_side(l["g"],l["p"]))
     elif l["prop"]=="ALTK": d=dict(p=l["p"],prop="ALTK",k=l.get("k",0))
     elif l["prop"]=="TR": d=dict(p=l["g"],prop="TR",g=l["g"],line=l.get("line",8.5),side=l.get("side","over"))
-    elif l["prop"]=="NA": d=dict(p=l["p"],prop="NA",g=l["g"],lbl=l.get("lbl",""))
+    elif l["prop"]=="NA": d=dict(p=l["p"],prop="NA",g=l["g"],lbl=l.get("lbl") or l.get("txt",""))
     else: d=dict(p=l["p"],prop=l["prop"])
     if l.get("asp") or l.get("hsp"): d["asp"]=l.get("asp",""); d["hsp"]=l.get("hsp","")
     return d
