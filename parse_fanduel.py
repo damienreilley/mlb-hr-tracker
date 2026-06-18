@@ -18,7 +18,7 @@ TEAM_NAME = {
  "Texas Rangers":"TEX","Toronto Blue Jays":"TOR","Washington Nationals":"WSH",
 }
 PROP_MAP = {
- "To Hit A Home Run":"HR","To Hit A Single":"1B","To Hit A Double":"2B","To Hit A Triple":"3B",
+ "To Hit A Home Run":"HR","To Hit 2+ Home Runs":"HR2","To Hit A Single":"1B","To Hit A Double":"2B","To Hit A Triple":"3B",
  "To Record A Hit":"HIT","To Record 2+ Hits":"HIT2","To Record 3+ Hits":"HIT3","To Record 4+ Hits":"HIT4",
  "To Record A Stolen Base":"SB","To Record 2+ Stolen Bases":"SB2",
  "To Record An RBI":"RBI","To Record 2+ RBIs":"RBI2","To Record 3+ RBIs":"RBI3","To Record 4+ RBIs":"RBI4",
@@ -63,13 +63,13 @@ def find_home(lines,i,window=5):
     return None, None
 def prev_name(lines,i):
     j=i-1
-    if j>=0 and re.match(r"^\+\d+$", lines[j]): j-=1
+    while j>=0 and (re.match(r"^\+\d+$", lines[j]) or lines[j]=="Void"): j-=1
     return lines[j] if j>=0 else "??"
 def prev_team(lines,i):
     j=i-1
     while j>=0:
         if team_code(lines[j]): return lines[j].split(" (")[0].strip()
-        if lines[j] not in ("Moneyline",) and not re.match(r"^\+\d+$", lines[j]) and lines[j]!="First 5 Innings Result": break
+        if lines[j] not in ("Moneyline","Void") and not re.match(r"^\+\d+$", lines[j]) and lines[j]!="First 5 Innings Result": break
         j-=1
     return "??"
 def money_before(lines,label):
@@ -87,6 +87,13 @@ def is_selection_subject(lines,i):
     nx=lines[j]
     return nx=="Moneyline" or nx in PROP_MAP or nx=="First 5 Innings Result" or bool(re.match(r"^Race To \d+ Runs$", nx))
 
+def void_around(lines,lo,hi):
+    # FanDuel marks a voided leg with a standalone 'Void' token where the leg odds go.
+    # It sits immediately BEFORE the leg's first line (player/Void/prop) or immediately
+    # AFTER the leg's last line (player/prop/Void). Either adjacency => the leg is void.
+    n=len(lines)
+    return (lo-1>=0 and lines[lo-1]=="Void") or (hi+1<n and lines[hi+1]=="Void")
+
 def tokenize(lines):
     toks=[]; i=0; n=len(lines)
     while i<n:
@@ -97,14 +104,22 @@ def tokenize(lines):
         if g: toks.append(("MATCH",)+g); i+=1; continue
         m=re.match(r"^(.+?) (\d+)\+ Strikeouts$", ln)
         if m and i+1<n and lines[i+1].endswith("- Alt Strikeouts"):
-            toks.append(("LEG",{"p":m.group(1).strip(),"prop":"ALTK","k":int(m.group(2))})); i+=2; continue
+            d={"p":m.group(1).strip(),"prop":"ALTK","k":int(m.group(2))}
+            if void_around(lines,i,i+1): d["void"]=True
+            toks.append(("LEG",d)); i+=2; continue
         m=re.match(r"^(Over|Under) (\d+(?:\.\d+)?)$", ln)
         if m and i+1<n and "Total Runs" in lines[i+1]:
-            toks.append(("LEG",{"p":"","prop":"TR","line":float(m.group(2)),"side":m.group(1).lower()})); i+=2; continue
+            d={"p":"","prop":"TR","line":float(m.group(2)),"side":m.group(1).lower()}
+            if void_around(lines,i,i+1): d["void"]=True
+            toks.append(("LEG",d)); i+=2; continue
         if ln in PROP_MAP:
-            toks.append(("LEG",{"p":prev_name(lines,i),"prop":PROP_MAP[ln]})); i+=1; continue
+            d={"p":prev_name(lines,i),"prop":PROP_MAP[ln]}
+            if void_around(lines,i,i): d["void"]=True
+            toks.append(("LEG",d)); i+=1; continue
         if ln=="Moneyline":
-            toks.append(("LEG",{"p":prev_team(lines,i),"prop":"ML"})); i+=1; continue
+            d={"p":prev_team(lines,i),"prop":"ML"}
+            if void_around(lines,i,i): d["void"]=True
+            toks.append(("LEG",d)); i+=1; continue
         if ln=="First 5 Innings Result":
             toks.append(("LEG",{"p":prev_team(lines,i),"prop":"NA","txt":"First 5 Innings Result"})); i+=1; continue
         m=re.match(r"^Race To (\d+) Runs$", ln)

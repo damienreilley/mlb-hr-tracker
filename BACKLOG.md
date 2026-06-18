@@ -96,11 +96,13 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
 - Legacy O/####### bets keep their existing "#<sequence>" form (e.g. #4155); do not rewrite them.
 - Why: the tail is a real substring of the FanDuel BET ID, so Damien can copy the id from the tracker and Ctrl+F it inside FanDuel to find the bet. It is deterministic, so re-reading the same bet yields the same id, which lets the dedup guard block double-posts.
 
-### Void-leg protocol (locked 2026-06-14)
+### Void-leg protocol (locked 2026-06-14; AUTO-DETECTION added 2026-06-18)
 - FanDuel owns all odds/payout computation. We do NOT recompute odds on our side.
-- When a leg voids: Damien supplies FanDuel's UPDATED bet (manual is fine for now). The build/helper then:
-  1) sets the leg's void flag (engine drops it from the win condition; surviving legs decide win/loss), and
-  2) overwrites the stored bet-level odds + payout with FanDuel's recalculated numbers.
+- AUTO-DETECT (2026-06-18, Option A): parse_fanduel.py detects FanDuel's "Void" token (shown where a voided leg's odds go, in EITHER position: player/Void/prop OR player/prop/Void) and sets that leg's "void":true automatically. The real player + prop are still captured. No manual step for legs FanDuel has already voided in the open-bets paste. (prev_name/prev_team skip the "Void" token; void_around() flags the leg.)
+  - Engine drops void legs from the win condition: betStatus does if(s==='void')continue (void legs excluded from total/hit/miss; surviving legs decide win/loss). build.py mk_leg passes void:true through.
+  - Bet-level PAYOUT = FanDuel's TOTAL PAYOUT from the paste (already recalculated post-void) -> correct.
+  - Bet-level ODDS may stay FanDuel's displayed ORIGINAL number on a partially-voided bet (FanDuel does not relabel it and we do no odds math). Cosmetic only -- payout and grading are correct. Example: #zyhbkm voided 3 of 4 legs down to a single +520 leg; stored odds stays 34170, payout $0.62 is correct.
+- Fully-voided bets (zero surviving legs) are NOT special-cased: betStatus would show 'alive' (act=0). Not seen as of 2026-06-18; revisit if it occurs (would need a 'void'/'push' bet status).
 - Why not compute per-leg math: SGP/SGP+ legs are correlated and FanDuel prices them proprietarily, so the adjusted price cannot be reconstructed from per-leg odds. Re-reading FanDuel is the only reliable source (straight parlays and SGPs alike).
 
 ### Per-leg odds (decided 2026-06-14)
