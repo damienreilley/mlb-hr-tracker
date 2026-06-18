@@ -143,7 +143,10 @@ footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:v
   <button class="filterbtn" data-f="won">Cashed</button>
   <span class="muted" style="margin-left:8px">Sort:</span>
   <button class="filterbtn s active" data-s="payout">Payout</button>
+  <button class="filterbtn s" data-s="time">Time</button>
   <button class="filterbtn s" data-s="legs">Legs</button>
+  <button class="filterbtn s" data-s="alive">Alive</button>
+  <button class="filterbtn s" data-s="hit">Hit</button>
  </div>
  <div id="bets"></div>
 </section>
@@ -255,7 +258,7 @@ function betCat(b){if(b.legs.length>1)return 'PARLAY';const props=Array.from(new
  if(props.every(function(p){return PITCHSET[p];}))return 'PITCH';
  if(props.length===1&&CATMAP[props[0]])return props[0];
  return 'MIX';}
-function betStatus(b){let hit=0,miss=0,act=0;for(const lg of b.legs){const s=legMet(lg);if(s==='void')continue;act++;if(s==='hit')hit++;else if(s==='miss')miss++;}const st=miss>0?'dead':(act>0&&hit===act?'won':'alive');return {st:st,hit:hit,total:act};}
+function betStatus(b){let hit=0,miss=0,act=0;for(const lg of b.legs){const s=legMet(lg);if(s==='void')continue;act++;if(s==='hit')hit++;else if(s==='miss')miss++;}const st=miss>0?'dead':(act>0&&hit===act?'won':'alive');return {st:st,hit:hit,total:act,miss:miss,alive:act-miss};}
 function pitchDetail(leg){const pr=leg.prop;const p=pitByKey[norm(leg.p)];if(!p)return '';
  if(pr==='NH3')return p.h3+' hits';if(pr==='NH5')return p.h5+' hits';if(pr==='NH7')return p.h7+' hits';if(pr==='K1')return 'now '+p.k1;if(pr==='ALTK')return 'now '+p.kTot;
  if(pr==='UP9'||pr==='UP6'){let r=0;for(const x of p.seq){if(x===1)r++;else break;}return r+' retired';}return '';}
@@ -336,7 +339,7 @@ function renderBets(){
  let pool=bets.filter(function(b){return filterMode==='all'||b._st===filterMode;});let html='';
  CATS.forEach(function(c){let grp=pool.filter(function(b){return b._cat===c.k;});if(!grp.length)return;
   if(c.k==='PITCH')grp.sort(function(a,b){return norm(a.legs[0].p).localeCompare(norm(b.legs[0].p))||(b.payout-a.payout);});
-  else{if(betSort==='legs')grp.sort(function(a,b){return (b.legs.length-a.legs.length)||(b.payout-a.payout);});else grp.sort(function(a,b){return b.payout-a.payout;});if(betSortDir==='asc')grp.reverse();}
+  else{const key=function(b){if(betSort==='time')return [b.ts||0];if(betSort==='legs')return [b.legs.length,b.payout];if(betSort==='alive'){const s=betStatus(b);return [s.st==='dead'?0:1,s.alive,s.hit,b.payout];}if(betSort==='hit'){const s=betStatus(b);return [s.hit,s.total,b.payout];}return [b.payout];};grp.sort(function(a,b){const ka=key(a),kb=key(b);for(let i=0;i<ka.length;i++){if(kb[i]!==ka[i])return kb[i]-ka[i];}return 0;});if(betSortDir==='asc')grp.reverse();}
   const ck='b:'+c.k;
   html+='<div class="catsection'+(collapsedSecs[ck]?' collapsed':'')+'" data-ck="'+ck+'"><div class="cathead" onclick="toggleCat(this)"><span class="bar" style="background:var('+c.v+')"></span><h3>'+c.label+'</h3><span class="cnt">'+grp.length+' bet'+(grp.length>1?'s':'')+'</span><span class="chev">&#9660;</span></div><div class="catbody"><div class="grid">'+grp.map(betCardHTML).join('')+'</div></div></div>';});
  $('bets').innerHTML=html||'<p class="muted">No bets match this filter.</p>';
@@ -346,7 +349,7 @@ function toggleCat(el){const s=el.closest('.catsection');const k=s.dataset.ck;if
 function showTab(t){document.querySelectorAll('.tabs button').forEach(function(b){b.classList.toggle('active',b.dataset.tab===t);});document.querySelectorAll('.tab').forEach(function(s){s.classList.toggle('show',s.id==='tab-'+t);});}
 document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){showTab(b.dataset.tab);});});
 document.querySelectorAll('.filterbtn[data-f]').forEach(function(b){b.addEventListener('click',function(){filterMode=b.dataset.f;document.querySelectorAll('.filterbtn[data-f]').forEach(function(x){x.classList.toggle('active',x.dataset.f===filterMode);});renderBets();});});
-function updateSortBtns(){document.querySelectorAll('.filterbtn[data-s]').forEach(function(x){const base=x.dataset.s==='payout'?'Payout':'Legs';const on=x.dataset.s===betSort;x.classList.toggle('active',on);x.textContent=base+(on?(betSortDir==='desc'?' \u2193':' \u2191'):'');});}
+function updateSortBtns(){document.querySelectorAll('.filterbtn[data-s]').forEach(function(x){const base=({payout:'Payout',time:'Time',legs:'Legs',alive:'Alive',hit:'Hit'})[x.dataset.s]||x.dataset.s;const on=x.dataset.s===betSort;x.classList.toggle('active',on);x.textContent=base+(on?(betSortDir==='desc'?' \u2193':' \u2191'):'');});}
 document.querySelectorAll('.filterbtn[data-s]').forEach(function(b){b.addEventListener('click',function(){if(betSort===b.dataset.s){betSortDir=(betSortDir==='desc'?'asc':'desc');}else{betSort=b.dataset.s;betSortDir='desc';}updateSortBtns();renderBets();});});
 document.querySelectorAll('.filterbtn[data-pf]').forEach(function(b){b.addEventListener('click',function(){pitchFilter=b.dataset.pf;document.querySelectorAll('.filterbtn[data-pf]').forEach(function(x){x.classList.toggle('active',x.dataset.pf===pitchFilter);});renderPitchers();});});
 updateSortBtns();
