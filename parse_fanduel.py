@@ -34,6 +34,11 @@ def pitcher_prop(t):
     if "3+ Strikeouts in the 1st Inning" in t: return "K1"
     return None
 def strip_paren(s): return re.sub(r"\s*\([^()]*\)\s*$","",s).strip()
+def paren_last(s):
+    m=re.search(r"\(([^()]*)\)\s*$", s.strip())
+    if not m: return ""
+    parts=m.group(1).strip().split()
+    return parts[-1].lower() if parts else ""
 def team_code(s):
     if " @ " in s: return None
     return TEAM_NAME.get(strip_paren(s))
@@ -49,7 +54,7 @@ def is_header(ln):
 def at_game(ln):
     if " @ " in ln:
         a,b=ln.split(" @ ",1); ca,cb=team_code(a),team_code(b)
-        if ca and cb: return ca+"@"+cb
+        if ca and cb: return (ca+"@"+cb, paren_last(a), paren_last(b))
     return None
 def find_home(lines,i,window=5):
     for j in range(i+1, min(i+1+window, len(lines))):
@@ -89,7 +94,7 @@ def tokenize(lines):
         if ln.startswith("Same Game Parlay"):
             toks.append(("SGP",)); i+=1; continue
         g=at_game(ln)
-        if g: toks.append(("MATCH",g)); i+=1; continue
+        if g: toks.append(("MATCH",)+g); i+=1; continue
         m=re.match(r"^(.+?) (\d+)\+ Strikeouts$", ln)
         if m and i+1<n and lines[i+1].endswith("- Alt Strikeouts"):
             toks.append(("LEG",{"p":m.group(1).strip(),"prop":"ALTK","k":int(m.group(2))})); i+=2; continue
@@ -107,7 +112,7 @@ def tokenize(lines):
             toks.append(("LEG",{"p":prev_team(lines,i),"prop":"NA","txt":"Race To %s Runs"%m.group(1)})); i+=1; continue
         if team_code(ln) and not is_selection_subject(lines,i):
             hc,hidx=find_home(lines,i)
-            if hc: toks.append(("MATCH",team_code(ln)+"@"+hc)); i=hidx+1; continue
+            if hc: toks.append(("MATCH",team_code(ln)+"@"+hc,paren_last(ln),paren_last(lines[hidx]))); i=hidx+1; continue
         i+=1
     return toks
 
@@ -126,16 +131,21 @@ def parse_bet(lines):
     m2=re.match(r"^(\d+) leg parlay",header)
     pp=pitcher_prop(header)
     toks=tokenize(lines)
-    legs=[]; cur=None; expect=False
+    legs=[]; cur=None; cur_ap=""; cur_hp=""; expect=False
     for t in toks:
         if t[0]=="SGP": expect=True
         elif t[0]=="MATCH":
-            g=t[1]
-            if expect: cur=g; expect=False
-            elif legs: legs[-1]["g"]=g; cur=g
-            else: cur=g
+            g=t[1]; ap=t[2] if len(t)>2 else ""; hp=t[3] if len(t)>3 else ""
+            if expect: cur=g; cur_ap=ap; cur_hp=hp; expect=False
+            elif legs:
+                legs[-1]["g"]=g
+                if ap or hp: legs[-1]["asp"]=ap; legs[-1]["hsp"]=hp
+                cur=g; cur_ap=ap; cur_hp=hp
+            else: cur=g; cur_ap=ap; cur_hp=hp
         else:
-            d=dict(t[1]); d["g"]=cur; legs.append(d)
+            d=dict(t[1]); d["g"]=cur
+            if cur_ap or cur_hp: d["asp"]=cur_ap; d["hsp"]=cur_hp
+            legs.append(d)
     if pp is not None and not any(l.get("prop")==pp for l in legs):
         gme=next((t[1] for t in toks if t[0]=="MATCH"), None)
         legs=[{"p":header.split(" to ",1)[0].strip(),"prop":pp,"g":gme or "??"}]
