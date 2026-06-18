@@ -110,7 +110,7 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
 
 ## FEATURE LOG (enhancement requests; continues the backlog numbering)
 
-## 12. Sort bets by number of legs alive
+## 12. Sort bets by number of legs alive  [DONE 2026-06-18 - shipped in Bets-tab sort row: Payout/Time/Legs/Alive/Hit]
 - Goal: on the Bets tab, add a sort option that ranks bets by how many legs are still alive - surface the bets closest to cashing at the top.
 - Definition: "alive" = a leg whose legMet() is neither 'miss' nor 'void' (hit + pending). One missed leg kills the bet, so dead bets sink.
 - Open decisions for the build chat:
@@ -141,7 +141,7 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
 - Context: a concrete case of #6 (revise Hitters-tab badge), which already notes SB/RBI/runs/doubles/triples are not surfaced. Could be standalone (just SB) or folded into a #6 rethink.
 - Priority: Damien asked specifically, likely higher than the rest of #6. Source: helper chat 2026-06-16 (scoped from code, NOT prototyped).
 
-## 15. Sort bets by FanDuel bet timestamp
+## 15. Sort bets by FanDuel bet timestamp  [DONE 2026-06-18 - shipped in Bets-tab sort row: Payout/Time/Legs/Alive/Hit]
 - Goal: on the Bets tab, add a sort option ordering bets by when they were PLACED on FanDuel (newest-first / oldest-first).
 - Already available: each bet stores "placed" (e.g. "6/14 9:21AM") and a derived "ts"; sort keys off ts.
 - Pairs with #12 - likely the same sort/order control with multiple modes.
@@ -153,7 +153,7 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
 - Note: not needed for void math (FanDuel recomputes; SGP correlation makes per-leg reconstruction unreliable); purely for analysis.
 - Priority: nice-to-have; wanted by Damien 2026-06-14.
 
-## 17. Sort bets by number of legs that hit
+## 17. Sort bets by number of legs that hit  [DONE 2026-06-18 - shipped in Bets-tab sort row: Payout/Time/Legs/Alive/Hit]
 - Goal: on the Bets tab, add a sort option ranking bets by how many legs have already HIT (graded win), highest-first - a "how many cashed / how close did it come" view.
 - Distinct from #12 (legs ALIVE = hit + pending): this counts ONLY legs already graded 'hit'.
 - Already available: betStatus(b) returns {hit, total}; sort key off hit (tiebreak by hit/total, then alive).
