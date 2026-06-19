@@ -117,7 +117,7 @@ footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:v
 .build{color:var(--faint);font-size:10px;font-family:'Spline Sans Mono';margin-left:10px;white-space:nowrap}</style></head><body><div class="wrap">
 <div class="kicker">Live Bet Tracker</div>
 <h1>Friday, June 19 &mdash; MLB Bets</h1>
-<div class="updbar"><span class="upd" id="updated">Loading...</span><span class="build">build 06/19 19:30</span><button class="btn" id="refresh">Refresh</button></div>
+<div class="updbar"><span class="upd" id="updated">Loading...</span><span class="build">build 06/19 19:41</span><button class="btn" id="refresh">Refresh</button></div>
 <nav class="tabs">
  <button data-tab="summary" class="active">Summary</button>
  <button data-tab="hitters">Hitters</button>
@@ -175,8 +175,8 @@ resetStats();
 async function gj(u){const r=await fetch(u,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}
 function ordSuffix(n){if(n%10==1&&n%100!=11)return n+'st';if(n%10==2&&n%100!=12)return n+'nd';if(n%10==3&&n%100!=13)return n+'rd';return n+'th';}
 function etTime(iso){try{return new Date(iso).toLocaleTimeString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'})+' ET';}catch(e){return '';}}
-function amStr(o){return (o>0?'+':'')+o.toLocaleString();}
-function money(n){return '$'+n.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});}
+function amStr(o){return (o==null)?'&mdash;':((o>0?'+':'')+o.toLocaleString());}
+function money(n){return (n==null)?'&mdash;':('$'+n.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2}));}
 function statOf(name,pk){const S=pk?(STATS[pk]||{}):STATSALL;return S[norm(name)]||{hits:0,doubles:0,triples:0,hr:0,sb:0,tb:0,runs:0,rbi:0};}
 function teamOf(name){const s=STATSALL[norm(name)];if(s&&s.tm)return s.tm;const p=pByKey[norm(name)];if(p)return p.tmLive||p.tm||'';const q=pitByKey[norm(name)];return q?(q.tmLive||q.tm||''):'';}
 function legGame(l){if(l.g)return l.g;const p=pByKey[norm(l.p)];if(p)return p.g;const q=pitByKey[norm(l.p)];if(q)return q.g;return '?';}function lastn(s){s=(s||'').trim().split(' ');return s.length?s[s.length-1].toLowerCase():'';}function _gst(g){const ls=g.linescore||{};const st=g.status.abstractGameState;return {state:st,detail:g.status.detailedState,inn:ls.currentInning||0,half:ls.inningState,as:(ls.teams&&ls.teams.away&&ls.teams.away.runs!=null)?ls.teams.away.runs:(g.teams.away.score||0),hs:(ls.teams&&ls.teams.home&&ls.teams.home.runs!=null)?ls.teams.home.runs:(g.teams.home.score||0),time:g.gameDate};}function _starters(g,feed){const r={away:'',home:''};['away','home'].forEach(function(side){let nm='';if(feed&&!feed.__err&&feed.liveData&&feed.liveData.boxscore&&feed.liveData.boxscore.teams&&feed.liveData.boxscore.teams[side]){const tb=feed.liveData.boxscore.teams[side];const ps=tb.pitchers||[];if(ps.length){const pp=tb.players&&tb.players['ID'+ps[0]];if(pp&&pp.person)nm=pp.person.fullName;}}if(!nm&&g.teams&&g.teams[side]&&g.teams[side].probablePitcher)nm=g.teams[side].probablePitcher.fullName;r[side]=lastn(nm);});return r;}function _lpk(leg){let mk=leg.g;if(!mk){const p=pByKey[norm(leg.p)]||pitByKey[norm(leg.p)];mk=p?p.g:null;}if(!mk)return null;const c=cand[mk]||[];if(!c.length)return null;if(c.length===1)return c[0].gamePk;const ap=(leg.asp||'').toLowerCase(),hp=(leg.hsp||'').toLowerCase();if(ap||hp){for(const g of c){const s=startersByPk[g.gamePk]||{};if((ap&&s.away===ap)||(hp&&s.home===hp))return g.gamePk;}}const pn=lastn(leg.p);if(pn){for(const g of c){const s=startersByPk[g.gamePk]||{};if(s.away===pn||s.home===pn)return g.gamePk;}}return c[0].gamePk;}
