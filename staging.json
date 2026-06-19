@@ -45,9 +45,9 @@
       "full_id": "us-pa:01kvh0wydzf348f57s56083h0c",
       "id": "#083h0c",
       "kind": "3-leg SGP",
-      "odds": null,
-      "wager": null,
-      "payout": null,
+      "odds": 37390,
+      "wager": 0.09,
+      "payout": 33.74,
       "placed": "6/19 6:44PM",
       "status": "open",
       "legs": [
