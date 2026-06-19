@@ -117,7 +117,7 @@ footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:v
 .build{color:var(--faint);font-size:10px;font-family:'Spline Sans Mono';margin-left:10px;white-space:nowrap}</style></head><body><div class="wrap">
 <div class="kicker">Live Bet Tracker</div>
 <h1>Friday, June 19 &mdash; MLB Bets</h1>
-<div class="updbar"><span class="upd" id="updated">Loading...</span><span class="build">build 06/19 18:09</span><button class="btn" id="refresh">Refresh</button></div>
+<div class="updbar"><span class="upd" id="updated">Loading...</span><span class="build">build 06/19 18:53</span><button class="btn" id="refresh">Refresh</button></div>
 <nav class="tabs">
  <button data-tab="summary" class="active">Summary</button>
  <button data-tab="hitters">Hitters</button>
@@ -156,7 +156,7 @@ footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:v
 const DATE="2026-06-19";
 const SCHED="https://statsapi.mlb.com/api/v1/schedule?sportId=1&date="+DATE+"&hydrate=linescore,team,probablePitcher";
 const FEED=function(pk){return "https://statsapi.mlb.com/api/v1.1/game/"+pk+"/feed/live";};
-const GAMES={};const players=[];const pitchers=[];const allBets=[];const bets=allBets.filter(function(b){return !(b.legs&&b.legs.length&&b.legs.every(function(l){return l.prop==='NA';}));});
+const GAMES={"CIN@NYY": ["Reds", "Yankees"], "CWS@DET": ["White Sox", "Tigers"], "PIT@COL": ["Pirates", "Rockies"], "WSH@TB": ["Nationals", "Rays"]};const players=[{"n": "Sam Antonacci  +640", "tm": "", "g": "CWS@DET", "pr": ["SB"], "od": "", "mlb": ""}, {"n": "Jazz Chisholm  +320", "tm": "", "g": "CIN@NYY", "pr": ["SB"], "od": "", "mlb": ""}, {"n": "Nasim Nunez  +240", "tm": "", "g": "WSH@TB", "pr": ["SB"], "od": "", "mlb": ""}, {"n": "Jake McCarthy  +320", "tm": "", "g": "PIT@COL", "pr": ["SB"], "od": "", "mlb": ""}];const pitchers=[];const allBets=[{"id": "#q3pk8z", "kind": "4-leg parlay", "odds": 44282, "wager": 0.09, "payout": 39.94, "placed": "6:38 PM", "ts": 1838, "legs": [{"p": "Sam Antonacci  +640", "prop": "SB", "asp": "eisert", "hsp": ""}, {"p": "Jazz Chisholm  +320", "prop": "SB", "asp": "lowder", "hsp": ""}, {"p": "Nasim Nunez  +240", "prop": "SB", "asp": "poulin", "hsp": ""}, {"p": "Jake McCarthy  +320", "prop": "SB", "asp": "chandler", "hsp": ""}]}];const bets=allBets.filter(function(b){return !(b.legs&&b.legs.length&&b.legs.every(function(l){return l.prop==='NA';}));});
 const norm=function(s){return (s||"").normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z ]/g,'').replace(/\s+/g,' ').trim();};
 players.forEach(function(p){p.k=norm(p.n);});pitchers.forEach(function(p){p.k=norm(p.n);});
 const pByKey={};players.forEach(function(p){pByKey[p.k]=p;});
