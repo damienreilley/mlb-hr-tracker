@@ -1,4 +1,45 @@
 {
   "date": "2026-06-19",
-  "bets": []
+  "bets": [
+    {
+      "full_id": "us-pa:01kvh0k1f3fhtr5gx3jrq3pk8z",
+      "id": "#q3pk8z",
+      "kind": "4-leg parlay",
+      "odds": 44282,
+      "wager": 0.09,
+      "payout": 39.94,
+      "placed": "6/19 6:38PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Sam Antonacci  +640",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "eisert",
+          "hsp": ""
+        },
+        {
+          "p": "Jazz Chisholm  +320",
+          "prop": "SB",
+          "g": "CIN@NYY",
+          "asp": "lowder",
+          "hsp": ""
+        },
+        {
+          "p": "Nasim Nunez  +240",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": ""
+        },
+        {
+          "p": "Jake McCarthy  +320",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": ""
+        }
+      ]
+    }
+  ]
 }
