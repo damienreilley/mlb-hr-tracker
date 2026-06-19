@@ -1,5 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/server.py": { "includeFiles": "parse_fanduel.py" }
+  },
   "rewrites": [
     { "source": "/mcp", "destination": "/api/server" },
     { "source": "/mcp/(.*)", "destination": "/api/server" }
