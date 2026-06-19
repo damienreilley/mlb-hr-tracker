@@ -1,0 +1,4 @@
+# build-time copy of the canonical parser (see DEPLOY-RUNBOOK.md Step 2) - keep ONE parser in git
+parse_fanduel.py
+__pycache__/
+*.pyc

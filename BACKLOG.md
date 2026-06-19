@@ -48,6 +48,10 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
   - (c) Claude mobile extracts bet -> Damien pastes JSON into staging via GitHub mobile web -> Action builds. Works day one, no connector dependency, 2 taps.
 - Safety: always echo parsed bet back for confirm-before-publish; a misread ID/odds must not go live silently.
 
+- STATUS 2026-06-18 (APPROVED DESIGN + BUILD IN PROGRESS): chosen path is (d) NEW - a Vercel-hosted add_bet MCP remote connector (sidesteps the auth wall that killed path a). Flow: phone screenshot -> Claude vision transcribes -> add_bet tool runs the REPO parse_fanduel.py -> clean parse appends to staging.json (GitHub Contents API) -> Action builds -> live -> receipt. Full design: PHONE-ADD-BET-DESIGN.md. Code: add-bet-server/ (core LOCALLY TESTED 4/4; MCP/Vercel wrapper deploy-ready draft). Deploy steps: add-bet-server/DEPLOY-RUNBOOK.md.
+- DECISION UPDATE 2026-06-18: NO confirm-before-publish gate (SUPERSEDES the Safety line above). Damien chose straight-to-published; the parser's own FLAGS are the auto-gate (clean -> publish, any flag -> halt + report) plus a post-publish receipt. Residual risk (a plausible misread) accepted at $0.09 stakes.
+- Parser hardened for the screenshot path 2026-06-18 (commit 53125d2): case-insensitive props, strip matchup time/ellipsis/truncation, unique-prefix team match. 6/17 regression byte-identical.
+
 ## 9. iOS Shortcut one-tap deploy (needs Anthropic API key) - future, optional
 - Goal: Share-sheet Shortcut: screenshot -> Claude API extracts bet JSON -> GitHub API commits staging -> Action builds+deploys. One tap from FanDuel, no chat app.
 - Cost: pay-per-use Claude API (~a cent or two per bet) + Anthropic API key with credits. GitHub API free.
