@@ -40,6 +40,39 @@
           "hsp": ""
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kvh0wydzf348f57s56083h0c",
+      "id": "#083h0c",
+      "kind": "3-leg SGP",
+      "odds": null,
+      "wager": null,
+      "payout": null,
+      "placed": "6/19 6:44PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Otto Lopez",
+          "prop": "SB",
+          "g": "SF@MIA",
+          "asp": "roupp",
+          "hsp": "bachar"
+        },
+        {
+          "p": "Jakob Marsee",
+          "prop": "SB",
+          "g": "SF@MIA",
+          "asp": "roupp",
+          "hsp": "bachar"
+        },
+        {
+          "p": "Liam Hicks",
+          "prop": "HR",
+          "g": "SF@MIA",
+          "asp": "roupp",
+          "hsp": "bachar"
+        }
+      ]
     }
   ]
 }
