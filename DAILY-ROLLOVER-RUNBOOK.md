@@ -9,7 +9,7 @@ repeatable by any chat that follows it exactly. Verified against the 2026-06-17 
 
 Preconditions:
 - Desktop Commander available (Windows desktop). This needs python + git, so it
-  CANNOT run from the phone today (see VERCEL-FUTURE-DESIGN.md for the phone path).
+  CANNOT run from the phone today (see PHONE-ADD-BET-DESIGN.md for the phone path).
 - In the repo: C:\Users\damie\OneDrive\1-Sports-Fantasy-Betting\betting\Claude\mlb-hr-tracker
 - Tools: python C:\Users\damie\AppData\Local\Programs\Python\Python314\python.exe ;
   git "C:\Program Files\Git\cmd\git.exe" ; gh "C:\Program Files\GitHub CLI\gh.exe"
@@ -33,9 +33,10 @@ Definitions:
 
 ## STEP 3 - Archive the prior day (archive/ is NOT in the build trigger path -> no rebuild)
 - Copy index.html -> archive/<PRIOR>.html
+- Copy staging.json -> archive/<PRIOR>.json  (raw bet DATA as clean JSON; analysis + belt-and-suspenders; added 2026-06-19. Verify it is valid JSON with "date":"<PRIOR>".)
 - Sanity-check the copy: it contains <PRIOR> and the engine marker (function _lpk),
   and its byte size is close to the live index.html.
-- git add archive/<PRIOR>.html ; git commit -m "archive <PRIOR> board" ; git push
+- git add archive/<PRIOR>.html archive/<PRIOR>.json ; git commit -m "archive <PRIOR> board + data" ; git push
   (no Action triggers from this, so origin does not move on its own).
 
 ## STEP 4 - Flip to a fresh empty TODAY board
