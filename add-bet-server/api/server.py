@@ -67,7 +67,14 @@ def add_bet_impl(text):
 
 # --- MCP wiring (FastMCP / StreamableHTTP) ---
 from mcp.server.fastmcp import FastMCP
-mcp = FastMCP("mlb-hr-tracker-add-bet")
+from mcp.server.transport_security import TransportSecuritySettings
+# This runs on a public Vercel host, not localhost. Since mcp SDK 1.23 (CVE-2025-66416)
+# FastMCP auto-enables DNS-rebinding protection that allows ONLY localhost as the Host header
+# and 421s everything else - which is what was rejecting claude.ai. Disable that host check here.
+mcp = FastMCP(
+    "mlb-hr-tracker-add-bet",
+    transport_security=TransportSecuritySettings(enable_dns_rebinding_protection=False),
+)
 
 @mcp.tool()
 def add_bet(text: str) -> dict:
