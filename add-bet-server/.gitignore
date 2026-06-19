@@ -1,4 +1,5 @@
-# build-time copy of the canonical parser (see DEPLOY-RUNBOOK.md Step 2) - keep ONE parser in git
-parse_fanduel.py
+# parse_fanduel.py is committed here so Vercel's bundler includes it in the function.
+# The install-time cp (DEPLOY-RUNBOOK.md Step 2) refreshes it from the canonical root copy at build,
+# so the repo-root parser stays the single source of truth.
 __pycache__/
 *.pyc
