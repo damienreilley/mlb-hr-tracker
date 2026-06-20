@@ -2,6 +2,88 @@
   "date": "2026-06-19",
   "bets": [
     {
+      "full_id": "us-pa:01kvgx08vceepasr34txj5cgcf",
+      "id": "#j5cgcf",
+      "kind": "10-leg SGP+",
+      "odds": 24597,
+      "wager": 0.09,
+      "payout": 22.24,
+      "placed": "6/19 5:36PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HIT",
+          "g": "CLE@HOU",
+          "asp": "bibee",
+          "hsp": "imai"
+        },
+        {
+          "p": "Yainer Diaz",
+          "prop": "HIT",
+          "g": "CLE@HOU",
+          "asp": "bibee",
+          "hsp": "imai"
+        },
+        {
+          "p": "Jake Meyers",
+          "prop": "HIT",
+          "g": "CLE@HOU",
+          "asp": "bibee",
+          "hsp": "imai"
+        },
+        {
+          "p": "Christian Walker",
+          "prop": "HIT",
+          "g": "CLE@HOU",
+          "asp": "bibee",
+          "hsp": "imai"
+        },
+        {
+          "p": "Tyler Soderstrom",
+          "prop": "HIT",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
+        },
+        {
+          "p": "Nick Kurtz",
+          "prop": "HIT",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
+        },
+        {
+          "p": "Lawrence Butler",
+          "prop": "HIT",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
+        },
+        {
+          "p": "Jo Adell",
+          "prop": "HIT",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
+        },
+        {
+          "p": "Shea Langeliers",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        }
+      ]
+    },
+    {
       "full_id": "us-pa:01kvh0k1f3fhtr5gx3jrq3pk8z",
       "id": "#q3pk8z",
       "kind": "4-leg parlay",
@@ -12,32 +94,160 @@
       "status": "open",
       "legs": [
         {
-          "p": "Sam Antonacci  +640",
+          "p": "Sam Antonacci",
           "prop": "SB",
           "g": "CWS@DET",
           "asp": "eisert",
-          "hsp": ""
+          "hsp": "skubal"
         },
         {
-          "p": "Jazz Chisholm  +320",
+          "p": "Jazz Chisholm",
           "prop": "SB",
           "g": "CIN@NYY",
           "asp": "lowder",
-          "hsp": ""
+          "hsp": "schlittler"
         },
         {
-          "p": "Nasim Nunez  +240",
+          "p": "Nasim Nunez",
           "prop": "SB",
           "g": "WSH@TB",
           "asp": "poulin",
-          "hsp": ""
+          "hsp": "jax"
         },
         {
-          "p": "Jake McCarthy  +320",
+          "p": "Jake McCarthy",
           "prop": "SB",
           "g": "PIT@COL",
           "asp": "chandler",
-          "hsp": ""
+          "hsp": "freeland"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgy3tfxedna7nw6q5wrh7fm",
+      "id": "#wrh7fm",
+      "kind": "5-leg parlay",
+      "odds": 136426,
+      "wager": 0.1,
+      "payout": 136.53,
+      "placed": "6/19 5:55PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dillon Dingler",
+          "prop": "HR",
+          "g": "CWS@DET",
+          "asp": "eisert",
+          "hsp": "skubal"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "CLE@HOU",
+          "asp": "bibee",
+          "hsp": "imai"
+        },
+        {
+          "p": "Bryan Reynolds",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "gibson",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Victor Robles",
+          "prop": "SB",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgmmh8negs8yqnv5f1e3c0e",
+      "id": "#1e3c0e",
+      "kind": "Pitcher Special",
+      "odds": 1200,
+      "wager": 0.1,
+      "payout": 1.3,
+      "placed": "6/19 3:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Tarik Skubal",
+          "prop": "K1",
+          "g": "CWS@DET"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgmmh8ne3nsr7hm22aa1d3j",
+      "id": "#aa1d3j",
+      "kind": "Pitcher Special",
+      "odds": 1900,
+      "wager": 0.1,
+      "payout": 2.0,
+      "placed": "6/19 3:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Tarik Skubal",
+          "prop": "NH5",
+          "g": "CWS@DET"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgxt1w9fdbtx7sp9ps8n0es",
+      "id": "#s8n0es",
+      "kind": "5-leg parlay",
+      "odds": 82627,
+      "wager": 0.1,
+      "payout": 82.73,
+      "placed": "6/19 5:50PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "CIN@NYY",
+          "asp": "lowder",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Chandler Simpson",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "CLE@HOU",
+          "asp": "bibee",
+          "hsp": "imai"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Shea Langeliers",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
         }
       ]
     },
@@ -71,6 +281,751 @@
           "g": "SF@MIA",
           "asp": "roupp",
           "hsp": "bachar"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvh0fe97fxh924njzmkvd1qb",
+      "id": "#kvd1qb",
+      "kind": "5-leg parlay",
+      "odds": 2922,
+      "wager": 0.09,
+      "payout": 2.72,
+      "placed": "6/19 6:36PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Washington Nationals",
+          "prop": "ML",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "San Francisco Giants",
+          "prop": "ML",
+          "g": "SF@MIA",
+          "asp": "roupp",
+          "hsp": "bachar"
+        },
+        {
+          "p": "Texas Rangers",
+          "prop": "ML",
+          "g": "SD@TEX",
+          "asp": "vasquez",
+          "hsp": "degrom"
+        },
+        {
+          "p": "Cleveland Guardians",
+          "prop": "ML",
+          "g": "CLE@HOU",
+          "asp": "bibee",
+          "hsp": "imai"
+        },
+        {
+          "p": "Kansas City Royals",
+          "prop": "ML",
+          "g": "STL@KC",
+          "asp": "mcgreevy",
+          "hsp": "lugo"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgxk03zee8rtwh34y7g2zvk",
+      "id": "#7g2zvk",
+      "kind": "5-leg parlay",
+      "odds": 137778,
+      "wager": 0.11,
+      "payout": 151.67,
+      "placed": "6/19 5:46PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "CLE@HOU",
+          "asp": "bibee",
+          "hsp": "imai"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Shea Langeliers",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "SB",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgmatg3et6twqr0nd8tdhyd",
+      "id": "#8tdhyd",
+      "kind": "4-leg SGP+",
+      "odds": 27397,
+      "wager": 0.22,
+      "payout": 60.5,
+      "placed": "6/19 3:04PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "Chandler Simpson",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgmmh8nfwaazy8n820gkynt",
+      "id": "#0gkynt",
+      "kind": "Pitcher Special",
+      "odds": 1600,
+      "wager": 0.1,
+      "payout": 1.7,
+      "placed": "6/19 3:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jacob deGrom",
+          "prop": "NH5",
+          "g": "SD@TEX"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgmmh8ner0aa6acjhhszm74",
+      "id": "#hszm74",
+      "kind": "Pitcher Special",
+      "odds": 6500,
+      "wager": 0.1,
+      "payout": 6.6,
+      "placed": "6/19 3:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jacob deGrom",
+          "prop": "NH7",
+          "g": "SD@TEX"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgmmh8nede8gwghaaxbg2nh",
+      "id": "#xbg2nh",
+      "kind": "Pitcher Special",
+      "odds": 750,
+      "wager": 0.1,
+      "payout": 0.85,
+      "placed": "6/19 3:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jacob deGrom",
+          "prop": "K1",
+          "g": "SD@TEX"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgx64kaezks5peaxrh0mx9q",
+      "id": "#h0mx9q",
+      "kind": "7-leg SGP",
+      "odds": 79434,
+      "wager": 0.09,
+      "payout": 71.6,
+      "placed": "6/19 5:39PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Mitch Garver",
+          "prop": "HR",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        },
+        {
+          "p": "Victor Robles",
+          "prop": "HIT",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HIT",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        },
+        {
+          "p": "Victor Robles",
+          "prop": "SB",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "SB",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        },
+        {
+          "p": "Jarren Duran",
+          "prop": "SB",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        },
+        {
+          "p": "Jarren Duran",
+          "prop": "HIT",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgmmh8nfm4vc3301nc9vrj1",
+      "id": "#c9vrj1",
+      "kind": "Pitcher Special",
+      "odds": 4500,
+      "wager": 0.1,
+      "payout": 4.6,
+      "placed": "6/19 3:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Soriano",
+          "prop": "NH5",
+          "g": "LAA@ATH"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgmmh8nfbf8skgm52hmvnqw",
+      "id": "#hmvnqw",
+      "kind": "Pitcher Special",
+      "odds": 2200,
+      "wager": 0.1,
+      "payout": 2.3,
+      "placed": "6/19 3:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ranger Suarez",
+          "prop": "NH5",
+          "g": "BOS@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgmmh8nex8r84sx1evv8c19",
+      "id": "#vv8c19",
+      "kind": "Pitcher Special",
+      "odds": 1800,
+      "wager": 0.1,
+      "payout": 1.9,
+      "placed": "6/19 3:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ranger Suarez",
+          "prop": "K1",
+          "g": "BOS@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgmmh8nemsaz83nbmsq9mws",
+      "id": "#sq9mws",
+      "kind": "Pitcher Special",
+      "odds": 1100,
+      "wager": 0.1,
+      "payout": 1.2,
+      "placed": "6/19 3:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Soriano",
+          "prop": "K1",
+          "g": "LAA@ATH"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgm58bgf2f8gt5mtww2r19t",
+      "id": "#w2r19t",
+      "kind": "5-leg parlay",
+      "odds": 101756,
+      "wager": 0.09,
+      "payout": 91.67,
+      "placed": "6/19 3:01PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dillon Dingler",
+          "prop": "HR",
+          "g": "CWS@DET",
+          "asp": "eisert",
+          "hsp": "skubal"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "CLE@HOU",
+          "asp": "bibee",
+          "hsp": "imai"
+        },
+        {
+          "p": "Bryan Reynolds",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Jo Adell",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "gibson",
+          "hsp": "sasaki"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvgmadbsehxakfq77hmx7309",
+      "id": "#mx7309",
+      "kind": "6-leg SGP+",
+      "odds": 561754,
+      "wager": 0.09,
+      "payout": 505.68,
+      "placed": "6/19 3:04PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "Chandler Simpson",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "C.J. Abrams",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "James Wood",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvghnhv8fhbvmk2a3zdbzwc8",
+      "id": "#dbzwc8",
+      "kind": "6-leg SGP+",
+      "odds": 574918,
+      "wager": 0.09,
+      "payout": 517.52,
+      "placed": "6/19 2:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "C.J. Abrams",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "SD@TEX",
+          "asp": "vasquez",
+          "hsp": "degrom"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "TOR@CHC",
+          "asp": "gausman",
+          "hsp": "brown"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvf5zp0weegtbwc40hxst25m",
+      "id": "#xst25m",
+      "kind": "6-leg SGP+",
+      "odds": 1003063,
+      "wager": 0.09,
+      "payout": 902.86,
+      "placed": "6/19 1:34AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "C.J. Abrams",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "SD@TEX",
+          "asp": "vasquez",
+          "hsp": "degrom"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "TOR@CHC",
+          "asp": "gausman",
+          "hsp": "brown"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004189",
+      "id": "#4189",
+      "kind": "8-leg SGP+",
+      "odds": 34522784,
+      "wager": 0.09,
+      "payout": 31070.6,
+      "placed": "6/19 1:33AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "C.J. Abrams",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "James Wood",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "SD@TEX",
+          "asp": "vasquez",
+          "hsp": "degrom"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "TOR@CHC",
+          "asp": "gausman",
+          "hsp": "brown"
+        },
+        {
+          "p": "Travis Bazzana",
+          "prop": "SB",
+          "g": "CLE@HOU",
+          "asp": "bibee",
+          "hsp": "imai"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvf4kmypfmys8sy4k52wy0g0",
+      "id": "#2wy0g0",
+      "kind": "4-leg SGP+",
+      "odds": 38428,
+      "wager": 0.09,
+      "payout": 34.68,
+      "placed": "6/19 1:10AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "chandler",
+          "hsp": "freeland"
+        },
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "poulin",
+          "hsp": "jax"
+        },
+        {
+          "p": "Victor Robles",
+          "prop": "SB",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvf4m829fbzt51xvqqnskkhn",
+      "id": "#nskkhn",
+      "kind": "Pitcher Special",
+      "odds": 2200,
+      "wager": 0.09,
+      "payout": 2.07,
+      "placed": "6/19 1:11AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ranger Suarez",
+          "prop": "K1",
+          "g": "BOS@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvf4m829ev4sz4v2khma6hsv",
+      "id": "#ma6hsv",
+      "kind": "Pitcher Special",
+      "odds": 2500,
+      "wager": 0.09,
+      "payout": 2.34,
+      "placed": "6/19 1:11AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ranger Suarez",
+          "prop": "NH5",
+          "g": "BOS@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvf05z5xf7bvrzmbc5jzdbey",
+      "id": "#jzdbey",
+      "kind": "5-leg SGP+",
+      "odds": 101749,
+      "wager": 0.09,
+      "payout": 91.66,
+      "placed": "6/18 11:53PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HR",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        },
+        {
+          "p": "Connor Joe",
+          "prop": "HIT",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        },
+        {
+          "p": "Victor Robles",
+          "prop": "SB",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "SB",
+          "g": "BAL@LAD",
+          "asp": "gibson",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Shohei Ohtani",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "gibson",
+          "hsp": "sasaki"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvf05z5xe3wvj9bbr79hgmzv",
+      "id": "#9hgmzv",
+      "kind": "3-leg SGP",
+      "odds": 4340,
+      "wager": 0.09,
+      "payout": 4.0,
+      "placed": "6/18 11:53PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HR",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        },
+        {
+          "p": "Connor Joe",
+          "prop": "HIT",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        },
+        {
+          "p": "Victor Robles",
+          "prop": "SB",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
         }
       ]
     }
