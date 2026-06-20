@@ -1061,6 +1061,183 @@
           "hsp": "miller"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kvhe921vetzb2snxm3hymwpy",
+      "id": "#hymwpy",
+      "kind": "3-leg SGP+",
+      "odds": 15679,
+      "wager": 0.09,
+      "payout": 14.2,
+      "placed": "6/19 10:38PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jo Adell",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
+        },
+        {
+          "p": "Shea Langeliers",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "gibson",
+          "hsp": "sasaki"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvhd66yge508dhrz1y9t2gpe",
+      "id": "#9t2gpe",
+      "kind": "4-leg SGP+",
+      "odds": 68125,
+      "wager": 0.09,
+      "payout": 61.4,
+      "placed": "6/19 10:19PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Freddie Freeman",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "gibson",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "gibson",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Shea Langeliers",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HR",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvhd1hxae8f810ag15pmr3ya",
+      "id": "#pmr3ya",
+      "kind": "2-leg parlay",
+      "odds": 2791,
+      "wager": 0.09,
+      "payout": 2.6,
+      "placed": "6/19 10:16PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Shea Langeliers",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HR",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvheasxqeewv14xb2cjggnm7",
+      "id": "#jggnm7",
+      "kind": "2-leg parlay",
+      "odds": 3800,
+      "wager": 0.09,
+      "payout": 3.51,
+      "placed": "6/19 10:39PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "gibson",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Wilyer Abreu",
+          "prop": "HR",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvhd4rzgf108jpsj5pw2ja2m",
+      "id": "#w2ja2m",
+      "kind": "2-leg SGP",
+      "odds": 2518,
+      "wager": 0.09,
+      "payout": 2.36,
+      "placed": "6/19 10:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "gibson",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Freddie Freeman",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "gibson",
+          "hsp": "sasaki"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvhd47z2e7182k39z1ahqfz9",
+      "id": "#ahqfz9",
+      "kind": "2-leg parlay",
+      "odds": 6620,
+      "wager": 0.1,
+      "payout": 6.72,
+      "placed": "6/19 10:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Victor Robles",
+          "prop": "HR",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        },
+        {
+          "p": "Freddie Freeman",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "gibson",
+          "hsp": "sasaki"
+        }
+      ]
     }
   ]
 }
