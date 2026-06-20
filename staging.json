@@ -1028,6 +1028,39 @@
           "hsp": "miller"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kvhd6wd5epftrmx0aj88vkdv",
+      "id": "#88vkdv",
+      "kind": "3-leg parlay",
+      "odds": 15452,
+      "wager": 0.1,
+      "payout": 15.55,
+      "placed": "6/19 10:19PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Shea Langeliers",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "soriano",
+          "hsp": "springs"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "gibson",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HR",
+          "g": "BOS@SEA",
+          "asp": "suarez",
+          "hsp": "miller"
+        }
+      ]
     }
   ]
 }
