@@ -157,7 +157,7 @@ const DATE="__DATE__";
 const SCHED="https://statsapi.mlb.com/api/v1/schedule?sportId=1&date="+DATE+"&hydrate=linescore,team,probablePitcher";
 const FEED=function(pk){return "https://statsapi.mlb.com/api/v1.1/game/"+pk+"/feed/live";};
 const GAMES=__GAMES__;const players=__PLAYERS__;const pitchers=__PITCHERS__;const allBets=__BETS__;const bets=allBets.filter(function(b){return !(b.legs&&b.legs.length&&b.legs.every(function(l){return l.prop==='NA';}));});
-const norm=function(s){return (s||"").normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z ]/g,'').replace(/\s+/g,' ').trim();};
+const norm=function(s){return (s||"").normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z ]/g,'').replace(/\s+/g,' ').trim().replace(/ (jr|sr|iv|iii|ii)$/,'');};
 players.forEach(function(p){p.k=norm(p.n);});pitchers.forEach(function(p){p.k=norm(p.n);});
 const pByKey={};players.forEach(function(p){pByKey[p.k]=p;});
 const pById={};players.forEach(function(p){if(p.mlb)pById['#'+p.mlb]=p;});
