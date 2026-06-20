@@ -70,6 +70,13 @@ def process(text, staging):
                 "parsed_ids": [b["id"] for b in bets]}
     if not bets:
         return {"ok": False, "reason": "no_bets", "flags": ["no bet parsed from text"]}
+    incomplete = [b["id"] for b in bets
+                  if b["odds"] is None or b["wager"] is None or b["payout"] is None]
+    if incomplete:
+        return {"ok": False, "reason": "missing_money",
+                "flags": ["%s | parser could not read odds/wager/payout - held, not published" % i
+                          for i in incomplete],
+                "parsed_ids": [b["id"] for b in bets]}
     bd = bet_date_from_text(text)
     staging, summ = add_bets(staging, bets, bd)
     if summ["date_flags"]:

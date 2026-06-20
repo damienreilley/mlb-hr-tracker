@@ -95,10 +95,29 @@ def prev_team(lines,i):
         j-=1
     return "??"
 def money_before(lines,label):
+    # Tolerant money reader for TOTAL WAGER / TOTAL PAYOUT. Finds the $amount
+    # whether it is inline ("LABEL: $x"), directly ABOVE the label (FanDuel
+    # native paste), or directly BELOW it (some phone/screenshot layouts). When
+    # an amount sits on BOTH sides, the one sandwiched against the PARTNER label
+    # belongs to that partner, so we take the other side. Case-insensitive.
+    pat=r"\$\s*([\d,]+\.\d{2})"
+    def val(s):
+        m=re.search(pat,s); return float(m.group(1).replace(",","")) if m else None
+    def is_lbl(s):
+        s=s.lower(); return ("total wager" in s) or ("total payout" in s)
+    lab=label.lower(); n=len(lines)
     for i,ln in enumerate(lines):
-        if ln==label and i>0:
-            m=re.match(r"^\$([\d,]+\.\d+)$", lines[i-1])
-            if m: return float(m.group(1).replace(",",""))
+        if lab in ln.lower():
+            v=val(ln)
+            if v is not None: return v
+            above=val(lines[i-1]) if i>0 else None
+            below=val(lines[i+1]) if i+1<n else None
+            if above is not None and below is None: return above
+            if below is not None and above is None: return below
+            if above is not None and below is not None:
+                if i+2<n and is_lbl(lines[i+2]): return above   # below belongs to partner
+                if i-2>=0 and is_lbl(lines[i-2]): return below  # above belongs to partner
+                return above
     return None
 def is_selection_subject(lines,i):
     # True if this team line is a BET SELECTION subject (next meaningful line is Moneyline / a prop),
@@ -162,7 +181,7 @@ def parse_bet(lines):
     header=lines[0]
     odds=None
     for l in lines[1:]:
-        mm=re.match(r"^\+(\d+)$",l)
+        mm=re.search(r"(?<!\d)\+(\d{3,})(?!\d)",l)
         if mm: odds=int(mm.group(1)); break
     wager=money_before(lines,"TOTAL WAGER"); payout=money_before(lines,"TOTAL PAYOUT")
     m1=re.match(r"^(\d+) leg Same Game Parlay\+",header)
