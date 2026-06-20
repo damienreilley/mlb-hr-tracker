@@ -66,10 +66,11 @@ h2{font-family:'Archivo';font-weight:900;font-size:16px;margin:22px 0 9px}h2:fir
 .abtag{font-family:'Spline Sans Mono';font-size:9px;font-weight:700;padding:2px 6px;border-radius:5px;white-space:nowrap;flex:none}
 .abtag.ab{background:#fbeccb;color:#9a6800;border:1px solid #f0d79a;animation:p 1.3s infinite}
 .abtag.od{background:#e8f0fb;color:var(--alive);border:1px solid #cfe0f7}
-.podds{font-family:'Spline Sans Mono';font-size:11px;color:var(--dim);white-space:nowrap}.hitcount{font-family:'Spline Sans Mono';font-size:11px;font-weight:600;color:var(--dim);white-space:nowrap}.hrt-stat.hits b{color:var(--c-hit)}
+.podds{font-family:'Spline Sans Mono';font-size:11px;color:var(--dim);white-space:nowrap}.hitcount{font-family:'Spline Sans Mono';font-size:11px;font-weight:600;color:var(--dim);white-space:nowrap}.hrt-stat.hits b{color:var(--c-hit)}.hrt-stat.sb b{color:#0891b2}
 .hrbadge{font-family:'Spline Sans Mono';font-size:11px;font-weight:700;color:#fff;background:var(--c-hr);padding:2px 8px;border-radius:20px;white-space:nowrap}
 .hitbadge{font-family:'Spline Sans Mono';font-size:10.5px;font-weight:700;color:#fff;background:var(--c-hit);padding:2px 8px;border-radius:20px;white-space:nowrap}
 .tbbadge{font-family:'Spline Sans Mono';font-size:10.5px;font-weight:700;color:#fff;background:var(--c-tb);padding:2px 8px;border-radius:20px;white-space:nowrap}
+.sbbadge{font-family:'Spline Sans Mono';font-size:10.5px;font-weight:700;color:#fff;background:#0891b2;padding:2px 8px;border-radius:20px;white-space:nowrap}
 .pitchstat{display:flex;flex-direction:column;gap:6px;margin-top:2px}
 .pchip{display:flex;justify-content:space-between;align-items:center;font-family:'Spline Sans';font-size:13.5px;font-weight:600;padding:8px 11px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);color:var(--ink)}
 .pchip .pcd{font-family:'Spline Sans Mono';font-size:12px;color:var(--dim);font-weight:600}
@@ -117,7 +118,7 @@ footer{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:v
 .build{color:var(--faint);font-size:10px;font-family:'Spline Sans Mono';margin-left:10px;white-space:nowrap}</style></head><body><div class="wrap">
 <div class="kicker">Live Bet Tracker</div>
 <h1>Friday, June 19 &mdash; MLB Bets</h1>
-<div class="updbar"><span class="upd" id="updated">Loading...</span><span class="build">build 06/19 23:07</span><button class="btn" id="refresh">Refresh</button></div>
+<div class="updbar"><span class="upd" id="updated">Loading...</span><span class="build">build 06/19 23:22</span><button class="btn" id="refresh">Refresh</button></div>
 <nav class="tabs">
  <button data-tab="summary" class="active">Summary</button>
  <button data-tab="hitters">Hitters</button>
@@ -301,22 +302,24 @@ function gameBadge(gs){let badge,cls;
 function renderHitters(live){
  const order=Object.keys(GAMES);
  order.sort(function(A,B){const rk=function(key){const hr=players.some(function(p){return p.g===key&&p.hr.length>0;});if(hr)return 0;const s=GS[key]?GS[key].state:'NA';return s==='Live'?1:((s==='Preview'||s==='Pre-Game')?2:(s==='Final'?3:4));};return rk(A)-rk(B);});
- const homered=players.filter(function(p){return p.hr.length>0;});const totalP=players.length;const totHits=players.reduce(function(a,p){return a+(statOf(p.n).hits||0);},0);
- let track='<div class="hrtrack"><div class="hrt-stat"><b>'+homered.length+'</b> of '+totalP+' homered</div><div class="hrt-stat hits"><b>'+totHits+'</b> hits</div><div class="hrt-stat live"><b>'+live+'</b> games live</div><div class="hrt-pills">'+(homered.length?homered.map(function(p){return '<span class="hrpill">&#9733; '+p.n+(p.hr.length>1?' x'+p.hr.length:'')+'</span>';}).join(''):'<span class="muted">none yet</span>')+'</div></div>';
+ const homered=players.filter(function(p){return p.hr.length>0;});const totalP=players.length;const totHits=players.reduce(function(a,p){return a+(statOf(p.n).hits||0);},0);const totSB=players.reduce(function(a,p){return a+(statOf(p.n).sb||0);},0);
+ let track='<div class="hrtrack"><div class="hrt-stat"><b>'+homered.length+'</b> of '+totalP+' homered</div><div class="hrt-stat hits"><b>'+totHits+'</b> hits</div><div class="hrt-stat sb"><b>'+totSB+'</b> SB</div><div class="hrt-stat live"><b>'+live+'</b> games live</div><div class="hrt-pills">'+(homered.length?homered.map(function(p){return '<span class="hrpill">&#9733; '+p.n+(p.hr.length>1?' x'+p.hr.length:'')+'</span>';}).join(''):'<span class="muted">none yet</span>')+'</div></div>';
  let html=track+'<div class="grid">';
  for(const key of order){const ps=players.filter(function(p){return p.g===key;});if(!ps.length)continue;
   const gs=GS[key]||{};const gb=gameBadge(gs);const showScore=(gs.state==='Live'||gs.state==='Final');
   const psort=ps.slice().sort(function(a,b){return (b.hr.length>0?1:0)-(a.hr.length>0?1:0);});
   let rows='';
-  for(const p of psort){const homer=p.hr.length>0;const s=statOf(p.n);const hasHit=p.pr.some(function(x){return x.indexOf('HIT')===0;});const hasTB=p.pr.some(function(x){return x.indexOf('TB')===0;});const tm=p.tmLive||p.tm;
-   let right;
+  for(const p of psort){const homer=p.hr.length>0;const s=statOf(p.n);const hasHit=p.pr.some(function(x){return x.indexOf('HIT')===0;});const hasTB=p.pr.some(function(x){return x.indexOf('TB')===0;});const hasSB=p.pr.some(function(x){return x.indexOf('SB')===0;});const tm=p.tmLive||p.tm;
+   const sbb=(s.sb>=1)?'<span class="sbbadge">&#10003; '+s.sb+' SB</span>':'';
+   let right='';
    if(homer)right='<span class="hrbadge">&#128165; HR &middot; '+p.hr.map(function(i){return ordSuffix(i);}).join(', ')+'</span>';
    else if(hasTB&&s.tb>=4)right='<span class="tbbadge">&#10003; '+s.tb+' TB</span>';
    else if(hasHit&&s.hits>=1)right='<span class="hitbadge">&#10003; '+s.hits+' H</span>';
    else if(s.hits>=1)right='<span class="hitcount">'+s.hits+' H</span>';
-   else right='<span class="podds">'+(p.od?p.od:'&mdash;')+'</span>';
+   right=right+sbb;
+   if(!right)right='<span class="podds">'+(p.od?p.od:'&mdash;')+'</span>';
    let abt='';if(!homer){if(p.atbat)abt='<span class="abtag ab">AT BAT</span>';else if(p.ondeck)abt='<span class="abtag od">ON DECK</span>';}
-   const hc=(homer||(hasTB&&s.tb>=4)||(hasHit&&s.hits>=1))?' hit':'';
+   const hc=(homer||(hasTB&&s.tb>=4)||(hasHit&&s.hits>=1)||(hasSB&&s.sb>=1))?' hit':'';
    rows+='<div class="prow'+hc+'"><div class="mk'+(homer?' hit':'')+'">'+(homer?'&#9733;':'&middot;')+'</div><span class="pn'+(homer?' hit':'')+'">'+p.n+(tm?' <span class="tmtag">('+tm+')</span>':'')+'</span>'+abt+right+'</div>';}
   html+='<div class="game"><div class="g-head"><div class="g-match">'+key.replace('@',' @ ')+(showScore?'<span class="g-score"> &nbsp;'+gs.as+'-'+gs.hs+'</span>':'')+'</div><div class="g-state '+gb.cls+'">'+gb.badge+'</div></div><div class="plist">'+rows+'</div></div>';}
  html+='</div>';$('hitters').innerHTML=html;
