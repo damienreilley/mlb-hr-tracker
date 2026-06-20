@@ -475,7 +475,7 @@
       "kind": "7-leg SGP",
       "odds": 79434,
       "wager": 0.09,
-      "payout": 71.6,
+      "payout": 30.79,
       "placed": "6/19 5:39PM",
       "status": "open",
       "legs": [
@@ -484,7 +484,8 @@
           "prop": "HR",
           "g": "BOS@SEA",
           "asp": "suarez",
-          "hsp": "miller"
+          "hsp": "miller",
+          "void": true
         },
         {
           "p": "Victor Robles",
@@ -955,7 +956,7 @@
       "kind": "5-leg SGP+",
       "odds": 101749,
       "wager": 0.09,
-      "payout": 91.66,
+      "payout": 15.2,
       "placed": "6/18 11:53PM",
       "status": "open",
       "legs": [
@@ -971,7 +972,8 @@
           "prop": "HIT",
           "g": "BOS@SEA",
           "asp": "suarez",
-          "hsp": "miller"
+          "hsp": "miller",
+          "void": true
         },
         {
           "p": "Victor Robles",
@@ -992,7 +994,8 @@
           "prop": "HR",
           "g": "BAL@LAD",
           "asp": "gibson",
-          "hsp": "sasaki"
+          "hsp": "sasaki",
+          "void": true
         }
       ]
     },
@@ -1002,7 +1005,7 @@
       "kind": "3-leg SGP",
       "odds": 4340,
       "wager": 0.09,
-      "payout": 4.0,
+      "payout": 2.24,
       "placed": "6/18 11:53PM",
       "status": "open",
       "legs": [
@@ -1018,7 +1021,8 @@
           "prop": "HIT",
           "g": "BOS@SEA",
           "asp": "suarez",
-          "hsp": "miller"
+          "hsp": "miller",
+          "void": true
         },
         {
           "p": "Victor Robles",
