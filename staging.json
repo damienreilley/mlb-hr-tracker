@@ -1094,6 +1094,23 @@
           "g": "NYM@PHI"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jek0bwckak68r9sm4",
+      "id": "#8r9sm4",
+      "kind": "Pitcher Special",
+      "odds": 700,
+      "wager": 0.25,
+      "payout": 2.0,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Zack Wheeler",
+          "prop": "UP9",
+          "g": "NYM@PHI"
+        }
+      ]
     }
   ]
 }

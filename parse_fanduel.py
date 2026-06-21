@@ -36,6 +36,8 @@ def pitcher_prop(t):
     if "No-Hitter Through 7" in t: return "NH7"
     if "No-Hitter Through 3" in t: return "NH3"
     if "3+ Strikeouts in the 1st Inning" in t: return "K1"
+    if "9 up 9 down" in t.lower(): return "UP9"
+    if "6 up 6 down" in t.lower(): return "UP6"
     return None
 def strip_paren(s): return re.sub(r"\s*\([^()]*\)\s*$","",s).strip()
 def paren_last(s):
