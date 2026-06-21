@@ -2068,6 +2068,343 @@
           "hsp": "kolek"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kvp7pzc5fzysbwbr3gf02zbd",
+      "id": "#f02zbd",
+      "kind": "4-leg SGP",
+      "odds": 10075,
+      "wager": 0.1,
+      "payout": 10.18,
+      "placed": "6/21 7:19PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Juan Soto",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Bo Bichette",
+          "prop": "HIT2",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "A.J. Ewing",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Carson Benge",
+          "prop": "RUN",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvp7mff3ep8re9yb7twv17vm",
+      "id": "#wv17vm",
+      "kind": "3-leg SGP",
+      "odds": 79476,
+      "wager": 0.1,
+      "payout": 79.58,
+      "placed": "6/21 7:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bo Bichette",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Bo Bichette",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "David Peterson",
+          "prop": "ALTK",
+          "k": 7,
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004195",
+      "id": "#4195",
+      "kind": "5-leg SGP",
+      "odds": 60811,
+      "wager": 0.25,
+      "payout": 197.9,
+      "placed": "6/21 7:15PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Alec Bohm",
+          "prop": "RBI2",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Carson Benge",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "HIT3",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Edmundo Sosa",
+          "prop": "HIT2",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HIT",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvp79m0beakt9vv7bxqbx60z",
+      "id": "#qbx60z",
+      "kind": "4-leg SGP",
+      "odds": 72104,
+      "wager": 0.1,
+      "payout": 72.2,
+      "placed": "6/21 7:12PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Trea Turner",
+          "prop": "HIT3",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Edmundo Sosa",
+          "prop": "HIT3",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HIT",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Alec Bohm",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvp750sae5r9ghatz7g3p19f",
+      "id": "#g3p19f",
+      "kind": "3-leg SGP",
+      "odds": 43704,
+      "wager": 0.23,
+      "payout": 100.76,
+      "placed": "6/21 7:09PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Edmundo Sosa",
+          "prop": "HIT4",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "HIT3",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Alec Bohm",
+          "prop": "HIT2",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvp2prfwfvmbzs3dqhm5qnns",
+      "id": "#m5qnns",
+      "kind": "5-leg SGP",
+      "odds": 72085,
+      "wager": 0.09,
+      "payout": 64.98,
+      "placed": "6/21 5:52PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Edmundo Sosa",
+          "prop": "RBI4",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Edmundo Sosa",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Bryce Harper",
+          "prop": "RUN",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "RUN",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Edmundo Sosa",
+          "prop": "HIT2",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvp2gchwe5htrqmbj9km4bn2",
+      "id": "#km4bn2",
+      "kind": "2-leg SGP",
+      "odds": 5670,
+      "wager": 0.09,
+      "payout": 5.19,
+      "placed": "6/21 5:48PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Edmundo Sosa",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Alec Bohm",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvp2af0pe5ws9t5nt1djag6q",
+      "id": "#djag6q",
+      "kind": "2-leg SGP",
+      "odds": 15576,
+      "wager": 0.09,
+      "payout": 14.11,
+      "placed": "6/21 5:45PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Edmundo Sosa",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Edmundo Sosa",
+          "prop": "TB5",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvp24wpaf1hrb10q02avwg3a",
+      "id": "#avwg3a",
+      "kind": "Pitcher Special",
+      "odds": 2200,
+      "wager": 0.45,
+      "payout": 10.35,
+      "placed": "6/21 5:42PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Zack Wheeler",
+          "prop": "NH5",
+          "g": "NYM@PHI"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvp1qwtfey98aq2emyac0x2h",
+      "id": "#ac0x2h",
+      "kind": "2-leg SGP",
+      "odds": 430,
+      "wager": 0.11,
+      "payout": 0.58,
+      "placed": "6/21 5:35PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Zack Wheeler",
+          "prop": "ALTK",
+          "k": 9,
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Philadelphia Phillies",
+          "prop": "ML",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
     }
   ]
 }
