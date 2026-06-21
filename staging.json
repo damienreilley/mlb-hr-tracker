@@ -1,4 +1,844 @@
 {
   "date": "2026-06-21",
-  "bets": []
+  "bets": [
+    {
+      "full_id": "us-pa:01kvnjekqveyprr1612nb5nn29",
+      "id": "#b5nn29",
+      "kind": "3-leg SGP",
+      "odds": 60817,
+      "wager": 0.17,
+      "payout": 103.56,
+      "placed": "6/21 1:08PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryce Harper",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB2",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnje0xpfwpv54m8j4zx8asv",
+      "id": "#zx8asv",
+      "kind": "4-leg SGP",
+      "odds": 72103,
+      "wager": 0.09,
+      "payout": 64.98,
+      "placed": "6/21 1:07PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjd42wfvyr79xft4cvyj8j",
+      "id": "#cvyj8j",
+      "kind": "4-leg SGP",
+      "odds": 88517,
+      "wager": 0.1,
+      "payout": 88.62,
+      "placed": "6/21 1:07PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Alec Bohm",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Bryce Harper",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB2",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnj8zs2enxb9tm2n8kqvxcc",
+      "id": "#kqvxcc",
+      "kind": "5-leg SGP+",
+      "odds": 338230,
+      "wager": 0.09,
+      "payout": 304.5,
+      "placed": "6/21 1:04PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Ryan O'Hearn",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "SD@TEX",
+          "asp": "peralta",
+          "hsp": "eovaldi"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnj38rwf7y84s7h1c7dq9fp",
+      "id": "#7dq9fp",
+      "kind": "4-leg parlay",
+      "odds": 42808,
+      "wager": 0.09,
+      "payout": 38.62,
+      "placed": "6/21 1:01PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Zach Neto",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "detmers",
+          "hsp": "perkins"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004192",
+      "id": "#4192",
+      "kind": "7-leg SGP+",
+      "odds": 5712256,
+      "wager": 0.09,
+      "payout": 5141.12,
+      "placed": "6/21 1:01PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Brandon Lowe",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Jordan Walker",
+          "prop": "HR",
+          "g": "STL@KC",
+          "asp": "may",
+          "hsp": "kolek"
+        },
+        {
+          "p": "Zach Neto",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "detmers",
+          "hsp": "perkins"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnhyyemfc28zm7v3a2032kv",
+      "id": "#2032kv",
+      "kind": "4-leg SGP+",
+      "odds": 119035,
+      "wager": 0.09,
+      "payout": 107.22,
+      "placed": "6/21 12:59PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Alec Bohm",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnhjxxxf9g8zah5j53p4p28",
+      "id": "#3p4p28",
+      "kind": "14-leg SGP+",
+      "odds": 163827,
+      "wager": 0.09,
+      "payout": 147.53,
+      "placed": "6/21 12:52PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "young",
+          "hsp": "sheehan"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "young",
+          "hsp": "sheehan"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HIT",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "Brice Turang",
+          "prop": "HIT",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "David Hamilton",
+          "prop": "HIT",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HIT",
+          "g": "SD@TEX",
+          "asp": "peralta",
+          "hsp": "eovaldi"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "HIT",
+          "g": "SD@TEX",
+          "asp": "peralta",
+          "hsp": "eovaldi"
+        },
+        {
+          "p": "Jo Adell",
+          "prop": "HIT",
+          "g": "LAA@ATH",
+          "asp": "detmers",
+          "hsp": "perkins"
+        },
+        {
+          "p": "Zach Neto",
+          "prop": "HIT",
+          "g": "LAA@ATH",
+          "asp": "detmers",
+          "hsp": "perkins"
+        },
+        {
+          "p": "-145",
+          "prop": "HIT",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "-260",
+          "prop": "HIT",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "-145",
+          "prop": "HIT",
+          "g": "WSH@TB",
+          "asp": "alvarez",
+          "hsp": "martinez"
+        },
+        {
+          "p": "-330",
+          "prop": "HIT",
+          "g": "SF@MIA",
+          "asp": "webb",
+          "hsp": "gusto"
+        },
+        {
+          "p": "-320",
+          "prop": "HIT",
+          "g": "STL@KC",
+          "asp": "may",
+          "hsp": "kolek"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnh47n9f6xbfb69n4pdnjkg",
+      "id": "#pdnjkg",
+      "kind": "4-leg parlay",
+      "odds": 46672,
+      "wager": 0.09,
+      "payout": 42.1,
+      "placed": "6/21 12:44PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "alvarez",
+          "hsp": "martinez"
+        },
+        {
+          "p": "TJ Rumfield",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@LAD",
+          "asp": "young",
+          "hsp": "sheehan"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnh1xjaft8a0mn6qt703gpv",
+      "id": "#703gpv",
+      "kind": "4-leg SGP+",
+      "odds": 60956,
+      "wager": 0.09,
+      "payout": 54.95,
+      "placed": "6/21 12:43PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Brandon Lowe",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "TJ Rumfield",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvngzfsxf8xam7bmhbw3fxvp",
+      "id": "#w3fxvp",
+      "kind": "4-leg SGP+",
+      "odds": 101637,
+      "wager": 0.09,
+      "payout": 91.56,
+      "placed": "6/21 12:42PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Spencer Horwitz",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvngmqhkf48vje91rnhrhs5y",
+      "id": "#hrhs5y",
+      "kind": "4-leg SGP+",
+      "odds": 45062,
+      "wager": 0.22,
+      "payout": 99.36,
+      "placed": "6/21 12:36PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Brandon Lowe",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Zach Neto",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "detmers",
+          "hsp": "perkins"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvng7vbdfck8b7vam2rfhyz2",
+      "id": "#rfhyz2",
+      "kind": "3-leg parlay",
+      "odds": 14996,
+      "wager": 0.09,
+      "payout": 13.59,
+      "placed": "6/21 12:29PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "SD@TEX",
+          "asp": "peralta",
+          "hsp": "eovaldi"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvng75b0fdsawa9b5m5r9jyh",
+      "id": "#5r9jyh",
+      "kind": "5-leg SGP+",
+      "odds": 323638,
+      "wager": 0.09,
+      "payout": 291.36,
+      "placed": "6/21 12:29PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Otto Lopez",
+          "prop": "SB",
+          "g": "SF@MIA",
+          "asp": "webb",
+          "hsp": "gusto"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "SD@TEX",
+          "asp": "peralta",
+          "hsp": "eovaldi"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvng4dveey88tmy7hmk6dep8",
+      "id": "#k6dep8",
+      "kind": "4-leg parlay",
+      "odds": 67832,
+      "wager": 0.09,
+      "payout": 61.14,
+      "placed": "6/21 12:27PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Brice Turang",
+          "prop": "SB",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Otto Lopez",
+          "prop": "SB",
+          "g": "SF@MIA",
+          "asp": "webb",
+          "hsp": "gusto"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnfvrahf8qbzgw18w6d2m3j",
+      "id": "#6d2m3j",
+      "kind": "5-leg parlay",
+      "odds": 723651,
+      "wager": 0.09,
+      "payout": 651.38,
+      "placed": "6/21 12:22PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Brice Turang",
+          "prop": "SB",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Otto Lopez",
+          "prop": "SB",
+          "g": "SF@MIA",
+          "asp": "webb",
+          "hsp": "gusto"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HR",
+          "g": "SD@TEX",
+          "asp": "peralta",
+          "hsp": "eovaldi"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnfd69gegs8v2k4xst9kg5y",
+      "id": "#t9kg5y",
+      "kind": "6-leg SGP+",
+      "odds": 1255635,
+      "wager": 0.09,
+      "payout": 1130.19,
+      "placed": "6/21 12:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HR",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "David Hamilton",
+          "prop": "SB",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "Brice Turang",
+          "prop": "SB",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnenxvhfbhs8z786tewwpkr",
+      "id": "#ewwpkr",
+      "kind": "5-leg SGP+",
+      "odds": 136768,
+      "wager": 0.09,
+      "payout": 123.19,
+      "placed": "6/21 12:02PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Brandon Lowe",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Ryan O'Hearn",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Zach Neto",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "detmers",
+          "hsp": "perkins"
+        },
+        {
+          "p": "Jo Adell",
+          "prop": "HR",
+          "g": "LAA@ATH",
+          "asp": "detmers",
+          "hsp": "perkins"
+        },
+        {
+          "p": "Jordan Walker",
+          "prop": "HR",
+          "g": "STL@KC",
+          "asp": "may",
+          "hsp": "kolek"
+        }
+      ]
+    }
+  ]
 }
