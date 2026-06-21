@@ -1193,6 +1193,457 @@
           "hsp": "eovaldi"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kvnrrbegfm5syspjzycnkjms",
+      "id": "#cnkjms",
+      "kind": "7-leg SGP",
+      "odds": 60799,
+      "wager": 0.09,
+      "payout": 54.82,
+      "placed": "6/21 2:58PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Alec Bohm",
+          "prop": "HIT2",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HIT2",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Bryce Harper",
+          "prop": "HIT2",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "David Peterson",
+          "prop": "ALTK",
+          "k": 4,
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Zack Wheeler",
+          "prop": "ALTK",
+          "k": 6,
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Kyle Schwarber",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004194",
+      "id": "#4194",
+      "kind": "7-leg SGP+",
+      "odds": 4774712,
+      "wager": 0.09,
+      "payout": 4297.33,
+      "placed": "6/21 2:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Brandon Lowe",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Ryan O'Hearn",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "TJ Rumfield",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Kyle Schwarber",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Bryce Harper",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Alec Bohm",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnrk458ehq8h70e3zf8hzrq",
+      "id": "#f8hzrq",
+      "kind": "4-leg SGP+",
+      "odds": 53598,
+      "wager": 0.09,
+      "payout": 48.33,
+      "placed": "6/21 2:55PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryce Harper",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Alec Bohm",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Corbin Carroll",
+          "prop": "SB",
+          "g": "MIN@ARI",
+          "asp": "paredes",
+          "hsp": "cabrera"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnrjjtme568h8rx6a7bark0",
+      "id": "#7bark0",
+      "kind": "4-leg SGP+",
+      "odds": 58709,
+      "wager": 0.09,
+      "payout": 52.93,
+      "placed": "6/21 2:55PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Spencer Horwitz",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Corbin Carroll",
+          "prop": "SB",
+          "g": "MIN@ARI",
+          "asp": "paredes",
+          "hsp": "cabrera"
+        },
+        {
+          "p": "Bryce Harper",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnrj96den4t6nr0n33pf1ma",
+      "id": "#3pf1ma",
+      "kind": "5-leg SGP+",
+      "odds": 297418,
+      "wager": 0.09,
+      "payout": 267.77,
+      "placed": "6/21 2:54PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Spencer Horwitz",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Alec Bohm",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Corbin Carroll",
+          "prop": "SB",
+          "g": "MIN@ARI",
+          "asp": "paredes",
+          "hsp": "cabrera"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnr9jfefea915arx93n0jkv",
+      "id": "#3n0jkv",
+      "kind": "2-leg SGP",
+      "odds": 12960,
+      "wager": 0.09,
+      "payout": 11.75,
+      "placed": "6/21 2:50PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB2",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Ryan O'Hearn",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnr9jfeehjtqtvyd6adcktj",
+      "id": "#adcktj",
+      "kind": "4-leg SGP+",
+      "odds": 692722,
+      "wager": 0.09,
+      "payout": 623.55,
+      "placed": "6/21 2:50PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB2",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Ryan O'Hearn",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnr6zh5fg1r3n2sw5pncdem",
+      "id": "#pncdem",
+      "kind": "5-leg SGP+",
+      "odds": 256629,
+      "wager": 0.09,
+      "payout": 231.06,
+      "placed": "6/21 2:48PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryce Harper",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Brandon Lowe",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Spencer Horwitz",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnr6anaebk8nrb90hk3ppw0",
+      "id": "#k3ppw0",
+      "kind": "4-leg SGP+",
+      "odds": 48118,
+      "wager": 0.09,
+      "payout": 43.4,
+      "placed": "6/21 2:48PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryce Harper",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnr4xvdf0hsv3wq0tcy1hx2",
+      "id": "#cy1hx2",
+      "kind": "5-leg SGP+",
+      "odds": 149475,
+      "wager": 0.09,
+      "payout": 134.62,
+      "placed": "6/21 2:47PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Brandon Lowe",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Bryce Harper",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
     }
   ]
 }
