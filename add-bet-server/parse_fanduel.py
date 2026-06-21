@@ -87,13 +87,13 @@ def find_home(lines,i,window=5):
     return None, None
 def prev_name(lines,i):
     j=i-1
-    while j>=0 and (re.match(r"^\+\d+$", lines[j]) or lines[j]=="Void"): j-=1
+    while j>=0 and (re.match(r"^[+-]\d+$", lines[j]) or lines[j]=="Void"): j-=1
     return lines[j] if j>=0 else "??"
 def prev_team(lines,i):
     j=i-1
     while j>=0:
         if team_code(lines[j]): return lines[j].split(" (")[0].strip()
-        if lines[j] not in ("Moneyline","Void") and not re.match(r"^\+\d+$", lines[j]) and lines[j]!="First 5 Innings Result": break
+        if lines[j] not in ("Moneyline","Void") and not re.match(r"^[+-]\d+$", lines[j]) and lines[j]!="First 5 Innings Result": break
         j-=1
     return "??"
 def money_before(lines,label):
@@ -125,7 +125,7 @@ def is_selection_subject(lines,i):
     # True if this team line is a BET SELECTION subject (next meaningful line is Moneyline / a prop),
     # not the away side of a box-score matchup (which is followed by AB:/P:/lineup).
     j=i+1
-    if j<len(lines) and re.match(r"^\+\d+$", lines[j]): j+=1
+    if j<len(lines) and re.match(r"^[+-]\d+$", lines[j]): j+=1
     if j>=len(lines): return False
     nx=lines[j]
     return nx=="Moneyline" or prop_code(nx) is not None or nx=="First 5 Innings Result" or bool(re.match(r"^Race To \d+ Runs$", nx))

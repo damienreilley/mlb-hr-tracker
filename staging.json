@@ -1111,6 +1111,88 @@
           "g": "NYM@PHI"
         }
       ]
+    },
+    {
+      "full_id": "O/1924696/0004193",
+      "id": "#4193",
+      "kind": "10-leg SGP+",
+      "odds": 419728261,
+      "wager": 0.23,
+      "payout": 965375.23,
+      "placed": "6/21 1:26PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Brandon Lowe",
+          "prop": "HR",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "PIT@COL",
+          "asp": "jones",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HR",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@TB",
+          "asp": "alvarez",
+          "hsp": "martinez"
+        },
+        {
+          "p": "Otto Lopez",
+          "prop": "SB",
+          "g": "SF@MIA",
+          "asp": "webb",
+          "hsp": "gusto"
+        },
+        {
+          "p": "Jordan Walker",
+          "prop": "HR",
+          "g": "STL@KC",
+          "asp": "may",
+          "hsp": "kolek"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "CLE@HOU",
+          "asp": "cecconi",
+          "hsp": "teng"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "SD@TEX",
+          "asp": "peralta",
+          "hsp": "eovaldi"
+        }
+      ]
     }
   ]
 }
