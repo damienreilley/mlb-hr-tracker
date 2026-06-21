@@ -1644,6 +1644,430 @@
           "hsp": "wheeler"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kvnvattjf7z8we06qgqjm16y",
+      "id": "#qjm16y",
+      "kind": "3-leg parlay",
+      "odds": 245420,
+      "wager": 0.09,
+      "payout": 220.97,
+      "placed": "6/21 3:43PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "Detroit Tigers",
+          "prop": "ML",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "San Francisco Giants",
+          "prop": "ML",
+          "g": "SF@MIA",
+          "asp": "webb",
+          "hsp": "gusto"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnv6tgnfw2bkjfc7gpr1v8w",
+      "id": "#pr1v8w",
+      "kind": "5-leg parlay",
+      "odds": 317423,
+      "wager": 0.09,
+      "payout": 285.77,
+      "placed": "6/21 3:41PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "New York Yankees",
+          "prop": "ML",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "San Francisco Giants",
+          "prop": "ML",
+          "g": "SF@MIA",
+          "asp": "webb",
+          "hsp": "gusto"
+        },
+        {
+          "p": "Washington Nationals",
+          "prop": "ML",
+          "g": "WSH@TB",
+          "asp": "alvarez",
+          "hsp": "martinez"
+        },
+        {
+          "p": "Detroit Tigers",
+          "prop": "ML",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Cleveland Guardians",
+          "prop": "ML",
+          "g": "CLE@HOU",
+          "asp": "cecconi",
+          "hsp": "teng"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnv5kdheae8709a9jn28g92",
+      "id": "#n28g92",
+      "kind": "3-leg parlay",
+      "odds": 14064,
+      "wager": 0.09,
+      "payout": 12.75,
+      "placed": "6/21 3:40PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "New York Yankees",
+          "prop": "ML",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Detroit Tigers",
+          "prop": "ML",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Washington Nationals",
+          "prop": "ML",
+          "g": "WSH@TB",
+          "asp": "alvarez",
+          "hsp": "martinez"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnv56nzfwat526yak6jxbkn",
+      "id": "#6jxbkn",
+      "kind": "3-leg parlay",
+      "odds": 274526,
+      "wager": 0.09,
+      "payout": 247.16,
+      "placed": "6/21 3:40PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "Detroit Tigers",
+          "prop": "ML",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Washington Nationals",
+          "prop": "ML",
+          "g": "WSH@TB",
+          "asp": "alvarez",
+          "hsp": "martinez"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnt40dbekma8d9pb6k297n4",
+      "id": "#k297n4",
+      "kind": "5-leg parlay",
+      "odds": 79907,
+      "wager": 0.09,
+      "payout": 72.01,
+      "placed": "6/21 3:22PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "New York Yankees",
+          "prop": "ML",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Detroit Tigers",
+          "prop": "ML",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Tampa Bay Rays",
+          "prop": "ML",
+          "g": "WSH@TB",
+          "asp": "alvarez",
+          "hsp": "martinez"
+        },
+        {
+          "p": "San Francisco Giants",
+          "prop": "ML",
+          "g": "SF@MIA",
+          "asp": "webb",
+          "hsp": "gusto"
+        },
+        {
+          "p": "Cleveland Guardians",
+          "prop": "ML",
+          "g": "CLE@HOU",
+          "asp": "cecconi",
+          "hsp": "teng"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnt0j3nf08byt3dyxee8tym",
+      "id": "#ee8tym",
+      "kind": "2-leg parlay",
+      "odds": 10440,
+      "wager": 0.09,
+      "payout": 9.49,
+      "placed": "6/21 3:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "New York Yankees",
+          "prop": "ML",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnt09cmemz8vnjrheh1p3qh",
+      "id": "#h1p3qh",
+      "kind": "3-leg parlay",
+      "odds": 69464,
+      "wager": 0.09,
+      "payout": 62.61,
+      "placed": "6/21 3:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "New York Yankees",
+          "prop": "ML",
+          "g": "CIN@NYY",
+          "asp": "burns",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "Detroit Tigers",
+          "prop": "ML",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnsy64zfq1rzjh42jpamj15",
+      "id": "#pamj15",
+      "kind": "3-leg parlay",
+      "odds": 103068,
+      "wager": 0.09,
+      "payout": 92.85,
+      "placed": "6/21 3:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "Detroit Tigers",
+          "prop": "ML",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "San Diego Padres",
+          "prop": "ML",
+          "g": "SD@TEX",
+          "asp": "peralta",
+          "hsp": "eovaldi"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnsvdy2e3d98tr8es078nra",
+      "id": "#078nra",
+      "kind": "4-leg parlay",
+      "odds": 139077,
+      "wager": 0.1,
+      "payout": 139.18,
+      "placed": "6/21 3:17PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "MIL@ATL",
+          "asp": "gasser",
+          "hsp": "elder"
+        },
+        {
+          "p": "Detroit Tigers",
+          "prop": "ML",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "San Francisco Giants",
+          "prop": "ML",
+          "g": "SF@MIA",
+          "asp": "webb",
+          "hsp": "gusto"
+        },
+        {
+          "p": "Cleveland Guardians",
+          "prop": "ML",
+          "g": "CLE@HOU",
+          "asp": "cecconi",
+          "hsp": "teng"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnvb63cfx8rrpay4k9tbm0d",
+      "id": "#9tbm0d",
+      "kind": "2-leg parlay",
+      "odds": 2600,
+      "wager": 0.09,
+      "payout": 2.43,
+      "placed": "6/21 3:43PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Washington Nationals",
+          "prop": "ML",
+          "g": "WSH@TB",
+          "asp": "alvarez",
+          "hsp": "martinez"
+        },
+        {
+          "p": "San Francisco Giants",
+          "prop": "ML",
+          "g": "SF@MIA",
+          "asp": "webb",
+          "hsp": "gusto"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnv7defffhtg32cq9zccy48",
+      "id": "#zccy48",
+      "kind": "3-leg parlay",
+      "odds": 24293,
+      "wager": 0.09,
+      "payout": 21.95,
+      "placed": "6/21 3:41PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Detroit Tigers",
+          "prop": "ML",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Washington Nationals",
+          "prop": "ML",
+          "g": "WSH@TB",
+          "asp": "alvarez",
+          "hsp": "martinez"
+        },
+        {
+          "p": "San Francisco Giants",
+          "prop": "ML",
+          "g": "SF@MIA",
+          "asp": "webb",
+          "hsp": "gusto"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnt4g7jer5b3fr61xcty6py",
+      "id": "#cty6py",
+      "kind": "4-leg parlay",
+      "odds": 39198,
+      "wager": 0.09,
+      "payout": 35.37,
+      "placed": "6/21 3:22PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "San Francisco Giants",
+          "prop": "ML",
+          "g": "SF@MIA",
+          "asp": "webb",
+          "hsp": "gusto"
+        },
+        {
+          "p": "Detroit Tigers",
+          "prop": "ML",
+          "g": "CWS@DET",
+          "asp": "martin",
+          "hsp": "montero"
+        },
+        {
+          "p": "Cleveland Guardians",
+          "prop": "ML",
+          "g": "CLE@HOU",
+          "asp": "cecconi",
+          "hsp": "teng"
+        },
+        {
+          "p": "Kansas City Royals",
+          "prop": "ML",
+          "g": "STL@KC",
+          "asp": "may",
+          "hsp": "kolek"
+        }
+      ]
     }
   ]
 }
