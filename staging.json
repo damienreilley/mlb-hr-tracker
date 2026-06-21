@@ -839,6 +839,261 @@
           "hsp": "kolek"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jfzt92hz9t5apgnfy",
+      "id": "#apgnfy",
+      "kind": "Pitcher Special",
+      "odds": 2000,
+      "wager": 0.1,
+      "payout": 2.1,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Payton Tolle",
+          "prop": "NH5",
+          "g": "BOS@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jfrgv1w35h9rfy58c",
+      "id": "#rfy58c",
+      "kind": "Pitcher Special",
+      "odds": 3500,
+      "wager": 0.1,
+      "payout": 3.6,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Logan Webb",
+          "prop": "NH5",
+          "g": "SF@MIA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jfnzagdtvhaftv7v2",
+      "id": "#ftv7v2",
+      "kind": "Pitcher Special",
+      "odds": 1900,
+      "wager": 0.1,
+      "payout": 2.0,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dustin May",
+          "prop": "K1",
+          "g": "STL@KC"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jfjbatw6r30q898yp",
+      "id": "#q898yp",
+      "kind": "Pitcher Special",
+      "odds": 1500,
+      "wager": 0.1,
+      "payout": 1.6,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Davis Martin",
+          "prop": "K1",
+          "g": "CWS@DET"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jf97s4pf7bkvvjmc2",
+      "id": "#vvjmc2",
+      "kind": "Pitcher Special",
+      "odds": 2000,
+      "wager": 0.1,
+      "payout": 2.1,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Logan Gilbert",
+          "prop": "NH5",
+          "g": "BOS@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jf8aajwae57dwz3dc",
+      "id": "#dwz3dc",
+      "kind": "Pitcher Special",
+      "odds": 1500,
+      "wager": 0.1,
+      "payout": 1.6,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Payton Tolle",
+          "prop": "K1",
+          "g": "BOS@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jex2bwdfr43dva8dg",
+      "id": "#dva8dg",
+      "kind": "Pitcher Special",
+      "odds": 2200,
+      "wager": 0.1,
+      "payout": 2.3,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Logan Webb",
+          "prop": "K1",
+          "g": "SF@MIA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jewk9zwx19fcx6yya",
+      "id": "#cx6yya",
+      "kind": "Pitcher Special",
+      "odds": 1400,
+      "wager": 0.1,
+      "payout": 1.5,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Chase Burns",
+          "prop": "NH5",
+          "g": "CIN@NYY"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jev4sxvb51p5ky3f9",
+      "id": "#5ky3f9",
+      "kind": "Pitcher Special",
+      "odds": 2700,
+      "wager": 0.1,
+      "payout": 2.8,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dustin May",
+          "prop": "NH5",
+          "g": "STL@KC"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jesnr8hpkn9hn692m",
+      "id": "#hn692m",
+      "kind": "Pitcher Special",
+      "odds": 1100,
+      "wager": 0.1,
+      "payout": 1.2,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Logan Gilbert",
+          "prop": "K1",
+          "g": "BOS@SEA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jer98kadarta72qwm",
+      "id": "#a72qwm",
+      "kind": "Pitcher Special",
+      "odds": 800,
+      "wager": 0.1,
+      "payout": 0.9,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Chase Burns",
+          "prop": "K1",
+          "g": "CIN@NYY"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jedpt8y66m2x7vkef",
+      "id": "#x7vkef",
+      "kind": "Pitcher Special",
+      "odds": 1400,
+      "wager": 0.1,
+      "payout": 1.5,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Zack Wheeler",
+          "prop": "K1",
+          "g": "NYM@PHI"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83jecsb7m021dr8azj2",
+      "id": "#r8azj2",
+      "kind": "Pitcher Special",
+      "odds": 2200,
+      "wager": 0.1,
+      "payout": 2.3,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Zack Wheeler",
+          "prop": "NH5",
+          "g": "NYM@PHI"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83je84vns6wyy3hsqtc",
+      "id": "#3hsqtc",
+      "kind": "Pitcher Special",
+      "odds": 3000,
+      "wager": 0.1,
+      "payout": 3.1,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Davis Martin",
+          "prop": "NH5",
+          "g": "CWS@DET"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvnjt83je7hrtpjgh7cadpeq",
+      "id": "#cadpeq",
+      "kind": "Pitcher Special",
+      "odds": 6500,
+      "wager": 0.1,
+      "payout": 6.6,
+      "placed": "6/21 1:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Zack Wheeler",
+          "prop": "NH7",
+          "g": "NYM@PHI"
+        }
+      ]
     }
   ]
 }
