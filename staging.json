@@ -1205,6 +1205,418 @@
           "hsp": "phillips"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kvrns249ehct6jf2pee6x7dw",
+      "id": "#e6x7dw",
+      "kind": "4-leg SGP+",
+      "odds": 23595,
+      "wager": 0.2,
+      "payout": 47.39,
+      "placed": "6/22 6:03PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Caballero",
+          "prop": "SB",
+          "g": "NYY@DET",
+          "asp": "cole",
+          "hsp": "valdez"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "NYY@DET",
+          "asp": "cole",
+          "hsp": "valdez"
+        },
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "NYY@DET",
+          "asp": "cole",
+          "hsp": "valdez"
+        },
+        {
+          "p": "Shohei Ohtani",
+          "prop": "HR",
+          "g": "LAD@MIN",
+          "asp": "klein",
+          "hsp": "matthews"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrnqz4sfbb9vmngjsk8ghx8",
+      "id": "#k8ghx8",
+      "kind": "2-leg SGP",
+      "odds": 5629,
+      "wager": 0.1,
+      "payout": 5.73,
+      "placed": "6/22 6:03PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Caballero",
+          "prop": "SB2",
+          "g": "NYY@DET",
+          "asp": "cole",
+          "hsp": "valdez"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "NYY@DET",
+          "asp": "cole",
+          "hsp": "valdez"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrn5tfte2atgg3v3z5y4737",
+      "id": "#5y4737",
+      "kind": "5-leg parlay",
+      "odds": 42340,
+      "wager": 0.24,
+      "payout": 101.86,
+      "placed": "6/22 5:53PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Caballero",
+          "prop": "SB",
+          "g": "NYY@DET",
+          "asp": "cole",
+          "hsp": "valdez"
+        },
+        {
+          "p": "Esteury Ruiz",
+          "prop": "SB",
+          "g": "TEX@MIA",
+          "asp": "alexander",
+          "hsp": "phillips"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HR",
+          "g": "CHC@NYM",
+          "asp": "imanaga",
+          "hsp": "senga"
+        },
+        {
+          "p": "Shohei Ohtani",
+          "prop": "HR",
+          "g": "LAD@MIN",
+          "asp": "klein",
+          "hsp": "matthews"
+        },
+        {
+          "p": "Kyle Schwarber",
+          "prop": "HR",
+          "g": "PHI@WSH",
+          "asp": "mayza",
+          "hsp": "griffin"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrh79q0fejah12r5vwn33d5",
+      "id": "#wn33d5",
+      "kind": "7-leg SGP+",
+      "odds": 942930,
+      "wager": 0.2,
+      "payout": 1886.06,
+      "placed": "6/22 4:44PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Caballero",
+          "prop": "SB",
+          "g": "NYY@DET",
+          "asp": "cole",
+          "hsp": "valdez"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "NYY@DET",
+          "asp": "cole",
+          "hsp": "valdez"
+        },
+        {
+          "p": "Esteury Ruiz",
+          "prop": "SB",
+          "g": "TEX@MIA",
+          "asp": "alexander",
+          "hsp": "phillips"
+        },
+        {
+          "p": "Xavier Edwards",
+          "prop": "SB",
+          "g": "TEX@MIA",
+          "asp": "alexander",
+          "hsp": "phillips"
+        },
+        {
+          "p": "David Hamilton",
+          "prop": "SB",
+          "g": "MIL@CIN",
+          "asp": "woodruff",
+          "hsp": "singer"
+        },
+        {
+          "p": "Cole Carrigg",
+          "prop": "SB",
+          "g": "BOS@COL",
+          "asp": "bennett",
+          "hsp": "feltner"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "ATL@SD",
+          "asp": "holmes",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjzfjzt8f4f4v2cxbxs",
+      "id": "#2cxbxs",
+      "kind": "Pitcher Special",
+      "odds": 2700,
+      "wager": 0.1,
+      "payout": 2.8,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Shota Imanaga",
+          "prop": "NH5",
+          "g": "CHC@NYM"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjzffyv3wf97qqw8s33",
+      "id": "#qw8s33",
+      "kind": "Pitcher Special",
+      "odds": 1100,
+      "wager": 0.1,
+      "payout": 1.2,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Gavin Williams",
+          "prop": "K1",
+          "g": "CLE@CWS"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjzf7ssw05am734rnn1",
+      "id": "#34rnn1",
+      "kind": "Pitcher Special",
+      "odds": 1800,
+      "wager": 0.1,
+      "payout": 1.9,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Shota Imanaga",
+          "prop": "K1",
+          "g": "CHC@NYM"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjzf7er9nr9dy79enbm",
+      "id": "#79enbm",
+      "kind": "Pitcher Special",
+      "odds": 2700,
+      "wager": 0.1,
+      "payout": 2.8,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Hunter Brown",
+          "prop": "NH5",
+          "g": "HOU@TOR"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjzf339rxm8c3jfqy3e",
+      "id": "#jfqy3e",
+      "kind": "Pitcher Special",
+      "odds": 1100,
+      "wager": 0.1,
+      "payout": 1.2,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Kyle Bradish",
+          "prop": "K1",
+          "g": "BAL@LAA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjzf01tfyj21ghdcf4a",
+      "id": "#hdcf4a",
+      "kind": "Pitcher Special",
+      "odds": 1600,
+      "wager": 0.1,
+      "payout": 1.7,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drew Rasmussen",
+          "prop": "NH5",
+          "g": "KC@TB"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjzesyt15at4mcej9h6",
+      "id": "#cej9h6",
+      "kind": "Pitcher Special",
+      "odds": 2200,
+      "wager": 0.1,
+      "payout": 2.3,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Gavin Williams",
+          "prop": "NH5",
+          "g": "CLE@CWS"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjzenfawc83by8saqpy",
+      "id": "#8saqpy",
+      "kind": "Pitcher Special",
+      "odds": 1800,
+      "wager": 0.1,
+      "payout": 1.9,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Hunter Brown",
+          "prop": "K1",
+          "g": "HOU@TOR"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjzefrsgk7dtrzqn044",
+      "id": "#zqn044",
+      "kind": "Pitcher Special",
+      "odds": 1400,
+      "wager": 0.1,
+      "payout": 1.5,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drew Rasmussen",
+          "prop": "K1",
+          "g": "KC@TB"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjzec4tsyjj9bjqe924",
+      "id": "#jqe924",
+      "kind": "Pitcher Special",
+      "odds": 2500,
+      "wager": 0.1,
+      "payout": 2.6,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Kodai Senga",
+          "prop": "NH5",
+          "g": "CHC@NYM"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjzeawb0y5zt2vgf2bn",
+      "id": "#vgf2bn",
+      "kind": "Pitcher Special",
+      "odds": 1200,
+      "wager": 0.1,
+      "payout": 1.3,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Kodai Senga",
+          "prop": "K1",
+          "g": "CHC@NYM"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjze91b7vxr38rhfxsf",
+      "id": "#rhfxsf",
+      "kind": "Pitcher Special",
+      "odds": 850,
+      "wager": 0.1,
+      "payout": 0.95,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dylan Cease",
+          "prop": "UP9",
+          "g": "HOU@TOR"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjze24am5gx0aystfwc",
+      "id": "#ystfwc",
+      "kind": "Pitcher Special",
+      "odds": 650,
+      "wager": 0.1,
+      "payout": 0.75,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dylan Cease",
+          "prop": "K1",
+          "g": "HOU@TOR"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kvrppwjze09tmznxhne2hgyc",
+      "id": "#e2hgyc",
+      "kind": "Pitcher Special",
+      "odds": 2700,
+      "wager": 0.1,
+      "payout": 2.8,
+      "placed": "6/22 6:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Kyle Bradish",
+          "prop": "NH5",
+          "g": "BAL@LAA"
+        }
+      ]
     }
   ]
 }
