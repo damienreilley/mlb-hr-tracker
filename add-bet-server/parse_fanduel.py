@@ -25,7 +25,7 @@ PROP_MAP = {
  "To Record A Run":"RUN","To Record 2+ Runs":"RUN2",
  "To Record 2+ Total Bases":"TB2","To Record 3+ Total Bases":"TB3",
  "To Record 4+ Total Bases":"TB","To Record 5+ Total Bases":"TB5",
- "To Record 2+ Hits + Runs + RBIs":"HRR2","Player To Record 2+ Hits + Runs + RBIs":"HRR2",
+ "To Record 2+ Hits + Runs + RBIs":"HRR2","Player To Record 2+ Hits + Runs + RBIs":"HRR2","To Record 3+ Hits + Runs + RBIs":"HRR3","Player To Record 3+ Hits + Runs + RBIs":"HRR3",
 }
 PROP_MAP_CI = {k.lower(): v for k, v in PROP_MAP.items()}
 def prop_code(ln):

@@ -2405,6 +2405,46 @@
           "hsp": "wheeler"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kvp3ge0seqktbk4n7x392j9a",
+      "id": "#392j9a",
+      "kind": "4-leg SGP",
+      "odds": 27955,
+      "wager": 0.09,
+      "payout": 25.25,
+      "placed": "6/21 6:06PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Edmundo Sosa",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Alec Bohm",
+          "prop": "RBI2",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HRR3",
+          "g": "NYM@PHI",
+          "asp": "peterson",
+          "hsp": "wheeler"
+        }
+      ]
     }
   ]
 }
