@@ -7,7 +7,7 @@
       "kind": "7-leg parlay",
       "odds": 1125150,
       "wager": 0.1,
-      "payout": 1125.25,
+      "payout": 261.69,
       "placed": "6/22 3:03PM",
       "status": "open",
       "legs": [
@@ -37,7 +37,8 @@
           "prop": "HR",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Shohei Ohtani",
@@ -68,7 +69,7 @@
       "kind": "7-leg parlay",
       "odds": 1029848,
       "wager": 0.1,
-      "payout": 1029.95,
+      "payout": 239.52,
       "placed": "6/22 2:59PM",
       "status": "open",
       "legs": [
@@ -98,7 +99,8 @@
           "prop": "HR",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Shohei Ohtani",
@@ -129,7 +131,7 @@
       "kind": "9-leg SGP+",
       "odds": 9272299,
       "wager": 0.2,
-      "payout": 18544.8,
+      "payout": 4312.74,
       "placed": "6/22 2:58PM",
       "status": "open",
       "legs": [
@@ -187,7 +189,8 @@
           "prop": "HR",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Shohei Ohtani",
@@ -204,7 +207,7 @@
       "kind": "5-leg SGP+",
       "odds": 120541,
       "wager": 0.17,
-      "payout": 205.09,
+      "payout": 9.81,
       "placed": "6/22 2:38PM",
       "status": "open",
       "legs": [
@@ -213,14 +216,16 @@
           "prop": "SB",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Ian Happ",
           "prop": "HR",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Esteury Ruiz",
@@ -723,7 +728,7 @@
       "kind": "4-leg SGP+",
       "odds": 132344,
       "wager": 0.15,
-      "payout": 198.67,
+      "payout": 47.3,
       "placed": "6/22 2:12PM",
       "status": "open",
       "legs": [
@@ -746,7 +751,8 @@
           "prop": "SB",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Josh Bell",
@@ -763,7 +769,7 @@
       "kind": "5-leg SGP+",
       "odds": 715099,
       "wager": 0.25,
-      "payout": 1788.0,
+      "payout": 425.71,
       "placed": "6/22 2:12PM",
       "status": "open",
       "legs": [
@@ -793,7 +799,8 @@
           "prop": "SB",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Josh Bell",
@@ -810,7 +817,7 @@
       "kind": "5-leg SGP+",
       "odds": 105043,
       "wager": 0.19,
-      "payout": 199.77,
+      "payout": 2.49,
       "placed": "6/22 2:08PM",
       "status": "open",
       "legs": [
@@ -819,21 +826,24 @@
           "prop": "SB",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Pete Crow-Armstrong",
           "prop": "SB",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Juan Soto",
           "prop": "HR",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Jackson Chourio",
@@ -857,7 +867,7 @@
       "kind": "4-leg parlay",
       "odds": 80038,
       "wager": 0.25,
-      "payout": 200.35,
+      "payout": 37.8,
       "placed": "6/22 1:04PM",
       "status": "open",
       "legs": [
@@ -873,7 +883,8 @@
           "prop": "SB",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Jackson Chourio",
@@ -897,7 +908,7 @@
       "kind": "5-leg parlay",
       "odds": 140129,
       "wager": 0.1,
-      "payout": 140.23,
+      "payout": 26.46,
       "placed": "6/22 11:54AM",
       "status": "open",
       "legs": [
@@ -920,7 +931,8 @@
           "prop": "HR",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Brice Turang",
@@ -944,7 +956,7 @@
       "kind": "5-leg parlay",
       "odds": 146013,
       "wager": 0.2,
-      "payout": 292.23,
+      "payout": 55.14,
       "placed": "6/22 11:53AM",
       "status": "open",
       "legs": [
@@ -967,7 +979,8 @@
           "prop": "HR",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Brice Turang",
@@ -1278,7 +1291,7 @@
       "kind": "5-leg parlay",
       "odds": 42340,
       "wager": 0.24,
-      "payout": 101.86,
+      "payout": 24.84,
       "placed": "6/22 5:53PM",
       "status": "open",
       "legs": [
@@ -1301,7 +1314,8 @@
           "prop": "HR",
           "g": "CHC@NYM",
           "asp": "imanaga",
-          "hsp": "senga"
+          "hsp": "senga",
+          "void": true
         },
         {
           "p": "Shohei Ohtani",
