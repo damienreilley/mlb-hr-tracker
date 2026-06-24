@@ -1097,6 +1097,53 @@
           "hsp": "skubal"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kvxy8sxketqt4qaf56qa0d32",
+      "id": "#qa0d32",
+      "kind": "5-leg SGP+",
+      "odds": 72562,
+      "wager": 0.1,
+      "payout": 72.66,
+      "placed": "6/24 7:08PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@NYM",
+          "asp": "imanaga",
+          "hsp": "manaea"
+        },
+        {
+          "p": "Mark Vientos",
+          "prop": "HR",
+          "g": "CHC@NYM",
+          "asp": "imanaga",
+          "hsp": "manaea"
+        },
+        {
+          "p": "Henry Bolte",
+          "prop": "SB",
+          "g": "ATH@SF",
+          "asp": "jump",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Jonah Cox",
+          "prop": "SB",
+          "g": "ATH@SF",
+          "asp": "jump",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Brice Turang",
+          "prop": "SB",
+          "g": "MIL@CIN",
+          "asp": "drohan",
+          "hsp": "lowder"
+        }
+      ]
     }
   ]
 }
