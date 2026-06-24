@@ -1,0 +1,20 @@
+#!/bin/sh
+# Block committing index.html locally. The GitHub Action (build.yml) is the SOLE
+# builder and committer of index.html; committing it by hand recreates the
+# pull/merge conflict on every push. Rare intentional override:
+#   ALLOW_INDEX_COMMIT=1 git commit ...
+if [ "$ALLOW_INDEX_COMMIT" = "1" ]; then
+  exit 0
+fi
+staged=$(git diff --cached --name-only)
+if printf '%s\n' "$staged" | grep -qx 'index.html'; then
+  echo "------------------------------------------------------------------"
+  echo "pre-commit BLOCKED: index.html is staged."
+  echo "The GitHub Action builds AND commits index.html. Committing it"
+  echo "locally is what causes the merge conflict on every push."
+  echo "Unstage it:   git reset HEAD index.html"
+  echo "Override (rare): ALLOW_INDEX_COMMIT=1 git commit ..."
+  echo "------------------------------------------------------------------"
+  exit 1
+fi
+exit 0

@@ -77,3 +77,12 @@ helper chat. The rollover itself adds no bets.
 - Same-day ADD is the opposite of a rollover: never archive, never re-date, never
   rebuild staging from only the new bets - READ staging.json, APPEND, dedup by id,
   keep the date, push. See the helper handoff (SAME-DAY ADD vs NEW-DAY ROLLOVER).
+
+
+## Pre-commit guard (added 2026-06-24)
+A git pre-commit hook blocks staging index.html locally, since the Action is the
+sole builder/committer of index.html (hand-committing it causes the merge conflict).
+- Active hook lives at .git/hooks/pre-commit (NOT version-controlled by git).
+- Tracked copy: hooks/pre-commit. If .git is ever recreated, reinstall with:
+    Copy-Item hooks/pre-commit .git/hooks/pre-commit -Force
+- Rare intentional override: ALLOW_INDEX_COMMIT=1 git commit ...
