@@ -1,5 +1,16 @@
 # Daily Rollover Runbook - MLB HR Tracker
 
+> OPTIMIZED FLOW (2026-06-24): the standard path is now `python daily_run.py <paste.txt>`.
+> It auto-detects ROLLOVER vs SAME-DAY-ADD, runs the deterministic GATE (no eyeballing),
+> on a rollover archives the prior day + writes today's POPULATED board, and verify-builds
+> to a temp file. Then commit and push. Two rules changed from the original steps below:
+>   (1) Commit ONLY staging.json. The Action (build.yml) builds AND commits index.html;
+>       committing index.html locally is what causes the pull/merge conflict every push.
+>       Never `git add index.html`. Build locally only to a TEMP file to verify counts.
+>   (2) SINGLE-CYCLE rollover: when today's paste is ready, archive + write the populated
+>       board in ONE commit (one Action cycle), not empty-then-intake (two cycles).
+> The empty-board STEP 4 below is the FALLBACK for when today's bets are not yet in hand.
+
 Purpose: roll the live board from the prior day to a new day. This is the ONE
 irreversible, stateful step in the daily flow - archive the prior day, then start
 a fresh empty board for today. It happens once per day, before any of today's bets
@@ -41,10 +52,10 @@ Definitions:
 
 ## STEP 4 - Flip to a fresh empty TODAY board
 - Write staging.json = {"date":"<TODAY>","bets":[]}
-- Build locally to verify: python build.py staging.json index.html
-  -> expect bets=0 games=0 players=0 pitchers=0 date=<TODAY>; index.html contains
-  <TODAY> and function _lpk.
-- git add staging.json index.html ; git commit -m "roll over to <TODAY> (fresh empty board)"
+- Build to verify ONLY (temp file; never stage index.html): python build.py staging.json _verify.html
+  -> expect bets=0 games=0 players=0 pitchers=0 date=<TODAY>; _verify.html contains
+  <TODAY> and function _lpk. Then delete _verify.html. The Action builds the real index.html.
+- git add staging.json ; git commit -m "roll over to <TODAY> (fresh empty board)"   # staging.json ONLY
 - git fetch ; confirm behind==0 (else pull) ; git push
   (staging.json changed -> the Action rebuilds and Pages deploys the empty board).
 
