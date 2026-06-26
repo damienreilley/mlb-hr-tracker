@@ -898,6 +898,583 @@
           "hsp": "mcgreevy"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kw0npd95fk08zkt0vfjwyggs",
+      "id": "#jwyggs",
+      "kind": "4-leg parlay",
+      "odds": 49232,
+      "wager": 0.09,
+      "payout": 44.4,
+      "placed": "6/25 8:36PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Detroit Tigers",
+          "prop": "ML",
+          "g": "HOU@DET",
+          "asp": "imai",
+          "hsp": "melton"
+        },
+        {
+          "p": "Philadelphia Phillies",
+          "prop": "ML",
+          "g": "PHI@WSH",
+          "asp": "sanchez",
+          "hsp": "cavalli"
+        },
+        {
+          "p": "Toronto Blue Jays",
+          "prop": "ML",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Boston Red Sox",
+          "prop": "ML",
+          "g": "NYY@BOS",
+          "asp": "schlittler",
+          "hsp": "early"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw0f33m2eke9krch2jqc6eea",
+      "id": "#qc6eea",
+      "kind": "6-leg SGP+",
+      "odds": 282317,
+      "wager": 0.25,
+      "payout": 44.13,
+      "placed": "6/25 6:40PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "PHI@WSH",
+          "asp": "sanchez",
+          "hsp": "cavalli"
+        },
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "PHI@WSH",
+          "asp": "sanchez",
+          "hsp": "cavalli"
+        },
+        {
+          "p": "Alec Burleson",
+          "prop": "HR",
+          "void": true,
+          "g": "ARI@STL",
+          "asp": "gallen",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "Corbin Carroll",
+          "prop": "SB",
+          "void": true,
+          "g": "ARI@STL",
+          "asp": "gallen",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "HOU@DET",
+          "asp": "imai",
+          "hsp": "melton"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw0fh0d2eekv5ke99jdaxchj",
+      "id": "#daxchj",
+      "kind": "5-leg SGP+",
+      "odds": 289813,
+      "wager": 0.11,
+      "payout": 318.94,
+      "placed": "6/25 6:48PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Freddy Peralta",
+          "prop": "ALTK",
+          "k": 5,
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Francisco Alvarez",
+          "prop": "HR",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Brandon Marsh",
+          "prop": "HIT3",
+          "g": "PHI@WSH",
+          "asp": "sanchez",
+          "hsp": "cavalli"
+        },
+        {
+          "p": "Jose Caballero",
+          "prop": "SB2",
+          "g": "NYY@BOS",
+          "asp": "schlittler",
+          "hsp": "early"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw0agshwfv1tfwsbxvxnxdp9",
+      "id": "#xnxdp9",
+      "kind": "7-leg SGP+",
+      "odds": 835382,
+      "wager": 0.12,
+      "payout": 1002.6,
+      "placed": "6/25 5:21PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Wyatt Langford",
+          "prop": "HR",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Davis Schneider",
+          "prop": "HR",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Vladimir Guerrero Jr.",
+          "prop": "HIT2",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Nicky Lopez",
+          "prop": "HIT",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Corey Seager",
+          "prop": "HIT3",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "PHI@WSH",
+          "asp": "sanchez",
+          "hsp": "cavalli"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw0faxmmey2a2my5gyhmtvgy",
+      "id": "#hmtvgy",
+      "kind": "5-leg SGP+",
+      "odds": 255440,
+      "wager": 0.2,
+      "payout": 511.1,
+      "placed": "6/25 6:45PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Davis Schneider",
+          "prop": "HIT3",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Kazuma Okamoto",
+          "prop": "HR",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "George Springer",
+          "prop": "TB3",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Vladimir Guerrero Jr.",
+          "prop": "TB3",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw0f5w88fhr9a47m0tqzqvpm",
+      "id": "#qzqvpm",
+      "kind": "6-leg SGP+",
+      "odds": 703812,
+      "wager": 0.15,
+      "payout": 1055.87,
+      "placed": "6/25 6:42PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Carson Benge",
+          "prop": "SB",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Francisco Alvarez",
+          "prop": "HR",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Michael Busch",
+          "prop": "HR",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Davis Schneider",
+          "prop": "HR",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Jose Caballero",
+          "prop": "SB",
+          "g": "NYY@BOS",
+          "asp": "schlittler",
+          "hsp": "early"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004205",
+      "id": "#4205",
+      "kind": "8-leg SGP+",
+      "odds": 5256633,
+      "wager": 0.2,
+      "payout": 324.11,
+      "placed": "6/25 5:31PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Vladimir Guerrero Jr.",
+          "prop": "HIT2",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "George Springer",
+          "prop": "HIT",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Nicky Lopez",
+          "prop": "HIT2",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Davis Schneider",
+          "prop": "HR",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "NYY@BOS",
+          "asp": "schlittler",
+          "hsp": "early"
+        },
+        {
+          "p": "Jose Caballero",
+          "prop": "SB",
+          "g": "NYY@BOS",
+          "asp": "schlittler",
+          "hsp": "early"
+        },
+        {
+          "p": "Alec Burleson",
+          "prop": "HR",
+          "void": true,
+          "g": "ARI@STL",
+          "asp": "gallen",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "JJ Wetherholt",
+          "prop": "HR",
+          "void": true,
+          "g": "ARI@STL",
+          "asp": "gallen",
+          "hsp": "mcgreevy"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw0as1rfe4sbrr511959qw3x",
+      "id": "#59qw3x",
+      "kind": "6-leg SGP+",
+      "odds": 596840,
+      "wager": 0.17,
+      "payout": 37.45,
+      "placed": "6/25 5:25PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Michael Busch",
+          "prop": "HR",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Francisco Lindor",
+          "prop": "HR",
+          "void": true,
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Davis Schneider",
+          "prop": "HIT2",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Boston Red Sox",
+          "prop": "ML",
+          "g": "NYY@BOS",
+          "asp": "schlittler",
+          "hsp": "early"
+        },
+        {
+          "p": "Alec Burleson",
+          "prop": "HR",
+          "void": true,
+          "g": "ARI@STL",
+          "asp": "gallen",
+          "hsp": "mcgreevy"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw0a2z6df00scd87ravf86kg",
+      "id": "#vf86kg",
+      "kind": "3-leg SGP",
+      "odds": 42879,
+      "wager": 0.36,
+      "payout": 154.73,
+      "placed": "6/25 5:13PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Davis Schneider",
+          "prop": "HR",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Davis Schneider",
+          "prop": "HIT3",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        },
+        {
+          "p": "Davis Schneider",
+          "prop": "SB",
+          "g": "TEX@TOR",
+          "asp": "gore",
+          "hsp": "gausman"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004206",
+      "id": "#4206",
+      "kind": "7-leg SGP+",
+      "odds": 2692832,
+      "wager": 0.21,
+      "payout": 157.65,
+      "placed": "6/25 7:02PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "St. Louis Cardinals",
+          "prop": "ML",
+          "void": true,
+          "g": "ARI@STL",
+          "asp": "gallen",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "Jordan Walker",
+          "prop": "HR",
+          "void": true,
+          "g": "ARI@STL",
+          "asp": "gallen",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "Alec Burleson",
+          "prop": "HR",
+          "void": true,
+          "g": "ARI@STL",
+          "asp": "gallen",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "Ian Happ",
+          "prop": "HR",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Carson Benge",
+          "prop": "SB",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Dansby Swanson",
+          "prop": "SB",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw09x8cneczvsh0cvpzs3c5d",
+      "id": "#zs3c5d",
+      "kind": "5-leg SGP",
+      "odds": 54551,
+      "wager": 0.11,
+      "payout": 12.02,
+      "placed": "6/25 5:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Mark Vientos",
+          "prop": "HR",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Francisco Alvarez",
+          "prop": "HR",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Francisco Lindor",
+          "prop": "SB",
+          "void": true,
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        },
+        {
+          "p": "Ian Happ",
+          "prop": "HR",
+          "g": "CHC@NYM",
+          "asp": "boyd",
+          "hsp": "peralta"
+        }
+      ]
     }
   ]
 }
