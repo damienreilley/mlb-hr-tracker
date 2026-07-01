@@ -1,0 +1,468 @@
+{
+  "date": "2026-06-27",
+  "bets": [
+    {
+      "full_id": "O/1924696/0004214",
+      "id": "#4214",
+      "kind": "10-leg SGP+",
+      "odds": 59326675,
+      "wager": 0.34,
+      "payout": 201711.04,
+      "placed": "6/27 5:13PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nolan Arenado",
+          "prop": "HR",
+          "g": "ARI@TB",
+          "asp": "cabrera",
+          "hsp": "sulser"
+        },
+        {
+          "p": "Ketel Marte",
+          "prop": "HR",
+          "g": "ARI@TB",
+          "asp": "cabrera",
+          "hsp": "sulser"
+        },
+        {
+          "p": "Junior Caminero",
+          "prop": "HR",
+          "g": "ARI@TB",
+          "asp": "cabrera",
+          "hsp": "sulser"
+        },
+        {
+          "p": "Gabriel Moreno",
+          "prop": "HR",
+          "g": "ARI@TB",
+          "asp": "cabrera",
+          "hsp": "sulser"
+        },
+        {
+          "p": "Chandler Simpson",
+          "prop": "SB",
+          "g": "ARI@TB",
+          "asp": "cabrera",
+          "hsp": "sulser"
+        },
+        {
+          "p": "Kody Clemens",
+          "prop": "HR",
+          "g": "COL@MIN",
+          "asp": "lorenzen",
+          "hsp": "paredes"
+        },
+        {
+          "p": "Byron Buxton",
+          "prop": "HR",
+          "g": "COL@MIN",
+          "asp": "lorenzen",
+          "hsp": "paredes"
+        },
+        {
+          "p": "Mickey Moniak",
+          "prop": "HR",
+          "g": "COL@MIN",
+          "asp": "lorenzen",
+          "hsp": "paredes"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "COL@MIN",
+          "asp": "lorenzen",
+          "hsp": "paredes"
+        },
+        {
+          "p": "Otto Lopez",
+          "prop": "SB",
+          "g": "MIA@STL",
+          "asp": "gusto",
+          "hsp": "pallante"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004212",
+      "id": "#4212",
+      "kind": "8-leg SGP+",
+      "odds": 18903509,
+      "wager": 0.24,
+      "payout": 45368.66,
+      "placed": "6/27 4:53PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jorge Soler",
+          "prop": "HR",
+          "g": "ATH@LAA",
+          "asp": "perkins",
+          "hsp": "detmers"
+        },
+        {
+          "p": "Zach Neto",
+          "prop": "HR",
+          "g": "ATH@LAA",
+          "asp": "perkins",
+          "hsp": "detmers"
+        },
+        {
+          "p": "Chandler Simpson",
+          "prop": "SB",
+          "g": "ARI@TB",
+          "asp": "cabrera",
+          "hsp": "sulser"
+        },
+        {
+          "p": "Byron Buxton",
+          "prop": "HR",
+          "g": "COL@MIN",
+          "asp": "lorenzen",
+          "hsp": "paredes"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@MIL",
+          "asp": "peterson",
+          "hsp": "harrison"
+        },
+        {
+          "p": "Randy Arozarena",
+          "prop": "SB",
+          "g": "SEA@CLE",
+          "asp": "gilbert",
+          "hsp": "cecconi"
+        },
+        {
+          "p": "Otto Lopez",
+          "prop": "SB",
+          "g": "MIA@STL",
+          "asp": "gusto",
+          "hsp": "pallante"
+        },
+        {
+          "p": "Andy Pages",
+          "prop": "HR",
+          "g": "LAD@SD",
+          "asp": "yamamoto",
+          "hsp": "hart"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004213",
+      "id": "#4213",
+      "kind": "8-leg SGP+",
+      "odds": 27505222,
+      "wager": 0.37,
+      "payout": 101769.69,
+      "placed": "6/27 4:59PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Josh Bell",
+          "prop": "HR",
+          "g": "COL@MIN",
+          "asp": "lorenzen",
+          "hsp": "paredes"
+        },
+        {
+          "p": "Victor Caratini",
+          "prop": "HR",
+          "g": "COL@MIN",
+          "asp": "lorenzen",
+          "hsp": "paredes"
+        },
+        {
+          "p": "Kody Clemens",
+          "prop": "HR",
+          "g": "COL@MIN",
+          "asp": "lorenzen",
+          "hsp": "paredes"
+        },
+        {
+          "p": "Byron Buxton",
+          "prop": "HR",
+          "g": "COL@MIN",
+          "asp": "lorenzen",
+          "hsp": "paredes"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "LAD@SD",
+          "asp": "yamamoto",
+          "hsp": "hart"
+        },
+        {
+          "p": "Manny Machado",
+          "prop": "HR",
+          "g": "LAD@SD",
+          "asp": "yamamoto",
+          "hsp": "hart"
+        },
+        {
+          "p": "Willy Adames",
+          "prop": "HR",
+          "g": "ATL@SF",
+          "asp": "elder",
+          "hsp": "webb"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HR",
+          "g": "ATL@SF",
+          "asp": "elder",
+          "hsp": "webb"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw5e5c1qfn5982x5zgbexe39",
+      "id": "#bexe39",
+      "kind": "Pitcher Special",
+      "odds": 7500,
+      "wager": 0.1,
+      "payout": 7.6,
+      "placed": "6/27 5:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Yoshinobu Yamamoto",
+          "prop": "NH7",
+          "g": "LAD@SD"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw5e5c1qf71s4cy9e9h5v4pt",
+      "id": "#h5v4pt",
+      "kind": "Pitcher Special",
+      "odds": 480,
+      "wager": 0.1,
+      "payout": 0.58,
+      "placed": "6/27 5:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jack Perkins",
+          "prop": "UP6",
+          "g": "ATH@LAA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw5e5c1qf50rq8g8emf7595g",
+      "id": "#f7595g",
+      "kind": "Pitcher Special",
+      "odds": 7500,
+      "wager": 0.1,
+      "payout": 7.6,
+      "placed": "6/27 5:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jack Perkins",
+          "prop": "NH7",
+          "g": "ATH@LAA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw5e5c1qeywazk5p8te6mc2p",
+      "id": "#e6mc2p",
+      "kind": "Pitcher Special",
+      "odds": 2000,
+      "wager": 0.1,
+      "payout": 2.1,
+      "placed": "6/27 5:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Yoshinobu Yamamoto",
+          "prop": "NH5",
+          "g": "LAD@SD"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw5e5c1qexd8gtad1rjjqe2a",
+      "id": "#jjqe2a",
+      "kind": "Pitcher Special",
+      "odds": 750,
+      "wager": 0.1,
+      "payout": 0.85,
+      "placed": "6/27 5:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Reid Detmers",
+          "prop": "K1",
+          "g": "ATH@LAA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw5e5c1qevvtzbdfv3fa3k0h",
+      "id": "#fa3k0h",
+      "kind": "Pitcher Special",
+      "odds": 2000,
+      "wager": 0.1,
+      "payout": 2.1,
+      "placed": "6/27 5:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Reid Detmers",
+          "prop": "NH5",
+          "g": "ATH@LAA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw5e5c1qemprnwbcdbz1gapp",
+      "id": "#z1gapp",
+      "kind": "Pitcher Special",
+      "odds": 2200,
+      "wager": 0.1,
+      "payout": 2.3,
+      "placed": "6/27 5:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jack Perkins",
+          "prop": "NH5",
+          "g": "ATH@LAA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw5e5c1qekcrr8144wz4ahbc",
+      "id": "#z4ahbc",
+      "kind": "Pitcher Special",
+      "odds": 1100,
+      "wager": 0.1,
+      "payout": 1.2,
+      "placed": "6/27 5:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jack Perkins",
+          "prop": "K1",
+          "g": "ATH@LAA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw5e5c1qejk8fp5qmaqj7mjn",
+      "id": "#qj7mjn",
+      "kind": "Pitcher Special",
+      "odds": 7500,
+      "wager": 0.1,
+      "payout": 7.6,
+      "placed": "6/27 5:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Reid Detmers",
+          "prop": "NH7",
+          "g": "ATH@LAA"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kw5e5c1qehtsf6fn2rjq56w5",
+      "id": "#jq56w5",
+      "kind": "Pitcher Special",
+      "odds": 1100,
+      "wager": 0.1,
+      "payout": 1.2,
+      "placed": "6/27 5:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Yoshinobu Yamamoto",
+          "prop": "K1",
+          "g": "LAD@SD"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004210",
+      "id": "#4210",
+      "kind": "9-leg SGP+",
+      "odds": 3366609,
+      "wager": 0.1,
+      "payout": 3366.71,
+      "placed": "6/27 4:41AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Max Muncy",
+          "prop": "HR",
+          "g": "LAD@SD",
+          "asp": "yamamoto",
+          "hsp": "hart"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "LAD@SD",
+          "asp": "yamamoto",
+          "hsp": "hart"
+        },
+        {
+          "p": "Andy Pages",
+          "prop": "SB",
+          "g": "LAD@SD",
+          "asp": "yamamoto",
+          "hsp": "hart"
+        },
+        {
+          "p": "Freddie Freeman",
+          "prop": "TB2",
+          "g": "LAD@SD",
+          "asp": "yamamoto",
+          "hsp": "hart"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HIT2",
+          "g": "ATL@SF",
+          "asp": "elder",
+          "hsp": "webb"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HIT2",
+          "g": "ATL@SF",
+          "asp": "elder",
+          "hsp": "webb"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HIT2",
+          "g": "ATL@SF",
+          "asp": "elder",
+          "hsp": "webb"
+        },
+        {
+          "p": "Luis Arraez",
+          "prop": "HIT",
+          "g": "ATL@SF",
+          "asp": "elder",
+          "hsp": "webb"
+        },
+        {
+          "p": "Willy Adames",
+          "prop": "HIT2",
+          "g": "ATL@SF",
+          "asp": "elder",
+          "hsp": "webb"
+        }
+      ]
+    }
+  ]
+}
