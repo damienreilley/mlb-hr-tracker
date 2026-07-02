@@ -1894,6 +1894,304 @@
           "hsp": "kolek"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kwj3500ze9rb5j9xapzqpzxh",
+      "id": "#zqpzxh",
+      "kind": "4-leg SGP+",
+      "odds": 466187,
+      "wager": 0.22,
+      "payout": 1025.85,
+      "placed": "7/2 2:58PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Brandon Marsh",
+          "prop": "HR",
+          "g": "PIT@PHI",
+          "asp": "jones",
+          "hsp": "rangel"
+        },
+        {
+          "p": "Alec Bohm",
+          "prop": "HR",
+          "g": "PIT@PHI",
+          "asp": "jones",
+          "hsp": "rangel"
+        },
+        {
+          "p": "Mickey Moniak",
+          "prop": "HR",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Liam Hicks",
+          "prop": "HR",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004268",
+      "id": "#4268",
+      "kind": "7-leg SGP+",
+      "odds": 7083649,
+      "wager": 0.14,
+      "payout": 9917.25,
+      "placed": "7/2 2:57PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "SD@LAD",
+          "asp": "vasquez",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HR",
+          "g": "SD@LAD",
+          "asp": "vasquez",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Nick Loftin",
+          "prop": "HR",
+          "g": "TB@KC",
+          "asp": "seymour",
+          "hsp": "kolek"
+        },
+        {
+          "p": "Bobby Witt Jr.",
+          "prop": "SB",
+          "g": "TB@KC",
+          "asp": "seymour",
+          "hsp": "kolek"
+        },
+        {
+          "p": "Mickey Moniak",
+          "prop": "HR",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Javier Sanoja",
+          "prop": "SB",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004267",
+      "id": "#4267",
+      "kind": "9-leg SGP+",
+      "odds": 32359147,
+      "wager": 0.1,
+      "payout": 32359.25,
+      "placed": "7/2 2:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Mickey Moniak",
+          "prop": "HR",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Kyle Stowers",
+          "prop": "HR",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Liam Hicks",
+          "prop": "HR",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Junior Caminero",
+          "prop": "HR",
+          "g": "TB@KC",
+          "asp": "seymour",
+          "hsp": "kolek"
+        },
+        {
+          "p": "Bobby Witt Jr.",
+          "prop": "HR",
+          "g": "TB@KC",
+          "asp": "seymour",
+          "hsp": "kolek"
+        },
+        {
+          "p": "Freddie Freeman",
+          "prop": "HR",
+          "g": "SD@LAD",
+          "asp": "vasquez",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Shohei Ohtani",
+          "prop": "HR",
+          "g": "SD@LAD",
+          "asp": "vasquez",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "HR",
+          "g": "CWS@CLE",
+          "asp": "martin",
+          "hsp": "cecconi"
+        },
+        {
+          "p": "Mike Yastrzemski",
+          "prop": "HR",
+          "g": "STL@ATL",
+          "asp": "may",
+          "hsp": "waldrep"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004266",
+      "id": "#4266",
+      "kind": "8-leg SGP+",
+      "odds": 1938096,
+      "wager": 0.13,
+      "payout": 2519.66,
+      "placed": "7/2 2:54PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Chandler Simpson",
+          "prop": "SB",
+          "g": "TB@KC",
+          "asp": "seymour",
+          "hsp": "kolek"
+        },
+        {
+          "p": "Junior Caminero",
+          "prop": "HR",
+          "g": "TB@KC",
+          "asp": "seymour",
+          "hsp": "kolek"
+        },
+        {
+          "p": "Freddie Freeman",
+          "prop": "TB2",
+          "g": "SD@LAD",
+          "asp": "vasquez",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "SD@LAD",
+          "asp": "vasquez",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Liam Hicks",
+          "prop": "HR",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Xavier Edwards",
+          "prop": "SB",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Mickey Moniak",
+          "prop": "HR",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kwj2jb2ffvsbqq646dcm19e7",
+      "id": "#cm19e7",
+      "kind": "6-leg SGP+",
+      "odds": 651817,
+      "wager": 0.15,
+      "payout": 977.88,
+      "placed": "7/2 2:48PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Mickey Moniak",
+          "prop": "SB",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Jake McCarthy",
+          "prop": "SB",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Mickey Moniak",
+          "prop": "HR",
+          "g": "MIA@COL",
+          "asp": "gusto",
+          "hsp": "lorenzen"
+        },
+        {
+          "p": "Junior Caminero",
+          "prop": "HR",
+          "g": "TB@KC",
+          "asp": "seymour",
+          "hsp": "kolek"
+        },
+        {
+          "p": "Bobby Witt Jr.",
+          "prop": "SB",
+          "g": "TB@KC",
+          "asp": "seymour",
+          "hsp": "kolek"
+        },
+        {
+          "p": "Chandler Simpson",
+          "prop": "SB",
+          "g": "TB@KC",
+          "asp": "seymour",
+          "hsp": "kolek"
+        }
+      ]
     }
   ]
 }
