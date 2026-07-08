@@ -1797,6 +1797,677 @@
           "hsp": "sasaki"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kx1wtb5weba87fqy5fsbbzp3",
+      "id": "#sbbzp3",
+      "kind": "8-leg SGP+",
+      "odds": 594202,
+      "wager": 0.12,
+      "payout": 713.2,
+      "placed": "7/8 6:15PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Alonso & Samuel Basallo",
+          "prop": "CMBHR",
+          "ps": [
+            "Pete Alonso",
+            "Samuel Basallo"
+          ],
+          "line": 1,
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Randy Arozarena & Liam Hicks",
+          "prop": "CMBHR",
+          "ps": [
+            "Randy Arozarena",
+            "Liam Hicks"
+          ],
+          "line": 1,
+          "g": "SEA@MIA",
+          "asp": "kirby",
+          "hsp": "phillips"
+        },
+        {
+          "p": "Victor Robles",
+          "prop": "SB",
+          "g": "SEA@MIA",
+          "asp": "kirby",
+          "hsp": "phillips"
+        },
+        {
+          "p": "Bobby Witt Jr. & Juan Soto",
+          "prop": "CMBHR",
+          "ps": [
+            "Bobby Witt Jr.",
+            "Juan Soto"
+          ],
+          "line": 1,
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Bobby Witt Jr.",
+          "prop": "SB",
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Mickey Moniak & Shohei Ohtani",
+          "prop": "CMBHR",
+          "ps": [
+            "Mickey Moniak",
+            "Shohei Ohtani"
+          ],
+          "line": 1,
+          "g": "COL@LAD",
+          "asp": "hughes",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Cole Carrigg",
+          "prop": "HIT2",
+          "g": "COL@LAD",
+          "asp": "hughes",
+          "hsp": "sasaki"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kx1wc17mf3w8tytq2pgjz32s",
+      "id": "#gjz32s",
+      "kind": "8-leg SGP+",
+      "odds": 336723,
+      "wager": 0.14,
+      "payout": 471.59,
+      "placed": "7/8 6:07PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bobby Witt Jr. & Bo Bichette",
+          "prop": "CMBHIT",
+          "ps": [
+            "Bobby Witt Jr.",
+            "Bo Bichette"
+          ],
+          "line": 4,
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Jac Caglianone & Juan Soto",
+          "prop": "CMBHIT",
+          "ps": [
+            "Jac Caglianone",
+            "Juan Soto"
+          ],
+          "line": 3,
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Carson Benge",
+          "prop": "HIT2",
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "A.J. Ewing",
+          "prop": "HIT",
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Tyler Tolbert",
+          "prop": "SB",
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Liam Hicks & Otto Lopez",
+          "prop": "CMBHIT",
+          "ps": [
+            "Liam Hicks",
+            "Otto Lopez"
+          ],
+          "line": 3,
+          "g": "SEA@MIA",
+          "asp": "kirby",
+          "hsp": "phillips"
+        },
+        {
+          "p": "Nick Kurtz & Kevin McGonigle",
+          "prop": "CMBHIT",
+          "ps": [
+            "Nick Kurtz",
+            "Kevin McGonigle"
+          ],
+          "line": 2,
+          "g": "ATH@DET",
+          "asp": "springs",
+          "hsp": "melton"
+        },
+        {
+          "p": "Jonny DeLuca",
+          "prop": "SB",
+          "g": "NYY@TB",
+          "asp": "cole",
+          "hsp": "mcclanahan"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004330",
+      "id": "#4330",
+      "kind": "15-leg SGP+",
+      "odds": 5876368,
+      "wager": 0.14,
+      "payout": 8227.06,
+      "placed": "7/8 5:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Samuel Basallo",
+          "prop": "HR",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Liam Hicks",
+          "prop": "HIT",
+          "g": "SEA@MIA",
+          "asp": "kirby",
+          "hsp": "phillips"
+        },
+        {
+          "p": "Otto Lopez",
+          "prop": "HIT2",
+          "g": "SEA@MIA",
+          "asp": "kirby",
+          "hsp": "phillips"
+        },
+        {
+          "p": "Randy Arozarena",
+          "prop": "HIT2",
+          "g": "SEA@MIA",
+          "asp": "kirby",
+          "hsp": "phillips"
+        },
+        {
+          "p": "Heriberto Hernandez",
+          "prop": "HIT",
+          "g": "SEA@MIA",
+          "asp": "kirby",
+          "hsp": "phillips"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HIT",
+          "g": "ATL@PIT",
+          "asp": "holmes",
+          "hsp": "jones"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HIT",
+          "g": "ATL@PIT",
+          "asp": "holmes",
+          "hsp": "jones"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HIT",
+          "g": "ATL@PIT",
+          "asp": "holmes",
+          "hsp": "jones"
+        },
+        {
+          "p": "Curtis Mead",
+          "prop": "HIT2",
+          "g": "HOU@WSH",
+          "asp": "arrighetti",
+          "hsp": "griffin"
+        },
+        {
+          "p": "James Wood",
+          "prop": "HIT2",
+          "g": "HOU@WSH",
+          "asp": "arrighetti",
+          "hsp": "griffin"
+        },
+        {
+          "p": "Spencer Arrighetti",
+          "prop": "ALTK",
+          "k": 4,
+          "g": "HOU@WSH",
+          "asp": "arrighetti",
+          "hsp": "griffin"
+        },
+        {
+          "p": "Bryce Harper",
+          "prop": "HIT",
+          "g": "PHI@CIN",
+          "asp": "rangel",
+          "hsp": "burns"
+        },
+        {
+          "p": "Bobby Witt Jr. & Juan Soto",
+          "prop": "CMBHIT",
+          "ps": [
+            "Bobby Witt Jr.",
+            "Juan Soto"
+          ],
+          "line": 3,
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kx1tfcxrfprafkeajaxxqet0",
+      "id": "#xxqet0",
+      "kind": "6-leg SGP+",
+      "odds": 340451,
+      "wager": 0.09,
+      "payout": 306.51,
+      "placed": "7/8 5:34PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Matt Olson & Michael Harris II",
+          "prop": "CMBHR",
+          "ps": [
+            "Matt Olson",
+            "Michael Harris II"
+          ],
+          "line": 2,
+          "g": "ATL@PIT",
+          "asp": "holmes",
+          "hsp": "jones"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "ATL@PIT",
+          "asp": "holmes",
+          "hsp": "jones"
+        },
+        {
+          "p": "Junior Caminero & Cedric Mullins",
+          "prop": "CMBHR",
+          "ps": [
+            "Junior Caminero",
+            "Cedric Mullins"
+          ],
+          "line": 1,
+          "g": "NYY@TB",
+          "asp": "cole",
+          "hsp": "mcclanahan"
+        },
+        {
+          "p": "Chandler Simpson",
+          "prop": "SB",
+          "g": "NYY@TB",
+          "asp": "cole",
+          "hsp": "mcclanahan"
+        },
+        {
+          "p": "Pete Alonso & Samuel Basallo",
+          "prop": "CMBHR",
+          "ps": [
+            "Pete Alonso",
+            "Samuel Basallo"
+          ],
+          "line": 1,
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Randy Arozarena",
+          "prop": "SB",
+          "g": "SEA@MIA",
+          "asp": "kirby",
+          "hsp": "phillips"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004325",
+      "id": "#4325",
+      "kind": "8-leg SGP+",
+      "odds": 21691927,
+      "wager": 0.1,
+      "payout": 21692.03,
+      "placed": "7/8 5:31PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Juan Soto",
+          "prop": "HR",
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Carter Jensen",
+          "prop": "HR",
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Bobby Witt Jr.",
+          "prop": "SB",
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Hunter Goodman",
+          "prop": "HIT2",
+          "g": "COL@LAD",
+          "asp": "hughes",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Mickey Moniak",
+          "prop": "SB",
+          "g": "COL@LAD",
+          "asp": "hughes",
+          "hsp": "sasaki"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "ATL@PIT",
+          "asp": "holmes",
+          "hsp": "jones"
+        },
+        {
+          "p": "Matt Olson & Michael Harris II",
+          "prop": "CMBHR",
+          "ps": [
+            "Matt Olson",
+            "Michael Harris II"
+          ],
+          "line": 2,
+          "g": "ATL@PIT",
+          "asp": "holmes",
+          "hsp": "jones"
+        },
+        {
+          "p": "Chandler Simpson",
+          "prop": "SB",
+          "g": "NYY@TB",
+          "asp": "cole",
+          "hsp": "mcclanahan"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kx1t02xhecmvdmk80c8t6472",
+      "id": "#8t6472",
+      "kind": "5-leg SGP",
+      "odds": 74968,
+      "wager": 0.17,
+      "payout": 127.62,
+      "placed": "7/8 5:26PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "A.J. Ewing",
+          "prop": "SB",
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Tyler Tolbert",
+          "prop": "SB",
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Bobby Witt Jr. & Juan Soto",
+          "prop": "CMBHIT",
+          "ps": [
+            "Bobby Witt Jr.",
+            "Juan Soto"
+          ],
+          "line": 4,
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Carson Benge",
+          "prop": "SB",
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        },
+        {
+          "p": "Bobby Witt Jr.",
+          "prop": "SB",
+          "g": "KC@NYM",
+          "asp": "cruz",
+          "hsp": "scott"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kx1pvtbveywtgzswzqqd24gc",
+      "id": "#qd24gc",
+      "kind": "6-leg SGP",
+      "odds": 50009,
+      "wager": 0.09,
+      "payout": 45.1,
+      "placed": "7/8 4:31PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong & Pete Alonso",
+          "prop": "CMBHR",
+          "ps": [
+            "Pete Crow-Armstrong",
+            "Pete Alonso"
+          ],
+          "line": 2,
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Michael Busch & Gunnar Henderson",
+          "prop": "CMBHR",
+          "ps": [
+            "Michael Busch",
+            "Gunnar Henderson"
+          ],
+          "line": 1,
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Michael Busch & Samuel Basallo",
+          "prop": "CMBHR",
+          "ps": [
+            "Michael Busch",
+            "Samuel Basallo"
+          ],
+          "line": 2,
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Seiya Suzuki & Adley Rutschman",
+          "prop": "CMBHIT",
+          "ps": [
+            "Seiya Suzuki",
+            "Adley Rutschman"
+          ],
+          "line": 3,
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Ian Happ",
+          "prop": "RBI",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "RBI",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kx1pesz6egyakfctedf6d6mf",
+      "id": "#f6d6mf",
+      "kind": "3-leg SGP",
+      "odds": 59997,
+      "wager": 0.1,
+      "payout": 60.1,
+      "placed": "7/8 4:24PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB2",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "SB",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Gunnar Henderson & Pete Alonso",
+          "prop": "CMBHR",
+          "ps": [
+            "Gunnar Henderson",
+            "Pete Alonso"
+          ],
+          "line": 1,
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kx1pbk8gfker5rkxk3sxhya8",
+      "id": "#sxhya8",
+      "kind": "7-leg SGP",
+      "odds": 85628,
+      "wager": 0.09,
+      "payout": 77.17,
+      "placed": "7/8 4:22PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Adley Rutschman",
+          "prop": "HIT2",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "HIT2",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Ian Happ",
+          "prop": "HIT",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Gunnar Henderson",
+          "prop": "SB",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        },
+        {
+          "p": "Michael Busch & Samuel Basallo",
+          "prop": "CMBHR",
+          "ps": [
+            "Michael Busch",
+            "Samuel Basallo"
+          ],
+          "line": 2,
+          "g": "CHC@BAL",
+          "asp": "rea",
+          "hsp": "kremer"
+        }
+      ]
     }
   ]
 }

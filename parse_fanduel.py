@@ -155,6 +155,17 @@ def tokenize(lines):
             d={"p":"","prop":"TR","line":float(m.group(2)),"side":m.group(1).lower()}
             if void_around(lines,i,i+1): d["void"]=True
             toks.append(("LEG",d)); i+=2; continue
+        mch=re.match(r"^Players To Combine For (?:A Home Run|(\d+)\+ Home Runs?)$", ln)
+        mck=re.match(r"^Players To Combine For (\d+)\+ Hits$", ln)
+        if mch or mck:
+            j=i-1
+            while j>=0 and (i-j)<=3 and (" & " not in lines[j] or " @ " in lines[j]): j-=1
+            pair=lines[j] if (j>=0 and " & " in lines[j] and " @ " not in lines[j]) else prev_name(lines,i)
+            ps=[x.strip() for x in pair.split(" & ")] if " & " in pair else [pair]
+            if mch: d={"p":pair,"prop":"CMBHR","ps":ps,"line":int(mch.group(1)) if mch.group(1) else 1}
+            else:   d={"p":pair,"prop":"CMBHIT","ps":ps,"line":int(mck.group(1))}
+            if void_around(lines,i,i): d["void"]=True
+            toks.append(("LEG",d)); i+=1; continue
         pc=prop_code(ln)
         if pc is not None:
             d={"p":prev_name(lines,i),"prop":pc}

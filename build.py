@@ -40,6 +40,7 @@ def mk_leg(l):
     elif l["prop"]=="ALTK": d=dict(p=l["p"],prop="ALTK",k=l.get("k",0))
     elif l["prop"]=="TR": d=dict(p=l["g"],prop="TR",g=l["g"],line=l.get("line",8.5),side=l.get("side","over"))
     elif l["prop"]=="NA": d=dict(p=l["p"],prop="NA",g=l["g"],lbl=l.get("lbl") or l.get("txt",""))
+    elif l["prop"] in ("CMBHR","CMBHIT"): d=dict(p=l["p"],prop=l["prop"],g=l["g"],ps=l.get("ps",[]),line=l.get("line",1))
     else: d=dict(p=l["p"],prop=l["prop"])
     if l.get("asp") or l.get("hsp"): d["asp"]=l.get("asp",""); d["hsp"]=l.get("hsp","")
     return d
@@ -53,7 +54,15 @@ def build(staging_path,out_path):
     for b in stage:
         for l in b["legs"]:
             nm,pr,g=l["p"],l["prop"],l["g"]
-            if l.get("void") or pr in ("NA","ML","TR","CTB"): continue  # void/manual/moneyline/game-level legs are not real players/pitchers
+            if l.get("void"): continue
+            if pr in ("CMBHR","CMBHIT"):
+                stat="HR" if pr=="CMBHR" else "HIT"
+                for pn in l.get("ps",[]):
+                    d=players.setdefault(pn,{"g":g,"pr":set(),"mlb":""})
+                    if KNOWN_IDS.get(pn,""): d["mlb"]=KNOWN_IDS.get(pn)
+                    d["pr"].add(stat)
+                continue
+            if pr in ("NA","ML","TR","CTB"): continue  # void/manual/moneyline/game-level legs are not real players/pitchers
             mlbid=l.get("mlb") or KNOWN_IDS.get(nm,"")
             if pr in PSET: pitchers.setdefault(nm,g)
             else:
