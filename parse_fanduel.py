@@ -22,7 +22,7 @@ PROP_MAP = {
  "To Record A Hit":"HIT","To Record 2+ Hits":"HIT2","To Record 3+ Hits":"HIT3","To Record 4+ Hits":"HIT4",
  "To Record A Stolen Base":"SB","To Record 2+ Stolen Bases":"SB2",
  "To Record An RBI":"RBI","To Record 2+ RBIs":"RBI2","To Record 3+ RBIs":"RBI3","To Record 4+ RBIs":"RBI4",
- "To Record A Run":"RUN","To Record 2+ Runs":"RUN2",
+ "To Record A Run":"RUN","To Record 2+ Runs":"RUN2","To Record 3+ Runs":"RUN3",
  "To Record 2+ Total Bases":"TB2","To Record 3+ Total Bases":"TB3",
  "To Record 4+ Total Bases":"TB","To Record 5+ Total Bases":"TB5",
  "To Record 2+ Hits + Runs + RBIs":"HRR2","Player To Record 2+ Hits + Runs + RBIs":"HRR2","To Record 3+ Hits + Runs + RBIs":"HRR3","Player To Record 3+ Hits + Runs + RBIs":"HRR3",
