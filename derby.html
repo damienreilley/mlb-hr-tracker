@@ -75,6 +75,15 @@ border:1px solid var(--line);border-radius:12px;padding:10px 12px}
 .stat{font-family:var(--disp);text-transform:uppercase;letter-spacing:.07em;font-size:10px;font-weight:700;
 padding:2px 7px;border-radius:20px;background:var(--panel2);color:var(--dim)}
 .stat.hit{background:var(--turf);color:#06210F}.stat.miss{background:var(--red);color:#fff}
+.filt{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.fb{flex:1;min-width:78px;padding:9px 8px;border:1px solid var(--line2);background:var(--panel);color:var(--dim);
+ border-radius:10px;cursor:pointer;font-family:var(--disp);text-transform:uppercase;letter-spacing:.07em;
+ font-weight:600;font-size:13px}
+.fb span{font-family:var(--mono);font-size:11px;opacity:.75;margin-left:3px}
+.fb.on{background:var(--panel2);color:var(--txt);border-color:var(--line2)}
+.fb[data-f="pending"].on{border-color:var(--amber);color:var(--amber)}
+.fb[data-f="hit"].on{border-color:var(--turf);color:var(--turf)}
+.fb[data-f="miss"].on{border-color:var(--red);color:var(--red)}
 .grp{font-family:var(--disp);text-transform:uppercase;letter-spacing:.1em;font-size:11.5px;color:var(--amber);
 margin:15px 0 7px;padding-bottom:4px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
 .grp .gs{color:var(--dim2);letter-spacing:.04em}
@@ -147,6 +156,12 @@ display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap
 
 <div class="pane" id="p-bets">
  <div class="shead"><h2>My Bets</h2><div class="meta">61 bets &middot; $18.27 wagered</div></div>
+ <div class="filt">
+  <button class="fb on" data-f="all">All <span id="c-all">61</span></button>
+  <button class="fb" data-f="pending">Alive <span id="c-alive">0</span></button>
+  <button class="fb" data-f="hit">Cashed <span id="c-cash">0</span></button>
+  <button class="fb" data-f="miss">Dead <span id="c-dead">0</span></button>
+ </div>
  <div id="betlist"></div>
 </div>
 
@@ -349,6 +364,7 @@ function renderF(){
   :'<div class="empty">Finalists appear when the semifinals end.</div>';
  document.getElementById('champ').textContent=c?PMAP[c].n:'\u2014';
  document.getElementById('alltot').textContent=allTotal();}
+let betFilter='all';
 function renderBets(){
  const groups=[['CHAMP','Derby Champion'],['FINPAIR','Name the Finalists'],['EXACT','Exact Result'],
   ['R1OU','Round 1 HR Totals'],['R1_12','12+ HRs in Round 1'],['FIELD_R1','Field Total \u2014 Round 1'],
@@ -356,7 +372,8 @@ function renderBets(){
   ['LONGEST','Longest HR of Night'],['TOPEV','Hardest-Hit HR of Night']];
  let html='';
  groups.forEach(function(g){
-  const list=BETS.filter(function(b){return b.t===g[0];});
+  let list=BETS.filter(function(b){return b.t===g[0];});
+  if(betFilter!=='all')list=list.filter(function(b){return grade(b)===betFilter;});
   if(!list.length)return;
   const ord={hit:0,pending:1,miss:2};
   list.sort(function(a,b){return (ord[grade(a)]-ord[grade(b)])||(b.p-a.p);});
@@ -370,13 +387,17 @@ function renderBets(){
     +'<div style="display:flex;align-items:center;gap:8px">'+badge+'<span class="bet-pay">$'+b.p.toFixed(2)+'</span></div></div>'
     +'<div class="bet-odds">'+b.odds+' \u00b7 $'+b.w.toFixed(2)+' \u00b7 '+nowTxt(b)+'</div></div>';}).join('');
  });
- document.getElementById('betlist').innerHTML=html;
- let hit=0,miss=0,live=0;
+ document.getElementById('betlist').innerHTML=html||'<div class="empty">No '+(betFilter==='hit'?'cashed':(betFilter==='miss'?'dead':'alive'))+' bets yet.</div>';
+ let hit=0,miss=0,alive=0,live=0,cashed=0;
  BETS.forEach(function(b){const st=grade(b);
-  if(st==='hit'){hit++;live+=b.p;}else if(st==='miss'){miss++;}else{live+=b.p;}});
+  if(st==='hit'){hit++;live+=b.p;cashed+=b.p;}else if(st==='miss'){miss++;}else{alive++;live+=b.p;}});
  document.getElementById('s-hit').textContent=hit;
  document.getElementById('s-miss').textContent=miss;
- document.getElementById('s-pay').textContent='$'+live.toFixed(2);}
+ document.getElementById('s-pay').textContent='$'+live.toFixed(2);
+ document.getElementById('c-all').textContent=BETS.length;
+ document.getElementById('c-alive').textContent=alive;
+ document.getElementById('c-cash').textContent=hit;
+ document.getElementById('c-dead').textContent=miss;}
 function renderBar(){
  document.getElementById('stround').textContent='Round '+(D.round||'\u2014');
  document.getElementById('stswing').textContent=(D.swings!==''?D.swings+' swings left':'\u2014');
@@ -423,6 +444,9 @@ document.querySelectorAll('.tab').forEach(function(t){t.onclick=function(){
  document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});
  document.querySelectorAll('.pane').forEach(function(x){x.classList.remove('on');});
  t.classList.add('on');document.getElementById('p-'+t.dataset.p).classList.add('on');};});
+document.querySelectorAll('.fb').forEach(function(b){b.onclick=function(){
+ document.querySelectorAll('.fb').forEach(function(x){x.classList.remove('on');});
+ b.classList.add('on');betFilter=b.dataset.f;renderBets();};});
 renderAll();
 poll();
 setInterval(poll,15000);
