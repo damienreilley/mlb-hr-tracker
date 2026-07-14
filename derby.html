@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HR Derby 2026 — My Bets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--sky:#0A1526;--sky2:#122336;--panel:#182B41;--panel2:#1F3A55;
+--line:rgba(255,255,255,.10);--line2:rgba(255,255,255,.18);
+--txt:#EAF1F8;--dim:#94A7BA;--dim2:#6B7F94;--amber:#F0A93B;--turf:#33B06A;--red:#D8443C;
+--mono:'JetBrains Mono',ui-monospace,Consolas,monospace;--disp:'Barlow Condensed',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--sky);color:var(--txt);font-family:var(--body);font-size:16px;line-height:1.5;
+background-image:radial-gradient(ellipse at 50% -10%,rgba(240,169,59,.16),transparent 55%),radial-gradient(ellipse at 10% 100%,rgba(51,176,106,.10),transparent 50%);
+background-attachment:fixed;-webkit-font-smoothing:antialiased}
+.wrap{max-width:980px;margin:0 auto;padding:0 14px 90px}
+header{padding:22px 0 14px;border-bottom:2px solid var(--amber);margin-bottom:16px}
+.kick{font-family:var(--disp);text-transform:uppercase;letter-spacing:.22em;font-size:11.5px;color:var(--amber);font-weight:600}
+h1{font-family:var(--disp);font-weight:700;text-transform:uppercase;font-size:clamp(30px,7vw,52px);line-height:.92;margin:5px 0 3px}
+h1 span{color:var(--amber)}
+.sub{font-family:var(--mono);font-size:11px;color:var(--dim)}
+.hdr-row{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.champ{text-align:right;font-family:var(--disp);text-transform:uppercase;letter-spacing:.08em;font-size:11.5px;color:var(--dim2)}
+.champ b{display:block;font-size:23px;color:var(--amber)}
+.sum{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.card .k{font-family:var(--disp);text-transform:uppercase;letter-spacing:.09em;font-size:9.5px;color:var(--dim2)}
+.card .v{font-family:var(--disp);font-weight:700;font-size:24px;margin-top:2px}
+.card .v.g{color:var(--turf)}.card .v.a{color:var(--amber)}.card .v.r{color:var(--red)}
+.tabs{display:flex;gap:4px;margin-bottom:14px;background:var(--panel);padding:4px;border-radius:12px;border:1px solid var(--line);flex-wrap:wrap}
+.tab{flex:1;min-width:74px;padding:9px 5px;border:0;background:transparent;color:var(--dim);font-family:var(--disp);text-transform:uppercase;
+letter-spacing:.06em;font-weight:600;font-size:13.5px;border-radius:8px;cursor:pointer}
+.tab.on{background:var(--amber);color:#10203A}
+.pane{display:none}.pane.on{display:block}
+.shead{display:flex;justify-content:space-between;align-items:baseline;margin:2px 0 10px;gap:10px;flex-wrap:wrap}
+.shead h2{font-family:var(--disp);text-transform:uppercase;font-size:22px;margin:0;font-weight:700}
+.shead .meta{font-family:var(--mono);font-size:11px;color:var(--dim2)}
+.plist{display:grid;gap:7px}
+.prow{display:grid;grid-template-columns:26px 1fr auto;gap:10px;align-items:center;background:var(--panel);
+border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.prow.adv{border-color:var(--turf);background:linear-gradient(90deg,rgba(51,176,106,.13),var(--panel) 60%)}
+.prow.out{opacity:.42}
+.prow.win{border-color:var(--amber);background:linear-gradient(90deg,rgba(240,169,59,.18),var(--panel) 60%)}
+.seed{font-family:var(--disp);font-size:18px;font-weight:700;color:var(--dim2);text-align:center}
+.prow.adv .seed{color:var(--turf)}.prow.win .seed{color:var(--amber)}
+.pname{font-weight:600;font-size:15.5px;line-height:1.2}
+.pteam{font-family:var(--mono);font-size:10px;color:var(--dim2);margin-top:1px}
+.ctr{display:flex;align-items:center;gap:6px}
+.btn{width:38px;height:38px;border-radius:10px;border:1px solid var(--line2);background:var(--panel2);color:var(--txt);
+font-size:20px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1}
+.btn.plus{background:var(--amber);color:#10203A;border-color:var(--amber)}
+.btn:active{transform:scale(.93)}
+.hrn{font-family:var(--disp);font-weight:700;font-size:31px;min-width:42px;text-align:center;line-height:1}
+.hrn.z{color:var(--dim2)}
+.brk{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.mch{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.mch .mt{font-family:var(--disp);text-transform:uppercase;letter-spacing:.1em;font-size:10px;color:var(--dim2);margin-bottom:6px}
+.mline{display:flex;justify-content:space-between;align-items:center;padding:3px 0;font-size:14px}
+.mline.w{color:var(--turf);font-weight:600}
+.mline .mh{font-family:var(--disp);font-size:20px;font-weight:700}
+.srow{display:grid;grid-template-columns:1fr 96px 96px;gap:8px;align-items:center;background:var(--panel);
+border:1px solid var(--line);border-radius:12px;padding:9px 12px;margin-bottom:6px}
+.srow .sn{font-weight:600;font-size:14.5px}
+.srow input{background:var(--sky2);border:1px solid var(--line2);color:var(--txt);border-radius:8px;padding:8px;
+font-family:var(--mono);font-size:14px;width:100%;text-align:center}
+.shdr{display:grid;grid-template-columns:1fr 96px 96px;gap:8px;padding:0 12px 5px;
+font-family:var(--disp);text-transform:uppercase;letter-spacing:.07em;font-size:10.5px;color:var(--dim2)}
+.shdr span{text-align:center}.shdr span:first-child{text-align:left}
+.flags{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.flag{flex:1;min-width:170px;display:flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--line2);
+border-radius:12px;padding:11px 13px;cursor:pointer;font-family:var(--disp);text-transform:uppercase;letter-spacing:.06em;font-size:13.5px;color:var(--dim)}
+.flag.on{border-color:var(--turf);color:var(--turf);background:rgba(51,176,106,.10)}
+.flag .bx{width:19px;height:19px;border-radius:5px;border:2px solid var(--line2);display:flex;align-items:center;justify-content:center;font-size:13px}
+.flag.on .bx{background:var(--turf);border-color:var(--turf);color:#06210F}
+.bet{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--dim2);border-radius:11px;padding:10px 12px;margin-bottom:7px}
+.bet.hit{border-left-color:var(--turf);background:linear-gradient(90deg,rgba(51,176,106,.12),var(--panel) 55%)}
+.bet.miss{border-left-color:var(--red);opacity:.48}
+.bet-top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.bet-desc{font-weight:600;font-size:14.5px;flex:1;min-width:180px}
+.bet-desc .mk{display:block;font-family:var(--mono);font-size:9.5px;color:var(--dim2);text-transform:uppercase;letter-spacing:.05em;margin-top:2px}
+.bet-pay{font-family:var(--disp);font-size:20px;font-weight:700;color:var(--amber);white-space:nowrap}
+.bet.miss .bet-pay{color:var(--dim2);text-decoration:line-through}
+.bet-odds{font-family:var(--mono);font-size:10.5px;color:var(--dim);margin-top:4px}
+.stat{font-family:var(--disp);text-transform:uppercase;letter-spacing:.07em;font-size:10px;font-weight:700;
+padding:2px 7px;border-radius:20px;background:var(--panel2);color:var(--dim)}
+.stat.hit{background:var(--turf);color:#06210F}.stat.miss{background:var(--red);color:#fff}
+.grp{font-family:var(--disp);text-transform:uppercase;letter-spacing:.1em;font-size:11.5px;color:var(--amber);
+margin:15px 0 7px;padding-bottom:4px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+.grp .gs{color:var(--dim2);letter-spacing:.04em}
+.empty{text-align:center;color:var(--dim2);padding:22px;font-size:13.5px;border:1px dashed var(--line2);border-radius:12px}
+.note{font-size:12px;color:var(--dim2);margin-top:9px;line-height:1.5}
+.tot{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:11px 13px;margin-top:10px;
+display:flex;justify-content:space-between;align-items:center;font-family:var(--disp);text-transform:uppercase;letter-spacing:.06em;font-size:14px;color:var(--dim)}
+.tot b{font-size:24px;color:var(--amber)}
+.rst{background:transparent;border:1px solid var(--line2);color:var(--dim2);border-radius:8px;padding:7px 12px;font-size:10.5px;cursor:pointer;
+font-family:var(--disp);text-transform:uppercase;letter-spacing:.06em;margin-top:12px}
+.rst:hover{color:var(--red);border-color:var(--red)}
+@media(max-width:700px){.brk{grid-template-columns:1fr}.sum{grid-template-columns:repeat(2,1fr)}
+.srow,.shdr{grid-template-columns:1fr 78px 78px}.hrn{font-size:28px;min-width:38px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+ <div class="hdr-row">
+  <div>
+   <div class="kick">T-Mobile Home Run Derby &middot; Citizens Bank Park</div>
+   <h1>Derby <span>2026</span></h1>
+   <div class="sub">61 bets &middot; $18.27 wagered &middot; Jul 13, 2026</div>
+  </div>
+  <div class="champ">Champion<b id="champ">&mdash;</b></div>
+ </div>
+</header>
+
+<div class="sum">
+ <div class="card"><div class="k">Bets</div><div class="v" id="s-tot">61</div></div>
+ <div class="card"><div class="k">Cashed</div><div class="v g" id="s-hit">0</div></div>
+ <div class="card"><div class="k">Dead</div><div class="v r" id="s-miss">0</div></div>
+ <div class="card"><div class="k">Still Live For</div><div class="v a" id="s-pay">$0</div></div>
+</div>
+
+<div class="tabs">
+ <button class="tab on" data-p="r1">Round 1</button>
+ <button class="tab" data-p="st">Dist / EV</button>
+ <button class="tab" data-p="sf">Semis</button>
+ <button class="tab" data-p="f">Final</button>
+ <button class="tab" data-p="bets">Bets</button>
+</div>
+
+<div class="pane on" id="p-r1">
+ <div class="shead"><h2>Round 1 &mdash; 20 swings</h2><div class="meta">Top 4 advance &middot; tie = distance</div></div>
+ <div class="plist" id="r1list"></div>
+ <div class="tot"><span>Round 1 field total</span><b id="r1tot">0</b></div>
+ <div class="flags">
+  <div class="flag" id="fl-r1"><span class="bx" id="bx-r1"></span><span>Round 1 complete</span></div>
+  <div class="flag" id="fl-dv"><span class="bx" id="bx-dv"></span><span>Derby complete</span></div>
+ </div>
+ <div class="note">Tap <b>+</b> per home run. Flip <b>Round 1 complete</b> when the round ends (settles Unders and 12+ bets). Flip <b>Derby complete</b> at the end (settles distance / exit-velo bets). Saves on this device automatically.</div>
+ <button class="rst" id="reset">Reset all counts</button>
+</div>
+
+<div class="pane" id="p-st">
+ <div class="shead"><h2>Distance &amp; Exit Velo</h2><div class="meta">Longest HR + hardest-hit per player</div></div>
+ <div class="shdr"><span>Player</span><span>Longest (ft)</span><span>Top EV (mph)</span></div>
+ <div id="stlist"></div>
+ <div class="note">Enter each hitter's <b>longest home run</b> and <b>highest exit velocity</b> as the broadcast shows them. Settles the distance/EV over-unders plus "longest HR" and "hardest-hit HR" of the night.</div>
+</div>
+
+<div class="pane" id="p-sf">
+ <div class="shead"><h2>Semifinals &mdash; 15 swings</h2><div class="meta">1v4 &middot; 2v3</div></div>
+ <div class="brk" id="sfbrk"></div>
+ <div class="plist" id="sflist"></div>
+</div>
+
+<div class="pane" id="p-f">
+ <div class="shead"><h2>Final &mdash; 15 swings</h2><div class="meta">Winner takes the crown</div></div>
+ <div class="brk" id="fbrk"></div>
+ <div class="plist" id="flist"></div>
+ <div class="tot"><span>Derby total HRs (all rounds)</span><b id="alltot">0</b></div>
+</div>
+
+<div class="pane" id="p-bets">
+ <div class="shead"><h2>My Bets</h2><div class="meta">61 bets &middot; $18.27 wagered</div></div>
+ <div id="betlist"></div>
+</div>
+
+</div>
+
+<script>
+const PLAYERS=[
+ {id:'caminero',n:'Junior Caminero',t:'Rays'},
+ {id:'rice',n:'Ben Rice',t:'Yankees'},
+ {id:'caglianone',n:'Jac Caglianone',t:'Royals'},
+ {id:'contreras',n:'Willson Contreras',t:'Red Sox'},
+ {id:'walker',n:'Jordan Walker',t:'Cardinals'},
+ {id:'harper',n:'Bryce Harper',t:'Phillies'},
+ {id:'schwarber',n:'Kyle Schwarber',t:'Phillies'},
+ {id:'murakami',n:'Munetaka Murakami',t:'White Sox'}
+];
+const PMAP={};PLAYERS.forEach(function(p){PMAP[p.id]=p;});
+const BETS=[{"t":"EV","ps":["walker"],"side":"under","line":114.5,"odds":"-116","w":0.2,"p":0.37,"id":"41my0t"},{"t":"EV","ps":["caglianone"],"side":"over","line":112.5,"odds":"-124","w":0.2,"p":0.36,"id":"99k67s"},{"t":"DIST","ps":["schwarber"],"side":"over","line":473.5,"odds":"-112","w":0.2,"p":0.38,"id":"3jgds6"},{"t":"EV","ps":["schwarber"],"side":"over","line":112.5,"odds":"-112","w":0.2,"p":0.38,"id":"gk1300"},{"t":"R1OU","ps":["rice"],"side":"over","line":8.5,"odds":"-115","w":0.2,"p":0.37,"id":"7a8kwg"},{"t":"R1OU","ps":["harper"],"side":"over","line":8.5,"odds":"-146","w":0.2,"p":0.34,"id":"j90qe6"},{"t":"DIST","ps":["walker"],"side":"under","line":475.5,"odds":"-112","w":0.2,"p":0.38,"id":"rpdkrc"},{"t":"R1OU","ps":["caglianone"],"side":"over","line":8.5,"odds":"-166","w":0.2,"p":0.32,"id":"y3h5q1"},{"t":"R1OU","ps":["murakami"],"side":"under","line":9.5,"odds":"-136","w":0.2,"p":0.35,"id":"yc7aqm"},{"t":"R1OU","ps":["schwarber"],"side":"over","line":10.5,"odds":"+102","w":0.2,"p":0.4,"id":"0b0z03"},{"t":"DIST","ps":["caglianone"],"side":"over","line":467.5,"odds":"-112","w":0.2,"p":0.38,"id":"a7frbd"},{"t":"R1OU","ps":["caglianone"],"side":"over","line":8.5,"odds":"-166","w":0.2,"p":0.32,"id":"tg78yd"},{"t":"DIST","ps":["schwarber"],"side":"over","line":473.5,"odds":"-112","w":0.1,"p":0.19,"id":"0mnv1m"},{"t":"DIST","ps":["murakami"],"side":"under","line":470.5,"odds":"-112","w":0.2,"p":0.38,"id":"s6vpn5"},{"t":"DIST","ps":["rice"],"side":"over","line":439.5,"odds":"-112","w":0.1,"p":0.19,"id":"6ap002"},{"t":"EV","ps":["harper"],"side":"over","line":108.5,"odds":"-104","w":0.2,"p":0.39,"id":"b5k4p6"},{"t":"EV","ps":["walker"],"side":"under","line":114.5,"odds":"-116","w":0.2,"p":0.37,"id":"axka4w"},{"t":"FIELD_R1","ps":[],"side":"under","line":74.5,"odds":"-114","w":0.15,"p":0.28,"id":"89hszx"},{"t":"FIELD_R1","ps":[],"side":"under","line":74.5,"odds":"-114","w":0.5,"p":0.94,"id":"v431df"},{"t":"R1_12","ps":["rice"],"odds":"+410","w":0.1,"p":0.51,"id":"pmp9c1"},{"t":"R1_12","ps":["harper"],"odds":"+390","w":0.1,"p":0.49,"id":"brx5xa"},{"t":"R1_12","ps":["caglianone"],"odds":"+300","w":0.1,"p":0.4,"id":"5a9bpt"},{"t":"R1_12","ps":["schwarber"],"odds":"+174","w":0.1,"p":0.27,"id":"xe8pqm"},{"t":"FIELD_ALL","ps":[],"side":"over","line":117.5,"odds":"-113","w":0.1,"p":0.19,"id":"5f3jjn"},{"t":"TOPEV","ps":["caglianone"],"odds":"+440","w":0.25,"p":1.35,"id":"6p9f1z"},{"t":"LONGEST","ps":["caminero"],"odds":"+300","w":0.25,"p":1.0,"id":"m99d26"},{"t":"CHAMP","ps":["harper"],"odds":"+1000","w":0.5,"p":5.5,"id":"xd9bm6"},{"t":"CHAMP","ps":["schwarber"],"odds":"+300","w":1.67,"p":6.68,"id":"p6643v"},{"t":"EXACT","ps":["rice","walker"],"odds":"+5500","w":0.15,"p":8.4,"id":"075xdm"},{"t":"EXACT","ps":["caglianone","caminero"],"odds":"+3500","w":0.25,"p":9.0,"id":"40mt7a"},{"t":"EXACT","ps":["rice","schwarber"],"odds":"+4500","w":0.4,"p":18.4,"id":"yrb4cp"},{"t":"EXACT","ps":["caglianone","schwarber"],"odds":"+3500","w":0.4,"p":14.4,"id":"gzw837"},{"t":"EXACT","ps":["caglianone","walker"],"odds":"+4000","w":0.1,"p":4.1,"id":"ejp9dz"},{"t":"EXACT","ps":["caglianone","harper"],"odds":"+4000","w":0.2,"p":8.2,"id":"gnvvw9"},{"t":"EXACT","ps":["caglianone","murakami"],"odds":"+4000","w":0.15,"p":6.15,"id":"xpb07b"},{"t":"EXACT","ps":["caglianone","rice"],"odds":"+5500","w":0.5,"p":28.0,"id":"yxy38z"},{"t":"EXACT","ps":["rice","caminero"],"odds":"+5000","w":0.25,"p":12.75,"id":"j6z98j"},{"t":"EXACT","ps":["rice","harper"],"odds":"+6000","w":0.15,"p":9.15,"id":"vb8ftx"},{"t":"EXACT","ps":["harper","caglianone"],"odds":"+4000","w":0.3,"p":12.3,"id":"rjftvm"},{"t":"EXACT","ps":["caminero","rice"],"odds":"+3000","w":0.15,"p":4.65,"id":"6q9x6k"},{"t":"FINPAIR","ps":["rice","caminero"],"odds":"+2000","w":0.25,"p":5.25,"id":"s1wdkw"},{"t":"FINPAIR","ps":["rice","caglianone"],"odds":"+3000","w":1.0,"p":31.0,"id":"n8cwa8"},{"t":"FINPAIR","ps":["walker","caminero"],"odds":"+1500","w":0.1,"p":1.6,"id":"qq4kz4"},{"t":"FINPAIR","ps":["caminero","murakami"],"odds":"+1200","w":0.1,"p":1.3,"id":"6tbgp6"},{"t":"CHAMP","ps":["schwarber"],"odds":"+360","w":1.0,"p":4.6,"id":"15dea9"},{"t":"CHAMP","ps":["harper"],"odds":"+600","w":1.0,"p":7.0,"id":"ffvswz"},{"t":"FINPAIR","ps":["rice","caglianone"],"odds":"+3000","w":0.3,"p":9.3,"id":"6j0862"},{"t":"FINPAIR","ps":["caglianone","schwarber"],"odds":"+1700","w":0.25,"p":4.5,"id":"sd7sjm"},{"t":"FINPAIR","ps":["harper","caglianone"],"odds":"+2200","w":0.25,"p":5.75,"id":"q0c8ag"},{"t":"FINPAIR","ps":["harper","schwarber"],"odds":"+1500","w":2.0,"p":32.0,"id":"jffyh3"},{"t":"EXACT","ps":["harper","caglianone"],"odds":"+4000","w":0.1,"p":4.1,"id":"2p5tdc"},{"t":"EXACT","ps":["schwarber","murakami"],"odds":"+2000","w":0.1,"p":2.1,"id":"v6evjn"},{"t":"EXACT","ps":["schwarber","caglianone"],"odds":"+2700","w":0.1,"p":2.8,"id":"14a253"},{"t":"EXACT","ps":["schwarber","walker"],"odds":"+2200","w":0.1,"p":2.3,"id":"qt7ydj"},{"t":"EXACT","ps":["harper","rice"],"odds":"+4500","w":0.1,"p":4.6,"id":"jjsjh4"},{"t":"EXACT","ps":["harper","murakami"],"odds":"+3300","w":0.1,"p":3.4,"id":"haas1q"},{"t":"EXACT","ps":["harper","walker"],"odds":"+3500","w":0.1,"p":3.6,"id":"q7pwnf"},{"t":"EXACT","ps":["harper","caminero"],"odds":"+3000","w":0.1,"p":3.1,"id":"jd53m2"},{"t":"EXACT","ps":["schwarber","contreras"],"odds":"+4500","w":0.1,"p":4.6,"id":"2y1k17"},{"t":"EXACT","ps":["schwarber","rice"],"odds":"+3000","w":0.1,"p":3.1,"id":"7yh0eg"},{"t":"EXACT","ps":["schwarber","harper"],"odds":"+2500","w":1.0,"p":26.0,"id":"t265qm"}];
+const KEY='derby2026:state:v3';
+let S={r1:{},sf:{},f:{},dist:{},ev:{},r1Done:false,derbyDone:false};
+PLAYERS.forEach(function(p){S.r1[p.id]=0;S.sf[p.id]=0;S.f[p.id]=0;S.dist[p.id]='';S.ev[p.id]='';});
+
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){console.error('save',e);}}
+function load(){try{const v=localStorage.getItem(KEY);if(v){const d=JSON.parse(v);S=Object.assign(S,d);
+ PLAYERS.forEach(function(p){S.r1[p.id]=S.r1[p.id]||0;S.sf[p.id]=S.sf[p.id]||0;S.f[p.id]=S.f[p.id]||0;
+  if(S.dist[p.id]===undefined)S.dist[p.id]='';if(S.ev[p.id]===undefined)S.ev[p.id]='';});}}catch(e){}}
+
+const num=function(v){const n=parseFloat(v);return isNaN(n)?null:n;};
+function anyR1(){return PLAYERS.some(function(p){return (S.r1[p.id]||0)>0;});}
+function longestHolder(){let best=null,bv=-1,tie=false;
+ PLAYERS.forEach(function(p){const v=num(S.dist[p.id]);if(v===null)return;
+  if(v>bv){bv=v;best=p;tie=false;}else if(v===bv){tie=true;}});
+ return tie?null:best;}
+function topEVHolder(){let best=null,bv=-1,tie=false;
+ PLAYERS.forEach(function(p){const v=num(S.ev[p.id]);if(v===null)return;
+  if(v>bv){bv=v;best=p;tie=false;}else if(v===bv){tie=true;}});
+ return tie?null:best;}
+function r1Rank(){const lh=longestHolder();
+ return PLAYERS.slice().sort(function(a,b){const d=(S.r1[b.id]||0)-(S.r1[a.id]||0);if(d)return d;
+  if(lh&&lh.id===a.id)return -1;if(lh&&lh.id===b.id)return 1;return 0;});}
+function semis(){return anyR1()?r1Rank().slice(0,4):[];}
+function sfPairs(){const s=semis();if(s.length<4)return [];return [[s[0],s[3]],[s[1],s[2]]];}
+function pw(pair,pool){if(!pair||pair.length<2)return null;const a=pair[0],b=pair[1],x=pool[a.id]||0,y=pool[b.id]||0;
+ if(x===0&&y===0)return null;if(x===y)return null;return x>y?a:b;}
+function finalists(){const ps=sfPairs();if(!ps.length)return [];return [pw(ps[0],S.sf),pw(ps[1],S.sf)].filter(Boolean);}
+function champion(){const f=finalists();if(f.length<2)return null;return pw(f,S.f);}
+function runnerUp(){const f=finalists(),c=champion();if(!c||f.length<2)return null;return f[0].id===c.id?f[1]:f[0];}
+function r1Total(){let t=0;PLAYERS.forEach(function(p){t+=(S.r1[p.id]||0);});return t;}
+function allTotal(){let t=0;PLAYERS.forEach(function(p){t+=(S.r1[p.id]||0)+(S.sf[p.id]||0)+(S.f[p.id]||0);});return t;}
+
+function grade(b){
+ const s=semis().map(function(x){return x.id;});
+ const f=finalists().map(function(x){return x.id;});
+ const c=champion(), ru=runnerUp();
+ const settled4=anyR1()&&s.length===4;
+ const T=b.t;
+ if(T==='CHAMP'){
+  if(c)return c.id===b.ps[0]?'hit':'miss';
+  if(f.length===2&&f.indexOf(b.ps[0])<0)return 'miss';
+  if(settled4&&S.r1Done&&s.indexOf(b.ps[0])<0)return 'miss';
+  return 'pending';}
+ if(T==='EXACT'){
+  if(c&&ru)return (c.id===b.ps[0]&&ru.id===b.ps[1])?'hit':'miss';
+  if(f.length===2){if(f.indexOf(b.ps[0])<0||f.indexOf(b.ps[1])<0)return 'miss';return 'pending';}
+  if(settled4&&S.r1Done&&(s.indexOf(b.ps[0])<0||s.indexOf(b.ps[1])<0))return 'miss';
+  return 'pending';}
+ if(T==='FINPAIR'){
+  if(f.length===2)return (f.indexOf(b.ps[0])>=0&&f.indexOf(b.ps[1])>=0)?'hit':'miss';
+  if(settled4&&S.r1Done&&(s.indexOf(b.ps[0])<0||s.indexOf(b.ps[1])<0))return 'miss';
+  return 'pending';}
+ if(T==='R1OU'){const v=S.r1[b.ps[0]]||0;
+  if(b.side==='over'){if(v>b.line)return 'hit';if(S.r1Done)return 'miss';return 'pending';}
+  if(v>b.line)return 'miss';if(S.r1Done)return 'hit';return 'pending';}
+ if(T==='R1_12'){const v=S.r1[b.ps[0]]||0;
+  if(v>=12)return 'hit';if(S.r1Done)return 'miss';return 'pending';}
+ if(T==='FIELD_R1'){const v=r1Total();
+  if(b.side==='over'){if(v>b.line)return 'hit';if(S.r1Done)return 'miss';return 'pending';}
+  if(v>b.line)return 'miss';if(S.r1Done)return 'hit';return 'pending';}
+ if(T==='FIELD_ALL'){const v=allTotal();
+  if(b.side==='over'){if(v>b.line)return 'hit';if(S.derbyDone)return 'miss';return 'pending';}
+  if(v>b.line)return 'miss';if(S.derbyDone)return 'hit';return 'pending';}
+ if(T==='DIST'||T==='EV'){const v=num((T==='DIST'?S.dist:S.ev)[b.ps[0]]);
+  if(v===null)return 'pending';
+  if(b.side==='over'){if(v>b.line)return 'hit';if(S.derbyDone)return 'miss';return 'pending';}
+  if(v>b.line)return 'miss';if(S.derbyDone)return 'hit';return 'pending';}
+ if(T==='LONGEST'){if(!S.derbyDone)return 'pending';const h=longestHolder();if(!h)return 'pending';
+  return h.id===b.ps[0]?'hit':'miss';}
+ if(T==='TOPEV'){if(!S.derbyDone)return 'pending';const h=topEVHolder();if(!h)return 'pending';
+  return h.id===b.ps[0]?'hit':'miss';}
+ return 'pending';}
+function desc(b){
+ const a=b.ps[0]?PMAP[b.ps[0]].n:'', z=b.ps[1]?PMAP[b.ps[1]].n:'';
+ const T=b.t, sd=b.side==='over'?'Over':'Under';
+ if(T==='CHAMP')return a+' to win the Derby';
+ if(T==='EXACT')return a+' <span style="color:var(--dim2)">over</span> '+z;
+ if(T==='FINPAIR')return a+' <span style="color:var(--dim2)">&amp;</span> '+z+' <span style="color:var(--dim2)">both reach Final</span>';
+ if(T==='R1OU')return a+' &mdash; '+sd+' '+b.line+' HRs (Round 1)';
+ if(T==='R1_12')return a+' &mdash; 12+ HRs in Round 1';
+ if(T==='FIELD_R1')return 'Field &mdash; '+sd+' '+b.line+' HRs (Round 1)';
+ if(T==='FIELD_ALL')return 'Field &mdash; '+sd+' '+b.line+' HRs (whole Derby)';
+ if(T==='DIST')return a+' &mdash; '+sd+' '+b.line+' ft (longest HR)';
+ if(T==='EV')return a+' &mdash; '+sd+' '+b.line+' mph (top exit velo)';
+ if(T==='LONGEST')return a+' &mdash; longest HR of the night';
+ if(T==='TOPEV')return a+' &mdash; hardest-hit HR of the night';
+ return a;}
+function nowTxt(b){const T=b.t;
+ if(T==='R1OU'||T==='R1_12')return 'now '+(S.r1[b.ps[0]]||0);
+ if(T==='FIELD_R1')return 'R1 field: '+r1Total();
+ if(T==='FIELD_ALL')return 'total: '+allTotal();
+ if(T==='DIST'){const v=S.dist[b.ps[0]];return v?('longest '+v+' ft'):'no distance yet';}
+ if(T==='EV'){const v=S.ev[b.ps[0]];return v?('top '+v+' mph'):'no EV yet';}
+ if(T==='LONGEST'){const h=longestHolder();return h?('leader '+h.n.split(' ').pop()+' '+S.dist[h.id]+' ft'):'\u2014';}
+ if(T==='TOPEV'){const h=topEVHolder();return h?('leader '+h.n.split(' ').pop()+' '+S.ev[h.id]+' mph'):'\u2014';}
+ return b.ps.map(function(p){return PMAP[p].n.split(' ').pop()+' '+(S.r1[p]||0);}).join(' &middot; ');}
+function prow(p,pool,stage,cls,seed){const v=pool[p.id]||0;
+ return '<div class="prow '+cls+'"><div class="seed">'+(seed||'')+'</div>'
+ +'<div><div class="pname">'+p.n+'</div><div class="pteam">'+p.t+'</div></div>'
+ +'<div class="ctr"><button class="btn" onclick="bump(\''+stage+'\',\''+p.id+'\',-1)">&minus;</button>'
+ +'<div class="hrn '+(v?'':'z')+'">'+v+'</div>'
+ +'<button class="btn plus" onclick="bump(\''+stage+'\',\''+p.id+'\',1)">+</button></div></div>';}
+function mbox(t,pair,pool){
+ if(!pair||pair.length<2)return '<div class="mch"><div class="mt">'+t+'</div><div class="mline" style="color:var(--dim2)">Awaiting previous round</div></div>';
+ const w=pw(pair,pool);
+ return '<div class="mch"><div class="mt">'+t+'</div>'+pair.map(function(p){const win=w&&w.id===p.id;
+  return '<div class="mline '+(win?'w':'')+'"><span>'+(win?'\u2713 ':'')+p.n+'</span><span class="mh">'+(pool[p.id]||0)+'</span></div>';}).join('')+'</div>';}
+function renderR1(){const rk=r1Rank(),st=anyR1();
+ document.getElementById('r1list').innerHTML=rk.map(function(p,i){
+  return prow(p,S.r1,'r1',st?(i<4?'adv':'out'):'',st?String(i+1):'');}).join('');
+ document.getElementById('r1tot').textContent=r1Total();}
+function renderST(){
+ document.getElementById('stlist').innerHTML=PLAYERS.map(function(p){
+  return '<div class="srow"><div class="sn">'+p.n+'</div>'
+  +'<input type="number" inputmode="decimal" placeholder="ft" value="'+(S.dist[p.id]||'')+'" oninput="setStat(\'dist\',\''+p.id+'\',this.value)">'
+  +'<input type="number" inputmode="decimal" placeholder="mph" value="'+(S.ev[p.id]||'')+'" oninput="setStat(\'ev\',\''+p.id+'\',this.value)">'
+  +'</div>';}).join('');}
+function renderSF(){const ps=sfPairs();const f=finalists().map(function(x){return x.id;});
+ document.getElementById('sfbrk').innerHTML=ps.length?mbox('Semi 1 &middot; 1v4',ps[0],S.sf)+mbox('Semi 2 &middot; 2v3',ps[1],S.sf):mbox('Semi 1')+mbox('Semi 2');
+ const s=semis();
+ document.getElementById('sflist').innerHTML=s.length?s.map(function(p,i){
+  return prow(p,S.sf,'sf',f.indexOf(p.id)>=0?'adv':(f.length===2?'out':''),String(i+1));}).join('')
+  :'<div class="empty">Enter Round 1 home runs \u2014 the top 4 seed in here automatically.</div>';}
+function renderF(){const f=finalists(),c=champion();
+ document.getElementById('fbrk').innerHTML=(f.length===2?mbox('Final &middot; 15 swings',f,S.f):mbox('Final'))
+  +'<div class="mch"><div class="mt">Champion</div><div class="mline '+(c?'w':'')+'">'
+  +'<span'+(c?'':' style="color:var(--dim2)"')+'>'+(c?'\u2713 '+c.n:'\u2014')+'</span>'
+  +'<span class="mh">'+(c?(S.f[c.id]||0):'')+'</span></div></div>';
+ document.getElementById('flist').innerHTML=f.length===2?f.map(function(p){
+  return prow(p,S.f,'f',c?(c.id===p.id?'win':'out'):'','');}).join('')
+  :'<div class="empty">Finalists appear once both semifinals have a winner.</div>';
+ document.getElementById('champ').textContent=c?c.n:'\u2014';
+ document.getElementById('alltot').textContent=allTotal();}
+function renderBets(){
+ const groups=[['CHAMP','Derby Champion'],['FINPAIR','Name the Finalists'],['EXACT','Exact Result'],
+  ['R1OU','Round 1 HR Totals'],['R1_12','12+ HRs in Round 1'],['FIELD_R1','Field Total \u2014 Round 1'],
+  ['FIELD_ALL','Field Total \u2014 Whole Derby'],['DIST','Longest HR Distance'],['EV','Exit Velocity'],
+  ['LONGEST','Longest HR of Night'],['TOPEV','Hardest-Hit HR of Night']];
+ let html='';
+ groups.forEach(function(g){
+  const list=BETS.filter(function(b){return b.t===g[0];});
+  if(!list.length)return;
+  const ord={hit:0,pending:1,miss:2};
+  list.sort(function(a,b){return (ord[grade(a)]-ord[grade(b)])||(b.p-a.p);});
+  let gh=0,gm=0;list.forEach(function(b){const s=grade(b);if(s==='hit')gh++;else if(s==='miss')gm++;});
+  html+='<div class="grp"><span>'+g[1]+'</span><span class="gs">'+list.length+' &middot; '+gh+'W '+gm+'L</span></div>';
+  html+=list.map(function(b){const st=grade(b);
+   const cls=st==='hit'?'hit':(st==='miss'?'miss':'');
+   const badge=st==='hit'?'<span class="stat hit">Cashed</span>':(st==='miss'?'<span class="stat miss">Dead</span>':'<span class="stat">Alive</span>');
+   return '<div class="bet '+cls+'"><div class="bet-top">'
+    +'<div class="bet-desc">'+desc(b)+'<span class="mk">#'+b.id+'</span></div>'
+    +'<div style="display:flex;align-items:center;gap:8px">'+badge+'<span class="bet-pay">$'+b.p.toFixed(2)+'</span></div></div>'
+    +'<div class="bet-odds">'+b.odds+' &middot; $'+b.w.toFixed(2)+' &middot; '+nowTxt(b)+'</div></div>';}).join('');
+ });
+ document.getElementById('betlist').innerHTML=html;
+ let hit=0,miss=0,live=0;
+ BETS.forEach(function(b){const st=grade(b);
+  if(st==='hit'){hit++;live+=b.p;}else if(st==='miss'){miss++;}else{live+=b.p;}});
+ document.getElementById('s-hit').textContent=hit;
+ document.getElementById('s-miss').textContent=miss;
+ document.getElementById('s-pay').textContent='$'+live.toFixed(2);}
+function renderFlags(){
+ document.getElementById('fl-r1').className='flag'+(S.r1Done?' on':'');
+ document.getElementById('bx-r1').innerHTML=S.r1Done?'\u2713':'';
+ document.getElementById('fl-dv').className='flag'+(S.derbyDone?' on':'');
+ document.getElementById('bx-dv').innerHTML=S.derbyDone?'\u2713':'';}
+function renderAll(){renderR1();renderSF();renderF();renderBets();renderFlags();}
+window.bump=function(stage,pid,d){const pool=stage==='r1'?S.r1:(stage==='sf'?S.sf:S.f);
+ pool[pid]=Math.max(0,(pool[pid]||0)+d);save();renderAll();};
+window.setStat=function(kind,pid,v){S[kind][pid]=v;save();renderBets();renderR1();};
+document.getElementById('fl-r1').onclick=function(){S.r1Done=!S.r1Done;save();renderAll();};
+document.getElementById('fl-dv').onclick=function(){S.derbyDone=!S.derbyDone;save();renderAll();};
+document.querySelectorAll('.tab').forEach(function(t){t.onclick=function(){
+ document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on');});
+ document.querySelectorAll('.pane').forEach(function(x){x.classList.remove('on');});
+ t.classList.add('on');document.getElementById('p-'+t.dataset.p).classList.add('on');};});
+document.getElementById('reset').onclick=function(){
+ if(!confirm('Reset all counts, distances and exit velos? Bets stay.'))return;
+ PLAYERS.forEach(function(p){S.r1[p.id]=0;S.sf[p.id]=0;S.f[p.id]=0;S.dist[p.id]='';S.ev[p.id]='';});
+ S.r1Done=false;S.derbyDone=false;save();renderAll();renderST();};
+load();renderST();renderAll();
+</script>
+</body>
+</html>
