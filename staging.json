@@ -511,6 +511,116 @@
           "g": "NYM@PHI"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kxpcnmvrfnxs4kp05x2vf2f3",
+      "id": "#2vf2f3",
+      "kind": "8-leg SGP",
+      "odds": 69241,
+      "wager": 0.12,
+      "payout": 83.22,
+      "placed": "7/16 5:17PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryce Harper",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        },
+        {
+          "p": "Carson Benge",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        },
+        {
+          "p": "A.J. Ewing",
+          "prop": "RUN",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        },
+        {
+          "p": "Carson Benge",
+          "prop": "RUN",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        },
+        {
+          "p": "Francisco Alvarez",
+          "prop": "HIT",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "RBI2",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        },
+        {
+          "p": "Aaron Nola",
+          "prop": "ALTK",
+          "k": 5,
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "RUN2",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxp8m86qetkv3eb8awtmq5z7",
+      "id": "#tmq5z7",
+      "kind": "4-leg SGP",
+      "odds": 20048,
+      "wager": 0.16,
+      "payout": 32.24,
+      "placed": "7/16 4:06PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Juan Soto",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        },
+        {
+          "p": "Juan Soto",
+          "prop": "HR2",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        },
+        {
+          "p": "A.J. Ewing",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        },
+        {
+          "p": "A.J. Ewing",
+          "prop": "RUN2",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
     }
   ]
 }
