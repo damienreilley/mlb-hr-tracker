@@ -43,13 +43,7 @@ def gate(bets, parser_stdout):
             line = line.strip()
             if line.startswith("- ") and "|" in line:
                 msg, ctx = line[2:].rsplit("|", 1)
-                msg = msg.strip()
-                # MANUAL/NA legs (First HR, First 5 Innings, Race To N) are intentional
-                # "track on FanDuel" legs, not errors -> note, never hold.
-                if msg.startswith("MANUAL leg"):
-                    notes.append("manual/NA leg (publish OK): %s | %s" % (msg, ctx.strip()))
-                else:
-                    holds.append((ctx.strip(), "parser flag: " + msg))
+                holds.append((ctx.strip(), "parser flag: " + msg.strip()))
     # 2) parser summary lines that signal problems
     for key, label in [("UNRESOLVED GAMES (g=??):", "unresolved game"),
                        ("MISSING odds/wager/payout:", "missing odds/wager/payout"),
@@ -147,14 +141,8 @@ def main():
     else:  # same-day-add
         cur = staging["bets"]
         have = {b["full_id"] for b in cur}
-        added, dup = [], []
-        for b in bets:
-            fid = b["full_id"]
-            if fid in have:
-                dup.append(b["id"])          # already in staging OR already seen in this paste
-            else:
-                have.add(fid)                # dedup WITHIN the incoming paste too (doubled screens)
-                added.append(b)
+        added = [b for b in bets if b["full_id"] not in have]
+        dup = [b["id"] for b in bets if b["full_id"] in have]
         new_staging = {"date": today, "bets": cur + added}
         print("same-day add: +%d new, %d dup-skipped %s" % (len(added), len(dup), dup or ""))
 

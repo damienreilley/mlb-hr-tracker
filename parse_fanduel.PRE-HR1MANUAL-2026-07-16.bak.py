@@ -166,12 +166,6 @@ def tokenize(lines):
             else:   d={"p":pair,"prop":"CMBHIT","ps":ps,"line":int(mck.group(1))}
             if void_around(lines,i,i): d["void"]=True
             toks.append(("LEG",d)); i+=1; continue
-        if ln.strip().lower()=="to hit first home run":
-            # First-HR-of-game is not auto-gradable (needs cross-player HR ordering);
-            # carry as a labeled manual/NA leg so the bet publishes and is tracked on FD.
-            d={"p":prev_name(lines,i),"prop":"NA","txt":"First HR of game (manual/FD)"}
-            if void_around(lines,i,i): d["void"]=True
-            toks.append(("LEG",d)); i+=1; continue
         pc=prop_code(ln)
         if pc is not None:
             d={"p":prev_name(lines,i),"prop":pc}
