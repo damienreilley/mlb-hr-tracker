@@ -621,6 +621,215 @@
           "hsp": "nola"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kxpcq9khfxat83apc60q57rj",
+      "id": "#0q57rj",
+      "kind": "1-leg SGP",
+      "odds": 920,
+      "wager": 0.1,
+      "payout": 1.02,
+      "placed": "7/16 5:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Brett Baty",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxpcq9khfrbaxq6vfe3z8p4n",
+      "id": "#3z8p4n",
+      "kind": "1-leg SGP",
+      "odds": 520,
+      "wager": 0.1,
+      "payout": 0.62,
+      "placed": "7/16 5:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Carson Benge",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxpcq9khfhcss47jq2a1f5tj",
+      "id": "#a1f5tj",
+      "kind": "1-leg SGP",
+      "odds": 450,
+      "wager": 0.1,
+      "payout": 0.55,
+      "placed": "7/16 5:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Juan Soto",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxpcq9khfd0syfv3zmafaxkd",
+      "id": "#afaxkd",
+      "kind": "1-leg SGP",
+      "odds": 700,
+      "wager": 0.1,
+      "payout": 0.8,
+      "placed": "7/16 5:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Gabriel Rincones Jr.",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxpcq9khewp9m9pkpphsfrgd",
+      "id": "#hsfrgd",
+      "kind": "1-leg SGP",
+      "odds": 430,
+      "wager": 0.1,
+      "payout": 0.53,
+      "placed": "7/16 5:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "A.J. Ewing",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxpcq9kheq4vx9haaaazj250",
+      "id": "#azj250",
+      "kind": "1-leg SGP",
+      "odds": 520,
+      "wager": 0.1,
+      "payout": 0.62,
+      "placed": "7/16 5:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Francisco Lindor",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxpcq9khenvsvg8fxqvjfr0p",
+      "id": "#vjfr0p",
+      "kind": "1-leg SGP",
+      "odds": 880,
+      "wager": 0.1,
+      "payout": 0.98,
+      "placed": "7/16 5:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bo Bichette",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxpcq9khej9b3thg4hvyd586",
+      "id": "#vyd586",
+      "kind": "1-leg SGP",
+      "odds": 410,
+      "wager": 0.1,
+      "payout": 0.51,
+      "placed": "7/16 5:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Justin Crawford",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxpcq9khedbrm96rf148ws6r",
+      "id": "#48ws6r",
+      "kind": "1-leg SGP",
+      "odds": 630,
+      "wager": 0.1,
+      "payout": 0.73,
+      "placed": "7/16 5:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Brandon Marsh",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxpcq9khe87rgq2eb89d2yhx",
+      "id": "#9d2yhx",
+      "kind": "1-leg SGP",
+      "odds": 470,
+      "wager": 0.1,
+      "payout": 0.57,
+      "placed": "7/16 5:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxpcq9khe1js7zp0rn8jx9mz",
+      "id": "#8jx9mz",
+      "kind": "1-leg SGP",
+      "odds": 410,
+      "wager": 0.1,
+      "payout": 0.51,
+      "placed": "7/16 5:18PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
     }
   ]
 }
