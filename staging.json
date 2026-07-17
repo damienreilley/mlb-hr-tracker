@@ -830,6 +830,44 @@
           "hsp": "nola"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kxpnx9r9f5ash1834c3h46c4",
+      "id": "#3h46c4",
+      "kind": "1-leg SGP",
+      "odds": 2000,
+      "wager": 0.12,
+      "payout": 2.52,
+      "placed": "7/16 7:59PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryson Stott",
+          "prop": "RBI2",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxpnx9r9e3gbyych6pqhrtsa",
+      "id": "#qhrtsa",
+      "kind": "1-leg SGP",
+      "odds": 1900,
+      "wager": 0.12,
+      "payout": 2.4,
+      "placed": "7/16 7:59PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryson Stott",
+          "prop": "HR",
+          "g": "NYM@PHI",
+          "asp": "scott",
+          "hsp": "nola"
+        }
+      ]
     }
   ]
 }
