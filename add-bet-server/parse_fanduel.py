@@ -22,7 +22,7 @@ PROP_MAP = {
  "To Record A Hit":"HIT","To Record 2+ Hits":"HIT2","To Record 3+ Hits":"HIT3","To Record 4+ Hits":"HIT4",
  "To Record A Stolen Base":"SB","To Record 2+ Stolen Bases":"SB2",
  "To Record An RBI":"RBI","To Record 2+ RBIs":"RBI2","To Record 3+ RBIs":"RBI3","To Record 4+ RBIs":"RBI4",
- "To Record A Run":"RUN","To Record 2+ Runs":"RUN2",
+ "To Record A Run":"RUN","To Record 2+ Runs":"RUN2","To Record 3+ Runs":"RUN3",
  "To Record 2+ Total Bases":"TB2","To Record 3+ Total Bases":"TB3",
  "To Record 4+ Total Bases":"TB","To Record 5+ Total Bases":"TB5",
  "To Record 2+ Hits + Runs + RBIs":"HRR2","Player To Record 2+ Hits + Runs + RBIs":"HRR2","To Record 3+ Hits + Runs + RBIs":"HRR3","Player To Record 3+ Hits + Runs + RBIs":"HRR3",
@@ -155,6 +155,23 @@ def tokenize(lines):
             d={"p":"","prop":"TR","line":float(m.group(2)),"side":m.group(1).lower()}
             if void_around(lines,i,i+1): d["void"]=True
             toks.append(("LEG",d)); i+=2; continue
+        mch=re.match(r"^Players To Combine For (?:A Home Run|(\d+)\+ Home Runs?)$", ln)
+        mck=re.match(r"^Players To Combine For (\d+)\+ Hits$", ln)
+        if mch or mck:
+            j=i-1
+            while j>=0 and (i-j)<=3 and (" & " not in lines[j] or " @ " in lines[j]): j-=1
+            pair=lines[j] if (j>=0 and " & " in lines[j] and " @ " not in lines[j]) else prev_name(lines,i)
+            ps=[x.strip() for x in pair.split(" & ")] if " & " in pair else [pair]
+            if mch: d={"p":pair,"prop":"CMBHR","ps":ps,"line":int(mch.group(1)) if mch.group(1) else 1}
+            else:   d={"p":pair,"prop":"CMBHIT","ps":ps,"line":int(mck.group(1))}
+            if void_around(lines,i,i): d["void"]=True
+            toks.append(("LEG",d)); i+=1; continue
+        if ln.strip().lower()=="to hit first home run":
+            # First-HR-of-game is not auto-gradable (needs cross-player HR ordering);
+            # carry as a labeled manual/NA leg so the bet publishes and is tracked on FD.
+            d={"p":prev_name(lines,i),"prop":"NA","txt":"First HR of game (manual/FD)"}
+            if void_around(lines,i,i): d["void"]=True
+            toks.append(("LEG",d)); i+=1; continue
         pc=prop_code(ln)
         if pc is not None:
             d={"p":prev_name(lines,i),"prop":pc}
@@ -214,6 +231,8 @@ def parse_bet(lines):
     if m1: kind="%s-leg SGP+"%m1.group(1); expected=int(m1.group(1))
     elif m2: kind="%s-leg parlay"%m2.group(1); expected=int(m2.group(1))
     elif pp is not None: kind="Pitcher Special"; expected=1
+    elif not any(t[0]=="SGP" for t in toks) and len(legs)==1:
+        kind="Single"; expected=1   # straight single (Backlog #23); leg-count check now armed
     else:
         kind="%d-leg SGP"%len(legs)
         summ=next((l for l in lines[1:] if ", " in l and re.search(r"To (Hit|Record)|Strikeouts|Total Runs|Moneyline|Innings Result|Race To",l,re.I)), None)
@@ -226,6 +245,16 @@ def parse_bet(lines):
          "payout":payout,"placed":reformat_placed(placed_raw),"status":"open","legs":legs}
     return bet,flags
 
+def single_start(b):
+    # Straight-single fallback anchor (2026-07-18, Backlog #23): a plain single has
+    # no is_header line (player / +odds / prop shape), so header-less blocks were
+    # silently DROPPED before parse_bet - invisible to the GATE. Anchor at the
+    # player-name line: lines[i+1] is bare +odds AND lines[i+2] is a known prop.
+    for i in range(len(b)-2):
+        if re.fullmatch(r"\+\d+", b[i+1]) and prop_code(b[i+2]) is not None:
+            return i
+    return None
+
 def split_blocks(lines):
     blocks=[]; cur=[]
     for ln in lines:
@@ -234,6 +263,7 @@ def split_blocks(lines):
     out=[]
     for b in blocks:
         hi=next((i for i,l in enumerate(b) if is_header(l)), None)
+        if hi is None: hi=single_start(b)
         if hi is not None: out.append(b[hi:])
     return out
 

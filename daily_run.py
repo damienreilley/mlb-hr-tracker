@@ -129,20 +129,26 @@ def main():
 
     # build the new staging
     if mode == "rollover":
+        # HARD GATE (2026-07-18, Backlog #22): a rollover WRITE requires --auto-rollover.
+        # Without it, the old code skipped the archive but still overwrote staging -
+        # the exact missed-archive data-loss path the runbook warns about.
+        if not a.dry_run and not a.auto_rollover:
+            print("REFUSE: rollover write requires --auto-rollover (or --dry-run to preview).")
+            print("NOT touching staging.json - prior day", prior, "is not archived yet.")
+            return 1
         existing_ids = set()
         new_bets = bets
-        # archive guard
+        # archive guard - per FILE (an OR-guard let one existing file suppress the other copy)
         ah = os.path.join(R, "archive", prior + ".html")
         aj = os.path.join(R, "archive", prior + ".json")
-        if not (os.path.exists(ah) or os.path.exists(aj)):
-            if a.dry_run or not a.auto_rollover:
-                print("WOULD archive prior day", prior, "(index.html+staging.json -> archive/)")
+        for src, dst in ((os.path.join(R, "index.html"), ah), (a.staging, aj)):
+            if os.path.exists(dst):
+                print("archive exists - skip:", os.path.basename(dst))
+            elif a.dry_run:
+                print("WOULD archive", os.path.basename(src), "->", os.path.basename(dst))
             else:
-                shutil.copy(os.path.join(R, "index.html"), ah)
-                shutil.copy(a.staging, aj)
-                print("archived prior day", prior)
-        else:
-            print("archive for", prior, "already exists - skip archive (guard).")
+                shutil.copy(src, dst)
+                print("archived", os.path.basename(src), "->", os.path.basename(dst))
         new_staging = {"date": today, "bets": new_bets}
     else:  # same-day-add
         cur = staging["bets"]
@@ -168,6 +174,10 @@ def main():
         os.remove(tmps)
         return 0
 
+    # BELT-AND-SUSPENDERS (Backlog #22): never overwrite an un-archived prior day.
+    if mode == "rollover":
+        assert os.path.exists(ah) and os.path.exists(aj), \
+            "archive files for %s missing - refusing to overwrite staging" % prior
     # write staging (utf-8, no BOM) and verify byte0
     with open(a.staging, "w", encoding="utf-8") as f:
         json.dump(new_staging, f, indent=2)

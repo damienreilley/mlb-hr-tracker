@@ -181,3 +181,68 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
 - Source: Damien test bet 2026-06-17 (us-pa ...g5d2rm leg "Pittsburgh Pirates Race To 5 Runs").
 - DECISION 2026-06-17: PARKED (same handling as #19). Rarely bet. Parser tags prop="NA" (recorded, manual). Do NOT build unless frequent.
 - If ever built: needs running score by team / play-by-play to know who reached N first; new game-prop code + build.py case (team + N).
+
+
+## 21. Link to archived day pages from the live tracker
+- Source: Damien 2026-06-19. The rollover auto-archives each prior day as archive/<date>.html, but those pages have no navigation - they just accumulate (9 exist as of 6/19: 06-03,04,05,08,09,11,13,16,17, with gaps on un-played/un-archived days). No way to reach a past day from the live board.
+- Goal: from the live tracker, open any past day's board.
+- RECOMMENDED approach (build chat confirms):
+  (1) One-time: add a small "Past days" link in tracker_template.html (header or footer) pointing to archive/index.html - a static link, no per-day edit.
+  (2) New tiny generator (e.g. build_archive_index.py): scan archive/*.html, sort newest-first, write archive/index.html as a dated link list styled like the tracker, with a "back to live board" link at top.
+  (3) Wire into DAILY-ROLLOVER-RUNBOOK.md: after archiving the prior day's page, regenerate archive/index.html and commit it alongside the archived page.
+- Alternatives considered + rejected: a date dropdown in the main header (gets unwieldy / clutters header as days pile up); a footer date list on the main page (grows without bound). An index page keeps the live board clean and scales.
+- Keep index generation OUT of build.py's CI trigger path - the archive set only changes at rollover, which runs locally; no need to rescan on every bet build.
+- Aside: archive/ also holds legacy gen_bets_*.py (06-03..06-09), pre-consolidation build scripts - unrelated clutter, can be ignored or cleaned separately.
+- Priority: requested by Damien 2026-06-19.
+
+
+
+## 22. BUG: daily_run.py rollover overwrites staging WITHOUT archiving (data-loss path) - DONE (shipped 2026-07-18)
+- SHIPPED: all 3 solution parts below. Tested: rollover w/o --auto-rollover REFUSES + staging untouched;
+  --dry-run prints per-file WOULD lines; same-day mode unaffected. Backup: daily_run.PRE-ARCHFIX-2026-07-18.bak.py.
+- RUNBOOK NOTE: the standard rollover command is now `python daily_run.py <paste.txt> --auto-rollover`.
+- Surfaced: 2026-07-18 rollover (7/16 -> 7/18). daily_run printed "WOULD archive prior day 2026-07-16"
+  then OVERWROTE staging.json anyway. archive/2026-07-16.{html,json} were never written - the exact
+  missed-archive scenario the DAILY-ROLLOVER-RUNBOOK warns loses a day. 7/16 was recovered by hand
+  (index.html was still the 7/16 board; staging came from git HEAD) before commit, so nothing was lost.
+- ROOT CAUSE: asymmetric flag gate. The archive copy runs only when --auto-rollover is passed
+  (`if a.dry_run or not a.auto_rollover: print("WOULD archive...")`), but the staging WRITE is gated
+  only by --dry-run. Without --auto-rollover the script skips the archive, then falls through and
+  writes today's staging over the un-archived prior day. The docstring says rollover "needs
+  --auto-rollover to write" - the code never enforced it.
+- SOLUTION (3 parts):
+  (1) REFUSE: in rollover mode, if neither --dry-run nor --auto-rollover -> print refusal, exit 1,
+      touch nothing. Matches documented intent.
+  (2) Per-file archive guard: check archive/<PRIOR>.html and .json INDIVIDUALLY and copy whichever is
+      missing (old guard was an OR - one existing file suppressed archiving the other).
+  (3) Belt-and-suspenders: hard assert BOTH archive files exist immediately before the rollover
+      staging write. Overwriting an un-archived day becomes impossible.
+
+## 23. BUG: parser silently DROPS straight single bets (no flag, GATE blind) - DONE (shipped 2026-07-18)
+- SHIPPED: all 3 solution parts below + server copy synced. Corpus regression vs old parser: ZERO bets
+  lost/changed, ZERO new flags - pure additive. Backup: parse_fanduel.PRE-SINGLES-2026-07-18.bak.py.
+- HISTORICAL AUDIT (from the corpus diff - the new parser recovers singles old one dropped):
+  - 7/16: 11 SB singles recovered from paste - ALL already on the archived board (arrived another route). No loss.
+  - 7/01: #4222 Machado HR - already on board. No loss.
+  - 6/19: THREE singles MISSING from archive/2026-06-19.json: #gfggy8 Freeman HR $0.09,
+    #h42sep Riley HR $0.10 (settled $0.00), #n485gg Cruz HR $0.40 (settled $0.00). FanDuel settled
+    them; only the tracker's 6/19 archive is incomplete ($0.59 wagered untracked). OPEN DECISION:
+    retro-inject into the archived page (it self-grades from that date's final feeds) or leave as-is.
+- Surfaced: 2026-07-18. Kyle Schwarber +200 "TO HIT A HOME RUN" straight single (#v2vtjw) vanished
+  from intake - 20 bets in paste, 19 parsed, zero flags. First straight single ever bet; all prior
+  bets were parlays/SGP/SGP+/pitcher specials.
+- ROOT CAUSE: split_blocks keeps a block only from its first is_header() line; is_header matches only
+  "^\d+ leg ", "Same Game Parlay", or pitcher_prop(). A straight single (player / +odds / prop) has no
+  such line -> `hi is None` -> block silently discarded BEFORE parse_bet. The GATE reads parser flags,
+  and a never-segmented block raises none - structurally invisible failure.
+- Proof parse is fine: parse_bet() called directly on the Schwarber block -> clean bet, zero flags,
+  prop HR, game NYM@PHI, pitchers resolved. Only segmentation is broken.
+- SOLUTION (3 parts):
+  (1) split_blocks fallback: when no is_header line exists in a block, anchor a single at index i
+      where lines[i+1] matches ^\+\d+$ AND prop_code(lines[i+2]) is not None (player/odds/prop shape);
+      emit block[i:]. Parlays/SGPs/pitcher specials keep the existing header path (unchanged).
+  (2) parse_bet kind: a block with no SGP token and exactly 1 leg -> kind="Single", expected=1
+      (enables the leg-count check; was labeled "1-leg SGP" with expected=None).
+  (3) Relabel live #v2vtjw kind "1-leg SGP" -> "Single" in staging for consistency.
+- Phone path: Vercel bundles the ROOT parser at build (Install Command `cp ../parse_fanduel.py`), so
+  root patch + redeploy fixes add_bet too. Also sync the stale local add-bet-server/parse_fanduel.py copy.

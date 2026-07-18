@@ -231,6 +231,8 @@ def parse_bet(lines):
     if m1: kind="%s-leg SGP+"%m1.group(1); expected=int(m1.group(1))
     elif m2: kind="%s-leg parlay"%m2.group(1); expected=int(m2.group(1))
     elif pp is not None: kind="Pitcher Special"; expected=1
+    elif not any(t[0]=="SGP" for t in toks) and len(legs)==1:
+        kind="Single"; expected=1   # straight single (Backlog #23); leg-count check now armed
     else:
         kind="%d-leg SGP"%len(legs)
         summ=next((l for l in lines[1:] if ", " in l and re.search(r"To (Hit|Record)|Strikeouts|Total Runs|Moneyline|Innings Result|Race To",l,re.I)), None)
@@ -243,6 +245,16 @@ def parse_bet(lines):
          "payout":payout,"placed":reformat_placed(placed_raw),"status":"open","legs":legs}
     return bet,flags
 
+def single_start(b):
+    # Straight-single fallback anchor (2026-07-18, Backlog #23): a plain single has
+    # no is_header line (player / +odds / prop shape), so header-less blocks were
+    # silently DROPPED before parse_bet - invisible to the GATE. Anchor at the
+    # player-name line: lines[i+1] is bare +odds AND lines[i+2] is a known prop.
+    for i in range(len(b)-2):
+        if re.fullmatch(r"\+\d+", b[i+1]) and prop_code(b[i+2]) is not None:
+            return i
+    return None
+
 def split_blocks(lines):
     blocks=[]; cur=[]
     for ln in lines:
@@ -251,6 +263,7 @@ def split_blocks(lines):
     out=[]
     for b in blocks:
         hi=next((i for i,l in enumerate(b) if is_header(l)), None)
+        if hi is None: hi=single_start(b)
         if hi is not None: out.append(b[hi:])
     return out
 
