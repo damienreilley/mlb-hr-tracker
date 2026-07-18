@@ -2,6 +2,60 @@
   "date": "2026-07-18",
   "bets": [
     {
+      "full_id": "us-pa:01kxv73a77ehz868jmcn50nmqh",
+      "id": "#50nmqh",
+      "kind": "6-leg SGP+",
+      "odds": 131000,
+      "wager": 0.25,
+      "payout": 327.76,
+      "placed": "7/18 2:16PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "JJ Bleday",
+          "prop": "HR",
+          "g": "CIN@COL",
+          "asp": "lowder",
+          "hsp": "sugano"
+        },
+        {
+          "p": "Elly De La Cruz",
+          "prop": "SB",
+          "g": "CIN@COL",
+          "asp": "lowder",
+          "hsp": "sugano"
+        },
+        {
+          "p": "James Wood",
+          "prop": "HR",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "Henry Bolte",
+          "prop": "SB",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "Ben Rice",
+          "prop": "HR",
+          "g": "LAD@NYY",
+          "asp": "sheehan",
+          "hsp": "weathers"
+        }
+      ]
+    },
+    {
       "full_id": "us-pa:01kxv69apdfpg8x5ccdnp7ksd8",
       "id": "#p7ksd8",
       "kind": "7-leg SGP+",
