@@ -1,6 +1,10 @@
 # Daily Rollover Runbook - MLB HR Tracker
 
 > OPTIMIZED FLOW (2026-06-24): the standard path is now `python daily_run.py <paste.txt>`.
+> ROLLOVER FLAG (2026-07-18, Backlog #22): a NEW-DAY rollover WRITE now requires
+> `--auto-rollover` (i.e. `python daily_run.py <paste.txt> --auto-rollover`); without it the
+> script REFUSES and touches nothing. Same-day adds need no flag. `--dry-run` previews either.
+> This closes the bug where a flag-less rollover skipped the archive but still overwrote staging.
 > It auto-detects ROLLOVER vs SAME-DAY-ADD, runs the deterministic GATE (no eyeballing),
 > on a rollover archives the prior day + writes today's POPULATED board, and verify-builds
 > to a temp file. Then commit and push. Two rules changed from the original steps below:
