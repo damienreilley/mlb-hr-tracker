@@ -553,6 +553,213 @@
           "g": "NYM@PHI"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kxvv84v3exnbkrzzx76ma8y8",
+      "id": "#6ma8y8",
+      "kind": "4-leg SGP+",
+      "odds": 29567,
+      "wager": 0.12,
+      "payout": 35.6,
+      "placed": "7/18 8:08PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "James Wood",
+          "prop": "SB",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "SB",
+          "g": "SF@SEA",
+          "asp": "webb",
+          "hsp": "woo"
+        },
+        {
+          "p": "Travis Bazzana",
+          "prop": "SB",
+          "g": "PIT@CLE",
+          "asp": "montgomery",
+          "hsp": "allen"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxvvdp3nfxdv838z92fnxnma",
+      "id": "#fnxnma",
+      "kind": "6-leg SGP+",
+      "odds": 174999,
+      "wager": 0.26,
+      "payout": 455.26,
+      "placed": "7/18 8:11PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Shea Langeliers",
+          "prop": "HR",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "James Wood",
+          "prop": "HR",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "Dylan Crews",
+          "prop": "SB",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "Esmerlyn Valdez",
+          "prop": "HR",
+          "g": "PIT@CLE",
+          "asp": "montgomery",
+          "hsp": "allen"
+        },
+        {
+          "p": "Travis Bazzana",
+          "prop": "SB",
+          "g": "PIT@CLE",
+          "asp": "montgomery",
+          "hsp": "allen"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004352",
+      "id": "#4352",
+      "kind": "4-leg SGP+",
+      "odds": 54692,
+      "wager": 0.43,
+      "payout": 306.17,
+      "placed": "7/18 8:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB2",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "Shea Langeliers",
+          "prop": "HR",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "James Wood",
+          "prop": "HR",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "Riley Greene",
+          "prop": "HR",
+          "g": "DET@LAA",
+          "asp": "skubal",
+          "hsp": "rodriguez"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxvv9hpwe2ard3qkry8qw6rb",
+      "id": "#8qw6rb",
+      "kind": "4-leg SGP+",
+      "odds": 931101,
+      "wager": 0.12,
+      "payout": 1117.45,
+      "placed": "7/18 8:09PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Travis Bazzana",
+          "prop": "SB2",
+          "g": "PIT@CLE",
+          "asp": "montgomery",
+          "hsp": "allen"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@CLE",
+          "asp": "montgomery",
+          "hsp": "allen"
+        },
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB2",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "Dylan Crews",
+          "prop": "SB",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kxvv76mresg9px8k0z7vn2c0",
+      "id": "#7vn2c0",
+      "kind": "3-leg SGP+",
+      "odds": 43207,
+      "wager": 0.12,
+      "payout": 51.97,
+      "placed": "7/18 8:08PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB2",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "C.J. Abrams",
+          "prop": "SB",
+          "g": "WSH@ATH",
+          "asp": "littell",
+          "hsp": "ginn"
+        },
+        {
+          "p": "Jake Mangum",
+          "prop": "SB",
+          "g": "PIT@CLE",
+          "asp": "montgomery",
+          "hsp": "allen"
+        }
+      ]
     }
   ]
 }
