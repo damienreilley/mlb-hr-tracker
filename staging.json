@@ -1240,7 +1240,9 @@
         {
           "p": "New York Yankees",
           "prop": "NH7",
-          "g": "PIT@NYY"
+          "g": "PIT@NYY",
+          "asp": "chandler",
+          "hsp": "fried"
         }
       ]
     },
@@ -1257,7 +1259,9 @@
         {
           "p": "Michael King",
           "prop": "NH5",
-          "g": "SD@ATL"
+          "g": "SD@ATL",
+          "asp": "king",
+          "hsp": "perez"
         }
       ]
     },
@@ -1274,7 +1278,9 @@
         {
           "p": "Max Fried",
           "prop": "NH3",
-          "g": "PIT@NYY"
+          "g": "PIT@NYY",
+          "asp": "chandler",
+          "hsp": "fried"
         }
       ]
     },
@@ -1467,7 +1473,9 @@
         {
           "p": "Christian Scott",
           "prop": "NH7",
-          "g": "NYM@MIL"
+          "g": "NYM@MIL",
+          "asp": "scott",
+          "hsp": "henderson"
         }
       ]
     },
@@ -1484,7 +1492,9 @@
         {
           "p": "Christian Scott",
           "prop": "NH5",
-          "g": "NYM@MIL"
+          "g": "NYM@MIL",
+          "asp": "scott",
+          "hsp": "henderson"
         }
       ]
     },
@@ -1501,7 +1511,9 @@
         {
           "p": "Logan Henderson",
           "prop": "NH5",
-          "g": "NYM@MIL"
+          "g": "NYM@MIL",
+          "asp": "scott",
+          "hsp": "henderson"
         }
       ]
     },
@@ -1518,7 +1530,9 @@
         {
           "p": "Sandy Alcantara",
           "prop": "NH5",
-          "g": "MIA@HOU"
+          "g": "MIA@HOU",
+          "asp": "alcantara",
+          "hsp": "lambert"
         }
       ]
     },
@@ -1535,7 +1549,9 @@
         {
           "p": "Sandy Alcantara",
           "prop": "K1",
-          "g": "MIA@HOU"
+          "g": "MIA@HOU",
+          "asp": "alcantara",
+          "hsp": "lambert"
         }
       ]
     },
@@ -1552,7 +1568,9 @@
         {
           "p": "Max Fried",
           "prop": "K1",
-          "g": "PIT@NYY"
+          "g": "PIT@NYY",
+          "asp": "chandler",
+          "hsp": "fried"
         }
       ]
     },
@@ -1569,7 +1587,9 @@
         {
           "p": "Cade Cavalli",
           "prop": "NH5",
-          "g": "WSH@COL"
+          "g": "WSH@COL",
+          "asp": "cavalli",
+          "hsp": "hughes"
         }
       ]
     },
@@ -1586,7 +1606,9 @@
         {
           "p": "Cade Cavalli",
           "prop": "K1",
-          "g": "WSH@COL"
+          "g": "WSH@COL",
+          "asp": "cavalli",
+          "hsp": "hughes"
         }
       ]
     },
@@ -1603,7 +1625,9 @@
         {
           "p": "San Diego Padres",
           "prop": "NH7",
-          "g": "SD@ATL"
+          "g": "SD@ATL",
+          "asp": "king",
+          "hsp": "perez"
         }
       ]
     },
@@ -1620,7 +1644,9 @@
         {
           "p": "Michael King",
           "prop": "K1",
-          "g": "SD@ATL"
+          "g": "SD@ATL",
+          "asp": "king",
+          "hsp": "perez"
         }
       ]
     },
@@ -1637,7 +1663,9 @@
         {
           "p": "Kyle Bradish",
           "prop": "K1",
-          "g": "BAL@BOS"
+          "g": "BAL@BOS",
+          "asp": "bradish",
+          "hsp": "tbd"
         }
       ]
     },
@@ -1654,7 +1682,9 @@
         {
           "p": "Kyle Bradish",
           "prop": "NH5",
-          "g": "BAL@BOS"
+          "g": "BAL@BOS",
+          "asp": "bradish",
+          "hsp": "tbd"
         }
       ]
     },
@@ -1671,7 +1701,9 @@
         {
           "p": "Reid Detmers",
           "prop": "K1",
-          "g": "STL@LAA"
+          "g": "STL@LAA",
+          "asp": "dobbins",
+          "hsp": "detmers"
         }
       ]
     },
@@ -1688,7 +1720,9 @@
         {
           "p": "Kyle Bradish",
           "prop": "NH7",
-          "g": "BAL@BOS"
+          "g": "BAL@BOS",
+          "asp": "bradish",
+          "hsp": "tbd"
         }
       ]
     },
@@ -1705,7 +1739,9 @@
         {
           "p": "Reid Detmers",
           "prop": "NH7",
-          "g": "STL@LAA"
+          "g": "STL@LAA",
+          "asp": "dobbins",
+          "hsp": "detmers"
         }
       ]
     },
@@ -1722,7 +1758,9 @@
         {
           "p": "Reid Detmers",
           "prop": "NH5",
-          "g": "STL@LAA"
+          "g": "STL@LAA",
+          "asp": "dobbins",
+          "hsp": "detmers"
         }
       ]
     },

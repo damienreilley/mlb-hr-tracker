@@ -232,8 +232,15 @@ def parse_bet(lines):
             if cur_ap or cur_hp: d["asp"]=cur_ap; d["hsp"]=cur_hp
             legs.append(d)
     if pp is not None and not any(l.get("prop")==pp for l in legs):
-        gme=next((t[1] for t in toks if t[0]=="MATCH"), None)
-        legs=[{"p":header.split(" to ",1)[0].strip(),"prop":pp,"g":gme or "??"}]
+        # Carry the MATCH token's starting pitchers (asp/hsp) onto the synthesized
+        # pitcher-special leg. Without them a DOUBLEHEADER leg cannot be resolved to a
+        # gamePk client-side and _lpk falls back to game 1 - wrong game, wrong grade.
+        # Only bites when one game key maps to 2 gamePks. (2026-07-22, PSPK)
+        mt=next((t for t in toks if t[0]=="MATCH"), None)
+        gme=mt[1] if mt else None
+        d={"p":header.split(" to ",1)[0].strip(),"prop":pp,"g":gme or "??"}
+        if mt and len(mt)>3 and (mt[2] or mt[3]): d["asp"]=mt[2]; d["hsp"]=mt[3]
+        legs=[d]
     for d in legs:
         if not d.get("g"):
             d["g"]="??"; flags.append(("no game for leg",d.get("p","?")))
