@@ -151,10 +151,19 @@ def tokenize(lines):
             if void_around(lines,i,i+1): d["void"]=True
             toks.append(("LEG",d)); i+=2; continue
         m=re.match(r"^(Over|Under) (\d+(?:\.\d+)?)$", ln)
-        if m and i+1<n and "Total Runs" in lines[i+1]:
-            d={"p":"","prop":"TR","line":float(m.group(2)),"side":m.group(1).lower()}
-            if void_around(lines,i,i+1): d["void"]=True
-            toks.append(("LEG",d)); i+=2; continue
+        if m:
+            # The "Total Runs" label normally sits on the very next line, but when the
+            # totals leg is a STANDALONE selection inside an SGP+ (not nested in an SGP)
+            # FanDuel interposes that leg's own odds - and possibly a Void marker -
+            # between the line and the label. Skip those. (2026-07-22, TRODDS)
+            j=i+1; saw_void=False
+            while j<n and (re.match(r"^[+-]\d+$", lines[j]) or lines[j]=="Void"):
+                if lines[j]=="Void": saw_void=True
+                j+=1
+            if j<n and "Total Runs" in lines[j]:
+                d={"p":"","prop":"TR","line":float(m.group(2)),"side":m.group(1).lower()}
+                if saw_void or void_around(lines,i,j): d["void"]=True
+                toks.append(("LEG",d)); i=j+1; continue
         mch=re.match(r"^Players To Combine For (?:A Home Run|(\d+)\+ Home Runs?)$", ln)
         mck=re.match(r"^Players To Combine For (\d+)\+ Hits$", ln)
         if mch or mck:
