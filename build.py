@@ -39,6 +39,7 @@ def mk_leg(l):
     if l["prop"]=="ML": d=dict(p=l["p"],prop="ML",g=l["g"],side=ml_side(l["g"],l["p"]))
     elif l["prop"]=="ALTK": d=dict(p=l["p"],prop="ALTK",k=l.get("k",0))
     elif l["prop"]=="TR": d=dict(p=l["g"],prop="TR",g=l["g"],line=l.get("line",8.5),side=l.get("side","over"))
+    elif l["prop"]=="CS": d=dict(p=l["p"],prop="CS",g=l["g"],lbl=l.get("lbl",""),**{"hs":l.get("hs"),"as":l.get("as")})
     elif l["prop"]=="NA": d=dict(p=l["p"],prop="NA",g=l["g"],lbl=l.get("lbl") or l.get("txt",""))
     elif l["prop"] in ("CMBHR","CMBHIT"): d=dict(p=l["p"],prop=l["prop"],g=l["g"],ps=l.get("ps",[]),line=l.get("line",1))
     else: d=dict(p=l["p"],prop=l["prop"])

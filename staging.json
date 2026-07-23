@@ -469,11 +469,17 @@
       "legs": [
         {
           "p": "Toronto Blue Jays",
-          "prop": "NA",
-          "txt": "Correct score TOR 8-3 (manual/FD)",
+          "prop": "CS",
+          "tm": "TOR",
+          "nr": 8,
+          "opp": 3,
           "g": "TB@TOR",
           "asp": "seymour",
-          "hsp": "bieber"
+          "hsp": "bieber",
+          "hs": 8,
+          "as": 3,
+          "lbl": "TOR 8-3",
+          "side": "home"
         }
       ]
     },
@@ -489,11 +495,17 @@
       "legs": [
         {
           "p": "Toronto Blue Jays",
-          "prop": "NA",
-          "txt": "Correct score TOR 8-0 (manual/FD)",
+          "prop": "CS",
+          "tm": "TOR",
+          "nr": 8,
+          "opp": 0,
           "g": "TB@TOR",
           "asp": "seymour",
-          "hsp": "bieber"
+          "hsp": "bieber",
+          "hs": 8,
+          "as": 0,
+          "lbl": "TOR 8-0",
+          "side": "home"
         }
       ]
     },
@@ -509,11 +521,17 @@
       "legs": [
         {
           "p": "Toronto Blue Jays",
-          "prop": "NA",
-          "txt": "Correct score TOR 8-5 (manual/FD)",
+          "prop": "CS",
+          "tm": "TOR",
+          "nr": 8,
+          "opp": 5,
           "g": "TB@TOR",
           "asp": "seymour",
-          "hsp": "bieber"
+          "hsp": "bieber",
+          "hs": 8,
+          "as": 5,
+          "lbl": "TOR 8-5",
+          "side": "home"
         }
       ]
     },
@@ -529,11 +547,17 @@
       "legs": [
         {
           "p": "Toronto Blue Jays",
-          "prop": "NA",
-          "txt": "Correct score TOR 7-2 (manual/FD)",
+          "prop": "CS",
+          "tm": "TOR",
+          "nr": 7,
+          "opp": 2,
           "g": "TB@TOR",
           "asp": "seymour",
-          "hsp": "bieber"
+          "hsp": "bieber",
+          "hs": 7,
+          "as": 2,
+          "lbl": "TOR 7-2",
+          "side": "home"
         }
       ]
     },
