@@ -192,6 +192,24 @@ def tokenize(lines):
             toks.append(("LEG",d)); i+=1; continue
         if ln=="First 5 Innings Result":
             toks.append(("LEG",{"p":prev_team(lines,i),"prop":"NA","txt":"First 5 Innings Result"})); i+=1; continue
+        if ln.strip().lower()=="correct score":
+            # Correct Score (2026-07-23, Backlog #24): selection sits 1-3 lines back as
+            # "<Team> H-A" (e.g. "Toronto Blue Jays 8-3"). No grader yet -> NA/manual,
+            # same treatment as First 5 / Race To N. Was silently DROPPED before this.
+            sel, j = None, i-1
+            while j >= 0 and (i-j) <= 3:
+                ms = re.match(r"^(.+?)\s+(\d+)-(\d+)$", lines[j].strip())
+                if ms: sel = (ms.group(1).strip(), ms.group(2), ms.group(3)); break
+                j -= 1
+            if not sel:
+                # No "<Team> H-A" selection nearby -> not an MLB correct-score single
+                # (e.g. legacy soccer SGP legs). Emit nothing rather than invent a leg.
+                i+=1; continue
+            tc = team_code(sel[0]) or sel[0]
+            d = {"p": sel[0], "prop": "NA",
+                 "txt": "Correct score %s %s-%s (manual/FD)" % (tc, sel[1], sel[2])}
+            if void_around(lines,i,i): d["void"]=True
+            toks.append(("LEG",d)); i+=1; continue
         m=re.match(r"^Race To (\d+) Runs$", ln)
         if m:
             toks.append(("LEG",{"p":prev_team(lines,i),"prop":"NA","txt":"Race To %s Runs"%m.group(1)})); i+=1; continue
@@ -255,21 +273,49 @@ def parse_bet(lines):
         expected=len(summ.split(", ")) if summ else None
     if expected is not None and len(legs)!=expected:
         flags.append(("LEG COUNT MISMATCH header=%s parsed=%d (possible unexpanded bet)"%(expected,len(legs)),full_id))
+    if not legs:
+        # Safety net (2026-07-23): a bet with zero legs can never grade or display
+        # meaningfully - always a parser miss. Fail loud instead of publishing a shell.
+        flags.append(("ZERO LEGS parsed (unknown market/format)",full_id))
     for l in legs:
         if l.get("prop")=="NA": flags.append(("MANUAL leg (NA, not auto-graded): %s"%l.get("txt",""),full_id))
     bet={"full_id":full_id,"id":mkid(full_id),"kind":kind,"odds":odds,"wager":wager,
          "payout":payout,"placed":reformat_placed(placed_raw),"status":"open","legs":legs}
     return bet,flags
 
+SINGLE_MARKETS = ("correct score",)   # market-label lines that stand in for a prop code
+
 def single_start(b):
     # Straight-single fallback anchor (2026-07-18, Backlog #23): a plain single has
     # no is_header line (player / +odds / prop shape), so header-less blocks were
     # silently DROPPED before parse_bet - invisible to the GATE. Anchor at the
-    # player-name line: lines[i+1] is bare +odds AND lines[i+2] is a known prop.
+    # selection line: b[i+1] is bare +odds AND b[i+2] is a known prop OR a known
+    # game-market label (Correct Score - added 2026-07-23, Backlog #24).
     for i in range(len(b)-2):
-        if re.fullmatch(r"\+\d+", b[i+1]) and prop_code(b[i+2]) is not None:
+        if not re.fullmatch(r"\+\d+", b[i+1]): continue
+        if prop_code(b[i+2]) is not None or b[i+2].strip().lower() in SINGLE_MARKETS:
             return i
     return None
+
+def split_blocks_checked(lines):
+    """split_blocks + DROP DETECTOR (2026-07-23). Returns (blocks, dropped).
+    'dropped' lists the BET IDs of blocks that carried a BET ID but matched no
+    anchor, so an unknown bet type fails LOUD at the gate instead of vanishing -
+    the structural hole behind Backlog #23 and #24."""
+    raw, cur = [], []
+    for ln in lines:
+        cur.append(ln)
+        if ln.startswith("PLACED:"): raw.append(cur); cur=[]
+    blocks, dropped = [], []
+    for b in raw:
+        hi = next((i for i,l in enumerate(b) if is_header(l)), None)
+        if hi is None: hi = single_start(b)
+        if hi is not None:
+            blocks.append(b[hi:])
+        else:
+            bid = next((l.split("BET ID:",1)[1].strip() for l in b if l.startswith("BET ID:")), None)
+            if bid: dropped.append(bid)
+    return blocks, dropped
 
 def split_blocks(lines):
     blocks=[]; cur=[]
@@ -288,7 +334,10 @@ def main():
     raw=open(paste,encoding="utf-8").read().splitlines()
     lines=[l.strip() for l in raw if l.strip()!=""]
     bets=[]; allflags=[]
-    for b in split_blocks(lines):
+    blks, dropped = split_blocks_checked(lines)
+    for fid in dropped:
+        allflags.append(("UNPARSED BLOCK (unknown bet type - NOT on board, fix parser)", fid))
+    for b in blks:
         bet,flags=parse_bet(b)
         if bet: bets.append(bet)
         allflags+=flags
