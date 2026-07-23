@@ -1,4 +1,4 @@
-﻿# MLB Bet Tracker - Backlog
+# MLB Bet Tracker - Backlog
 
 Items to explore / build. Not yet implemented. (Started 2026-06-05.)
 
@@ -270,12 +270,26 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
   - Regression: full corpus re-parsed vs backup - ONLY _paste_0723 changed (+4 recovered bets);
     every other paste byte-identical incl. #4191. Corpus + gate suites pass.
     Backup: parse_fanduel.PRE-CORRECTSCORE-2026-07-23.bak.py
-- OPEN - AUTO-GRADER for Correct Score (currently NA/manual, tracked on FanDuel):
-  - Gradable in principle: final linescore gives both teams' runs; leg needs {team, teamRuns, oppRuns}.
-  - Orientation rule to encode: FanDuel lists the NAMED team's runs FIRST ("Toronto Blue Jays 8-3" =
-    TOR 8, opponent 3) - NOT home-away order. Must be tested against a settled example before trusting.
-  - Work: new prop code CS + build.py mk_leg case carrying g/team/runs + engine legMet case; grade only
-    at Final (a 5-3 game in the 7th is pending, not a miss).
-  - Sibling of #2 (moneyline) / #3 + #18 (total runs) - all game-level graders off the same linescore.
-  - Priority: only worth building if Damien bets these regularly; NA handling is correct meanwhile.
+- AUTO-GRADER for Correct Score - DONE (shipped 2026-07-23, same day; Damien confirmed these are a
+  recurring valid MLB market, so NA/manual was upgraded to a real grader):
+  - prop code CS. Parser resolves orientation ONCE at parse time: selection "<Team> <nr>-<opp>" +
+    matchup "AW@HM" -> canonical leg {g, hs, as, side, lbl}. Engine does NO orientation logic.
+    If the named team is in neither side of the matchup the leg DOWNGRADES to NA + flags (never guesses).
+  - build.py mk_leg carries prop/g/lbl/hs/as. tracker_template.html: legMet CS branch, lpropText
+    ("Correct score TOR 8-3 - now 2-1"), legNameHTML treats CS as a team leg (no player team-tag).
+  - Grading: at Final, hit iff gs.hs===leg.hs && gs.as===leg.as. EARLY KILL while live - runs never
+    decrease, so gs.hs>leg.hs || gs.as>leg.as is an immediate miss (bet goes DEAD in-game rather than
+    hanging pending to the final out). Pre-game / no score -> pending.
+  - TESTED: 10/10 cases via node against the REAL branch extracted from tracker_template.html
+    (pre-game, live on-pace, live exact-but-not-final, both early-kill directions, final exact,
+    both wrong-run finals, and a REVERSED final to prove orientation). Corpus + gate suites pass;
+    full-corpus parse diff vs backup shows ONLY the 4 CS legs changed.
+  - ORIENTATION CAVEAT (open, low risk): all 4 of today's bets name TORONTO, who is also the HOME
+    team, so "named-team-first" and "home-team-first" are indistinguishable in this data. Web search
+    did not confirm FanDuel's MLB convention. Code assumes NAMED-TEAM-FIRST (standard for correct-score
+    markets, which express "Team X wins A-B"). ACTION: the FIRST correct-score bet naming an AWAY team
+    must be checked against FanDuel settlement to confirm; if it disagrees, flip the mapping in
+    parse_bet (single 2-line change, engine untouched).
+  - Backups: parse_fanduel.PRE-CSGRADER-2026-07-23.bak.py, build.PRE-CS-2026-07-23.bak.py,
+    tracker_template.PRE-CS-2026-07-23.bak.html
 - PHONE PATH: root parser is bundled to Vercel at build, so add_bet gets all of the above on deploy.

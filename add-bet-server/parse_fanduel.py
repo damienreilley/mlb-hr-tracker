@@ -205,9 +205,11 @@ def tokenize(lines):
                 # No "<Team> H-A" selection nearby -> not an MLB correct-score single
                 # (e.g. legacy soccer SGP legs). Emit nothing rather than invent a leg.
                 i+=1; continue
-            tc = team_code(sel[0]) or sel[0]
-            d = {"p": sel[0], "prop": "NA",
-                 "txt": "Correct score %s %s-%s (manual/FD)" % (tc, sel[1], sel[2])}
+            # CS leg carries the NAMED team + its runs first (FanDuel lists the selection
+            # as "<Team> <teamRuns>-<oppRuns>"). Home/away is resolved in parse_bet once
+            # the MATCH token is known, so the engine never does orientation logic.
+            d = {"p": sel[0], "prop": "CS", "tm": team_code(sel[0]) or "",
+                 "nr": int(sel[1]), "opp": int(sel[2])}
             if void_around(lines,i,i): d["void"]=True
             toks.append(("LEG",d)); i+=1; continue
         m=re.match(r"^Race To (\d+) Runs$", ln)
@@ -262,6 +264,19 @@ def parse_bet(lines):
     for d in legs:
         if not d.get("g"):
             d["g"]="??"; flags.append(("no game for leg",d.get("p","?")))
+        if d.get("prop")=="CS":
+            # Resolve NAMED-team runs -> canonical away/home runs using the matchup.
+            g=d.get("g") or ""
+            aw,hm=(g.split("@",1)+[""])[:2] if "@" in g else ("","")
+            tm=d.get("tm") or ""
+            if tm and tm==hm:   d["hs"]=d["nr"]; d["as"]=d["opp"]
+            elif tm and tm==aw: d["as"]=d["nr"]; d["hs"]=d["opp"]
+            else:
+                d["prop"]="NA"; d["txt"]="Correct score %s %s-%s (team not in matchup - manual/FD)"%(tm or d.get("p"),d.get("nr"),d.get("opp"))
+                flags.append(("CS team %r not in matchup %r - downgraded to manual"%(tm,g),full_id))
+                continue
+            d["lbl"]="%s %s-%s"%(tm,d["nr"],d["opp"])
+            d["side"]="home" if tm==hm else "away"
     if m1: kind="%s-leg SGP+"%m1.group(1); expected=int(m1.group(1))
     elif m2: kind="%s-leg parlay"%m2.group(1); expected=int(m2.group(1))
     elif pp is not None: kind="Pitcher Special"; expected=1
