@@ -246,3 +246,36 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
   (3) Relabel live #v2vtjw kind "1-leg SGP" -> "Single" in staging for consistency.
 - Phone path: Vercel bundles the ROOT parser at build (Install Command `cp ../parse_fanduel.py`), so
   root patch + redeploy fixes add_bet too. Also sync the stale local add-bet-server/parse_fanduel.py copy.
+
+
+## 24. Correct Score bets: parsed as NA/manual (DONE 2026-07-23) + AUTO-GRADER (open)
+- Surfaced 2026-07-23 intake: 4 "Correct Score" singles on TOR (8-3, 8-0, 8-5, 7-2) were SILENTLY
+  DROPPED - 18 BET IDs in paste, only 14 parsed, zero flags. Same failure class as #23.
+- ROOT CAUSE: block shape is `<Team> H-A` / `+odds` / `CORRECT SCORE` / matchup. No is_header match,
+  and the #23 singles anchor required prop_code(b[i+2]) - "CORRECT SCORE" is not in PROP_MAP -> no
+  anchor -> block discarded before parse_bet.
+- SHIPPED (2026-07-23):
+  (1) tokenize: "correct score" line emits an NA/manual leg with txt "Correct score <TEAM> H-A
+      (manual/FD)" - same convention as First 5 Innings (#19) / Race To N (#20). Selection is found by
+      scanning up to 3 lines back for `^(.+?)\s+(\d+)-(\d+)$`. If NO team+score line is found it emits
+      NOTHING (guards against legacy non-MLB "Correct Score" legs, e.g. the 6/19 soccer SGP #4191,
+      which must stay byte-identical).
+  (2) single_start accepts a SINGLE_MARKETS label ("correct score") in place of a prop code, so the
+      block segments.
+  (3) DROP DETECTOR - split_blocks_checked() returns (blocks, dropped); any block carrying a BET ID
+      that matches no anchor raises flag "UNPARSED BLOCK (unknown bet type...)" -> GATE HOLD. This is
+      the STRUCTURAL fix for the whole #23/#24 bug class: an unknown bet type can no longer vanish
+      silently, it now halts intake loudly. Wired into parse_fanduel.main().
+  (4) ZERO LEGS flag - any bet parsing to 0 legs now flags (can never grade; always a parser miss).
+  - Regression: full corpus re-parsed vs backup - ONLY _paste_0723 changed (+4 recovered bets);
+    every other paste byte-identical incl. #4191. Corpus + gate suites pass.
+    Backup: parse_fanduel.PRE-CORRECTSCORE-2026-07-23.bak.py
+- OPEN - AUTO-GRADER for Correct Score (currently NA/manual, tracked on FanDuel):
+  - Gradable in principle: final linescore gives both teams' runs; leg needs {team, teamRuns, oppRuns}.
+  - Orientation rule to encode: FanDuel lists the NAMED team's runs FIRST ("Toronto Blue Jays 8-3" =
+    TOR 8, opponent 3) - NOT home-away order. Must be tested against a settled example before trusting.
+  - Work: new prop code CS + build.py mk_leg case carrying g/team/runs + engine legMet case; grade only
+    at Final (a 5-3 game in the 7th is pending, not a miss).
+  - Sibling of #2 (moneyline) / #3 + #18 (total runs) - all game-level graders off the same linescore.
+  - Priority: only worth building if Damien bets these regularly; NA handling is correct meanwhile.
+- PHONE PATH: root parser is bundled to Vercel at build, so add_bet gets all of the above on deploy.
