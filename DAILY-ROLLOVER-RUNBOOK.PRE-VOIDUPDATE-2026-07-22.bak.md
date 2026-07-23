@@ -72,30 +72,6 @@ DONE. The board is a clean empty TODAY on the current engine. Today's bets go on
 next via the normal intake (parser -> THE GATE -> same-day APPEND), which can be a
 helper chat. The rollover itself adds no bets.
 
-## Void update on an already-tracked bet (added 2026-07-22)
-When FanDuel VOIDS a leg AFTER a bet is already on the board (e.g. a player is
-scratched from the lineup), a fresh betslip snapshot for that same BET ID shows
-two changes vs. the stored version: the leg now carries a "Void" marker, and the
-TOTAL PAYOUT is RECOMPUTED lower (the voided leg drops out and the parlay reprices).
-
-CONVENTION (confirmed by Damien 2026-07-22): update the stored bet to match FanDuel.
-  (1) Mark the voided leg: set "void": true on that leg.
-  (2) Update "payout" to FanDuel's NEW recomputed number (the post-void payout,
-      NOT the original as-placed payout). The board shows current reality.
-  The engine already drops void legs from grading; this just keeps payout truthful.
-
-RULES:
-- Same-day, in place. This is NOT a rollover and NOT a new bet - do not archive,
-  do not re-date, do not append a duplicate. READ staging.json, mutate ONLY the one
-  bet matching that BET ID, keep everything else byte-identical.
-- Do not change kind, odds, wager, leg count, or any other leg. Assert len(legs)
-  and kind are unchanged after the edit.
-- Back up staging.json first (_staging_<date>_pre_<id>_void.json).
-- Commit ONLY staging.json; let the Action rebuild index.html; verify the void
-  shows on the live page.
-- Multiple voids accumulate: a later snapshot may add a 2nd/3rd void and reprice
-  again - apply the same way each time against the then-current payout.
-
 ## NOTES
 - Archiving never triggers a rebuild (archive/ is not in build.yml triggers).
 - Always pull before a push that could be behind an Action [skip ci] commit.
