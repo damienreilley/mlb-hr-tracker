@@ -23,7 +23,7 @@ function at deploy (see the Step 2 bundling note).
 GitHub > Settings > Developer settings > Personal access tokens > Fine-grained tokens > Generate.
   - Token name: mlb-hr-tracker-add-bet
   - Resource owner: damienreilley
-  - Expiration: your choice (90 days is reasonable; rotate when it lapses)
+  - Expiration: No expiration is fine here - the token is scoped to only this repo's Contents, so the worst case is write access to mlb-hr-tracker until you revoke it. (Or pick a duration like 90 days and rotate when it lapses.) Revoke/regenerate anytime from the same settings page.
   - Repository access: Only select repositories > damienreilley/mlb-hr-tracker
   - Permissions > Repository permissions > Contents: Read and write   (the ONLY permission needed)
   - Generate, then COPY the token (shown once).
