@@ -270,13 +270,12 @@ def parse_bet(lines):
         if not d.get("g"):
             d["g"]="??"; flags.append(("no game for leg",d.get("p","?")))
         if d.get("prop")=="CS":
-            # SELF-CHECK: MLB has no draws and the selection names the winner, so the named
-            # team's runs must exceed the opponent's. If not, the orientation premise is
-            # violated (unexpected FanDuel layout) - downgrade to manual instead of grading wrong.
+            # ORIENTATION IS STATED BY THE BET ITSELF: the selection reads
+            # "<Team> <n>-<m>", which binds the NAMED team to the FIRST number
+            # ("Toronto Blue Jays 8-3" = TOR 8, opponent 3). No convention to infer.
+            # Note only (never blocks grading): the named team is normally the winner.
             if d.get("nr") is not None and d.get("opp") is not None and d["nr"] <= d["opp"]:
-                flags.append(("CS named team %s is not the winner in %s-%s (draw/reversed layout) - downgraded to manual"%(d.get("tm"),d["nr"],d["opp"]),full_id))
-                d["prop"]="NA"; d["txt"]="Correct score %s %s-%s (unverified orientation - manual/FD)"%(d.get("tm") or d.get("p"),d["nr"],d["opp"])
-                continue
+                flags.append(("note: CS names %s with the lower score (%s-%s) - grading per label, verify vs FD"%(d.get("tm"),d["nr"],d["opp"]),full_id))
             # Resolve NAMED-team runs -> canonical away/home runs using the matchup.
             g=d.get("g") or ""
             aw,hm=(g.split("@",1)+[""])[:2] if "@" in g else ("","")

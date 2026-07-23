@@ -284,15 +284,15 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
     (pre-game, live on-pace, live exact-but-not-final, both early-kill directions, final exact,
     both wrong-run finals, and a REVERSED final to prove orientation). Corpus + gate suites pass;
     full-corpus parse diff vs backup shows ONLY the 4 CS legs changed.
-  - ORIENTATION - RESOLVED BY REASONING, no external confirmation needed (corrected 2026-07-23):
-    MLB has NO DRAWS, and a correct-score selection is labeled with the team that achieves the
-    HIGHER score ("Toronto Blue Jays 8-3" = TOR wins 8-3). A "home-team-first" reading would label
-    an AWAY selection with the LOSING team's name, which is incoherent - so named-team-first is the
-    only consistent reading, and it holds whether the named team is home or away. Verified: an
-    away-named synthetic ("Tampa Bay Rays 6-2" in TB@TOR) resolves to away=6 home=2, side=away.
-    SELF-CHECK in parse_bet: if the named team's runs are NOT greater than the opponent's, the
-    premise is violated (draw/reversed layout) -> leg DOWNGRADES to NA + flags rather than grading
-    on a bad orientation. So the away case needs no future manual verification.
+  - ORIENTATION - STATED BY THE BET, no inference needed (corrected 2026-07-23):
+    The selection text reads "<Team> <n>-<m>" and binds the NAMED team to the FIRST number
+    ("Toronto Blue Jays 8-3" = TOR 8, opponent 3; "Toronto Blue Jays 8-0" = TOR 8, opp 0).
+    There is no home/away convention to research and nothing to verify against FanDuel - the
+    label is self-describing, and it works identically when the named team is the away side
+    (verified: "Tampa Bay Rays 6-2" in TB@TOR -> away=6 home=2, side=away).
+    Only genuine failure = named team not in the matchup -> downgrade to NA + flag.
+    A named team carrying the LOWER score still GRADES per the label (it is not an error);
+    it emits an informational note only, since it is an unusual presentation.
   - Backups: parse_fanduel.PRE-CSGRADER-2026-07-23.bak.py, build.PRE-CS-2026-07-23.bak.py,
     tracker_template.PRE-CS-2026-07-23.bak.html
 - PHONE PATH: root parser is bundled to Vercel at build, so add_bet gets all of the above on deploy.
