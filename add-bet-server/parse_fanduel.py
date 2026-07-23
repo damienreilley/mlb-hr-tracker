@@ -205,9 +205,14 @@ def tokenize(lines):
                 # No "<Team> H-A" selection nearby -> not an MLB correct-score single
                 # (e.g. legacy soccer SGP legs). Emit nothing rather than invent a leg.
                 i+=1; continue
-            # CS leg carries the NAMED team + its runs first (FanDuel lists the selection
-            # as "<Team> <teamRuns>-<oppRuns>"). Home/away is resolved in parse_bet once
-            # the MATCH token is known, so the engine never does orientation logic.
+            # CS leg carries the NAMED team + its runs first. This is NOT an assumption:
+            # MLB has no draws, and a correct-score selection is labeled with the team that
+            # achieves the HIGHER score ("Toronto Blue Jays 8-3" = TOR wins 8-3). A
+            # "home-team-first" reading would label an away selection with the LOSING team's
+            # name, which is incoherent - so named-team-first is the only consistent reading,
+            # and it holds regardless of whether the named team is home or away.
+            # Self-check below: if the named team is NOT the winner the premise is violated,
+            # so flag rather than grade on a bad orientation.
             d = {"p": sel[0], "prop": "CS", "tm": team_code(sel[0]) or "",
                  "nr": int(sel[1]), "opp": int(sel[2])}
             if void_around(lines,i,i): d["void"]=True
@@ -265,6 +270,13 @@ def parse_bet(lines):
         if not d.get("g"):
             d["g"]="??"; flags.append(("no game for leg",d.get("p","?")))
         if d.get("prop")=="CS":
+            # SELF-CHECK: MLB has no draws and the selection names the winner, so the named
+            # team's runs must exceed the opponent's. If not, the orientation premise is
+            # violated (unexpected FanDuel layout) - downgrade to manual instead of grading wrong.
+            if d.get("nr") is not None and d.get("opp") is not None and d["nr"] <= d["opp"]:
+                flags.append(("CS named team %s is not the winner in %s-%s (draw/reversed layout) - downgraded to manual"%(d.get("tm"),d["nr"],d["opp"]),full_id))
+                d["prop"]="NA"; d["txt"]="Correct score %s %s-%s (unverified orientation - manual/FD)"%(d.get("tm") or d.get("p"),d["nr"],d["opp"])
+                continue
             # Resolve NAMED-team runs -> canonical away/home runs using the matchup.
             g=d.get("g") or ""
             aw,hm=(g.split("@",1)+[""])[:2] if "@" in g else ("","")
