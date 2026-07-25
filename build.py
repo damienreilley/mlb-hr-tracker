@@ -77,7 +77,10 @@ def build(staging_path,out_path):
         placed=b["placed"].split(" ",1)[-1]
         placed=re.sub(r"([AP]M)$",r" \1",placed)
         legs=[mk_leg(l) for l in b["legs"]]
-        out_bets.append({"id":b["id"],"kind":b["kind"],"odds":b["odds"],"wager":b["wager"],"payout":b["payout"],"placed":placed,"ts":ts_of(b["placed"]),"legs":legs})
+        ob={"id":b["id"],"kind":b["kind"],"odds":b["odds"],"wager":b["wager"],"payout":b["payout"],"placed":placed,"ts":ts_of(b["placed"]),"legs":legs}
+        if b.get("settled"):
+            ob["settled"]=True; ob["result"]=b.get("result","lost")
+        out_bets.append(ob)
     dt=datetime.datetime.strptime(date,"%Y-%m-%d")
     TITLEDATE="%s %d %d"%(dt.strftime("%B"),dt.day,dt.year)
     H1DATE="%s %d"%(dt.strftime("%A, %B"),dt.day)

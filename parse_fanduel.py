@@ -106,7 +106,7 @@ def money_before(lines,label):
     def val(s):
         m=re.search(pat,s); return float(m.group(1).replace(",","")) if m else None
     def is_lbl(s):
-        s=s.lower(); return ("total wager" in s) or ("total payout" in s)
+        s=s.lower(); return ("total wager" in s) or ("total payout" in s) or ("returned" in s)
     lab=label.lower(); n=len(lines)
     for i,ln in enumerate(lines):
         if lab in ln.lower():
@@ -237,6 +237,16 @@ def parse_bet(lines):
         mm=re.search(r"(?<!\d)\+(\d{3,})(?!\d)",l)
         if mm: odds=int(mm.group(1)); break
     wager=money_before(lines,"TOTAL WAGER"); payout=money_before(lines,"TOTAL PAYOUT")
+    # SETTLEMENT (2026-07-24, Backlog #25): a FanDuel-settled bet shows "RETURNED"
+    # instead of "TOTAL PAYOUT" - the $ amount above it is what was returned
+    # ($0.00 = lost, >0 = won/cashed). This is AUTHORITATIVE: honor FD's result
+    # rather than re-deriving from live feeds (which may never mark every leg).
+    settled=False; settled_won=None
+    if any(re.match(r"^\s*RETURNED\s*$",l,re.I) for l in lines):
+        settled=True
+        ret=money_before(lines,"RETURNED")
+        if ret is not None: payout=ret
+        settled_won = (payout is not None and payout>0)
     m1=re.match(r"^(\d+) leg Same Game Parlay\+",header)
     m2=re.match(r"^(\d+) leg parlay",header)
     pp=pitcher_prop(header)
@@ -307,6 +317,11 @@ def parse_bet(lines):
         if l.get("prop")=="NA": flags.append(("MANUAL leg (NA, not auto-graded): %s"%l.get("txt",""),full_id))
     bet={"full_id":full_id,"id":mkid(full_id),"kind":kind,"odds":odds,"wager":wager,
          "payout":payout,"placed":reformat_placed(placed_raw),"status":"open","legs":legs}
+    if settled:
+        bet["status"]="settled"
+        bet["settled"]=True
+        bet["result"]="won" if settled_won else "lost"
+        flags.append(("SETTLED by FanDuel: %s (returned %s)"%("WON" if settled_won else "LOST", ("$%.2f"%payout) if payout is not None else "?"),full_id))
     return bet,flags
 
 SINGLE_MARKETS = ("correct score",)   # market-label lines that stand in for a prop code

@@ -296,3 +296,30 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
   - Backups: parse_fanduel.PRE-CSGRADER-2026-07-23.bak.py, build.PRE-CS-2026-07-23.bak.py,
     tracker_template.PRE-CS-2026-07-23.bak.html
 - PHONE PATH: root parser is bundled to Vercel at build, so add_bet gets all of the above on deploy.
+
+
+## 25. BUG: settled bets ("RETURNED") parsed as open - misread as "longshot null payout" - DONE (2026-07-24)
+- Surfaced 2026-07-24: 5 bets in the paste showed "$0.00 / RETURNED" (FanDuel settlement) instead of
+  "TOTAL PAYOUT". The parser had no concept of RETURNED, so payout came back null and all 5 published
+  with status:"open" - looking PENDING on the live board when they were actually SETTLED-LOST. The paste
+  even had a "SETTLED BETS" / "Settled" section header. Claude initially dismissed the null payouts as
+  "FanDuel doesn't render a payout line for longshots" - WRONG, and the exact "declare benign instead of
+  checking" failure pattern flagged before. Damien caught it. (Error log updated.)
+- ROOT CAUSE: money_before() only knew TOTAL WAGER / TOTAL PAYOUT; betStatus() derived state purely from
+  live leg grading with no notion of a FanDuel-settled result. A lost SGP+ whose legs never all read
+  'miss' from feeds would show ALIVE indefinitely.
+- SOLUTION (shipped, 4 files):
+  (1) parse_fanduel: detect a "RETURNED" line -> settled=True; payout=amount above RETURNED
+      ($0.00=lost, >0=won); bet gets status:"settled", settled:True, result:"won"/"lost". Emits a
+      SETTLED flag (note, not hold). money_before() now recognizes "returned" as a label.
+  (2) daily_run gate: SETTLED flag routes to notes (publish OK), and the payout-vs-odds check SKIPS
+      settled bets (their payout is FanDuel's actual return, not odds-math - a $0.00 loss must not hold).
+  (3) build.py: carries settled/result into the board JSON.
+  (4) tracker_template betStatus(): if b.settled, use FanDuel's result AUTHORITATIVELY (won->won,
+      lost->dead) instead of re-deriving from feeds. betCardHTML shows "SETTLED WON/LOST" badge.
+- TESTED: 5/5 settled bets detected on 0724 (all lost, $0.00). betStatus JS (extracted from template)
+  3/3: settled-lost shows dead even when feeds say pending, settled-won shows won, unsettled unchanged.
+  Corpus + gate pass. Regression: also correctly re-settles 33 bets in _paste_0619_SETTLED.txt (a
+  prior settled export) - generalizes beyond today. Backups: *.PRE-SETTLED-2026-07-24.*
+- NOTE: staging rebuilt to 20 DISTINCT bets (the 32 count included 12 in-paste duplicate IDs from a
+  doubled FanDuel screen; dedup keeps first occurrence).

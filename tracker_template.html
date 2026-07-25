@@ -259,7 +259,10 @@ function betCat(b){if(b.legs.length>1)return 'PARLAY';const props=Array.from(new
  if(props.every(function(p){return PITCHSET[p];}))return 'PITCH';
  if(props.length===1&&CATMAP[props[0]])return props[0];
  return 'MIX';}
-function betStatus(b){let hit=0,miss=0,act=0;for(const lg of b.legs){const s=legMet(lg);if(s==='void')continue;act++;if(s==='hit')hit++;else if(s==='miss')miss++;}const st=miss>0?'dead':(act>0&&hit===act?'won':'alive');return {st:st,hit:hit,total:act,miss:miss,alive:act-miss};}
+function betStatus(b){
+ // FanDuel-settled bets are authoritative - use their result, never re-derive from feeds.
+ if(b.settled){const w=b.result==='won';let hit=0,act=0;for(const lg of b.legs){const s=legMet(lg);if(s==='void')continue;act++;if(s==='hit')hit++;}return {st:w?'won':'dead',hit:w?act:hit,total:act,miss:w?0:1,alive:0,settled:true};}
+ let hit=0,miss=0,act=0;for(const lg of b.legs){const s=legMet(lg);if(s==='void')continue;act++;if(s==='hit')hit++;else if(s==='miss')miss++;}const st=miss>0?'dead':(act>0&&hit===act?'won':'alive');return {st:st,hit:hit,total:act,miss:miss,alive:act-miss};}
 function pitchDetail(leg){const pr=leg.prop;const p=pitByKey[norm(leg.p)];if(!p)return '';
  if(pr==='NH3')return p.h3+' hits';if(pr==='NH5')return p.h5+' hits';if(pr==='NH7')return p.h7+' hits';if(pr==='K1')return 'now '+p.k1;if(pr==='ALTK')return 'now '+p.kTot;
  if(pr==='UP9'||pr==='UP6'){let r=0;for(const x of p.seq){if(x===1)r++;else break;}return r+' retired';}return '';}
@@ -268,7 +271,7 @@ function lpropText(leg){if(leg.prop==='TR')return 'Over '+(leg.line||8.5)+' Runs
 function betCardHTML(b){
  const cat=CATMAP[b._cat];const cvar='var('+cat.v+')';
  const cl=b._st==='dead'?'b-dead':(b._st==='won'?'b-won':'b-alive');
- const lbl=b._st==='dead'?'DEAD':(b._st==='won'?'CASHED':'ALIVE');const isPS=b._cat==='PITCH';
+ const lbl=b.settled?(b.result==='won'?'SETTLED &#10003; WON':'SETTLED &#10007; LOST'):(b._st==='dead'?'DEAD':(b._st==='won'?'CASHED':'ALIVE'));const isPS=b._cat==='PITCH';
   let body='';
  for(const lg of b.legs){const st=legMet(lg);const isP=PITCHSET[lg.prop];const p=isP?null:pByKey[norm(lg.p)];
    const mk=st==='hit'?'&#10003;':(st==='miss'?'&#10007;':(st==='void'?'&#8709;':'&middot;'));const lc=st==='hit'?'l-hit':(st==='miss'?'l-miss':'l-pend');

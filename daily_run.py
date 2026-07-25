@@ -48,6 +48,9 @@ def gate(bets, parser_stdout):
                 # "track on FanDuel" legs, not errors -> note, never hold.
                 if msg.startswith("MANUAL leg"):
                     notes.append("manual/NA leg (publish OK): %s | %s" % (msg, ctx.strip()))
+                elif msg.startswith("SETTLED by FanDuel"):
+                    # FanDuel-settled result (RETURNED line). Authoritative, publish as-is.
+                    notes.append("settled (publish OK): %s | %s" % (msg, ctx.strip()))
                 else:
                     holds.append((ctx.strip(), "parser flag: " + msg))
     # 2) parser summary lines that signal problems
@@ -68,8 +71,8 @@ def gate(bets, parser_stdout):
     #    NOT a void bet. Boost (payout higher) is legitimate -> publish (Error #85/#88).
     for b in bets:
         o, w, p = b.get("odds"), b.get("wager"), b.get("payout")
-        if None in (o, w, p) or bet_void(b):
-            continue
+        if None in (o, w, p) or bet_void(b) or b.get("settled"):
+            continue  # settled bets carry FanDuel's actual return, not odds-math
         exp = w*dec(o)
         if exp <= 0: continue
         diff = (p-exp)/exp
