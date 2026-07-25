@@ -1,0 +1,882 @@
+{
+  "date": "2026-07-23",
+  "bets": [
+    {
+      "full_id": "us-pa:01ky7hp74fffvv812fqznc9s6a",
+      "id": "#nc9s6a",
+      "kind": "Pitcher Special",
+      "odds": 1600,
+      "wager": 0.1,
+      "payout": 1.7,
+      "placed": "7/23 9:12AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Troy Melton",
+          "prop": "K1",
+          "g": "KC@DET",
+          "asp": "dobnak",
+          "hsp": "melton"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky7hp74ff7cb7e5nfm912shc",
+      "id": "#912shc",
+      "kind": "Pitcher Special",
+      "odds": 2200,
+      "wager": 0.1,
+      "payout": 2.3,
+      "placed": "7/23 9:12AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Troy Melton",
+          "prop": "NH5",
+          "g": "KC@DET",
+          "asp": "dobnak",
+          "hsp": "melton"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky7hp74ff07ay1kahw26tzjy",
+      "id": "#26tzjy",
+      "kind": "Pitcher Special",
+      "odds": 2500,
+      "wager": 0.1,
+      "payout": 2.6,
+      "placed": "7/23 9:12AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Taj Bradley",
+          "prop": "NH5",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky7hp74fe2pvaxg8d9ctd07k",
+      "id": "#ctd07k",
+      "kind": "Pitcher Special",
+      "odds": 2200,
+      "wager": 0.1,
+      "payout": 2.3,
+      "placed": "7/23 9:12AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Gavin Williams",
+          "prop": "NH5",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky7hp74efqx8kb8d5bz59z1b",
+      "id": "#z59z1b",
+      "kind": "Pitcher Special",
+      "odds": 2200,
+      "wager": 0.1,
+      "payout": 2.3,
+      "placed": "7/23 9:12AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Chris Sale",
+          "prop": "NH5",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky7hkwv7edhsj9s80ky75n3k",
+      "id": "#y75n3k",
+      "kind": "16-leg SGP+",
+      "odds": 65769,
+      "wager": 0.09,
+      "payout": 59.32,
+      "placed": "7/23 9:11AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Michael Harris II",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Jim Jarvis",
+          "prop": "HIT2",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Alec Burleson",
+          "prop": "HIT",
+          "g": "ARI@STL",
+          "asp": "pfaadt",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "Masyn Winn",
+          "prop": "HIT",
+          "g": "ARI@STL",
+          "asp": "pfaadt",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "Ernie Clement",
+          "prop": "HIT",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Alejandro Kirk",
+          "prop": "HIT",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Victor Mesa Jr.",
+          "prop": "HIT",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "George Springer",
+          "prop": "HIT",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Byron Buxton",
+          "prop": "HIT",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Jose Ramirez",
+          "prop": "HIT",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Chase DeLauter",
+          "prop": "HIT",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky7h3ry3en98qyc9qvp3j2vv",
+      "id": "#p3j2vv",
+      "kind": "4-leg SGP+",
+      "odds": 158852,
+      "wager": 0.09,
+      "payout": 143.06,
+      "placed": "7/23 9:02AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ernie Clement",
+          "prop": "HIT2",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "George Springer",
+          "prop": "TB2",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Alec Burleson",
+          "prop": "HR2",
+          "g": "ARI@STL",
+          "asp": "pfaadt",
+          "hsp": "mcgreevy"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004374",
+      "id": "#4374",
+      "kind": "6-leg SGP+",
+      "odds": 128193,
+      "wager": 0.25,
+      "payout": 400.89,
+      "placed": "7/23 8:48AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Ramirez",
+          "prop": "SB",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Byron Buxton",
+          "prop": "HR",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Alec Burleson",
+          "prop": "HR",
+          "g": "ARI@STL",
+          "asp": "pfaadt",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "Masyn Winn",
+          "prop": "HIT",
+          "g": "ARI@STL",
+          "asp": "pfaadt",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Chandler Simpson",
+          "prop": "SB",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004373",
+      "id": "#4373",
+      "kind": "9-leg SGP+",
+      "odds": 89773341,
+      "wager": 0.09,
+      "payout": 80796.1,
+      "placed": "7/23 8:37AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Ramirez",
+          "prop": "SB",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Travis Bazzana",
+          "prop": "SB",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Byron Buxton",
+          "prop": "HR",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Masyn Winn",
+          "prop": "SB",
+          "g": "ARI@STL",
+          "asp": "pfaadt",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "Alec Burleson",
+          "prop": "HR",
+          "g": "ARI@STL",
+          "asp": "pfaadt",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Chandler Simpson",
+          "prop": "SB",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Tyler Tolbert",
+          "prop": "SB",
+          "g": "KC@DET",
+          "asp": "dobnak",
+          "hsp": "melton"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004372",
+      "id": "#4372",
+      "kind": "8-leg SGP+",
+      "odds": 33383068,
+      "wager": 0.09,
+      "payout": 30044.85,
+      "placed": "7/23 8:28AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Ramirez",
+          "prop": "SB",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Luke Keaschall",
+          "prop": "SB",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Travis Bazzana",
+          "prop": "SB",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Jackson Merrill",
+          "prop": "SB",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Chandler Simpson",
+          "prop": "SB",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Masyn Winn",
+          "prop": "SB",
+          "g": "ARI@STL",
+          "asp": "pfaadt",
+          "hsp": "mcgreevy"
+        },
+        {
+          "p": "Tyler Tolbert",
+          "prop": "SB",
+          "g": "KC@DET",
+          "asp": "dobnak",
+          "hsp": "melton"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky6red71fthva3amp8ywxa3h",
+      "id": "#ywxa3h",
+      "kind": "Single",
+      "odds": 10000,
+      "wager": 0.1,
+      "payout": 10.1,
+      "placed": "7/23 1:51AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Toronto Blue Jays",
+          "prop": "CS",
+          "tm": "TOR",
+          "nr": 8,
+          "opp": 3,
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber",
+          "hs": 8,
+          "as": 3,
+          "lbl": "TOR 8-3",
+          "side": "home"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky6red71ezhrgkbzq3e77ejk",
+      "id": "#e77ejk",
+      "kind": "Single",
+      "odds": 11000,
+      "wager": 0.1,
+      "payout": 11.1,
+      "placed": "7/23 1:51AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Toronto Blue Jays",
+          "prop": "CS",
+          "tm": "TOR",
+          "nr": 8,
+          "opp": 0,
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber",
+          "hs": 8,
+          "as": 0,
+          "lbl": "TOR 8-0",
+          "side": "home"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky6red71exy9jv1gxr27dzzr",
+      "id": "#27dzzr",
+      "kind": "Single",
+      "odds": 10000,
+      "wager": 0.16,
+      "payout": 16.16,
+      "placed": "7/23 1:51AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Toronto Blue Jays",
+          "prop": "CS",
+          "tm": "TOR",
+          "nr": 8,
+          "opp": 5,
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber",
+          "hs": 8,
+          "as": 5,
+          "lbl": "TOR 8-5",
+          "side": "home"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky6red71etvvykkwd7wf1vve",
+      "id": "#wf1vve",
+      "kind": "Single",
+      "odds": 8000,
+      "wager": 0.12,
+      "payout": 9.72,
+      "placed": "7/23 1:51AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Toronto Blue Jays",
+          "prop": "CS",
+          "tm": "TOR",
+          "nr": 7,
+          "opp": 2,
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber",
+          "hs": 7,
+          "as": 2,
+          "lbl": "TOR 7-2",
+          "side": "home"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky6r8gwqft7adhfqmve27g58",
+      "id": "#e27g58",
+      "kind": "11-leg SGP+",
+      "odds": 278132,
+      "wager": 0.36,
+      "payout": 1001.89,
+      "placed": "7/23 1:48AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Troy Melton",
+          "prop": "ALTK",
+          "k": 4,
+          "g": "KC@DET",
+          "asp": "dobnak",
+          "hsp": "melton"
+        },
+        {
+          "p": "Randy Dobnak",
+          "prop": "ALTK",
+          "k": 4,
+          "g": "KC@DET",
+          "asp": "dobnak",
+          "hsp": "melton"
+        },
+        {
+          "p": "Junior Caminero",
+          "prop": "HR",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Chandler Simpson",
+          "prop": "TB3",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Ernie Clement",
+          "prop": "HIT2",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Vladimir Guerrero Jr.",
+          "prop": "HIT",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Jonathan Aranda",
+          "prop": "HIT",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Victor Mesa Jr.",
+          "prop": "HIT",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Junior Caminero",
+          "prop": "HIT2",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "George Springer",
+          "prop": "TB2",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004371",
+      "id": "#4371",
+      "kind": "6-leg SGP",
+      "odds": 77153,
+      "wager": 0.42,
+      "payout": 405.52,
+      "placed": "7/23 1:31AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Ramirez",
+          "prop": "SB",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Travis Bazzana",
+          "prop": "SB",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Jose Ramirez",
+          "prop": "HR",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Taj Bradley",
+          "prop": "ALTK",
+          "k": 4,
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Byron Buxton",
+          "prop": "HR",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Chase DeLauter",
+          "prop": "HIT2",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky6psnw7eha945jrqddctxkv",
+      "id": "#dctxkv",
+      "kind": "11-leg SGP+",
+      "odds": 21259,
+      "wager": 0.12,
+      "payout": 25.64,
+      "placed": "7/23 1:22AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ernie Clement",
+          "prop": "HIT2",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Junior Caminero",
+          "prop": "HIT",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Alejandro Kirk",
+          "prop": "HIT",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "George Springer",
+          "prop": "HIT",
+          "g": "TB@TOR",
+          "asp": "seymour",
+          "hsp": "bieber"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Manny Machado",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Byron Buxton",
+          "prop": "HIT",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Jose Ramirez",
+          "prop": "HIT2",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01ky6njcqrfxzbs4x2q3sbnejj",
+      "id": "#sbnejj",
+      "kind": "10-leg SGP+",
+      "odds": 6481,
+      "wager": 0.14,
+      "payout": 9.22,
+      "placed": "7/23 1:01AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Manny Machado",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HIT",
+          "g": "SD@ATL",
+          "asp": "hart",
+          "hsp": "sale"
+        },
+        {
+          "p": "Jose Ramirez",
+          "prop": "HIT",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Byron Buxton",
+          "prop": "HIT",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Ryan Jeffers",
+          "prop": "HIT",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        },
+        {
+          "p": "Jose Ramirez",
+          "prop": "SB",
+          "g": "MIN@CLE",
+          "asp": "bradley",
+          "hsp": "williams"
+        }
+      ]
+    }
+  ]
+}
