@@ -883,6 +883,480 @@
           "hsp": "may"
         }
       ]
+    },
+    {
+      "full_id": "O/1924696/0004418",
+      "id": "#4418",
+      "kind": "8-leg SGP+",
+      "odds": 9582953,
+      "wager": 0.13,
+      "payout": 12457.97,
+      "placed": "7/29 7:12PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@STL",
+          "asp": "boyd",
+          "hsp": "may"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@STL",
+          "asp": "boyd",
+          "hsp": "may"
+        },
+        {
+          "p": "Cal Raleigh",
+          "prop": "HR",
+          "g": "SEA@LAD",
+          "asp": "hancock",
+          "hsp": "lauer"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "SB",
+          "g": "SEA@LAD",
+          "asp": "hancock",
+          "hsp": "lauer"
+        },
+        {
+          "p": "Jose Ramirez",
+          "prop": "HR",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Jasson Dominguez",
+          "prop": "SB",
+          "g": "NYY@CWS",
+          "asp": "schlittler",
+          "hsp": "martin"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "HOU@LAA",
+          "asp": "wesneski",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Caleb Durbin",
+          "prop": "SB",
+          "g": "BOS@ATH",
+          "asp": "sandoval",
+          "hsp": "lopez"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kyr2bxq5f83vqk7ha58jx9b6",
+      "id": "#8jx9b6",
+      "kind": "5-leg parlay",
+      "odds": 113296,
+      "wager": 0.1,
+      "payout": 113.4,
+      "placed": "7/29 7:11PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Ramirez",
+          "prop": "HR",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@STL",
+          "asp": "boyd",
+          "hsp": "may"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "HOU@LAA",
+          "asp": "wesneski",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Caleb Durbin",
+          "prop": "SB",
+          "g": "BOS@ATH",
+          "asp": "sandoval",
+          "hsp": "lopez"
+        },
+        {
+          "p": "Cal Raleigh",
+          "prop": "HR",
+          "g": "SEA@LAD",
+          "asp": "hancock",
+          "hsp": "lauer"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004417",
+      "id": "#4417",
+      "kind": "8-leg SGP+",
+      "odds": 1675637,
+      "wager": 0.12,
+      "payout": 2010.89,
+      "placed": "7/29 7:08PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Elly De La Cruz",
+          "prop": "SB",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Dane Myers",
+          "prop": "SB",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Jose Ramirez",
+          "prop": "HR",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Tyler Tolbert",
+          "prop": "SB",
+          "g": "KC@MIN",
+          "asp": "dobnak",
+          "hsp": "ryan"
+        },
+        {
+          "p": "Jose Caballero",
+          "prop": "SB",
+          "g": "NYY@CWS",
+          "asp": "schlittler",
+          "hsp": "martin"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@STL",
+          "asp": "boyd",
+          "hsp": "may"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "HOU@LAA",
+          "asp": "wesneski",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HR",
+          "g": "SEA@LAD",
+          "asp": "hancock",
+          "hsp": "lauer"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004416",
+      "id": "#4416",
+      "kind": "8-leg SGP+",
+      "odds": 2569962,
+      "wager": 0.1,
+      "payout": 2570.06,
+      "placed": "7/29 7:07PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Ramirez",
+          "prop": "HR",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Dane Myers",
+          "prop": "SB",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Tyler Tolbert",
+          "prop": "SB",
+          "g": "KC@MIN",
+          "asp": "dobnak",
+          "hsp": "ryan"
+        },
+        {
+          "p": "Jose Caballero",
+          "prop": "SB",
+          "g": "NYY@CWS",
+          "asp": "schlittler",
+          "hsp": "martin"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@STL",
+          "asp": "boyd",
+          "hsp": "may"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "HOU@LAA",
+          "asp": "wesneski",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Willson Contreras",
+          "prop": "HR",
+          "g": "BOS@ATH",
+          "asp": "sandoval",
+          "hsp": "lopez"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HR",
+          "g": "SEA@LAD",
+          "asp": "hancock",
+          "hsp": "lauer"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kyr1vzxje5grx2anf8ehnmsz",
+      "id": "#ehnmsz",
+      "kind": "7-leg SGP+",
+      "odds": 568487,
+      "wager": 0.1,
+      "payout": 568.59,
+      "placed": "7/29 7:03PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Ramirez",
+          "prop": "SB",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Elly De La Cruz",
+          "prop": "SB",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Kyle Manzardo",
+          "prop": "HR",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Jasson Dominguez",
+          "prop": "SB",
+          "g": "NYY@CWS",
+          "asp": "schlittler",
+          "hsp": "martin"
+        },
+        {
+          "p": "Tyler Tolbert",
+          "prop": "SB",
+          "g": "KC@MIN",
+          "asp": "dobnak",
+          "hsp": "ryan"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@STL",
+          "asp": "boyd",
+          "hsp": "may"
+        },
+        {
+          "p": "Cal Raleigh",
+          "prop": "HR",
+          "g": "SEA@LAD",
+          "asp": "hancock",
+          "hsp": "lauer"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kyr1reece4mrgx8pn0ahkare",
+      "id": "#ahkare",
+      "kind": "6-leg SGP+",
+      "odds": 137437,
+      "wager": 0.1,
+      "payout": 137.54,
+      "placed": "7/29 7:01PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Ramirez",
+          "prop": "HR",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Elly De La Cruz",
+          "prop": "SB",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@STL",
+          "asp": "boyd",
+          "hsp": "may"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "HOU@LAA",
+          "asp": "wesneski",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Willson Contreras",
+          "prop": "HR",
+          "g": "BOS@ATH",
+          "asp": "sandoval",
+          "hsp": "lopez"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HR",
+          "g": "SEA@LAD",
+          "asp": "hancock",
+          "hsp": "lauer"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004415",
+      "id": "#4415",
+      "kind": "7-leg SGP+",
+      "odds": 2435075,
+      "wager": 0.1,
+      "payout": 2435.18,
+      "placed": "7/29 6:57PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@STL",
+          "asp": "boyd",
+          "hsp": "may"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@STL",
+          "asp": "boyd",
+          "hsp": "may"
+        },
+        {
+          "p": "Cal Raleigh",
+          "prop": "HR",
+          "g": "SEA@LAD",
+          "asp": "hancock",
+          "hsp": "lauer"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "SB",
+          "g": "SEA@LAD",
+          "asp": "hancock",
+          "hsp": "lauer"
+        },
+        {
+          "p": "Jose Ramirez",
+          "prop": "HR",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "HOU@LAA",
+          "asp": "wesneski",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Caleb Durbin",
+          "prop": "SB",
+          "g": "BOS@ATH",
+          "asp": "sandoval",
+          "hsp": "lopez"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kyr28hkjew3trkpjjb79fan2",
+      "id": "#79fan2",
+      "kind": "5-leg SGP+",
+      "odds": 53858,
+      "wager": 0.12,
+      "payout": 64.75,
+      "placed": "7/29 7:09PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Willson Contreras",
+          "prop": "HR",
+          "g": "BOS@ATH",
+          "asp": "sandoval",
+          "hsp": "lopez"
+        },
+        {
+          "p": "Caleb Durbin",
+          "prop": "SB",
+          "g": "BOS@ATH",
+          "asp": "sandoval",
+          "hsp": "lopez"
+        },
+        {
+          "p": "Munetaka Murakami",
+          "prop": "HR",
+          "g": "NYY@CWS",
+          "asp": "schlittler",
+          "hsp": "martin"
+        },
+        {
+          "p": "Tyler Tolbert",
+          "prop": "SB",
+          "g": "KC@MIN",
+          "asp": "dobnak",
+          "hsp": "ryan"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HR",
+          "g": "SEA@LAD",
+          "asp": "hancock",
+          "hsp": "lauer"
+        }
+      ]
     }
   ]
 }
