@@ -323,3 +323,26 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
   prior settled export) - generalizes beyond today. Backups: *.PRE-SETTLED-2026-07-24.*
 - NOTE: staging rebuilt to 20 DISTINCT bets (the 32 count included 12 in-paste duplicate IDs from a
   doubled FanDuel screen; dedup keeps first occurrence).
+
+
+## 26. BUG: first-plate-appearance HR prop unmapped -> leg dropped, bet HELD - DONE (2026-07-29)
+- Surfaced 2026-07-29 intake: bet #hqjptp declared "4 leg parlay" but only 3 legs parsed ->
+  GATE HOLD, nothing written (gate worked as designed - this is #24's drop detector family
+  catching a leg-level miss via the leg-count check).
+- ROOT CAUSE: FanDuel prop "Player to Hit a Home Run in First Plate Appearance" (Yordan Alvarez
+  +750) was absent from PROP_MAP -> prop_code() returned None -> tokenize skipped the leg.
+  The ENGINE has supported FPA the whole time: BATSET/CATS include FPA, PLAB labels it "1st-PA HR",
+  it has its own colour (--c-fpa), resetStats tracks fpaDone/fpaHR, allPlays sets them on the
+  batter's FIRST completed PA, and legMet grades it (hit if fpaHR, miss once fpaDone or final).
+  Parser had ZERO references to FPA - a pure phrase-mapping gap, not a missing feature.
+- SOLUTION (shipped): added both observed wordings to PROP_MAP ->
+  "Player to Hit a Home Run in First Plate Appearance" and "To Hit A Home Run in First Plate
+  Appearance" -> "FPA". PROP_MAP_CI gives ALL-CAPS screenshot pastes for free (verified).
+- AUDIT (the important part - checked for SILENT MIS-GRADING, not just the drop): the paste has
+  4 Yordan Alvarez legs. Only ONE is the FPA prop (+750); the other three are plain
+  "To Hit A Home Run" (+196) and were correctly mapped to HR. No FPA leg was ever mis-graded as
+  a plain HR - the failure mode was always a visible drop + leg-count hold, never a wrong grade.
+- TESTED: prop_code returns FPA for exact + ALL-CAPS. #hqjptp now parses 4/4 legs, zero flags.
+  Full-corpus regression vs backup: ONLY _paste_0729 changed, ONLY #hqjptp - every other paste
+  byte-identical. Corpus + gate suites pass. Backup: parse_fanduel.PRE-FPA-2026-07-29.bak.py
+- NOTE: FPA grading is genuinely automatic (first completed PA off allPlays), NOT manual/NA.
