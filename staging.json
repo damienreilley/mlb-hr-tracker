@@ -242,6 +242,46 @@
           "hsp": "lopez"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kyqezfn5env92rknr72r0j5t",
+      "id": "#2r0j5t",
+      "kind": "4-leg parlay",
+      "odds": 69423,
+      "wager": 0.13,
+      "payout": 90.38,
+      "placed": "7/29 1:32PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Ramirez",
+          "prop": "HR",
+          "g": "CLE@CIN",
+          "asp": "cantillo",
+          "hsp": "singer"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR2",
+          "g": "HOU@LAA",
+          "asp": "wesneski",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Willson Contreras",
+          "prop": "HR",
+          "g": "BOS@ATH",
+          "asp": "sandoval",
+          "hsp": "lopez"
+        },
+        {
+          "p": "Julio Rodriguez",
+          "prop": "HR",
+          "g": "SEA@LAD",
+          "asp": "hancock",
+          "hsp": "lauer"
+        }
+      ]
     }
   ]
 }
