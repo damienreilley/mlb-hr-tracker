@@ -1,8 +1,11 @@
-# Backlog #27 (2026-07-29): this repo is PUBLIC. The _paste_*.txt corpus is raw
-# FanDuel betslip exports (personal betting history) and must never be committed.
-# The board itself already publishes the day's bets; the raw pastes are not needed
-# in git, and test_parser_regression.py skips cleanly when they are absent.
-_paste_*.txt
+# Backlog #27 (2026-07-29): the _paste_*.txt corpus IS committed, deliberately.
+# Rationale (Damien's call, 2026-07-29): OneDrive backs the files up but does NOT make
+# them reachable when he is away from the laptop (Desktop Commander needs the machine),
+# so keeping them out of git limited mobile work AND left the corpus single-homed.
+# Checked before committing: the pastes contain no account numbers, balances, emails or
+# payment data - and the PUBLIC board already publishes every bet id, wager and payout,
+# so committing them exposes essentially nothing new. Committing also lets CI run the
+# full 50-file regression instead of only the synthetic fixtures.
 
 # local build/verify artifacts
 _dr_*.html
