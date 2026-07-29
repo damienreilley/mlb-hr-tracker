@@ -346,3 +346,64 @@ Items to explore / build. Not yet implemented. (Started 2026-06-05.)
   Full-corpus regression vs backup: ONLY _paste_0729 changed, ONLY #hqjptp - every other paste
   byte-identical. Corpus + gate suites pass. Backup: parse_fanduel.PRE-FPA-2026-07-29.bak.py
 - NOTE: FPA grading is genuinely automatic (first completed PA off allPlays), NOT manual/NA.
+
+
+## 27. PROCESS AUDIT + HARDENING (2026-07-29) - DONE
+Full review of the intake pipeline (paste -> parse -> gate -> staging -> build -> Action -> Pages)
+requested by Damien after a run of format-drift bugs (#23-#26). Findings were evidence-based
+(measured against the 50-file corpus and the archive set), not assumed.
+
+### VERIFIED STRONG (no action needed)
+- Parser/engine prop coverage is 100% in sync: every code the parser can emit (33 codes) is
+  handled by legMet, and every batter code is in BATSET. No silent non-grading path exists.
+- Leg-count protection covers 1442/1445 corpus bets; the 3 gaps are 0-leg bets, which the
+  ZERO LEGS flag (#24) now catches.
+- The GATE genuinely holds: proved live on 2026-07-29 when #hqjptp (FPA) blocked the whole intake.
+
+### FINDING 1 - ARCHIVE CORRUPTION, ALREADY HAPPENED (fixed)
+archive/2026-06-25 had json=38 bets but html=27 - ELEVEN bets missing from the permanent board.
+CAUSE: daily_run copied index.html into archive/ with no check that index.html was current.
+index.html is rebuilt+committed by the ACTION, so a local copy lags until you `git pull`; rolling
+over in that window archives a stale board. The window was open again during this very session
+(local index=5 bets vs staging=6).
+FIXES: (a) CURRENCY GUARD in daily_run - before archiving, index.html must match the staging
+being archived on BOTH bet count and date, else REFUSE and write nothing. Tested 3 ways: match
+passes, count mismatch refuses, date mismatch refuses. (b) 2026-06-25 REPAIRED by rebuilding the
+html from its intact json (38/38 bets restored; corrupt original kept as
+archive/2026-06-25.CORRUPT-27of38.bak.html, untracked).
+
+### FINDING 2 - CI RAN NO TESTS AT ALL (fixed)
+build.yml only ran build.py + committed. Neither test file ever executed in CI, AND the `paths:`
+trigger did not include parse_fanduel.py - so parser commits did not even start a workflow.
+A parser regression could ship straight to a live money board.
+FIX: build.yml now (a) triggers on parse_fanduel.py, add-bet-server/parse_fanduel.py, test_*.py,
+parser_baseline.json and the workflow itself; (b) runs, BEFORE the build: server-parser sync check
+(kills phone-path drift), test_gate.py, test_parser_fixtures.py, test_parser_regression.py. Any
+failure fails the job, so index.html is never rebuilt from a broken parser.
+
+### FINDING 3 - test_parser_corpus.py COULD NOT FAIL (fixed)
+It has ZERO assertions and no baseline - a reporting harness that prints a bets/legs/flags table.
+Claude repeatedly said "corpus + gate suites pass" this session; that was overstated - real
+regression safety came from throwaway old-vs-new diff scripts written per session and discarded.
+FIXES: (a) test_parser_regression.py - golden-baseline regression over the full local corpus
+(per-file counts + SHA1 of each bet's canonical JSON). Asserts, exits 1 on any drift, --update to
+re-baseline. Baseline = parser_baseline.json (50 files, 1445 bets); it stores hashes+counts only,
+no raw bet text, so it is safe in a public repo. PROVEN to fail: deliberately removing the FPA
+mapping produced "legs 34->32, flags 0->2, BETS CHANGED ['#hqjptp']", exit 1.
+(b) test_parser_fixtures.py - 22 assertions over SYNTHETIC betslips (no personal data) pinning
+every bug class: #23 singles, #24 correct-score + drop detector, #25 RETURNED settlement,
+#26 FPA, pitcher specials, leg-count mismatch. This is what protects CI, since the real corpus
+is untracked. test_parser_corpus.py is kept as a human-readable report.
+
+### FINDING 4 - PRIVACY (fixed)
+The repo is PUBLIC and the 50 _paste_*.txt files (raw betting history) were untracked only by
+luck - no .gitignore existed. Added .gitignore covering _paste_*.txt, build/verify artifacts and
+corrupt-archive backups. Corpus stays local; regression test SKIPs cleanly when absent.
+
+### REMAINING / ACCEPTED (not fixed, by choice)
+- Settlement staleness: settled state enters ONLY via a paste containing RETURNED. Voids, pushes
+  and cash-outs are invisible unless re-pasted. Live grading cannot represent them.
+- No boards for 2026-07-26/27/28 (gap between intakes). Recoverable if pastes still exist.
+- staging.json has no schema validation; mitigated by git history + the archive twin.
+- Corpus lives only on Damien's disk (+OneDrive). If it matters, it needs a private backup -
+  deliberately NOT solved by committing it to a public repo.

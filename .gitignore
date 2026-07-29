@@ -1,0 +1,14 @@
+# Backlog #27 (2026-07-29): this repo is PUBLIC. The _paste_*.txt corpus is raw
+# FanDuel betslip exports (personal betting history) and must never be committed.
+# The board itself already publishes the day's bets; the raw pastes are not needed
+# in git, and test_parser_regression.py skips cleanly when they are absent.
+_paste_*.txt
+
+# local build/verify artifacts
+_dr_*.html
+_verify*.html
+_ci_verify.html
+_t_*.json
+
+# local safety backups taken before edits (keep on disk, not in git)
+*.CORRUPT-*.html

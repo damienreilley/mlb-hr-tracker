@@ -144,6 +144,30 @@ def main():
         # archive guard - per FILE (an OR-guard let one existing file suppress the other copy)
         ah = os.path.join(R, "archive", prior + ".html")
         aj = os.path.join(R, "archive", prior + ".json")
+        # CURRENCY GUARD (2026-07-29, Backlog #27): index.html is rebuilt+committed by the
+        # Action, so a local copy can lag staging. Archiving a lagging index.html silently
+        # writes a board that is MISSING the day's last bets - this already happened to
+        # archive/2026-06-25 (json=38 bets, html=27). Refuse unless index.html matches the
+        # staging it is about to be archived alongside, on BOTH bet count and date.
+        if not os.path.exists(ah):
+            idx_path = os.path.join(R, "index.html")
+            try:
+                idx_txt = open(idx_path, encoding="utf-8", errors="replace").read()
+            except Exception as e:
+                print("REFUSE: cannot read index.html to verify archive currency:", e)
+                return 1
+            n_idx = len(re.findall(r'"id":\s*"#', idx_txt))
+            n_stg = len(staging.get("bets", []))
+            date_ok = prior in idx_txt
+            if n_idx != n_stg or not date_ok:
+                print("REFUSE: index.html is NOT current - refusing to archive a stale board.")
+                print("  index.html bets=%d | staging(%s) bets=%d | index contains %s: %s"
+                      % (n_idx, prior, n_stg, prior, date_ok))
+                print("  FIX: git pull (the Action rebuilds index.html after each push), then re-run.")
+                print("  If the Action has not run yet, wait for it to finish and pull.")
+                print("  NOTHING was written - staging.json and archive/ are untouched.")
+                return 1
+            print("currency check OK: index.html matches staging (%d bets, date %s)" % (n_idx, prior))
         for src, dst in ((os.path.join(R, "index.html"), ah), (a.staging, aj)):
             if os.path.exists(dst):
                 print("archive exists - skip:", os.path.basename(dst))

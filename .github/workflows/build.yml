@@ -6,6 +6,13 @@ on:
       - staging.json
       - build.py
       - tracker_template.html
+      # Backlog #27: parser + test changes MUST trigger CI. Without these the test
+      # steps below would never run on the very commits most likely to break parsing.
+      - parse_fanduel.py
+      - add-bet-server/parse_fanduel.py
+      - test_*.py
+      - parser_baseline.json
+      - .github/workflows/build.yml
   workflow_dispatch:
 permissions:
   contents: write
@@ -22,6 +29,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      # --- TESTS (Backlog #27) -------------------------------------------------
+      # Previously CI only built and committed: a parser regression could ship
+      # straight to the live board with nothing checking it. Any failure below
+      # fails the job, so index.html is never rebuilt from a broken parser.
+      - name: Phone path - server parser must match root parser
+        run: |
+          if ! diff -q parse_fanduel.py add-bet-server/parse_fanduel.py; then
+            echo "::error::add-bet-server/parse_fanduel.py has DRIFTED from root parse_fanduel.py"
+            diff parse_fanduel.py add-bet-server/parse_fanduel.py || true
+            exit 1
+          fi
+          echo "server parser in sync"
+      - name: Gate logic tests
+        run: python test_gate.py
+      - name: Parser fixture tests (synthetic betslips, all known bug classes)
+        run: python test_parser_fixtures.py
+      - name: Parser corpus regression (skips if corpus absent - it is untracked)
+        run: python test_parser_regression.py
+      # --- BUILD ---------------------------------------------------------------
       - name: Build index.html from staging
         run: python build.py staging.json index.html
       - name: Commit rebuilt index.html if changed
