@@ -12,6 +12,12 @@ on:
       - add-bet-server/parse_fanduel.py
       - test_*.py
       - parser_baseline.json
+      # Corpus pastes: if a paste changes but staging was never re-intaken, the
+      # regression test FAILS - which is the alarm we want. This caught 11 bets on
+      # 2026-07-29 that were sitting in _paste_0729.txt but missing from the board.
+      # After every intake: re-run `python test_parser_regression.py --update` and
+      # commit parser_baseline.json alongside staging.json.
+      - _paste_*.txt
       - .github/workflows/build.yml
   workflow_dispatch:
 permissions:

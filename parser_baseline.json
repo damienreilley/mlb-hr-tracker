@@ -1746,18 +1746,29 @@
   "legs": 175
  },
  "_paste_0729.txt": {
-  "bets": 7,
+  "bets": 17,
   "dropped": 0,
   "flags": 0,
   "hashes": {
    "#2r0j5t": "0f0c9f41e1b4",
+   "#30y9nj": "bb3f88b82676",
    "#3kb237": "0f9a18a721d7",
    "#4411": "185005406199",
+   "#4412": "adcfe66aef9b",
+   "#4413": "c98cc2f59996",
+   "#4414": "80070fc14f3e",
+   "#7b41xp": "1af633a2a4b8",
+   "#9gx6fe": "1ffd6e3505bc",
+   "#a5st1q": "59fb019ffe07",
+   "#b6xs27": "82b8194295ab",
+   "#bcs1b0": "127a905a93a3",
+   "#dcrnhk": "0748d48b61b5",
    "#hqjptp": "d95b9cc2f547",
    "#s9hsx0": "8e62dc260c64",
+   "#td5y6k": "6f65d2487984",
    "#ydwn3y": "1d0793129271"
   },
-  "legs": 34
+  "legs": 97
  },
  "_paste_derby.txt": {
   "bets": 0,
