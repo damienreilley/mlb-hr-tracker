@@ -13,5 +13,11 @@ _verify*.html
 _ci_verify.html
 _t_*.json
 
+# HR model generated artifacts (regenerable; see HR-MODEL-DESIGN.md section 6)
+_bt_rows*.json
+_pit_*.json
+_sc_*.json
+_hr_*.json
+
 # local safety backups taken before edits (keep on disk, not in git)
 *.CORRUPT-*.html
