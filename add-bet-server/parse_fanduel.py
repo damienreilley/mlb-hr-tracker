@@ -344,23 +344,62 @@ def single_start(b):
             return i
     return None
 
+# FUTURES (2026-08-01, Backlog #28). Long-dated markets - World Series exact
+# result, pennant/division winners etc - settle months out (e.g. Nov 1) and have
+# no same-day game, so the board's engine cannot grade them. Damien's decision
+# 2026-08-01: EXCLUDE them from the board entirely.
+# They must be excluded DELIBERATELY, not via the drop detector: an unrecognised
+# block is supposed to HOLD the intake (#24), and futures would trip that hold
+# every day. Recognising them here keeps the detector meaningful for genuinely
+# new bet types while skipping futures quietly-but-visibly (see FUTURES_SKIPPED).
+FUTURES_MARKERS = ("world series", "to win the", "pennant",
+                   "division winner", "exact result")
+FUTURES_SKIPPED = []   # populated per split_blocks_checked call, for reporting
+
+
+def is_futures_block(b):
+    """TRUE only when the block's MARKET LABEL says futures.
+
+    The label sits in a fixed position: the line immediately AFTER the bare
+    "+odds" line (e.g. "WORLD SERIES 2026 - EXACT RESULT"), or a standalone
+    "MLB Futures <year>" line. Scanning the whole block for keywords was TOO
+    GREEDY - on 2026-08-01 it swallowed bet #4435, a real $9.00 same-day SGP+
+    with a $63k payout, because the file header contained Damien's note
+    mentioning "world series". Position-anchored matching only.
+    """
+    for i, l in enumerate(b):
+        s = l.strip().lower()
+        if s.startswith("mlb futures"):
+            return True
+        if i > 0 and re.fullmatch(r"\+\d+", b[i-1].strip()):
+            for m in FUTURES_MARKERS:
+                if m in s:
+                    return True
+    return False
+
+
 def split_blocks_checked(lines):
     """split_blocks + DROP DETECTOR (2026-07-23). Returns (blocks, dropped).
     'dropped' lists the BET IDs of blocks that carried a BET ID but matched no
     anchor, so an unknown bet type fails LOUD at the gate instead of vanishing -
-    the structural hole behind Backlog #23 and #24."""
+    the structural hole behind Backlog #23 and #24. Futures blocks are excluded
+    on purpose and recorded in FUTURES_SKIPPED rather than reported as dropped."""
+    del FUTURES_SKIPPED[:]
     raw, cur = [], []
     for ln in lines:
         cur.append(ln)
         if ln.startswith("PLACED:"): raw.append(cur); cur=[]
     blocks, dropped = [], []
     for b in raw:
+        bid = next((l.split("BET ID:",1)[1].strip() for l in b if l.startswith("BET ID:")), None)
+        if is_futures_block(b):
+            if bid: FUTURES_SKIPPED.append(bid)
+            continue
         hi = next((i for i,l in enumerate(b) if is_header(l)), None)
         if hi is None: hi = single_start(b)
         if hi is not None:
             blocks.append(b[hi:])
         else:
-            bid = next((l.split("BET ID:",1)[1].strip() for l in b if l.startswith("BET ID:")), None)
             if bid: dropped.append(bid)
     return blocks, dropped
 
@@ -382,6 +421,9 @@ def main():
     lines=[l.strip() for l in raw if l.strip()!=""]
     bets=[]; allflags=[]
     blks, dropped = split_blocks_checked(lines)
+    if FUTURES_SKIPPED:
+        print("FUTURES SKIPPED (long-dated, not gradable - excluded by design): %d" % len(FUTURES_SKIPPED))
+        for f in FUTURES_SKIPPED: print("   ", f)
     for fid in dropped:
         allflags.append(("UNPARSED BLOCK (unknown bet type - NOT on board, fix parser)", fid))
     for b in blks:
