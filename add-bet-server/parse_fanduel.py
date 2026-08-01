@@ -352,6 +352,23 @@ def single_start(b):
 # block is supposed to HOLD the intake (#24), and futures would trip that hold
 # every day. Recognising them here keeps the detector meaningful for genuinely
 # new bet types while skipping futures quietly-but-visibly (see FUTURES_SKIPPED).
+def trim_preamble(b):
+    """Drop free text typed ABOVE the first bet in a block.
+
+    Everything before the first "PLACED:" line lands in block 1, so Damien's
+    file header and hand-typed notes ride along inside the FIRST bet's block.
+    That is a structural coupling, not user error: a note must never be able to
+    influence how a bet parses. On 2026-08-01 a greedy futures matcher read the
+    note's words "world series" and wrongly excluded bet #4435 ($9.00 SGP+).
+    A bet always starts at a line immediately followed by a bare "+odds" line,
+    so anything before the first such line is preamble and is discarded here.
+    """
+    for i in range(len(b) - 1):
+        if re.fullmatch(r"\+\d+", b[i + 1].strip()):
+            return b[i:] if i else b
+    return b
+
+
 FUTURES_MARKERS = ("world series", "to win the", "pennant",
                    "division winner", "exact result")
 FUTURES_SKIPPED = []   # populated per split_blocks_checked call, for reporting
@@ -392,6 +409,7 @@ def split_blocks_checked(lines):
     blocks, dropped = [], []
     for b in raw:
         bid = next((l.split("BET ID:",1)[1].strip() for l in b if l.startswith("BET ID:")), None)
+        b = trim_preamble(b)   # free-typed notes can never affect classification
         if is_futures_block(b):
             if bid: FUTURES_SKIPPED.append(bid)
             continue
