@@ -1874,10 +1874,11 @@
   "legs": 444
  },
  "_paste_0801.txt": {
-  "bets": 30,
+  "bets": 40,
   "dropped": 0,
   "flags": 0,
   "hashes": {
+   "#10wrek": "dfe57f2744d5",
    "#4429": "f1de982d1c2d",
    "#4430": "a1fba7376348",
    "#4431": "6c789744febd",
@@ -1885,17 +1886,21 @@
    "#4433": "b12d417c466c",
    "#4434": "adda3f1e4b1c",
    "#4435": "882c0804b797",
+   "#4436": "6813e1af86eb",
    "#5x0eeb": "c3f4d418dd29",
    "#5yj9sj": "6963e690f7d5",
    "#5zv2ef": "576112632f4e",
    "#67zseb": "d1db3fab2eb0",
    "#69nrtm": "d7318ad50379",
    "#82qhe4": "4e5aaa8498b7",
+   "#8yx4sp": "947a04abd02c",
    "#9qg1ht": "9463353a952a",
    "#9ww08c": "97e8309ba9e3",
    "#bfzwd3": "5f5810bc39e7",
    "#cm1j9x": "ff88a58ecfb5",
    "#cszwgk": "53a51fc7a15c",
+   "#cwjd6k": "d6a6963e29b6",
+   "#d1y09t": "dd698b6988f4",
    "#da8xmg": "ceb556cf7db6",
    "#dp9fh2": "f8532c4f2b94",
    "#e93dny": "5f8881bac515",
@@ -1904,12 +1909,14 @@
    "#hv9c6z": "8f0fe74c9a10",
    "#m02mk1": "2549fe25541f",
    "#mhst1t": "1175966030a7",
+   "#r1ad73": "50020585a2b5",
+   "#tenfgn": "73caef5341e7",
    "#tvn12x": "15a3e1812ac6",
    "#xj6pqf": "d1ac0dbfefbe",
    "#y5fdj5": "241f94b2aead",
    "#yfxqbj": "cd9200a97d3c"
   },
-  "legs": 139
+  "legs": 179
  },
  "_paste_derby.txt": {
   "bets": 0,

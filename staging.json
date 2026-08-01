@@ -1333,6 +1333,223 @@
           "hsp": "perkins"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01kyzmva65f0ebkxz7v6tenfgn",
+      "id": "#tenfgn",
+      "kind": "Single",
+      "odds": 1000,
+      "wager": 0.1,
+      "payout": 1.1,
+      "placed": "8/1 5:49PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ian Happ",
+          "prop": "HR",
+          "g": "NYY@CHC",
+          "asp": "fried",
+          "hsp": "peterson"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kyzmqeswem8tf06ps3r1ad73",
+      "id": "#r1ad73",
+      "kind": "Single",
+      "odds": 600,
+      "wager": 0.32,
+      "payout": 2.24,
+      "placed": "8/1 5:47PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Christian Encarnacion-Strand",
+          "prop": "HR",
+          "g": "PHI@BAL",
+          "asp": "sanchez",
+          "hsp": "baz"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kyzmpg3be9htcjscmvcwjd6k",
+      "id": "#cwjd6k",
+      "kind": "Single",
+      "odds": 240,
+      "wager": 0.44,
+      "payout": 1.5,
+      "placed": "8/1 5:46PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "TEX@HOU",
+          "asp": "degrom",
+          "hsp": "blanco"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kyzmny5zfekt9nt8wp10wrek",
+      "id": "#10wrek",
+      "kind": "Single",
+      "odds": 680,
+      "wager": 0.27,
+      "payout": 2.11,
+      "placed": "8/1 5:46PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jose Altuve",
+          "prop": "HR",
+          "g": "TEX@HOU",
+          "asp": "degrom",
+          "hsp": "blanco"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kyzmnh1bfx3vd38qwf8yx4sp",
+      "id": "#8yx4sp",
+      "kind": "5-leg SGP+",
+      "odds": 285174,
+      "wager": 0.11,
+      "payout": 313.82,
+      "placed": "8/1 5:46PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HR",
+          "g": "WSH@ATL",
+          "asp": "mikolas",
+          "hsp": "lopez"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HR",
+          "g": "WSH@ATL",
+          "asp": "mikolas",
+          "hsp": "lopez"
+        },
+        {
+          "p": "Jose Altuve",
+          "prop": "HR",
+          "g": "TEX@HOU",
+          "asp": "degrom",
+          "hsp": "blanco"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "TEX@HOU",
+          "asp": "degrom",
+          "hsp": "blanco"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "HR",
+          "g": "PHI@BAL",
+          "asp": "sanchez",
+          "hsp": "baz"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004436",
+      "id": "#4436",
+      "kind": "4-leg parlay",
+      "odds": 11050,
+      "wager": 0.22,
+      "payout": 31.83,
+      "placed": "8/1 5:39PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "TEX@HOU",
+          "asp": "degrom",
+          "hsp": "blanco"
+        },
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@ATL",
+          "asp": "mikolas",
+          "hsp": "lopez"
+        },
+        {
+          "p": "Tyler Tolbert",
+          "prop": "SB",
+          "g": "KC@COL",
+          "asp": "avila",
+          "hsp": "feltner"
+        },
+        {
+          "p": "Shohei Ohtani",
+          "prop": "HR",
+          "g": "BOS@LAD",
+          "asp": "tolle",
+          "hsp": "yamamoto"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01kyzm8rfwfhxbe4wnd0d1y09t",
+      "id": "#d1y09t",
+      "kind": "6-leg SGP+",
+      "odds": 275004,
+      "wager": 0.11,
+      "payout": 302.62,
+      "placed": "8/1 5:39PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "WSH@ATL",
+          "asp": "mikolas",
+          "hsp": "lopez"
+        },
+        {
+          "p": "CJ Abrams",
+          "prop": "SB",
+          "g": "WSH@ATL",
+          "asp": "mikolas",
+          "hsp": "lopez"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "TEX@HOU",
+          "asp": "degrom",
+          "hsp": "blanco"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "NYY@CHC",
+          "asp": "fried",
+          "hsp": "peterson"
+        },
+        {
+          "p": "Tyler Tolbert",
+          "prop": "SB",
+          "g": "KC@COL",
+          "asp": "avila",
+          "hsp": "feltner"
+        },
+        {
+          "p": "Shohei Ohtani",
+          "prop": "HR",
+          "g": "BOS@LAD",
+          "asp": "tolle",
+          "hsp": "yamamoto"
+        }
+      ]
     }
   ]
 }
