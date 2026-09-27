@@ -1,1553 +1,870 @@
 {
-  "date": "2026-08-01",
+  "date": "2026-09-27",
   "bets": [
     {
-      "full_id": "O/1924696/0004435",
-      "id": "#4435",
-      "kind": "6-leg SGP+",
-      "odds": 703527,
-      "wager": 9.0,
-      "payout": 63326.45,
-      "placed": "8/1 4:23PM",
+      "full_id": "O/1924696/0004485",
+      "id": "#4485",
+      "kind": "4-leg parlay",
+      "odds": 59247900,
+      "wager": 0.21,
+      "payout": 124420.8,
+      "placed": "9/27 8:46AM",
       "status": "open",
       "legs": [
         {
           "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
+          "prop": "SB2",
+          "g": "NYM@WSH",
+          "asp": "manaea",
+          "hsp": "herz"
         },
         {
-          "p": "Ronald Acuna Jr.",
-          "prop": "HR",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
+          "p": "Pete Alonso",
+          "prop": "HR2",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
         },
         {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
+          "p": "Bryce Harper",
+          "prop": "HR2",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
         },
         {
-          "p": "Mickey Moniak",
-          "prop": "HR",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        },
-        {
-          "p": "Ryan Jeffers",
-          "prop": "HR",
-          "g": "MIN@SEA",
-          "asp": "prielipp",
-          "hsp": "gilbert"
-        },
-        {
-          "p": "Carson Benge",
-          "prop": "SB",
-          "g": "MIA@NYM",
-          "asp": "phillips",
-          "hsp": "thornton"
+          "p": "Yordan Alvarez",
+          "prop": "HR2",
+          "g": "HOU@ATH",
+          "asp": "lambert",
+          "hsp": "johnson"
         }
       ]
     },
     {
-      "full_id": "us-pa:01kyzf36c5f8fvafxrqmgh537h",
-      "id": "#gh537h",
-      "kind": "5-leg SGP+",
-      "odds": 63193,
-      "wager": 0.09,
-      "payout": 56.96,
-      "placed": "8/1 4:08PM",
+      "full_id": "us-pa:01m3heam5ee2jam7wqzrpn18xj",
+      "id": "#pn18xj",
+      "kind": "3-leg SGP+",
+      "odds": 26932,
+      "wager": 0.12,
+      "payout": 32.44,
+      "placed": "9/27 8:44AM",
       "status": "open",
       "legs": [
         {
-          "p": "Sam Antonacci",
-          "prop": "SB",
-          "g": "CWS@TB",
-          "asp": "hicks",
-          "hsp": "rasmussen"
-        },
-        {
-          "p": "Chandler Simpson",
-          "prop": "SB",
-          "g": "CWS@TB",
-          "asp": "hicks",
-          "hsp": "rasmussen"
-        },
-        {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Ronald Acuna Jr.",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzf05e9fvas6shcsce93dny",
-      "id": "#e93dny",
-      "kind": "6-leg parlay",
-      "odds": 831134,
-      "wager": 0.09,
-      "payout": 748.11,
-      "placed": "8/1 4:07PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Sam Antonacci",
-          "prop": "SB",
-          "g": "CWS@TB",
-          "asp": "hicks",
-          "hsp": "rasmussen"
-        },
-        {
-          "p": "Carson Benge",
-          "prop": "SB",
-          "g": "MIA@NYM",
-          "asp": "phillips",
-          "hsp": "thornton"
+          "p": "Bryce Harper",
+          "prop": "HR",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
         },
         {
           "p": "Trea Turner",
-          "prop": "SB",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
+          "prop": "HR",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
         },
         {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Nico Hoerner",
-          "prop": "SB",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
+          "p": "Jazz Chisholm",
+          "prop": "HR",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
         }
       ]
     },
     {
-      "full_id": "O/1924696/0004432",
-      "id": "#4432",
-      "kind": "10-leg SGP+",
-      "odds": 246673573,
+      "full_id": "us-pa:01m3he9f0yf5s86ym664tevyyt",
+      "id": "#tevyyt",
+      "kind": "3-leg parlay",
+      "odds": 10519,
+      "wager": 0.13,
+      "payout": 13.8,
+      "placed": "9/27 8:43AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Junior Caminero",
+          "prop": "HR",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "HOU@ATH",
+          "asp": "lambert",
+          "hsp": "johnson"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3he7e11eqebj4ywn3xxd1hs",
+      "id": "#xxd1hs",
+      "kind": "2-leg parlay",
+      "odds": 1360,
+      "wager": 0.23,
+      "payout": 3.36,
+      "placed": "9/27 8:42AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@BOS",
+          "asp": "tbd",
+          "hsp": "tbd"
+        },
+        {
+          "p": "Kyle Schwarber",
+          "prop": "HR",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3he61p2fsjvpcke5pyggkcb",
+      "id": "#yggkcb",
+      "kind": "2-leg parlay",
+      "odds": 8230,
+      "wager": 0.47,
+      "payout": 39.15,
+      "placed": "9/27 8:42AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@BOS",
+          "asp": "tbd",
+          "hsp": "tbd"
+        },
+        {
+          "p": "Kyle Schwarber",
+          "prop": "HR2",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004484",
+      "id": "#4484",
+      "kind": "8-leg SGP+",
+      "odds": 10657099,
       "wager": 0.11,
-      "payout": 271341.04,
-      "placed": "8/1 4:05PM",
+      "payout": 11722.92,
+      "placed": "9/27 8:41AM",
       "status": "open",
       "legs": [
         {
-          "p": "Ronald Acuna Jr.",
+          "p": "Kyle Schwarber",
           "prop": "HR",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
         },
         {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Mickey Moniak",
+          "p": "Bryce Harper",
           "prop": "HR",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        },
-        {
-          "p": "Sam Antonacci",
-          "prop": "SB",
-          "g": "CWS@TB",
-          "asp": "hicks",
-          "hsp": "rasmussen"
-        },
-        {
-          "p": "Chandler Simpson",
-          "prop": "SB",
-          "g": "CWS@TB",
-          "asp": "hicks",
-          "hsp": "rasmussen"
-        },
-        {
-          "p": "Carson Benge",
-          "prop": "SB",
-          "g": "MIA@NYM",
-          "asp": "phillips",
-          "hsp": "thornton"
-        },
-        {
-          "p": "Christian Encarnacion-Strand",
-          "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Jose Altuve",
-          "prop": "HR",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
-        },
-        {
-          "p": "Dillon Dingler",
-          "prop": "HR",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzfrzpxerjaxa7qz6yfxqbj",
-      "id": "#yfxqbj",
-      "kind": "5-leg parlay",
-      "odds": 165519,
-      "wager": 0.1,
-      "payout": 165.62,
-      "placed": "8/1 4:20PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Carson Benge",
-          "prop": "SB",
-          "g": "MIA@NYM",
-          "asp": "phillips",
-          "hsp": "thornton"
-        },
-        {
-          "p": "Christian Encarnacion-Strand",
-          "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        },
-        {
-          "p": "Dillon Dingler",
-          "prop": "HR",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        }
-      ]
-    },
-    {
-      "full_id": "O/1924696/0004434",
-      "id": "#4434",
-      "kind": "10-leg SGP+",
-      "odds": 563305153,
-      "wager": 0.1,
-      "payout": 563305.25,
-      "placed": "8/1 4:20PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Christian Encarnacion-Strand",
-          "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
         },
         {
           "p": "Trea Turner",
-          "prop": "SB",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
+          "prop": "HR",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
         },
+        {
+          "p": "Junior Caminero",
+          "prop": "HR",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "HR",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR",
+          "g": "HOU@ATH",
+          "asp": "lambert",
+          "hsp": "johnson"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@BOS",
+          "asp": "tbd",
+          "hsp": "tbd"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3hdyz99fpjrv7xswcg3vv7e",
+      "id": "#g3vv7e",
+      "kind": "7-leg parlay",
+      "odds": 1064985,
+      "wager": 0.13,
+      "payout": 1384.61,
+      "placed": "9/27 8:38AM",
+      "status": "open",
+      "legs": [
         {
           "p": "Nasim Nunez",
           "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
+          "g": "NYM@WSH",
+          "asp": "manaea",
+          "hsp": "herz"
         },
-        {
-          "p": "CJ Abrams",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Ronald Acuna Jr.",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Carson Benge",
-          "prop": "SB",
-          "g": "MIA@NYM",
-          "asp": "phillips",
-          "hsp": "thornton"
-        },
-        {
-          "p": "Jose Ramirez",
-          "prop": "SB",
-          "g": "ARI@CLE",
-          "asp": "drake",
-          "hsp": "messick"
-        },
-        {
-          "p": "Nico Hoerner",
-          "prop": "SB",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        },
-        {
-          "p": "Dillon Dingler",
-          "prop": "HR",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzfp5gpfksabdykgf82qhe4",
-      "id": "#82qhe4",
-      "kind": "Pitcher Special",
-      "odds": 3000,
-      "wager": 0.1,
-      "payout": 3.1,
-      "placed": "8/1 4:19PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Payton Tolle",
-          "prop": "NH5",
-          "g": "BOS@LAD",
-          "asp": "tolle",
-          "hsp": "yamamoto"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzfp5gpfkftyeb9655zv2ef",
-      "id": "#5zv2ef",
-      "kind": "Pitcher Special",
-      "odds": 1100,
-      "wager": 0.1,
-      "payout": 1.2,
-      "placed": "8/1 4:19PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Max Fried",
-          "prop": "K1",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzfp5gpfgktbp3rcbdp9fh2",
-      "id": "#dp9fh2",
-      "kind": "Pitcher Special",
-      "odds": 6500,
-      "wager": 0.1,
-      "payout": 6.6,
-      "placed": "8/1 4:19PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Max Fried",
-          "prop": "NH7",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzfp5gpf7rr0m02wd5x0eeb",
-      "id": "#5x0eeb",
-      "kind": "Pitcher Special",
-      "odds": 2500,
-      "wager": 0.1,
-      "payout": 2.6,
-      "placed": "8/1 4:19PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Parker Messick",
-          "prop": "K1",
-          "g": "ARI@CLE",
-          "asp": "drake",
-          "hsp": "messick"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzfp5gpf6rr40mf2ntvn12x",
-      "id": "#tvn12x",
-      "kind": "Pitcher Special",
-      "odds": 2500,
-      "wager": 0.1,
-      "payout": 2.6,
-      "placed": "8/1 4:19PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Jacob deGrom",
-          "prop": "NH5",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzfp5gpf489dzjz749qg1ht",
-      "id": "#9qg1ht",
-      "kind": "Pitcher Special",
-      "odds": 1800,
-      "wager": 0.1,
-      "payout": 1.9,
-      "placed": "8/1 4:19PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Max Fried",
-          "prop": "NH5",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzfp5gpenprhmyh749ww08c",
-      "id": "#9ww08c",
-      "kind": "Pitcher Special",
-      "odds": 2700,
-      "wager": 0.1,
-      "payout": 2.8,
-      "placed": "8/1 4:19PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Cristopher Sanchez",
-          "prop": "NH5",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzfp5gpek89aswtxjbfzwd3",
-      "id": "#bfzwd3",
-      "kind": "Pitcher Special",
-      "odds": 2200,
-      "wager": 0.1,
-      "payout": 2.3,
-      "placed": "8/1 4:19PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Yoshinobu Yamamoto",
-          "prop": "NH5",
-          "g": "BOS@LAD",
-          "asp": "tolle",
-          "hsp": "yamamoto"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzfp5gpedq81xz7n7m02mk1",
-      "id": "#m02mk1",
-      "kind": "Pitcher Special",
-      "odds": 3500,
-      "wager": 0.1,
-      "payout": 3.6,
-      "placed": "8/1 4:19PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Parker Messick",
-          "prop": "NH5",
-          "g": "ARI@CLE",
-          "asp": "drake",
-          "hsp": "messick"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzfm4d5fzts86n1jpxj6pqf",
-      "id": "#xj6pqf",
-      "kind": "5-leg SGP+",
-      "odds": 651587,
-      "wager": 0.09,
-      "payout": 586.52,
-      "placed": "8/1 4:18PM",
-      "status": "open",
-      "legs": [
         {
           "p": "Jazz Chisholm",
           "prop": "SB",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
         },
         {
           "p": "Pete Crow-Armstrong",
           "prop": "SB",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Trea Turner",
-          "prop": "SB",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "CJ Abrams",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB2",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzfjq30exhb79emcnda8xmg",
-      "id": "#da8xmg",
-      "kind": "6-leg parlay",
-      "odds": 771610,
-      "wager": 0.1,
-      "payout": 771.71,
-      "placed": "8/1 4:17PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Carson Benge",
-          "prop": "SB",
-          "g": "MIA@NYM",
-          "asp": "phillips",
-          "hsp": "thornton"
-        },
-        {
-          "p": "Trea Turner",
-          "prop": "SB",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Jose Ramirez",
-          "prop": "SB",
-          "g": "ARI@CLE",
-          "asp": "drake",
-          "hsp": "messick"
-        },
-        {
-          "p": "CJ Abrams",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Pete Crow-Armstrong",
-          "prop": "SB",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        }
-      ]
-    },
-    {
-      "full_id": "O/1924696/0004433",
-      "id": "#4433",
-      "kind": "8-leg parlay",
-      "odds": 37557734,
-      "wager": 1.0,
-      "payout": 375578.34,
-      "placed": "8/1 4:15PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Carson Benge",
-          "prop": "SB",
-          "g": "MIA@NYM",
-          "asp": "phillips",
-          "hsp": "thornton"
-        },
-        {
-          "p": "Christian Encarnacion-Strand",
-          "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Jose Altuve",
-          "prop": "HR",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
-        },
-        {
-          "p": "Nico Hoerner",
-          "prop": "SB",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Jose Ramirez",
-          "prop": "SB",
-          "g": "ARI@CLE",
-          "asp": "drake",
-          "hsp": "messick"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        },
-        {
-          "p": "Dillon Dingler",
-          "prop": "HR",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzff152fg38g3vm21y5fdj5",
-      "id": "#y5fdj5",
-      "kind": "6-leg SGP+",
-      "odds": 1475195,
-      "wager": 0.11,
-      "payout": 1622.83,
-      "placed": "8/1 4:15PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "CJ Abrams",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Christian Encarnacion-Strand",
-          "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Jose Altuve",
-          "prop": "HR",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
-        },
-        {
-          "p": "Nico Hoerner",
-          "prop": "SB",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Dillon Dingler",
-          "prop": "HR",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzf7djdf26r32psc5cszwgk",
-      "id": "#cszwgk",
-      "kind": "5-leg parlay",
-      "odds": 158658,
-      "wager": 0.09,
-      "payout": 142.88,
-      "placed": "8/1 4:11PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Christian Encarnacion-Strand",
-          "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Nico Hoerner",
-          "prop": "SB",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        },
-        {
-          "p": "Dillon Dingler",
-          "prop": "HR",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        }
-      ]
-    },
-    {
-      "full_id": "O/1924696/0004431",
-      "id": "#4431",
-      "kind": "9-leg SGP+",
-      "odds": 498563864,
-      "wager": 0.09,
-      "payout": 448707.57,
-      "placed": "8/1 4:02PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Ronald Acuna Jr.",
-          "prop": "HR",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Luis Garcia",
-          "prop": "HR",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Dillon Dingler",
-          "prop": "HR",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        },
-        {
-          "p": "Nick Kurtz",
-          "prop": "HR",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        },
-        {
-          "p": "Ryan Jeffers",
-          "prop": "HR",
-          "g": "MIN@SEA",
-          "asp": "prielipp",
-          "hsp": "gilbert"
-        },
-        {
-          "p": "Christian Encarnacion-Strand",
-          "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Jose Altuve",
-          "prop": "HR",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
-        },
-        {
-          "p": "Ian Happ",
-          "prop": "HR",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Mickey Moniak",
-          "prop": "HR",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        }
-      ]
-    },
-    {
-      "full_id": "O/1924696/0004430",
-      "id": "#4430",
-      "kind": "7-leg SGP+",
-      "odds": 1875493,
-      "wager": 0.11,
-      "payout": 2063.15,
-      "placed": "8/1 3:50PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Sam Antonacci",
-          "prop": "SB",
-          "g": "CWS@TB",
-          "asp": "hicks",
-          "hsp": "rasmussen"
-        },
-        {
-          "p": "Chandler Simpson",
-          "prop": "SB",
-          "g": "CWS@TB",
-          "asp": "hicks",
-          "hsp": "rasmussen"
-        },
-        {
-          "p": "Carson Benge",
-          "prop": "SB",
-          "g": "MIA@NYM",
-          "asp": "phillips",
-          "hsp": "thornton"
-        },
-        {
-          "p": "Christian Encarnacion-Strand",
-          "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        },
-        {
-          "p": "Dillon Dingler",
-          "prop": "HR",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyze13vheypv44j67p67zseb",
-      "id": "#67zseb",
-      "kind": "5-leg SGP+",
-      "odds": 66504,
-      "wager": 0.09,
-      "payout": 59.94,
-      "placed": "8/1 3:50PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Sam Antonacci",
-          "prop": "SB",
-          "g": "CWS@TB",
-          "asp": "hicks",
-          "hsp": "rasmussen"
-        },
-        {
-          "p": "Chandler Simpson",
-          "prop": "SB",
-          "g": "CWS@TB",
-          "asp": "hicks",
-          "hsp": "rasmussen"
-        },
-        {
-          "p": "Carson Benge",
-          "prop": "SB",
-          "g": "MIA@NYM",
-          "asp": "phillips",
-          "hsp": "thornton"
-        },
-        {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzdw2xeeba9gd6vwtcm1j9x",
-      "id": "#cm1j9x",
-      "kind": "12-leg SGP+",
-      "odds": 7998,
-      "wager": 0.09,
-      "payout": 7.29,
-      "placed": "8/1 3:47PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Pete Alonso",
-          "prop": "HIT",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Christian Encarnacion-Strand",
-          "prop": "HIT",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Yordan Alvarez",
-          "prop": "HIT",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
-        },
-        {
-          "p": "Jose Altuve",
-          "prop": "HIT",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
-        },
-        {
-          "p": "Ronald Acuna Jr.",
-          "prop": "HIT",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Luis Garcia",
-          "prop": "HIT",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Alex Bregman",
-          "prop": "HIT",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Ian Happ",
-          "prop": "HIT",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Nick Kurtz",
-          "prop": "HIT",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        },
-        {
-          "p": "Dillon Dingler",
-          "prop": "HIT",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        },
-        {
-          "p": "Ryan Jeffers",
-          "prop": "HIT",
-          "g": "MIN@SEA",
-          "asp": "prielipp",
-          "hsp": "gilbert"
-        },
-        {
-          "p": "Mickey Moniak",
-          "prop": "HIT",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        }
-      ]
-    },
-    {
-      "full_id": "O/1924696/0004429",
-      "id": "#4429",
-      "kind": "10-leg SGP+",
-      "odds": 249362741,
-      "wager": 0.09,
-      "payout": 224426.56,
-      "placed": "8/1 3:39PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "CJ Abrams",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Ronald Acuna Jr.",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
+          "g": "CHC@BOS",
+          "asp": "tbd",
+          "hsp": "tbd"
         },
         {
           "p": "Sam Antonacci",
           "prop": "SB",
-          "g": "CWS@TB",
-          "asp": "hicks",
-          "hsp": "rasmussen"
+          "g": "COL@CWS",
+          "asp": "freeland",
+          "hsp": "kay"
         },
         {
-          "p": "Chandler Simpson",
+          "p": "Fernando Tatis Jr.",
           "prop": "SB",
-          "g": "CWS@TB",
-          "asp": "hicks",
-          "hsp": "rasmussen"
+          "g": "ARI@SD",
+          "asp": "soroka",
+          "hsp": "vasquez"
         },
         {
-          "p": "Carson Benge",
+          "p": "Otto Lopez",
           "prop": "SB",
-          "g": "MIA@NYM",
-          "asp": "phillips",
-          "hsp": "thornton"
-        },
-        {
-          "p": "Trea Turner",
-          "prop": "SB",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
+          "g": "ATL@MIA",
+          "asp": "ritchie",
+          "hsp": "junk"
         },
         {
           "p": "Jose Ramirez",
           "prop": "SB",
-          "g": "ARI@CLE",
-          "asp": "drake",
-          "hsp": "messick"
-        },
-        {
-          "p": "Nico Hoerner",
-          "prop": "SB",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
+          "g": "CLE@KC",
+          "asp": "messick",
+          "hsp": "lynch"
         }
       ]
     },
     {
-      "full_id": "us-pa:01kyzefw4gfn3rrewxmpfkjdvw",
-      "id": "#fkjdvw",
-      "kind": "5-leg parlay",
-      "odds": 137646,
-      "wager": 0.09,
-      "payout": 123.97,
-      "placed": "8/1 3:58PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Carson Benge",
-          "prop": "SB",
-          "g": "MIA@NYM",
-          "asp": "phillips",
-          "hsp": "thornton"
-        },
-        {
-          "p": "Christian Encarnacion-Strand",
-          "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        },
-        {
-          "p": "Dillon Dingler",
-          "prop": "HR",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzecn3vevnt8phvh8mhst1t",
-      "id": "#mhst1t",
+      "full_id": "us-pa:01m3hcvg05e4hb3g9gxxrjrmwz",
+      "id": "#rjrmwz",
       "kind": "2-leg parlay",
-      "odds": 729,
-      "wager": 0.09,
-      "payout": 0.75,
-      "placed": "8/1 3:56PM",
+      "odds": 1253,
+      "wager": 0.12,
+      "payout": 1.62,
+      "placed": "9/27 8:18AM",
       "status": "open",
       "legs": [
         {
           "p": "Nasim Nunez",
           "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
+          "g": "NYM@WSH",
+          "asp": "manaea",
+          "hsp": "herz"
         },
         {
-          "p": "Tyler Tolbert",
+          "p": "Sam Antonacci",
           "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
+          "g": "COL@CWS",
+          "asp": "freeland",
+          "hsp": "kay"
         }
       ]
     },
     {
-      "full_id": "us-pa:01kyzeb4t7fdxaj13j7g5yj9sj",
-      "id": "#5yj9sj",
+      "full_id": "us-pa:01m3hcka1aebnt8r80z9mgxghv",
+      "id": "#mgxghv",
+      "kind": "4-leg parlay",
+      "odds": 1859,
+      "wager": 0.1,
+      "payout": 1.96,
+      "placed": "9/27 8:14AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "New York Yankees",
+          "prop": "NA",
+          "txt": "First 5 Innings Result",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Washington Nationals",
+          "prop": "NA",
+          "txt": "First 6 Innings Result",
+          "g": "NYM@WSH",
+          "asp": "manaea",
+          "hsp": "herz"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "NA",
+          "txt": "First 4 Innings Result",
+          "g": "ATL@MIA",
+          "asp": "ritchie",
+          "hsp": "junk"
+        },
+        {
+          "p": "Seattle Mariners",
+          "prop": "NA",
+          "txt": "First 5 Innings Result",
+          "g": "LAA@SEA",
+          "asp": "kikuchi",
+          "hsp": "gilbert"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3hbzecpe6ktm91ptpm4bq0w",
+      "id": "#m4bq0w",
+      "kind": "4-leg parlay",
+      "odds": 1876,
+      "wager": 0.15,
+      "payout": 2.97,
+      "placed": "9/27 8:03AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "New York Yankees",
+          "prop": "NA",
+          "txt": "First 5 Innings Result",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Washington Nationals",
+          "prop": "NA",
+          "txt": "First 6 Innings Result",
+          "g": "NYM@WSH",
+          "asp": "manaea",
+          "hsp": "herz"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "NA",
+          "txt": "First 4 Innings Result",
+          "g": "ATL@MIA",
+          "asp": "ritchie",
+          "hsp": "junk"
+        },
+        {
+          "p": "Seattle Mariners",
+          "prop": "NA",
+          "txt": "First 5 Innings Result",
+          "g": "LAA@SEA",
+          "asp": "kikuchi",
+          "hsp": "gilbert"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h80emcfb7ss9kdrmzv7fj1",
+      "id": "#zv7fj1",
+      "kind": "Single",
+      "odds": 196,
+      "wager": 0.1,
+      "payout": 0.3,
+      "placed": "9/27 6:54AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Kyle Schwarber",
+          "prop": "HR",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h7zwftesr83hd0p648k3z6",
+      "id": "#48k3z6",
+      "kind": "3-leg SGP",
+      "odds": 7732,
+      "wager": 0.3,
+      "payout": 23.5,
+      "placed": "9/27 6:53AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Kyle Schwarber",
+          "prop": "HR",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Bryce Harper",
+          "prop": "HR",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "HR",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h7y760f9ban3bekb4v9asd",
+      "id": "#4v9asd",
       "kind": "2-leg SGP",
-      "odds": 2575,
-      "wager": 0.13,
-      "payout": 3.48,
-      "placed": "8/1 3:55PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Ronald Acuna Jr.",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Ronald Acuna Jr.",
-          "prop": "HR",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyze9kpgfk9v73ddr769nrtm",
-      "id": "#69nrtm",
-      "kind": "4-leg SGP+",
-      "odds": 132932,
-      "wager": 0.09,
-      "payout": 119.73,
-      "placed": "8/1 3:54PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Ian Happ",
-          "prop": "HR",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Nico Hoerner",
-          "prop": "SB",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Pete Alonso",
-          "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzdyp94e91rz3sm32hv9c6z",
-      "id": "#hv9c6z",
-      "kind": "2-leg parlay",
-      "odds": 2716,
-      "wager": 0.09,
-      "payout": 2.53,
-      "placed": "8/1 3:48PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Christian Encarnacion-Strand",
-          "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
-        },
-        {
-          "p": "Dillon Dingler",
-          "prop": "HR",
-          "g": "DET@ATH",
-          "asp": "valdez",
-          "hsp": "perkins"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzmva65f0ebkxz7v6tenfgn",
-      "id": "#tenfgn",
-      "kind": "Single",
-      "odds": 1000,
+      "odds": 1342,
       "wager": 0.1,
-      "payout": 1.1,
-      "placed": "8/1 5:49PM",
+      "payout": 1.44,
+      "placed": "9/27 6:52AM",
       "status": "open",
       "legs": [
         {
-          "p": "Ian Happ",
+          "p": "Junior Caminero",
           "prop": "HR",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Kyle Schwarber",
+          "prop": "HR",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
         }
       ]
     },
     {
-      "full_id": "us-pa:01kyzmqeswem8tf06ps3r1ad73",
-      "id": "#r1ad73",
+      "full_id": "us-pa:01m3h7xjmbe84shctcyh660v0h",
+      "id": "#660v0h",
       "kind": "Single",
-      "odds": 600,
-      "wager": 0.32,
-      "payout": 2.24,
-      "placed": "8/1 5:47PM",
+      "odds": 5000,
+      "wager": 0.1,
+      "payout": 5.1,
+      "placed": "9/27 6:52AM",
       "status": "open",
       "legs": [
         {
-          "p": "Christian Encarnacion-Strand",
-          "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
+          "p": "Junior Caminero",
+          "prop": "HR2",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
         }
       ]
     },
     {
-      "full_id": "us-pa:01kyzmpg3be9htcjscmvcwjd6k",
-      "id": "#cwjd6k",
-      "kind": "Single",
-      "odds": 240,
-      "wager": 0.44,
-      "payout": 1.5,
-      "placed": "8/1 5:46PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Yordan Alvarez",
-          "prop": "HR",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzmny5zfekt9nt8wp10wrek",
-      "id": "#10wrek",
+      "full_id": "us-pa:01m3h7x6t6eyma1zvq8dg5ntpg",
+      "id": "#g5ntpg",
       "kind": "Single",
       "odds": 680,
-      "wager": 0.27,
-      "payout": 2.11,
-      "placed": "8/1 5:46PM",
+      "wager": 0.2,
+      "payout": 1.56,
+      "placed": "9/27 6:52AM",
       "status": "open",
       "legs": [
-        {
-          "p": "Jose Altuve",
-          "prop": "HR",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
-        }
-      ]
-    },
-    {
-      "full_id": "us-pa:01kyzmnh1bfx3vd38qwf8yx4sp",
-      "id": "#8yx4sp",
-      "kind": "5-leg SGP+",
-      "odds": 285174,
-      "wager": 0.11,
-      "payout": 313.82,
-      "placed": "8/1 5:46PM",
-      "status": "open",
-      "legs": [
-        {
-          "p": "Drake Baldwin",
-          "prop": "HR",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Ronald Acuna Jr.",
-          "prop": "HR",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Jose Altuve",
-          "prop": "HR",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
-        },
-        {
-          "p": "Yordan Alvarez",
-          "prop": "HR",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
-        },
         {
           "p": "Trea Turner",
           "prop": "HR",
-          "g": "PHI@BAL",
-          "asp": "sanchez",
-          "hsp": "baz"
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
         }
       ]
     },
     {
-      "full_id": "O/1924696/0004436",
-      "id": "#4436",
-      "kind": "4-leg parlay",
-      "odds": 11050,
+      "full_id": "us-pa:01m3h7w17hfjra79khez05qgs0",
+      "id": "#05qgs0",
+      "kind": "4-leg SGP+",
+      "odds": 42417,
+      "wager": 0.24,
+      "payout": 102.04,
+      "placed": "9/27 6:51AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Alonso",
+          "prop": "HR",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "HR",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB",
+          "g": "NYM@WSH",
+          "asp": "manaea",
+          "hsp": "herz"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h7tzn2exhb1dfhatye6t1r",
+      "id": "#ye6t1r",
+      "kind": "3-leg parlay",
+      "odds": 298900,
+      "wager": 0.1,
+      "payout": 299.0,
+      "placed": "9/27 6:51AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB2",
+          "g": "NYM@WSH",
+          "asp": "manaea",
+          "hsp": "herz"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "RBI2",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Bryce Harper",
+          "prop": "HR2",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h7bbs1f6gr54czbrwjgewm",
+      "id": "#wjgewm",
+      "kind": "2-leg parlay",
+      "odds": 211500,
       "wager": 0.22,
-      "payout": 31.83,
-      "placed": "8/1 5:39PM",
+      "payout": 465.52,
+      "placed": "9/27 6:42AM",
       "status": "open",
       "legs": [
         {
-          "p": "Yordan Alvarez",
-          "prop": "HR",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
+          "p": "Pete Alonso",
+          "prop": "HR2",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
         },
         {
-          "p": "Nasim Nunez",
-          "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        },
-        {
-          "p": "Shohei Ohtani",
-          "prop": "HR",
-          "g": "BOS@LAD",
-          "asp": "tolle",
-          "hsp": "yamamoto"
+          "p": "Bryce Harper",
+          "prop": "HR2",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
         }
       ]
     },
     {
-      "full_id": "us-pa:01kyzm8rfwfhxbe4wnd0d1y09t",
-      "id": "#d1y09t",
-      "kind": "6-leg SGP+",
-      "odds": 275004,
-      "wager": 0.11,
-      "payout": 302.62,
-      "placed": "8/1 5:39PM",
+      "full_id": "us-pa:01m3h79e4vf58vst26n8bg8kqg",
+      "id": "#bg8kqg",
+      "kind": "2-leg parlay",
+      "odds": 45900,
+      "wager": 0.22,
+      "payout": 101.2,
+      "placed": "9/27 6:41AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB2",
+          "g": "NYM@WSH",
+          "asp": "manaea",
+          "hsp": "herz"
+        },
+        {
+          "p": "Pete Alonso",
+          "prop": "HR2",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h76xbffxbazj6pen0qes0g",
+      "id": "#0qes0g",
+      "kind": "Single",
+      "odds": 900,
+      "wager": 0.2,
+      "payout": 2.0,
+      "placed": "9/27 6:40AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB2",
+          "g": "NYM@WSH",
+          "asp": "manaea",
+          "hsp": "herz"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h76xbff7vazbxqqphzxt6g",
+      "id": "#hzxt6g",
+      "kind": "Single",
+      "odds": 2200,
+      "wager": 0.2,
+      "payout": 4.6,
+      "placed": "9/27 6:40AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "ARI@SD",
+          "asp": "soroka",
+          "hsp": "vasquez"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h76aknf8nrc29g3gpaqcgm",
+      "id": "#paqcgm",
+      "kind": "2-leg parlay",
+      "odds": 22900,
+      "wager": 0.22,
+      "payout": 50.6,
+      "placed": "9/27 6:39AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nasim Nunez",
+          "prop": "SB2",
+          "g": "NYM@WSH",
+          "asp": "manaea",
+          "hsp": "herz"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "ARI@SD",
+          "asp": "soroka",
+          "hsp": "vasquez"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h6rdqrfedrdfknyhtdfdec",
+      "id": "#tdfdec",
+      "kind": "Single",
+      "odds": 4500,
+      "wager": 0.3,
+      "payout": 13.8,
+      "placed": "9/27 6:32AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryce Harper",
+          "prop": "HR2",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004482",
+      "id": "#4482",
+      "kind": "3-leg parlay",
+      "odds": 4926500,
+      "wager": 0.1,
+      "payout": 4926.6,
+      "placed": "9/27 4:48AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Alonso",
+          "prop": "HR2",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        },
+        {
+          "p": "Junior Caminero",
+          "prop": "HR2",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR2",
+          "g": "HOU@ATH",
+          "asp": "lambert",
+          "hsp": "johnson"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h0r7j2fz69hf01mha9frtz",
+      "id": "#a9frtz",
+      "kind": "2-leg parlay",
+      "odds": 107000,
+      "wager": 0.1,
+      "payout": 107.1,
+      "placed": "9/27 4:47AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Junior Caminero",
+          "prop": "HR2",
+          "g": "TB@PHI",
+          "asp": "martinez",
+          "hsp": "wheeler"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HR2",
+          "g": "HOU@ATH",
+          "asp": "lambert",
+          "hsp": "johnson"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h0m8trfxast83wn0sbsm4p",
+      "id": "#sbsm4p",
+      "kind": "Single",
+      "odds": 550,
+      "wager": 0.13,
+      "payout": 0.85,
+      "placed": "9/27 4:45AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Alonso",
+          "prop": "RBI2",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h0kq67ecbtvpq53bzgz128",
+      "id": "#zgz128",
+      "kind": "Single",
+      "odds": 4500,
+      "wager": 0.1,
+      "payout": 4.6,
+      "placed": "9/27 4:44AM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Alonso",
+          "prop": "HR2",
+          "g": "BAL@NYY",
+          "asp": "baz",
+          "hsp": "rodriguez"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3h0k7xje8kbr790wxj3eknd",
+      "id": "#j3eknd",
+      "kind": "Single",
+      "odds": 194,
+      "wager": 2.6,
+      "payout": 7.64,
+      "placed": "9/27 4:44AM",
       "status": "open",
       "legs": [
         {
           "p": "Nasim Nunez",
           "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
-        },
+          "g": "NYM@WSH",
+          "asp": "manaea",
+          "hsp": "herz"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3gmd3m9fra8w0rhc3akekp2",
+      "id": "#akekp2",
+      "kind": "2-leg parlay",
+      "odds": 2077,
+      "wager": 0.1,
+      "payout": 2.18,
+      "placed": "9/27 1:11AM",
+      "status": "open",
+      "legs": [
         {
-          "p": "CJ Abrams",
+          "p": "Nasim Nunez",
           "prop": "SB",
-          "g": "WSH@ATL",
-          "asp": "mikolas",
-          "hsp": "lopez"
+          "g": "NYM@WSH",
+          "asp": "manaea",
+          "hsp": "herz"
         },
         {
-          "p": "Yordan Alvarez",
-          "prop": "HR",
-          "g": "TEX@HOU",
-          "asp": "degrom",
-          "hsp": "blanco"
-        },
-        {
-          "p": "Nico Hoerner",
+          "p": "Sam Antonacci",
           "prop": "SB",
-          "g": "NYY@CHC",
-          "asp": "fried",
-          "hsp": "peterson"
-        },
-        {
-          "p": "Tyler Tolbert",
-          "prop": "SB",
-          "g": "KC@COL",
-          "asp": "avila",
-          "hsp": "feltner"
-        },
-        {
-          "p": "Shohei Ohtani",
-          "prop": "HR",
-          "g": "BOS@LAD",
-          "asp": "tolle",
-          "hsp": "yamamoto"
+          "g": "COL@CWS",
+          "asp": "freeland",
+          "hsp": "kay"
         }
       ]
     }
