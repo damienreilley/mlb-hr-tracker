@@ -99,7 +99,7 @@ def prev_team(lines,i):
     j=i-1
     while j>=0:
         if team_code(lines[j]): return lines[j].split(" (")[0].strip()
-        if lines[j] not in ("Moneyline","Void") and not re.match(r"^[+-]\d+$", lines[j]) and lines[j]!="First 5 Innings Result": break
+        if lines[j] not in ("Moneyline","Void") and not re.match(r"^[+-]\d+$", lines[j]) and not re.match(r"^First \d+ Innings Result$", lines[j]): break
         j-=1
     return "??"
 def money_before(lines,label):
@@ -110,6 +110,7 @@ def money_before(lines,label):
     # belongs to that partner, so we take the other side. Case-insensitive.
     pat=r"\$\s*([\d,]+\.\d{2})"
     def val(s):
+        if "cash out" in s.lower(): return None   # 2026-09-27: 'Cash out $x' line is not wager/payout
         m=re.search(pat,s); return float(m.group(1).replace(",","")) if m else None
     def is_lbl(s):
         s=s.lower(); return ("total wager" in s) or ("total payout" in s) or ("returned" in s)
@@ -134,7 +135,7 @@ def is_selection_subject(lines,i):
     if j<len(lines) and re.match(r"^[+-]\d+$", lines[j]): j+=1
     if j>=len(lines): return False
     nx=lines[j]
-    return nx=="Moneyline" or prop_code(nx) is not None or nx=="First 5 Innings Result" or bool(re.match(r"^Race To \d+ Runs$", nx))
+    return nx=="Moneyline" or prop_code(nx) is not None or bool(re.match(r"^First \d+ Innings Result$", nx)) or bool(re.match(r"^Race To \d+ Runs$", nx))
 
 def void_around(lines,lo,hi):
     # FanDuel marks a voided leg with a standalone 'Void' token where the leg odds go.
@@ -196,8 +197,8 @@ def tokenize(lines):
             d={"p":prev_team(lines,i),"prop":"ML"}
             if void_around(lines,i,i): d["void"]=True
             toks.append(("LEG",d)); i+=1; continue
-        if ln=="First 5 Innings Result":
-            toks.append(("LEG",{"p":prev_team(lines,i),"prop":"NA","txt":"First 5 Innings Result"})); i+=1; continue
+        if re.match(r"^First \d+ Innings Result$", ln):   # 2026-09-27: any First N Innings
+            toks.append(("LEG",{"p":prev_team(lines,i),"prop":"NA","txt":ln})); i+=1; continue
         if ln.strip().lower()=="correct score":
             # Correct Score (2026-07-23, Backlog #24): selection sits 1-3 lines back as
             # "<Team> H-A" (e.g. "Toronto Blue Jays 8-3"). No grader yet -> NA/manual,
