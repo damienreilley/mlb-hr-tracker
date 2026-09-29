@@ -3732,6 +3732,496 @@
           "hsp": "blubaugh"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01m3qg99myfd8sjb1gb5yc89nf",
+      "id": "#yc89nf",
+      "kind": "Single",
+      "odds": 40000,
+      "wager": 0.25,
+      "payout": 100.25,
+      "placed": "9/29 5:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Yordan Alvarez",
+          "prop": "NA",
+          "txt": "TO HIT 3+ HOME RUNS (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qg7w9cft5rghybvc8nqsrb",
+      "id": "#8nqsrb",
+      "kind": "2-leg SGP",
+      "odds": 7246,
+      "wager": 0.12,
+      "payout": 8.82,
+      "placed": "9/29 5:13PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Isaac Paredes - Extra Base Hit (Double/Triple/Home Run)",
+          "prop": "NA",
+          "txt": "1st PA (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Yordan Alvarez - Extra Base Hit (Double/Triple/Home Run)",
+          "prop": "NA",
+          "txt": "1st PA (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qg6mtvfxpteymr8ghjgap3",
+      "id": "#hjgap3",
+      "kind": "Single",
+      "odds": 700,
+      "wager": 0.2,
+      "payout": 1.6,
+      "placed": "9/29 5:12PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Colson Montgomery - Extra Base Hit (Double/Triple/Home Run)",
+          "prop": "NA",
+          "txt": "1st PA (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qg6cmqfnkba4zyyw69e3gp",
+      "id": "#69e3gp",
+      "kind": "3-leg SGP+",
+      "odds": 32465,
+      "wager": 0.14,
+      "payout": 45.59,
+      "placed": "9/29 5:12PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Christian Walker",
+          "prop": "HR",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Munetaka Murakami - Extra Base Hit (Double/Triple/Home Run)",
+          "prop": "NA",
+          "txt": "1st PA (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HR",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfve6cezmrpfx0msddcdjd",
+      "id": "#ddcdjd",
+      "kind": "3-leg SGP",
+      "odds": 5920,
+      "wager": 0.13,
+      "payout": 7.83,
+      "placed": "9/29 5:06PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Isaac Paredes",
+          "prop": "HRR4",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HRR4",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfte73e9hawdkvn7p6wcxw",
+      "id": "#p6wcxw",
+      "kind": "2-leg SGP",
+      "odds": 2074,
+      "wager": 0.13,
+      "payout": 2.83,
+      "placed": "9/29 5:06PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Isaac Paredes",
+          "prop": "HRR4",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qft78jftn9j3hz1ykh5671",
+      "id": "#kh5671",
+      "kind": "3-leg SGP",
+      "odds": 32087,
+      "wager": 0.14,
+      "payout": 45.06,
+      "placed": "9/29 5:06PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB2",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Isaac Paredes",
+          "prop": "HRR4",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfqjg9erxrtw2zad91fc6v",
+      "id": "#91fc6v",
+      "kind": "Single",
+      "odds": 850,
+      "wager": 0.17,
+      "payout": 1.62,
+      "placed": "9/29 5:04PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jeremy Pena",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfqbvqemxvq8ymxb9w2zzj",
+      "id": "#9w2zzj",
+      "kind": "Single",
+      "odds": 700,
+      "wager": 0.2,
+      "payout": 1.6,
+      "placed": "9/29 5:04PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Yordan Alvarez",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfq696fx2r78k8yraqy893",
+      "id": "#aqy893",
+      "kind": "Single",
+      "odds": 700,
+      "wager": 0.2,
+      "payout": 1.6,
+      "placed": "9/29 5:04PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Miguel Vargas",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qg00jhf6t93w7bc6am73qf",
+      "id": "#am73qf",
+      "kind": "Single",
+      "odds": 650,
+      "wager": 0.1,
+      "payout": 0.75,
+      "placed": "9/29 5:09PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ben Rice",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfpa79f1ns5cabf9vz1j5v",
+      "id": "#vz1j5v",
+      "kind": "Single",
+      "odds": 650,
+      "wager": 0.1,
+      "payout": 0.75,
+      "placed": "9/29 5:03PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Munetaka Murakami",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfp2x3fr08zrbykdbt19er",
+      "id": "#bt19er",
+      "kind": "Single",
+      "odds": 1100,
+      "wager": 0.1,
+      "payout": 1.2,
+      "placed": "9/29 5:03PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Christian Walker",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfns07fefr8waf88b1jgz2",
+      "id": "#b1jgz2",
+      "kind": "Single",
+      "odds": 1500,
+      "wager": 0.2,
+      "payout": 3.2,
+      "placed": "9/29 5:03PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Sam Antonacci",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3q86rjmf2gbw9cb82v7t76r",
+      "id": "#v7t76r",
+      "kind": "Single",
+      "odds": 800,
+      "wager": 0.15,
+      "payout": 1.35,
+      "placed": "9/29 2:53PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Yordan Alvarez - Extra Base Hit (Double/Triple/Home Run)",
+          "prop": "NA",
+          "txt": "1st PA (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3q86cb1f69rfze57d2j7fgt",
+      "id": "#2j7fgt",
+      "kind": "Single",
+      "odds": 850,
+      "wager": 0.25,
+      "payout": 2.38,
+      "placed": "9/29 2:52PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Munetaka Murakami - Extra Base Hit (Double/Triple/Home Run)",
+          "prop": "NA",
+          "txt": "1st PA (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3q85rx8eegrewvn6b00w5t3",
+      "id": "#00w5t3",
+      "kind": "Single",
+      "odds": 800,
+      "wager": 0.12,
+      "payout": 1.08,
+      "placed": "9/29 2:52PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Miguel Vargas - Extra Base Hit (Double/Triple/Home Run)",
+          "prop": "NA",
+          "txt": "1st PA (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3q85hakerb99j57txc7551q",
+      "id": "#c7551q",
+      "kind": "Single",
+      "odds": 850,
+      "wager": 0.12,
+      "payout": 1.14,
+      "placed": "9/29 2:52PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jeremy Pena - Extra Base Hit (Double/Triple/Home Run)",
+          "prop": "NA",
+          "txt": "1st PA (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3q6x3s6f2c8snwtz0w5xhgx",
+      "id": "#w5xhgx",
+      "kind": "3-leg SGP",
+      "odds": 25726,
+      "wager": 0.1,
+      "payout": 25.83,
+      "placed": "9/29 2:30PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Miguel Vargas - Extra Base Hit (Double/Triple/Home Run)",
+          "prop": "NA",
+          "txt": "1st PA (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Jeremy Pena - Extra Base Hit (Double/Triple/Home Run)",
+          "prop": "NA",
+          "txt": "1st PA (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Isaac Paredes - Extra Base Hit (Double/Triple/Home Run)",
+          "prop": "NA",
+          "txt": "1st PA (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3q2c35gebgab88p4xckw08z",
+      "id": "#ckw08z",
+      "kind": "4-leg SGP+",
+      "odds": 4952,
+      "wager": 0.1,
+      "payout": 5.05,
+      "placed": "9/29 1:11PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "HRR4",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Cody Bellinger",
+          "prop": "HRR2",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
     }
   ]
 }

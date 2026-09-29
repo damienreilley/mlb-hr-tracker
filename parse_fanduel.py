@@ -25,7 +25,7 @@ PROP_MAP = {
  "To Record A Run":"RUN","To Record 2+ Runs":"RUN2","To Record 3+ Runs":"RUN3",
  "To Record 2+ Total Bases":"TB2","To Record 3+ Total Bases":"TB3",
  "To Record 4+ Total Bases":"TB","To Record 5+ Total Bases":"TB5",
- "To Record 2+ Hits + Runs + RBIs":"HRR2","Player To Record 2+ Hits + Runs + RBIs":"HRR2","To Record 3+ Hits + Runs + RBIs":"HRR3","Player To Record 3+ Hits + Runs + RBIs":"HRR3",
+ "To Record 2+ Hits + Runs + RBIs":"HRR2","Player To Record 2+ Hits + Runs + RBIs":"HRR2","To Record 3+ Hits + Runs + RBIs":"HRR3","Player To Record 3+ Hits + Runs + RBIs":"HRR3","To Record 4+ Hits + Runs + RBIs":"HRR4","Player To Record 4+ Hits + Runs + RBIs":"HRR4",
  # First-plate-appearance HR (2026-07-29, Backlog #26). The ENGINE has graded FPA all
  # along (fpaDone/fpaHR off allPlays, label "1st-PA HR", own colour+category) - only the
  # parser phrase mapping was missing, so the leg was DROPPED and the bet held on a leg-count
@@ -188,6 +188,21 @@ def tokenize(lines):
             d={"p":prev_name(lines,i),"prop":"NA","txt":"First HR of game (manual/FD)"}
             if void_around(lines,i,i): d["void"]=True
             toks.append(("LEG",d)); i+=1; continue
+        if re.match(r"^to hit \d+\+ home runs$", ln.strip().lower()) and prop_code(ln) is None:
+            # 2026-09-29: "To Hit 2+ Home Runs" maps via PROP_MAP; higher counts
+            # (3+ etc.) have no engine grader yet -> manual/NA (display + settle on FD)
+            # rather than DROP the whole single as UNPARSED.
+            d={"p":prev_name(lines,i),"prop":"NA","txt":ln.strip()+" (manual/FD)"}
+            if void_around(lines,i,i): d["void"]=True
+            toks.append(("LEG",d)); i+=1; continue
+        if re.match(r"^1st pa\b", ln.strip().lower()):
+            # 2026-09-29: first-plate-appearance markets ("1st PA - <Player>", with the
+            # selection e.g. "<Player> - Extra Base Hit (Double/Triple/Home Run)" on the
+            # line above). Not gradable from a box score (needs play-by-play first-PA
+            # result) -> manual/NA. Selection text rides on prev_name.
+            d={"p":prev_name(lines,i),"prop":"NA","txt":"1st PA (manual/FD)"}
+            if void_around(lines,i,i): d["void"]=True
+            toks.append(("LEG",d)); i+=1; continue
         pc=prop_code(ln)
         if pc is not None:
             d={"p":prev_name(lines,i),"prop":pc}
@@ -333,15 +348,29 @@ def parse_bet(lines):
 
 SINGLE_MARKETS = ("correct score",)   # market-label lines that stand in for a prop code
 
+def is_single_market(s):
+    # The market/prop line of a straight single (the line after the bare +odds).
+    # MUST mirror the labels tokenize() can turn into a leg, so the block splitter
+    # and the tokenizer agree on what a single looks like. Extended 2026-09-29:
+    # live-game playoff singles ("To Hit First Home Run", "To Hit N+ Home Runs",
+    # "1st PA - ..." first-plate-appearance markets) are handled specially in
+    # tokenize() but were absent here, so single_start() dropped them as UNPARSED.
+    s2 = s.strip().lower()
+    if prop_code(s) is not None: return True
+    if s2 in SINGLE_MARKETS: return True
+    if s2 == "to hit first home run": return True
+    if re.match(r"^to hit \d+\+ home runs$", s2): return True
+    if re.match(r"^1st pa\b", s2): return True
+    return False
+
 def single_start(b):
     # Straight-single fallback anchor (2026-07-18, Backlog #23): a plain single has
     # no is_header line (player / +odds / prop shape), so header-less blocks were
     # silently DROPPED before parse_bet - invisible to the GATE. Anchor at the
-    # selection line: b[i+1] is bare +odds AND b[i+2] is a known prop OR a known
-    # game-market label (Correct Score - added 2026-07-23, Backlog #24).
+    # selection line: b[i+1] is bare +odds AND b[i+2] is a recognized single market.
     for i in range(len(b)-2):
         if not re.fullmatch(r"\+\d+", b[i+1]): continue
-        if prop_code(b[i+2]) is not None or b[i+2].strip().lower() in SINGLE_MARKETS:
+        if is_single_market(b[i+2]):
             return i
     return None
 
