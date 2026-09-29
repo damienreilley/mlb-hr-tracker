@@ -3389,6 +3389,349 @@
           "hsp": "blubaugh"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01m3qgaktbe2es3np98qj2cxv3",
+      "id": "#j2cxv3",
+      "kind": "3-leg parlay",
+      "odds": 575,
+      "wager": 0.1,
+      "payout": 0.68,
+      "placed": "9/29 5:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Houston Astros",
+          "prop": "ML",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "New York Yankees",
+          "prop": "ML",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Chicago Cubs",
+          "prop": "ML",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qg9p72f9frsvnba5nbtzp7",
+      "id": "#nbtzp7",
+      "kind": "Single",
+      "odds": 6000,
+      "wager": 0.1,
+      "payout": 6.1,
+      "placed": "9/29 5:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Christian Walker",
+          "prop": "HR2",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qg1jmwezrtwfkw9saahx6j",
+      "id": "#aahx6j",
+      "kind": "Single",
+      "odds": 6000,
+      "wager": 0.2,
+      "payout": 12.2,
+      "placed": "9/29 5:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB2",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfzs58e4wsk9rg1xa289hh",
+      "id": "#a289hh",
+      "kind": "3-leg SGP+",
+      "odds": 42487,
+      "wager": 0.2,
+      "payout": 85.18,
+      "placed": "9/29 5:09PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Roman Anthony",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfzbdxemzt921y3kn0rkgs",
+      "id": "#n0rkgs",
+      "kind": "3-leg SGP+",
+      "odds": 35389,
+      "wager": 0.1,
+      "payout": 35.49,
+      "placed": "9/29 5:08PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Ben Rice",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfyktvf5ss5qevmrzpfpnm",
+      "id": "#zpfpnm",
+      "kind": "3-leg SGP+",
+      "odds": 35389,
+      "wager": 0.2,
+      "payout": 70.98,
+      "placed": "9/29 5:08PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Ben Rice",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfy5h7fep9ayg9nx3mqyd2",
+      "id": "#3mqyd2",
+      "kind": "2-leg parlay",
+      "odds": 5900,
+      "wager": 0.1,
+      "payout": 6.0,
+      "placed": "9/29 5:08PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Yordan Alvarez",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Ben Rice",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfwrqmezwr0nwzr4agw7h9",
+      "id": "#agw7h9",
+      "kind": "2-leg parlay",
+      "odds": 11900,
+      "wager": 0.17,
+      "payout": 20.4,
+      "placed": "9/29 5:07PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Sam Antonacci",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Ben Rice",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qfr90yfyg8vebkhptg7h3p",
+      "id": "#tg7h3p",
+      "kind": "2-leg SGP",
+      "odds": 7143,
+      "wager": 0.2,
+      "payout": 14.49,
+      "placed": "9/29 5:04PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jeremy Pena",
+          "prop": "HRR2",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB2",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3q949ttebpbv57p72430e47",
+      "id": "#430e47",
+      "kind": "Single",
+      "odds": 420,
+      "wager": 0.19,
+      "payout": 0.99,
+      "placed": "9/29 3:09PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Miguel Vargas",
+          "prop": "HR",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3q9440wed8vvjvy2sgz42j7",
+      "id": "#gz42j7",
+      "kind": "Single",
+      "odds": 4500,
+      "wager": 0.1,
+      "payout": 4.6,
+      "placed": "9/29 3:09PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Miguel Vargas",
+          "prop": "HR2",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3q891xvfwfbwsjtf8vbe18n",
+      "id": "#vbe18n",
+      "kind": "5-leg SGP",
+      "odds": 14359,
+      "wager": 0.1,
+      "payout": 14.46,
+      "placed": "9/29 2:54PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "HRR3",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Isaac Paredes",
+          "prop": "HRR3",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        },
+        {
+          "p": "Yordan Alvarez",
+          "prop": "HRR2",
+          "g": "CWS@HOU",
+          "asp": "smith",
+          "hsp": "blubaugh"
+        }
+      ]
     }
   ]
 }
