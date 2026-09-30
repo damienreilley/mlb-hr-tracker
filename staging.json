@@ -6075,6 +6075,295 @@
           "hsp": "schlittler"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01m3r0tknqfxnrrnpg78b1sbc9",
+      "id": "#b1sbc9",
+      "kind": "4-leg SGP",
+      "odds": 33757,
+      "wager": 0.11,
+      "payout": 37.24,
+      "placed": "9/29 10:03PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0t55wf0f89hsyp2vsjkpk",
+      "id": "#vsjkpk",
+      "kind": "2-leg SGP",
+      "odds": 32089,
+      "wager": 0.1,
+      "payout": 32.19,
+      "placed": "9/29 10:03PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Samad Taylor",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0qh5fezjtyj8z5nvkwpxx",
+      "id": "#vkwpxx",
+      "kind": "2-leg SGP",
+      "odds": 30576,
+      "wager": 0.12,
+      "payout": 36.81,
+      "placed": "9/29 10:01PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0q8w0ett9v8h1xrpfn0wz",
+      "id": "#pfn0wz",
+      "kind": "2-leg SGP",
+      "odds": 30576,
+      "wager": 0.1,
+      "payout": 30.68,
+      "placed": "9/29 10:01PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0q1d8exq993be8xngtg3q",
+      "id": "#ngtg3q",
+      "kind": "2-leg SGP",
+      "odds": 2909,
+      "wager": 0.1,
+      "payout": 3.01,
+      "placed": "9/29 10:01PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0pmxafrxb0yrv881n6nns",
+      "id": "#1n6nns",
+      "kind": "6-leg SGP",
+      "odds": 18423,
+      "wager": 0.1,
+      "payout": 18.52,
+      "placed": "9/29 10:01PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Seiya Suzuki",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Jackson Merrill",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0p3bbfdsba1nq72t14552",
+      "id": "#t14552",
+      "kind": "5-leg SGP",
+      "odds": 13469,
+      "wager": 0.1,
+      "payout": 13.57,
+      "placed": "9/29 10:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Seiya Suzuki",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Jackson Merrill",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0zh4qf0xaekacp5eg1r87",
+      "id": "#eg1r87",
+      "kind": "3-leg SGP",
+      "odds": 17440,
+      "wager": 0.1,
+      "payout": 17.54,
+      "placed": "9/29 10:06PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Hit",
+          "prop": "NA",
+          "txt": "1st PA (manual/FD)",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Pete Crow-Armstrong & Fernando Tatis Jr.",
+          "prop": "CMBHR",
+          "ps": [
+            "Pete Crow-Armstrong",
+            "Fernando Tatis Jr."
+          ],
+          "line": 2,
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Seiya Suzuki & Manny Machado",
+          "prop": "CMBHR",
+          "ps": [
+            "Seiya Suzuki",
+            "Manny Machado"
+          ],
+          "line": 2,
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
     }
   ]
 }
