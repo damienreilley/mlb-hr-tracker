@@ -4737,6 +4737,1344 @@
           "hsp": "schlittler"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01m3qsp4pkeh8bast2sf6fh5sn",
+      "id": "#6fh5sn",
+      "kind": "5-leg SGP",
+      "odds": 26785,
+      "wager": 0.13,
+      "payout": 34.95,
+      "placed": "9/29 7:58PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "HRR2",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "George Lombard Jr.",
+          "prop": "HRR2",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Roman Anthony",
+          "prop": "HRR2",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "George Lombard Jr.",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qsnqzte9frdqvpvghkzcnq",
+      "id": "#hkzcnq",
+      "kind": "6-leg SGP",
+      "odds": 33754,
+      "wager": 0.1,
+      "payout": 33.85,
+      "placed": "9/29 7:58PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "HRR2",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "George Lombard Jr.",
+          "prop": "HRR2",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Roman Anthony",
+          "prop": "HRR2",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Caleb Durbin",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "George Lombard Jr.",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qsmrydf5h9p7adgevyn9gj",
+      "id": "#vyn9gj",
+      "kind": "4-leg SGP",
+      "odds": 33755,
+      "wager": 0.15,
+      "payout": 50.78,
+      "placed": "9/29 7:57PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "George Lombard Jr.",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "George Lombard Jr.",
+          "prop": "HRR4",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "HRR4",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qskkyqeh3tf3qqhyk9bq22",
+      "id": "#k9bq22",
+      "kind": "2-leg SGP",
+      "odds": 12209,
+      "wager": 0.11,
+      "payout": 13.54,
+      "placed": "9/29 7:57PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "George Lombard Jr.",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0ez8mef8v0q8hcwhrzd5f",
+      "id": "#hrzd5f",
+      "kind": "6-leg SGP",
+      "odds": 22989,
+      "wager": 0.1,
+      "payout": 23.09,
+      "placed": "9/29 9:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jackson Merrill",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Seiya Suzuki",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0emfmezmscbzzrx104hhx",
+      "id": "#104hhx",
+      "kind": "6-leg SGP",
+      "odds": 23829,
+      "wager": 0.1,
+      "payout": 23.93,
+      "placed": "9/29 9:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jackson Merrill",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Seiya Suzuki",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0e94ne7rvndx6zxkaw6jb",
+      "id": "#kaw6jb",
+      "kind": "7-leg SGP",
+      "odds": 27930,
+      "wager": 0.1,
+      "payout": 28.03,
+      "placed": "9/29 9:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jackson Merrill",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Seiya Suzuki",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0e0djf63b8e6878e624gg",
+      "id": "#e624gg",
+      "kind": "6-leg SGP",
+      "odds": 11556,
+      "wager": 0.1,
+      "payout": 11.66,
+      "placed": "9/29 9:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jackson Merrill",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Seiya Suzuki",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0dkwdfy1vedmy5x5njkdq",
+      "id": "#5njkdq",
+      "kind": "6-leg SGP",
+      "odds": 6377,
+      "wager": 0.1,
+      "payout": 6.48,
+      "placed": "9/29 9:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jackson Merrill",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Seiya Suzuki",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0bazye9sssn9pmtmmsnta",
+      "id": "#mmsnta",
+      "kind": "7-leg SGP",
+      "odds": 30567,
+      "wager": 0.1,
+      "payout": 30.67,
+      "placed": "9/29 9:54PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ty France",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Jake Cronenworth",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0a7ytfh298m30j7vja9wv",
+      "id": "#vja9wv",
+      "kind": "6-leg SGP",
+      "odds": 15376,
+      "wager": 0.1,
+      "payout": 15.48,
+      "placed": "9/29 9:54PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ty France",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Jake Cronenworth",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r09wn9f139trts9m9rrt25",
+      "id": "#9rrt25",
+      "kind": "6-leg SGP",
+      "odds": 16139,
+      "wager": 0.1,
+      "payout": 16.24,
+      "placed": "9/29 9:54PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ty France",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Jake Cronenworth",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r09f1aeg4sj4rk3v9944sp",
+      "id": "#9944sp",
+      "kind": "5-leg SGP",
+      "odds": 4474,
+      "wager": 0.12,
+      "payout": 5.49,
+      "placed": "9/29 9:53PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ty France",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Jake Cronenworth",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r08c2bf0zbfy8xa990fnek",
+      "id": "#90fnek",
+      "kind": "6-leg SGP",
+      "odds": 15747,
+      "wager": 0.1,
+      "payout": 15.85,
+      "placed": "9/29 9:53PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Samad Taylor",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r0817cftc9qq1xzhz5rr2s",
+      "id": "#z5rr2s",
+      "kind": "6-leg SGP",
+      "odds": 20137,
+      "wager": 0.1,
+      "payout": 20.24,
+      "placed": "9/29 9:53PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Samad Taylor",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3r077nke4xrnrbkezkzef85",
+      "id": "#kzef85",
+      "kind": "5-leg SGP",
+      "odds": 4063,
+      "wager": 0.13,
+      "payout": 5.41,
+      "placed": "9/29 9:52PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Samad Taylor",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qzjgk1ffh9p860a32v2pvp",
+      "id": "#2v2pvp",
+      "kind": "5-leg SGP",
+      "odds": 13468,
+      "wager": 0.1,
+      "payout": 13.57,
+      "placed": "9/29 9:41PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Jake Cronenworth",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Seiya Suzuki",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qzbyrse6y9w667vsnvk9x5",
+      "id": "#nvk9x5",
+      "kind": "6-leg SGP",
+      "odds": 33753,
+      "wager": 0.1,
+      "payout": 33.85,
+      "placed": "9/29 9:37PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Jake Cronenworth",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qyypvpf6vvg0099cr084p7",
+      "id": "#r084p7",
+      "kind": "7-leg SGP",
+      "odds": 21467,
+      "wager": 0.1,
+      "payout": 21.57,
+      "placed": "9/29 9:30PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Michael Busch",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Jackson Merrill",
+          "prop": "HRR4",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Seiya Suzuki",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qyvc61e6sbx6wx0tb3qc9r",
+      "id": "#b3qc9r",
+      "kind": "7-leg SGP",
+      "odds": 13750,
+      "wager": 0.1,
+      "payout": 13.85,
+      "placed": "9/29 9:28PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jackson Merrill",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Seiya Suzuki",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Samad Taylor",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Jake Cronenworth",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Michael Busch",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qsk6vefystb8tds6zmv6mn",
+      "id": "#zmv6mn",
+      "kind": "Single",
+      "odds": 12500,
+      "wager": 0.22,
+      "payout": 27.72,
+      "placed": "9/29 7:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "SB2",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qsg82rfk2r6y0d18dhxep0",
+      "id": "#dhxep0",
+      "kind": "4-leg SGP+",
+      "odds": 65742,
+      "wager": 0.1,
+      "payout": 65.84,
+      "placed": "9/29 7:55PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ben Rice",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Wilyer Abreu",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HR",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HR",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qsaqfqfhg96kc0tasayfgc",
+      "id": "#sayfgc",
+      "kind": "2-leg SGP",
+      "odds": 6845,
+      "wager": 0.1,
+      "payout": 6.95,
+      "placed": "9/29 7:52PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "George Lombard Jr.",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qsa2m1fqj9yv9n4n9dats6",
+      "id": "#9dats6",
+      "kind": "2-leg SGP",
+      "odds": 3763,
+      "wager": 0.2,
+      "payout": 7.73,
+      "placed": "9/29 7:51PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Roman Anthony",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qs94e5fa0twzd70fcq5rq1",
+      "id": "#cq5rq1",
+      "kind": "2-leg SGP",
+      "odds": 5057,
+      "wager": 0.2,
+      "payout": 10.32,
+      "placed": "9/29 7:51PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "George Lombard Jr.",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Roman Anthony",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qs8gvweegs8d5jb3633ekg",
+      "id": "#633ekg",
+      "kind": "3-leg SGP",
+      "odds": 22207,
+      "wager": 0.15,
+      "payout": 33.46,
+      "placed": "9/29 7:51PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "George Lombard Jr.",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Roman Anthony",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qs7mf5fqb958vxt3nqy20r",
+      "id": "#nqy20r",
+      "kind": "2-leg SGP",
+      "odds": 3763,
+      "wager": 0.1,
+      "payout": 3.86,
+      "placed": "9/29 7:50PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Roman Anthony",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qs1jrzf8mtp8ftc8eenz4p",
+      "id": "#eenz4p",
+      "kind": "Single",
+      "odds": 8000,
+      "wager": 0.1,
+      "payout": 8.1,
+      "placed": "9/29 7:47PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Roman Anthony",
+          "prop": "HR2",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qs1c5ff08bqv9jvf6deeas",
+      "id": "#6deeas",
+      "kind": "Single",
+      "odds": 630,
+      "wager": 0.1,
+      "payout": 0.73,
+      "placed": "9/29 7:47PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "HR",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qqw43zeh6rjqrxvyzezry3",
+      "id": "#zezry3",
+      "kind": "2-leg parlay",
+      "odds": 279,
+      "wager": 0.1,
+      "payout": 0.38,
+      "placed": "9/29 7:26PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "New York Yankees",
+          "prop": "ML",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        },
+        {
+          "p": "Chicago Cubs",
+          "prop": "ML",
+          "g": "CHC@SD",
+          "asp": "boyd",
+          "hsp": "king"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qs4q7yf6wrn15dr3vxxn1b",
+      "id": "#vxxn1b",
+      "kind": "Single",
+      "odds": 2000,
+      "wager": 0.25,
+      "payout": 5.25,
+      "placed": "9/29 7:49PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "George Lombard Jr.",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3qs4e4femetq9qggnmv4xy7",
+      "id": "#mv4xy7",
+      "kind": "Single",
+      "odds": 1200,
+      "wager": 0.25,
+      "payout": 3.25,
+      "placed": "9/29 7:48PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "NA",
+          "txt": "First HR of game (manual/FD)",
+          "g": "BOS@NYY",
+          "asp": "tolle",
+          "hsp": "schlittler"
+        }
+      ]
     }
   ]
 }
