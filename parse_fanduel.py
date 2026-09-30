@@ -208,7 +208,7 @@ def tokenize(lines):
             d={"p":prev_name(lines,i),"prop":pc}
             if void_around(lines,i,i): d["void"]=True
             toks.append(("LEG",d)); i+=1; continue
-        if ln=="Moneyline":
+        if ln.strip().lower()=="moneyline":
             d={"p":prev_team(lines,i),"prop":"ML"}
             if void_around(lines,i,i): d["void"]=True
             toks.append(("LEG",d)); i+=1; continue
@@ -361,6 +361,7 @@ def is_single_market(s):
     if s2 == "to hit first home run": return True
     if re.match(r"^to hit \d+\+ home runs$", s2): return True
     if re.match(r"^1st pa\b", s2): return True
+    if s2 == "moneyline": return True   # 2026-09-30: straight ML singles (incl. profit-boosted) were dropped by single_start
     return False
 
 def single_start(b):
@@ -371,7 +372,10 @@ def single_start(b):
     for i in range(len(b)-2):
         if not re.fullmatch(r"\+\d+", b[i+1]): continue
         if is_single_market(b[i+2]):
-            return i
+            start = i
+            while start-1 >= 0 and re.fullmatch(r"[+-]\d+", b[start].strip()):
+                start -= 1   # profit boost: back up over the original-odds line to the real selection
+            return start
     return None
 
 # FUTURES (2026-08-01, Backlog #28). Long-dated markets - World Series exact
@@ -395,7 +399,14 @@ def trim_preamble(b):
     """
     for i in range(len(b) - 1):
         if re.fullmatch(r"\+\d+", b[i + 1].strip()):
-            return b[i:] if i else b
+            start = i
+            # Profit boost (2026-09-30): b[i] is the pre-boost ORIGINAL odds line
+            # (e.g. "-102") sitting directly above the boosted "+odds"; the real
+            # selection is above it. Back up over original-odds line(s) so the
+            # selection is not mistaken for preamble and dropped.
+            while start - 1 >= 0 and re.fullmatch(r"[+-]\d+", b[start].strip()):
+                start -= 1
+            return b[start:] if start else b
     return b
 
 

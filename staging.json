@@ -1862,6 +1862,25 @@
           "hsp": "mahle"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01m3sqc9khfyp8f1rpwsym91zq",
+      "id": "#ym91zq",
+      "kind": "Single",
+      "odds": 128,
+      "wager": 5.0,
+      "payout": 11.4,
+      "placed": "9/30 1:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
     }
   ]
 }
