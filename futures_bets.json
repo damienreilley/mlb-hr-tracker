@@ -1150,5 +1150,17 @@
   "payout": 6.1,
   "placed": "2/28/2026 10:30AM ET",
   "status": "alive"
+ },
+ {
+  "id": "#deg185",
+  "full_id": "us-pa:01m3tcc1pdefmazp6znsdeg185",
+  "market": "World Series \u2014 Exact Result",
+  "market_raw": "WORLD SERIES 2026 - EXACT RESULT",
+  "sel": "Chicago White Sox to beat Milwaukee Brewers",
+  "odds": "+6000",
+  "wager": 0.1,
+  "payout": 6.1,
+  "placed": "9/30/2026 8:03PM ET",
+  "status": "alive"
  }
 ]
