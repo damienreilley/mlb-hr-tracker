@@ -25,7 +25,7 @@ PROP_MAP = {
  "To Record A Run":"RUN","To Record 2+ Runs":"RUN2","To Record 3+ Runs":"RUN3",
  "To Record 2+ Total Bases":"TB2","To Record 3+ Total Bases":"TB3",
  "To Record 4+ Total Bases":"TB","To Record 5+ Total Bases":"TB5",
- "To Record 2+ Hits + Runs + RBIs":"HRR2","Player To Record 2+ Hits + Runs + RBIs":"HRR2","To Record 3+ Hits + Runs + RBIs":"HRR3","Player To Record 3+ Hits + Runs + RBIs":"HRR3","To Record 4+ Hits + Runs + RBIs":"HRR4","Player To Record 4+ Hits + Runs + RBIs":"HRR4",
+ "To Record 1+ Hits + Runs + RBIs":"HRR1","Player To Record 1+ Hits + Runs + RBIs":"HRR1","To Record 2+ Hits + Runs + RBIs":"HRR2","Player To Record 2+ Hits + Runs + RBIs":"HRR2","To Record 3+ Hits + Runs + RBIs":"HRR3","Player To Record 3+ Hits + Runs + RBIs":"HRR3","To Record 4+ Hits + Runs + RBIs":"HRR4","Player To Record 4+ Hits + Runs + RBIs":"HRR4",
  # First-plate-appearance HR (2026-07-29, Backlog #26). The ENGINE has graded FPA all
  # along (fpaDone/fpaHR off allPlays, label "1st-PA HR", own colour+category) - only the
  # parser phrase mapping was missing, so the leg was DROPPED and the bet held on a leg-count

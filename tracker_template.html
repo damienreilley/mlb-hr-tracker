@@ -166,9 +166,9 @@ const pitByKey={};pitchers.forEach(function(p){pitByKey[p.k]=p;});
 const CATS=[{k:'PARLAY',label:'Parlays',v:'--c-fpa'},{k:'HR',label:'Home Runs',v:'--c-hr'},{k:'FPA',label:'First-PA HR',v:'--c-fpa'},{k:'TB',label:'Total Bases',v:'--c-tb'},{k:'HIT',label:'Hits',v:'--c-hit'},{k:'PITCH',label:'Pitcher Specials',v:'--c-pitch'},{k:'MIX',label:'Mixed',v:'--c-mix'}];
 const CATMAP={};CATS.forEach(function(c){CATMAP[c.k]=c;});
 const PITCHSET={NH3:1,NH5:1,NH7:1,K1:1,UP9:1,UP6:1,ALTK:1};
-const BATSET={HR:1,HIT:1,FPA:1,TB:1,'1B':1,'2B':1,'3B':1,SB:1,HR2:1,HIT2:1,TB2:1,TB3:1,TB5:1,RUN:1,RBI:1,RBI2:1,RBI3:1,RBI4:1,HRR2:1,HRR3:1,HRR4:1,HIT3:1,HIT4:1,RUN2:1,RUN3:1,SB2:1};
+const BATSET={HR:1,HIT:1,FPA:1,TB:1,'1B':1,'2B':1,'3B':1,SB:1,HR2:1,HIT2:1,TB2:1,TB3:1,TB5:1,RUN:1,RBI:1,RBI2:1,RBI3:1,RBI4:1,HRR1:1,HRR2:1,HRR3:1,HRR4:1,HIT3:1,HIT4:1,RUN2:1,RUN3:1,SB2:1};
 const HITEV={single:1,double:2,triple:3,home_run:4};
-const PLAB={HR:'HR',HIT:'Hit',FPA:'1st-PA HR',TB:'4+ TB','1B':'Single','2B':'Double','3B':'Triple','SB':'Stolen Base',HR2:'2+ HR',HIT2:'2+ Hits',TB2:'2+ TB',TB3:'3+ TB',TB5:'5+ TB',RUN:'Run',RBI:'RBI',RBI2:'2+ RBIs',RBI3:'3+ RBIs',RBI4:'4+ RBIs',HRR2:'2+ H+R+RBI',HRR3:'3+ H+R+RBI',HRR4:'4+ H+R+RBI',HIT3:'3+ Hits',HIT4:'4+ Hits',RUN2:'2+ Runs',RUN3:'3+ Runs',SB2:'2+ SB',NA:'Manual (FD)',CTB:'Combined TB',CMBHR:'Combined HR',CMBHIT:'Combined Hits',NH3:'No-hit thru 3',NH5:'No-hit thru 5',NH7:'No-hit thru 7',K1:'3+ K in 1st',UP9:'9 up 9 down',UP6:'6 up 6 down'};
+const PLAB={HR:'HR',HIT:'Hit',FPA:'1st-PA HR',TB:'4+ TB','1B':'Single','2B':'Double','3B':'Triple','SB':'Stolen Base',HR2:'2+ HR',HIT2:'2+ Hits',TB2:'2+ TB',TB3:'3+ TB',TB5:'5+ TB',RUN:'Run',RBI:'RBI',RBI2:'2+ RBIs',RBI3:'3+ RBIs',RBI4:'4+ RBIs',HRR1:'1+ H+R+RBI',HRR2:'2+ H+R+RBI',HRR3:'3+ H+R+RBI',HRR4:'4+ H+R+RBI',HIT3:'3+ Hits',HIT4:'4+ Hits',RUN2:'2+ Runs',RUN3:'3+ Runs',SB2:'2+ SB',NA:'Manual (FD)',CTB:'Combined TB',CMBHR:'Combined HR',CMBHIT:'Combined Hits',NH3:'No-hit thru 3',NH5:'No-hit thru 5',NH7:'No-hit thru 7',K1:'3+ K in 1st',UP9:'9 up 9 down',UP6:'6 up 6 down'};
 let filterMode='all';let betSort='payout';let betSortDir='desc';let pitchFilter='all';let GS={};let STATS={};let STATSALL={};let GSByPk={};let cand={};let startersByPk={};let collapsedSecs={};let collapsedBets={};
 const $=function(id){return document.getElementById(id);};
 function resetStats(){players.forEach(function(p){p.hr=[];p.atbat=false;p.ondeck=false;p.fpaDone=false;p.fpaHR=false;p.tmLive='';});pitchers.forEach(function(p){p.h3=0;p.h5=0;p.h7=0;p.k1=0;p.kTot=0;p.seq=[];p.tmLive='';});STATS={};}
@@ -240,7 +240,7 @@ if(pr==='ML'){const gs=_gs;if(gs.state!=='Final'||gs.as==null||gs.hs==null)retur
   if(pr==='RBI2')return (s.rbi>=2)?'hit':(fin?'miss':'pending');
   if(pr==='RBI3')return (s.rbi>=3)?'hit':(fin?'miss':'pending');
   if(pr==='RBI4')return (s.rbi>=4)?'hit':(fin?'miss':'pending');
-  if(pr==='HRR2')return ((s.hits+s.runs+s.rbi)>=2)?'hit':(fin?'miss':'pending');if(pr==='HRR3')return ((s.hits+s.runs+s.rbi)>=3)?'hit':(fin?'miss':'pending');if(pr==='HRR4')return ((s.hits+s.runs+s.rbi)>=4)?'hit':(fin?'miss':'pending');
+  if(pr==='HRR1')return ((s.hits+s.runs+s.rbi)>=1)?'hit':(fin?'miss':'pending');if(pr==='HRR2')return ((s.hits+s.runs+s.rbi)>=2)?'hit':(fin?'miss':'pending');if(pr==='HRR3')return ((s.hits+s.runs+s.rbi)>=3)?'hit':(fin?'miss':'pending');if(pr==='HRR4')return ((s.hits+s.runs+s.rbi)>=4)?'hit':(fin?'miss':'pending');
   if(pr==='HIT3')return (s.hits>=3)?'hit':(fin?'miss':'pending');
   if(pr==='HIT4')return (s.hits>=4)?'hit':(fin?'miss':'pending');
   if(pr==='RUN2')return (s.runs>=2)?'hit':(fin?'miss':'pending');
