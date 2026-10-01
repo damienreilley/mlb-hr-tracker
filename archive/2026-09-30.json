@@ -1,0 +1,4877 @@
+{
+  "date": "2026-09-30",
+  "bets": [
+    {
+      "full_id": "us-pa:01m3sqpzpheh298s0cygk4b2j3",
+      "id": "#k4b2j3",
+      "kind": "4-leg SGP+",
+      "odds": 46372,
+      "wager": 0.5,
+      "payout": 348.3,
+      "placed": "9/30 2:02PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sqpqwcfwbarebq4p786ced",
+      "id": "#786ced",
+      "kind": "5-leg SGP+",
+      "odds": 91933,
+      "wager": 0.5,
+      "payout": 460.17,
+      "placed": "9/30 2:02PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004499",
+      "id": "#4499",
+      "kind": "7-leg SGP+",
+      "odds": 2472537,
+      "wager": 0.25,
+      "payout": 6181.59,
+      "placed": "9/30 2:02PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004498",
+      "id": "#4498",
+      "kind": "6-leg SGP+",
+      "odds": 1248459,
+      "wager": 0.5,
+      "payout": 6242.8,
+      "placed": "9/30 2:02PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sqn1h5fr5vx1tbsdn9rcq2",
+      "id": "#n9rcq2",
+      "kind": "6-leg SGP+",
+      "odds": 512737,
+      "wager": 0.1,
+      "payout": 512.84,
+      "placed": "9/30 2:01PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Cam Smith",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sqmfyae4sts9fh4ytqg80d",
+      "id": "#tqg80d",
+      "kind": "4-leg SGP+",
+      "odds": 39231,
+      "wager": 0.5,
+      "payout": 196.66,
+      "placed": "9/30 2:01PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004497",
+      "id": "#4497",
+      "kind": "10-leg SGP+",
+      "odds": 412140968,
+      "wager": 0.24,
+      "payout": 989138.56,
+      "placed": "9/30 2:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004496",
+      "id": "#4496",
+      "kind": "8-leg SGP+",
+      "odds": 14149373,
+      "wager": 0.5,
+      "payout": 70747.37,
+      "placed": "9/30 1:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sq83vef42rwhbrrs1dq1q9",
+      "id": "#1dq1q9",
+      "kind": "4-leg SGP+",
+      "odds": 141071,
+      "wager": 0.5,
+      "payout": 705.86,
+      "placed": "9/30 1:54PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Cam Smith",
+          "prop": "HR",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "HR",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sq6n7hegqvxja2xfnj4r9r",
+      "id": "#nj4r9r",
+      "kind": "6-leg SGP",
+      "odds": 31817,
+      "wager": 0.5,
+      "payout": 159.59,
+      "placed": "9/30 1:53PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004495",
+      "id": "#4495",
+      "kind": "6-leg SGP+",
+      "odds": 679451,
+      "wager": 0.3,
+      "payout": 2038.65,
+      "placed": "9/30 1:38PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3smsqrzf4h9s3pmwzsgtf9s",
+      "id": "#sgtf9s",
+      "kind": "8-leg SGP+",
+      "odds": 356719,
+      "wager": 0.28,
+      "payout": 999.09,
+      "placed": "9/30 1:11PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sms80zefca08dahb88rysg",
+      "id": "#88rysg",
+      "kind": "7-leg SGP+",
+      "odds": 905421,
+      "wager": 0.2,
+      "payout": 1811.04,
+      "placed": "9/30 1:11PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3smqq3veb7aeyx99vshrwhp",
+      "id": "#shrwhp",
+      "kind": "5-leg SGP+",
+      "odds": 55563,
+      "wager": 0.5,
+      "payout": 278.32,
+      "placed": "9/30 1:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3smqb5ffg48skykj2ykw8mg",
+      "id": "#ykw8mg",
+      "kind": "6-leg SGP+",
+      "odds": 272649,
+      "wager": 0.4,
+      "payout": 1091.0,
+      "placed": "9/30 1:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3smq23nfgstper3qn3nhcy8",
+      "id": "#3nhcy8",
+      "kind": "5-leg SGP+",
+      "odds": 136274,
+      "wager": 0.25,
+      "payout": 340.94,
+      "placed": "9/30 1:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004494",
+      "id": "#4494",
+      "kind": "5-leg SGP+",
+      "odds": 5683818,
+      "wager": 0.15,
+      "payout": 8525.88,
+      "placed": "9/30 1:08PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB2",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB2",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004493",
+      "id": "#4493",
+      "kind": "7-leg SGP+",
+      "odds": 2502722,
+      "wager": 0.25,
+      "payout": 6257.06,
+      "placed": "9/30 1:05PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004492",
+      "id": "#4492",
+      "kind": "7-leg SGP+",
+      "odds": 1850733,
+      "wager": 0.54,
+      "payout": 9994.5,
+      "placed": "9/30 12:57PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Caleb Durbin",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sm06v6emsswgkhkgx5s0b3",
+      "id": "#x5s0b3",
+      "kind": "6-leg SGP+",
+      "odds": 934479,
+      "wager": 0.15,
+      "payout": 1401.87,
+      "placed": "9/30 12:57PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Caleb Durbin",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3skye1tfaha7p2xtwxpgrga",
+      "id": "#xpgrga",
+      "kind": "6-leg SGP+",
+      "odds": 213225,
+      "wager": 0.25,
+      "payout": 533.31,
+      "placed": "9/30 12:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3skpg57fzh9w8kvqrhfg63y",
+      "id": "#hfg63y",
+      "kind": "6-leg SGP+",
+      "odds": 41715,
+      "wager": 0.25,
+      "payout": 104.54,
+      "placed": "9/30 12:52PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Caleb Durbin",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sknykge1dbcb7gs1kkqhch",
+      "id": "#kkqhch",
+      "kind": "7-leg SGP+",
+      "odds": 256152,
+      "wager": 0.25,
+      "payout": 640.63,
+      "placed": "9/30 12:52PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3skm5dcf049dpqcbrzh0hca",
+      "id": "#zh0hca",
+      "kind": "6-leg SGP+",
+      "odds": 42185,
+      "wager": 0.25,
+      "payout": 105.71,
+      "placed": "9/30 12:51PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3skktfcfvptpdp5crw8ka99",
+      "id": "#w8ka99",
+      "kind": "7-leg SGP+",
+      "odds": 72662,
+      "wager": 0.5,
+      "payout": 363.81,
+      "placed": "9/30 12:50PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3skk4jwfqevss1f344w7ghg",
+      "id": "#4w7ghg",
+      "kind": "5-leg SGP+",
+      "odds": 8156,
+      "wager": 0.53,
+      "payout": 43.76,
+      "placed": "9/30 12:50PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3skh023ex5bvmgqwzj8c8mg",
+      "id": "#j8c8mg",
+      "kind": "6-leg SGP+",
+      "odds": 13278,
+      "wager": 0.25,
+      "payout": 33.45,
+      "placed": "9/30 12:49PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3skfv8wefdvm2wk7zzk12qw",
+      "id": "#zk12qw",
+      "kind": "5-leg SGP+",
+      "odds": 7225,
+      "wager": 1.0,
+      "payout": 73.26,
+      "placed": "9/30 12:48PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR4",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3skfet7f8ss07r1m998e2re",
+      "id": "#98e2re",
+      "kind": "7-leg SGP+",
+      "odds": 182028,
+      "wager": 0.55,
+      "payout": 1001.7,
+      "placed": "9/30 12:48PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR4",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3skbxh6f4zb38bcz79cdz9t",
+      "id": "#9cdz9t",
+      "kind": "4-leg SGP",
+      "odds": 1827,
+      "wager": 0.5,
+      "payout": 9.64,
+      "placed": "9/30 12:46PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR4",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sk9z5cec7rwnssqx06vzx6",
+      "id": "#06vzx6",
+      "kind": "4-leg SGP",
+      "odds": 1103,
+      "wager": 1.0,
+      "payout": 12.03,
+      "placed": "9/30 12:45PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sh0hy7fd0twnedvbn8jsbp",
+      "id": "#n8jsbp",
+      "kind": "5-leg SGP",
+      "odds": 1638,
+      "wager": 1.0,
+      "payout": 17.39,
+      "placed": "9/30 12:05PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sgz38cegasmmm2v6v6hhmp",
+      "id": "#v6hhmp",
+      "kind": "5-leg SGP",
+      "odds": 2160,
+      "wager": 1.0,
+      "payout": 22.6,
+      "placed": "9/30 12:04PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR4",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sgsvjafk08d7r9gfdfz687",
+      "id": "#dfz687",
+      "kind": "6-leg SGP",
+      "odds": 9531,
+      "wager": 2.0,
+      "payout": 192.64,
+      "placed": "9/30 12:01PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR4",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sgqkf2f7httkxdxp8z60eb",
+      "id": "#8z60eb",
+      "kind": "5-leg SGP",
+      "odds": 827,
+      "wager": 2.0,
+      "payout": 18.56,
+      "placed": "9/30 12:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sqc9khfyp8f1rpwsym91zq",
+      "id": "#ym91zq",
+      "kind": "Single",
+      "odds": 128,
+      "wager": 5.0,
+      "payout": 11.4,
+      "placed": "9/30 1:56PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3ss635qf33ttn2cdwwnjfwb",
+      "id": "#wnjfwb",
+      "kind": "5-leg SGP+",
+      "odds": 77531,
+      "wager": 0.1,
+      "payout": 77.63,
+      "placed": "9/30 2:28PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3srpb2afmhtk674mjtbzc5q",
+      "id": "#tbzc5q",
+      "kind": "6-leg SGP+",
+      "odds": 150783,
+      "wager": 0.25,
+      "payout": 377.21,
+      "placed": "9/30 2:19PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3srp1wtfma9nzxcaqnrtttc",
+      "id": "#nrtttc",
+      "kind": "7-leg SGP+",
+      "odds": 211614,
+      "wager": 0.2,
+      "payout": 423.43,
+      "placed": "9/30 2:19PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HR",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3srhnr9fe9v3tmt5anqv58m",
+      "id": "#nqv58m",
+      "kind": "6-leg SGP+",
+      "odds": 40532,
+      "wager": 0.25,
+      "payout": 101.58,
+      "placed": "9/30 2:17PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR4",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3srga6eeb9babm59rjs3ps6",
+      "id": "#js3ps6",
+      "kind": "4-leg SGP",
+      "odds": 683,
+      "wager": 0.2,
+      "payout": 1.57,
+      "placed": "9/30 2:16PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3srfkt5ffgtbkzsnn1s80r8",
+      "id": "#1s80r8",
+      "kind": "5-leg SGP",
+      "odds": 25720,
+      "wager": 0.2,
+      "payout": 51.64,
+      "placed": "9/30 2:15PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sr5ew7etstwk6hnpce4md2",
+      "id": "#ce4md2",
+      "kind": "3-leg SGP",
+      "odds": 7422,
+      "wager": 0.25,
+      "payout": 18.81,
+      "placed": "9/30 2:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sr53z7e7krjrgs82caeycr",
+      "id": "#caeycr",
+      "kind": "2-leg SGP",
+      "odds": 3785,
+      "wager": 0.3,
+      "payout": 11.66,
+      "placed": "9/30 2:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sr4t86fvjv1a87qdm61j52",
+      "id": "#m61j52",
+      "kind": "3-leg SGP",
+      "odds": 9688,
+      "wager": 0.3,
+      "payout": 29.37,
+      "placed": "9/30 2:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004501",
+      "id": "#4501",
+      "kind": "9-leg SGP+",
+      "odds": 171407396,
+      "wager": 0.2,
+      "payout": 342814.99,
+      "placed": "9/30 2:15PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Trea Turner",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Bryson Stott",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "sanchez",
+          "hsp": "mahle"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3ss68njf19rep4t17ytp0n7",
+      "id": "#ytp0n7",
+      "kind": "4-leg SGP+",
+      "odds": 35840,
+      "wager": 0.3,
+      "payout": 107.82,
+      "placed": "9/30 2:28PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004500",
+      "id": "#4500",
+      "kind": "6-leg SGP+",
+      "odds": 1248459,
+      "wager": 0.2,
+      "payout": 2497.12,
+      "placed": "9/30 2:15PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Sam Antonacci",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jeremy Pena",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sr6k2kephvx5bxx1geczf6",
+      "id": "#geczf6",
+      "kind": "4-leg SGP+",
+      "odds": 46372,
+      "wager": 0.25,
+      "payout": 116.18,
+      "placed": "9/30 2:11PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Miguel Vargas",
+          "prop": "SB",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tddjpmfjhrrnrr8g2kk3ev",
+      "id": "#2kk3ev",
+      "kind": "5-leg SGP",
+      "odds": 3486,
+      "wager": 0.12,
+      "payout": 4.3,
+      "placed": "9/30 8:21PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "RUN",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Manny Machado",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "RUN",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HRR3",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tdbe0hf1xbmyhgkdzbgmhz",
+      "id": "#zbgmhz",
+      "kind": "4-leg SGP",
+      "odds": 1251,
+      "wager": 0.1,
+      "payout": 1.35,
+      "placed": "9/30 8:20PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "RUN",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Manny Machado",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tcwht4fsz9d4g5q5q2yrxm",
+      "id": "#q2yrxm",
+      "kind": "2-leg parlay",
+      "odds": 2378,
+      "wager": 0.12,
+      "payout": 2.97,
+      "placed": "9/30 8:12PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tcw73xf5wvtsb9b67vyrdr",
+      "id": "#7vyrdr",
+      "kind": "3-leg SGP+",
+      "odds": 9284,
+      "wager": 0.1,
+      "payout": 9.38,
+      "placed": "9/30 8:12PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tcvqc8fjftkcz2nrxcggtc",
+      "id": "#xcggtc",
+      "kind": "4-leg SGP+",
+      "odds": 34431,
+      "wager": 0.14,
+      "payout": 48.34,
+      "placed": "9/30 8:12PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tcss5wfzgt2wwepyc717nm",
+      "id": "#c717nm",
+      "kind": "2-leg SGP",
+      "odds": 30576,
+      "wager": 0.1,
+      "payout": 30.68,
+      "placed": "9/30 8:11PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dustin Harris",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tcsj6mebha8hkh3kf8m76w",
+      "id": "#f8m76w",
+      "kind": "Single",
+      "odds": 4000,
+      "wager": 0.1,
+      "payout": 4.1,
+      "placed": "9/30 8:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dustin Harris",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tcsaj8eapavp3zm9cdr1t0",
+      "id": "#cdr1t0",
+      "kind": "2-leg parlay",
+      "odds": 5682,
+      "wager": 0.1,
+      "payout": 5.78,
+      "placed": "9/30 8:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tcm6h5ehk8tptq2955k14k",
+      "id": "#55k14k",
+      "kind": "2-leg SGP",
+      "odds": 6380,
+      "wager": 0.1,
+      "payout": 6.48,
+      "placed": "9/30 8:08PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tcdparfjdb64q3ey6afwqr",
+      "id": "#6afwqr",
+      "kind": "Single",
+      "odds": 680,
+      "wager": 0.1,
+      "payout": 0.78,
+      "placed": "9/30 8:04PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tcdh9yet4rrpxtzr995yvp",
+      "id": "#995yvp",
+      "kind": "Single",
+      "odds": 880,
+      "wager": 0.1,
+      "payout": 0.98,
+      "placed": "9/30 8:04PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tc7ss5fk78d8t4cjwhn8k1",
+      "id": "#whn8k1",
+      "kind": "Single",
+      "odds": 310,
+      "wager": 0.25,
+      "payout": 1.03,
+      "placed": "9/30 8:01PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tc6qq1f1d951dv3pk47etz",
+      "id": "#k47etz",
+      "kind": "3-leg SGP+",
+      "odds": 10009,
+      "wager": 0.1,
+      "payout": 10.11,
+      "placed": "9/30 8:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tc6hsgfz8sqy73anzg7cgm",
+      "id": "#zg7cgm",
+      "kind": "4-leg SGP+",
+      "odds": 61952,
+      "wager": 0.1,
+      "payout": 62.05,
+      "placed": "9/30 8:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tc69kyevgtram6nbm3pqw8",
+      "id": "#m3pqw8",
+      "kind": "5-leg SGP+",
+      "odds": 309685,
+      "wager": 0.1,
+      "payout": 309.79,
+      "placed": "9/30 8:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tc5ncwfd4vg28cp021td7t",
+      "id": "#21td7t",
+      "kind": "3-leg SGP+",
+      "odds": 17752,
+      "wager": 0.1,
+      "payout": 17.85,
+      "placed": "9/30 8:00PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tc58j2ev18x1dtgjhs3d1a",
+      "id": "#hs3d1a",
+      "kind": "4-leg SGP+",
+      "odds": 57501,
+      "wager": 0.1,
+      "payout": 57.6,
+      "placed": "9/30 7:59PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tc527rez7vd30y37br714p",
+      "id": "#br714p",
+      "kind": "4-leg SGP+",
+      "odds": 52621,
+      "wager": 0.1,
+      "payout": 52.72,
+      "placed": "9/30 7:59PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tc4w7hffqr8z7zx51sbvwv",
+      "id": "#1sbvwv",
+      "kind": "4-leg SGP+",
+      "odds": 50906,
+      "wager": 0.14,
+      "payout": 71.41,
+      "placed": "9/30 7:59PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jackson Merrill",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tc4j56fe8b8jp7vz5m5tyj",
+      "id": "#5m5tyj",
+      "kind": "5-leg SGP+",
+      "odds": 286730,
+      "wager": 0.14,
+      "payout": 401.56,
+      "placed": "9/30 7:59PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jackson Merrill",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004504",
+      "id": "#4504",
+      "kind": "7-leg SGP+",
+      "odds": 3516067,
+      "wager": 0.1,
+      "payout": 3516.17,
+      "placed": "9/30 7:59PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jackson Merrill",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tc1k16fkcv6tjejashma8c",
+      "id": "#shma8c",
+      "kind": "2-leg SGP",
+      "odds": 3281,
+      "wager": 0.1,
+      "payout": 3.38,
+      "placed": "9/30 7:57PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tc1e87f2ytsheqk2qprnce",
+      "id": "#qprnce",
+      "kind": "3-leg SGP",
+      "odds": 16984,
+      "wager": 0.1,
+      "payout": 17.08,
+      "placed": "9/30 7:57PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbpnarf8g8r8bytvgz9pqf",
+      "id": "#gz9pqf",
+      "kind": "3-leg SGP+",
+      "odds": 109537,
+      "wager": 0.1,
+      "payout": 109.64,
+      "placed": "9/30 7:51PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbpcyvf2t8p8s3e5q2dbf8",
+      "id": "#q2dbf8",
+      "kind": "2-leg parlay",
+      "odds": 31880,
+      "wager": 0.1,
+      "payout": 31.98,
+      "placed": "9/30 7:51PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbnre0f9trgezd96s7hk4h",
+      "id": "#s7hk4h",
+      "kind": "2-leg parlay",
+      "odds": 332000,
+      "wager": 0.12,
+      "payout": 398.52,
+      "placed": "9/30 7:51PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "SB2",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004503",
+      "id": "#4503",
+      "kind": "3-leg SGP+",
+      "odds": 2271345,
+      "wager": 0.1,
+      "payout": 2271.45,
+      "placed": "9/30 7:51PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB2",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbmsa0edy8kc8g8wnn1x5g",
+      "id": "#nn1x5g",
+      "kind": "3-leg SGP+",
+      "odds": 117678,
+      "wager": 0.1,
+      "payout": 117.78,
+      "placed": "9/30 7:50PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbmjnjf8tac7nvwq4kd5ea",
+      "id": "#4kd5ea",
+      "kind": "3-leg SGP+",
+      "odds": 588793,
+      "wager": 0.1,
+      "payout": 588.89,
+      "placed": "9/30 7:50PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB2",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbgt9qfjwbk7104yys630g",
+      "id": "#ys630g",
+      "kind": "3-leg SGP",
+      "odds": 12442,
+      "wager": 0.1,
+      "payout": 12.54,
+      "placed": "9/30 7:48PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jackson Merrill",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbg9e1enwbcpgg5v36e6e4",
+      "id": "#36e6e4",
+      "kind": "2-leg SGP",
+      "odds": 1687,
+      "wager": 0.1,
+      "payout": 1.79,
+      "placed": "9/30 7:48PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbetraekfryd4xc11sk6zr",
+      "id": "#1sk6zr",
+      "kind": "Single",
+      "odds": 320,
+      "wager": 0.1,
+      "payout": 0.42,
+      "placed": "9/30 7:47PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbensnegavzpp3tzh9q2p1",
+      "id": "#h9q2p1",
+      "kind": "2-leg SGP",
+      "odds": 1832,
+      "wager": 0.2,
+      "payout": 3.87,
+      "placed": "9/30 7:47PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbeabpfxjbykk78r3y3047",
+      "id": "#3y3047",
+      "kind": "2-leg SGP",
+      "odds": 3281,
+      "wager": 0.28,
+      "payout": 9.47,
+      "placed": "9/30 7:47PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbe14feyfbvpqay0092whf",
+      "id": "#092whf",
+      "kind": "4-leg SGP+",
+      "odds": 65257,
+      "wager": 0.14,
+      "payout": 91.5,
+      "placed": "9/30 7:47PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbd3ege1jtmn6757cy4mtm",
+      "id": "#cy4mtm",
+      "kind": "3-leg SGP+",
+      "odds": 189250,
+      "wager": 0.1,
+      "payout": 189.35,
+      "placed": "9/30 7:46PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbcr64f3hbp8bn1rgzrahz",
+      "id": "#gzrahz",
+      "kind": "3-leg SGP+",
+      "odds": 138531,
+      "wager": 0.1,
+      "payout": 138.63,
+      "placed": "9/30 7:46PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbcg8qewwvanx0hqsgehk7",
+      "id": "#sgehk7",
+      "kind": "3-leg SGP+",
+      "odds": 77669,
+      "wager": 0.1,
+      "payout": 77.77,
+      "placed": "9/30 7:46PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tbca4xf4pa0t6ts9nr3snm",
+      "id": "#nr3snm",
+      "kind": "3-leg SGP+",
+      "odds": 87812,
+      "wager": 0.1,
+      "payout": 87.91,
+      "placed": "9/30 7:46PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Cody Bellinger",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tb3hhke2caj5k91qg0b8dh",
+      "id": "#g0b8dh",
+      "kind": "2-leg SGP",
+      "odds": 2365,
+      "wager": 0.1,
+      "payout": 2.47,
+      "placed": "9/30 7:41PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tb397kee09g2sd2y82wect",
+      "id": "#82wect",
+      "kind": "3-leg SGP",
+      "odds": 8322,
+      "wager": 0.13,
+      "payout": 10.95,
+      "placed": "9/30 7:41PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tb2svmfnr8vs3syze2xjt4",
+      "id": "#e2xjt4",
+      "kind": "Single",
+      "odds": 2500,
+      "wager": 0.12,
+      "payout": 3.12,
+      "placed": "9/30 7:41PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tb2c7xfbv9880q1t24artq",
+      "id": "#24artq",
+      "kind": "Single",
+      "odds": 5500,
+      "wager": 0.1,
+      "payout": 5.6,
+      "placed": "9/30 7:40PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tb25z7egmr1cbtyhqksqds",
+      "id": "#qksqds",
+      "kind": "Single",
+      "odds": 4000,
+      "wager": 0.1,
+      "payout": 4.1,
+      "placed": "9/30 7:40PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dustin Harris",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tb1yzwe3d9ch42nskcvf13",
+      "id": "#kcvf13",
+      "kind": "Single",
+      "odds": 2200,
+      "wager": 0.2,
+      "payout": 4.6,
+      "placed": "9/30 7:40PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tb1n84f3abnr9kydcgpm9t",
+      "id": "#cgpm9t",
+      "kind": "5-leg SGP+",
+      "odds": 142101,
+      "wager": 0.14,
+      "payout": 199.08,
+      "placed": "9/30 7:40PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tb1apyfqf8c046tydm4me0",
+      "id": "#dm4me0",
+      "kind": "2-leg parlay",
+      "odds": 9560,
+      "wager": 0.12,
+      "payout": 11.59,
+      "placed": "9/30 7:40PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tb0zq3fkpr73ndr0s2xshh",
+      "id": "#s2xshh",
+      "kind": "2-leg parlay",
+      "odds": 10820,
+      "wager": 0.1,
+      "payout": 10.92,
+      "placed": "9/30 7:40PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tb0m4wff28d82jg640jr0k",
+      "id": "#40jr0k",
+      "kind": "4-leg SGP+",
+      "odds": 44924,
+      "wager": 0.14,
+      "payout": 63.03,
+      "placed": "9/30 7:39PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Xander Bogaerts",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tb023nfsvvsmd60g135805",
+      "id": "#135805",
+      "kind": "3-leg SGP+",
+      "odds": 13516,
+      "wager": 0.15,
+      "payout": 20.43,
+      "placed": "9/30 7:39PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jackson Merrill",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tayh2kfnpr54e9fy63sbrs",
+      "id": "#63sbrs",
+      "kind": "4-leg SGP+",
+      "odds": 40960,
+      "wager": 0.1,
+      "payout": 41.06,
+      "placed": "9/30 7:38PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jackson Merrill",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3tay87gfqtvrfkdqd89w6bb",
+      "id": "#89w6bb",
+      "kind": "5-leg SGP+",
+      "odds": 290453,
+      "wager": 0.1,
+      "payout": 290.55,
+      "placed": "9/30 7:38PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ceddanne Rafaela",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Jackson Merrill",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3taw2v7e34twgpb50spd580",
+      "id": "#spd580",
+      "kind": "5-leg SGP+",
+      "odds": 250216,
+      "wager": 0.1,
+      "payout": 250.32,
+      "placed": "9/30 7:37PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ceddanne Rafaela",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3zchcfy4bkx0bw8frhw56",
+      "id": "#frhw56",
+      "kind": "8-leg SGP+",
+      "odds": 93556,
+      "wager": 0.18,
+      "payout": 168.58,
+      "placed": "9/30 5:36PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Manny Machado",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3yv3re0cbs07wzvzf6n9s",
+      "id": "#zf6n9s",
+      "kind": "7-leg SGP",
+      "odds": 22199,
+      "wager": 0.13,
+      "payout": 28.99,
+      "placed": "9/30 5:36PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Manny Machado",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Ty France",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Alex Bregman",
+          "prop": "HRR2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3nydaep7t893ad39kczpa",
+      "id": "#9kczpa",
+      "kind": "4-leg SGP+",
+      "odds": 157074,
+      "wager": 0.14,
+      "payout": 220.04,
+      "placed": "9/30 5:31PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB2",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3njb8eq6bma1esjzgy8nh",
+      "id": "#zgy8nh",
+      "kind": "2-leg parlay",
+      "odds": 48200,
+      "wager": 0.12,
+      "payout": 57.96,
+      "placed": "9/30 5:31PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB2",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3na5aekxryj3t7sb593p6",
+      "id": "#b593p6",
+      "kind": "2-leg parlay",
+      "odds": 41900,
+      "wager": 0.12,
+      "payout": 50.4,
+      "placed": "9/30 5:31PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB2",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3mhs9egwrntz8k3zw46t0",
+      "id": "#zw46t0",
+      "kind": "5-leg SGP+",
+      "odds": 456751,
+      "wager": 0.1,
+      "payout": 456.85,
+      "placed": "9/30 5:30PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3m6kpea1rn6z834nretgh",
+      "id": "#nretgh",
+      "kind": "5-leg SGP+",
+      "odds": 456751,
+      "wager": 0.1,
+      "payout": 456.85,
+      "placed": "9/30 5:30PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "O/1924696/0004502",
+      "id": "#4502",
+      "kind": "5-leg SGP+",
+      "odds": 1861371,
+      "wager": 0.15,
+      "payout": 2792.21,
+      "placed": "9/30 5:30PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB2",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t37jjdfarbg5f9x4nzky8k",
+      "id": "#nzky8k",
+      "kind": "3-leg parlay",
+      "odds": 2057,
+      "wager": 0.1,
+      "payout": 2.16,
+      "placed": "9/30 5:23PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Houston Astros",
+          "prop": "ML",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "Boston Red Sox",
+          "prop": "ML",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Chicago Cubs",
+          "prop": "ML",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3sva48qezkbj3376xp1n2ym",
+      "id": "#p1n2ym",
+      "kind": "3-leg parlay",
+      "odds": 566,
+      "wager": 0.2,
+      "payout": 1.33,
+      "placed": "9/30 3:05PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Chicago White Sox",
+          "prop": "ML",
+          "g": "CWS@HOU",
+          "asp": "burke",
+          "hsp": "brown"
+        },
+        {
+          "p": "New York Yankees",
+          "prop": "ML",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "San Diego Padres",
+          "prop": "ML",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3jy8ne1ws7d6vnqh2f31n",
+      "id": "#h2f31n",
+      "kind": "3-leg SGP",
+      "odds": 33758,
+      "wager": 0.33,
+      "payout": 111.73,
+      "placed": "9/30 5:30PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3j63fezar5vpb9p8je98p",
+      "id": "#8je98p",
+      "kind": "2-leg SGP",
+      "odds": 20142,
+      "wager": 0.22,
+      "payout": 44.53,
+      "placed": "9/30 5:29PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB2",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3hxhjf7vrgdq191yznepa",
+      "id": "#yznepa",
+      "kind": "3-leg SGP+",
+      "odds": 21448,
+      "wager": 0.13,
+      "payout": 28.01,
+      "placed": "9/30 5:29PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Nate Eaton",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3harnfzf8hfsc52zrwfvw",
+      "id": "#zrwfvw",
+      "kind": "6-leg SGP",
+      "odds": 32094,
+      "wager": 0.1,
+      "payout": 32.19,
+      "placed": "9/30 5:29PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "HRR2",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "George Lombard Jr.",
+          "prop": "HRR2",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Caleb Durbin",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Ceddanne Rafaela",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3e38ze4mrv9ky3zdefzdc",
+      "id": "#defzdc",
+      "kind": "4-leg SGP",
+      "odds": 32087,
+      "wager": 0.1,
+      "payout": 32.19,
+      "placed": "9/30 5:27PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Spencer Jones",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Jazz Chisholm",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "Caleb Durbin",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        },
+        {
+          "p": "George Lombard Jr.",
+          "prop": "SB",
+          "g": "BOS@NYY",
+          "asp": "gray",
+          "hsp": "fried"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3d24vfgtam6sz467k7jpk",
+      "id": "#7k7jpk",
+      "kind": "5-leg SGP",
+      "odds": 32086,
+      "wager": 0.1,
+      "payout": 32.19,
+      "placed": "9/30 5:26PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Fernando Tatis Jr.",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pete Crow-Armstrong",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Dustin Harris",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Nico Hoerner",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        },
+        {
+          "p": "Pedro Ramirez",
+          "prop": "SB",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3t3byryfaztfy999a71vmp0",
+      "id": "#71vmp0",
+      "kind": "Single",
+      "odds": 122,
+      "wager": 0.25,
+      "payout": 0.55,
+      "placed": "9/30 5:26PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Chicago Cubs",
+          "prop": "ML",
+          "g": "CHC@SD",
+          "asp": "gausman",
+          "hsp": "pivetta"
+        }
+      ]
+    }
+  ]
+}
