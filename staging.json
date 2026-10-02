@@ -2555,6 +2555,1911 @@
           "hsp": "kerr"
         }
       ]
+    },
+    {
+      "full_id": "us-pa:01m3wyr68ae63t6sb7rmf00pgv",
+      "id": "#f00pgv",
+      "kind": "Single",
+      "odds": 2000,
+      "wager": 0.1,
+      "payout": 2.1,
+      "placed": "10/1 8:03PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dominic Smith",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wyqpf6f8ev8ttf9cqy8atc",
+      "id": "#qy8atc",
+      "kind": "2-leg SGP",
+      "odds": 24746,
+      "wager": 0.1,
+      "payout": 24.85,
+      "placed": "10/1 8:02PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Mike Yastrzemski",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Dominic Smith",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wyq99sfsbt39svress6tym",
+      "id": "#ss6tym",
+      "kind": "2-leg SGP",
+      "odds": 24746,
+      "wager": 0.1,
+      "payout": 24.85,
+      "placed": "10/1 8:02PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Michael Harris II",
+          "prop": "SB2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wypxj2e9er7dz1jrzn4fja",
+      "id": "#zn4fja",
+      "kind": "Single",
+      "odds": 8000,
+      "wager": 0.1,
+      "payout": 8.1,
+      "placed": "10/1 8:02PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Michael Harris II",
+          "prop": "SB2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wy8dfhe1ps6v66hanz74w0",
+      "id": "#nz74w0",
+      "kind": "3-leg SGP",
+      "odds": 246,
+      "wager": 0.2,
+      "payout": 0.69,
+      "placed": "10/1 7:54PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "NA",
+          "txt": "First 3 Innings Result",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "NA",
+          "txt": "First 6 Innings Result",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "NA",
+          "txt": "First 7 Innings Result",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wx4ftefs9aybncdv8rfwy2",
+      "id": "#8rfwy2",
+      "kind": "4-leg SGP",
+      "odds": 1954,
+      "wager": 0.1,
+      "payout": 2.05,
+      "placed": "10/1 7:35PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Michael Harris II",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wx3ag8ecb8hy76ayap6qf3",
+      "id": "#ap6qf3",
+      "kind": "4-leg SGP",
+      "odds": 1708,
+      "wager": 0.12,
+      "payout": 2.17,
+      "placed": "10/1 7:34PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wx2h8ye3gv2hbrwf4cekt2",
+      "id": "#4cekt2",
+      "kind": "4-leg SGP",
+      "odds": 11358,
+      "wager": 0.25,
+      "payout": 28.65,
+      "placed": "10/1 7:33PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wx20wdewkrfxn01w3k155r",
+      "id": "#3k155r",
+      "kind": "5-leg SGP",
+      "odds": 21470,
+      "wager": 0.1,
+      "payout": 21.57,
+      "placed": "10/1 7:33PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3ww80sgfg3s9gzght8pr9cr",
+      "id": "#8pr9cr",
+      "kind": "2-leg SGP",
+      "odds": 13755,
+      "wager": 0.1,
+      "payout": 13.86,
+      "placed": "10/1 7:19PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Matt Olson",
+          "prop": "HR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3ww40d4f65r2vqjma3m3vjn",
+      "id": "#3m3vjn",
+      "kind": "4-leg SGP",
+      "odds": 1708,
+      "wager": 0.1,
+      "payout": 1.81,
+      "placed": "10/1 7:17PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3ww3tfxfzcab90hnheaz0qr",
+      "id": "#eaz0qr",
+      "kind": "5-leg SGP",
+      "odds": 5973,
+      "wager": 0.1,
+      "payout": 6.07,
+      "placed": "10/1 7:17PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3ww39cjenba2fqbv0rcms42",
+      "id": "#rcms42",
+      "kind": "3-leg SGP",
+      "odds": 1255,
+      "wager": 0.1,
+      "payout": 1.36,
+      "placed": "10/1 7:16PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3ww1zbxed28wt4y42jnym52",
+      "id": "#jnym52",
+      "kind": "4-leg SGP",
+      "odds": 2399,
+      "wager": 0.1,
+      "payout": 2.5,
+      "placed": "10/1 7:16PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Michael Harris II",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3ww17q1f2stttbq0e6wvaaj",
+      "id": "#6wvaaj",
+      "kind": "3-leg SGP",
+      "odds": 2884,
+      "wager": 0.1,
+      "payout": 2.98,
+      "placed": "10/1 7:15PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR4",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3ww0fdhfspb4qm8qysj7msb",
+      "id": "#sj7msb",
+      "kind": "7-leg SGP",
+      "odds": 9533,
+      "wager": 0.17,
+      "payout": 16.38,
+      "placed": "10/1 7:15PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR1",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HRR1",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR1",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR1",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mike Yastrzemski",
+          "prop": "HRR1",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3ww00hte4jtrgty7ykgmccy",
+      "id": "#kgmccy",
+      "kind": "5-leg SGP",
+      "odds": 7331,
+      "wager": 0.1,
+      "payout": 7.43,
+      "placed": "10/1 7:15PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvzjfee07tv4ky8web7cqj",
+      "id": "#eb7cqj",
+      "kind": "5-leg SGP",
+      "odds": 7607,
+      "wager": 0.1,
+      "payout": 7.71,
+      "placed": "10/1 7:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvz99hecarrz1w09tfz99v",
+      "id": "#tfz99v",
+      "kind": "6-leg SGP",
+      "odds": 12254,
+      "wager": 0.1,
+      "payout": 12.35,
+      "placed": "10/1 7:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvyhrjedhtg0tk9a12z2t2",
+      "id": "#12z2t2",
+      "kind": "4-leg SGP",
+      "odds": 11559,
+      "wager": 0.1,
+      "payout": 11.66,
+      "placed": "10/1 7:14PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvxw1sfbdb9gk5tc4pdbq8",
+      "id": "#4pdbq8",
+      "kind": "4-leg SGP",
+      "odds": 11559,
+      "wager": 0.1,
+      "payout": 11.66,
+      "placed": "10/1 7:13PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvxbsnfbdstpr3vzwr3h3p",
+      "id": "#wr3h3p",
+      "kind": "3-leg SGP",
+      "odds": 6571,
+      "wager": 0.1,
+      "payout": 6.67,
+      "placed": "10/1 7:13PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvwvh7e9hts0908q4g21xh",
+      "id": "#4g21xh",
+      "kind": "5-leg SGP",
+      "odds": 11358,
+      "wager": 0.1,
+      "payout": 11.46,
+      "placed": "10/1 7:13PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ozzie Albies",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mike Yastrzemski",
+          "prop": "HRR1",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvw7rrfvb9bggcfy0rsq6g",
+      "id": "#0rsq6g",
+      "kind": "3-leg SGP",
+      "odds": 10795,
+      "wager": 0.1,
+      "payout": 10.9,
+      "placed": "10/1 7:13PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvvsefefvta7yews3ffg0j",
+      "id": "#3ffg0j",
+      "kind": "4-leg SGP",
+      "odds": 24746,
+      "wager": 0.1,
+      "payout": 24.85,
+      "placed": "10/1 7:12PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvv9tbf6e8rckts3a79ttt",
+      "id": "#a79ttt",
+      "kind": "4-leg SGP",
+      "odds": 24746,
+      "wager": 0.1,
+      "payout": 24.85,
+      "placed": "10/1 7:12PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvth9xehn9dy52bwart36r",
+      "id": "#art36r",
+      "kind": "3-leg SGP",
+      "odds": 12684,
+      "wager": 0.1,
+      "payout": 12.78,
+      "placed": "10/1 7:12PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvta7nfq69xp283prg736s",
+      "id": "#rg736s",
+      "kind": "4-leg SGP",
+      "odds": 18964,
+      "wager": 0.1,
+      "payout": 19.06,
+      "placed": "10/1 7:11PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvs105edevpsb9wt9cc4ww",
+      "id": "#9cc4ww",
+      "kind": "3-leg SGP",
+      "odds": 12684,
+      "wager": 0.13,
+      "payout": 16.62,
+      "placed": "10/1 7:11PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvrn06egps80jzt2sgh8h1",
+      "id": "#sgh8h1",
+      "kind": "4-leg SGP",
+      "odds": 18964,
+      "wager": 0.1,
+      "payout": 19.06,
+      "placed": "10/1 7:11PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvr2b4eestdbggegc305pn",
+      "id": "#c305pn",
+      "kind": "4-leg SGP",
+      "odds": 25724,
+      "wager": 0.14,
+      "payout": 36.15,
+      "placed": "10/1 7:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvq1vhe6qax8fkk74e6kq7",
+      "id": "#4e6kq7",
+      "kind": "4-leg SGP",
+      "odds": 9970,
+      "wager": 0.14,
+      "payout": 14.1,
+      "placed": "10/1 7:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Mauricio Dubon",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mike Yastrzemski",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvpv1nf338cex2mpaewfwf",
+      "id": "#aewfwf",
+      "kind": "5-leg SGP",
+      "odds": 14050,
+      "wager": 0.1,
+      "payout": 14.15,
+      "placed": "10/1 7:10PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Mauricio Dubon",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mike Yastrzemski",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvmqxsetyr9pr997gzbwpt",
+      "id": "#gzbwpt",
+      "kind": "6-leg SGP",
+      "odds": 6084,
+      "wager": 0.1,
+      "payout": 6.18,
+      "placed": "10/1 7:08PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mike Yastrzemski",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvm5fkfvraen8v0dgneetn",
+      "id": "#gneetn",
+      "kind": "5-leg SGP",
+      "odds": 1584,
+      "wager": 0.15,
+      "payout": 2.53,
+      "placed": "10/1 7:08PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Austin Riley",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Michael Harris II",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mike Yastrzemski",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvjsw4fqj8fqrvpwa8jp4c",
+      "id": "#a8jp4c",
+      "kind": "3-leg SGP",
+      "odds": 3763,
+      "wager": 0.14,
+      "payout": 5.41,
+      "placed": "10/1 7:07PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvh75eeejtpxa56tps35t4",
+      "id": "#ps35t4",
+      "kind": "3-leg SGP",
+      "odds": 3225,
+      "wager": 0.13,
+      "payout": 4.32,
+      "placed": "10/1 7:07PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvg9d3fndtwnfb7tvmmhwj",
+      "id": "#vmmhwj",
+      "kind": "5-leg SGP",
+      "odds": 12510,
+      "wager": 0.1,
+      "payout": 12.61,
+      "placed": "10/1 7:06PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Michael Harris II",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wve556fmgb9h7380kvkjjn",
+      "id": "#kvkjjn",
+      "kind": "2-leg SGP",
+      "odds": 13755,
+      "wager": 0.1,
+      "payout": 13.86,
+      "placed": "10/1 7:05PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Matt Olson",
+          "prop": "HR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wvdnr2e33btg2j1f2br0sr",
+      "id": "#2br0sr",
+      "kind": "4-leg SGP",
+      "odds": 11120,
+      "wager": 0.1,
+      "payout": 11.22,
+      "placed": "10/1 7:05PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ozzie Albies",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wtqqz4e24vnqkjnxr3g6nm",
+      "id": "#r3g6nm",
+      "kind": "2-leg SGP",
+      "odds": 3919,
+      "wager": 0.1,
+      "payout": 4.02,
+      "placed": "10/1 6:53PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dominic Smith",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wtq9btfma8efmag0gafsx1",
+      "id": "#gafsx1",
+      "kind": "2-leg SGP",
+      "odds": 4664,
+      "wager": 0.1,
+      "payout": 4.76,
+      "placed": "10/1 6:52PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dominic Smith",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wtpv9dfk5bqhyp9nahsb8j",
+      "id": "#ahsb8j",
+      "kind": "2-leg SGP",
+      "odds": 4567,
+      "wager": 0.1,
+      "payout": 4.67,
+      "placed": "10/1 6:52PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dominic Smith",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wszjmde9htncg0m68esw33",
+      "id": "#8esw33",
+      "kind": "Single",
+      "odds": 17500,
+      "wager": 0.15,
+      "payout": 26.4,
+      "placed": "10/1 6:39PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Dominic Smith",
+          "prop": "HR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wsz9p5f4k9t78qsm1sacha",
+      "id": "#1sacha",
+      "kind": "Single",
+      "odds": 1200,
+      "wager": 0.25,
+      "payout": 3.25,
+      "placed": "10/1 6:39PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wsvprkfbqbmwggfhsreyxz",
+      "id": "#sreyxz",
+      "kind": "4-leg SGP",
+      "odds": 2624,
+      "wager": 0.14,
+      "payout": 3.81,
+      "placed": "10/1 6:37PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Aaron Nola",
+          "prop": "ALTK",
+          "k": 5,
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wstfnffpjsv8aywm676w7n",
+      "id": "#676w7n",
+      "kind": "5-leg SGP",
+      "odds": 2698,
+      "wager": 0.1,
+      "payout": 2.8,
+      "placed": "10/1 6:37PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Aaron Nola",
+          "prop": "ALTK",
+          "k": 3,
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wsnc0zf5dvhr6g18n0gqf8",
+      "id": "#n0gqf8",
+      "kind": "4-leg SGP",
+      "odds": 4300,
+      "wager": 0.1,
+      "payout": 4.4,
+      "placed": "10/1 6:34PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mike Yastrzemski",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wm5bjve98bb4htjy6q8kwa",
+      "id": "#6q8kwa",
+      "kind": "5-leg SGP",
+      "odds": 3942,
+      "wager": 0.25,
+      "payout": 10.11,
+      "placed": "10/1 4:58PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Drake Baldwin",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mauricio Dubon",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Matt Olson",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HRR3",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Mike Yastrzemski",
+          "prop": "HRR2",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wkxemnemvb34sc96fp9x57",
+      "id": "#fp9x57",
+      "kind": "2-leg SGP",
+      "odds": 2000,
+      "wager": 0.5,
+      "payout": 10.5,
+      "placed": "10/1 4:53PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Matt Olson",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Austin Riley",
+          "prop": "HR",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
+    },
+    {
+      "full_id": "us-pa:01m3wk57tbft8szv68s7e580hm",
+      "id": "#e580hm",
+      "kind": "4-leg SGP",
+      "odds": 30130,
+      "wager": 0.1,
+      "payout": 30.23,
+      "placed": "10/1 4:40PM",
+      "status": "open",
+      "legs": [
+        {
+          "p": "Atlanta Braves",
+          "prop": "ML",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "3B",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "2B",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        },
+        {
+          "p": "Ronald Acuna Jr.",
+          "prop": "SB",
+          "g": "PHI@ATL",
+          "asp": "nola",
+          "hsp": "kerr"
+        }
+      ]
     }
   ]
 }
